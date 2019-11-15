@@ -1,0 +1,11 @@
+    <project>
+      <modelVersion>4.0.0</modelVersion>
+      <groupId>com.bareboat-necessities</groupId>
+      <parent>
+        <groupId>com.bareboat-necessities</groupId>
+        <artifactId>my-bareboat-parent</artifactId>
+        <version>1</version>
+      </parent>
+      <artifactId>modules</artifactId>
+      <version>1.0.0-SNAPSHOT</version>     
+    </project>
