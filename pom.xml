@@ -4,4 +4,5 @@
       <artifactId>my-bareboat-parent</artifactId>
       <packaging>pom</packaging>
       <version>1</version>
+      <!-- See also https://bareboat-necessities.wixsite.com/my-bareboat -->
     </project>
