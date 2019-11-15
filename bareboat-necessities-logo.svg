@@ -103,12 +103,12 @@
        transform="matrix(1,0,0,-1,100.938,79.418)"><tspan
          id="tspan130"
          y="0"
-         x="0 14.637591 30.251022 43.02179">BAREBOAT</tspan></text>
+         x="0 15 30 45 60 75 92 107">BAREBOAT</tspan></text>
 <text
        id="text140"
        style="font-variant:normal;font-weight:900;font-stretch:normal;font-size:8.04139996px;font-family:'Raleway Black';-inkscape-font-specification:Raleway-Black;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
        transform="matrix(1,0,0,-1,114.7236,68.999)"><tspan
          id="tspan138"
          y="0"
-         x="0 7.8484063 17.216637 25.861143 33.878418 43.962334 48.988209 54.753891 62.980244 71.158348 80.34967">NECESSITIES</tspan></text>
+         x="0 8 16 24 32 40 48 53 61 67 75">NECESSITIES</tspan></text>
 </g></svg>
