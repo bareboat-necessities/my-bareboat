@@ -2,5 +2,6 @@
       <modelVersion>4.0.0</modelVersion>
       <groupId>com.bareboat-necessities</groupId>
       <artifactId>my-bareboat-parent</artifactId>
+      <packaging>pom</packaging>
       <version>1</version>
     </project>
