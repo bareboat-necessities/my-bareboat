@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 160.92447 189.81715"
-   height="189.81715"
-   width="160.92447"
+   viewBox="0 0 158.42281 188.99206"
+   height="188.99207"
+   width="158.42281"
    xml:space="preserve"
    id="svg2"
    version="1.1"
@@ -25,12 +25,12 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
      inkscape:window-height="1036"
-     id="namedview4049"
+     id="bareboat-necessities"
      showgrid="false"
      inkscape:zoom="1.212"
-     inkscape:cx="194.065"
-     inkscape:cy="-129.80066"
-     inkscape:window-x="0"
+     inkscape:cx="157.55738"
+     inkscape:cy="119.17624"
+     inkscape:window-x="3"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2" /><metadata
@@ -103,12 +103,14 @@
        transform="matrix(1,0,0,-1,100.938,79.418)"><tspan
          id="tspan130"
          y="0"
-         x="0 15 30 45 60 75 92 107">BAREBOAT</tspan></text>
+         x="0 14 29 44 57 72 89 104">BAREBOAT</tspan></text>
 <text
        id="text140"
        style="font-variant:normal;font-weight:900;font-stretch:normal;font-size:8.04139996px;font-family:'Raleway Black';-inkscape-font-specification:Raleway-Black;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       transform="matrix(1,0,0,-1,114.7236,68.999)"><tspan
+       transform="scale(1,-1)"
+       x="118.43647"
+       y="-69.617813"><tspan
          id="tspan138"
-         y="0"
-         x="0 8 16 24 32 40 48 53 61 67 75">NECESSITIES</tspan></text>
+         y="-69.617813"
+         x="118.43647 126.43647 134.43648 142.43648 150.43648 158.43648 166.43648 171.43648 179.43648 185.43648 193.43648">NECESSITIES</tspan></text>
 </g></svg>
