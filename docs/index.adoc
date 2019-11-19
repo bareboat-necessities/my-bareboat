@@ -2,6 +2,7 @@
 mgrouch <mgrouch@users.noreply.github.com>
 1.0, Nov 18, 2019, Bareboat Projects Documentation
 :toc:
+:sectnums:
 :icons: font
 :quick-uri: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
 https://github.com/bareboat-necessities/my-bareboat
