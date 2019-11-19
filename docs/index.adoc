@@ -10,6 +10,7 @@ mgrouch <mgrouch@users.noreply.github.com>
 :title-logo-image: image:../bareboat-necessities-logo.svg[]
 
 https://github.com/bareboat-necessities/my-bareboat
+
 Bareboat Projects Documentation
 
 == First Project
