@@ -5,6 +5,11 @@ mgrouch <mgrouch@users.noreply.github.com>
 :sectnums:
 :icons: font
 :quick-uri: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
+:encoding: utf-8
+:lang: en
+
+:title-logo-image: image:../bareboat-necessities-logo.svg[]
+
 https://github.com/bareboat-necessities/my-bareboat
 Bareboat Projects Documentation
 
