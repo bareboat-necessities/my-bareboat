@@ -14,6 +14,7 @@ alert('Test');
 </script>
 <noscript>Sorry, your browser does not support JavaScript!</noscript> 
 <div>
-<iframe src="charts.md.html" style="height: 100%; width: 100%; frameborder: none; border: none; margin: 0; padding: 0" ></iframe>
+<
+iframe src="charts.md.html" style="height: 100%; width: 100%; frameborder: none; border: none; margin: 0; padding: 0" ></iframe>
 </div>
 ++++
