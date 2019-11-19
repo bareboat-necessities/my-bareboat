@@ -4,5 +4,5 @@ mgrouch <mgrouch@users.noreply.github.com>
 :icons: font
 
 ++++
-<iframe src="charts.md.html" style="height: 100%; width: 100%; frameborder: none" ></iframe>
+<iframe src="charts.md.html" style="height: 100%; width: 100%; frameborder: none; border: none; margin: 0; padding: 0" ></iframe>
 ++++
