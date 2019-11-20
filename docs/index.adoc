@@ -40,3 +40,4 @@ with additional software.
 
 === Cockpit Display and Chartplotter
 
+image::cockpit-display.svg[alt=Cockpit Display Diagram]

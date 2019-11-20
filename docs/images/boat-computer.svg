@@ -121,10 +121,10 @@
         <path d="M 464,576 L 464,608 " style="fill:none;"/>
         <path d="M 464,720 L 464,736 " style="fill:none;"/>
         <path d="M 472,224 L 472,256 " style="fill:none;"/>
+        <path d="M 472,304 L 472,336 " style="fill:none;"/>
+        <path d="M 472,464 L 472,496 " style="fill:none;"/>
         <path d="M 480,560 L 480,576 " style="fill:none;"/>
         <path d="M 480,608 L 480,640 " style="fill:none;"/>
-        <path d="M 488,304 L 488,336 " style="fill:none;"/>
-        <path d="M 488,464 L 488,496 " style="fill:none;"/>
         <path d="M 496,688 L 496,720 " style="fill:none;"/>
         <path d="M 520,640 L 520,672 " style="fill:none;"/>
         <path d="M 536,560 L 536,592 " style="fill:none;"/>
@@ -219,12 +219,12 @@
         <path d="M 808,272 L 824,272 " style="fill:none;"/>
         <path d="M 848,288 L 888,288 " style="fill:none;"/>
         <path d="M 288,304 L 320,304 " style="fill:none;"/>
-        <path d="M 488,304 L 624,304 " style="fill:none;"/>
+        <path d="M 472,304 L 624,304 " style="fill:none;"/>
         <path d="M 96,320 L 160,320 " style="fill:none;"/>
         <path d="M 320,320 L 416,320 " style="fill:none;"/>
-        <path d="M 448,320 L 480,320 " style="fill:none;"/>
+        <path d="M 448,320 L 464,320 " style="fill:none;"/>
         <path d="M 288,336 L 320,336 " style="fill:none;"/>
-        <path d="M 488,336 L 624,336 " style="fill:none;"/>
+        <path d="M 472,336 L 624,336 " style="fill:none;"/>
         <path d="M 584,352 L 816,352 " style="fill:none;"/>
         <path d="M 288,368 L 320,368 " style="fill:none;"/>
         <path d="M 320,384 L 400,384 " style="fill:none;"/>
@@ -234,9 +234,9 @@
         <path d="M 608,416 L 624,416 " style="fill:none;"/>
         <path d="M 288,448 L 320,448 " style="fill:none;"/>
         <path d="M 320,464 L 352,464 " style="fill:none;"/>
-        <path d="M 488,464 L 624,464 " style="fill:none;"/>
+        <path d="M 472,464 L 624,464 " style="fill:none;"/>
         <path d="M 288,480 L 320,480 " style="fill:none;"/>
-        <path d="M 488,496 L 624,496 " style="fill:none;"/>
+        <path d="M 472,496 L 624,496 " style="fill:none;"/>
         <path d="M 800,496 L 896,496 " style="fill:none;"/>
         <path d="M 56,512 L 160,512 " style="fill:none;"/>
         <path d="M 176,512 L 208,512 " style="fill:none;"/>
@@ -366,7 +366,7 @@
         <path d="M 536,648  C 542,648 542,632 536,632 " style="fill:none;"/>
         <polygon points="496,624 484,618.4 484,629.6 " style="stroke:none" transform="rotate(180,488,624 )"/>
         <polygon points="488,592 476,586.4 476,597.6 " style="stroke:none" transform="rotate(180,480,592 )"/>
-        <polygon points="488,320 476,314.4 476,325.6 " style="stroke:none" transform="rotate(0,480,320 )"/>
+        <polygon points="472,320 460,314.4 460,325.6 " style="stroke:none" transform="rotate(0,464,320 )"/>
         <polygon points="472,240 460,234.4 460,245.6 " style="stroke:none" transform="rotate(0,464,240 )"/>
         <polygon points="448,704 436,698.4 436,709.6 " style="stroke:none" transform="rotate(90,440,704 )"/>
         <path d="M 440,680  C 446,680 446,664 440,664 " style="fill:none;"/>
@@ -559,6 +559,11 @@
             <text text-anchor="middle" x="184" y="292">o</text>
             <text text-anchor="middle" x="200" y="292">3</text>
             <text text-anchor="middle" x="208" y="292">V</text>
+            <text text-anchor="middle" x="480" y="292">3</text>
+            <text text-anchor="middle" x="496" y="292">L</text>
+            <text text-anchor="middle" x="504" y="292">E</text>
+            <text text-anchor="middle" x="512" y="292">D</text>
+            <text text-anchor="middle" x="520" y="292">s</text>
             <text text-anchor="middle" x="808" y="292">▃</text>
             <text text-anchor="middle" x="816" y="292">▃</text>
             <text text-anchor="middle" x="824" y="292">▃</text>
@@ -584,17 +589,19 @@
             <text text-anchor="middle" x="264" y="324">I</text>
             <text text-anchor="middle" x="272" y="324">1</text>
             <text text-anchor="middle" x="304" y="324">▍</text>
-            <text text-anchor="middle" x="504" y="324">S</text>
-            <text text-anchor="middle" x="512" y="324">e</text>
-            <text text-anchor="middle" x="520" y="324">r</text>
-            <text text-anchor="middle" x="528" y="324">i</text>
-            <text text-anchor="middle" x="536" y="324">a</text>
-            <text text-anchor="middle" x="544" y="324">l</text>
-            <text text-anchor="middle" x="560" y="324">R</text>
-            <text text-anchor="middle" x="568" y="324">S</text>
-            <text text-anchor="middle" x="576" y="324">4</text>
-            <text text-anchor="middle" x="584" y="324">2</text>
+            <text text-anchor="middle" x="488" y="324">▚</text>
+            <text text-anchor="middle" x="496" y="324">▘</text>
+            <text text-anchor="middle" x="512" y="324">S</text>
+            <text text-anchor="middle" x="520" y="324">e</text>
+            <text text-anchor="middle" x="528" y="324">r</text>
+            <text text-anchor="middle" x="536" y="324">i</text>
+            <text text-anchor="middle" x="544" y="324">a</text>
+            <text text-anchor="middle" x="552" y="324">l</text>
+            <text text-anchor="middle" x="568" y="324">R</text>
+            <text text-anchor="middle" x="576" y="324">S</text>
+            <text text-anchor="middle" x="584" y="324">4</text>
             <text text-anchor="middle" x="592" y="324">2</text>
+            <text text-anchor="middle" x="600" y="324">2</text>
             <text text-anchor="middle" x="640" y="324">▀</text>
             <text text-anchor="middle" x="872" y="324">m</text>
             <text text-anchor="middle" x="880" y="324">o</text>
@@ -686,18 +693,19 @@
             <text text-anchor="middle" x="208" y="484">┄</text>
             <text text-anchor="middle" x="216" y="484">.</text>
             <text text-anchor="middle" x="248" y="484">:</text>
-            <text text-anchor="middle" x="480" y="484">-</text>
-            <text text-anchor="middle" x="504" y="484">S</text>
-            <text text-anchor="middle" x="512" y="484">e</text>
-            <text text-anchor="middle" x="520" y="484">r</text>
-            <text text-anchor="middle" x="528" y="484">i</text>
-            <text text-anchor="middle" x="536" y="484">a</text>
-            <text text-anchor="middle" x="544" y="484">l</text>
-            <text text-anchor="middle" x="560" y="484">R</text>
-            <text text-anchor="middle" x="568" y="484">S</text>
-            <text text-anchor="middle" x="576" y="484">4</text>
-            <text text-anchor="middle" x="584" y="484">2</text>
+            <text text-anchor="middle" x="488" y="484">▚</text>
+            <text text-anchor="middle" x="496" y="484">▘</text>
+            <text text-anchor="middle" x="512" y="484">S</text>
+            <text text-anchor="middle" x="520" y="484">e</text>
+            <text text-anchor="middle" x="528" y="484">r</text>
+            <text text-anchor="middle" x="536" y="484">i</text>
+            <text text-anchor="middle" x="544" y="484">a</text>
+            <text text-anchor="middle" x="552" y="484">l</text>
+            <text text-anchor="middle" x="568" y="484">R</text>
+            <text text-anchor="middle" x="576" y="484">S</text>
+            <text text-anchor="middle" x="584" y="484">4</text>
             <text text-anchor="middle" x="592" y="484">2</text>
+            <text text-anchor="middle" x="600" y="484">2</text>
             <text text-anchor="middle" x="640" y="484">▀</text>
             <text text-anchor="middle" x="816" y="484">N</text>
             <text text-anchor="middle" x="824" y="484">M</text>
@@ -783,6 +791,7 @@
             <text text-anchor="middle" x="80" y="628">u</text>
             <text text-anchor="middle" x="88" y="628">s</text>
             <text text-anchor="middle" x="96" y="628">e</text>
+            <text text-anchor="middle" x="416" y="628">▀</text>
             <text text-anchor="middle" x="88" y="644">⏛</text>
             <text text-anchor="middle" x="640" y="644">▀</text>
             <text text-anchor="middle" x="16" y="692">1</text>
@@ -819,6 +828,7 @@
             <text text-anchor="middle" x="712" y="740" style="font-size:20.5px">⬢</text>
             <text text-anchor="middle" x="728" y="740" style="font-size:20.5px">⬢</text>
             <text text-anchor="middle" x="744" y="740" style="font-size:20.5px">⬢</text>
+            <text text-anchor="middle" x="760" y="740" style="font-size:20.5px">⬢</text>
             <text text-anchor="middle" x="64" y="756">-</text>
             <text text-anchor="middle" x="144" y="756">-</text>
             <text text-anchor="middle" x="496" y="756">-</text>
