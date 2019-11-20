@@ -7,10 +7,36 @@ mgrouch <mgrouch@users.noreply.github.com>
 :quick-uri: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
 :encoding: utf-8
 :lang: en
-:title-logo-image: image:../bareboat-necessities-logo.svg[]
+:title-logo-image: image:../../bareboat-necessities-logo.svg[]
+:imagesdir: images
 
 https://github.com/bareboat-necessities/my-bareboat
 
-Bareboat Projects Documentation
+Bareboat Projects Documentation By
 
-== First Project
+image::../../bareboat-necessities-logo.svg[]
+
+== Boat Electronics Project
+
+=== Raspberry Pi 4
+
+image::RaspberryPi_4_Model_B.svg[alt=Raspberry Pi 4 Diagram]
+
+This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license
+
+https://creativecommons.org/licenses/by-sa/4.0/deed.en
+
+=== Boat Computer
+
+image::boat-computer.svg[alt=Boat Computer Diagram]
+
+Raspberry Pi 4 has also WiFi and BlueTooth interfaces:
+
+* 802.11ac/n
+* Bluetooth 5.0
+
+WiFi can be used to set up access to the boat computer from smart phones and tablets
+with additional software.
+
+=== Cockpit Display and Chartplotter
+
