@@ -118,7 +118,7 @@ Make sure you use correct tools for:
 * Crimping
 * Screwing
 
-. Tools
+===== Tools
 
  Drill, Screwdriver, Drill bits, Large hole drill bit, Cutting knife, Caliper
 
