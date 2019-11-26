@@ -19,15 +19,9 @@ image::../../bareboat-necessities-logo.svg[]
 
 == Boat Electronics Project
 
-=== Raspberry Pi 4
-
-image::RaspberryPi_4_Model_B.svg[alt=Raspberry Pi 4 Diagram]
-
-This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license
-
-https://creativecommons.org/licenses/by-sa/4.0/deed.en
-
 === Boat Computer
+
+==== Simple Schematics
 
 image::boat-computer.svg[alt=Boat Computer Diagram]
 
@@ -40,6 +34,8 @@ WiFi can be used to set up access to the boat computer from smart phones and tab
 with additional software.
 
 ==== Enclosure
+
+===== Enclosure Parts
 
 . Case
 
@@ -109,8 +105,9 @@ to the front panel
 *    Input voltage: 12/24V ,Output: 5V/10A
 *    Widely used in automotive, surveillance systems, railway signals, medical equipment, instruments and meters, LED products, LED strips, cable TV and other low power test systems
 
-===== Activities
-. Make sure you use correct tools for:
+===== Assembly Activities
+
+Make sure you use correct tools for:
 
 * Measuring
 * Cutting
@@ -126,7 +123,17 @@ to the front panel
  Drill, Screwdriver, Drill bits, Large hole drill bit, Cutting knife, Caliper
 
 
-==== Computer Parts
+==== Computer and Sensors
+
+===== Raspberry Pi 4
+
+image::RaspberryPi_4_Model_B.svg[alt=Raspberry Pi 4 Diagram]
+
+This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license
+
+https://creativecommons.org/licenses/by-sa/4.0/deed.en
+
+====== Sensors and Parts
 
 . Raspberry Pi 4, 4Gb
 
@@ -152,11 +159,13 @@ to the front panel
 
 . IMU + environmental sensors
 
-. Make sure you use correct tools for the following activities
+===== Assembly Activities
 
-* Screwing
+Make sure you use correct tools for:
+
 * Gluing
 * Soldering
+* Screwing
 
 === Cockpit Display and Chartplotter
 
