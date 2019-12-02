@@ -1,25 +1,38 @@
 = Bareboat Necessities Documentation
 mgrouch <mgrouch@users.noreply.github.com>
-1.0, Nov 18, 2019, Bareboat Projects Documentation
+0.5, Dec 2, 2019, Bareboat Projects Documentation
 :toc:
-:toclevels: 5
+:toclevels: 4
 :sectnums:
-:sectnumlevels: 5
+:sectnumlevels: 3
 :icons: font
 :encoding: utf-8
 :lang: en
-:title-logo-image: image:../../bareboat-necessities-logo.svg[]
+:title-logo-image: image:../../bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 :imagesdir: images
 
 https://github.com/bareboat-necessities/my-bareboat
 
-Bareboat Projects Documentation By
+Bareboat Projects Documentation by:
 
 image::../../bareboat-necessities-logo.svg[]
 
 == Boat Electronics Project
 
+This document describes DIY project of building a boat computer and cockpit display
+from easily obtainable components. The computer will include number of sensors for:
+
+* GPS Location
+* Orientation
+* AIS radar
+* Environment temperature, barometric pressure, humidity
+* Connections to external boat instruments such as wind, depth, speed
+* Possibility of connecting to auto pilot
+* Other NMEA devices
+
 === Boat Computer
+
+The computer will run on Raspberry Pi with OpenPlotter installed.
 
 ==== Simple Schematics
 
@@ -38,35 +51,89 @@ with additional software.
 ===== Enclosure Parts
 
 . Case
-
- Brand: SZOMK,  Model: AK-D-09, IP54 protection, plastic box for PCB design instrument.
- Dimentions exterior: W 230mm, D 210mm, H 86mm
-
- Brand (from inside markings): BAHAR
-
- Model: BDH 20014-A2
-
++
+Brand: SZOMK,  Model: AK-D-09, IP54 protection, plastic box for PCB design instrument. Black.
+Dimentions exterior: W 230mm, D 210mm, H 86mm
++
+Brand (from inside markings): BAHAR
++
+Model: BDH 20014-A2
++
+https://szomk.en.alibaba.com/product/60455131585-213058437/Customized_case_box_enclosure_for_gsm_modem_plastic_enclosures.html
++
  Cost: $17.10, Delivery: $13, Source: Alibaba
 
 . Plastic sheets
-
- ABS Black Plastic Sheets Size 12" x 12", 0.118"-1/8" thick, 2-Pack, 1 Side Textured, Black
-
++
+ABS Black Plastic Sheets Size 12" x 12", 0.118"-1/8" thick, 2-Pack, 1 Side Textured, Black
++
+https://www.ebay.com/itm/ABS-Black-Plastic-Sheets-You-Pick-The-Size-1-2-4-8-Pack-Options-1-Side-Textured/142746168237
++
  Cost: $19.20, Source: Ebay
 
-. USB 2.0 / HDMI
+. 12v to 5v step-down converter
++
+TOBSUN EA50-5V DC 12V 24V to DC 5V 10A 50W Converter Regulator 5V 50W Power Supply Step Down Module Transformer
++
+*    Convert unstable 12/24V DC power supply into stable 5V 10A DC power output
+*    Over-voltage, over-current, over-temperature, short-circuit auto protection, and can return to normal conditions in the work
+*    Essential for car audio system or other 5V car products (particularly useful in vehicles with 24V power supply)
+*    Input voltage: 12/24V, Output: 5V/10A
+*    Widely used in automotive, surveillance systems, railway signals, medical equipment, instruments and meters, LED products, LED strips, cable TV and other low power test systems
++
+ Cost: $9.60, Source: Amazon
 
- USB 2.0 HDMI Mount Cable – USB Extension Flush, Dash, Panel Mount Cable,
- for Car, Boat, Motorcycle and More (3.3FT/1m)
+. Screws, Nuts
+
+. Stand-offs
+
+. Cable ties
+
+===== Front Panel
+
+image::front-panel.svg[alt=Front Panel Diagram]
+
+. USB 2.0 / HDMI
++
+USB 2.0 HDMI Mount Cable – USB Extension Flush, Dash, Panel Mount Cable,
+for Car, Boat, Motorcycle and More (3.3FT/1m)
 
  Cost: $10, Source: Amazon
 
 . USB 3.0 / AUX
-
- USB 3.0 & Car Mount Flush Cable + USB3.0 AUX Extension Dash Panel Waterproof Mount Cable
- For Car Boat and Motorcycle - 3ft
++
+USB 3.0 & Car Mount Flush Cable + USB3.0 AUX Extension Dash Panel Waterproof Mount Cable
+For Car Boat and Motorcycle - 3ft
 
  Cost: $10, Source: Amazon
+
+. Panel, etc
++
+Dual USB Socket Charger 2.1A&2.1A + LED Voltmeter + 12V Power Outlet + 5 Gang ON-Off Toggle Switch
+Multi-Functions Panel for Car Boat Marine RV Truck Camper Vehicles GPS Mobiles
+
+ Cost: $34, Source: Amazon
++
+Used for panel parts: Voltmeter, Switches, Fuses, 12v DC Wires
+
+. Fiber optic light pipes with lenses for panel mount for transfer of inside LED indicators light
+to the front panel
++
+SMFLP12.0 492-1291-ND LIGHT PIPE CLEAR FLEXIBLE 12" (10 pack)
++
+Brand: Bivar Inc
+
+ Cost: $28, Delivery: $9, Source: DigiKey
+
+. Fuse Box for Panel Mount
++
+Pack of 10 AC 15A 125V Black Electrical Panel Mounted Screw Cap Fuse Holder
++
+https://www.amazon.com/gp/product/B012CTCWES/
+
+ Cost: $6.00,  Source: Amazon
+
+===== Back Panel
 
 . RJ45
 
@@ -75,35 +142,26 @@ with additional software.
 
  Cost: $11.50, Source: Amazon
 
-. Panel, etc
+. Terminal Block for NMEA 0183
++
+Brand Name: QSU
++
+Screw Terminal Block Kit Long Pins 5 mm Pitch 2, 3, 4 Pole (40 pcs)
++
+https://www.amazon.com/gp/product/B07RTHD45H
 
- Dual USB Socket Charger 2.1A&2.1A + LED Voltmeter + 12V Power Outlet + 5 Gang ON-Off Toggle Switch
- Multi-Functions Panel for Car Boat Marine RV Truck Camper Vehicles GPS Mobiles
+ Cost: $9.50, Source: Amazon
 
- Cost: $34, Source: Amazon
+. USB 2.0 Panel Mount
++
+USB2.0 IP67 Waterproof Connector Industrial Standard Double Head Coupler Adapter Female to Female Socket
+Plug Panel Mount with Waterproof/Dust Cap, 2pcs
++
+https://www.amazon.com/gp/product/B07RPW5XGB/
 
- Used for panel parts: Voltmeter, Switches, Fuses, 12v DC Wires
+ Cost: $13.00 for 2, Source: Amazon
 
-. Fiber optic light pipes with lenses for panel mount for transfer of inside LED indicators light
-to the front panel
 
- SMFLP12.0 492-1291-ND LIGHT PIPE CLEAR FLEXIBLE 12" (10 pack)
-
- Brand: Bivar Inc
-
- Cost: $28, Delivery: $9, Source: DigiKey
-
-. 12v to 5v step-down converter
-
- TOBSUN EA50-5V DC 12V 24V to DC 5V 10A 50W Converter Regulator 5V 50W Power Supply Step Down Module Transformer
-
- Cost: $9.60, Source: Amazon
-
-*    Convert unstable 12/24V DC power supply into stable 5V 10A DC power output
-*    Over-voltage, over-current, over-temperature, short-circuit auto protection, and can return to normal conditions in the work
-*    Essential for car audio system or other 5V car products (particularly useful in vehicles with 24V power supply)
-*    Input voltage: 12/24V ,Output: 5V/10A
-*    Widely used in automotive, surveillance systems, railway signals, medical equipment, instruments and meters, LED products, LED strips, cable TV and other low power test systems
 
 ===== Assembly Activities
 
@@ -170,3 +228,9 @@ Make sure you use correct tools for:
 === Cockpit Display and Chartplotter
 
 image::cockpit-display.svg[alt=Cockpit Display Diagram]
+
+. Female to Female HDMI adapter
++
+https://www.amazon.com/dp/B07K6HKD8S/
+
+ Cost: $4.75, Source Amazon
