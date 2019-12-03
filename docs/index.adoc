@@ -404,7 +404,7 @@ https://creativecommons.org/licenses/by-sa/4.0/deed.en
 
 . Raspberry Pi 4, 4Gb
 
-. Heat sinks and Cooling fan
+. Heat sinks and Cooling fan, Case
 
 +
 Acrylic Case for Raspberry Pi 4 Model B & Raspberry Pi 3 Model B+, Raspberry Pi Case with Cooling Fan and
@@ -426,7 +426,15 @@ https://www.amazon.com/dp/B012DZ4RJY
  Cost: $35, Source: Amazon
 
 
-. FTDI Serial to USB (2)
+. FTDI Serial to USB (2pcs)
+
++
+DSD TECH SH-U11 USB to RS485 RS422 Converter with FTDI FT232 Chip Compatible with Windows 10, 8, 7, XP and Mac OS X
+
++
+https://www.amazon.com/dp/B07B416CPK
+
+ Cost: $34, Source: Amazon
 
 . SSD Drive
 
