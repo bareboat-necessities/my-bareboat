@@ -412,9 +412,16 @@ https://www.amazon.com/dp/B07T3DRB1C
 
  Cost: $9, Source: Amazon
 
-. Pi Case for mounting cooling fan
-
 . USB Hub
+
++
+USBGear 7-Port USB 3.0 Charging and SuperSpeed Mountable Data Hub
+
++
+https://www.amazon.com/dp/B012DZ4RJY
+
+ Cost: $35, Source: Amazon
+
 
 . FTDI Serial to USB (2)
 
