@@ -13,14 +13,12 @@ mgrouch <mgrouch@users.noreply.github.com>
 :icons: font
 :toc-placement!:
 
-Bareboat Projects Documentation by:
-
 image::../../bareboat-necessities-logo.svg[Bareboat Necessities Logo]
-
-toc::[]
 
 https://github.com/bareboat-necessities/my-bareboat
 
+
+toc::[]
 
 == Boat Electronics Project
 
