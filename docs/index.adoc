@@ -397,10 +397,18 @@ image::cockpit-display.svg[alt=Cockpit Display Diagram]
 * Supports bandwidth up to 18Gbps
 * backwards compatible with earlier versions
 
+
 +
 https://www.amazon.com/dp/B07K6HKD8S
 
  Cost: $4.75, Source: Amazon
+
+. Standard Horizon MMB-97 Flush Mount Kit for Explorer GX1600/GX1700
+
++
+https://www.amazon.com/dp/B004NZOV8A
+
+ Cost: $16.50, Source: Amazon
 
 . AcuRite 02020 Portable Lightning Detector
 +
@@ -408,7 +416,7 @@ https://www.amazon.com/dp/B07K6HKD8S
 * Warning light, audible alarm and text alerts
 
 +
-https://www.amazon.com/gp/product/B00EO1H3X8
+https://www.amazon.com/dp/B00EO1H3X8
 
  Cost: $30, Source: Amazon
 
