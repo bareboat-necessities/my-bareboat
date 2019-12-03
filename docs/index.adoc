@@ -273,3 +273,49 @@ image::cockpit-display.svg[alt=Cockpit Display Diagram]
 https://www.amazon.com/dp/B07K6HKD8S/
 
  Cost: $4.75, Source Amazon
+
+=== Boat WiFi Network
+
+. WiFi Router
++
+GL.iNet GL-AR750 Travel AC Router, 300Mbps(2.4G)+433Mbps(5G) Wi-Fi, 128MB RAM, MicroSD Storage Support, OpenWrt/LEDE pre-Installed, Power Adapter and Cables Included
++
+* DUAL BAND AC ROUTER: Simultaneous dual band with wireless speed 300Mbps(2.4G)+433Mbps(5G). Convert a public network(wired/wireless) to a private Wi-Fi for secure surfing.
+* OPEN SOURCE & PROGRAMMABLE: OpenWrt/LEDE pre-installed, backed by software repository.
+* OPENVPN CLIENT: OpenVPN client pre-installed, compatible with 25+ VPN service providers.
+* LARGER STORAGE & EXTENSIBILITY: 128MB RAM, 16MB NOR Flash, up to 128GB MicroSD slot, USB 2.0 port, three Ethernet ports, and optional PoE module (sold separately).
+* PACKAGE CONTENTS: GL-AR750 travel router (1-year Warranty), Power adapter, USB cable, Ethernet cable and User Manual. Please update the latest firmware at the following link before using: https://dl.gl-inet.com/firmware/ar750/v1/
++
+https://www.amazon.com/gp/product/B07712LKJM
+
+ Cost: $45.00, Source: Amazon
+
+. Waterproof Fiberglass WiFi Antenna
++
+Outdoor Omni Directional Antenna Fiberglass 2.4GHz 8dBi N Female Connector for Cell Phone Signal Booster WiFi Router
++
+* Complies with all 802.11n/b/g (2.4GHz) products.
+* High Power,high gain outdoor wifi antenna.
+* Extend coverage of your wireless network in all directions
+* Waterproof,striking resistant,anti-corrosion.
+* Frequency range (MHz): 2400-2500
+* Bandwidth (Mhz): 83
+* Gain (dBi): 8
+* Half-power beam width(°): H:360, V:12
+* VSVR: ≤1.5
+* Input Impedance (Ω): 50
+* Polarization: Vertical
+* Maximum input power (W): 100
+* Lightning protection: DC Ground
+* Input connector type: N Female
+* Dimensions (mm): 20 * 550mm/0.8"x22"(Diameter * Length)
+* Weight (lb): 0.7
+* Operating temperature (℉)：-40℉ - 140℉/-40℃-60℃/
+* Rated Wind Velocity (m/s): 60
+* Radome color: Gray
+* Mounting way: Pole-holding
+* Material: Fiberglass
++
+https://www.amazon.com/gp/product/B07PG8RPSL/
+
+ Cost: $36.00, Source: Amazon
