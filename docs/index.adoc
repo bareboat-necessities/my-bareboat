@@ -501,6 +501,15 @@ https://www.amazon.com/dp/B008ZNWOYY
 
  Cost: $3, Source: Amazon
 
+. Argonaut M7-gen2 + Water Sealed back
+
++
+https://www.argonautcomputer.com/products/m7-smart-touch-monitor
+
+ Cost: $518, Source: argonautcomputer.com
+
+. DC Wire to cockpit
+
 . Female to Female HDMI adapter
 +
 * Compatible with HDMI standard (4K video at 60 Hz, 2160p, 48-bit/px color depth)
