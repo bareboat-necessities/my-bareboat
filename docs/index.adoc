@@ -227,7 +227,7 @@ for Antennas Wireless LAN Devices Coaxial Cable Pack of 2
 * Connector Material: Pure brass with Great connectivity (Not Alloy), Surface treatment: Gold-plated, Impedance: 50ohm, Low-loss
 * Package included : 2 pieces SMA Female to Female bulkhead adaptors
 +
-image::https://images-na.ssl-images-amazon.com/images/I/51fq0%2BRauyL.jpg[width=160,height=120]
+image::https://images-na.ssl-images-amazon.com/images/I/51fq0%2BRauyL.jpg[width=160]
 +
 https://www.amazon.com/gp/product/B07FKPJ4QQ
 +
@@ -274,7 +274,7 @@ https://www.amazon.com/gp/product/B07RPW5XGB/
 * Center Frequency: 1575.42 MHz(GPS); 1561 MHz(BD)
 * Body Size: 96x128mm / 3.78x5.1 inch (Max D*L)
 +
-image::https://images-na.ssl-images-amazon.com/images/I/51bpSkjUDyL._SL1100_.jpg[width=160,height=120]
+image::https://images-na.ssl-images-amazon.com/images/I/51bpSkjUDyL._SL1100_.jpg[width=160]
 +
 https://www.amazon.com/gp/product/B07ZBVG1PK
 
