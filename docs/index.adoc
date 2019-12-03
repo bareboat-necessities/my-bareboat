@@ -421,7 +421,9 @@ https://creativecommons.org/licenses/by-sa/4.0/deed.en
 
 ====== Sensors and Parts
 
-. Raspberry Pi 4, 4Gb
+. Raspberry Pi 4, 4Gb + Power Supply
+
+ Cost: $65, Source: Amazon
 
 . Heat sinks and Cooling fan, Case
 
@@ -458,6 +460,8 @@ https://www.amazon.com/dp/B07B416CPK
 . SSD Drive
 
 . SD Card
+
+ Cost: $25, Source: Amazon
 
 . dAISy AIS + BNC Adapter
 
