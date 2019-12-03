@@ -30,15 +30,17 @@ from easily obtainable components. The computer includes:
 * Optional autopilot integration
 * Other NMEA devices
 * Optional WiFi hotspot and router with WiFi extender and long range waterproof WiFi antenna
-* Optional air mouse with wireless keyboard and touchpad
+* Optional air mouse with a wireless keyboard and a touchpad
 * Lightning EMI sensor and alarm
 * RTL-SDR for weather fax, AIS, etc
+
+The computer is connected to the waterproof HDMI touchscreen in
+the cockpit.
 
 === Boat Computer
 
 The computer runs on Raspberry Pi (Raspbian Linux) with OpenPlotter 2.0 installed. The computer will reside below deck so
-it's not going to be waterproof. The computer is connected to the waterproof HDMI touchscreen in
-the cockpit. The touchscreen displays OpenPlotter UI with OpenCPN chart plotter and dashboards as well as
+it's not going to be waterproof. The touchscreen displays OpenPlotter UI with OpenCPN chart plotter and dashboards as well as
 general Linux UI.
 
 Front View
