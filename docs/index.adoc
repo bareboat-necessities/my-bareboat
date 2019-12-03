@@ -262,8 +262,8 @@ GPS Boat Antenna Compatible with Beidou 30dB SMA Male External Navigation Receiv
 +
 * Connector: SMA Male
 * Voltage: 3-5 Volt
-* LNA Gain(Without Cable): 30dB
-* Operating Temperature(Deg.C): -45~+85
+* LNA Gain (Without Cable): 30dB
+* Operating Temperature (Deg.C): -45~+85
 * Center Frequency: 1575.42 MHz(GPS); 1561 MHz(BD)
 
 +
@@ -338,6 +338,10 @@ Make sure you use correct tools for:
 image::cockpit-display.svg[alt=Cockpit Display Diagram]
 
 . Female to Female HDMI adapter
++
+* Compatible with HDMI standard (4K video at 60 Hz, 2160p, 48-bit/px color depth)
+* Supports bandwidth up to 18Gbps
+* backwards compatible with earlier versions
 
 +
 https://www.amazon.com/dp/B07K6HKD8S
@@ -359,3 +363,16 @@ https://www.amazon.com/dp/B07712LKJM
 
  Cost: $45.00, Source: Amazon
 
+. Long Range WiFi Antenna
++
+Lysignal Outdoor Omni Directional Antenna Fiberglass 2.4GHz 8dBi N Female Connector for Cell
+Phone Signal Booster, WiFi Router
++
+* Complies with all 802.11n/b/g (2.4GHz) products
+* High power, high gain outdoor wifi antenna. Extend coverage of a wireless network in all directions
+* Waterproof, striking resistant, anti-corrosion
+
++
+https://www.amazon.com/dp/B07PG8RPSL
+
+ Cost: $36.00, Source: Amazon
