@@ -429,6 +429,13 @@ https://www.amazon.com/dp/B011HVUEME
  Cost: $30, Source: Amazon
 
 . IMU + environmental sensors
++
+BerryGPS-IMUv3 - GPS and 10DOF for The Raspberry Pi - Accelerometer, Gyroscope, Magnetometer and Barometric/Altitude Sensor
+
++
+https://www.amazon.com/dp/B072MNBC9M
+
+ Cost: $53.50, Source: Amazon
 
 ===== Assembly Activities
 
