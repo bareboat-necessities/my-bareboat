@@ -159,6 +159,8 @@ https://www.amazon.com/dp/B012G6E62I
 
 . Cable ties
 
+ Cost: 5, Source: Homedepot
+
 ===== Front Panel
 
 image::front-panel.svg[alt=Front Panel Diagram]
