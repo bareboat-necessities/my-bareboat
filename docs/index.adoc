@@ -381,35 +381,3 @@ https://www.amazon.com/dp/B07712LKJM
 
  Cost: $45.00, Source: Amazon
 
-. Waterproof Fiberglass WiFi Antenna
-+
-Outdoor Omni Directional Antenna Fiberglass 2.4GHz 8dBi N Female Connector for Cell Phone Signal Booster WiFi Router
-+
-* Complies with all 802.11n/b/g (2.4GHz) products.
-* High Power,high gain outdoor wifi antenna.
-* Extend coverage of your wireless network in all directions
-* Waterproof,striking resistant,anti-corrosion.
-* Frequency range (MHz): 2400-2500
-* Bandwidth (Mhz): 83
-* Gain (dBi): 8
-* Half-power beam width(°): H:360, V:12
-* VSVR: ≤1.5
-* Input Impedance (Ω): 50
-* Polarization: Vertical
-* Maximum input power (W): 100
-* Lightning protection: DC Ground
-* Input connector type: N Female
-* Dimensions (mm): 20 * 550mm/0.8"x22"(Diameter * Length)
-* Weight (lb): 0.7
-* Operating temperature (℉)：-40℉ - 140℉/-40℃-60℃/
-* Rated Wind Velocity (m/s): 60
-* Radome color: Gray
-* Mounting way: Pole-holding
-* Material: Fiberglass
-+
-This is a cheap antenna. Let's see if we can get 1 mile range out of it. More expensive options would be
-Ubiquiti bullet + antenna connected via PoE ($120 at least).
-+
-https://www.amazon.com/dp/B07PG8RPSL
-
- Cost: $36.00, Source: Amazon
