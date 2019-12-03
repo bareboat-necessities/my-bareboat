@@ -19,8 +19,8 @@ image::../../bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 
 == Boat Electronics Project
 
-This document describes a DIY project of building a boat computer and cockpit display
-from easily obtainable components. The computer will include number of sensors for:
+This document describes a DIY project of building a boat computer and a cockpit display
+from easily obtainable components. The computer includes a number of sensors for:
 
 * GPS Location
 * Orientation (gyroscope, compass via IMU)
@@ -34,19 +34,17 @@ from easily obtainable components. The computer will include number of sensors f
 * Lightning EMI sensor
 * RTL-SDR for weather fax, etc
 
-
-
 === Boat Computer
 
-The computer will run on Raspberry Pi with OpenPlotter installed. The computer will reside below deck so
-it's not going to be waterproof. The computer will be connected to a waterproof HDMI touchscreen in
+The computer runs on Raspberry Pi (Raspbian Linux) with OpenPlotter installed. The computer will reside below deck so
+it's not going to be waterproof. The computer will be connected to the waterproof HDMI touchscreen in
 the cockpit. The touchscreen will display OpenPlotter UI with OpenCPN ChartPlotter and Dashboards.
 
 Front View
 
 image::computer-front-panel.jpg[Front View]
 
-Front panel with have heavy duty panel mount interfaces for:
+The front panel interfaces:
 
 * 1 USB 3.0 data port
 * 1 USB 2.0 data port
@@ -57,17 +55,16 @@ Front panel with have heavy duty panel mount interfaces for:
 * On/Off power switch for the computer
 * On/Off power switch for cockpit instruments
 
-
-Back panel:
+The back panel interfaces:
 
 * 1 Ethernet port (for the WiFi router)
 * 1 USB 2.0 port for GPS (or something else)
 * 2 NMEA 0183 ports
-* DC power cords mounted inside waterproof glands for 12v boat and cockpit connections
-* HDMI and USB 3.0 connectors to cockpit display and touchscreen
+* 2 DC power 2-wire cords mounted inside waterproof glands for 12v boat and cockpit connections
+* HDMI and USB 3.0 connectors to the cockpit display and touchscreen
 * RF connector for AIS antenna
 * RF connector for RTL-SDR antenna
-* RF connector for secondary GPS
+* RF connector for a secondary GPS
 
 Inside View
 
@@ -114,11 +111,11 @@ https://www.ebay.com/itm/ABS-Black-Plastic-Sheets-You-Pick-The-Size-1-2-4-8-Pack
 +
 TOBSUN EA50-5V DC 12V 24V to DC 5V 10A 50W Converter Regulator 5V 50W Power Supply Step Down Module Transformer
 +
-*    Convert unstable 12/24V DC power supply into stable 5V 10A DC power output
-*    Over-voltage, over-current, over-temperature, short-circuit auto protection, and can return to normal conditions in the work
-*    Essential for car audio system or other 5V car products (particularly useful in vehicles with 24V power supply)
-*    Input voltage: 12/24V, Output: 5V/10A
-*    Widely used in automotive, surveillance systems, railway signals, medical equipment, instruments and meters, LED products, LED strips, cable TV and other low power test systems
+* Convert unstable 12/24V DC power supply into stable 5V 10A DC power output
+* Over-voltage, over-current, over-temperature, short-circuit auto protection, and can return to normal conditions in the work
+* Essential for car audio system or other 5V car products (particularly useful in vehicles with 24V power supply)
+* Input voltage: 12/24V, Output: 5V/10A
+* Widely used in automotive, surveillance systems, railway signals, medical equipment, instruments and meters, LED products, LED strips, cable TV and other low power test systems
 +
  Cost: $9.60, Source: Amazon
 
