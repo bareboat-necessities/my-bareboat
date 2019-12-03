@@ -20,25 +20,26 @@ image::../../bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 == Boat Electronics Project
 
 This document describes a DIY project of building a boat computer and a cockpit display
-from easily obtainable components. The computer includes a number of sensors for:
+from easily obtainable components. The computer includes:
 
-* GPS Location
-* Orientation (gyroscope, compass via IMU)
+* GPS receiver
+* Sensors for orientation (gyroscope, compass via IMU)
 * AIS radar
-* Environment temperature, barometric pressure, humidity
-* Connections to external boat instruments such as wind, depth, speed
-* Possibility of connecting to auto pilot
+* Environment temperature, barometric pressure, humidity sensors
+* Connections to external boat instruments such as wind, depth, speed via NMEA 0183 serial ports
+* Optional autopilot integration
 * Other NMEA devices
-* Optional WiFi hotspot and router with WiFi extender and long range WiFi antenna
+* Optional WiFi hotspot and router with WiFi extender and long range waterproof WiFi antenna
 * Optional air mouse with wireless keyboard and touchpad
-* Lightning EMI sensor
-* RTL-SDR for weather fax, etc
+* Lightning EMI sensor and alarm
+* RTL-SDR for weather fax, AIS, etc
 
 === Boat Computer
 
-The computer runs on Raspberry Pi (Raspbian Linux) with OpenPlotter installed. The computer will reside below deck so
-it's not going to be waterproof. The computer will be connected to the waterproof HDMI touchscreen in
-the cockpit. The touchscreen will display OpenPlotter UI with OpenCPN ChartPlotter and Dashboards.
+The computer runs on Raspberry Pi (Raspbian Linux) with OpenPlotter 2.0 installed. The computer will reside below deck so
+it's not going to be waterproof. The computer is connected to the waterproof HDMI touchscreen in
+the cockpit. The touchscreen displays OpenPlotter UI with OpenCPN chart plotter and dashboards as well as
+general Linux UI.
 
 Front View
 
@@ -50,14 +51,14 @@ The front panel interfaces:
 * 1 USB 2.0 data port
 * 1 HDMI port
 * 1 AUX audio port
-* Status indicators
+* Status indicators via fiber optics light pipes
 * Fuse Box (Panel Mount?)
 * On/Off power switch for the computer
 * On/Off power switch for cockpit instruments
 
 The back panel interfaces:
 
-* 1 Ethernet port (for the WiFi router)
+* 1 Ethernet port 1Gbit (for the WiFi router)
 * 1 USB 2.0 port for GPS (or something else)
 * 2 NMEA 0183 ports
 * 2 DC power 2-wire cords mounted inside waterproof glands for 12v boat and cockpit connections
@@ -69,6 +70,10 @@ The back panel interfaces:
 Inside View
 
 image::computer-internals.jpg[Inside View]
+
+On the picture 7 Port powered USB hub, dAISy AIS, Raspberry Pi 4 with a cooling fan and heat sinks,
+Serial to USB stick (with FTDI chipset), SSD, RTL-SDR stick. 12v to 5v stepdown converter is located below this layer inside
+the housing box and is connected to the front panel via a fuse and a switch on a front panel.
 
 ==== Simple Schematics
 
