@@ -11,13 +11,16 @@ mgrouch <mgrouch@users.noreply.github.com>
 :title-logo-image: image:../../bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 :imagesdir: images
 :icons: font
-:stylesheet: mystyles.css
-
-https://github.com/bareboat-necessities/my-bareboat
+:toc-placement!:
 
 Bareboat Projects Documentation by:
 
 image::../../bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+
+toc::[]
+
+https://github.com/bareboat-necessities/my-bareboat
+
 
 == Boat Electronics Project
 
