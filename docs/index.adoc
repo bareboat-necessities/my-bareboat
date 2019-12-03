@@ -166,7 +166,7 @@ SAE Connector DC Power Extension Cable 16 AWG Automotive Battery Quick Disconnec
 * Easy To Use: Standard SAE type plug, Fits most battery chargers with SAE quick release connectors, Tinned ends is easy to connect and weld.
 * Package: 6 pcs 1.2 Ft SAE pigtail wire power cable and 6 pcs dust cap.
 +
-https://amzn.com/B07MP9MYKP
+https://www.amazon.com/dp/B07MP9MYKP
 +
  Cost: $13, Source: Amazon
 
@@ -212,7 +212,7 @@ Pack of 10 AC 15A 125V Black Electrical Panel Mounted Screw Cap Fuse Holder
 * With screw cap and solder-lug terminals
 * Package content : 10 x panel mount fuse holder
 +
-https://amzn.com/B012CTCWES
+https://www.amazon.com/dp/B012CTCWES
 
  Cost: $6.00,  Source: Amazon
 
@@ -228,7 +228,7 @@ SMA Male to UHF PL-259 Male RG316 RF Coaxial Coax Cable 1 ft
 * Allows Base & Mobile Antennas to connect to hand-held Antenna Jack
 * Package Includes: 1 x SMA Male to UHF PL-259 Male Coax Cable
 +
-https://amzn.com/B07TF6LZC7
+https://www.amazon.com/dp/B07TF6LZC7
 
  Cost: $11.30, Source: Amazon
 
@@ -243,7 +243,7 @@ for Antennas Wireless LAN Devices Coaxial Cable Pack of 2
 * Connector Material: Pure brass with Great connectivity (Not Alloy), Surface treatment: Gold-plated, Impedance: 50ohm, Low-loss
 * Package included : 2 pieces SMA Female to Female bulkhead adaptors
 +
-https://amzn.com/B07FKPJ4QQ
+https://www.amazon.com/dp/B07FKPJ4QQ
 +
  Cost: $6.00, Source: Amazon
 
@@ -260,7 +260,7 @@ Brand Name: QSU
 +
 Screw Terminal Block Kit Long Pins 5 mm Pitch 2, 3, 4 Pole (40 pcs)
 +
-https://amzn.com/B07RTHD45H
+https://www.amazon.com/dp/B07RTHD45H
 
  Cost: $9.50, Source: Amazon
 
@@ -269,7 +269,7 @@ https://amzn.com/B07RTHD45H
 USB2.0 IP67 Waterproof Connector Industrial Standard Double Head Coupler Adapter Female to Female Socket
 Plug Panel Mount with Waterproof/Dust Cap, 2pcs
 +
-https://amzn.com/B07RPW5XGB
+https://www.amazon.com/dp/B07RPW5XGB
 
  Cost: $13.00 for 2, Source: Amazon
 
@@ -288,7 +288,7 @@ GPS Boat Antenna Compatible with Beidou 30dB SMA Male External Navigation Receiv
 * Center Frequency: 1575.42 MHz(GPS); 1561 MHz(BD)
 * Body Size: 96x128mm / 3.78x5.1 inch (Max D*L)
 +
-https://amzn.com/B07ZBVG1PK
+https://www.amazon.com/dp/B07ZBVG1PK
 
  Cost: $16.25, Source: Amazon
 
@@ -360,7 +360,7 @@ image::cockpit-display.svg[alt=Cockpit Display Diagram]
 
 . Female to Female HDMI adapter
 +
-https://amzn.com/B07K6HKD8S
+https://www.amazon.com/dp/B07K6HKD8S
 
  Cost: $4.75, Source Amazon
 
@@ -377,7 +377,7 @@ GL.iNet GL-AR750 Travel AC Router, 300Mbps(2.4G)+433Mbps(5G) Wi-Fi, 128MB RAM, M
 * PACKAGE CONTENTS: GL-AR750 travel router (1-year Warranty), Power adapter, USB cable, Ethernet cable and User Manual.
 * Please update the latest firmware at the following link before using: https://dl.gl-inet.com/firmware/ar750/v1/
 +
-https://amzn.com/B07712LKJM
+https://www.amazon.com/dp/B07712LKJM
 
  Cost: $45.00, Source: Amazon
 
@@ -410,6 +410,6 @@ Outdoor Omni Directional Antenna Fiberglass 2.4GHz 8dBi N Female Connector for C
 This is a cheap antenna. Let's see if we can get 1 mile range out of it. More expensive options would be
 Ubiquiti bullet + antenna connected via PoE ($120 at least).
 +
-https://amzn.com/B07PG8RPSL
+https://www.amazon.com/dp/B07PG8RPSL
 
  Cost: $36.00, Source: Amazon
