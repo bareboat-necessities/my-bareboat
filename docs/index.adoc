@@ -203,7 +203,7 @@ Pack of 10 AC 15A 125V Black Electrical Panel Mounted Screw Cap Fuse Holder
 +
 https://www.amazon.com/dp/B012CTCWES
 
- Cost: $6.00,  Source: Amazon
+ Cost: $6,  Source: Amazon
 
 ===== Back Panel
 
@@ -230,7 +230,7 @@ for Antennas Wireless LAN Devices Coaxial Cable, Pack of 2
 +
 https://www.amazon.com/dp/B07FKPJ4QQ
 
- Cost: $6.00, Source: Amazon
+ Cost: $6, Source: Amazon
 
 . AIS Antenna panel connector
 +
@@ -278,7 +278,7 @@ Plug Panel Mount with Waterproof/Dust Cap, 2pcs
 +
 https://www.amazon.com/dp/B07RPW5XGB
 
- Cost: $13.00 for 2, Source: Amazon
+ Cost: $13 for 2, Source: Amazon
 
 . Waterproof Cable Glands
 +
@@ -288,6 +288,18 @@ https://www.amazon.com/dp/B07RPW5XGB
 https://www.amazon.com/dp/B07TSC34D5
 
  Cost: $11, Source: Amazon
+
+. GlobalSat BU-353-S4 USB GPS Receiver (Black)
+
++
+* 48-Channel All-In-View Tracking
+* SiRF Star IV GPS Chipset
+* WAAS/ EGNOS Support
+
++
+https://www.amazon.com/dp/B008200LHW
+
+ Cost: $30, Source: Amazon
 
 . Optional GPS Antenna
 +
@@ -389,7 +401,7 @@ https://www.amazon.com/dp/B07K6HKD8S
 +
 https://www.amazon.com/gp/product/B00EO1H3X8
 
- Cost: $30.00, Source: Amazon
+ Cost: $30, Source: Amazon
 
 === Boat WiFi Network
 
@@ -404,7 +416,7 @@ GL.iNet GL-AR750 Travel AC Router, 300Mbps(2.4G)+433Mbps(5G) Wi-Fi, 128MB RAM, M
 +
 https://www.amazon.com/dp/B07712LKJM
 
- Cost: $45.00, Source: Amazon
+ Cost: $45, Source: Amazon
 
 . Long Range WiFi Antenna
 +
@@ -418,4 +430,4 @@ Phone Signal Booster, WiFi Router
 +
 https://www.amazon.com/dp/B07PG8RPSL
 
- Cost: $36.00, Source: Amazon
+ Cost: $36, Source: Amazon
