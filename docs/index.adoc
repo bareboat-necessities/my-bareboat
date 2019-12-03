@@ -177,8 +177,11 @@ for Boat, Car and Motorcycle - 3ft
 
 . Panel, etc
 +
-Dual USB Socket Charger 2.1A&2.1A + LED Voltmeter + 12V Power Outlet + 5 Gang ON-Off Toggle Switch
+Cllena Dual USB Socket Charger 2.1A&2.1A + LED Voltmeter + 12V Power Outlet + 5 Gang ON-Off Toggle Switch
 Multi-Functions Panel for Car Boat Marine RV Truck Camper Vehicles GPS Mobiles
+
++
+https://www.amazon.com/dp/B0785LZQLK
 
  Cost: $34, Source: Amazon
 +
@@ -189,7 +192,12 @@ to the front panel
 +
 SMFLP12.0 492-1291-ND LIGHT PIPE CLEAR FLEXIBLE 12" (10 pack)
 +
+* 4mm Board/Panel Mount
++
 Brand: Bivar Inc
+
++
+https://www.digikey.com/product-detail/en/bivar-inc/SMFLP12.0/492-1291-ND/2407239
 
  Cost: $28, Delivery: $9, Source: DigiKey
 
