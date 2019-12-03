@@ -73,9 +73,10 @@ Inside View
 
 image::computer-internals.jpg[Inside View]
 
-On the picture 7 Port powered USB hub, dAISy AIS, Raspberry Pi 4 with a cooling fan and heat sinks,
-Serial to USB stick (with FTDI chipset), SSD, RTL-SDR stick. 12v to 5v stepdown converter is located below this layer inside
-the housing box and is connected to the front panel via a fuse and a switch on a front panel.
+On the picture 7-Port powered USB 3.0 hub, dAISy AIS, Raspberry Pi 4 with a cooling fan and heat sinks,
+serial-to-USB stick (with the chipset from FTDI), SSD, RTL-SDR RF stick. 12v to 5v step-down converter is
+located below this layer inside the housing box and is connected to the front panel via a fuse and
+a switch on the front panel.
 
 ==== Simple Schematics
 
