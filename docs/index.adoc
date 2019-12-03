@@ -237,8 +237,6 @@ https://www.amazon.com/gp/product/B07TF6LZC7
 SMA Socket Connector Panel Chassis Mount SMA Female to Female Bulkhead Extendable Antenna Jack Adapter
 for Antennas Wireless LAN Devices Coaxial Cable Pack of 2
 +
-image::https://m.media-amazon.com/images/I/51fq0+RauyL.jpg[width=160]
-+
 * Antenna cable connector SMA female to female bulkhead jack adapter. Please confirm what type of connector your device is before purchasing.
 * Help you connect SMA male to male converter or external cable, commonly used in RF Applications, Antennas, Wireless LAN Devices , Coaxial cable, Wi-Fi Radios External Antenna and so on, >1000 Times Mating Life Time.
 * Barrel connectors have a knurled grip which comes in handy while tightening SMA connectors to the barrel
@@ -278,8 +276,6 @@ https://www.amazon.com/gp/product/B07RPW5XGB/
 . Optional GPS Antenna
 +
 GPS Boat Antenna Compatible with Beidou 30dB SMA Male External Navigation Receiver 0.2 Meter Wire
-+
-image::https://m.media-amazon.com/images/I/51bpSkjUDyL.jpg[width=160]
 +
 * Increase your signal with this GPS external antenna with built in low noise amplifier (LNA).
 * Connector: SMA Male
