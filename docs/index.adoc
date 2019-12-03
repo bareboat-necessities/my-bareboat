@@ -239,6 +239,18 @@ https://www.amazon.com/dp/B01MR16V5X
 
  Cost: $9.60, Source: Amazon
 
+. RF chord for dAISy AIS
++
+BNC Male to PL259 RG58 Cable (8 Inches); UHF PL259 Jack to BNC Male Plug Adapter Jumper Pigtail Cable RG58
++
+* Connector: BNC Male to PL259
+* Impedance: 50 Ohm
+* Cable Type: RG58
+
+https://www.amazon.com/dp/B07MK8FM94
+
+ Cost: $5.60, Source: Amazon
+
 . RJ45
 +
 CAT6 RJ45 Shielded Industrial Panel Mount Bulkhead Female/Female Feed Thru Coupler -
@@ -264,6 +276,14 @@ Plug Panel Mount with Waterproof/Dust Cap, 2pcs
 https://www.amazon.com/dp/B07RPW5XGB
 
  Cost: $13.00 for 2, Source: Amazon
+
+. Waterproof Cable Glands
++
+35pcs Cable Gland Waterproof Cable Fixing Head Suitable for 3mm-14mm M12 M16 M18 M20 M22 Cable Gland Joints Assortment Set (M-Black)
+
+ Cost: $11, Source: Amazon
+
+https://www.amazon.com/dp/B07TSC34D5
 
 . Optional GPS Antenna
 +
