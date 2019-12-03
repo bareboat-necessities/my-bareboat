@@ -163,6 +163,8 @@ https://www.amazon.com/dp/B07MP9MYKP
 . USB 2.0 / HDMI
 +
 USB 2.0 HDMI Mount Cable – USB Extension Flush, Dash, Panel Mount Boat Cable (3.3FT/1m)
++
+https://www.amazon.com/dp/B076DFRPLZ
 
  Cost: $10, Source: Amazon
 
@@ -247,6 +249,7 @@ BNC Male to PL259 RG58 Cable (8 Inches); UHF PL259 Jack to BNC Male Plug Adapter
 * Impedance: 50 Ohm
 * Cable Type: RG58
 
++
 https://www.amazon.com/dp/B07MK8FM94
 
  Cost: $5.60, Source: Amazon
@@ -281,9 +284,10 @@ https://www.amazon.com/dp/B07RPW5XGB
 +
 35pcs Cable Gland Waterproof Cable Fixing Head Suitable for 3mm-14mm M12 M16 M18 M20 M22 Cable Gland Joints Assortment Set (M-Black)
 
- Cost: $11, Source: Amazon
-
++
 https://www.amazon.com/dp/B07TSC34D5
+
+ Cost: $11, Source: Amazon
 
 . Optional GPS Antenna
 +
@@ -375,7 +379,17 @@ image::cockpit-display.svg[alt=Cockpit Display Diagram]
 +
 https://www.amazon.com/dp/B07K6HKD8S
 
- Cost: $4.75, Source Amazon
+ Cost: $4.75, Source: Amazon
+
+. AcuRite 02020 Portable Lightning Detector
++
+* Detects lightning bolts and storms within 25 miles
+* Warning light, audible alarm and text alerts
+
++
+https://www.amazon.com/gp/product/B00EO1H3X8
+
+ Cost: $30.00, Source: Amazon
 
 === Boat WiFi Network
 
