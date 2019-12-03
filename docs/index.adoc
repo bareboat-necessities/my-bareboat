@@ -540,6 +540,14 @@ https://www.argonautcomputer.com/products/m7-smart-touch-monitor
 
 . DC Wire to cockpit
 
++
+Marine Wire
+
++
+https://www.amazon.com/dp/B01FRK09OY
+
+ Cost: $25.50, Source: Amazon
+
 . Female to Female HDMI adapter
 +
 * Compatible with HDMI standard (4K video at 60 Hz, 2160p, 48-bit/px color depth)
