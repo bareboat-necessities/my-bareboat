@@ -15,8 +15,11 @@ mgrouch <mgrouch@users.noreply.github.com>
 
 image::../../bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 
+{zwsp} +
+
 https://github.com/bareboat-necessities/my-bareboat
 
+{zwsp} +
 
 toc::[]
 
