@@ -161,6 +161,14 @@ https://www.amazon.com/dp/B012G6E62I
 
  Cost: 5, Source: Homedepot
 
+. Soldering Iron Kit - Soldering Iron 60 W Adjustable Temperature, Digital Multimeter, Wire Cutter,
+Stand, Soldering Iron Tip Set, Desoldering Pump, Solder Wick, Tweezers, Rosin, Wire - [110 V, US Plug]
+
++
+https://www.amazon.com/dp/B07Q2B4ZY9
+
+ Cost: 35, Source: Amazon
+
 ===== Front Panel
 
 image::front-panel.svg[alt=Front Panel Diagram]
