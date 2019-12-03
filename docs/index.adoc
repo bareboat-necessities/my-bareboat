@@ -158,13 +158,7 @@ image::front-panel.svg[alt=Front Panel Diagram]
 
 . 2-Wire DC connector
 +
-SAE Connector DC Power Extension Cable 16 AWG Automotive Battery Quick Disconnect Pigtail Wire Harness with Dust Cap (6 Pcs 1.2 Foot)
-+
-* Application:SAE to SAE extension cable single head plug, with tinned ends. for solar battery, automotive, motorcycles, lawnmowers, truck power connection and transfer.
-* With Dust Cap: Protecting standard SAE type connector from rain and dust, which stay clean and dry inside when you don't use it.
-* Cable Specification: SPT-2, 16AWG/2C, 1.2 Feet. Heavy duty, thickness, flexible and durable.
-* Easy To Use: Standard SAE type plug, Fits most battery chargers with SAE quick release connectors, Tinned ends is easy to connect and weld.
-* Package: 6 pcs 1.2 Ft SAE pigtail wire power cable and 6 pcs dust cap.
+SAE Connector DC Power Cable, 16 AWG Quick Disconnect, Dust Cap (6 Pcs 1.2 Foot)
 +
 https://www.amazon.com/dp/B07MP9MYKP
 +
@@ -172,15 +166,14 @@ https://www.amazon.com/dp/B07MP9MYKP
 
 . USB 2.0 / HDMI
 +
-USB 2.0 HDMI Mount Cable – USB Extension Flush, Dash, Panel Mount Cable,
-for Car, Boat, Motorcycle and More (3.3FT/1m)
+USB 2.0 HDMI Mount Cable – USB Extension Flush, Dash, Panel Mount Boat Cable (3.3FT/1m)
 
  Cost: $10, Source: Amazon
 
 . USB 3.0 / AUX
 +
-USB 3.0 & Car Mount Flush Cable + USB3.0 AUX Extension Dash Panel Waterproof Mount Cable
-For Car Boat and Motorcycle - 3ft
+USB 3.0 & Flush Mount Cable + USB3.0 AUX Extension Dash Panel Waterproof Mount Cable
+for Boat, Car and Motorcycle - 3ft
 
  Cost: $10, Source: Amazon
 
@@ -220,13 +213,10 @@ https://www.amazon.com/dp/B012CTCWES
 
 . RF connector for RTL-SDR to panel
 +
-SMA Male to UHF PL-259 Male RG316 RF Coaxial Coax Cable 1 ft
+SMA Male to UHF PL-259 Male RG316 RF Coax Cable 1 ft
 +
-* Impedance: 50 ohm; Cable length: 1 ft
+* Impedance: 50 ohm; Length: 1 ft
 * Ultra Low-loss Double Shielded RG316 Coaxial Cable
-* With nickel plated connector body and gold plated brass contacts
-* Allows Base & Mobile Antennas to connect to hand-held Antenna Jack
-* Package Includes: 1 x SMA Male to UHF PL-259 Male Coax Cable
 +
 https://www.amazon.com/dp/B07TF6LZC7
 
@@ -235,13 +225,10 @@ https://www.amazon.com/dp/B07TF6LZC7
 . RF Connector to panel
 +
 SMA Socket Connector Panel Chassis Mount SMA Female to Female Bulkhead Extendable Antenna Jack Adapter
-for Antennas Wireless LAN Devices Coaxial Cable Pack of 2
+for Antennas Wireless LAN Devices Coaxial Cable, Pack of 2
 +
-* Antenna cable connector SMA female to female bulkhead jack adapter. Please confirm what type of connector your device is before purchasing.
-* Help you connect SMA male to male converter or external cable, commonly used in RF Applications, Antennas, Wireless LAN Devices , Coaxial cable, Wi-Fi Radios External Antenna and so on, >1000 Times Mating Life Time.
-* Barrel connectors have a knurled grip which comes in handy while tightening SMA connectors to the barrel
-* Connector Material: Pure brass with Great connectivity (Not Alloy), Surface treatment: Gold-plated, Impedance: 50ohm, Low-loss
-* Package included : 2 pieces SMA Female to Female bulkhead adaptors
+* Antenna cable connector SMA female to female bulkhead jack adapter
+* Surface treatment: Gold-plated, Impedance: 50ohm, Low-loss
 +
 https://www.amazon.com/dp/B07FKPJ4QQ
 +
@@ -277,16 +264,11 @@ https://www.amazon.com/dp/B07RPW5XGB
 +
 GPS Boat Antenna Compatible with Beidou 30dB SMA Male External Navigation Receiver 0.2 Meter Wire
 +
-* Increase your signal with this GPS external antenna with built in low noise amplifier (LNA).
 * Connector: SMA Male
 * Voltage: 3-5 Volt
-* Thread: BSP3/4
-* Length: 0.2 Meter / 0.65 Feet
 * LNA Gain(Without Cable): 30dB
 * Operating Temperature(Deg.C): -45~+85
-* Storage Temperature(Deg.C): -50~+90
 * Center Frequency: 1575.42 MHz(GPS); 1561 MHz(BD)
-* Body Size: 96x128mm / 3.78x5.1 inch (Max D*L)
 +
 https://www.amazon.com/dp/B07ZBVG1PK
 
@@ -368,14 +350,11 @@ https://www.amazon.com/dp/B07K6HKD8S
 
 . WiFi Router
 +
-GL.iNet GL-AR750 Travel AC Router, 300Mbps(2.4G)+433Mbps(5G) Wi-Fi, 128MB RAM, MicroSD Storage Support, OpenWrt/LEDE pre-Installed, Power Adapter and Cables Included
+GL.iNet GL-AR750 Travel AC Router, 300Mbps(2.4G)+433Mbps(5G) Wi-Fi, 128MB RAM, MicroSD Storage Support, OpenWrt/LEDE
 +
-* DUAL BAND AC ROUTER: Simultaneous dual band with wireless speed 300Mbps(2.4G)+433Mbps(5G). Convert a public network(wired/wireless) to a private Wi-Fi for secure surfing.
-* OPEN SOURCE & PROGRAMMABLE: OpenWrt/LEDE pre-installed, backed by software repository.
-* OPENVPN CLIENT: OpenVPN client pre-installed, compatible with 25+ VPN service providers.
-* LARGER STORAGE & EXTENSIBILITY: 128MB RAM, 16MB NOR Flash, up to 128GB MicroSD slot, USB 2.0 port, three Ethernet ports, and optional PoE module (sold separately).
-* PACKAGE CONTENTS: GL-AR750 travel router (1-year Warranty), Power adapter, USB cable, Ethernet cable and User Manual.
-* Please update the latest firmware at the following link before using: https://dl.gl-inet.com/firmware/ar750/v1/
+* OpenWrt/LEDE (open source)
+* OpenVPN client pre-installed
+* 128MB RAM, up to 128GB MicroSD slot, USB 2.0 port, three Ethernet ports, and optional PoE module
 +
 https://www.amazon.com/dp/B07712LKJM
 
