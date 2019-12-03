@@ -19,7 +19,7 @@ image::../../bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 
 == Boat Electronics Project
 
-This document describes DIY project of building a boat computer and cockpit display
+This document describes a DIY project of building a boat computer and cockpit display
 from easily obtainable components. The computer will include number of sensors for:
 
 * GPS Location
@@ -200,7 +200,24 @@ https://www.amazon.com/gp/product/B07RPW5XGB/
 
  Cost: $13.00 for 2, Source: Amazon
 
+. Optional GPS Antenna
++
+GPS Boat Antenna Compatible with Beidou 30dB SMA Male External Navigation Receiver 0.2 Meter Wire
++
+* Increase your signal with this GPS external antenna with built in low noise amplifier (LNA).
+* Connector: SMA Male
+* Voltage: 3-5 Volt
+* Thread: BSP3/4
+* Length: 0.2 Meter / 0.65 Feet
+* LNA Gain(Without Cable): 30dB
+* Operating Temperature(Deg.C): -45~+85
+* Storage Temperature(Deg.C): -50~+90
+* Center Frequency: 1575.42 MHz(GPS); 1561 MHz(BD)
+* Body Size: 96x128mm / 3.78x5.1 inch (Max D*L)
++
+https://www.amazon.com/gp/product/B07ZBVG1PK
 
+ Cost: $16.25, Source: Amazon
 
 ===== Assembly Activities
 
@@ -284,7 +301,8 @@ GL.iNet GL-AR750 Travel AC Router, 300Mbps(2.4G)+433Mbps(5G) Wi-Fi, 128MB RAM, M
 * OPEN SOURCE & PROGRAMMABLE: OpenWrt/LEDE pre-installed, backed by software repository.
 * OPENVPN CLIENT: OpenVPN client pre-installed, compatible with 25+ VPN service providers.
 * LARGER STORAGE & EXTENSIBILITY: 128MB RAM, 16MB NOR Flash, up to 128GB MicroSD slot, USB 2.0 port, three Ethernet ports, and optional PoE module (sold separately).
-* PACKAGE CONTENTS: GL-AR750 travel router (1-year Warranty), Power adapter, USB cable, Ethernet cable and User Manual. Please update the latest firmware at the following link before using: https://dl.gl-inet.com/firmware/ar750/v1/
+* PACKAGE CONTENTS: GL-AR750 travel router (1-year Warranty), Power adapter, USB cable, Ethernet cable and User Manual.
+* Please update the latest firmware at the following link before using: https://dl.gl-inet.com/firmware/ar750/v1/
 +
 https://www.amazon.com/gp/product/B07712LKJM
 
