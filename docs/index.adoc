@@ -262,7 +262,7 @@ https://www.amazon.com/gp/product/B07RPW5XGB/
 
 . Optional GPS Antenna
 +
-`GPS Boat Antenna Compatible with Beidou 30dB SMA Male External Navigation Receiver 0.2 Meter Wire`
+GPS Boat Antenna Compatible with Beidou 30dB SMA Male External Navigation Receiver 0.2 Meter Wire
 +
 image::https://images-na.ssl-images-amazon.com/images/I/51bpSkjUDyL._SL1100_.jpg[width=160]
 +
