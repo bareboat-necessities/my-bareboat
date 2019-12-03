@@ -144,7 +144,7 @@ TOBSUN EA50-5V DC 12V 24V to DC 5V 10A 50W Converter Regulator 5V 50W Power Supp
 
 . Screws, Nuts
 
- Cost: 10, Source: Microcenter
+ Cost: $10, Source: Microcenter
 
 . Hilitchi 120Pcs M3 Nylon Hex Spacers Screw Nut Standoff Plastic Accessories Assortment (Black)
 +
@@ -159,7 +159,7 @@ https://www.amazon.com/dp/B012G6E62I
 
 . Cable ties
 
- Cost: 5, Source: Homedepot
+ Cost: $5, Source: Homedepot
 
 . Soldering Iron Kit - Soldering Iron 60 W Adjustable Temperature, Digital Multimeter, Wire Cutter,
 Stand, Soldering Iron Tip Set, Desoldering Pump, Solder Wick, Tweezers, Rosin, Wire - [110 V, US Plug]
@@ -171,7 +171,7 @@ Stand, Soldering Iron Tip Set, Desoldering Pump, Solder Wick, Tweezers, Rosin, W
 +
 https://www.amazon.com/dp/B07Q2B4ZY9
 
- Cost: 35, Source: Amazon
+ Cost: $35, Source: Amazon
 
 ===== Front Panel
 
