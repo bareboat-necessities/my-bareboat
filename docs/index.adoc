@@ -376,6 +376,13 @@ https://creativecommons.org/licenses/by-sa/4.0/deed.en
 . dAISy AIS
 
 . RTL-SDR
++
+RTL-SDR Blog V3 R820T2 RTL2832U 1PPM TCXO HF Bias Tee SMA Software Defined Radio with Dipole Antenna Kit
+
++
+https://www.amazon.com/dp/B011HVUEME
+
+ Cost: $30, Source: Amazon
 
 . IMU + environmental sensors
 
@@ -409,6 +416,18 @@ https://www.amazon.com/dp/B07K6HKD8S
 https://www.amazon.com/dp/B004NZOV8A
 
  Cost: $16.50, Source: Amazon
+
+. USBGear 4-Port USB 3.0 Mountable Charging and 5Gbps Data Hub
+
++
+* Supports Super-Speed USB 3.0 over each port with transfer rates up to 5Gbps.
+* Power Adapter: 5V 2A output, 100-240V, 50/60Hz 0.40A
+
++
+https://www.amazon.com/dp/B012DZ4NJ8
+
+ Cost: $29, Source: Amazon
+
 
 . AcuRite 02020 Portable Lightning Detector
 +
