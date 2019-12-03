@@ -413,10 +413,6 @@ https://creativecommons.org/licenses/by-sa/4.0/deed.en
 
 . SD Card
 
-. 12v to 5v
-
-. GPS mouse
-
 . dAISy AIS
 
 . RTL-SDR
@@ -449,12 +445,18 @@ Make sure you use correct tools for:
 
 image::cockpit-display.svg[alt=Cockpit Display Diagram]
 
+. 5V/6V 3A Switch-mode UBEC, Max 5A Lowest RF
+
++
+https://www.amazon.com/dp/B008ZNWOYY
+
+ Cost: $3, Source: Amazon
+
 . Female to Female HDMI adapter
 +
 * Compatible with HDMI standard (4K video at 60 Hz, 2160p, 48-bit/px color depth)
 * Supports bandwidth up to 18Gbps
 * backwards compatible with earlier versions
-
 
 +
 https://www.amazon.com/dp/B07K6HKD8S
