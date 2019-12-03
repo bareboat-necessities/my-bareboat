@@ -360,6 +360,22 @@ https://www.amazon.com/dp/B008200LHW
 
  Cost: $26.10, Source: Amazon
 
+. GPS Antenna
+
++
+Waterproof Active GPS Antenna with Magnetic Base - 28dB - 3-5V - SMA Connector and Adapter Included
+
+* compatible with BerryGPS-IMU
+* Magnetic base for easy placement
+* Cable length is 3 meters[9.8 Feet]
+* Includes SMA to uFL connector
+* Active 28dB
+
++
+https://www.amazon.com/dp/B0769FRT6X
+
+ Cost: $11.50, Source: Amazon
+
 . Optional GPS Antenna
 +
 GPS Boat Antenna Compatible with Beidou 30dB SMA Male External Navigation Receiver 0.2 Meter Wire
