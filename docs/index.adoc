@@ -453,13 +453,18 @@ DSD TECH SH-U11 USB to RS485 RS422 Converter with FTDI FT232 Chip Compatible wit
 +
 https://www.amazon.com/dp/B07B416CPK
 
- Cost: $34, Source: Amazon
+ Cost: $34 (for 2), Source: Amazon
 
 . SSD Drive
 
 . SD Card
 
-. dAISy AIS
+. dAISy AIS + BNC Adapter
+
++
+https://shop.wegmatt.com/products/daisy-ais-receiver?variant=7104299008036
+
+ Cost: $67.70, Source: wegmatt.com
 
 . RTL-SDR
 +
