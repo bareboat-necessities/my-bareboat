@@ -144,6 +144,12 @@ image::front-panel.svg[alt=Front Panel Diagram]
 +
 SAE Connector DC Power Extension Cable 16 AWG Automotive Battery Quick Disconnect Pigtail Wire Harness with Dust Cap (6 Pcs 1.2 Foot)
 +
+* Application:SAE to SAE extension cable single head plug, with tinned ends. for solar battery, automotive, motorcycles, lawnmowers, truck power connection and transfer.
+* With Dust Cap: Protecting standard SAE type connector from rain and dust, which stay clean and dry inside when you don't use it.
+* Cable Specification: SPT-2, 16AWG/2C, 1.2 Feet. Heavy duty, thickness, flexible and durable.
+* Easy To Use: Standard SAE type plug, Fits most battery chargers with SAE quick release connectors, Tinned ends is easy to connect and weld.
+* Package: 6 pcs 1.2 Ft SAE pigtail wire power cable and 6 pcs dust cap.
++
 https://www.amazon.com/gp/product/B07MP9MYKP
 +
  Cost: $13, Source: Amazon
@@ -209,6 +215,23 @@ SMA Male to UHF PL-259 Male RG316 RF Coaxial Coax Cable 1 ft
 https://www.amazon.com/gp/product/B07TF6LZC7
 
  Cost: $11.30, Source: Amazon
+
+. RF Connector to panel
++
+SMA Socket Connector Panel Chassis Mount SMA Female to Female Bulkhead Extendable Antenna Jack Adapter
+for Antennas Wireless LAN Devices Coaxial Cable Pack of 2
++
+* Antenna cable connector SMA female to female bulkhead jack adapter. Please confirm what type of connector your device is before purchasing.
+* Help you connect SMA male to male converter or external cable, commonly used in RF Applications, Antennas, Wireless LAN Devices , Coaxial cable, Wi-Fi Radios External Antenna and so on, >1000 Times Mating Life Time.
+* Barrel connectors have a knurled grip which comes in handy while tightening SMA connectors to the barrel
+* Connector Material: Pure brass with Great connectivity (Not Alloy), Surface treatment: Gold-plated, Impedance: 50ohm, Low-loss
+* Package included : 2 pieces SMA Female to Female bulkhead adaptors
++
+image::https://images-na.ssl-images-amazon.com/images/I/51fq0%2BRauyL.jpg[width=160,height=120]
++
+https://www.amazon.com/gp/product/B07FKPJ4QQ
++
+ Cost: $6.00, Source: Amazon
 
 . RJ45
 +
