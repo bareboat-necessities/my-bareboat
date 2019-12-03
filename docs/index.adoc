@@ -59,11 +59,11 @@ The computer runs on Raspberry Pi (Raspbian Linux) with OpenPlotter 2.0 installe
 it's not going to be waterproof. The touchscreen displays OpenPlotter UI with OpenCPN chart plotter and dashboards as well as
 general Linux UI.
 
-Front View
+*Front View*
 
 image::computer-front-panel.jpg[Front View]
 
-The front panel interfaces:
+*The front panel interfaces:*
 
 * 1 USB 3.0 data port
 * 1 USB 2.0 data port
@@ -74,7 +74,7 @@ The front panel interfaces:
 * On/Off power switch for the computer
 * On/Off power switch for cockpit instruments
 
-The back panel interfaces:
+*The back panel interfaces:*
 
 * 1 Ethernet port 1Gbit (for the WiFi router)
 * 1 USB 2.0 port for GPS (or something else)
@@ -85,7 +85,7 @@ The back panel interfaces:
 * RF connector for RTL-SDR antenna
 * RF connector for a secondary GPS
 
-Inside View
+*Inside View*
 
 image::computer-internals.jpg[Inside View]
 
@@ -195,11 +195,8 @@ Brand: Bivar Inc
 +
 Pack of 10 AC 15A 125V Black Electrical Panel Mounted Screw Cap Fuse Holder
 +
-* Panel mounted fuse holder
-* Fit for: 6 x 30mm fuses; Rated: AC 125V 15A
-* Material: plastic and metal
-* With screw cap and solder-lug terminals
-* Package content : 10 x panel mount fuse holder
+* Fit for: 6 x 30mm fuses
+* Rated: AC 125V 15A
 
 +
 https://www.amazon.com/dp/B012CTCWES
