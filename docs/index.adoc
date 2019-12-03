@@ -22,11 +22,11 @@ image::../../bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 This document describes a DIY project of building a boat computer and a cockpit display
 from easily obtainable components. The computer includes:
 
-* GPS receiver
+* GNSS (GPS, etc) receiver
 * Sensors for orientation (gyroscope, compass via IMU)
 * AIS radar
 * Environment temperature, barometric pressure, humidity sensors
-* Connections to external boat instruments such as wind, depth, speed via NMEA 0183 serial ports
+* Connections to the boat instruments such as wind, depth, speed via NMEA 0183 serial ports
 * Optional autopilot integration
 * Other NMEA devices
 * Optional WiFi hotspot and router with WiFi extender and long range waterproof WiFi antenna
@@ -35,7 +35,7 @@ from easily obtainable components. The computer includes:
 * RTL-SDR for weather fax, AIS, etc
 
 The computer is connected to the waterproof HDMI touchscreen in
-the cockpit.
+the cockpit. NMEA 2000 was not in scope of this project.
 
 === Boat Computer
 
@@ -77,6 +77,8 @@ On the picture 7-Port powered USB 3.0 hub, dAISy AIS, Raspberry Pi 4 with a cool
 serial-to-USB stick (with the chipset from FTDI), SSD, RTL-SDR RF stick. 12v to 5v step-down converter is
 located below this layer inside the housing box and is connected to the front panel via a fuse and
 a switch on the front panel.
+
+You can customize the front and back panels for your needs.
 
 ==== Simple Schematics
 
@@ -338,6 +340,9 @@ Outdoor Omni Directional Antenna Fiberglass 2.4GHz 8dBi N Female Connector for C
 * Radome color: Gray
 * Mounting way: Pole-holding
 * Material: Fiberglass
++
+This is a cheap antenna. Let's see if we can get 1 mile range out of it. More expensive options would be
+Ubiquiti bullet + antenna connected via PoE ($120 at least).
 +
 https://www.amazon.com/gp/product/B07PG8RPSL/
 
