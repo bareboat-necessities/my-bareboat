@@ -237,13 +237,13 @@ https://www.amazon.com/gp/product/B07TF6LZC7
 SMA Socket Connector Panel Chassis Mount SMA Female to Female Bulkhead Extendable Antenna Jack Adapter
 for Antennas Wireless LAN Devices Coaxial Cable Pack of 2
 +
+image::https://images-na.ssl-images-amazon.com/images/I/51fq0%2BRauyL.jpg[width=160]
++
 * Antenna cable connector SMA female to female bulkhead jack adapter. Please confirm what type of connector your device is before purchasing.
 * Help you connect SMA male to male converter or external cable, commonly used in RF Applications, Antennas, Wireless LAN Devices , Coaxial cable, Wi-Fi Radios External Antenna and so on, >1000 Times Mating Life Time.
 * Barrel connectors have a knurled grip which comes in handy while tightening SMA connectors to the barrel
 * Connector Material: Pure brass with Great connectivity (Not Alloy), Surface treatment: Gold-plated, Impedance: 50ohm, Low-loss
 * Package included : 2 pieces SMA Female to Female bulkhead adaptors
-+
-image::https://images-na.ssl-images-amazon.com/images/I/51fq0%2BRauyL.jpg[width=160]
 +
 https://www.amazon.com/gp/product/B07FKPJ4QQ
 +
