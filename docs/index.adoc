@@ -360,7 +360,7 @@ image::cockpit-display.svg[alt=Cockpit Display Diagram]
 
 . Female to Female HDMI adapter
 +
-https://amzn/B07K6HKD8S/
+https://amzn.com/B07K6HKD8S/
 
  Cost: $4.75, Source Amazon
 
