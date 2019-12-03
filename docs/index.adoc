@@ -5,12 +5,18 @@ mgrouch <mgrouch@users.noreply.github.com>
 :toclevels: 4
 :sectnums:
 :sectnumlevels: 3
-:icons: font
 :encoding: utf-8
 :lang: en
 :title-logo-image: image:../../bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 :imagesdir: images
 :icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
 :toc-placement!:
 
 {zwsp} +
