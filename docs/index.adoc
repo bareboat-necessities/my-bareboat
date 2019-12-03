@@ -489,6 +489,11 @@ Make sure you use correct tools for:
 
 image::cockpit-display.svg[alt=Cockpit Display Diagram]
 
+. NavPod GP2300
+
+ Cost: $225 + Shipping: $9, Source: anchorexpress.com
+
+
 . 5V/6V 3A Switch-mode UBEC, Max 5A Lowest RF
 
 +
