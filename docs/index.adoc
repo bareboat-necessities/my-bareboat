@@ -140,6 +140,9 @@ TOBSUN EA50-5V DC 12V 24V to DC 5V 10A 50W Converter Regulator 5V 50W Power Supp
 * Over-voltage, over-current, over-temperature, short-circuit auto protection
 * Input voltage: 12/24V, Output: 5V/10A
 
++
+https://www.amazon.com/dp/B01M03288J
+
  Cost: $9.60, Source: Amazon
 
 . Screws, Nuts
