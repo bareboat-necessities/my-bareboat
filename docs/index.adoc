@@ -188,6 +188,15 @@ https://www.amazon.com/dp/B07MP9MYKP
 +
  Cost: $13, Source: Amazon
 
+. 2-Wire DC connector (Red, White)
++
+SAE Connector DC Power Cable, 16 AWG Quick Disconnect
++
+ Cost: $9, Source: Advance Auto Parts
+
++
+Used with 5v to distinguish from red/black for 12v
+
 . USB 2.0 / HDMI
 +
 USB 2.0 HDMI Mount Cable – USB Extension Flush, Dash, Panel Mount Boat Cable (3.3FT/1m)
