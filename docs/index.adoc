@@ -212,7 +212,7 @@ Pack of 10 AC 15A 125V Black Electrical Panel Mounted Screw Cap Fuse Holder
 * With screw cap and solder-lug terminals
 * Package content : 10 x panel mount fuse holder
 +
-https://amzn.com/B012CTCWES/
+https://amzn.com/B012CTCWES
 
  Cost: $6.00,  Source: Amazon
 
@@ -269,7 +269,7 @@ https://amzn.com/B07RTHD45H
 USB2.0 IP67 Waterproof Connector Industrial Standard Double Head Coupler Adapter Female to Female Socket
 Plug Panel Mount with Waterproof/Dust Cap, 2pcs
 +
-https://amzn.com/B07RPW5XGB/
+https://amzn.com/B07RPW5XGB
 
  Cost: $13.00 for 2, Source: Amazon
 
@@ -360,7 +360,7 @@ image::cockpit-display.svg[alt=Cockpit Display Diagram]
 
 . Female to Female HDMI adapter
 +
-https://amzn.com/B07K6HKD8S/
+https://amzn.com/B07K6HKD8S
 
  Cost: $4.75, Source Amazon
 
@@ -410,6 +410,6 @@ Outdoor Omni Directional Antenna Fiberglass 2.4GHz 8dBi N Female Connector for C
 This is a cheap antenna. Let's see if we can get 1 mile range out of it. More expensive options would be
 Ubiquiti bullet + antenna connected via PoE ($120 at least).
 +
-https://amzn.com/B07PG8RPSL/
+https://amzn.com/B07PG8RPSL
 
  Cost: $36.00, Source: Amazon
