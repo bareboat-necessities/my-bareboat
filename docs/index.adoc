@@ -403,6 +403,15 @@ https://creativecommons.org/licenses/by-sa/4.0/deed.en
 
 . Heat sinks and Cooling fan
 
++
+Acrylic Case for Raspberry Pi 4 Model B & Raspberry Pi 3 Model B+, Raspberry Pi Case with Cooling Fan and
+7PCS Heatsinks for Raspberry Pi 3/2 Model B/B+ (Brown)
+
++
+https://www.amazon.com/dp/B07T3DRB1C
+
+ Cost: $9, Source: Amazon
+
 . Pi Case for mounting cooling fan
 
 . USB Hub
