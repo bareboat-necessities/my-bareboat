@@ -15,7 +15,7 @@ https://github.com/bareboat-necessities/my-bareboat
 
 Bareboat Projects Documentation by:
 
-image::../../bareboat-necessities-logo.svg[]
+image::../../bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 
 == Boat Electronics Project
 
@@ -23,16 +23,55 @@ This document describes DIY project of building a boat computer and cockpit disp
 from easily obtainable components. The computer will include number of sensors for:
 
 * GPS Location
-* Orientation
+* Orientation (gyroscope, compass via IMU)
 * AIS radar
 * Environment temperature, barometric pressure, humidity
 * Connections to external boat instruments such as wind, depth, speed
 * Possibility of connecting to auto pilot
 * Other NMEA devices
+* Optional WiFi hotspot and router with WiFi extender and long range WiFi antenna
+* Optional air mouse with wireless keyboard and touchpad
+* Lightning EMI sensor
+* RTL-SDR for weather fax, etc
+
+
 
 === Boat Computer
 
-The computer will run on Raspberry Pi with OpenPlotter installed.
+The computer will run on Raspberry Pi with OpenPlotter installed. The computer will reside below deck so
+it's not going to be waterproof. The computer will be connected to a waterproof HDMI touchscreen in
+the cockpit. The touchscreen will display OpenPlotter UI with OpenCPN ChartPlotter and Dashboards.
+
+Front View
+
+image::computer-front-panel.jpg[Front View]
+
+Front panel with have heavy duty panel mount interfaces for:
+
+* 1 USB 3.0 data port
+* 1 USB 2.0 data port
+* 1 HDMI port
+* 1 AUX audio port
+* Status indicators
+* Fuse Box (Panel Mount?)
+* On/Off power switch for the computer
+* On/Off power switch for cockpit instruments
+
+
+Back panel:
+
+* 1 Ethernet port (for the WiFi router)
+* 1 USB 2.0 port for GPS (or something else)
+* 2 NMEA 0183 ports
+* DC power cords mounted inside waterproof glands for 12v boat and cockpit connections
+* HDMI and USB 3.0 connectors to cockpit display and touchscreen
+* RF connector for AIS antenna
+* RF connector for RTL-SDR antenna
+* RF connector for secondary GPS
+
+Inside View
+
+image::computer-internals.jpg[Inside View]
 
 ==== Simple Schematics
 
