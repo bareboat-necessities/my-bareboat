@@ -13,6 +13,8 @@ mgrouch <mgrouch@users.noreply.github.com>
 :icons: font
 :toc-placement!:
 
+{zwsp} +
+
 image::../../bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 
 {zwsp} +
@@ -22,6 +24,8 @@ https://github.com/bareboat-necessities/my-bareboat
 {zwsp} +
 
 toc::[]
+
+{zwsp} +
 
 == Boat Electronics Project
 
