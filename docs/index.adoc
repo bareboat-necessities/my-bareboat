@@ -140,6 +140,14 @@ LED products, LED strips, cable TV and other low power test systems
 
 image::front-panel.svg[alt=Front Panel Diagram]
 
+. 2-Wire DC connector
++
+SAE Connector DC Power Extension Cable 16 AWG Automotive Battery Quick Disconnect Pigtail Wire Harness with Dust Cap (6 Pcs 1.2 Foot)
++
+https://www.amazon.com/gp/product/B07MP9MYKP
++
+ Cost: $13, Source: Amazon
+
 . USB 2.0 / HDMI
 +
 USB 2.0 HDMI Mount Cable – USB Extension Flush, Dash, Panel Mount Cable,
@@ -176,17 +184,37 @@ Brand: Bivar Inc
 +
 Pack of 10 AC 15A 125V Black Electrical Panel Mounted Screw Cap Fuse Holder
 +
+* Panel mounted fuse holder
+* Fit for: 6 x 30mm fuses; Rated: AC 125V 15A
+* Material: plastic and metal
+* With screw cap and solder-lug terminals
+* Package content : 10 x panel mount fuse holder
++
 https://www.amazon.com/gp/product/B012CTCWES/
 
  Cost: $6.00,  Source: Amazon
 
 ===== Back Panel
 
+. RF connector for RTL-SDR to panel
++
+SMA Male to UHF PL-259 Male RG316 RF Coaxial Coax Cable 1 ft
++
+* Impedance: 50 ohm; Cable length: 1 ft
+* Ultra Low-loss Double Shielded RG316 Coaxial Cable
+* With nickel plated connector body and gold plated brass contacts
+* Allows Base & Mobile Antennas to connect to hand-held Antenna Jack
+* Package Includes: 1 x SMA Male to UHF PL-259 Male Coax Cable
++
+https://www.amazon.com/gp/product/B07TF6LZC7
+
+ Cost: $11.30, Source: Amazon
+
 . RJ45
-
- CAT6 RJ45 Shielded Industrial Panel Mount Bulkhead Female/Female Feed Thru Coupler -
- Network Connectors - IP67 Waterproof/Dust Cap (Single Pack, Black)
-
++
+CAT6 RJ45 Shielded Industrial Panel Mount Bulkhead Female/Female Feed Thru Coupler -
+Network Connectors - IP67 Waterproof/Dust Cap (Single Pack, Black)
++
  Cost: $11.50, Source: Amazon
 
 . Terminal Block for NMEA 0183
