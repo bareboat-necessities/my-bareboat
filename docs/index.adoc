@@ -192,9 +192,10 @@ to the front panel
 +
 SMFLP12.0 492-1291-ND LIGHT PIPE CLEAR FLEXIBLE 12" (10 pack)
 +
-* 4mm Board/Panel Mount
-+
 Brand: Bivar Inc
+
+* 4mm Board/Panel Mount
+
 
 +
 https://www.digikey.com/product-detail/en/bivar-inc/SMFLP12.0/492-1291-ND/2407239
