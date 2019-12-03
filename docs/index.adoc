@@ -261,7 +261,7 @@ https://www.amazon.com/gp/product/B07RPW5XGB/
 
 . Optional GPS Antenna
 +
-GPS Boat Antenna Compatible with Beidou 30dB SMA Male External Navigation Receiver 0.2 Meter Wire
+`GPS Boat Antenna Compatible with Beidou 30dB SMA Male External Navigation Receiver 0.2 Meter Wire`
 +
 * Increase your signal with this GPS external antenna with built in low noise amplifier (LNA).
 * Connector: SMA Male
@@ -273,6 +273,8 @@ GPS Boat Antenna Compatible with Beidou 30dB SMA Male External Navigation Receiv
 * Storage Temperature(Deg.C): -50~+90
 * Center Frequency: 1575.42 MHz(GPS); 1561 MHz(BD)
 * Body Size: 96x128mm / 3.78x5.1 inch (Max D*L)
++
+image::https://images-na.ssl-images-amazon.com/images/I/51bpSkjUDyL._SL1100_.jpg[width=160,height=120]
 +
 https://www.amazon.com/gp/product/B07ZBVG1PK
 
