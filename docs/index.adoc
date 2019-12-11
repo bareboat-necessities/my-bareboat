@@ -60,8 +60,8 @@ it's not going to be waterproof. The touchscreen displays OpenPlotter UI with Op
 general Linux UI.
 
 *Front View*
-
-image::computer-front-panel.jpg[Front View]
+.Front View
+image::computer-front-panel.jpg[alt="Front View"]
 
 *The front panel interfaces:*
 
@@ -86,8 +86,8 @@ image::computer-front-panel.jpg[Front View]
 * RF connector for a secondary GPS
 
 *Inside View*
-
-image::computer-internals.jpg[Inside View]
+.Inside View
+image::computer-internals.jpg[alt="Inside View"]
 
 On the picture 7-Port powered USB 3.0 hub, dAISy AIS, Raspberry Pi 4 with a cooling fan and heat sinks,
 serial-to-USB stick (with the chipset from FTDI), SSD, RTL-SDR RF stick. 12v to 5v step-down converter is
@@ -97,8 +97,8 @@ a switch on the front panel.
 You can customize the front and back panels for your needs.
 
 ==== Simple Schematics
-
-image::boat-computer.svg[alt=Boat Computer Diagram]
+.Boat Computer Diagram
+image::boat-computer.svg[alt="Boat Computer Diagram"]
 
 Raspberry Pi 4 has also WiFi and BlueTooth interfaces:
 
@@ -177,8 +177,8 @@ https://www.amazon.com/dp/B07Q2B4ZY9
  Cost: $35, Source: Amazon
 
 ===== Front Panel
-
-image::front-panel.svg[alt=Front Panel Diagram]
+.Front Panel Diagram
+image::front-panel.svg[alt="Front Panel Diagram"]
 
 . 2-Wire DC connector
 +
@@ -428,8 +428,8 @@ Make sure you use correct tools for:
 ==== Computer and Sensors
 
 ===== Raspberry Pi 4
-
-image::RaspberryPi_4_Model_B.svg[alt=Raspberry Pi 4 Diagram]
+.Raspberry Pi 4 Diagram
+image::RaspberryPi_4_Model_B.svg[alt="Raspberry Pi 4 Diagram"]
 
 This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license
 
@@ -532,8 +532,8 @@ Make sure you use correct tools for:
 * Screwing
 
 === Cockpit Display and Chartplotter
-
-image::cockpit-display.svg[alt=Cockpit Display Diagram]
+.Cockpit Display Diagram
+image::cockpit-display.svg[alt="Cockpit Display Diagram"]
 
 . NavPod GP2300
 
@@ -719,11 +719,11 @@ The solar panel is quickly detachable and removable.
 
 [.text-center]
 .Solar Panel/Wind Generator/Radar Pole Mast for Sailboat
-image::solar-panel-wind-generator-radar-sailboat-pole-mast.png[align="center"]
+image::solar-panel-wind-generator-radar-sailboat-pole-mast.png[alt="Solar Panel/Wind Generator/Radar Pole Mast for Sailboat"]
 
 [.text-center]
 .Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View
-image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[align="center"]
+image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View"]
 
 
 == Links
