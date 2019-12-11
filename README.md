@@ -3,7 +3,8 @@
 # Bareboat Necessities
 Opensource hardware and software solutions for sailing and sailboats
 
-
 [Documentation](docs/index.adoc)
+
+[Landing Page](https://bareboat-necessities.wixsite.com/my-bareboat)
 
 [Logo vector created by freepik - www.freepik.com](https://www.freepik.com/)
