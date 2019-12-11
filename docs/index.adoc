@@ -720,3 +720,4 @@ The solar panel is quickly detachable and removable.
 
 image::solar-panel-wind-generator-radar-sailboat-pole-mast.png[Solar Panel/Wind Generator/Radar Pole Mast for Sailboat]
 
+image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View]
