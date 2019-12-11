@@ -712,4 +712,11 @@ https://www.openairinterface.org/
 
 == Pole for Sailboat Solar Panel / Wind Generator
 
+This is no welding, no bends solution. The pole is built from universal stainless steel marine components.
+To reproduce this design you would need only a pipe cutter tool and a drill.
+The top is quick release adjustable angle (two axis). Removable for winter storage.
+The solar panel is quickly detachable and removable.
+
+
+image::solar-panel-wind-generator-radar-sailboat-pole-mast.png[Solar Panel/Wind Generator/Radar Pole Mast for Sailboat]
 
