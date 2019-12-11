@@ -60,6 +60,7 @@ it's not going to be waterproof. The touchscreen displays OpenPlotter UI with Op
 general Linux UI.
 
 *Front View*
+
 .Front View
 image::computer-front-panel.jpg[alt="Front View"]
 
@@ -86,6 +87,7 @@ image::computer-front-panel.jpg[alt="Front View"]
 * RF connector for a secondary GPS
 
 *Inside View*
+
 .Inside View
 image::computer-internals.jpg[alt="Inside View"]
 
@@ -97,6 +99,7 @@ a switch on the front panel.
 You can customize the front and back panels for your needs.
 
 ==== Simple Schematics
+
 .Boat Computer Diagram
 image::boat-computer.svg[alt="Boat Computer Diagram"]
 
@@ -177,6 +180,7 @@ https://www.amazon.com/dp/B07Q2B4ZY9
  Cost: $35, Source: Amazon
 
 ===== Front Panel
+
 .Front Panel Diagram
 image::front-panel.svg[alt="Front Panel Diagram"]
 
@@ -428,6 +432,7 @@ Make sure you use correct tools for:
 ==== Computer and Sensors
 
 ===== Raspberry Pi 4
+
 .Raspberry Pi 4 Diagram
 image::RaspberryPi_4_Model_B.svg[alt="Raspberry Pi 4 Diagram"]
 
@@ -532,6 +537,7 @@ Make sure you use correct tools for:
 * Screwing
 
 === Cockpit Display and Chartplotter
+
 .Cockpit Display Diagram
 image::cockpit-display.svg[alt="Cockpit Display Diagram"]
 
@@ -718,10 +724,12 @@ The top is quick release adjustable angle (two axis). Removable for winter stora
 The solar panel is quickly detachable and removable.
 
 [.text-center]
+
 .Solar Panel/Wind Generator/Radar Pole Mast for Sailboat
 image::solar-panel-wind-generator-radar-sailboat-pole-mast.png[alt="Solar Panel/Wind Generator/Radar Pole Mast for Sailboat"]
 
 [.text-center]
+
 .Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View
 image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View"]
 
