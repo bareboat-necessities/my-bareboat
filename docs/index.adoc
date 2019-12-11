@@ -717,10 +717,10 @@ To reproduce this design you would need only a pipe cutter tool and a drill.
 The top is quick release adjustable angle (two axis). Removable for winter storage.
 The solar panel is quickly detachable and removable.
 
-[.center]
+[.text-center]
 image::solar-panel-wind-generator-radar-sailboat-pole-mast.png[align="center", alt="Solar Panel/Wind Generator/Radar Pole Mast for Sailboat"]
 
-[.center]
+[.text-center]
 image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[align="center", alt="Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View"]
 
 
