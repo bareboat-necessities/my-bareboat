@@ -751,23 +751,23 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Pane
 
 == Links
 
-. https://opencpn.org/[OpenCPN]
+* https://opencpn.org/[OpenCPN]
 
-. http://sailoog.com/openplotter[OpenPlotter]
+* http://sailoog.com/openplotter[OpenPlotter]
 
-. https://www.raspberrypi.org/[RaspberryPi]
+* https://www.raspberrypi.org/[RaspberryPi]
 
-. https://m5stack.com/[M5Stack]
+* https://m5stack.com/[M5Stack]
 
-. https://www.rtl-sdr.com/[Rtl Sdr Blog]
+* https://www.rtl-sdr.com/[Rtl Sdr Blog]
 
-. http://signalk.org/[SignalK]
+* http://signalk.org/[SignalK]
 
-. http://www.stripydog.com/kplex/[KPlex]
+* http://www.stripydog.com/kplex/[KPlex]
 
-. https://www.openairinterface.org/[OpenAirInterface]
+* https://www.openairinterface.org/[OpenAirInterface]
 
-. https://openwrt.org/[OpenWrt]
+* https://openwrt.org/[OpenWrt]
 
-. https://github.com/merbanan/rtl_433[IoT RTL 433]
+* https://github.com/merbanan/rtl_433[IoT RTL 433]
 
