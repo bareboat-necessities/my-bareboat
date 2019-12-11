@@ -656,3 +656,60 @@ Phone Signal Booster, WiFi Router
 https://www.amazon.com/dp/B07PG8RPSL
 
  Cost: $36, Source: Amazon
+
+The router needs to be modified to add external 2.4GHz antenna. Test U.FL connectors need to be removed
+and real ones should be soldered. The existing U.FL connector is used by internal 5G band antenna.
+See here:
+
+https://www.arednmesh.org/comment/12706#comment-12706
+
+==== Local WiFi
+
+===== VNC
+
+https://www.realvnc.com/raspberrypi/
+
+==== WiFi Gateway
+
+https://www.gl-inet.com/products/gl-ar750/
+
+===== OpenVPN
+
+https://openvpn.net/
+
+===== OpenWrt
+
+https://openwrt.org/
+
+===== LongFi Helium
+
+https://www.helium.com/
+
+=== Boat IoT
+
+==== MQTT
+
+http://mqtt.org/
+
+http://mosquitto.org/
+
+==== M5Stack ESP32
+
+https://m5stack.com/
+
+==== RTL 433
+
+https://github.com/merbanan/rtl_433
+
+=== Boat Cellular LTE Voice and Data Gateway
+
+==== SMS
+
+==== OpenAirInterface
+
+https://www.openairinterface.org/
+
+
+== Pole for Sailboat Solar Panel / Wind Generator
+
+
