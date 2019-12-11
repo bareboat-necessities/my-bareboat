@@ -718,12 +718,12 @@ The top is quick release adjustable angle (two axis). Removable for winter stora
 The solar panel is quickly detachable and removable.
 
 [.text-center]
-
-image::solar-panel-wind-generator-radar-sailboat-pole-mast.png[align="center", title="Solar Panel/Wind Generator/Radar Pole Mast for Sailboat"]
+.Solar Panel/Wind Generator/Radar Pole Mast for Sailboat
+image::solar-panel-wind-generator-radar-sailboat-pole-mast.png[align="center"]
 
 [.text-center]
-
-image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[align="center", title="Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View"]
+.Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View
+image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[align="center"]
 
 
 == Links
