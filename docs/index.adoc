@@ -64,6 +64,8 @@ general Linux UI.
 .Front View
 image::computer-front-panel.jpg[alt="Front View"]
 
+{zwsp} +
+
 *The front panel interfaces:*
 
 * 1 USB 3.0 data port
@@ -91,6 +93,8 @@ image::computer-front-panel.jpg[alt="Front View"]
 .Inside View
 image::computer-internals.jpg[alt="Inside View"]
 
+{zwsp} +
+
 On the picture 7-Port powered USB 3.0 hub, dAISy AIS, Raspberry Pi 4 with a cooling fan and heat sinks,
 serial-to-USB stick (with the chipset from FTDI), SSD, RTL-SDR RF stick. 12v to 5v step-down converter is
 located below this layer inside the housing box and is connected to the front panel via a fuse and
@@ -102,6 +106,8 @@ You can customize the front and back panels for your needs.
 
 .Boat Computer Diagram
 image::boat-computer.svg[alt="Boat Computer Diagram"]
+
+{zwsp} +
 
 Raspberry Pi 4 has also WiFi and BlueTooth interfaces:
 
@@ -183,6 +189,8 @@ https://www.amazon.com/dp/B07Q2B4ZY9
 
 .Front Panel Diagram
 image::front-panel.svg[alt="Front Panel Diagram"]
+
+{zwsp} +
 
 . 2-Wire DC connector
 +
@@ -436,6 +444,8 @@ Make sure you use correct tools for:
 .Raspberry Pi 4 Diagram
 image::RaspberryPi_4_Model_B.svg[alt="Raspberry Pi 4 Diagram"]
 
+{zwsp} +
+
 This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license
 
 https://creativecommons.org/licenses/by-sa/4.0/deed.en
@@ -540,6 +550,8 @@ Make sure you use correct tools for:
 
 .Cockpit Display Diagram
 image::cockpit-display.svg[alt="Cockpit Display Diagram"]
+
+{zwsp} +
 
 . NavPod GP2300
 
@@ -728,11 +740,14 @@ The solar panel is quickly detachable and removable.
 .Solar Panel/Wind Generator/Radar Pole Mast for Sailboat
 image::solar-panel-wind-generator-radar-sailboat-pole-mast.png[alt="Solar Panel/Wind Generator/Radar Pole Mast for Sailboat"]
 
+{zwsp} +
+
 [.text-center]
 
 .Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View
 image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View"]
 
+{zwsp} +
 
 == Links
 
