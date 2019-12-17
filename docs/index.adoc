@@ -252,6 +252,7 @@ NOTE: Used with 5v to distinguish from red/black for 12v
 | $3 | Autozone
 
 
+
 | USB 2.0 / HDMI
 
 a| USB 2.0 HDMI Mount Cable – USB Extension Flush, Dash, Panel Mount Boat Cable (3.3FT/1m)
@@ -283,6 +284,8 @@ https://www.amazon.com/dp/B0785LZQLK
 NOTE: Used for panel parts: Voltmeter, Switches, Fuses, 12v DC Wires
 
 | $34 | Amazon
+
+
 
 | Light Pipes
 a| Fiber optic light pipes with lenses for panel mount for transfer of inside LED indicators light
@@ -325,121 +328,142 @@ https://www.amazon.com/dp/B07W41Y7CF
 
 ===== Back Panel
 
-. RF connector for RTL-SDR to panel
-+
-SMA Male to UHF PL-259 Male RG316 RF Coax Cable 1 ft
-+
+[cols="4", options="header"]
+|===
+
+
+
+|Item
+|Description
+|Cost
+|Source
+
+
+| RF connector for RTL-SDR to panel
+
+a| SMA Male to UHF PL-259 Male RG316 RF Coax Cable 1 ft
+
 * Impedance: 50 ohm; Length: 1 ft
 * Ultra Low-loss Double Shielded RG316 Coaxial Cable
 
-+
 https://www.amazon.com/dp/B07TF6LZC7
 
- Cost: $11.30, Source: Amazon
+| $11.30 | Amazon
 
-. RF Connector to panel
-+
-SMA Socket Connector Panel Chassis Mount SMA Female to Female Bulkhead Extendable Antenna Jack Adapter
+
+
+| RF Connector to panel
+
+a| SMA Socket Connector Panel Chassis Mount SMA Female to Female Bulkhead Extendable Antenna Jack Adapter
 for Antennas Wireless LAN Devices Coaxial Cable, Pack of 2
-+
+
 * Antenna cable connector SMA female to female bulkhead jack adapter
 * Surface treatment: Gold-plated, Impedance: 50ohm, Low-loss
 
-+
 https://www.amazon.com/dp/B07FKPJ4QQ
 
- Cost: $6, Source: Amazon
+| $6 | Amazon
 
-. AIS Antenna panel connector
-+
-2pcs SO239 Adapter UHF Female to Female Jack Bulkhead RF Connector, Impedance:50 Ohm
-+
+
+
+| AIS Antenna panel connector
+
+a| 2pcs SO239 Adapter UHF Female to Female Jack Bulkhead RF Connector, Impedance:50 Ohm
 
 https://www.amazon.com/dp/B01MR16V5X
 
- Cost: $9.60, Source: Amazon
+| $9.60 | Amazon
 
-. RF chord for dAISy AIS
-+
-BNC Male to PL259 RG58 Cable (8 Inches); UHF PL259 Jack to BNC Male Plug Adapter Jumper Pigtail Cable RG58
-+
+
+
+| RF chord for dAISy AIS
+
+a| BNC Male to PL259 RG58 Cable (8 Inches); UHF PL259 Jack to BNC Male Plug Adapter Jumper Pigtail Cable RG58
 * Connector: BNC Male to PL259
 * Impedance: 50 Ohm
 * Cable Type: RG58
 
-+
 https://www.amazon.com/dp/B07MK8FM94
 
- Cost: $5.60, Source: Amazon
+| $5.60 | Amazon
 
-. RJ45
-+
-CAT6 RJ45 Shielded Industrial Panel Mount Bulkhead Female/Female Feed Thru Coupler -
+
+
+| RJ45
+
+a| CAT6 RJ45 Shielded Industrial Panel Mount Bulkhead Female/Female Feed Thru Coupler -
 Network Connectors - IP67 Waterproof/Dust Cap (Single Pack, Black)
 
-+
 https://www.amazon.com/dp/B01D0N7AI8
 
- Cost: $11.50, Source: Amazon
+| $11.50 | Amazon
 
-. Electronics-Salon 4x Prototype Breakout PCB Shield Board Kit for Raspberry Pi 3 2 B+ A+, Breadboard DIY
 
-+
+| Serial Connector
+a| Electronics-Salon 4x Prototype Breakout PCB Shield Board Kit for Raspberry Pi 3 2 B+ A+, Breadboard DIY
+
 https://www.amazon.com/dp/B07BF8Z3HS
 
- Cost: $15, Source: Amazon
+| $15 | Amazon
 
-. Terminal Block for NMEA 0183
-+
-Brand Name: QSU
-+
+
+
+| Terminal Block for NMEA 0183
+
+a| Brand Name: QSU
+
 Screw Terminal Block Kit Long Pins 5 mm Pitch 2, 3, 4 Pole (40 pcs)
-+
+
 https://www.amazon.com/dp/B07RTHD45H
 
- Cost: $9.50, Source: Amazon
+| $9.50 | Amazon
 
-. USB 2.0 Panel Mount
-+
-USB2.0 IP67 Waterproof Connector Industrial Standard Double Head Coupler Adapter Female to Female Socket
+
+
+| USB 2.0 Panel Mount
+
+a| USB2.0 IP67 Waterproof Connector Industrial Standard Double Head Coupler Adapter Female to Female Socket
 Plug Panel Mount with Waterproof/Dust Cap, 2pcs
-+
+
 https://www.amazon.com/dp/B07RPW5XGB
 
- Cost: $13 for 2, Source: Amazon
+| $13 for 2 | Amazon
 
-. Waterproof Cable Glands
-+
-35pcs Cable Gland Waterproof Cable Fixing Head Suitable for 3mm-14mm M12 M16 M18 M20 M22 Cable Gland Joints Assortment Set (M-Black)
 
-+
+
+| Waterproof Cable Glands
+
+a| 35pcs Cable Gland Waterproof Cable Fixing Head Suitable for 3mm-14mm M12 M16 M18 M20 M22 Cable Gland Joints Assortment Set (M-Black)
+
 https://www.amazon.com/dp/B07TSC34D5
 
- Cost: $11, Source: Amazon
+| $11 | Amazon
 
-. Cable Matters 2-Pack Micro HDMI to HDMI Adapter (HDMI to Micro HDMI Adapter) 6 Inches with 4K and HDR Support
 
-+
+| HDMI adapters
+a| Cable Matters 2-Pack Micro HDMI to HDMI Adapter (HDMI to Micro HDMI Adapter) 6 Inches with 4K and HDR Support
+
 https://www.amazon.com/dp/B00JDRHQ58
 
- Cost: $9, Source: Amazon
+| $9 | Amazon
 
-. GlobalSat BU-353-S4 USB GPS Receiver (Black)
 
-+
+| GPS G-mouse
+a| GlobalSat BU-353-S4 USB GPS Receiver (Black)
+
 * 48-Channel All-In-View Tracking
 * SiRF Star IV GPS Chipset
 * WAAS/ EGNOS Support
 
-+
 https://www.amazon.com/dp/B008200LHW
 
- Cost: $26.10, Source: Amazon
+| $26.10 | Amazon
 
-. GPS Antenna
 
-+
-Waterproof Active GPS Antenna with Magnetic Base - 28dB - 3-5V - SMA Connector and Adapter Included
+
+| GPS Antenna
+
+a| Waterproof Active GPS Antenna with Magnetic Base - 28dB - 3-5V - SMA Connector and Adapter Included
 
 * compatible with BerryGPS-IMU
 * Magnetic base for easy placement
@@ -447,25 +471,28 @@ Waterproof Active GPS Antenna with Magnetic Base - 28dB - 3-5V - SMA Connector a
 * Includes SMA to uFL connector
 * Active 28dB
 
-+
 https://www.amazon.com/dp/B0769FRT6X
 
- Cost: $11.50, Source: Amazon
+| $11.50 | Amazon
 
-. Optional GPS Antenna
-+
-GPS Boat Antenna Compatible with Beidou 30dB SMA Male External Navigation Receiver 0.2 Meter Wire
-+
+
+
+| Optional GPS Antenna
+
+a| GPS Boat Antenna Compatible with Beidou 30dB SMA Male External Navigation Receiver 0.2 Meter Wire
+
 * Connector: SMA Male
 * Voltage: 3-5 Volt
 * LNA Gain (Without Cable): 30dB
 * Operating Temperature (Deg.C): -45~+85
 * Center Frequency: 1575.42 MHz(GPS); 1561 MHz(BD)
 
-+
 https://www.amazon.com/dp/B07ZBVG1PK
 
- Cost: $16.25, Source: Amazon
+| $16.25 | Amazon
+
+|===
+
 
 ===== Assembly Activities
 
