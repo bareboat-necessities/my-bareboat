@@ -79,6 +79,9 @@ image::computer-front-panel.jpg[alt="Front View"]
 * On/Off power switch for the computer
 * On/Off power switch for cockpit instruments
 
+.Front Panel
+image::front-panel-intf.jpg[alt="Front Panel"]
+
 *The back panel interfaces:*
 
 * 1 Ethernet port 1Gbit (for the WiFi router)
@@ -89,6 +92,9 @@ image::computer-front-panel.jpg[alt="Front View"]
 * RF connector for AIS antenna
 * RF connector for RTL-SDR antenna
 * RF connector for a secondary GPS
+
+.Back Panel
+image::back-panel-intf.jpg[alt="Back Panel"]
 
 *Inside View*
 
