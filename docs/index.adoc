@@ -697,6 +697,7 @@ a| ?
 * Opto couplers for NMEA interfaces
 * Safe power down method
 * Boot from SSD
+* Coaxial Lightning Arresters for RF cables
 
 ===== Assembly Activities
 
