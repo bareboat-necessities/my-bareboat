@@ -123,7 +123,7 @@ with additional software.
 
 
 
-[cols="4", options="header", width="80%"]
+[cols="4", options="header", width="90%"]
 |===
 
 
@@ -213,6 +213,7 @@ https://www.amazon.com/dp/B07Q2B4ZY9
 
 |===
 
+
 ===== Front Panel
 
 .Front Panel Diagram
@@ -220,88 +221,107 @@ image::front-panel.svg[alt="Front Panel Diagram"]
 
 {zwsp} +
 
-. 2-Wire DC connector
-+
-SAE Connector DC Power Cable, 16 AWG Quick Disconnect, Dust Cap (6 Pcs 1.2 Foot)
-+
+[cols="4", options="header", width="90%"]
+|===
+
+
+
+|Item
+|Description
+|Cost
+|Source
+
+
+
+| 2-Wire DC connector (Red, Black)
+
+a| SAE Connector DC Power Cable, 16 AWG Quick Disconnect, Dust Cap (6 Pcs 1.2 Foot)
+
 https://www.amazon.com/dp/B07MP9MYKP
-+
- Cost: $13, Source: Amazon
 
-. 2-Wire DC connector (Red, White)
-+
-SAE Connector DC Power Cable, 16 AWG Quick Disconnect
-+
- Cost: $9, Source: Advance Auto Parts
+| $13 | Amazon
 
-+
-Used with 5v to distinguish from red/black for 12v
 
-. USB 2.0 / HDMI
-+
-USB 2.0 HDMI Mount Cable – USB Extension Flush, Dash, Panel Mount Boat Cable (3.3FT/1m)
-+
+
+| 2-Wire DC connector (Red, White)
+
+a| SAE Connector DC Power Cable, 16 AWG Quick Disconnect
+
+NOTE: Used with 5v to distinguish from red/black for 12v
+
+| $3 | Autozone
+
+
+| USB 2.0 / HDMI
+
+a| USB 2.0 HDMI Mount Cable – USB Extension Flush, Dash, Panel Mount Boat Cable (3.3FT/1m)
+
 https://www.amazon.com/dp/B076DFRPLZ
 
- Cost: $10, Source: Amazon
+| $10 | Amazon
 
-. USB 3.0 / AUX
-+
-USB 3.0 & Flush Mount Cable + USB3.0 AUX Extension Dash Panel Waterproof Mount Cable
+
+
+| USB 3.0 / AUX
+
+a| USB 3.0 & Flush Mount Cable + USB3.0 AUX Extension Dash Panel Waterproof Mount Cable
 for Boat, Car and Motorcycle - 3ft
 
-+
 https://www.amazon.com/dp/B072KGMJ5N
 
- Cost: $10, Source: Amazon
+| $10 | Amazon
 
-. Panel, etc
-+
-Cllena Dual USB Socket Charger 2.1A&2.1A + LED Voltmeter + 12V Power Outlet + 5 Gang ON-Off Toggle Switch
+
+
+| Panel, etc
+
+a| Cllena Dual USB Socket Charger 2.1A&2.1A + LED Voltmeter + 12V Power Outlet + 5 Gang ON-Off Toggle Switch
 Multi-Functions Panel for Car Boat Marine RV Truck Camper Vehicles GPS Mobiles
 
-+
 https://www.amazon.com/dp/B0785LZQLK
 
- Cost: $34, Source: Amazon
-+
-Used for panel parts: Voltmeter, Switches, Fuses, 12v DC Wires
+NOTE: Used for panel parts: Voltmeter, Switches, Fuses, 12v DC Wires
 
-. Fiber optic light pipes with lenses for panel mount for transfer of inside LED indicators light
+| $34 | Amazon
+
+| Light Pipes
+a| Fiber optic light pipes with lenses for panel mount for transfer of inside LED indicators light
 to the front panel
-+
-SMFLP12.0 492-1291-ND LIGHT PIPE CLEAR FLEXIBLE 12" (10 pack)
-+
-Brand: Bivar Inc
+
+* SMFLP12.0 492-1291-ND LIGHT PIPE CLEAR FLEXIBLE 12" (10 pack)
+
+* Brand: Bivar Inc
 
 * 4mm Board/Panel Mount
 
-
-+
 https://www.digikey.com/product-detail/en/bivar-inc/SMFLP12.0/492-1291-ND/2407239
 
- Cost: $28, Delivery: $9, Source: DigiKey
+| $28, Delivery: $9 | DigiKey
 
-. Fuse Box for Panel Mount
-+
-Pack of 10 AC 15A 125V Black Electrical Panel Mounted Screw Cap Fuse Holder
-+
+
+
+| Fuse Box for Panel Mount
+
+a| Pack of 10 AC 15A 125V Black Electrical Panel Mounted Screw Cap Fuse Holder
+
 * Fit for: 6 x 30mm fuses
 * Rated: AC 125V 15A
 
-+
 https://www.amazon.com/dp/B012CTCWES
 
- Cost: $6, Source: Amazon
+| $6 | Amazon
 
-. 450pcs Heat Shrink Wire Connectors DIY Kit Heat Shrink Butt Connectors Crimping Tool Heat Shrink Tubing Heat Gun
+
+
+| Heat Shrink
+a| 450pcs Heat Shrink Wire Connectors DIY Kit Heat Shrink Butt Connectors Crimping Tool Heat Shrink Tubing Heat Gun
 Waterproof Marine Automotive Terminals Set
 
-+
 https://www.amazon.com/dp/B07W41Y7CF
 
- Cost: $42, Source: Amazon
+| $42 | Amazon
 
+|===
 
 ===== Back Panel
 
