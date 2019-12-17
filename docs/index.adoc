@@ -868,7 +868,7 @@ Features of the boat gateway box:
 
 * Any other additional sensors and devices can be added via M5Stack
 
-[cols="4", options="header"]
+
 
 ==== Boat Gateway Front Panel
 
@@ -904,6 +904,7 @@ Features of the boat gateway box:
 
 ==== Inside Boat Gateway
 
+[cols="4", options="header"]
 |===
 
 
