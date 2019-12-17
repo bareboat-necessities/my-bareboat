@@ -79,8 +79,12 @@ image::computer-front-panel.jpg[alt="Front View"]
 * On/Off power switch for the computer
 * On/Off power switch for cockpit instruments
 
+{zwsp} +
+
 .Front Panel
 image::front-panel-intf.jpg[alt="Front Panel"]
+
+{zwsp} +
 
 *The back panel interfaces:*
 
@@ -93,8 +97,12 @@ image::front-panel-intf.jpg[alt="Front Panel"]
 * RF connector for RTL-SDR antenna
 * RF connector for a secondary GPS
 
+{zwsp} +
+
 .Back Panel
 image::back-panel-intf.jpg[alt="Back Panel"]
+
+{zwsp} +
 
 *Inside View*
 
