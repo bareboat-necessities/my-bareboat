@@ -123,7 +123,7 @@ with additional software.
 
 
 
-[cols="4", options="header", width="90%"]
+[cols="4", options="header"]
 |===
 
 
@@ -221,7 +221,7 @@ image::front-panel.svg[alt="Front Panel Diagram"]
 
 {zwsp} +
 
-[cols="4", options="header", width="90%"]
+[cols="4", options="header"]
 |===
 
 
