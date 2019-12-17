@@ -399,6 +399,7 @@ https://www.amazon.com/dp/B01D0N7AI8
 | $11.50 | Amazon
 
 
+
 | Breadboard
 a| Electronics-Salon 4x Prototype Breakout PCB Shield Board Kit for Raspberry Pi 3 2 B+ A+, Breadboard DIY
 
@@ -440,12 +441,14 @@ https://www.amazon.com/dp/B07TSC34D5
 | $11 | Amazon
 
 
+
 | HDMI adapters
 a| Cable Matters 2-Pack Micro HDMI to HDMI Adapter (HDMI to Micro HDMI Adapter) 6 Inches with 4K and HDR Support
 
 https://www.amazon.com/dp/B00JDRHQ58
 
 | $9 | Amazon
+
 
 
 | GPS G-mouse
