@@ -126,6 +126,8 @@ with additional software.
 [cols="4", options="header", width="80%"]
 |===
 
+
+
 |Item
 |Description
 |Cost
@@ -142,7 +144,7 @@ Dimensions exterior: W 230mm, D 210mm, H 86mm
 
 https://szomk.en.alibaba.com/product/60455131585-213058437/Customized_case_box_enclosure_for_gsm_modem_plastic_enclosures.html
 
-| Cost: $17.10, Delivery: $13 | Source: Alibaba
+| $17.10, Delivery: $13 | Alibaba
 
 
 
@@ -152,7 +154,7 @@ a|ABS Black Plastic Sheets Size 12" x 12", 0.118"-1/8" thick, 2-Pack, 1 Side Tex
 
 https://www.ebay.com/itm/ABS-Black-Plastic-Sheets-You-Pick-The-Size-1-2-4-8-Pack-Options-1-Side-Textured/142746168237
 
-| Cost: $19.20 | Source: Ebay
+| $19.20 | Ebay
 
 
 
@@ -165,7 +167,7 @@ a|TOBSUN EA50-5V DC 12V 24V to DC 5V 10A 50W Converter Regulator 5V 50W Power Su
 
 https://www.amazon.com/dp/B01M03288J
 
-| Cost: $9.60 | Source: Amazon
+| $9.60 | Amazon
 
 
 
@@ -173,7 +175,7 @@ https://www.amazon.com/dp/B01M03288J
 
 a| Screws, nuts, etc
 
-|Cost: $10 |Source: Microcenter
+| $10 | Microcenter
 
 
 
@@ -186,14 +188,14 @@ a| Hilitchi 120Pcs M3 Nylon Hex Spacers Screw Nut Standoff Plastic Accessories A
 
 https://www.amazon.com/dp/B012G6E62I
 
-| Cost: $6 | Source: Amazon
+| $6 | Amazon
 
 
 
 | Cable ties
 a| Cable ties
 
-| Cost: $5 | Source: Homedepot
+| $5 | Homedepot
 
 
 
@@ -207,7 +209,7 @@ Stand, Soldering Iron Tip Set, Desoldering Pump, Solder Wick, Tweezers, Rosin, W
 
 https://www.amazon.com/dp/B07Q2B4ZY9
 
-| Cost: $35 | Source: Amazon
+| $35 | Amazon
 
 |===
 
