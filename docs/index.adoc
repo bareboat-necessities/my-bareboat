@@ -46,9 +46,11 @@ from easily obtainable and affordable components. The computer includes:
 * Optional autopilot integration
 * Other NMEA devices
 * Optional WiFi hotspot and router with WiFi extender and long range waterproof WiFi antenna
+* Optional LTE / 4G Gateway
 * Optional air mouse with a wireless keyboard and a touchpad
 * Lightning EMI sensor and alarm
-* RTL-SDR for weather fax, AIS, etc
+* RTL-SDR for weather fax, AIS, RTL 433, etc
+* IoT Integration via MQTT
 
 The computer is connected to the waterproof HDMI touchscreen in
 the cockpit. NMEA 2000 was not in scope of this project.
@@ -56,7 +58,7 @@ the cockpit. NMEA 2000 was not in scope of this project.
 === Boat Computer
 
 The computer runs on Raspberry Pi (Raspbian Linux) with OpenPlotter 2.0 installed. The computer will reside below deck so
-it's not going to be waterproof. The touchscreen displays OpenPlotter UI with OpenCPN chart plotter and dashboards as well as
+it's not going to be waterproof. The touchscreen will display OpenPlotter UI with OpenCPN chart plotter and dashboards as well as
 general Linux UI.
 
 *Front View*
@@ -73,7 +75,7 @@ image::computer-front-panel.jpg[alt="Front View"]
 * 1 HDMI port
 * 1 AUX audio port
 * Status indicators via fiber-optic light pipes
-* Fuse box (panel mount?)
+* Fuse box panel mount
 * On/Off power switch for the computer
 * On/Off power switch for cockpit instruments
 
@@ -82,7 +84,7 @@ image::computer-front-panel.jpg[alt="Front View"]
 * 1 Ethernet port 1Gbit (for the WiFi router)
 * 1 USB 2.0 port for GPS (or something else)
 * 2 NMEA-0183 ports
-* 2 DC power 2-wire cords mounted inside waterproof glands for 12v boat and cockpit connections
+* 2 DC power 2-wire cords mounted inside waterproof glands for 12v boat and cockpit connections. SAE-type connectors
 * HDMI and USB 3.0 connectors to the cockpit display and touchscreen
 * RF connector for AIS antenna
 * RF connector for RTL-SDR antenna
@@ -512,7 +514,9 @@ Make sure you use correct tools for:
 
 ===== Tools
 
- Drill, Screwdriver, Drill bits, Large hole drill bit, Cutting knife, Caliper
+ Drill, Screwdriver, Drill bits, Large hole drill bit, Cutting knife, Caliper, Soldering Kit, Rotary Tool (Like Dremel),
+Heat Gun, Crimper Tool
+
 
 
 ==== Computer and Sensors
