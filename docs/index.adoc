@@ -121,69 +121,95 @@ with additional software.
 
 ===== Enclosure Parts
 
-. Case
-+
-Brand: SZOMK,  Model: AK-D-09, IP54 protection, plastic box for PCB design instrument. Black.
-Dimentions exterior: W 230mm, D 210mm, H 86mm
-+
-Brand (from inside markings): BAHAR
-+
-Model: BDH 20014-A2
-+
+
+
+[cols="4*",options="header",width="100%"]
+|===
+
+|Item
+|Description
+|Cost
+|Source
+
+
+
+| Case
+a| Brand: SZOMK,  Model: AK-D-09, IP54 protection, plastic box for PCB design instrument. Black.
+Dimensions exterior: W 230mm, D 210mm, H 86mm
+
+* Brand (from inside markings): BAHAR
+* Model: BDH 20014-A2
+
 https://szomk.en.alibaba.com/product/60455131585-213058437/Customized_case_box_enclosure_for_gsm_modem_plastic_enclosures.html
-+
- Cost: $17.10, Delivery: $13, Source: Alibaba
 
-. Plastic sheets
-+
-ABS Black Plastic Sheets Size 12" x 12", 0.118"-1/8" thick, 2-Pack, 1 Side Textured, Black
-+
+| Cost: $17.10, Delivery: $13 | Source: Alibaba
+
+
+
+| Plastic sheets
+
+a|ABS Black Plastic Sheets Size 12" x 12", 0.118"-1/8" thick, 2-Pack, 1 Side Textured, Black
+
 https://www.ebay.com/itm/ABS-Black-Plastic-Sheets-You-Pick-The-Size-1-2-4-8-Pack-Options-1-Side-Textured/142746168237
-+
- Cost: $19.20, Source: Ebay
 
-. 12v to 5v step-down converter
-+
-TOBSUN EA50-5V DC 12V 24V to DC 5V 10A 50W Converter Regulator 5V 50W Power Supply Step Down Module Transformer
-+
+| Cost: $19.20 | Source: Ebay
+
+
+
+| 12v to 5v step-down converter
+
+a|TOBSUN EA50-5V DC 12V 24V to DC 5V 10A 50W Converter Regulator 5V 50W Power Supply Step Down Module Transformer
+
 * Over-voltage, over-current, over-temperature, short-circuit auto protection
 * Input voltage: 12/24V, Output: 5V/10A
 
-+
 https://www.amazon.com/dp/B01M03288J
 
- Cost: $9.60, Source: Amazon
+| Cost: $9.60 | Source: Amazon
 
-. Screws, Nuts
 
- Cost: $10, Source: Microcenter
 
-. Hilitchi 120Pcs M3 Nylon Hex Spacers Screw Nut Standoff Plastic Accessories Assortment (Black)
-+
+| Screws, Nuts
+
+a| Screws, nuts, etc
+
+|Cost: $10 |Source: Microcenter
+
+
+
+| Standoffs
+a| Hilitchi 120Pcs M3 Nylon Hex Spacers Screw Nut Standoff Plastic Accessories Assortment (Black)
+
 * UNSPSC Code: 31161816
 * Thread Size: M3
 * Part Number: HNLM3
 
-+
 https://www.amazon.com/dp/B012G6E62I
 
- Cost: $6, Source: Amazon
+| Cost: $6 | Source: Amazon
 
-. Cable ties
 
- Cost: $5, Source: Homedepot
 
-. Soldering Iron Kit - Soldering Iron 60 W Adjustable Temperature, Digital Multimeter, Wire Cutter,
+| Cable ties
+a| Cable ties
+
+| Cost: $5 | Source: Homedepot
+
+
+
+| Soldering
+a| Soldering Iron Kit - Soldering Iron 60 W Adjustable Temperature, Digital Multimeter, Wire Cutter,
 Stand, Soldering Iron Tip Set, Desoldering Pump, Solder Wick, Tweezers, Rosin, Wire - [110 V, US Plug]
 
 * Heat Time: 60.00 seconds
 * Wattage: 60
 * UNSPSC Code: 41110000
 
-+
 https://www.amazon.com/dp/B07Q2B4ZY9
 
- Cost: $35, Source: Amazon
+| Cost: $35 | Source: Amazon
+
+|===
 
 ===== Front Panel
 
