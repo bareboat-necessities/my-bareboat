@@ -799,32 +799,46 @@ https://scanstrut.com/products/waterproof-wireless-charge/rokk-sc-wc-04-detail
 
 === Boat WiFi Network
 
-. WiFi Router
-+
+[cols="4", options="header"]
+|===
+
+
+
+|Item
+|Description
+|Cost
+|Source
+
+
+
+| WiFi Router
+a|
 GL.iNet GL-AR750 Travel AC Router, 300Mbps(2.4G)+433Mbps(5G) Wi-Fi, 128MB RAM, MicroSD Storage Support, OpenWrt/LEDE
-+
+
 * OpenWrt/LEDE (open source)
 * OpenVPN client pre-installed
 * 128MB RAM, up to 128GB MicroSD slot, USB 2.0 port, three Ethernet ports, and optional PoE module
 
-+
 https://www.amazon.com/dp/B07712LKJM
 
- Cost: $45, Source: Amazon
+| $45 | Amazon
 
-. Long Range WiFi Antenna
-+
+
+
+| Long Range WiFi Antenna
+a|
 Lysignal Outdoor Omni Directional Antenna Fiberglass 2.4GHz 8dBi N Female Connector for Cell
 Phone Signal Booster, WiFi Router
-+
+
 * Complies with all 802.11n/b/g (2.4GHz) products
 * High power, high gain outdoor wifi antenna. Extend coverage of a wireless network in all directions
 * Waterproof, striking resistant, anti-corrosion
 
-+
 https://www.amazon.com/dp/B07PG8RPSL
 
- Cost: $36, Source: Amazon
+| $36 | Amazon
+
+|===
 
 The router needs to be modified to add external 2.4GHz antenna. Test U.FL connectors need to be removed
 and real ones should be soldered. The existing U.FL connector is used by internal 5G band antenna.
