@@ -843,9 +843,67 @@ https://scanstrut.com/products/waterproof-wireless-charge/rokk-sc-wc-04-detail
 |===
 
 
-=== Boat WiFi Network
+=== Boat Gateway Box
+
+The second box is going to be extension to the boat computer. It will connect to it via ethernet.
+It will use same type of enclosure.
+
+Features of the boat gateway box:
+
+* Wifi Gateway (connecting to marina's WiFi and on-shore WiFi hot sports)
+
+* LTE / 4G Gateway (providing a boat with internet and voice access within cellular network zone of reception)
+
+* VPN gateway
+
+* Ethernet Hub
+
+* Network Access Storage, Network back-up
+
+* M5Stack ESP32 Controller and LCD Screen (panel mounted)
+
+* Second KPlex (or SignalK) type of server running on M5Stack
+
+* IoT gateway with MQTT
+
+* Any other additional sensors and devices can be added via M5Stack
 
 [cols="4", options="header"]
+
+=== Boat Gateway Front Panel
+
+* Power Switch
+
+* Panel Mounted Fuse Box
+
+* Panel Mounted M5Stack
+
+* Ethernet Port RJ45
+
+* USB 3.0 Port RJ45
+
+* 12V Cigarette Lighter-type of socket or Voltmeter ?
+
+* Memory SD card slot? Water proof cap?
+
+==== Boat Gateway Back Panel
+
+* SAE power (red/black) 12V connector via waterproof gland to boat 12V
+
+* RF coax (SMA or N-Type) connector for external long range WiFi antenna
+
+* RF coax SMA connector to external cellular LTE antenna
+
+* 2 Ethernet Ports with water tight caps
+
+* USB port
+
+* Some NMEA and M5Stack ports (I2C?, CAN? USB?, NMEA2000?, NMEA serial?)
+
+
+
+==== Inside Boat Gateway
+
 |===
 
 
