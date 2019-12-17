@@ -1041,3 +1041,5 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Pane
 
 * https://github.com/merbanan/rtl_433[IoT RTL 433]
 
+* https://www.openscad.org/[OpenSCAD]
+
