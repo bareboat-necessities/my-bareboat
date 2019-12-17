@@ -627,8 +627,8 @@ a| https://www.amazon.com/dp/B01DUSBJ94
 
  For AIS
 
-
 | $24.15 | Amazon
+
 
 
 | Jumper Wires
@@ -668,107 +668,134 @@ image::cockpit-display.svg[alt="Cockpit Display Diagram"]
 
 {zwsp} +
 
-. NavPod GP2300
 
- Cost: $225 + Shipping: $9, Source: anchorexpress.com
+[cols="4", options="header"]
+|===
 
 
-. 5V/6V 3A Switch-mode UBEC, Max 5A Lowest RF
 
-+
+|Item
+|Description
+|Cost
+|Source
+
+
+
+| NavPod
+a| NavPod GP2300
+
+| $225, Shipping: $9 | anchorexpress.com
+
+
+
+| 5V/6V 3A Switch-mode UBEC, Max 5A Lowest RF
+a|
 https://www.amazon.com/dp/B008ZNWOYY
 
- Cost: $3, Source: Amazon
+| $3 | Amazon
 
-. Argonaut M7-gen2 + Water Sealed back
 
-+
+
+| Argonaut M7-gen2 + Water Sealed back
+a|
 https://www.argonautcomputer.com/products/m7-smart-touch-monitor
 
- Cost: $518, Source: argonautcomputer.com
+| $518 | argonautcomputer.com
 
-. DC Wire to cockpit
 
-+
-Marine Wire
 
-+
+| DC Wire to cockpit
+a| Marine Wire
+
 https://www.amazon.com/dp/B01FRK09OY
 
- Cost: $25.50, Source: Amazon
+| $25.50 | Amazon
 
-. Female to Female HDMI adapter
-+
+
+
+| Female to Female HDMI adapter
+a|
 * Compatible with HDMI standard (4K video at 60 Hz, 2160p, 48-bit/px color depth)
 * Supports bandwidth up to 18Gbps
 * backwards compatible with earlier versions
 
-+
 https://www.amazon.com/dp/B07K6HKD8S
 
- Cost: $4.75, Source: Amazon
+| $4.75 | Amazon
 
-. Standard Horizon MMB-97 Flush Mount Kit for Explorer GX1600/GX1700
 
-+
+
+| Standard Horizon MMB-97 Flush Mount Kit for Explorer GX1600/GX1700
+
+a|
 https://www.amazon.com/dp/B004NZOV8A
 
- Cost: $16.50, Source: Amazon
+| $16.50 | Amazon
 
-. USBGear 4-Port USB 3.0 Mountable Charging and 5Gbps Data Hub
 
-+
+
+| USBGear 4-Port USB 3.0 Mountable Charging and 5Gbps Data Hub
+
+a|
 * Supports Super-Speed USB 3.0 over each port with transfer rates up to 5Gbps.
 * Power Adapter: 5V 2A output, 100-240V, 50/60Hz 0.40A
 
-+
 https://www.amazon.com/dp/B012DZ4NJ8
 
- Cost: $29, Source: Amazon
+| $29 | Amazon
 
-. USB 3.0 Extension Cable 20ft, Hftywy USB Type A Male to Female Extension Cord 5Gbps Data Transfer, Red
 
-+
+
+| USB 3.0 Extension Cable 20ft, Hftywy USB Type A Male to Female Extension Cord 5Gbps Data Transfer, Red
+
+a|
 https://www.amazon.com/dp/B07XF3GM1W
 
- Cost: $13, Source: Amazon
+| $13 | Amazon
 
-. Postta HDMI Cable(25 Feet) Ultra HDMI 2.0V Cable with 2 Piece Cable Ties+2 Piece HDMI Adapters
+
+| Long HDMI Cable
+a| Postta HDMI Cable(25 Feet) Ultra HDMI 2.0V Cable with 2 Piece Cable Ties+2 Piece HDMI Adapters
 Support 4K 2160P,1080P,3D,Audio Return and Ethernet, Blue
 
-+
 https://www.amazon.com/dp/B075YPT2F1
 
- Cost: $14, Source: Amazon
+| $14 | Amazon
 
-. Air Mouse and wireless keyboard and touchpad
-+
+
+
+| Air Mouse and wireless keyboard and touchpad
+a|
 H18+ 2.4Ghz Mini Wireless Keyboard Touchpad Combo with 3 Level Backlit Rechargeable Full Screen Mouse Remote Control
 for Android TV Box, Projector, IPTV, HTPC, PC, Laptop
 
-+
 https://www.amazon.com/dp/B0776T8QDC
 
- Cost: $20, Source: Amazon
+| $20 | Amazon
 
-. AcuRite 02020 Portable Lightning Detector
-+
+
+
+| AcuRite 02020 Portable Lightning Detector
+a|
 * Detects lightning bolts and storms within 25 miles
 * Warning light, audible alarm and text alerts
 
-+
 https://www.amazon.com/dp/B00EO1H3X8
 
- Cost: $30, Source: Amazon
+| $30 | Amazon
 
-. Wireless Phone Charger and Holder
-+
-ScanStrut ROKK Wireless - Active (SC-CW-04E) 12v / 24v Waterproof Wireless Phone Charging Mount
 
-+
+
+| Wireless Phone Charger and Holder
+a| ScanStrut ROKK Wireless - Active (SC-CW-04E) 12v / 24v Waterproof Wireless Phone Charging Mount
+
 https://scanstrut.com/products/waterproof-wireless-charge/rokk-sc-wc-04-detail
 
- Cost: $97.60, Source: hodgesmarine.com
+| $97.60 | hodgesmarine.com
+
+
+|===
+
 
 === Boat WiFi Network
 
