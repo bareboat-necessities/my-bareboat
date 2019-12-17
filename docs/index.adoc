@@ -236,6 +236,16 @@ https://www.amazon.com/dp/B07Q2B4ZY9
 |===
 
 
+For those who like 3D printing and designing your own enclosures there is a nice
+project with https://www.openscad.org/[OpenScad] on ThingsVerse. See:
+
+https://www.thingiverse.com/thing:1264391  and
+
+https://www.thingiverse.com/thing:1355018
+
+It's called 'The Ultimate Box Maker'.
+
+
 ===== Front Panel
 
 .Front Panel Diagram
@@ -255,7 +265,7 @@ image::front-panel.svg[alt="Front Panel Diagram"]
 
 
 
-| 2-Wire DC connector (Red, Black)
+| 2-Wire DC connector (Red, **Black**)
 
 a| SAE Connector DC Power Cable, 16 AWG Quick Disconnect, Dust Cap (6 Pcs 1.2 Foot)
 
@@ -265,7 +275,7 @@ https://www.amazon.com/dp/B07MP9MYKP
 
 
 
-| 2-Wire DC connector (Red, White)
+| 2-Wire DC connector (Red, **White**)
 
 a| SAE Connector DC Power Cable, 16 AWG Quick Disconnect
 
@@ -674,9 +684,19 @@ https://www.amazon.com/dp/B008O9YGQI
 
 | $22.45 | Amazon
 
+| RTC Clock
+a| ?
+
+| ? | ?
 
 |===
 
+===== Other Things to Consider (Add-ons)
+
+* RTC Clock
+* Opto couplers for NMEA interfaces
+* Safe power down method
+* Boot from SSD
 
 ===== Assembly Activities
 
