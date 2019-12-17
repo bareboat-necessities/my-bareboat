@@ -203,7 +203,7 @@ a| Cable ties
 a| Soldering Iron Kit - Soldering Iron 60 W Adjustable Temperature, Digital Multimeter, Wire Cutter,
 Stand, Soldering Iron Tip Set, Desoldering Pump, Solder Wick, Tweezers, Rosin, Wire - [110 V, US Plug]
 
-* Heat Time: 60.00 seconds
+* Heat Time: 60 seconds
 * Wattage: 60
 * UNSPSC Code: 41110000
 
@@ -530,100 +530,128 @@ https://creativecommons.org/licenses/by-sa/4.0/deed.en
 
 ====== Sensors and Parts
 
-. Raspberry Pi 4, 4Gb + Power Supply
+[cols="4", options="header"]
+|===
 
- Cost: $65, Source: Amazon
 
-. Heat sinks and Cooling fan, Case
 
-+
-Acrylic Case for Raspberry Pi 4 Model B & Raspberry Pi 3 Model B+, Raspberry Pi Case with Cooling Fan and
+|Item
+|Description
+|Cost
+|Source
+
+
+
+| Pi 4
+a| Raspberry Pi 4, 4Gb + Power Supply
+
+| $65 | Amazon
+
+
+
+| Heat sinks and Cooling fan, Case
+
+a| Acrylic Case for Raspberry Pi 4 Model B & Raspberry Pi 3 Model B+, Raspberry Pi Case with Cooling Fan and
 7PCS Heatsinks for Raspberry Pi 3/2 Model B/B+ (Brown)
 
-+
 https://www.amazon.com/dp/B07T3DRB1C
 
- Cost: $9, Source: Amazon
+| $9 | Amazon
 
-. USB Hub
 
-+
-USBGear 7-Port USB 3.0 Charging and SuperSpeed Mountable Data Hub
 
-+
+
+| USB Hub
+
+a| USBGear 7-Port USB 3.0 Charging and SuperSpeed Mountable Data Hub
+
 https://www.amazon.com/dp/B012DZ4RJY
 
- Cost: $35, Source: Amazon
+| $35 | Amazon
 
 
-. FTDI Serial to USB (2pcs)
 
-+
-DSD TECH SH-U11 USB to RS485 RS422 Converter with FTDI FT232 Chip Compatible with Windows 10, 8, 7, XP and Mac OS X
+| FTDI Serial to USB (2pcs)
 
-+
+a| DSD TECH SH-U11 USB to RS485 RS422 Converter with FTDI FT232 Chip Compatible with Windows 10, 8, 7, XP and Mac OS X
+
 https://www.amazon.com/dp/B07B416CPK
 
- Cost: $34 (for 2), Source: Amazon
+| $34 (for 2) | Amazon
 
-. SSD Drive
 
- Cost: $45, Source: Amazon
 
-. SD Card
+| SSD Drive
+a| TBD: Model
+| $45 | Amazon
 
- Cost: $25, Source: Amazon
 
-. dAISy AIS + BNC Adapter
 
-+
+| SD Card
+a| TBD: Model
+| $25 | Amazon
+
+
+
+| dAISy AIS + BNC Adapter
+a|
 https://shop.wegmatt.com/products/daisy-ais-receiver?variant=7104299008036
 
- Cost: $67.70, Source: wegmatt.com
+| $67.70 | wegmatt.com
 
-. RTL-SDR
-+
-RTL-SDR Blog V3 R820T2 RTL2832U 1PPM TCXO HF Bias Tee SMA Software Defined Radio with Dipole Antenna Kit
 
-+
+
+| RTL-SDR
+
+a| RTL-SDR Blog V3 R820T2 RTL2832U 1PPM TCXO HF Bias Tee SMA Software Defined Radio with Dipole Antenna Kit
+
 https://www.amazon.com/dp/B011HVUEME
 
- Cost: $30, Source: Amazon
+| $30 | Amazon
 
-. IMU + environmental sensors
-+
-BerryGPS-IMUv3 - GPS and 10DOF for The Raspberry Pi - Accelerometer, Gyroscope, Magnetometer and Barometric/Altitude Sensor
 
-+
+
+
+| IMU + environmental sensors
+
+a| BerryGPS-IMUv3 - GPS and 10DOF for The Raspberry Pi - Accelerometer, Gyroscope, Magnetometer and Barometric/Altitude Sensor
+
 https://www.amazon.com/dp/B072MNBC9M
 
- Cost: $53.50, Source: Amazon
+| $53.50 | Amazon
 
-. Tram VHF Marine Antenna
 
-+
-https://www.amazon.com/dp/B01DUSBJ94
 
- Cost: $24.15, Source: Amazon
-+
-For AIS
+| Tram VHF Marine Antenna
+a| https://www.amazon.com/dp/B01DUSBJ94
 
-. 120pcs Breadboard Jumper Wires 10cm 15cm 20cm 30cm 40cm 50cm 100cm Optional Arduino Wire Dupont Cable Assorted
+ For AIS
+
+
+| $24.15 | Amazon
+
+
+| Jumper Wires
+a| 120pcs Breadboard Jumper Wires 10cm 15cm 20cm 30cm 40cm 50cm 100cm Optional Arduino Wire Dupont Cable Assorted
 Kit Male to Female Male to Male Female to Female Multicolored Ribbon Cables
 
-+
 https://www.amazon.com/dp/B07GD2BWPY
 
- Cost: $5.80, Source: Amazon
+| $5.80 | Amazon
 
-. Waterproofing Spray for PCB, Conformal Coating
-+
-422B-340G Silicone Conformal Coating, Clear, 12 oz Aerosol
 
-+
+
+| Waterproofing Spray for PCB, Conformal Coating
+
+a| 422B-340G Silicone Conformal Coating, Clear, 12 oz Aerosol
+
 https://www.amazon.com/dp/B008O9YGQI
 
- Cost: $22.45, Source: Amazon
+| $22.45 | Amazon
+
+
+|===
+
 
 ===== Assembly Activities
 
