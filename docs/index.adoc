@@ -106,6 +106,12 @@ image::back-panel-intf.jpg[alt="Back Panel"]
 
 *Inside View*
 
+NOTE: Raspberry Pi lays on top of middle divider made out of plastic sheet. The power supply (12v to 5v step-down
+converter) is mounted from the other side under the middle divider. The USB hub doesn't fit by height to simply lay
+on the divider, so there is a little shelf made out of same plastic sheet and it is attached by 4 shortest
+standoffs. USB hub is mounted a bit under angle to give space for a screw which closes the enclosure.
+
+
 .Inside View
 image::computer-internals.jpg[alt="Inside View"]
 
