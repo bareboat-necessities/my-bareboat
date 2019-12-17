@@ -952,7 +952,7 @@ See here:
 
 https://www.arednmesh.org/comment/12706#comment-12706
 
-===== Local WiFi
+===== Local WiFi, VNC, etc
 
 ====== VNC
 
@@ -974,7 +974,7 @@ https://openwrt.org/
 
 https://www.helium.com/
 
-===== Boat IoT
+===== Boat IoT, MQTT, M5Stack
 
 ====== MQTT
 
