@@ -965,9 +965,9 @@ https://www.amazon.com/dp/B07PG8RPSL
 | M5Stack Core
 a|ESP32 Basic Core IoT Development Kit
 
-* ESP32 microcontroller
+* ESP32 micro controller
 * Integrated 802.11b/g/n HT40 Wi-Fi transceiver, baseband, stack and LWIP
-* 5-12 v input
+* Bluetooth, BLE
 * 4 MByte flash + 520K RAM
 * Speaker, 3 Buttons, LCD(320*240), 1 Reset
 * 10x capacitive touch interface
@@ -979,16 +979,27 @@ https://m5stack.com/collections/m5-core/products/basic-core-iot-development-kit
 
 
 | M5Stack LAN Module
-a|?
+a|LAN is a M5 Base that having a W5500 chip, which is a Hardwired TCP/IP embedded
+Ethernet controller that provides easier Internet connection to embedded systems.
+This Base is specifically
+designed for industrial application scenarios, comes with couple of HT3.96 connectors
 
-|? |?
+* Input Supply Voltage: 9-24V
+* HT3.96 port for supporting RS485
+* Support RS485 communication
+
+https://m5stack.com/products/lan-module
+
+| $14 | m5stack.com
 
 
 
 | M5Stack Panel Mount Accessory
-a|?
+a|FRAME Panel Extended Install Components (2 Sets)
 
-|? |?
+https://m5stack.com/collections/m5-accessory/products/frame-panel-extended-install-components
+
+| $3.40 | m5stack.com
 
 
 
