@@ -1015,7 +1015,12 @@ image::m5stack-board.jpg[alt="M5Stack Board"]
 
 {zwsp} +
 
-"M5Stack" stands for "Modular 5cm Stackable"
+"M5Stack" stands for "Modular 5cm Stackable".
+
+Looks like waterproof version is already in works.
+
+See: https://twitter.com/m5stack/status/1164091308895457280?lang=en
+
 
 .M5Stack LCD and Communication Module
 image::m5stack-lcd.jpg[alt="M5Stack LCD"]
