@@ -917,7 +917,7 @@ Features of the boat gateway box:
 
 
 
-| WiFi Router
+| WiFi Router (not needed if you go with GL-X750 option)
 a|
 GL.iNet GL-AR750 Travel AC Router, 300Mbps(2.4G)+433Mbps(5G) Wi-Fi, 128MB RAM, MicroSD Storage Support, OpenWrt/LEDE
 
@@ -929,6 +929,21 @@ https://www.amazon.com/dp/B07712LKJM
 
 | $45 | Amazon
 
+
+
+| LTE 4G/3G and Wifi Router (GL-AR750 is not needed if you pick this)
+a| GL.iNet Spitz (GL-X750) 4G Router & 4G Modem (with Sim card slot) for your area and cellular provider
+
+* Transfer 4G LTE signal to Wi-Fi, 5G (433Mbps), 2.4G(300Mbps) Wi-Fi, 4G (EC25, EP06) PCIe modules
+* Powered by Atheros AR9531, @650Mhz
+* 2 x 4G LTE external antennas, 2dBi 5G & 2.4G internal antennas
+* Interface: 1WAN, 1LAN, 1USB2.0, 1 MicroSIM slot, 1 MicroSD slot
+* OPEN SOURCE & PROGRAMMABLE: OpenWrt/LEDE pre-installed
+* 12v input power
+
+https://www.gl-inet.com/products/gl-x750/
+
+| $119 + Modem: $20 + (Optional bluetooth module and wall mount): $16 | gl-inet.com
 
 
 | Long Range WiFi Antenna
