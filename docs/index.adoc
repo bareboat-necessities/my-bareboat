@@ -1008,8 +1008,16 @@ https://m5stack.com/collections/m5-accessory/products/frame-panel-extended-insta
 | $3.40 | m5stack.com
 
 
-
 |===
+
+
+image::m5stack-board.jpg[alt="M5Stack Board"]
+
+{zwsp} +
+
+image::m5stack-lcd.jpg[alt="M5Stack LCD"]
+
+{zwsp} +
 
 The AR-750 router needs to be modified to add external 2.4GHz antenna. Test U.FL connectors need to be removed
 and real ones should be soldered. The existing U.FL connector is used by internal 5G band antenna.
