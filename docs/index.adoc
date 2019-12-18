@@ -1026,6 +1026,8 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Pane
 
 * http://sailoog.com/openplotter[OpenPlotter]
 
+* https://www.rooco.eu/[Moitessier HAT]
+
 * https://www.raspberrypi.org/[RaspberryPi]
 
 * https://m5stack.com/[M5Stack]
@@ -1043,4 +1045,6 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Pane
 * https://github.com/merbanan/rtl_433[IoT RTL 433]
 
 * https://www.openscad.org/[OpenSCAD]
+
+* https://www.nasamarine.com/product/clipper-wireless-wind/[NASA Marine Wireless Wind Instrument]
 
