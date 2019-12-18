@@ -1007,7 +1007,7 @@ https://m5stack.com/collections/m5-accessory/products/frame-panel-extended-insta
 
 |===
 
-The router needs to be modified to add external 2.4GHz antenna. Test U.FL connectors need to be removed
+The AR-750 router needs to be modified to add external 2.4GHz antenna. Test U.FL connectors need to be removed
 and real ones should be soldered. The existing U.FL connector is used by internal 5G band antenna.
 See here:
 
