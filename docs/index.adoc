@@ -938,7 +938,7 @@ a| GL.iNet Spitz (GL-X750) 4G Router & 4G Modem (with Sim card slot) for your ar
 * Powered by Atheros AR9531, @650Mhz
 * 2 x 4G LTE external antennas, 2dBi 5G & 2.4G internal antennas
 * Interface: 1WAN, 1LAN, 1USB2.0, 1 MicroSIM slot, 1 MicroSD slot
-* OPEN SOURCE & PROGRAMMABLE: OpenWrt/LEDE pre-installed
+* OPEN SOURCE & PROGRAMMABLE: OpenWrt/LEDE, OpenVPN pre-installed
 * 12v input power
 
 https://www.gl-inet.com/products/gl-x750/
