@@ -1080,6 +1080,14 @@ https://github.com/merbanan/rtl_433
 https://www.openairinterface.org/
 
 
+==== Other Ideas
+
+Rudder Position project
+
+https://hackaday.io/project/168592-opencpn-chart-plotter-w-autopilot-and-waypoints
+
+
+
 == Pole for Sailboat Solar Panel / Wind Generator
 
 This is no welding, no bends solution. The pole is built from universal stainless steel marine components.
