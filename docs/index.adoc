@@ -946,6 +946,7 @@ https://www.gl-inet.com/products/gl-x750/
 | $119 + Modem: $20 + (Optional bluetooth module and wall mount): $16 | gl-inet.com
 
 
+
 | Long Range WiFi Antenna
 a|
 Lysignal Outdoor Omni Directional Antenna Fiberglass 2.4GHz 8dBi N Female Connector for Cell
@@ -958,6 +959,38 @@ Phone Signal Booster, WiFi Router
 https://www.amazon.com/dp/B07PG8RPSL
 
 | $36 | Amazon
+
+
+
+| M5Stack Core
+a|ESP32 Basic Core IoT Development Kit
+
+* ESP32 microcontroller
+* Integrated 802.11b/g/n HT40 Wi-Fi transceiver, baseband, stack and LWIP
+* 5-12 v input
+* 4 MByte flash + 520K RAM
+* Speaker, 3 Buttons, LCD(320*240), 1 Reset
+* 10x capacitive touch interface
+
+https://m5stack.com/collections/m5-core/products/basic-core-iot-development-kit
+
+| $28 | m5stack.com
+
+
+
+| M5Stack LAN Module
+a|?
+
+|? |?
+
+
+
+| M5Stack Panel Mount Accessory
+a|?
+
+|? |?
+
+
 
 |===
 
