@@ -1015,6 +1015,8 @@ image::m5stack-board.jpg[alt="M5Stack Board"]
 
 {zwsp} +
 
+"M5Stack" stands for "Modular 5cm Stackable"
+
 .M5Stack LCD and Communication Module
 image::m5stack-lcd.jpg[alt="M5Stack LCD"]
 
