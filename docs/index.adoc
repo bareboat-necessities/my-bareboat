@@ -978,7 +978,7 @@ https://m5stack.com/collections/m5-core/products/basic-core-iot-development-kit
 
 
 
-| M5Stack LAN Module
+| M5Stack LAN Module Base
 a|LAN is a M5 Base that having a W5500 chip, which is a Hardwired TCP/IP embedded
 Ethernet controller that provides easier Internet connection to embedded systems.
 This Base is specifically
@@ -986,9 +986,11 @@ designed for industrial application scenarios, comes with couple of HT3.96 conne
 
 * Input Supply Voltage: 9-24V
 * HT3.96 port for supporting RS485
-* Support RS485 communication
+* TTL-to-RS485 adapter board
 
 https://m5stack.com/products/lan-module
+
+https://m5stack.com/collections/m5-base/products/lan-module
 
 | $14 | m5stack.com
 
