@@ -696,8 +696,9 @@ a| ?
 * RTC Clock
 * Opto couplers for NMEA interfaces
 * Safe power down method
-* Boot from SSD
+* Boot from USB SSD
 * Coaxial Lightning Arresters for RF cables
+* Add AmpMeter to Front Panels
 
 ===== Assembly Activities
 
@@ -1115,6 +1116,8 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Pane
 
 * http://sailoog.com/openplotter[OpenPlotter]
 
+* https://pypilot.org/[PyPilot]
+
 * https://www.rooco.eu/[Moitessier HAT]
 
 * https://www.raspberrypi.org/[RaspberryPi]
@@ -1134,6 +1137,8 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Pane
 * https://openwrt.org/[OpenWrt]
 
 * https://mosquitto.org/[Mosquitto MQTT Broker]
+
+* https://nodered.org/[NodeRed]
 
 * https://github.com/merbanan/rtl_433[IoT RTL 433]
 
