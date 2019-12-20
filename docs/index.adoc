@@ -1048,7 +1048,7 @@ See here:
 
 https://www.arednmesh.org/comment/12706#comment-12706
 
-===== GL-X750 Router Modifications
+===== GL-X750 (Spitz) Router Modifications
 
 You get this router with the modem you selected for your region. My modem is Quectel EP06-A.
 EP06-A has 3 antenna connectors. One is connected to internal GPS antenna, another one to internal
@@ -1160,21 +1160,29 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Pane
 
 * http://sailoog.com/openplotter[OpenPlotter]
 
-* https://pypilot.org/[PyPilot]
-
 * https://www.rooco.eu/[Moitessier HAT]
 
-* https://www.raspberrypi.org/[RaspberryPi]
-
-* https://m5stack.com/[M5Stack]
-
-* https://github.com/m5stack/[M5Stack on GitHub]
+* https://pypilot.org/[PyPilot]
 
 * https://www.rtl-sdr.com/[Rtl Sdr Blog]
 
 * http://signalk.org/[SignalK]
 
 * http://www.stripydog.com/kplex/[KPlex]
+
+* https://github.com/canboat[CAN Boat]
+
+* https://github.com/sarfata?tab=repositories[KBox and other boat software]
+
+* https://github.com/ttlappalainen?tab=repositories[NMEA2000 Libraries]
+
+* http://openskipper.org/[OpenSkipper]
+
+* https://www.raspberrypi.org/[RaspberryPi]
+
+* https://m5stack.com/[M5Stack]
+
+* https://github.com/m5stack/[M5Stack on GitHub]
 
 * https://www.openairinterface.org/[OpenAirInterface]
 
