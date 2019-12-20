@@ -1058,10 +1058,10 @@ I've just put another coax cable to Rx Diversity antenna connector and cut a bit
 enough to put that cable through (SMA side on outside).
 
 .GL-X750 Antenna Mod
-image::gl-x750.jpg[alt="GL-X750 Antenna Mod"]
+image::gl-x750.jpg[alt="GL-X750 Antenna Mod", width="75%"]
 
 .GL-X750 Case Mod
-image::gl-x750-antenna-mod.jpg[alt="GL-X750 Screws"]
+image::gl-x750-antenna-mod.jpg[alt="GL-X750 Screws", width="75%"]
 
 
 Probably I should have put another external connector for GPS antenna too. From my understanding if this modem
@@ -1076,6 +1076,8 @@ Or even have a ethernet hub inside if you plan bigger boat LAN (in that case you
 connect the router via hub).
 
 Long range WiFi antenna can go to one of two existing external SMA connectors.
+
+GL-X750 aka Spitz router is taking 12v for power supply.
 
 
 ===== Local WiFi, VNC, etc
