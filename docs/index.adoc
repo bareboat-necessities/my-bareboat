@@ -1077,7 +1077,7 @@ connect the router via hub).
 
 Long range WiFi antenna can go to one of two existing external SMA connectors.
 
-GL-X750 aka Spitz router is taking 12v for power supply.
+GL-X750 aka Spitz router power supply is 12v (No need for buying step-down converter).
 
 
 ===== Local WiFi, VNC, etc
