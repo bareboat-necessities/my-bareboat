@@ -1060,9 +1060,12 @@ enough to put that cable through (SMA side on outside).
 .GL-X750 Antenna Mod
 image::gl-x750.jpg[alt="GL-X750 Antenna Mod", width="75%"]
 
+{zwsp} +
+
 .GL-X750 Case Mod
 image::gl-x750-antenna-mod.jpg[alt="GL-X750 Screws", width="75%"]
 
+{zwsp} +
 
 Probably I should have put another external connector for GPS antenna too. From my understanding if this modem
 loses GPS fix for long time it will lose LTE/4G/3G connection too. It was probably better to have both GPS and LTE
