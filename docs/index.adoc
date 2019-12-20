@@ -1136,6 +1136,42 @@ Rudder Position project
 
 https://hackaday.io/project/168592-opencpn-chart-plotter-w-autopilot-and-waypoints
 
+== Boat Software
+
+=== Openplotter
+
+==== Installation
+
+==== Initial Settings
+
+=== Geolocation
+
+=== Charts and OpenCPN
+
+=== Compass / IMU / Barometer / Thermometer
+
+=== AIS
+
+=== Weather
+
+There are multiple ways to receive weather predictions:
+
+* Download GRIB files via internet. (Only works if internet is available).
+
+* GRIB files via SSB radio (out of scope here)
+
+* Weather FAX (some people just connect radio to computer audio input, record audio file and covert it
+using utility into image). It would be nice to completely automate this process using RTL-SDR.
++
+See: https://www.rtl-sdr.com/tag/weather-fax/
+
+* Images from NOAA satellites via radio. RTL-SDR can be used to automate this as well.
++
+See: https://www.instructables.com/id/Raspberry-Pi-NOAA-Weather-Satellite-Receiver/
+
+
+
+=== NMEA Wind Sensor
 
 
 == Pole for Sailboat Solar Panel / Wind Generator
