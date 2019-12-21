@@ -1096,6 +1096,9 @@ There is even KPlex for OpenWrt. I think this GPS can be fed into OpenPlotter fr
 
 https://github.com/caesar/kplex-openwrt
 
+And you can install KPlex on a router (precompiled) from the router itself!
+
+image::KPlex-OpenWrt-Router.png[alt="KPlex on OpenWrt Router"]
 
 Another modification: By default in GL-X750 one Ethernet port is set up as WAN and another is LAN.
 You can reassign them both as LAN. It is done in web UI of the router.
