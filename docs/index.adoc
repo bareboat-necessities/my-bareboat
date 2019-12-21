@@ -1113,6 +1113,9 @@ Long range WiFi antenna can go to one of two existing external SMA connectors.
 
 GL-X750 aka Spitz router power supply is 12v (No need for buying step-down converter).
 
+Make sure you connect antennas first before activating SIM card in the network or you might get error like:
+
+ SIM card not registered
 
 ===== Local WiFi, VNC, etc
 
