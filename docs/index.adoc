@@ -1074,6 +1074,7 @@ plugged in into power for an hour or so.
 
 The modem is controlled via 'AT' commands.
 To enable the GPS you have to use
+
  AT+QGPS=1
 
 command on /dev/ttyUSB2 and then one can read the nmea sentences on /dev/ttyUSB1.
