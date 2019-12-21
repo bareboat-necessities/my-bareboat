@@ -1072,7 +1072,14 @@ loses GPS fix for long time it will lose LTE/4G/3G connection too. It was probab
 external antennas. Also I think before first use it needs to acquire GPS fix so I need to take this router outside
 plugged in into power for an hour or so.
 
-The modem is controlled via 'AT' commands. I couldn't find the command to check GPS status on the modem.
+The modem is controlled via 'AT' commands.
+To enable the GPS you have to use
+ AT+QGPS=1
+
+command on /dev/ttyUSB2 and then one can read the nmea sentences on /dev/ttyUSB1.
+There are additional commands to configure the GNSS functions, but they’re very limited compared
+to “regular GNSS chips”. The details can be found in the Quectel EP06&EG06&EM06 GNSS AT Commands Manual.
+
 The command to reset the modem to factory defaults is
 
  AT+QPRTPARA=3
