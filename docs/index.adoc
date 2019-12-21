@@ -1091,6 +1091,12 @@ The router is running linux. While setting it up you can login into it like this
 
 The password would be the one you set in web UI.
 
+Hmm:
+There is even KPlex for OpenWrt. I think this GPS can be fed into OpenPlotter from the router!
+
+https://github.com/caesar/kplex-openwrt
+
+
 Another modification: By default in GL-X750 one Ethernet port is set up as WAN and another is LAN.
 You can reassign them both as LAN. It is done in web UI of the router.
 One LAN port will go to main boat computer and another lan port you can connect to M5Stack LAN base module.
