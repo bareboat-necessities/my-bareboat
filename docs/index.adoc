@@ -1109,8 +1109,6 @@ One LAN port will go to main boat computer and another lan port you can connect 
 Or even have a ethernet hub inside if you plan bigger boat LAN (in that case you can leave one port as WAN and
 connect the router via hub).
 
-Long range WiFi antenna can go to one of two existing external SMA connectors.
-
 GL-X750 aka Spitz router power supply is 12v (No need for buying step-down converter).
 
 Make sure you connect antennas first before activating SIM card in the network or you might get error like:
