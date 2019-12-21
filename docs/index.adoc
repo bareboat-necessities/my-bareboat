@@ -1119,7 +1119,8 @@ Make sure you connect antennas first before activating SIM card in the network o
 
 NOTE: If you just need chart plotter capabilities it seems you do not even need raspberry pi. You could just install
 KPlex on GL-X750 router make sure the modem you picked when you buy the router has GPS. And then you use
-OpenCPN installed on an android tablet connected via WiFi to KPLex.
+OpenCPN installed on an android tablet connected via WiFi to KPLex. And with this you have LTE internet on your boat
+and local private WiFi.
 
 
 ===== Local WiFi, VNC, etc
