@@ -960,8 +960,11 @@ Phone Signal Booster, WiFi Router
 * Complies with all 802.11n/b/g (2.4GHz) products
 * High power, high gain outdoor wifi antenna. Extend coverage of a wireless network in all directions
 * Waterproof, striking resistant, anti-corrosion
+* RP (reverse polarity) SMA connector
 
 https://www.amazon.com/dp/B07PG8RPSL
+
+NOTE: This has RP SMA connector, so corresponding panel mount part will need to be RP SMA.
 
 | $36 | Amazon
 
@@ -1275,3 +1278,4 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Pane
 
 * https://www.nasamarine.com/product/clipper-wireless-wind/[NASA Marine Wireless Wind Instrument]
 
+* https://rigpi.net/[RigPi]
