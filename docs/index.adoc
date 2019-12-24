@@ -1108,6 +1108,24 @@ Install the program called 'socat'. With it you can send commands to the modem f
  echo "AT+QGPS=1" | socat - /dev/ttyUSB2,crnl
 
 
+Edit /etc/kplex.conf (vi is there)
+
+----
+
+ [serial]
+ name=gps
+ filename=/dev/ttyUSB1
+ direction=in
+ baud=9600
+
+ [tcp]
+ name=router
+ mode=server
+ port=10110
+ direction=out
+
+----
+
 Another modification: By default in GL-X750 one Ethernet port is set up as WAN and another is LAN.
 You can reassign them both as LAN. It is done in web UI of the router.
 One LAN port will go to main boat computer and another lan port you can connect to M5Stack LAN base module.
