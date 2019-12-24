@@ -1109,17 +1109,18 @@ Install the program called 'socat'. With it you can send commands to the modem f
 
 ----
 
- [serial]
- name=gps
- filename=/dev/ttyUSB1
- direction=in
- baud=9600
+[serial]
+name=gps
+filename=/dev/ttyUSB1
+direction=in
+baud=9600
+strict=no
 
- [tcp]
- name=router
- mode=server
- port=10110
- direction=out
+[tcp]
+name=router
+mode=server
+port=10110
+direction=out
 
 ----
 
