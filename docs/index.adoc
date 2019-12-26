@@ -1080,42 +1080,6 @@ APN for AT&T has to be set to "broadband".
 Device: /dev/ttyUSB2
 Service: LTE/UMTS/GPRS
 
-----
-
-wget http://xtrapath1.izatcloud.net/xtra3grc.bin
-
-AT+QGPSEND
-
-AT+QGPSXTRA=1
-
-AT+QGPSXTRATIME=0,"2019/12/26,04:38:30",1,1,30000
-
-AT+QFUPL="RAM:xtra3grc.bin",25415,60
-
-AT+QFLST="RAM:*"
-
-AT+QGPSXTRADATA="RAM:xtra3grc.bin"
-
-AT+QGPSXTRADATA="UFS:xtra3grc.bin"
-
-AT+QGPSXTRADATA?
-
-AT+QFDEL="RAM:*"
-
-AT+QGPS=1,90,50,0,1
-
-AT+QGPSCFG="autogps",1
-
-AT+QGPSCFG="glonassnmeatype",7
-
-AT+QGPSCFG="galileonmeatype",1
-
-AT+QGPSCFG="beidounmeatype",3
-
-AT+QGPSCFG="gnssconfig",1
-
-----
-
 
 To enable the GPS you have to use
 
@@ -1151,7 +1115,7 @@ image::KPlex-OpenWrt-Router.png[alt="KPlex on OpenWrt Router"]
 AT command for the GPS needs to be run every time on boot. This needs to be scripted.
 Install the program called 'socat'. With it you can send commands to the modem from command line.
 
- echo "AT+QGPS=1" | socat - /dev/ttyUSB2,crnl,eof
+ echo "AT+QGPS=1" | socat - /dev/ttyUSB2,crnl
 
 ----
 
@@ -1182,7 +1146,7 @@ START=98
 
 start()
 {
-     echo "AT+QGPS=1" | socat - /dev/ttyUSB2,crnl,eof
+     echo "AT+QGPS=1" | socat - /dev/ttyUSB2,crnl
 }
 
 ^D
