@@ -1071,6 +1071,52 @@ image::gl-x750-antenna-mod.jpg[alt="GL-X750 Screws", width="75%"]
 {zwsp} +
 
 The modem is controlled via 'AT' commands.
+
+Make sure you connect antennas first before activating SIM card in the network or you might get error like:
+
+ SIM card not registered
+
+APN for AT&T has to be set to "broadband".
+Device: /dev/ttyUSB2
+Service: LTE/UMTS/GPRS
+
+----
+
+wget http://xtrapath1.izatcloud.net/xtra3grc.bin
+
+AT+QGPSEND
+
+AT+QGPSXTRA=1
+
+AT+QGPSXTRATIME=0,"2019/12/26,04:38:30",1,1,30000
+
+AT+QFUPL="RAM:xtra3grc.bin",25415,60
+
+AT+QFLST="RAM:*"
+
+AT+QGPSXTRADATA="RAM:xtra3grc.bin"
+
+AT+QGPSXTRADATA="UFS:xtra3grc.bin"
+
+AT+QGPSXTRADATA?
+
+AT+QFDEL="RAM:*"
+
+AT+QGPS=1,90,50,0,1
+
+AT+QGPSCFG="autogps",1
+
+AT+QGPSCFG="glonassnmeatype",7
+
+AT+QGPSCFG="galileonmeatype",1
+
+AT+QGPSCFG="beidounmeatype",3
+
+AT+QGPSCFG="gnssconfig",1
+
+----
+
+
 To enable the GPS you have to use
 
  AT+QGPS=1
@@ -1152,12 +1198,6 @@ Or even have a ethernet hub inside if you plan bigger boat LAN (in that case you
 connect the router via hub).
 
 GL-X750 aka Spitz router power supply is 12v (No need for buying step-down converter).
-
-Make sure you connect antennas first before activating SIM card in the network or you might get error like:
-
- SIM card not registered
-
-APN for AT&T has to be set to "broadband".
 
 NOTE: If you just need chart plotter capabilities it seems you do not even need raspberry pi. You could just install
 KPlex on GL-X750 router make sure the modem you picked when you buy the router has GPS. And then you use
