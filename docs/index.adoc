@@ -17,7 +17,7 @@ ifdef::env-github[]
 :caution-caption: :fire:
 :warning-caption: :warning:
 endif::[]
-:toc-placement!:
+:toc-placement!: manual
 
 {zwsp} +
 
@@ -26,10 +26,6 @@ image::../../bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 {zwsp} +
 
 https://github.com/bareboat-necessities/my-bareboat
-
-{zwsp} +
-
-toc::[]
 
 {zwsp} +
 
@@ -851,14 +847,15 @@ https://scanstrut.com/products/waterproof-wireless-charge/rokk-sc-wc-04-detail
 
 === Boat Gateway Box
 
-The second box is going to be extension to the boat computer. It will connect to it via ethernet.
-It will use same type of enclosure.
+The second box is an extension to the boat computer. It is connected to it via Ethernet.
+It uses the same type of an enclosure as the boat computer.
 
 Features of the boat gateway box:
 
-* Wifi Gateway (connecting to marina's WiFi and on-shore WiFi hot sports)
+* WiFi Gateway (connecting to marina's WiFi and on-shore WiFi hot-spots via long range WiFi antenna)
 
-* LTE / 4G Gateway (providing a boat with internet and voice access within cellular network zone of reception)
+* LTE / 4G Gateway (providing a boat with the internet and voice access within the zone of reception
+of a cellular network)
 
 * VPN gateway
 
@@ -866,15 +863,18 @@ Features of the boat gateway box:
 
 * Network Access Storage, Network back-up
 
-* M5Stack ESP32 Controller and LCD Screen (panel mounted)
+* M5Stack ESP32 Controller and 3-Buttons LCD display (panel mounted) (with numerous optional M2Stack add-ons)
 
-* Second KPlex (or SignalK) type of server running on M5Stack
+* KPlex server running on router's OpenWrt Linux
+
+* GPS NMEA 0183 talker via KPlex
 
 * IoT gateway with MQTT
 
-* Any other additional sensors and devices can be added via M5Stack
+* Voltage and Amperage Display to monitor power consumption
 
-
+* Any other additional sensors and devices can be added via M5Stack. M5Stack is programmable micro-controller without
+operating system but very capable of running complex programs
 
 ==== Boat Gateway Front Panel
 
@@ -891,6 +891,15 @@ Features of the boat gateway box:
 * 12V Cigarette Lighter-type of socket or Voltmeter ?
 
 * Memory SD card slot? Water proof cap?
+
+.Router Front Panel View
+image::boat-router/router-front-panel-1.jpg[alt="Router Front Panel View"]
+
+{zwsp} +
+
+.Router Front Panel Wiring
+image::boat-router/router-front-panel-2.jpg[alt="Router Front Panel Wiring"]
+
 
 ==== Boat Gateway Back Panel
 
@@ -1326,3 +1335,8 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Pane
 * https://www.nasamarine.com/product/clipper-wireless-wind/[NASA Marine Wireless Wind Instrument]
 
 * https://rigpi.net/[RigPi]
+
+{zwsp} +
+
+toc::[]
+
