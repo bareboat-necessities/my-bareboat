@@ -857,8 +857,11 @@ https://scanstrut.com/products/waterproof-wireless-charge/rokk-sc-wc-04-detail
 
 === Boat Gateway Box
 
-The second box is an extension to the boat computer. It is connected to it via Ethernet.
-It uses the same type of an enclosure as the boat computer.
+The second box is a boat LTE/WiFi/IoT gateway device and it is an extension to the boat computer.
+In case if you do not need HDMI display you might need only the boat gateway because the boat gateway runs its own KPlex
+server under OpenWrt Linux. The boat gateway has M5Stack ESP32 micro-controller and is capable to connect to NMEA
+(if you customize if a bit further). The boat gateway is connected to the boat computer via Ethernet.
+The boat gateway uses the same type of an enclosure as the boat computer.
 
 Features of the boat gateway box:
 
@@ -901,13 +904,13 @@ an operating system but very capable of running complex programs
 * Amp and Volt Meter
 
 
-.Router Front Panel View
-image::boat-router/router-front-panel-1.jpg[alt="Router Front Panel View", width="75%", align="center"]
+.Boat Router Front Panel View
+image::boat-router/router-front-panel-1.jpg[alt="Boat Router Front Panel View", width="75%", align="center"]
 
 {zwsp} +
 
-.Router Front Panel Wiring
-image::boat-router/router-front-panel-2.jpg[alt="Router Front Panel Wiring", width="75%", align="center"]
+.Boat Router Front Panel Wiring
+image::boat-router/router-front-panel-2.jpg[alt="Boat Router Front Panel Wiring", width="75%", align="center"]
 
 {zwsp} +
 
@@ -927,13 +930,13 @@ image::boat-router/router-front-panel-2.jpg[alt="Router Front Panel Wiring", wid
 * Ethernet port with water tight cap for WAN
 
 
-.Router Back Panel View
-image::boat-router/router-back-panel-1.jpg[alt="Router Back Panel View", width="75%", align="center"]
+.Boat Router Back Panel View
+image::boat-router/router-back-panel-1.jpg[alt="Boat Router Back Panel View", width="75%", align="center"]
 
 {zwsp} +
 
-.Router Back Panel Wiring
-image::boat-router/router-back-panel-2.jpg[alt="Router Back Panel Wiring", width="75%", align="center"]
+.Boat Router Back Panel Wiring
+image::boat-router/router-back-panel-2.jpg[alt="Boat Router Back Panel Wiring", width="75%", align="center"]
 
 {zwsp} +
 
@@ -942,18 +945,18 @@ image::boat-router/router-back-panel-2.jpg[alt="Router Back Panel Wiring", width
 
 {zwsp} +
 
-.Router Inside
-image::boat-router/router-inside.jpg[alt="Router Inside", width="75%", align="center"]
+.Boat Router Inside
+image::boat-router/router-inside.jpg[alt="Boat Router Inside", width="75%", align="center"]
 
 {zwsp} +
 
-.Router Inside Top
-image::boat-router/router-inside-1.jpg[alt="Router Inside Top", width="75%", align="center"]
+.Boat Router Inside Top
+image::boat-router/router-inside-1.jpg[alt="Boat Router Inside Top", width="75%", align="center"]
 
 {zwsp} +
 
-.Router Inside Bottom
-image::boat-router/router-inside-2.jpg[alt="Router Inside Bottom", width="75%", align="center"]
+.Boat Router Inside Bottom
+image::boat-router/router-inside-2.jpg[alt="Boat Router Inside Bottom", width="75%", align="center"]
 
 {zwsp} +
 
