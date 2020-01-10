@@ -893,12 +893,12 @@ operating system but very capable of running complex programs
 * Memory SD card slot? Water proof cap?
 
 .Router Front Panel View
-image::boat-router/router-front-panel-1.jpg[alt="Router Front Panel View", width="75%"]
+image::boat-router/router-front-panel-1.jpg[alt="Router Front Panel View", width="75%", align="center"]
 
 {zwsp} +
 
 .Router Front Panel Wiring
-image::boat-router/router-front-panel-2.jpg[alt="Router Front Panel Wiring", width="75%"]
+image::boat-router/router-front-panel-2.jpg[alt="Router Front Panel Wiring", width="75%", align="center"]
 
 {zwsp} +
 
@@ -1071,12 +1071,12 @@ I've just put another coax cable to GPS antenna connector and cut a bit of plast
 enough to put that cable through (SMA side on outside).
 
 .GL-X750 Antenna Mod
-image::gl-x750.jpg[alt="GL-X750 Antenna Mod", width="75%"]
+image::gl-x750.jpg[alt="GL-X750 Antenna Mod", width="75%", align="center"]
 
 {zwsp} +
 
 .GL-X750 Case Mod
-image::gl-x750-antenna-mod.jpg[alt="GL-X750 Screws", width="75%"]
+image::gl-x750-antenna-mod.jpg[alt="GL-X750 Screws", width="75%", align="center"]
 
 {zwsp} +
 
