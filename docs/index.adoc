@@ -931,6 +931,13 @@ image::boat-router/router-back-panel-2.jpg[alt="Router Back Panel Wiring", width
 
 ==== Inside Boat Gateway
 
+{zwsp} +
+
+.Router Inside
+image::boat-router/router-inside.jpg[alt="Router Inside", width="75%", align="center"]
+
+{zwsp} +
+
 .Router Inside Top
 image::boat-router/router-inside-1.jpg[alt="Router Inside Top", width="75%", align="center"]
 
