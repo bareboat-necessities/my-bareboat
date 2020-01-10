@@ -52,7 +52,8 @@ This boating electronics project includes:
 * Can be used with Iridium Satellite Modems
 * Can be used for processing transmissions received from SSB radio via audio interface
 * Variety of options of using wireless handheld devices such as smart phones and tablets
-to connect to boat systems via WiFi and bluetooth
+to connect to boat systems via WiFi and bluetooth. There are many marine applications available for
+smart phones and tablets.
 
 The boat computer is connected to the waterproof HDMI touchscreen in the cockpit.
 
