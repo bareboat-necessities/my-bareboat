@@ -41,7 +41,7 @@ This boating electronics project includes:
 * Environment temperature, barometric pressure, humidity sensors
 * Connections to the boat instruments such as wind, depth, speed via NMEA 0183 serial ports
 * Boat LTE / 4G Gateway
-* Boat WiFi hotspot and router with WiFi extender and long range waterproof WiFi antenna
+* Boat WiFi hotspot and a router with WiFi extender and a long range waterproof WiFi antenna
 * Optional autopilot integration
 * Other NMEA devices
 * Optional air mouse with a wireless keyboard and a touchpad
@@ -51,18 +51,25 @@ This boating electronics project includes:
 
 The boat computer is connected to the waterproof HDMI touchscreen in the cockpit.
 
-=== Boat Computer
+*Boat Computer View*
 
-The boat computer runs on Raspberry Pi (Raspbian Linux) with OpenPlotter 2.0 installed. The boat computer will reside
-below deck so it's not going to be waterproof. The touchscreen displays OpenPlotter UI with OpenCPN chart plotter and
-dashboards as well as general Linux UI.
-
-*Boat Computer Front View*
-
-.Boat Computer Front View
+.Boat Computer View
 image::computer-front-panel.jpg[alt="Boat Computer Front View", width="75%", align="center"]
 
 {zwsp} +
+
+*Boat Gateway View*
+
+.Boat Gateway View
+image::boat-router/boat-router.jpg[alt="Boat Gateway Front View", width="75%", align="center"]
+
+{zwsp} +
+
+=== Boat Computer
+
+The boat computer runs on Raspberry Pi (Raspbian Linux) with OpenPlotter 2.0 installed. The boat computer will reside
+below deck so it's not going to be waterproof. The touchscreen display runs OpenPlotter UI with OpenCPN chartplotter
+and dashboards as well as general Linux UI.
 
 *The boat computer front panel interfaces:*
 
