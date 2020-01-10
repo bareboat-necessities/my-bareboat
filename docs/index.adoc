@@ -35,6 +35,7 @@ This document describes a DIY project of building a marine computer, a boat LTE/
 a cockpit chartplotter display from easily obtainable and affordable components.
 This boating electronics project includes:
 
+* Waterproof marine touch screen HDMI display
 * GNSS (GPS, GLONASS, Beidou, Galileo) receiver
 * Sensors for orientation (gyroscope, compass via IMU)
 * AIS radar
