@@ -31,54 +31,57 @@ https://github.com/bareboat-necessities/my-bareboat
 
 == Boat Electronics Project
 
-This document describes a DIY project of building a boat computer and a cockpit display
-from easily obtainable and affordable components. The computer includes:
+This document describes a DIY project of building a marine computer, a marine LTE/WiFi gateway, and
+a cockpit chartplotter  display from easily obtainable and affordable components.
+This boating electronics project includes:
 
-* GNSS (GPS, etc) receiver
+* GNSS (GPS, GLONASS, Beidou, Galileo) receiver
 * Sensors for orientation (gyroscope, compass via IMU)
 * AIS radar
 * Environment temperature, barometric pressure, humidity sensors
 * Connections to the boat instruments such as wind, depth, speed via NMEA 0183 serial ports
+* LTE / 4G Gateway
+* WiFi hotspot and router with WiFi extender and long range waterproof WiFi antenna
 * Optional autopilot integration
 * Other NMEA devices
-* Optional WiFi hotspot and router with WiFi extender and long range waterproof WiFi antenna
-* Optional LTE / 4G Gateway
 * Optional air mouse with a wireless keyboard and a touchpad
 * Lightning EMI sensor and alarm
-* RTL-SDR for weather fax, AIS, RTL 433, etc
+* RTL-SDR for weather fax, satellite weather, AIS, RTL 433, morse code decoder, etc
 * IoT Integration via MQTT
 
 The computer is connected to the waterproof HDMI touchscreen in
-the cockpit. NMEA 2000 was not in scope of this project.
+the cockpit.
 
 === Boat Computer
 
-The computer runs on Raspberry Pi (Raspbian Linux) with OpenPlotter 2.0 installed. The computer will reside below deck so
-it's not going to be waterproof. The touchscreen will display OpenPlotter UI with OpenCPN chart plotter and dashboards as well as
-general Linux UI.
+The boat computer runs on Raspberry Pi (Raspbian Linux) with OpenPlotter 2.0 installed. The computer will reside
+below deck so it's not going to be waterproof. The touchscreen displays OpenPlotter UI with OpenCPN chart plotter and
+dashboards as well as general Linux UI.
 
-*Front View*
+*Boat Computer Front View*
 
-.Front View
-image::computer-front-panel.jpg[alt="Front View", width="75%", align="center"]
+.Boat Computer Front View
+image::computer-front-panel.jpg[alt="Boat Computer Front View", width="75%", align="center"]
 
 {zwsp} +
 
 *The front panel interfaces:*
 
 * 1 USB 3.0 data port
+* 1 AUX audio port
 * 1 USB 2.0 data port
 * 1 HDMI port
-* 1 AUX audio port
+* Computer Voltage Meter
+* Combined device Amp and Voltage meter
 * Status indicators via fiber-optic light pipes
 * Fuse box panel mount
-* On/Off power switch for the computer
+* On/Off power switch
 * On/Off power switch for cockpit instruments
 
 {zwsp} +
 
-.Front Panel
-image::front-panel-intf.jpg[alt="Front Panel", width="75%", align="center"]
+.Boat Computer Front Panel
+image::front-panel-intf.jpg[alt="Boat Computer Front Panel", width="75%", align="center"]
 
 {zwsp} +
 
@@ -95,12 +98,12 @@ image::front-panel-intf.jpg[alt="Front Panel", width="75%", align="center"]
 
 {zwsp} +
 
-.Back Panel
-image::back-panel-intf.jpg[alt="Back Panel", width="75%", align="center"]
+.Boat Computer Back Panel
+image::back-panel-intf.jpg[alt="Boat Computer Back Panel", width="75%", align="center"]
 
 {zwsp} +
 
-*Inside View*
+*Boat Computer Inside View*
 
 NOTE: Raspberry Pi lays on top of middle divider made out of plastic sheet. The power supply (12v to 5v step-down
 converter) is mounted from the other side under the middle divider. The USB hub doesn't fit by height to simply lay
@@ -108,8 +111,8 @@ on the divider, so there is a little shelf made out of same plastic sheet and it
 standoffs. USB hub is mounted a bit under angle to give space for a screw which closes the enclosure.
 
 
-.Inside View
-image::computer-internals.jpg[alt="Inside View", width="75%", align="center"]
+.Boat Computer Inside View
+image::computer-internals.jpg[alt="Boat Computer Inside View", width="75%", align="center"]
 
 {zwsp} +
 
@@ -135,7 +138,7 @@ Raspberry Pi 4 has also WiFi and BlueTooth interfaces:
 WiFi can be used to set up access to the boat computer from smart phones and tablets
 with additional software.
 
-==== Enclosure
+==== Boat Computer Enclosure
 
 ===== Enclosure Parts
 
