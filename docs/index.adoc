@@ -1291,6 +1291,18 @@ https://github.com/merbanan/rtl_433
 
 https://www.openairinterface.org/
 
+==== Testing the Boat Gateway
+
+{zwsp} +
+
+.Boat Router Testbed
+image::boat-router/boat-router-testbed.jpg[alt="Boat Router Testbed", width="75%", align="center", rotate]
+
+{zwsp} +
+
+.Boat Router LTE Speed
+image::boat-router/boat-router-lte-speed.jpg[alt="Boat Router LTE Speed", width="75%", align="center"]
+
 
 ==== Other Ideas
 
@@ -1299,6 +1311,12 @@ Rudder Position project
 https://hackaday.io/project/168592-opencpn-chart-plotter-w-autopilot-and-waypoints
 
 == Boat Software
+
+=== Software Data Flow
+
+=== Network Diagram
+
+=== Important local URLs on your boat
 
 === Openplotter
 
