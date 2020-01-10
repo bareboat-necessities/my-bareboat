@@ -43,13 +43,15 @@ This boating electronics project includes:
 * Boat LTE / 4G Gateway
 * Boat WiFi hotspot and a router with WiFi extender and a long range waterproof WiFi antenna
 * Optional autopilot integration, rudder angle sensor
-* Other NMEA devices, engine/battery status, etc
+* Other NMEA devices, engine/battery status, bilge pump monitoring, etc
 * Optional air mouse with a wireless keyboard and a touchpad
 * Lightning EMI sensor and alarm
 * RTL-SDR for weather fax, satellite weather, AIS, RTL 433, morse code decoder, etc
 * Boat IoT Integration via MQTT
 * Can be used with Iridium Satellite Modems
 * Can be used for processing transmissions received from SSB radio via audio interface
+* Variety of options of using wireless handheld devices such as smart phones and tablets
+to connect to boat systems via WiFi and bluetooth
 
 The boat computer is connected to the waterproof HDMI touchscreen in the cockpit.
 
