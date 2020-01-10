@@ -75,9 +75,10 @@ NOTE: Keep in mind that following this document you are building devices to be u
 All connections and wiring need to follow marine standards which are more strict than automotive. All nuts and bolts
 needs to be properly tightened. I've run into issues in my sailboat experience on water just because of
 one missing washer  (It was in mechanical system on gear switch wire). Heat shrink tubing, wire grades are different
-for marine standards. If you doubt you did something right you better of revisiting it or seeking peer review from
-other sailors. Same works the other way. If you see something wrong here with the design let us know :)
-There is issues reporting system in GitHub:
+for marine standards. Corrosion in misty salt water air is much higher than on the ground. The boat is exposed
+to elements more than house or automobile appliances. If you doubt you did something right you better of
+revisiting it or seeking peer review from  other sailors. Same works the other way. If you see something wrong
+here with the design let us know :) There is issues reporting system in GitHub:
 https://github.com/bareboat-necessities/my-bareboat/issues
 
 NOTE: Although this document describes mostly instructions on building hardware components, it is designed in
