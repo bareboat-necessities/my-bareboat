@@ -844,6 +844,7 @@ https://scanstrut.com/products/waterproof-wireless-charge/rokk-sc-wc-04-detail
 
 |===
 
+{zwsp} +
 
 === Boat Gateway Box
 
@@ -852,9 +853,9 @@ It uses the same type of an enclosure as the boat computer.
 
 Features of the boat gateway box:
 
-* WiFi Gateway (connecting to marina's WiFi and on-shore WiFi hot-spots via long range WiFi antenna)
+* WiFi Gateway (connecting to marina's WiFi and on-shore WiFi hot-spots via a long range WiFi antenna)
 
-* LTE / 4G Gateway (providing a boat with the internet and voice access within the zone of reception
+* LTE / 4G Gateway (providing a boat with Internet and voice access within the zone of reception
 of a cellular network)
 
 * VPN gateway
@@ -874,7 +875,7 @@ of a cellular network)
 * Voltage and Amperage Display to monitor power consumption
 
 * Any other additional sensors and devices can be added via M5Stack. M5Stack is programmable micro-controller without
-operating system but very capable of running complex programs
+an operating system but very capable of running complex programs
 
 ==== Boat Gateway Front Panel
 
@@ -884,13 +885,12 @@ operating system but very capable of running complex programs
 
 * Panel Mounted Fuse Box
 
-* Panel Mounted M5Stack LCD Display with 3-Buttons
+* Panel Mounted M5Stack LCD Display with 3 Buttons
 
 * USB 2.0 Port RJ45 connected to M5Stack
 
 * Amp and Volt Meter
 
-{zwsp} +
 
 .Router Front Panel View
 image::boat-router/router-front-panel-1.jpg[alt="Router Front Panel View", width="75%", align="center"]
@@ -898,25 +898,35 @@ image::boat-router/router-front-panel-1.jpg[alt="Router Front Panel View", width
 {zwsp} +
 
 .Router Front Panel Wiring
-image::boat-router/router-front-panel-2.jpg[alt="Router Front Panel Wiring", width="75%", align="center"]
-
+image::boat-router/router-front-panel-2.jpg.jpg[alt="Router Front Panel Wiring", width="75%", align="center"]
 
 {zwsp} +
 
+
 ==== Boat Gateway Back Panel
 
-* SAE power (red/black) 12V connector via waterproof gland to boat 12V
+* SAE power (red/black, red male) 12V connector with waterproof gland to boat 12v
 
-* RF coax (SMA or N-Type) connector for external long range WiFi antenna
+* Two SMA coax connectors to external cellular LTE antennas
 
-* RF coax SMA connector to external cellular LTE antenna
+* SMA RP coax connector for external long range WiFi antenna
 
-* 2 Ethernet Ports with water tight caps
+* SMA coax connector to external active GPS antenna
 
-* USB port
+* Three Ethernet Ports with water tight caps for LAN
 
-* Some NMEA and M5Stack ports (I2C?, CAN? USB?, NMEA2000?, NMEA serial?)
+* Ethernet port with water tight cap for WAN
 
+
+.Router Back Panel View
+image::boat-router/router-back-panel-1.jpg[alt="Router Back Panel View", width="75%", align="center"]
+
+{zwsp} +
+
+.Router Back Panel Wiring
+image::boat-router/router-back-panel-2.jpg[alt="Router Back Panel Wiring", width="75%", align="center"]
+
+{zwsp} +
 
 
 ==== Inside Boat Gateway
