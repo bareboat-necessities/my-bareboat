@@ -78,6 +78,9 @@ other sailors. Same works the other way. If you see something wrong here with th
 There is issues reporting system in GitHub:
 https://github.com/bareboat-necessities/my-bareboat/issues
 
+NOTE: Although this document describes mostly instructions on building hardware components, it is designed in
+the spirit of open source development. We hope this design is going to evolve have numerous releases and corrections
+if it gains some community. Some software components might become part of this too.
 
 === Boat Computer
 
