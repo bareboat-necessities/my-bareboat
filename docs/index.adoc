@@ -42,12 +42,14 @@ This boating electronics project includes:
 * Connections to the boat instruments such as wind, depth, speed via NMEA 0183 serial ports
 * Boat LTE / 4G Gateway
 * Boat WiFi hotspot and a router with WiFi extender and a long range waterproof WiFi antenna
-* Optional autopilot integration
-* Other NMEA devices
+* Optional autopilot integration, rudder angle sensor
+* Other NMEA devices, engine/battery status, etc
 * Optional air mouse with a wireless keyboard and a touchpad
 * Lightning EMI sensor and alarm
 * RTL-SDR for weather fax, satellite weather, AIS, RTL 433, morse code decoder, etc
 * Boat IoT Integration via MQTT
+* Can be used with Iridium Satellite Modems
+* Can be used for processing transmissions received from SSB radio via audio interface
 
 The boat computer is connected to the waterproof HDMI touchscreen in the cockpit.
 
@@ -64,6 +66,16 @@ image::computer-front-panel.jpg[alt="Boat Computer Front View", width="75%", ali
 image::boat-router/boat-router.jpg[alt="Boat Gateway Front View", width="75%", align="center"]
 
 {zwsp} +
+
+NOTE: Keep in mind that following this document you are building devices to be used in marine environment.
+All connections and wiring need to follow marine standards which are more strict than automotive. All nuts and bolts
+needs to be properly tightened. I've run into issues in my sailboat experience on water just because of
+one missing washer  (It was in mechanical system on gear switch wire). Heat shrink tubing, wire grades are different
+for marine standards. If you doubt you did something right you better of revisiting it or seeking peer review from
+other sailors. Same works the other way. If you see something wrong here with the design let us know :)
+There is issues reporting system in GitHub:
+https://github.com/bareboat-necessities/my-bareboat/issues
+
 
 === Boat Computer
 
@@ -95,12 +107,14 @@ image::front-panel-intf.jpg[alt="Boat Computer Front Panel", width="75%", align=
 
 * 1 Ethernet port 1Gbit (for the WiFi router)
 * 1 USB 2.0 port for GPS (or something else)
-* 2 NMEA-0183 ports
-* 2 DC power 2-wire cords mounted inside waterproof glands for 12v boat and cockpit connections. SAE-type connectors
+* 1 NMEA-0183 port (More can be added in same DYI fashion)
+* DC power 2-wire input cord mounted inside a waterproof gland for 12v boat connection. SAE-type connector
+* DC power 2-wire output cord mounted inside a waterproof gland for 12v cockpit connection. SAE-type connector
+(black male)
 * HDMI and USB 3.0 connectors to the cockpit display and touchscreen
 * RF connector for AIS antenna
 * RF connector for RTL-SDR antenna
-* RF connector for a secondary GPS
+* SMA RF connector for a secondary GPS
 
 {zwsp} +
 
