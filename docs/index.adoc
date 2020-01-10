@@ -863,7 +863,7 @@ of a cellular network)
 
 * Network Access Storage, Network back-up
 
-* M5Stack ESP32 Controller and 3-Buttons LCD display (panel mounted) (with numerous optional M2Stack add-ons)
+* M5Stack ESP32 Controller and 3-Buttons LCD display (panel mounted, numerous optional M2Stack add-ons)
 
 * KPlex server running on router's OpenWrt Linux
 
@@ -878,34 +878,28 @@ operating system but very capable of running complex programs
 
 ==== Boat Gateway Front Panel
 
-* Power Switch
+* Power On/Off Switch
+
+* Router Power On/Off Switch
 
 * Panel Mounted Fuse Box
 
-* Panel Mounted M5Stack
+* Panel Mounted M5Stack LCD Display with 3-Buttons
 
-* Ethernet Port RJ45
+* USB 2.0 Port RJ45 connected to M5Stack
 
-* USB 3.0 Port RJ45
-
-* 12V Cigarette Lighter-type of socket or Voltmeter ?
-
-* Memory SD card slot? Water proof cap?
-
-[.float-group]
---
-
-[.text-center]
-.Router Front Panel View
-image::boat-router/router-front-panel-1.jpg[alt="Router Front Panel View", width="50%", align="center"]
+* Amp and Volt Meter
 
 {zwsp} +
 
-[.text-center]
-.Router Front Panel Wiring
-image::boat-router/router-front-panel-2.jpg[alt="Router Front Panel Wiring", width="50%", align="center"]
+.Router Front Panel View
+image::boat-router/router-front-panel-1.jpg[alt="Router Front Panel View", width="75%", align="center"]
 
---
+{zwsp} +
+
+.Router Front Panel Wiring
+image::boat-router/router-front-panel-2.jpg[alt="Router Front Panel Wiring", width="75%", align="center"]
+
 
 {zwsp} +
 
