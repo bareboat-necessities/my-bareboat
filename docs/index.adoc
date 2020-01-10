@@ -893,13 +893,14 @@ operating system but very capable of running complex programs
 * Memory SD card slot? Water proof cap?
 
 .Router Front Panel View
-image::boat-router/router-front-panel-1.jpg[alt="Router Front Panel View"]
+image::boat-router/router-front-panel-1.jpg[alt="Router Front Panel View", width="75%"]
 
 {zwsp} +
 
 .Router Front Panel Wiring
-image::boat-router/router-front-panel-2.jpg[alt="Router Front Panel Wiring"]
+image::boat-router/router-front-panel-2.jpg[alt="Router Front Panel Wiring", width="75%"]
 
+{zwsp} +
 
 ==== Boat Gateway Back Panel
 
