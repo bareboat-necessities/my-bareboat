@@ -60,7 +60,7 @@ general Linux UI.
 *Front View*
 
 .Front View
-image::computer-front-panel.jpg[alt="Front View"]
+image::computer-front-panel.jpg[alt="Front View", width="75%", align="center"]
 
 {zwsp} +
 
@@ -78,7 +78,7 @@ image::computer-front-panel.jpg[alt="Front View"]
 {zwsp} +
 
 .Front Panel
-image::front-panel-intf.jpg[alt="Front Panel"]
+image::front-panel-intf.jpg[alt="Front Panel", width="75%", align="center"]
 
 {zwsp} +
 
@@ -96,7 +96,7 @@ image::front-panel-intf.jpg[alt="Front Panel"]
 {zwsp} +
 
 .Back Panel
-image::back-panel-intf.jpg[alt="Back Panel"]
+image::back-panel-intf.jpg[alt="Back Panel", width="75%", align="center"]
 
 {zwsp} +
 
@@ -109,7 +109,7 @@ standoffs. USB hub is mounted a bit under angle to give space for a screw which 
 
 
 .Inside View
-image::computer-internals.jpg[alt="Inside View"]
+image::computer-internals.jpg[alt="Inside View", width="75%", align="center"]
 
 {zwsp} +
 
@@ -898,7 +898,7 @@ image::boat-router/router-front-panel-1.jpg[alt="Router Front Panel View", width
 {zwsp} +
 
 .Router Front Panel Wiring
-image::boat-router/router-front-panel-2.jpg.jpg[alt="Router Front Panel Wiring", width="75%", align="center"]
+image::boat-router/router-front-panel-2.jpg[alt="Router Front Panel Wiring", width="75%", align="center"]
 
 {zwsp} +
 
