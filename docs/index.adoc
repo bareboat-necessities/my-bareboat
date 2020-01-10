@@ -79,8 +79,10 @@ There is issues reporting system in GitHub:
 https://github.com/bareboat-necessities/my-bareboat/issues
 
 NOTE: Although this document describes mostly instructions on building hardware components, it is designed in
-the spirit of open source development. We hope this design is going to evolve have numerous releases and corrections
-if it gains some community. Some software components might become part of this too.
+the spirit of open source development. We hope this design is going to evolve and have numerous releases and corrections
+if it gains some community. Some software components might become part of this too. Cost cutting is another sport and
+sub-hobby in recreational sailing and boating. So if same functionality can be built cheaper it probably should be, and
+here is the reason to change this document.
 
 === Boat Computer
 
