@@ -1,6 +1,6 @@
-= Bareboat Necessities Documentation
+= Bareboat Necessities Project
 mgrouch <mgrouch@users.noreply.github.com>
-0.5, Dec 2, 2019, Bareboat Projects Documentation
+0.6, Jan 9, 2020, Bareboat Projects
 :toc:
 :toclevels: 4
 :sectnums:
@@ -32,7 +32,7 @@ https://github.com/bareboat-necessities/my-bareboat
 == Boat Electronics Project
 
 This document describes a DIY project of building a marine computer, a marine LTE/WiFi gateway, and
-a cockpit chartplotter  display from easily obtainable and affordable components.
+a cockpit chartplotter display from easily obtainable and affordable components.
 This boating electronics project includes:
 
 * GNSS (GPS, GLONASS, Beidou, Galileo) receiver
@@ -49,8 +49,7 @@ This boating electronics project includes:
 * RTL-SDR for weather fax, satellite weather, AIS, RTL 433, morse code decoder, etc
 * IoT Integration via MQTT
 
-The computer is connected to the waterproof HDMI touchscreen in
-the cockpit.
+The computer is connected to the waterproof HDMI touchscreen in the cockpit.
 
 === Boat Computer
 
