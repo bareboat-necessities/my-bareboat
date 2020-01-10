@@ -1048,7 +1048,7 @@ https://m5stack.com/collections/m5-accessory/products/frame-panel-extended-insta
 |===
 
 .M5Stack ESP32 Controller Board
-image::m5stack-board.jpg[alt="M5Stack Board"]
+image::m5stack-board.jpg[alt="M5Stack Board", width="75%", align="center"]
 
 {zwsp} +
 
@@ -1060,7 +1060,7 @@ See: https://twitter.com/m5stack/status/1164091308895457280?lang=en
 
 
 .M5Stack LCD and Communication Module
-image::m5stack-lcd.jpg[alt="M5Stack LCD"]
+image::m5stack-lcd.jpg[alt="M5Stack LCD", width="75%", align="center"]
 
 {zwsp} +
 
