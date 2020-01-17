@@ -1347,6 +1347,7 @@ I've made a script to install it.
 See: https://github.com/bareboat-necessities/my-bareboat/blob/master/svkbd/rpi_svkbd_install.sh
 
 With 'twofing' fix and an on-screen svkbd keyboard OpenCPN is much more usable on my touch screen display.
+Smooth Panning/Zooming, OpenGL, and Touchscreen should be all enabled in OpenCPN settings.
 
 === Compass / IMU / Barometer / Thermometer
 
