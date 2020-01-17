@@ -1339,6 +1339,10 @@ See: https://github.com/bareboat-necessities/my-bareboat/blob/master/twofing/rpi
 Now zooming works with two fingers, there is a right click emulation with two fingers touch as well.
 With few modifications it can work for other screens. You will need to find out vendorID, productID and
 name for your touch screen display.
+I have Argonaut M7 gen2 screen. It gives me VendorID: 0000, ProductId: 0009, Name:
+'Argonaut. Touchscreen'.
+For Argonaut M7 gen1 I've seen in posts VendorID: 04d8, ProductId: f724
+and reported device name as 'Microchip Technology, Inc.'.
 
 Another issue is entering the text on a touchscreen. I've added virtual on screen keyboard. I've compared
 several and the one I liked the most is svkbd.
