@@ -1336,6 +1336,7 @@ It is easy to install. I've combined the script for my Argonaut M7 waterproof di
 
 See: https://github.com/bareboat-necessities/my-bareboat/blob/master/twofing/rpi_twofing_install.sh
 
+Now zooming works with two fingers, there is a right click emulation with two fingers touch as well.
 With few modifications it can work for other screens. You will need to find out vendorID, productID and
 name for your touch screen display.
 
@@ -1345,6 +1346,7 @@ several and the one I liked the most is svkbd.
 I've made a script to install it.
 See: https://github.com/bareboat-necessities/my-bareboat/blob/master/svkbd/rpi_svkbd_install.sh
 
+With 'twofing' fix and an on-screen svkbd keyboard OpenCPN is much more usable on my touch screen display.
 
 === Compass / IMU / Barometer / Thermometer
 
