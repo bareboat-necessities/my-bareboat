@@ -18,6 +18,7 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 :toc-placement!: manual
+:env-github:
 
 {zwsp} +
 
@@ -1358,7 +1359,7 @@ https://hackaday.io/project/168592-opencpn-chart-plotter-w-autopilot-and-waypoin
 === Software Data Flow
 
 .Software Architecture
-ifdef::env-github[image::plantuml/software-arch.svg[Software Architecture]]
+ifdef::env-github[image::software-arch.svg[Software Architecture]]
 ifndef::env-github[]
 
 [plantuml,software-arch,svg]
@@ -1375,7 +1376,7 @@ endif::[]
 === Network Diagram
 
 .Network Diagram
-ifdef::env-github[image::plantuml/network-arch.svg[Network]]
+ifdef::env-github[image::network-arch.svg[Network]]
 ifndef::env-github[]
 
 [plantuml,network-arch,svg]
