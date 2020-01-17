@@ -1303,6 +1303,22 @@ image::boat-router/boat-router-testbed.jpg[alt="Boat Router Testbed", width="75%
 .Boat Router LTE Speed
 image::boat-router/boat-router-lte-speed.jpg[alt="Boat Router LTE Speed", width="75%", align="center"]
 
+===== Good
+
+* LTE speed is good even with two little antennas it came with.
+* Time to acquire a GPS location fix is very short with external antenna. I do not have exact time but it's under
+few minutes even inside the house. Having external GPS antenna made a huge improvement.
+* Power usage of the whole gateway box in well under 2 watts. 2 watts is under speed stress test with uploads over LTE.
+
+===== Not so good
+
+* External WiFi antenna (the one from the bill of material) did very little to improve the range. (Again I've tested
+it inside the house, without placing the antenna outside). My modification of the connector inside the router and soldering
+it might have been not good so you might have better results.
+* Bigger LTE antenna (again from the bill of material) didn't give better signal quality (even a bit lower) than
+original antennas supplied with Spritz router. (Could be different picture on other bands though). With either of
+antennas LTE performed well.
+
 
 ==== Other Ideas
 
