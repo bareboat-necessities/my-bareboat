@@ -1328,6 +1328,24 @@ https://hackaday.io/project/168592-opencpn-chart-plotter-w-autopilot-and-waypoin
 
 === Charts and OpenCPN
 
+==== Touch Screen
+
+One of the issues that kept bugging me was the lack of multitouch support on a touchscreen
+in OpenCPN and Raspbian UI in general. Well there is a fix! The solution requires the program called 'twofing'.
+It is easy to install. I've combined the script for my Argonaut M7 waterproof display.
+
+See: https://github.com/bareboat-necessities/my-bareboat/blob/master/twofing/rpi_twofing_install.sh
+
+With few modifications it can work for other screens. You will need to find out vendorID, productID and
+name for your touch screen display.
+
+Another issue is entering the text on a touchscreen. I've added virtual on screen keyboard. I've compared
+several and the one I liked the most is svkbd.
+
+I've made a script to install it.
+See: https://github.com/bareboat-necessities/my-bareboat/blob/master/svkbd/rpi_svkbd_install.sh
+
+
 === Compass / IMU / Barometer / Thermometer
 
 === AIS
