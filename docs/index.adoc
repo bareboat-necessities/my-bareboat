@@ -734,14 +734,14 @@ a| ?
 ===== Power Usage
 
 * Preliminary tests show that combined power consumption of Raspberry Pi 4 based boat computer and
-Argonaut M7 gen2 7-inch touch display stays under 10 watts. The display starts with maximum brightness.
+Argonaut M7 gen2 7-inch touch display stays under 10 watts.
 If I turn off the display then wattage drops to 4-4.5 watts. If I reduce the brightness on the display backlight
 it drops dramatically as well. So both display and Pi contribute about the same share in power consumption.
 On average I see their combined draw of 0.55 amps at 12v (about 7 watts). This is with 2 chained USB hubs
 and long wires (HDMI/USB/power) between a computer and cockpit display and hub, AIS (dAISy), RTL-SDR (plugged in but
 idling), Flashdrive SSD, FTDI (connected only into USB).
 * 10 watts on 80 amp-hours 12v battery (in my understanding they are rated for that before drop below 10v,
-so it is all usable amps) will give you 80*12/10=96 hours of chartplotting at max brightness. C'est la vie.
+so it is all usable amps) will give you approximately 80*12/10=96 hours of chartplotting at max brightness. C'est la vie.
 That's why you need solar panels on your sailboat.
 * While experimenting with power usage and connecting Argonaut M7 to different USB ports and hubs (USB2, USB3)
 it became unresponsive. Even its own power on/off button didn't work. I had to perform a hardware reset of it.
@@ -1357,7 +1357,33 @@ https://hackaday.io/project/168592-opencpn-chart-plotter-w-autopilot-and-waypoin
 
 === Software Data Flow
 
+.Software Architecture
+ifdef::env-github[image::plantuml/software-arch.svg[Software Architecture]]
+ifndef::env-github[]
+
+[plantuml,software-arch,svg]
+....
+!include plantuml/software-arch.puml
+....
+
+endif::[]
+
+{zwsp} +
+
+{zwsp} +
+
 === Network Diagram
+
+.Network Diagram
+ifdef::env-github[image::plantuml/network-arch.svg[Network]]
+ifndef::env-github[]
+
+[plantuml,network-arch,svg]
+....
+!include plantuml/network-arch.puml
+....
+
+endif::[]
 
 === Important local URLs on your boat
 
@@ -1492,4 +1518,6 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Pane
 {zwsp} +
 
 toc::[]
+
+
 

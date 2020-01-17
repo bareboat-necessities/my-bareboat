@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   contentScriptType="application/ecmascript"
+   contentStyleType="text/css"
+   height="539px"
+   preserveAspectRatio="none"
+   style="width:1223px;height:539px;"
+   version="1.1"
+   viewBox="0 0 1223 539"
+   width="1223px"
+   zoomAndPan="magnify"
+   id="svg111"
+   sodipodi:docname="network-arch.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <metadata
+     id="metadata115">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview113"
+     showgrid="false"
+     inkscape:zoom="0.23548651"
+     inkscape:cx="611.5"
+     inkscape:cy="269.5"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg111" />
+  <defs
+     id="defs11">
+    <filter
+       height="300%"
+       id="f1ulnakqesc0kr"
+       width="300%"
+       x="-1"
+       y="-1">
+      <feGaussianBlur
+         result="blurOut"
+         stdDeviation="2.0"
+         id="feGaussianBlur2" />
+      <feColorMatrix
+         in="blurOut"
+         result="blurOut2"
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"
+         id="feColorMatrix4" />
+      <feOffset
+         dx="4.0"
+         dy="4.0"
+         in="blurOut2"
+         result="blurOut3"
+         id="feOffset6" />
+      <feBlend
+         in="SourceGraphic"
+         in2="blurOut3"
+         mode="normal"
+         id="feBlend8" />
+    </filter>
+  </defs>
+  <g
+     id="g109">
+    <!--MD5=[953a8c67cfe21abaf9bf45dad8506ca8]
+entity Router-->
+    <polygon
+       fill="#FEFECE"
+       filter="url(#f1ulnakqesc0kr)"
+       points="324,228,334,218,482,218,482,311.9531,472,321.9531,324,321.9531,324,228"
+       style="stroke: #000000; stroke-width: 1.5;"
+       id="polygon13" />
+    <line
+       style="stroke: #000000; stroke-width: 1.5;"
+       x1="472"
+       x2="481"
+       y1="228"
+       y2="219"
+       id="line15" />
+    <line
+       style="stroke: #000000; stroke-width: 1.5;"
+       x1="324"
+       x2="472"
+       y1="228"
+       y2="228"
+       id="line17" />
+    <line
+       style="stroke: #000000; stroke-width: 1.5;"
+       x1="472"
+       x2="472"
+       y1="228"
+       y2="321.9531"
+       id="line19" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="117"
+       x="339"
+       y="251.5352"
+       id="text21">Router (gl-x750)</text>
+    <line
+       style="stroke: #000000; stroke-width: 1.0;"
+       x1="324"
+       x2="472"
+       y1="254.4883"
+       y2="254.4883"
+       id="line23" />
+    <line
+       style="stroke: #000000; stroke-width: 1.0;"
+       x1="472"
+       x2="482"
+       y1="254.4883"
+       y2="244.4883"
+       id="line25" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="106"
+       x="345"
+       y="272.0234"
+       id="text27">LTE/WiFi router</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="84"
+       x="345"
+       y="288.5117"
+       id="text29">192.168.8.1</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="27"
+       x="345"
+       y="305"
+       id="text31">VPN</text>
+    <!--MD5=[8c4b4395020836ad8707b0d428dbb2d2]
+entity EthernetHub-->
+    <polygon
+       fill="#FEFECE"
+       filter="url(#f1ulnakqesc0kr)"
+       points="404,30.5,414,20.5,550,20.5,550,56.9883,540,66.9883,404,66.9883,404,30.5"
+       style="stroke: #000000; stroke-width: 1.5;"
+       id="polygon33" />
+    <line
+       style="stroke: #000000; stroke-width: 1.5;"
+       x1="540"
+       x2="549"
+       y1="30.5"
+       y2="21.5"
+       id="line35" />
+    <line
+       style="stroke: #000000; stroke-width: 1.5;"
+       x1="404"
+       x2="540"
+       y1="30.5"
+       y2="30.5"
+       id="line37" />
+    <line
+       style="stroke: #000000; stroke-width: 1.5;"
+       x1="540"
+       x2="540"
+       y1="30.5"
+       y2="66.9883"
+       id="line39" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="106"
+       x="419"
+       y="54.0352"
+       id="text41">Ethernet Switch</text>
+    <!--MD5=[d9230e0581ef01bc19f835e6d4139803]
+entity BoatComputer-->
+    <polygon
+       fill="#FEFECE"
+       filter="url(#f1ulnakqesc0kr)"
+       points="609,18,619,8,845,8,845,68.9766,835,78.9766,609,78.9766,609,18"
+       style="stroke: #000000; stroke-width: 1.5;"
+       id="polygon43" />
+    <line
+       style="stroke: #000000; stroke-width: 1.5;"
+       x1="835"
+       x2="844"
+       y1="18"
+       y2="9"
+       id="line45" />
+    <line
+       style="stroke: #000000; stroke-width: 1.5;"
+       x1="609"
+       x2="835"
+       y1="18"
+       y2="18"
+       id="line47" />
+    <line
+       style="stroke: #000000; stroke-width: 1.5;"
+       x1="835"
+       x2="835"
+       y1="18"
+       y2="78.9766"
+       id="line49" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="196"
+       x="624"
+       y="41.5352"
+       id="text51">Boat Computer (raspberrypi)</text>
+    <line
+       style="stroke: #000000; stroke-width: 1.0;"
+       x1="609"
+       x2="835"
+       y1="44.4883"
+       y2="44.4883"
+       id="line53" />
+    <line
+       style="stroke: #000000; stroke-width: 1.0;"
+       x1="835"
+       x2="845"
+       y1="44.4883"
+       y2="34.4883"
+       id="line55" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="66"
+       x="630"
+       y="62.0234"
+       id="text57">10.10.1.1</text>
+    <!--MD5=[ae0f475ca00a867d3293d63028080073]
+entity M5Stack-->
+    <polygon
+       fill="#FEFECE"
+       filter="url(#f1ulnakqesc0kr)"
+       points="896,30.5,906,20.5,1064,20.5,1064,56.9883,1054,66.9883,896,66.9883,896,30.5"
+       style="stroke: #000000; stroke-width: 1.5;"
+       id="polygon59" />
+    <line
+       style="stroke: #000000; stroke-width: 1.5;"
+       x1="1054"
+       x2="1063"
+       y1="30.5"
+       y2="21.5"
+       id="line61" />
+    <line
+       style="stroke: #000000; stroke-width: 1.5;"
+       x1="896"
+       x2="1054"
+       y1="30.5"
+       y2="30.5"
+       id="line63" />
+    <line
+       style="stroke: #000000; stroke-width: 1.5;"
+       x1="1054"
+       x2="1054"
+       y1="30.5"
+       y2="66.9883"
+       id="line65" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="128"
+       x="911"
+       y="54.0352"
+       id="text67">M5Stack (m5stack)</text>
+    <!--MD5=[280290513fc07a6e2468d06d1c4f8974]
+entity CellularWAN-->
+    <path
+       d="M14.5081,469.0238 C23.4575,456.398 34.2056,452.2861 44.1821,467.9463 C51.8964,459.0363 62.8821,457.4736 67.8675,470.8467 C73.7606,455.6209 84.5899,456.8558 94.0592,467.1808 C101.23,453.1835 115.3549,450.4727 124.4051,465.1948 C134.905,452.4804 144.0273,456.1415 151.5613,468.4178 C157.1978,455.9347 166.4133,454.4907 174.3698,466.2336 C181.0563,450.556 195.2647,449.1006 203.8099,464.4712 C212.6171,454.0258 221.1393,454.5157 227.4447,467.0449 C234.9261,450.9809 248.4092,452.1839 256.4641,466.4971 C265.0729,453.9169 275.2051,456.9962 281.9535,468.4687 C290.9487,454.1382 303.5018,456.9178 310.675,470.3533 C317.6934,459.1588 327.6568,460.0378 334.57,470.4695 C344.0099,457.574 355.072,455.6123 363.9135,471.0883 C371.3009,461.835 378.1799,461.6503 386.0447,470.5047 C391.7093,469.4629 393.5196,473.2793 392.0724,477.9755 C396.329,478.379 397.5774,480.5226 395.7162,484.3974 C398.3519,489.5523 396.1481,491.7461 391.1639,492.7462 C394.7081,496.0126 393.4535,498.1057 389.8736,500.1265 C381.9819,516.2375 371.7167,517.6194 359.9027,504.093 C352.3912,516.2623 344.5968,516.6051 335.3424,505.97 C325.8301,519.3798 314.0727,517.3772 307.0255,503.4193 C300.6054,516.076 289.9794,516.1264 282.6739,504.3 C276.3284,516.4627 266.5532,519.2458 257.1582,507.5631 C250.1286,520.3597 240.2382,519.9722 231.073,510.011 C222.8205,524.1992 214.1052,522.3347 204.5004,511.444 C193.7775,527.2568 184.3748,524.7594 174.2609,510.825 C167.1416,520.4001 156.9056,522.0186 150.9491,509.593 C141.0841,520.9671 130.4897,521.1096 122.022,507.9457 C114.9566,520.1799 103.281,519.1549 96.5409,507.5973 C84.968,519.0952 76.0768,518.6088 68.7251,503.2288 C62.7332,516.8124 52.9261,515.8894 44.7921,505.3543 C33.0013,519.7128 21.4311,518.8378 14.1454,501.0583 C9.2371,499.696 7.4879,496.5195 11.0353,492.1912 C6.364,490.6616 5.4773,488.327 8.6419,484.3926 C5.9931,480.9795 7.0006,478.705 10.8749,477.3644 C8.1206,473.1399 8.9244,469.6162 14.5081,469.0238 "
+       fill="#FEFECE"
+       style="stroke: #000000; stroke-width: 1.5;"
+       id="path69" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="358"
+       x="21"
+       y="489.5352"
+       id="text71">Cellular WAN                         Wireless Provider Subnet</text>
+    <!--MD5=[7200e0f38b3469effd01c61735863325]
+entity RemoteWiFi-->
+    <path
+       d="M437.0816,472.9648 C443.5543,462.4566 455.0188,461.7814 462.3645,471.8945 C470.0957,459.7221 479.2224,457.4541 489.5446,468.9146 C495.7085,456.8507 503.0342,456.7426 511.2889,466.8656 C517.9597,454.0993 530.98,455.3162 537.883,466.6089 C543.9417,456.6837 552.9718,454.5553 559.5343,466.1008 C565.809,453.8446 578.1107,452.4928 584.94,465.5442 C591.7609,453.9486 601.9758,454.4518 608.673,465.6729 C616.6582,455.1975 623.9384,457.1259 631.1696,466.5262 C639.4061,451.9507 648.6114,452.7056 657.7429,465.6623 C665.1586,453.5619 674.2502,454.1898 682.5077,464.7421 C690.4551,454.6888 697.0456,457.2739 703.4809,466.396 C710.9401,454.9348 721.1808,456.8321 727.8613,467.2633 C737.5103,455.3152 745.8256,457.4819 753.3711,469.5021 C759.762,460.5095 770.54,459.0134 776.044,470.4847 C779.5012,472.0573 779.8476,474.3418 777.1423,476.9597 C780.707,478.5879 780.7986,482.1635 777.6473,484.2566 C780.8469,487.2618 779.9618,491.0786 776.0585,492.7561 C780.1336,495.8684 779.696,498.655 775.2271,500.8946 C769.3458,512.2225 759.0131,514.5101 751.191,502.931 C746.4338,515.0019 737.5407,515.7839 729.9546,505.6347 C724.2574,517.1957 711.1733,521.5787 703.1553,508.1206 C697.8314,518.22 688.2639,517.6866 681.9895,509.2033 C673.6428,521.963 663.9698,524.3008 654.3141,510.5711 C646.6613,521.1175 639.7074,520.4574 632.4458,510.1607 C627.2972,525.2289 615.0847,526.0028 606.2594,513.6751 C599.736,523.6459 590.7305,521.5057 585.4675,512.308 C575.3806,523.6242 566.2266,520.5947 559.3088,508.7315 C553.5926,521.3162 543.6429,521.0426 536.7716,509.8252 C528.4021,521.3955 516.3764,521.653 509.7333,507.9762 C501.5978,515.7903 492.2752,516.9084 487.8773,504.0287 C478.4248,515.7045 470.5991,514.2233 463.5917,501.5864 C454.2334,511.9388 445.5712,511.4283 437.4007,500.1483 C432.0703,500.3986 430.7408,497.0755 432.9152,492.7659 C427.8889,493.7755 424.06,490.9798 426.1766,485.4289 C423.5597,479.7678 426.8182,475.527 432.9907,476.8355 C432.3362,474.0031 434.4187,472.2911 437.0816,472.9648 "
+       fill="#FEFECE"
+       style="stroke: #000000; stroke-width: 1.5;"
+       id="path73" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="324"
+       x="444"
+       y="489.5352"
+       id="text75">Remote WiFi                          Remote WiFi Subnet</text>
+    <!--MD5=[2c7162ec8bd3cb1e43cb009ff5495dd1]
+entity LocalBoatWiFi-->
+    <path
+       d="M861.7391,256.8304 C868.1593,248.2333 874.6726,245.9182 881.436,256.4775 C886.2102,247.1176 895.6028,246.9772 901.2595,255.4991 C905.8959,246.9374 913.6595,246.0098 920.0849,253.3859 C925.9962,244.0672 931.7442,242.6495 938.8745,252.1701 C945.1587,243.7908 952.1906,241.0454 959.1668,251.4213 C964.427,242.4329 973.2806,241.7586 979.9337,249.7141 C984.6766,241.6662 991.6749,239.07 997.981,248.0582 C1005.1078,240.1369 1010.7977,240.406 1016.769,249.3458 C1024.8184,241.758 1031.655,240.2136 1037.5629,251.6825 C1042.6996,242.7029 1052.0437,242.996 1056.7923,252.0953 C1062.5245,242.6478 1070.1994,244.1237 1075.7649,252.2751 C1084.3341,244.4896 1090.3746,244.6318 1095.0311,256.1751 C1098.6614,248.7103 1106.7295,248.0989 1111.6923,254.5837 C1117.7863,246.2432 1125.2029,244.7928 1130.8754,255.0192 C1135.6251,257.0752 1135.8879,259.749 1132.4806,263.3725 C1135.9479,265.3028 1135.4838,268.1639 1132.7079,270.299 C1136.9429,273.8935 1135.4978,276.5381 1131.5897,279.0979 C1135.8672,281.4315 1135.9911,284.5006 1131.7941,287.052 C1125.0624,295.9366 1117.8112,295.981 1111.3272,286.7719 C1106.4521,295.1432 1100.5886,296.5398 1093.8504,288.7919 C1088.0106,298.9306 1080.9604,298.0445 1073.9394,290.0919 C1070.4585,299.0706 1061.979,302.293 1055.2003,293.586 C1050.6609,301.7511 1042.6595,303.9931 1037.1017,294.6379 C1031.1939,303.8438 1022.1134,303.3708 1017.4583,293.3576 C1011.0057,303.6715 1004.6824,302.9203 997.6765,293.9244 C992.5048,301.9477 983.7588,301.6292 979.8606,292.5943 C973.5876,300.982 967.5007,302.6422 960.4205,293.4889 C952.9802,303.6874 946.9553,302.2428 940.3367,292.6548 C931.9236,301.596 925.2786,298.9126 919.6172,289.5413 C914.1852,298.6582 906.8162,300.7203 900.3093,290.6214 C893.3066,299.2634 887.1343,299.0407 882.212,288.6438 C875.2992,296.7331 868.052,296.7013 862.8769,286.7785 C857.1027,286.5053 855.0147,282.9111 858.1811,277.906 C853.9242,278.4828 852.049,275.635 853.8899,271.8739 C851.5808,267.5309 852.4344,264.3067 857.8748,263.7779 C855.9998,260.0208 857.59,257.2368 861.7391,256.8304 "
+       fill="#FEFECE"
+       style="stroke: #000000; stroke-width: 1.5;"
+       id="path77" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="255"
+       x="868.5"
+       y="275.5352"
+       id="text79">Local Boat WiFi                      10.10.1.x</text>
+    <!--MD5=[6d5576540b04ab9e78b7e92de2cd345f]
+entity LocalWiredLAN-->
+    <path
+       d="M522.5,257 L813.5,257 C818.5,257 818.5,270.2441 818.5,270.2441 C818.5,270.2441 818.5,283.4883 813.5,283.4883 L522.5,283.4883 C517.5,283.4883 517.5,270.2441 517.5,270.2441 C517.5,270.2441 517.5,257 522.5,257 "
+       fill="#FEFECE"
+       filter="url(#f1ulnakqesc0kr)"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       id="path81" />
+    <path
+       d="M813.5,257 C808.5,257 808.5,270.2441 808.5,270.2441 C808.5,283.4883 813.5,283.4883 813.5,283.4883 "
+       fill="none"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       id="path83" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="281"
+       x="522.5"
+       y="275.5352"
+       id="text85">Local Wired LAN                      192.168.8.x</text>
+    <!--MD5=[02e7be748b4e7cf055caf7a01af83a47]
+entity MobileDevice-->
+    <rect
+       fill="#FEFECE"
+       filter="url(#f1ulnakqesc0kr)"
+       height="36.4883"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       width="113"
+       x="1099.5"
+       y="25.5"
+       id="rect87" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="93"
+       x="1109.5"
+       y="49.0352"
+       id="text89">Phone/Tablet</text>
+    <!--MD5=[0adb96d5796f78e02c2f694f44bb6c89]
+link BoatComputer to LocalBoatWiFi-->
+    <path
+       d="M769.327,79.14 C825.107,126.107 921.64,207.388 968.667,246.986 "
+       fill="none"
+       id="BoatComputer-LocalBoatWiFi"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="13"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="37"
+       x="863"
+       y="153.5684"
+       id="text92">wlan9</text>
+    <!--MD5=[b9692f671a90b9ea86fff572897b913c]
+link BoatComputer to LocalWiredLAN-->
+    <path
+       d="M717.716,79.14 C704.346,130.467 680.301,222.776 671.419,256.876 "
+       fill="none"
+       id="BoatComputer-LocalWiredLAN"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="13"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="28"
+       x="703"
+       y="153.5684"
+       id="text95">eth0</text>
+    <!--MD5=[1f92be2085011e16009bd6cf4eebc78f]
+link Router to CellularWAN-->
+    <path
+       d="M353.6,322.077 C311.585,366.368 253.229,427.8863 221.926,460.8862 "
+       fill="none"
+       id="Router-CellularWAN"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="13"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="25"
+       x="296"
+       y="396.5684"
+       id="text98">wan</text>
+    <!--MD5=[656378c71fe658d88f9f9664c7bea588]
+link Router to RemoteWiFi-->
+    <path
+       d="M452.4,322.077 C494.415,366.368 552.771,427.8863 584.074,460.8862 "
+       fill="none"
+       id="Router-RemoteWiFi"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="13"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="35"
+       x="526"
+       y="396.5684"
+       id="text101">wwan</text>
+    <!--MD5=[eea4196903ee2044bc0e72815479cd90]
+link EthernetHub to Router-->
+    <path
+       d="M469.359,66.886 C457.801,102.264 435.575,170.295 420.043,217.834 "
+       fill="none"
+       id="EthernetHub-Router"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="13"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="28"
+       x="447"
+       y="153.5684"
+       id="text104">eth0</text>
+    <!--MD5=[0cf1b7dd72205ee311fda766e38e697d]
+link EthernetHub to LocalWiredLAN-->
+    <path
+       d="M496.721,66.886 C536.562,114.132 625.511,219.614 656.829,256.753 "
+       fill="none"
+       id="EthernetHub-LocalWiredLAN"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <!--MD5=[cb4813f6d18f5b3da67f58037ff60215]
+link M5Stack to LocalBoatWiFi-->
+    <path
+       d="M981.652,66.886 C984.726,110.402 991.29,203.322 994.357,246.741 "
+       fill="none"
+       id="M5Stack-LocalBoatWiFi"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <!--MD5=[b224958b32ed8699294584b348ce5e65]
+link MobileDevice to LocalBoatWiFi-->
+    <path
+       d="M1143.18,61.653 C1114.33,102.488 1044.36,201.54 1012.41,246.775 "
+       fill="none"
+       id="MobileDevice-LocalBoatWiFi"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <!--MD5=[49be7f4306e64cfe7444317c04a1cd3e]
+@startuml
+node Router [
+ Router (gl-x750)
+ - - -
+ LTE/WiFi router
+ 192.168.8.1
+ VPN
+]
+node EthernetHub [
+ Ethernet Switch
+]
+node BoatComputer  [
+ Boat Computer (raspberrypi)
+ - - -
+ 10.10.1.1
+]
+node M5Stack  [
+ M5Stack (m5stack)
+]
+cloud CellularWAN [
+ Cellular WAN                         Wireless Provider Subnet
+]
+cloud RemoteWiFi [
+ Remote WiFi                          Remote WiFi Subnet
+]
+cloud LocalBoatWiFi [
+ Local Boat WiFi                      10.10.1.x
+]
+queue LocalWiredLAN [
+ Local Wired LAN                      192.168.8.x
+]
+agent MobileDevice [
+ Phone/Tablet
+]
+
+BoatComputer - - - LocalBoatWiFi : wlan9
+BoatComputer - - - LocalWiredLAN : eth0
+Router - - - CellularWAN : wan
+Router - - - RemoteWiFi : wwan
+EthernetHub - - - Router : eth0
+EthernetHub - - - LocalWiredLAN
+M5Stack - - - LocalBoatWiFi
+MobileDevice - - - LocalBoatWiFi
+@enduml
+
+PlantUML version 1.2019.11(Sun Sep 22 06:02:15 EDT 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_212-release-1586-b16
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+  </g>
+</svg>

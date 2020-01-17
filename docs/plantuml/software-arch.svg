@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   contentScriptType="application/ecmascript"
+   contentStyleType="text/css"
+   height="484px"
+   preserveAspectRatio="none"
+   style="width:1026px;height:484px;"
+   version="1.1"
+   viewBox="0 0 1026 484"
+   width="1026px"
+   zoomAndPan="magnify"
+   id="svg134"
+   sodipodi:docname="software-arch.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <metadata
+     id="metadata138">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview136"
+     showgrid="false"
+     inkscape:zoom="0.28070175"
+     inkscape:cx="513"
+     inkscape:cy="242"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg134" />
+  <defs
+     id="defs11">
+    <filter
+       height="300%"
+       id="f7mwafzukczsm"
+       width="300%"
+       x="-1"
+       y="-1">
+      <feGaussianBlur
+         result="blurOut"
+         stdDeviation="2.0"
+         id="feGaussianBlur2" />
+      <feColorMatrix
+         in="blurOut"
+         result="blurOut2"
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"
+         id="feColorMatrix4" />
+      <feOffset
+         dx="4.0"
+         dy="4.0"
+         in="blurOut2"
+         result="blurOut3"
+         id="feOffset6" />
+      <feBlend
+         in="SourceGraphic"
+         in2="blurOut3"
+         mode="normal"
+         id="feBlend8" />
+    </filter>
+  </defs>
+  <g
+     id="g132">
+    <!--MD5=[e936eb4e45c1a3c90330c6c931fce768]
+entity Helmsman-->
+    <ellipse
+       cx="826.5"
+       cy="293"
+       fill="#FEFECE"
+       filter="url(#f7mwafzukczsm)"
+       rx="8"
+       ry="8"
+       style="stroke: #A80036; stroke-width: 2.0;"
+       id="ellipse13" />
+    <path
+       d="M826.5,301 L826.5,328 M813.5,309 L839.5,309 M826.5,328 L813.5,343 M826.5,328 L839.5,343 "
+       fill="none"
+       filter="url(#f7mwafzukczsm)"
+       style="stroke: #A80036; stroke-width: 2.0;"
+       id="path15" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="72"
+       x="790.5"
+       y="363.5352"
+       id="text17">Helmsman</text>
+    <!--MD5=[02e7be748b4e7cf055caf7a01af83a47]
+entity MobileDevice-->
+    <rect
+       fill="#FEFECE"
+       filter="url(#f7mwafzukczsm)"
+       height="77.4648"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       width="283"
+       x="130"
+       y="286"
+       id="rect19" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="93"
+       x="140"
+       y="309.5352"
+       id="text21">Phone/Tablet</text>
+    <line
+       style="stroke: #A80036; stroke-width: 1.0;"
+       x1="131"
+       x2="412"
+       y1="312.4883"
+       y2="312.4883"
+       id="line23" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="246"
+       x="146"
+       y="330.0234"
+       id="text25">Can run NMEA/SignalK dashboards,</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="251"
+       x="146"
+       y="346.5117"
+       id="text27">talkers, other chart plotting software</text>
+    <!--MD5=[2c6745610cf24c504301673a479d038e]
+entity OpenCPN-->
+    <polygon
+       fill="#FEFECE"
+       filter="url(#f7mwafzukczsm)"
+       points="499,436,509,426,604,426,604,462.4883,594,472.4883,499,472.4883,499,436"
+       style="stroke: #000000; stroke-width: 1.5;"
+       id="polygon29" />
+    <line
+       style="stroke: #000000; stroke-width: 1.5;"
+       x1="594"
+       x2="603"
+       y1="436"
+       y2="427"
+       id="line31" />
+    <line
+       style="stroke: #000000; stroke-width: 1.5;"
+       x1="499"
+       x2="594"
+       y1="436"
+       y2="436"
+       id="line33" />
+    <line
+       style="stroke: #000000; stroke-width: 1.5;"
+       x1="594"
+       x2="594"
+       y1="436"
+       y2="472.4883"
+       id="line35" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="65"
+       x="514"
+       y="459.5352"
+       id="text37">OpenCPN</text>
+    <!--MD5=[5863e8b84f67d6c4cecae3d7228ec9e3]
+entity KPlex-->
+    <rect
+       fill="#FEFECE"
+       filter="url(#f7mwafzukczsm)"
+       height="93.9531"
+       style="stroke: #000000; stroke-width: 1.5;"
+       width="235"
+       x="349"
+       y="129"
+       id="rect39" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="38"
+       x="359"
+       y="152.5352"
+       id="text41">KPlex</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="123"
+       x="359"
+       y="169.0234"
+       id="text43">NMEA Multiplexor</text>
+    <line
+       style="stroke: #000000; stroke-width: 1.0;"
+       x1="350"
+       x2="583"
+       y1="171.9766"
+       y2="171.9766"
+       id="line45" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="203"
+       x="365"
+       y="189.5117"
+       id="text47">running as a daemon process</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="63"
+       x="365"
+       y="206"
+       id="text49">TCP, UDP</text>
+    <!--MD5=[f446b16278ece5920111f2a11fd0cfc0]
+entity SignalK-->
+    <rect
+       fill="#FEFECE"
+       filter="url(#f7mwafzukczsm)"
+       height="77.4648"
+       style="stroke: #000000; stroke-width: 1.5;"
+       width="235"
+       x="520"
+       y="286"
+       id="rect51" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="51"
+       x="530"
+       y="309.5352"
+       id="text53">SignalK</text>
+    <line
+       style="stroke: #000000; stroke-width: 1.0;"
+       x1="521"
+       x2="754"
+       y1="312.4883"
+       y2="312.4883"
+       id="line55" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="203"
+       x="536"
+       y="330.0234"
+       id="text57">running as a daemon process</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="107"
+       x="536"
+       y="346.5117"
+       id="text59">HTTP, TCP, UDP</text>
+    <!--MD5=[989ca5bf3da9a57929b13702cc440130]
+entity PyPilot-->
+    <rect
+       fill="#FEFECE"
+       filter="url(#f7mwafzukczsm)"
+       height="60.9766"
+       style="stroke: #000000; stroke-width: 1.5;"
+       width="235"
+       x="765"
+       y="145.5"
+       id="rect61" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="45"
+       x="775"
+       y="169.0352"
+       id="text63">PyPilot</text>
+    <line
+       style="stroke: #000000; stroke-width: 1.0;"
+       x1="766"
+       x2="999"
+       y1="171.9883"
+       y2="171.9883"
+       id="line65" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="203"
+       x="781"
+       y="189.5234"
+       id="text67">running as a daemon process</text>
+    <!--MD5=[f89f39b4e78c3e79426ce4defbd572fe]
+entity SerialDevices-->
+    <rect
+       fill="#FEFECE"
+       filter="url(#f7mwafzukczsm)"
+       height="60.9766"
+       style="stroke: #000000; stroke-width: 1.5;"
+       width="153"
+       x="475"
+       y="8"
+       id="rect69" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="133"
+       x="485"
+       y="31.5352"
+       id="text71">SerialDevices NMEA</text>
+    <line
+       style="stroke: #000000; stroke-width: 1.0;"
+       x1="476"
+       x2="627"
+       y1="34.4883"
+       y2="34.4883"
+       id="line73" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="69"
+       x="491"
+       y="52.0234"
+       id="text75">/dev/stty*</text>
+    <!--MD5=[52bd5c629548ed28ed95c8dc2eaa5bf1]
+entity OtherSensors-->
+    <rect
+       fill="#FEFECE"
+       filter="url(#f7mwafzukczsm)"
+       height="60.9766"
+       style="stroke: #000000; stroke-width: 1.5;"
+       width="117"
+       x="898"
+       y="294"
+       id="rect77" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="97"
+       x="908"
+       y="317.5352"
+       id="text79">Other Sensors</text>
+    <line
+       style="stroke: #000000; stroke-width: 1.0;"
+       x1="899"
+       x2="1014"
+       y1="320.4883"
+       y2="320.4883"
+       id="line81" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="80"
+       x="914"
+       y="338.0234"
+       id="text83">I2C, 1W, etc</text>
+    <!--MD5=[813b17cf9d151d5aa05a8c71a0fcb692]
+entity Mosquitto-->
+    <rect
+       fill="#FEFECE"
+       filter="url(#f7mwafzukczsm)"
+       height="60.9766"
+       style="stroke: #000000; stroke-width: 1.5;"
+       width="89"
+       x="6"
+       y="294"
+       id="rect85" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="69"
+       x="16"
+       y="317.5352"
+       id="text87">Mosquitto</text>
+    <line
+       style="stroke: #000000; stroke-width: 1.0;"
+       x1="7"
+       x2="94"
+       y1="320.4883"
+       y2="320.4883"
+       id="line89" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="41"
+       x="22"
+       y="338.0234"
+       id="text91">MQTT</text>
+    <!--MD5=[1efd3b1faf51fec4165793737020b578]
+entity NodeRed-->
+    <rect
+       fill="#FEFECE"
+       filter="url(#f7mwafzukczsm)"
+       height="36.4883"
+       style="stroke: #000000; stroke-width: 1.5;"
+       width="82"
+       x="9.5"
+       y="158"
+       id="rect93" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="62"
+       x="19.5"
+       y="181.5352"
+       id="text95">NodeRed</text>
+    <!--MD5=[9709c0948f47c770d7cdf20208bf9a34]
+reverse link Helmsman to OpenCPN-->
+    <path
+       d="M786.217,357.46 C781.711,360.535 777.089,363.449 772.5,366 C718.048,396.2626 650.346,419.8491 604.326,434.0186 "
+       fill="none"
+       id="Helmsman&lt;-OpenCPN"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <polygon
+       fill="#A80036"
+       points="790.317,354.596,780.6479,356.4689,786.2175,357.4585,785.2279,363.0281,790.317,354.596"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon98" />
+    <!--MD5=[7c28ee4f2ade4647271b30fc4171fcbd]
+reverse link MobileDevice to OpenCPN-->
+    <path
+       d="M362.813,365.102 C408.093,385.2351 461.134,408.8196 499.429,425.847 "
+       fill="none"
+       id="MobileDevice&lt;-OpenCPN"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <polygon
+       fill="#A80036"
+       points="358.176,363.04,364.7753,370.3509,362.7449,365.071,368.0249,363.0406,358.176,363.04"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon101" />
+    <!--MD5=[fff00b58ffcd7aa38c56d6fa14b6a2d2]
+link KPlex to OpenCPN-->
+    <path
+       d="M470.868,223.297 C475.563,262.503 484.865,319.188 502.5,366 C509.887,385.6094 521.772,405.8948 531.987,421.5027 "
+       fill="none"
+       id="KPlex-&gt;OpenCPN"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <polygon
+       fill="#A80036"
+       points="534.819,425.7764,533.1829,416.0644,532.0575,421.6082,526.5137,420.4828,534.819,425.7764"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon104" />
+    <!--MD5=[2ce0bbeaac306e94c1cbaa732a2a2b95]
+link KPlex to SignalK-->
+    <path
+       d="M521.076,223.395 C542.975,242.413 568.003,264.148 589.228,282.58 "
+       fill="none"
+       id="KPlex-&gt;SignalK"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <polygon
+       fill="#A80036"
+       points="593.145,285.981,588.9717,277.06,589.3696,282.7029,583.7267,283.1007,593.145,285.981"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon107" />
+    <!--MD5=[72715ee31c33dfdae858427aa5ca9a95]
+reverse link PyPilot to OtherSensors-->
+    <path
+       d="M900.117,211.354 C912.62,236.443 929.236,269.787 941.187,293.77 "
+       fill="none"
+       id="PyPilot&lt;-OtherSensors"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <polygon
+       fill="#A80036"
+       points="897.833,206.769,898.2676,216.6083,900.0634,211.244,905.4276,213.0397,897.833,206.769"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon110" />
+    <!--MD5=[3896a38b8d08efe3a971dbce1ddc4546]
+link SignalK to OpenCPN-->
+    <path
+       d="M610.76,363.21 C597.669,382.1619 582.22,404.5274 570.378,421.6701 "
+       fill="none"
+       id="SignalK-&gt;OpenCPN"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <polygon
+       fill="#A80036"
+       points="567.449,425.9107,575.8551,420.7786,570.2906,421.7966,569.2726,416.2321,567.449,425.9107"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon113" />
+    <!--MD5=[161295f019cc5224b150462ab08d92ab]
+link SerialDevices to SignalK-->
+    <path
+       d="M571.694,69.154 C582.04,86.153 594.005,108.041 601.5,129 C619.461,179.227 628.857,240.067 633.482,280.397 "
+       fill="none"
+       id="SerialDevices-&gt;SignalK"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <polygon
+       fill="#A80036"
+       points="634.077,285.703,637.0492,276.3133,633.5198,280.7341,629.099,277.2048,634.077,285.703"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon116" />
+    <!--MD5=[dd5d1fc555f821bf9ce0cb5f7d2c8d3a]
+link SerialDevices to KPlex-->
+    <path
+       d="M532.636,69.016 C522.626,85.208 510.052,105.549 498.562,124.135 "
+       fill="none"
+       id="SerialDevices-&gt;KPlex"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <polygon
+       fill="#A80036"
+       points="495.667,128.819,503.8027,123.2683,498.2968,124.5665,496.9986,119.0606,495.667,128.819"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon119" />
+    <!--MD5=[5bcc4a9ccbf01b8bce6d244018bf606e]
+link PyPilot to SignalK-->
+    <path
+       d="M832.033,206.589 C795.541,228.708 745.823,258.843 705.784,283.111 "
+       fill="none"
+       id="PyPilot-&gt;SignalK"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <polygon
+       fill="#A80036"
+       points="701.447,285.74,711.217,284.4959,705.723,283.1484,707.0705,277.6544,701.447,285.74"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon122" />
+    <!--MD5=[4082e6ad461290f0ff05a81a415d337c]
+link Mosquitto to SignalK-->
+    <path
+       d="M78.7466,289.656 C92.5218,275.413 110.355,260.534 130,253 C201.582,225.546 399.974,237.224 475,253 C504.796,259.265 535.793,271.342 562.628,283.812 "
+       fill="none"
+       id="Mosquitto-SignalK"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <polygon
+       fill="#A80036"
+       points="567.243,285.979,560.7974,278.5323,562.7174,283.8533,557.3963,285.7733,567.243,285.979"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon125" />
+    <polygon
+       fill="#A80036"
+       points="74.9708,293.649,84.0601,289.8563,78.4055,290.0154,78.2464,284.3608,74.9708,293.649"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon127" />
+    <!--MD5=[50afe6e7886421f7a560e811bb9cfa30]
+link NodeRed to Mosquitto-->
+    <path
+       d="M50.5,194.209 C50.5,217.637 50.5,258.862 50.5,288.677 "
+       fill="none"
+       id="NodeRed-&gt;Mosquitto"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <polygon
+       fill="#A80036"
+       points="50.5,293.731,54.5,284.731,50.5,288.731,46.5,284.731,50.5,293.731"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon130" />
+    <!--MD5=[9b0af70c922bdc2706b8d539c8ee9b98]
+@startuml
+actor Helmsman [
+ Helmsman
+]
+agent MobileDevice [
+ Phone/Tablet
+ - - - -
+ Can run NMEA/SignalK dashboards,
+ talkers, other chart plotting software
+]
+node OpenCPN [
+ OpenCPN
+]
+rectangle KPlex [
+ KPlex
+ NMEA Multiplexor
+ - - - -
+ running as a daemon process
+ TCP, UDP
+]
+rectangle SignalK [
+ SignalK
+ - - - -
+ running as a daemon process
+ HTTP, TCP, UDP
+]
+rectangle PyPilot [
+ PyPilot
+ - - - -
+ running as a daemon process
+]
+rectangle SerialDevices [
+ SerialDevices NMEA
+ - - - -
+ /dev/stty*
+]
+rectangle OtherSensors [
+ Other Sensors
+ - - - -
+ I2C, 1W, etc
+]
+rectangle Mosquitto [
+ Mosquitto
+ - - - -
+ MQTT
+]
+rectangle NodeRed [
+ NodeRed
+]
+Helmsman <- - OpenCPN
+MobileDevice <- - OpenCPN
+KPlex - -> OpenCPN
+KPlex - -> SignalK
+PyPilot <- - OtherSensors
+SignalK - -> OpenCPN
+SerialDevices - -> SignalK
+SerialDevices - -> KPlex
+PyPilot - -> SignalK
+Mosquitto <-> SignalK
+NodeRed - -> Mosquitto
+@enduml
+
+PlantUML version 1.2019.11(Sun Sep 22 06:02:15 EDT 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_212-release-1586-b16
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+  </g>
+</svg>

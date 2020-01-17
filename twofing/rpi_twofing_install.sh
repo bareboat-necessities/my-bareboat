@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # See http://plippo.de/dev_twofing
+# and https://github.com/Plippo/twofing
 # and https://github.com/sjlongland/twofing
 
 sudo apt-get install build-essential libx11-dev libxtst-dev libxi-dev x11proto-randr-dev libxrandr-dev

@@ -1,0 +1,61 @@
+@startuml
+actor Helmsman [
+ Helmsman
+]
+agent MobileDevice [
+ Phone/Tablet
+ ----
+ Can run NMEA/SignalK dashboards,
+ talkers, other chart plotting software
+]
+node OpenCPN [
+ OpenCPN
+]
+rectangle KPlex [
+ KPlex
+ NMEA Multiplexor
+ ----
+ running as a daemon process
+ TCP, UDP
+]
+rectangle SignalK [
+ SignalK
+ ----
+ running as a daemon process
+ HTTP, TCP, UDP
+]
+rectangle PyPilot [
+ PyPilot
+ ----
+ running as a daemon process
+]
+rectangle SerialDevices [
+ SerialDevices NMEA
+ ----
+ /dev/stty*
+]
+rectangle OtherSensors [
+ Other Sensors
+ ----
+ I2C, 1W, etc
+]
+rectangle Mosquitto [
+ Mosquitto
+ ----
+ MQTT
+]
+rectangle NodeRed [
+ NodeRed
+]
+Helmsman <-- OpenCPN
+MobileDevice <-- OpenCPN
+KPlex --> OpenCPN
+KPlex --> SignalK
+PyPilot <-- OtherSensors
+SignalK --> OpenCPN
+SerialDevices --> SignalK
+SerialDevices --> KPlex
+PyPilot --> SignalK
+Mosquitto <-> SignalK
+NodeRed --> Mosquitto
+@enduml

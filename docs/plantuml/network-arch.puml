@@ -1,0 +1,44 @@
+@startuml
+node Router [
+ Router (gl-x750)
+ ---
+ LTE/WiFi router
+ 192.168.8.1
+ VPN
+]
+node EthernetHub [
+ Ethernet Switch
+]
+node BoatComputer  [
+ Boat Computer (raspberrypi)
+ ---
+ 10.10.1.1
+]
+node M5Stack  [
+ M5Stack (m5stack)
+]
+cloud CellularWAN [
+ Cellular WAN                         Wireless Provider Subnet
+]
+cloud RemoteWiFi [
+ Remote WiFi                          Remote WiFi Subnet
+]
+cloud LocalBoatWiFi [
+ Local Boat WiFi                      10.10.1.x
+]
+queue LocalWiredLAN [
+ Local Wired LAN                      192.168.8.x
+]
+agent MobileDevice [
+ Phone/Tablet
+]
+
+BoatComputer --- LocalBoatWiFi : wlan9
+BoatComputer --- LocalWiredLAN : eth0
+Router --- CellularWAN : wan
+Router --- RemoteWiFi : wwan
+EthernetHub --- Router : eth0
+EthernetHub --- LocalWiredLAN
+M5Stack --- LocalBoatWiFi
+MobileDevice --- LocalBoatWiFi
+@enduml
