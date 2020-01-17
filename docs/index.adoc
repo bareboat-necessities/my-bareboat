@@ -753,6 +753,8 @@ single handed sailors when they came up with this reset procedure design.
 So it still gets some power via USB (not much per amp meter). Apparently this is the default behavior of most self powered
 USB hubs to draw for the host when they lose own power supply. There are some who have this behavior configured
 by a jumper on their PCB, but the default is to power itself from the host.
+* I did test fiber-optic USB data cable leading to the cockpit as well. It does have regular wires for power as well, so
+it behaves exactly the same. The cable is much thinner so you can have a smaller hole is your boat in a cockpit deck.
 
 ===== Assembly Activities
 
