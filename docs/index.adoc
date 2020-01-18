@@ -736,7 +736,7 @@ image::amp-meter-wiring.jpg[alt="Amp Meter Wiring Diagram"]
 
 ==== Testing Boat Computer and Cockpit Display
 
-===== OpenCPN 5.0.22
+===== OpenCPN 5.0.522
 
 .OpenCPN MBTiles
 image::opencpn-1.png[alt="OpenCPN MBTiles"]
