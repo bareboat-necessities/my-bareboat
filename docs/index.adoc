@@ -741,6 +741,8 @@ image::amp-meter-wiring.jpg[alt="Amp Meter Wiring Diagram"]
 .OpenCPN MBTiles
 image::opencpn-1.png[alt="OpenCPN MBTiles"]
 
+{zwsp} +
+
 .OpenCPN Vector
 image::opencpn-2.png[alt="OpenCPN Vector"]
 
