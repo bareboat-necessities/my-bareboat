@@ -1489,6 +1489,11 @@ https://www.youtube.com/watch?v=JYhsQSQOEbM&feature=youtu.be
 
 Marine Chartplotter PC - Open CPN on ASUS QM1
 
+=== Sailing with Linux (NMEA, GPSd, Iridium) – Agile For Life
+
+https://agile4life.blog/2018/07/16/sailing-with-linux-nmea-gpsd-iridium/
+
+Instructions on connecting Satellite Iridium phone to Pi for satellite data services.
 
 == Links
 
