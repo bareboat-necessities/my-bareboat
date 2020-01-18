@@ -38,11 +38,11 @@ This boating electronics project includes:
 
 * Waterproof marine touch screen HDMI display
 * GNSS (GPS, GLONASS, Beidou, Galileo) receiver
-* Sensors for orientation (gyroscope, compass via IMU)
+* Sensors for orientation (gyroscope, accelerometer, compass via IMU)
 * AIS radar
 * Environment temperature, barometric pressure, humidity sensors
-* Connections to the boat instruments such as wind, depth, speed via NMEA 0183 serial ports
-* Boat LTE / 4G Gateway
+* Connections to the boat instruments such as wind, depth, speed, AIS via NMEA 0183 serial ports
+* Boat LTE / 4G Gateway, network storage
 * Boat WiFi hotspot and a router with WiFi extender and a long range waterproof WiFi antenna
 * Optional autopilot integration, rudder angle sensor
 * Other NMEA devices, engine/battery status, bilge pump monitoring, etc
