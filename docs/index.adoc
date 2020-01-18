@@ -1272,6 +1272,13 @@ KPlex on GL-X750 router make sure the modem you picked when you buy the router h
 OpenCPN installed on an android tablet connected via WiFi to KPLex. And with this you have LTE internet on your boat
 and local private WiFi.
 
+NOTE: FlashDrive Stick inserted into the router USB port is automatically shared on network via samba. You should
+mount it using this command:
+
+[source, shell]
+------
+sudo mount -t cifs //gl-x750/SamsungUSB /media/Share -o user=guest,vers=1.0
+------
 
 ===== Local WiFi, VNC, etc
 
