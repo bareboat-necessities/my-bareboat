@@ -736,6 +736,14 @@ image::amp-meter-wiring.jpg[alt="Amp Meter Wiring Diagram"]
 
 ==== Testing Boat Computer and Cockpit Display
 
+===== OpenCPN 5.0.22
+
+.OpenCPN MBTiles
+image::opencpn-1.png[alt="OpenCPN MBTiles"]
+
+.OpenCPN Vector
+image::opencpn-2.png[alt="OpenCPN Vector"]
+
 ===== Power Usage
 
 * Preliminary tests show that combined power consumption of Raspberry Pi 4 based boat computer and
