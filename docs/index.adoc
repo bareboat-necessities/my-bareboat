@@ -1470,6 +1470,15 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Pane
 
 {zwsp} +
 
+== Third-Party Projects
+
+=== Boat Chartplotter using stick PC
+
+https://www.youtube.com/watch?v=JYhsQSQOEbM&feature=youtu.be
+
+Marine Chartplotter PC - Open CPN on ASUS QM1
+
+
 == Links
 
 * https://opencpn.org/[OpenCPN]
