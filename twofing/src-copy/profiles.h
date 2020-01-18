@@ -21,7 +21,7 @@
 #define PROFILES_H_
 
 /* Blacklist */
-char* blacklist[] = { "xournal", "gimp-2.6", "gimp", "mypaint", "inkscape", NULL };
+char* blacklist[] = { "chrome", "xournal", "gimp-2.6", "gimp", "mypaint", "inkscape", NULL };
 
 /* WM-Blacklist */
 char* wmBlacklist[] = { "kwin", "mutter", "metacity", "compiz", "unity", NULL };
