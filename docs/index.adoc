@@ -730,6 +730,10 @@ a| ?
 * Coaxial Lightning Arresters for RF cables
 * Add AmpMeter to Front Panels
 
+.Amp Meter Wiring Diagram
+image::amp-meter-wiring.jpg[alt="Amp Meter Wiring Diagram"]
+
+
 ==== Testing Boat Computer and Cockpit Display
 
 ===== Power Usage
