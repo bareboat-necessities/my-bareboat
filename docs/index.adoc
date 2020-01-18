@@ -723,6 +723,19 @@ a| ?
 
 ===== Other Things to Consider (Add-ons)
 
+NOTE: What could I have done better? I think I could use one of the power boards
+like 'DockerPi power board' with momentary switch for safe shutdown. Or even
+couple Geekworm X828 SATA board (made by SupTronics Technologies) with their
+X710 power board. With those I wouldn't need internal USB hub and 12vDC to 5vDC
+internal step down converter.
+
+See:
+
+https://geekworm.com/collections/raspberry-pi-4/products/raspberry-pi-x710-power-management-with-wide-voltage-input-6v-to-36v-safe-shutdown-expansion-board
+
+https://geekworm.com/collections/raspberry-pi-4/products/raspberry-pi-x828-stackable-2-5-sata-hdd-ssd-shield
+
+
 * RTC Clock
 * Opto couplers for NMEA interfaces
 * Safe power down method
