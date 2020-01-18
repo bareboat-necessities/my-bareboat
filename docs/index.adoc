@@ -1536,6 +1536,8 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 
 * https://rigpi.net/[RigPi]
 
+* https://squidd.io/squiddio_pi[Squidd.io as an OpenCPN plugin]
+
 {zwsp} +
 
 toc::[]
