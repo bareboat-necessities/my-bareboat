@@ -1,0 +1,2 @@
+ACTION=="add",KERNEL=="event*",ATTRS{name}=="WaveShare WS170120",SYMLINK+="twofingtouch",MODE="0440"
+KERNEL=="event*",ATTRS{name}=="WaveShare WS170120",SYMLINK+="twofingtouch",MODE="0440"

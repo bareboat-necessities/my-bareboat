@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_install:
+	cp debian/twofing.xsession debian/twofing/etc/X11/Xsession.d/90twofing
+	cp debian/twofing.xreset debian/twofing/etc/X11/Xreset.d/90twofing
+	dh_install

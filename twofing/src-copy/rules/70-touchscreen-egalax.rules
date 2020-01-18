@@ -1,0 +1,5 @@
+SUBSYSTEMS=="usb",ACTION=="add",KERNEL=="event*",ATTRS{idVendor}=="0eef",ATTRS{idProduct}=="480d",SYMLINK+="twofingtouch",MODE="0444"
+SUBSYSTEMS=="usb",ACTION=="add",KERNEL=="event*",ATTRS{idVendor}=="0eef",ATTRS{idProduct}=="72a1",SYMLINK+="twofingtouch",MODE="0444"
+SUBSYSTEMS=="usb",ACTION=="add",KERNEL=="event*",ATTRS{idVendor}=="0486",ATTRS{idProduct}=="0186",SYMLINK+="twofingtouch",MODE="0444"
+KERNEL=="event*",ATTRS{name}=="eGalaxTouch Virtual Device for Multi",SYMLINK+="twofingtouch",MODE="0444"
+

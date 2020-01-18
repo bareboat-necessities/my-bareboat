@@ -1,0 +1,11 @@
+twofing (0.7.1) UNRELEASED; urgency=low
+
+  * Add Raspberry Pi 7" Touchscreen UDEV rules
+
+ -- Stuart Longland <me@vk4msl.id.au>  Sat, 12 Nov 2016 14:11:00 +1000
+
+twofing (0.7) UNRELEASED; urgency=low
+
+  * Initial release. (Closes: #XXXXXX)
+
+ -- Joe Gunn <gunnjo@curlycloud.com>  Tue, 21 Aug 2012 17:51:30 -0400

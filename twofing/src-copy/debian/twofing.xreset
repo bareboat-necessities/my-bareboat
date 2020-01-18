@@ -1,0 +1,6 @@
+#!/bin/sh
+
+TWOFING_PID=$( /bin/pidof twofing )
+if [ -n "${TWOFING_PID}" ]; then
+    /bin/kill $( TWOFING_PID )
+fi
