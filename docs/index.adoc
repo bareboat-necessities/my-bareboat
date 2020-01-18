@@ -1446,7 +1446,7 @@ make
 sudo cp twofing /usr/bin/
 ------
 
-Another issue is entering the text on a touchscreen. I've added virtual on screen keyboard. I've compared
+One more issue is entering the text on a touchscreen. I've added virtual on screen keyboard. I've compared
 several and the one I liked the most is svkbd.
 
 I've made a script to install it.
@@ -1454,6 +1454,16 @@ See: https://github.com/bareboat-necessities/my-bareboat/blob/master/svkbd/rpi_s
 
 With 'twofing' fix and an on-screen svkbd keyboard OpenCPN is much more usable on my touch screen display.
 Smooth Panning/Zooming, OpenGL, and Touchscreen should be all enabled in OpenCPN settings.
+
+The sound didn't work out of aux port. By default Raspberry Buster uses HDMI audio output and Argonaut M7 doesn't
+have a speaker. This command switches it to aux (You will need to add it into linux startup scripts if you
+want it on every boot):
+
+[source]
+-----
+amixer cset numid=3 1
+-----
+
 
 === Compass / IMU / Barometer / Thermometer
 
@@ -1516,9 +1526,17 @@ https://agile4life.blog/2018/07/16/sailing-with-linux-nmea-gpsd-iridium/
 
 Instructions on connecting Satellite Iridium phone to Pi for satellite data services.
 
+=== RaspEx
+
+http://raspex.exton.se/?p=1234
+
+Another Raspberry Pi Boating Project
+
 == Links
 
 * https://opencpn.org/[OpenCPN]
+
+* https://cloudsmith.io/~dan-dickey/repos/opencpn-raspbian-unstable/packages/[OpenCPN dev builds for Pi]
 
 * http://sailoog.com/openplotter[OpenPlotter]
 
@@ -1534,11 +1552,15 @@ Instructions on connecting Satellite Iridium phone to Pi for satellite data serv
 
 * https://github.com/canboat[CAN Boat]
 
+* https://squidd.io/squiddio_pi[Squidd.io as an OpenCPN plugin]
+
 * https://github.com/sarfata?tab=repositories[KBox and other boat software]
 
 * https://github.com/ttlappalainen?tab=repositories[NMEA2000 Libraries]
 
 * http://openskipper.org/[OpenSkipper]
+
+* https://marinux.tuxfamily.org/[Marinux]
 
 * https://www.raspberrypi.org/[RaspberryPi]
 
@@ -1562,7 +1584,7 @@ Instructions on connecting Satellite Iridium phone to Pi for satellite data serv
 
 * https://rigpi.net/[RigPi]
 
-* https://squidd.io/squiddio_pi[Squidd.io as an OpenCPN plugin]
+* https://github.com/martinber/noaa-apt[NOAA APT weather satellite image decoder, for Linux, Windows, RPi 2+ and OSX]
 
 {zwsp} +
 
