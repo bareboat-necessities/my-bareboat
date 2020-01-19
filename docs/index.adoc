@@ -34,7 +34,7 @@ https://github.com/bareboat-necessities/my-bareboat
 
 This document describes a DIY project of building a marine computer, a boat LTE/WiFi gateway, and
 a cockpit chartplotter display from easily obtainable and affordable components.
-This boating electronics project includes:
+This boat electronics project includes:
 
 * Waterproof marine touch screen HDMI display
 * GNSS (GPS, GLONASS, Beidou, Galileo) receiver
@@ -58,33 +58,33 @@ smart phones and tablets.
 
 The boat computer is connected to the waterproof HDMI touchscreen in the cockpit.
 
-*Boat Computer View*
+*Boat Computer*
 
-.Boat Computer View
+.Boat Computer
 image::computer-front-panel.jpg[alt="Boat Computer Front View", width="75%", align="center"]
 
 {zwsp} +
 
-*Boat Gateway View*
+*Boat Gateway*
 
-.Boat Gateway View
+.Boat Gateway
 image::boat-router/boat-router.jpg[alt="Boat Gateway Front View", width="75%", align="center"]
 
 {zwsp} +
 
-NOTE: Keep in mind that following this document you are building devices to be used in marine environment.
+NOTE: Keep in mind that by following this document you are building devices to be used in marine environment.
 All connections and wiring need to follow marine standards which are more strict than automotive. All nuts and bolts
-needs to be properly tightened. I've run into issues in my sailboat experience on water just because of
+need to be properly tightened. I've run into issues in my sailboat experience on water just because of
 one missing washer  (It was in mechanical system on gear switch wire). Heat shrink tubing, wire grades are different
 for marine standards. Corrosion in misty salt water air is much higher than on the ground. A boat is exposed
-to elements more than house or automobile appliances. If you doubt you did something right you better of
-revisiting it or seeking peer review from  other sailors. Same works the other way. If you see something wrong
+to the elements more than house or automobile appliances. If you doubt you did something right you better of
+revisiting it or seeking peer review from  other sailors. The same works the other way. If you see something wrong
 here with the design let us know :) There is issues reporting system in GitHub:
 https://github.com/bareboat-necessities/my-bareboat/issues
 
 NOTE: Although this document describes mostly instructions on building hardware components, it is designed in
 the spirit of open source development. We hope this design is going to evolve and have numerous releases and corrections
-if it gains some community. Some software components might become part of this too. Cost cutting is another sport and
+if it gains some community. Some software components might become part of this project too. Cost cutting is another sport and
 sub-hobby in recreational sailing and boating. So if same functionality can be built cheaper it probably should be, and
 here is the reason to change this document.
 
@@ -101,7 +101,7 @@ and dashboards as well as general Linux UI.
 * 1 USB 2.0 data port
 * 1 HDMI port
 * Computer Voltage Meter
-* Combined device Amp and Voltage meter
+* Amp and Voltage Meter Combined
 * Status indicators via fiber-optic light pipes
 * Fuse box panel mount
 * On/Off power switch
@@ -109,8 +109,8 @@ and dashboards as well as general Linux UI.
 
 {zwsp} +
 
-.Boat Computer Front Panel
-image::front-panel-intf.jpg[alt="Boat Computer Front Panel", width="75%", align="center"]
+.Boat Computer, Front Panel
+image::front-panel-intf.jpg[alt="Boat Computer, Front Panel", width="75%", align="center"]
 
 {zwsp} +
 
@@ -118,7 +118,7 @@ image::front-panel-intf.jpg[alt="Boat Computer Front Panel", width="75%", align=
 
 * 1 Ethernet port 1Gbit (for the WiFi router)
 * 1 USB 2.0 port for GPS (or something else)
-* 1 NMEA-0183 port (More can be added in same DYI fashion)
+* 1 NMEA-0183 port (More can be added in the same DYI fashion)
 * DC power 2-wire input cord mounted inside a waterproof gland for 12v boat connection. SAE-type connector
 * DC power 2-wire output cord mounted inside a waterproof gland for 12v cockpit connection. SAE-type connector
 (black male)
@@ -129,25 +129,25 @@ image::front-panel-intf.jpg[alt="Boat Computer Front Panel", width="75%", align=
 
 {zwsp} +
 
-.Boat Computer Back Panel
-image::back-panel-intf.jpg[alt="Boat Computer Back Panel", width="75%", align="center"]
+.Boat Computer, Back Panel
+image::back-panel-intf.jpg[alt="Boat Computer, Back Panel", width="75%", align="center"]
 
 {zwsp} +
 
 *Boat Computer Inside View*
 
-NOTE: Raspberry Pi lays on top of middle divider made out of plastic sheet. The power supply (12v to 5v step-down
+NOTE: Raspberry Pi lays on top of the middle divider made out of plastic sheet. The power supply (12v to 5v step-down
 converter) is mounted from the other side under the middle divider. The USB hub doesn't fit by height to simply lay
-on the divider, so there is a little shelf made out of same plastic sheet and it is attached by 4 shortest
-standoffs. USB hub is mounted a bit under angle to give space for a screw which closes the enclosure.
+on the divider, so there is a little shelf made out of the same plastic sheet and it is attached by 4 shortest
+standoffs. USB hub is mounted under a slight angle to give space to a screw which closes the enclosure.
 
 
-.Boat Computer Inside View
-image::computer-internals.jpg[alt="Boat Computer Inside View", width="75%", align="center"]
+.Boat Computer, Inside View
+image::computer-internals.jpg[alt="Boat Computer, Inside View", width="75%", align="center"]
 
 {zwsp} +
 
-On the picture 7-Port powered USB 3.0 hub, dAISy AIS, Raspberry Pi 4 with a cooling fan and heat sinks,
+On the picture above 7-Port powered USB 3.0 hub, dAISy AIS, Raspberry Pi 4 with a cooling fan and heat sinks,
 serial-to-USB stick (with the chipset from FTDI), SSD, RTL-SDR RF stick. 12v to 5v step-down converter is
 located below this layer inside the housing box and is connected to the front panel via a fuse and
 a switch on the front panel.
