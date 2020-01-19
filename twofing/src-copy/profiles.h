@@ -21,7 +21,7 @@
 #define PROFILES_H_
 
 /* Blacklist */
-char* blacklist[] = { "xournal", "gimp-2.6", "gimp", "mypaint", "inkscape", NULL };
+char* blacklist[] = { "chrome", "xournal", "gimp-2.6", "gimp", "mypaint", "inkscape", NULL };
 
 /* WM-Blacklist */
 char* wmBlacklist[] = { "kwin", "mutter", "metacity", "compiz", "unity", NULL };
@@ -54,7 +54,7 @@ Profile profiles[] = {
 					.rotateRightAction = { ACTIONTYPE_KEYPRESS, XK_Right, MODIFIER_CONTROL },
 					.tapInherit = 1
 				},
-				{ 	.windowClass = "chrome",
+				{ 	.windowClass = "eog",
 					.scrollInherit = 0,
 					.scrollMinDistance = 50,
 					.hscrollStep = 1000,
@@ -77,8 +77,9 @@ Profile profiles[] = {
 					.rotateStep = 70,
 					.rotateLeftAction = { ACTIONTYPE_KEYPRESS, XK_R, MODIFIER_CONTROL | MODIFIER_SHIFT },
 					.rotateRightAction = { ACTIONTYPE_KEYPRESS, XK_R, MODIFIER_CONTROL },
-					.tapInherit = 0,
-					.tapAction = {ACTIONTYPE_NONE,0,0 }
+					.tapInherit = 1
+					//,
+					//.tapAction = {ACTIONTYPE_NONE,0,0 }
 				},
 				{ 	.windowClass = "f-spot",
 					.scrollInherit = 0,
