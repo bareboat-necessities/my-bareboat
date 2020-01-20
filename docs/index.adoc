@@ -1443,12 +1443,24 @@ endif::[]
 telnet gl-x750 10110
 ------
 
-* Connects to SignalK running on the boat computer
+* Connects to SignalK running on the boat computer (Should be configured to output NMEA data)
 +
 [source, shell]
 ------
 telnet localhost 10110
 ------
+
+* Connects to SignalK running on the boat computer (SignalK protocol)
++
+[source, shell]
+------
+telnet localhost 8375
+------
+
+* Chronograf http://localhost:8888
+
+* Grafana http://localhost:3001
+
 
 
 === Openplotter
