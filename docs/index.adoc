@@ -742,6 +742,7 @@ https://geekworm.com/collections/raspberry-pi-4/products/raspberry-pi-x828-stack
 * Boot from USB SSD
 * Coaxial Lightning Arresters for RF cables
 * Add AmpMeter to Front Panels
+* Mount SD card reader to front panel to swap easier
 
 .Amp Meter Wiring Diagram
 image::amp-meter-wiring.jpg[alt="Amp Meter Wiring Diagram"]
