@@ -1436,6 +1436,19 @@ endif::[]
 
 * SignalK web UI  http://localhost:3000
 
+* Connects to KPlex running on the router
++
+[source, shell]
+------
+telnet gl-x750 10110
+------
+
+* Connects to SignalK running on the boat computer
++
+[source, shell]
+------
+telnet localhost 10110
+------
 
 
 === Openplotter
