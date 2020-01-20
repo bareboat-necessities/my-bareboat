@@ -1046,6 +1046,9 @@ image::boat-router/router-inside-1.jpg[alt="Boat Router Inside Top", width="75%"
 .Boat Router Inside Bottom
 image::boat-router/router-inside-2.jpg[alt="Boat Router Inside Bottom", width="75%", align="center"]
 
+I've made an opening for easier access to SIM card and SD card slots. A better idea probably would be
+to have SD and SIM card extension cords and panel mounted slots.
+
 {zwsp} +
 
 [cols="4", options="header"]
