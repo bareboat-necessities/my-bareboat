@@ -1431,6 +1431,13 @@ endif::[]
 
 === Important local URLs on your boat
 
+
+* Router admin UI http://192.168.8.1 or http://gl-x750
+
+* SignalK web UI  http://localhost:3000
+
+
+
 === Openplotter
 
 ==== Installation
@@ -1580,7 +1587,7 @@ amixer cset numid=3 1
 
 Setting up dAISy AIS is very straight forward. It does require higher baud rate, so make sure you specify it correctly.
 After plugging into USB and antenna and registering in openplotter-serial in device mapping and connections it should
-start giving AIS targets sentences via NMEA. If it doesn't see any ships close it doesn't send any sentences.
+start giving AIS targets sentences via NMEA. If it doesn't see any ships close by then it doesn't send any sentences.
 
 === Weather
 
