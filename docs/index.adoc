@@ -785,6 +785,14 @@ by a jumper on their PCB, but the default is to power itself from the host.
 * I did test fiber-optic USB data cable leading to the cockpit as well. It does have regular wires for power as well, so
 it behaves exactly the same. The cable is much thinner so you can have a smaller hole is your boat in a cockpit deck.
 
+Temperature readings stay under 56 C.
+
+[source, shell]
+-----
+pi@raspberrypi:~ $ vcgencmd measure_temp
+temp=48.0'C
+-----
+
 ===== Assembly Activities
 
 Make sure you use correct tools for:
@@ -1428,6 +1436,93 @@ endif::[]
 ==== Installation
 
 ==== Initial Settings
+
+[.text-center]
+
+You would need to enable SPI, I2C, Serial Port, 1-Wire and Remote GPIO and
+disable Serial Console in Raspberry Pi Configuration utility. See:
+
+.Raspbian Interfaces Settings
+image::config/raspbian-settings.png[Raspbian Interfaces Settings, width="75%", align="center"]
+
+{zwsp} +
+
+Reboot after changing settings in Raspberry Pi Configuration screen.
+
+In PyPilot you need to enable UART. This will disable Bluetooth. Reboot after it.
+
+Your /boot/config.txt should look like this (I've stripped the commented lines):
+
+[source]
+-----
+arm_64bit=1
+
+disable_overscan=1
+
+dtparam=i2c_arm=on
+dtparam=spi=on
+dtparam=audio=on
+
+[pi4]
+dtoverlay=vc4-fkms-v3d
+max_framebuffers=2
+
+[all]
+
+gpu_mem=512
+enable_uart=1
+dtoverlay=w1-gpio
+dtoverlay=pi3-disable-bt
+-----
+
+* arm_64bit=1 is for enabling 64-bit linux kernel.
+* gpu_mem=512 reserves 512Mb of memory to graphic video card.
+
+==== Setting Serial Devices
+
+[source, shell]
+------
+pi@raspberrypi:~ $ lsusb
+Bus 002 Device 004: ID 05e3:0612 Genesys Logic, Inc. Hub
+Bus 002 Device 003: ID 090c:1000 Silicon Motion, Inc. - Taiwan (formerly Feiya Technology Corp.) Flash Drive
+Bus 002 Device 002: ID 05e3:0612 Genesys Logic, Inc. Hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 009: ID 067b:2303 Prolific Technology, Inc. PL2303 Serial Port
+Bus 001 Device 013: ID 0000:0009
+Bus 001 Device 014: ID 1c4f:0034 SiGma Micro
+Bus 001 Device 011: ID 0c45:8101 Microdia
+Bus 001 Device 010: ID 1a2c:2124 China Resource Semico Co., Ltd
+Bus 001 Device 008: ID 05e3:0610 Genesys Logic, Inc. 4-port hub
+Bus 001 Device 007: ID 0403:6001 Future Technology Devices International, Ltd FT232 Serial (UART) IC
+Bus 001 Device 006: ID 05e3:0610 Genesys Logic, Inc. 4-port hub
+Bus 001 Device 005: ID 16d0:0b03 MCS AIS Receiver [dAISy]
+Bus 001 Device 004: ID 0bda:2838 Realtek Semiconductor Corp. RTL2838 DVB-T
+Bus 001 Device 003: ID 05e3:0610 Genesys Logic, Inc. 4-port hub
+Bus 001 Device 002: ID 2109:3431 VIA Labs, Inc. Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+------
+
+lsusb command will output all devices connected to USB bus.
+
+Run
+
+[source, shell]
+------
+openplotter-serial
+------
+
+and set aliases to each serial device OpenPlotter recognizes. Aliases should be marked to
+be associated with unique device IDs. See:
+
+.Openplotter Serial Devices
+image::config/openplotter-serial-devices.png[Openplotter Serial Devices, width="75%", align="center"]
+
+{zwsp} +
+
+After that create connections to SignalK
+
+.Openplotter Serial Connections
+image::config/openplotter-serial-connections.png[Openplotter Serial Connections, width="75%", align="center"]
 
 === Geolocation
 
