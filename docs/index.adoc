@@ -1655,6 +1655,27 @@ image::config/openplotter-i2c-connections.png[Openplotter I2C Connections, width
 
 {zwsp} +
 
+To add compass you need to launch
+
+[source]
+-----
+openplotter-pypilot
+-----
+
+Create a connection like that:
+
+.Openplotter PyPilot Connections
+image::config/openplotter-pypilot-connections.png[Openplotter PyPilot Connections, width="75%", align="center"]
+
+{zwsp} +
+
+Check your set up
+
+[source]
+-----
+openplotter-startup check
+-----
+
 
 === AIS
 
