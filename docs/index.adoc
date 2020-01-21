@@ -1690,6 +1690,31 @@ OpenCPN.
 
 Press Ctrl-] to get to telnet prompt anf type 'quit' and hit 'Enter' to exit from telnet session.
 
+Sample output:
+
+[source]
+-----
+Trying ::1...
+Connected to localhost.
+Escape character is '^]'.
+$IIVTG,281.60,T,292.20,M,0.00,N,0.00,K,A*32
+$IIHDG,167.67,-10.60,E,,*39
+$IIHDT,157.1,T*20
+$IIZDA,200813.020,20,01,2020,,*48
+$IIMMB,30.2445,I,1.0242,B*78
+$IIXDR,P,1.0242,B,Barometer*12
+$IIHDG,167.68,-10.60,E,,*36
+$IIHDM,167.7,M*25
+$IIHDT,157.1,T*20
+$IIXDR,A,3.2,D,PTCH,A,-91.3,D,ROLL*4B
+^]
+telnet> quit
+-----
+
+NOTE: You would need to calibrate your IMU sensors on your boat after mounting the computer inside the boat.
+Unfortunately OpenPlotter calibration dialogs are a bit big for the resolution of your cockpit monitor.
+So for calibration you might need to bring a higher resolution HDMI screen.
+
 === AIS
 
 Setting up dAISy AIS is very straight forward. It does require higher baud rate, so make sure you specify it correctly.
