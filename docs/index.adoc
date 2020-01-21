@@ -1567,7 +1567,14 @@ BU-353S4 GPS USB mouse by default is using binary SiRF protocol. You need to swi
 sudo apt install gpsd-clients
 ------
 
-Do lsusb. Plug in USB mouse into raspberry pi USB port. Do lsusb again to see which new USB device appeared.
+Do
+
+[source, shell]
+------
+lsusb
+------
+
+Plug in USB mouse into raspberry pi USB port. Do lsusb again to see which new USB device appeared.
 Use that device port in the command below.
 
 [source, shell]
@@ -1576,6 +1583,8 @@ sudo stty -F /dev/ttyUSB0 4800
 sudo gpsctl -n /dev/ttyUSB0
 ------
 
+To obtain a fix GPS receiver needs a clear sky view. You need to have it outside. Chances are it is not going to find
+a location from inside your house.
 
 === Charts and OpenCPN
 
