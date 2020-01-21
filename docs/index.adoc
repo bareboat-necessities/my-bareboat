@@ -1773,6 +1773,13 @@ See: https://www.instructables.com/id/Raspberry-Pi-NOAA-Weather-Satellite-Receiv
 
 === NMEA Wind Sensor
 
+=== Testing
+
+Another test site:
+
+.Test Setup
+image::boat-computer/boat-network-testbed.jpg[alt="Test Setup", width="75%", align="center"]
+
 
 == Pole for Sailboat Solar Panel / Wind Generator
 
