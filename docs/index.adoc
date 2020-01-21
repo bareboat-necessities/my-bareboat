@@ -1780,6 +1780,13 @@ Another test site:
 .Test Setup
 image::boat-computer/boat-network-testbed.jpg[alt="Test Setup", width="75%", align="center"]
 
+{zwsp} +
+
+.Cockpit Temporary Testbed
+image::boat-computer/cockpit-temp-testbed.jpg[alt="Cockpit Temporary Testbed", width="75%", align="center"]
+
+{zwsp} +
+
 
 == Pole for Sailboat Solar Panel / Wind Generator
 
