@@ -1743,7 +1743,7 @@ NOTE: You would need to calibrate your IMU sensors on your boat after mounting t
 Unfortunately OpenPlotter calibration dialogs are a bit big for the resolution of your cockpit monitor.
 So for calibration you might need to bring a higher resolution HDMI screen.
 
-NOTE: When complicated issues arise try to find out a chipset of the device in question and start
+NOTE: When complicated issues arise (if you think it is hardware related) try to find out a chipset of the device in question and start
 googling the chipset and the symptoms. Usually it gives better results than just searching by the vendor/model.
 
 === AIS
