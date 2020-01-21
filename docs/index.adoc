@@ -1432,6 +1432,33 @@ ifndef::env-github[]
 
 endif::[]
 
+Issuing this command:
+
+[source, shell]
+-----
+ifconfig -a
+-----
+
+On a router and on the boat computer will give good idea of the current configuration and status of local
+network (TCP/IP) interfaces.
+
+On your boat computer install nmap
+
+[source, shell]
+-----
+sudo apt install nmap
+-----
+
+and use
+
+[source, shell]
+-----
+nmap -sP 192.168.8.0/24
+-----
+
+To discover all network devices on your boat local network. After you done with all the set up there would be
+Pi, router, m5stack.
+
 === Important local URLs on your boat
 
 
