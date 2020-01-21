@@ -1446,7 +1446,8 @@ endif::[]
 telnet gl-x750 10110
 ------
 
-* Connects to SignalK running on the boat computer (Should be configured to output NMEA data)
+* Connects to SignalK running on the boat computer (Should be configured to output NMEA data, with a SignalK
+NMEA translation plugin)
 +
 [source, shell]
 ------
