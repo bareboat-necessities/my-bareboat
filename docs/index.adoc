@@ -1628,7 +1628,7 @@ The sound didn't work out of aux port. By default Raspberry Buster uses HDMI aud
 have a speaker. This command switches it to aux (You will need to add it into linux startup scripts if you
 want it on every boot):
 
-[source]
+[source, shell]
 -----
 amixer cset numid=3 1
 -----
@@ -1638,7 +1638,7 @@ amixer cset numid=3 1
 
 Launch
 
-[source]
+[source, shell]
 -----
 openplotter-i2c
 -----
@@ -1657,7 +1657,7 @@ image::config/openplotter-i2c-connections.png[Openplotter I2C Connections, width
 
 To add compass you need to launch
 
-[source]
+[source, shell]
 -----
 openplotter-pypilot
 -----
@@ -1671,11 +1671,24 @@ image::config/openplotter-pypilot-connections.png[Openplotter PyPilot Connection
 
 Check your set up
 
-[source]
+[source, shell]
 -----
 openplotter-startup check
 -----
 
+=== Troubleshooting
+
+Run
+
+[source, shell]
+-----
+telnet localhost 10110
+-----
+
+to see NMEA data from SignalK. This is the stream you would need to set up as a connection in
+OpenCPN.
+
+Press Ctrl-] to get to telnet prompt anf type 'quit' and hit 'Enter' to exit from telnet session.
 
 === AIS
 
