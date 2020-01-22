@@ -760,13 +760,20 @@ image::opencpn-1.png[alt="OpenCPN MBTiles"]
 .OpenCPN Vector
 image::opencpn-2.png[alt="OpenCPN Vector"]
 
+{zwsp} +
+
+.OpenCPN Dashboard
+image::opencpn-3.png[alt="OpenCPN Dashboard"]
+
+{zwsp} +
+
 ===== Power Usage
 
 * Preliminary tests show that combined power consumption of Raspberry Pi 4 based boat computer and
 Argonaut M7 gen2 7-inch touch display stays under 10 watts.
 If I turn off the display then wattage drops to 4-4.5 watts. If I reduce the brightness on the display backlight
 it drops dramatically as well. So both display and Pi contribute about the same share in power consumption.
-On average I see their combined draw of 0.55 amps at 12v (about 7 watts). This is with 2 chained USB hubs
+On average I see their combined draw of 0.75 amps at 12v (about 9 watts). This is with 2 chained USB hubs
 and long wires (HDMI/USB/power) between a computer and cockpit display and hub, AIS (dAISy), RTL-SDR (plugged in but
 idling), Flashdrive SSD, FTDI (connected only into USB).
 * 10 watts on 80 amp-hours 12v battery (in my understanding they are rated for that before drop below 10v,
@@ -784,6 +791,13 @@ USB hubs to draw for the host when they lose own power supply. There are some wh
 by a jumper on their PCB, but the default is to power itself from the host.
 * I did test fiber-optic USB data cable leading to the cockpit as well. It does have regular wires for power as well, so
 it behaves exactly the same. The cable is much thinner so you can have a smaller hole is your boat in a cockpit deck.
+* Reboot doesn't work. It just shuts down Pi. There are many reports that pi4 doesn't reboot with USB self powered hubs
+if they are not powered off before the reboot and backfeed power into Pi or
+it could be because I'm booting from USB flashdrive instead of SD card or due to USB controller (VL805) firmware.
+So currently the reboot procedures are shutdown and then power cycle the boat computer.
+* I've tried installing rpi-backlight but it seems Argonaut M7 monitor doesn't support software backlight control
+(at least it doesn't work under Linux) So the only way to control backlight is via Argonaut's own control on
+the side of the monitor.
 
 Temperature readings stay under 56 C.
 
