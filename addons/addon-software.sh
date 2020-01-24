@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt install nmap predict git
+sudo apt install nmap predict git gpsd xmlstarlet
