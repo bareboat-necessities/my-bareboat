@@ -17,9 +17,9 @@ sudo cp svkbd-de /usr/bin/
 sudo cp svkbd-arrows /usr/bin/
 sudo bash -c 'cat << EOF > /usr/bin/toggle-keyboard.sh
 #!/bin/bash
-PID=`pidof svkbd-en`
-if [ ! -e $PID ]; then
-  kill $PID
+PID=\`pidof svkbd-en\`
+if [ ! -e \$PID ]; then
+  kill \$PID
 else
  svkbd-en -g 600x200+1+1 &
 fi
