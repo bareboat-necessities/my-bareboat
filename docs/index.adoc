@@ -1854,6 +1854,12 @@ Another Raspberry Pi Boating Project
 
 * http://sailoog.com/openplotter[OpenPlotter]
 
+* https://openplotter.readthedocs.io/en/latest/[OpenPlotter Documentation]
+
+* http://pysselilivet.blogspot.com/2019/08/openplotter-beta-v2-quick-install-guide.html[OpenPlotter 2.x beta install guide]
+
+* http://forum.openmarine.net/[OpenPlotter Forums]
+
 * https://www.rooco.eu/[Moitessier HAT]
 
 * https://pypilot.org/[PyPilot]
