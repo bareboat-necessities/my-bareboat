@@ -1850,6 +1850,8 @@ Another Raspberry Pi Boating Project
 
 * https://opencpn.org/[OpenCPN]
 
+* http://www.cruisersforum.com/forums/f134/[OpenCPN Forums]
+
 * https://cloudsmith.io/~dan-dickey/repos/opencpn-raspbian-unstable/packages/[OpenCPN dev builds for Pi]
 
 * http://sailoog.com/openplotter[OpenPlotter]
