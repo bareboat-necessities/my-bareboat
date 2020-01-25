@@ -1515,6 +1515,22 @@ telnet localhost 8375
 
 ==== Installation
 
+After completing installation you can see which packages got installed.
+
+[source,shell]
+----
+sudo apt list --installed | grep opencpn
+sudo apt list --installed | grep openplotter
+----
+
+To see which available OpenCPN are there
+
+[source,shell]
+----
+apt-cache search opencpn
+----
+
+
 ==== Initial Settings
 
 [.text-center]
