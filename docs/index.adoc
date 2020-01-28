@@ -807,15 +807,20 @@ NOTE: After long testing and research I've found a solution for UBS hub power is
 is that the hub in cockpit powers the cockpit via USB hub even if I turn the cockpit 12v switch off. The second one is
 that Pi doesn't reboot as it stays powered from the hubs. The simplest way to solve it was to tape
 USB +5v pin inside female part of USB type A plugs with the electrical tape (see pic). There are two places because
-there are 2  self powered hubs need to be isolated. The procedure is actually simpler than it sounds and it
-makes the whole set up even safer. You do not want extra circuits running from below deck into the cockpit when cockpit
+there are 2  self powered hubs need to be isolated. The procedure is actually makes the whole set up even safer.
+You do not want extra circuits running from below deck into the cockpit when cockpit
 switch is 'off'. Power savings when you turn cockpit off are impressive. Pi takes 0.00-0.09 amps @ 12v with no HDMI
 video connected (only USB connected sensors). For the cockpit USB 3.0 hub I got the shortest USB 3.0 type A
-male to female cable. And for the computer's hub I've just taped it inside raspberry Pi USB 3.0 type A female part.
+male to female cable. And for the computer's hub I've just taped it inside raspberry Pi USB 3.0 type A male part.
 This is how it was done:
 
-.USB 3.0 Self-Powered Hub Backfeed and Forward-feed power isolation
-image::boat-computer/usb-hub-isolation.jpg[alt="USB 3.0 Self-Powered Hub Backfeed and Forward-feed power isolation", width="75%", align="center"]
+.USB 3.0 Self-Powered Hub Backfeed and Forward-feed power isolation male
+image::boat-computer/usb-hub-isolation-male.jpg[alt="USB 3.0 Self-Powered Hub Backfeed and Forward-feed power isolation male", width="75%", align="center"]
+
+{zwsp} +
+
+.USB 3.0 Self-Powered Hub Backfeed and Forward-feed power isolation female
+image::boat-computer/usb-hub-isolation-female.jpg[alt="USB 3.0 Self-Powered Hub Backfeed and Forward-feed power isolation female", width="75%", align="center"]
 
 {zwsp} +
 
