@@ -815,12 +815,12 @@ the shortest USB 3.0 type A male to female cable and put tape in it. And for the
 it inside USB 3.0 type-A male part connecting the hub. This is how it was done:
 
 .USB 3.0 self-powered hub backfeed and forward-feed power isolation male
-image::boat-computer/usb-hub-isolation-male.jpg[alt="USB 3.0 self-powered hub backfeed and forward-feed power isolation male", width="75%", align="center"]
+image::boat-computer/usb-hub-isolation-male.jpg[alt="USB 3.0 self-powered hub backfeed and forward-feed power isolation male", width="40%", align="center"]
 
 {zwsp} +
 
 .USB 3.0 self-powered hub backfeed and forward-feed power isolation female
-image::boat-computer/usb-hub-isolation-female.jpg[alt="USB 3.0 self-powered hub backfeed and forward-feed power isolation female", width="75%", align="center"]
+image::boat-computer/usb-hub-isolation-female.jpg[alt="USB 3.0 self-powered hub backfeed and forward-feed power isolation female", width="40%", align="center"]
 
 {zwsp} +
 
@@ -1613,7 +1613,7 @@ image::config/raspbian-settings.png[Raspbian Interfaces Settings, width="75%", a
 
 Reboot after changing settings in Raspberry Pi Configuration screen.
 
-In PyPilot you need to enable UART. This will disable Bluetooth. Reboot after it.
+In Openplotter Serial you need to enable UART. This will disable Bluetooth. Reboot after it.
 
 Your /boot/config.txt should look like this (I've stripped the commented lines):
 
