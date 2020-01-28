@@ -811,7 +811,7 @@ there are 2  self powered hubs need to be isolated. The procedure is actually ma
 You do not want extra circuits running from below deck into the cockpit when cockpit
 switch is 'off'. Power savings when you turn cockpit off are impressive. Pi takes 0.00-0.09 amps @ 12v with no HDMI
 video connected (only USB connected sensors). For the cockpit USB 3.0 hub I got the shortest USB 3.0 type A
-male to female cable. And for the computer's hub I've just taped it inside raspberry Pi USB 3.0 type A male part.
+male to female cable. And for the computer's hub I've just taped it inside USB 3.0 type-A male part connecting the hub.
 This is how it was done:
 
 .USB 3.0 Self-Powered Hub Backfeed and Forward-feed power isolation male
