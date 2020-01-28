@@ -8,8 +8,8 @@ start
 :Configure Pi, Kernel, Interfaces, Video Memory Split;
 :Configure Touchscreen, Onscreen Keyboard, twofing, svkbd, desktop;
 :Update OpenPlotter applications;
-:Configure Serial, I2C, PyPilot, IMU, AIS;
-:Configure SignalK Connections;
+:Configure Serial, I2C, PyPilot, IMU, GPS sensor, AIS;
+:Configure SignalK Connections, SignalK Time Sync, SignalK NMEA;
 split
  :Download Charts for OpenCPN;
 split again
@@ -19,9 +19,25 @@ split again
 end split
 :Configure OpenCPN, UI, Dashboard, Plugins;
 split
-:Configure SDR-RTL;
-split again
 :Configure Network;
+split again
+:Configure SDR-RTL;
 end split
+split
+:Calibrate IMU;
+split again
+:Configure Weather Services;
+end split
+:Test;
+partition On-the-Boat {
+	:Mount the hardware in the cabin and the cockpit;
+	:Attach Antennas;
+	:Set up WiFi router connection to the marina;
+	:Calibrate Leveling and Axis;
+	:Attach Wind, Speed, Depth Sensors;
+	:Attach AutoPilot;
+	:Test;
+}
+
 stop
 @enduml
