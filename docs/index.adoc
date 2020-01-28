@@ -782,21 +782,21 @@ idling), Flashdrive SSD, FTDI (connected only into USB).
 * 10 watts on 80 amp-hours 12v battery (in my understanding they are rated for that before drop below 10v,
 so it is all usable amps) will give you approximately 80*12/10=96 hours of chartplotting at max brightness. C'est la vie.
 That's why you need solar panels on your sailboat.
-* While experimenting with power usage and connecting Argonaut M7 to different USB ports and hubs (USB2, USB3)
-it became unresponsive. Even its own power on/off button didn't work. I had to perform a hardware reset of it.
+* While experimenting with power usage and connecting/disconnecting various USB devices and
+Argonaut M7 to different USB ports and hubs (USB2, USB3) Argonaut M7 became unresponsive.
+Even its own power on/off button didn't work. I had to perform a factory reset of it.
 * The reset procedure as per manufacturer requires to hold power button on Argonaut M7 display immediately after
 full power off/on cycle. On my boat it's really a two-man job then. There is no power switch in cockpit because
 the M7 display has its own and the other switch to power it on is below deck. It seems they didn't think about
 single handed sailors when they came up with this reset procedure design.
 * Turns out if I turn off 12v supply into cockpit it does turn-off the display but it's LED status light still stays on.
 So it still gets some power via USB (not much per amp meter). Apparently this is the default behavior of most self powered
-USB hubs to draw for the host when they lose own power supply. There are some who have this behavior configured
+USB hubs to draw from the host when they lose own power supply. There are some hubs which have this behavior configured
 by a jumper on their PCB, but the default is to power itself from the host.
 * I did test fiber-optic USB data cable leading to the cockpit as well. It does have regular wires for power as well, so
 it behaves exactly the same. The cable is much thinner so you can have a smaller hole is your boat in a cockpit deck.
 * Reboot doesn't work. It just shuts down Pi. There are many reports that pi4 doesn't reboot with USB self powered hubs
-if they are not powered off before the reboot and backfeed power into Pi or
-it could be because I'm booting from USB flashdrive instead of SD card or due to USB controller (VL805) firmware.
+if they are not powered off before the reboot and backfeed power into Pi.
 So currently the reboot procedures are shutdown and then power cycle the boat computer.
 * I've tried installing rpi-backlight but it seems Argonaut M7 monitor doesn't support software backlight control
 (at least it doesn't work under Linux) So the only way to control backlight is via Argonaut's own control on
@@ -807,20 +807,20 @@ NOTE: After long testing and research I've found a solution for UBS hub power is
 is that the hub in cockpit powers the cockpit via USB hub even if I turn the cockpit 12v switch off. The second one is
 that Pi doesn't reboot as it stays powered from the hubs. The simplest way to solve it was to tape
 USB +5v pin inside female part of USB type A plugs with the electrical tape (see pic). There are two places because
-there are 2  self powered hubs need to be isolated. The procedure is actually makes the whole set up even safer.
+there are 2 self powered hubs need to be isolated. The procedure is actually makes the whole set up even safer.
 You do not want extra circuits running from below deck into the cockpit when cockpit
-switch is 'off'. Power savings when you turn cockpit off are impressive. Pi takes 0.00-0.09 amps @ 12v with no HDMI
-video connected (only USB connected sensors). For the cockpit USB 3.0 hub I got the shortest USB 3.0 type A
-male to female cable. And for the computer's hub I've just taped it inside USB 3.0 type-A male part connecting the hub.
-This is how it was done:
+switch is 'off'. Power savings when you turn cockpit off are impressive. Pi takes less than 0.2 amps @ 12v with no HDMI
+video connected (only USB connected sensors and flash drive stick). For the cockpit USB 3.0 hub I got
+the shortest USB 3.0 type A male to female cable and put tape in it. And for the computer's hub I've just taped
+it inside USB 3.0 type-A male part connecting the hub. This is how it was done:
 
-.USB 3.0 Self-Powered Hub Backfeed and Forward-feed power isolation male
-image::boat-computer/usb-hub-isolation-male.jpg[alt="USB 3.0 Self-Powered Hub Backfeed and Forward-feed power isolation male", width="75%", align="center"]
+.USB 3.0 self-powered hub backfeed and forward-feed power isolation male
+image::boat-computer/usb-hub-isolation-male.jpg[alt="USB 3.0 self-powered hub backfeed and forward-feed power isolation male", width="75%", align="center"]
 
 {zwsp} +
 
-.USB 3.0 Self-Powered Hub Backfeed and Forward-feed power isolation female
-image::boat-computer/usb-hub-isolation-female.jpg[alt="USB 3.0 Self-Powered Hub Backfeed and Forward-feed power isolation female", width="75%", align="center"]
+.USB 3.0 self-powered hub backfeed and forward-feed power isolation female
+image::boat-computer/usb-hub-isolation-female.jpg[alt="USB 3.0 self-powered hub backfeed and forward-feed power isolation female", width="75%", align="center"]
 
 {zwsp} +
 
@@ -831,6 +831,51 @@ Temperature readings stay under 56 C.
 -----
 pi@raspberrypi:~ $ vcgencmd measure_temp
 temp=48.0'C
+-----
+
+Check your USB set up
+[source, shell]
+-----
+pi@openplotter:~ $ sudo apt install uhubctl
+pi@openplotter:~ $ sudo uhubctl
+Current status for hub 2-1.4 [05e3:0612 GenesysLogic USB3.0 Hub, USB 3.00, 4 ports]
+  Port 1: 02a0 power 5gbps Rx.Detect
+  Port 2: 02a0 power 5gbps Rx.Detect
+  Port 3: 02f0 power 5gbps Polling reset
+  Port 4: 02a0 power 5gbps Rx.Detect
+Current status for hub 2-1 [05e3:0612 GenesysLogic USB3.0 Hub, USB 3.00, 4 ports]
+  Port 1: 0203 power 5gbps U0 enable connect [090c:1000 Samsung Flash Drive FIT 0353019060002728]
+  Port 2: 02a0 power 5gbps Rx.Detect
+  Port 3: 02a0 power 5gbps Rx.Detect
+  Port 4: 0263 power 5gbps U3 enable connect [05e3:0612 GenesysLogic USB3.0 Hub, USB 3.00, 4 ports]
+Current status for hub 2 [1d6b:0003 Linux 4.19.97-v8+ xhci-hcd xHCI Host Controller 0000:01:00.0, USB 3.00, 4 ports]
+  Port 1: 0203 power 5gbps U0 enable connect [05e3:0612 GenesysLogic USB3.0 Hub, USB 3.00, 4 ports]
+  Port 2: 02a0 power 5gbps Rx.Detect
+  Port 3: 02a0 power 5gbps Rx.Detect
+  Port 4: 02a0 power 5gbps Rx.Detect
+Current status for hub 1-1.1.4 [05e3:0610 GenesysLogic USB2.0 Hub, USB 2.10, 4 ports]
+  Port 1: 0103 power enable connect [0403:6001 FTDI FT232R USB UART AK08UZHY]
+  Port 2: 0100 power
+  Port 3: 0503 power highspeed enable connect [05e3:0610 GenesysLogic USB2.0 Hub, USB 2.10, 4 ports]
+  Port 4: 0103 power enable connect [067b:2303 Prolific Technology Inc. USB-Serial Controller D]
+Current status for hub 1-1.1 [05e3:0610 GenesysLogic USB2.0 Hub, USB 2.10, 4 ports]
+  Port 1: 0100 power
+  Port 2: 0503 power highspeed enable connect [0bda:2838 Realtek RTL2838UHIDIR 00000001]
+  Port 3: 0103 power enable connect [16d0:0b03 Adrian Studer dAISy AIS Receiver 76443A5131002900]
+  Port 4: 0503 power highspeed enable connect [05e3:0610 GenesysLogic USB2.0 Hub, USB 2.10, 4 ports]
+Current status for hub 1 [1d6b:0002 Linux 4.19.97-v8+ xhci-hcd xHCI Host Controller 0000:01:00.0, USB 2.00, 1 ports]
+  Port 1: 0503 power highspeed enable connect [2109:3431 USB2.0 Hub, USB 2.10, 4 ports]
+-----
+
+Check SSD Drive transfer speed
+[source, shell]
+-----
+pi@openplotter:~ $ sudo apt install hdparm
+pi@openplotter:~ $ sudo hdparm -Tt /dev/sda
+
+/dev/sda:
+ Timing cached reads:   1948 MB in  2.00 seconds = 974.71 MB/sec
+ Timing buffered disk reads: 628 MB in  3.00 seconds = 209.28 MB/sec
 -----
 
 ===== Assembly Activities
@@ -1759,6 +1804,22 @@ Check your set up
 -----
 openplotter-startup check
 -----
+
+==== Calibration
+
+IMU needs to be calibrated.
+
+See: https://openplotter.readthedocs.io/en/latest/pypilot/calibration.html
+
+In case you run into issues doing it you can start
+
+[source, shell]
+-----
+pypilot_boatimu
+-----
+
+and check for errors.
+
 
 === Troubleshooting
 

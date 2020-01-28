@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<configs version="1.0" creator="OpenCPN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" xmlns:opencpn="http://www.opencpn.org">
+  <config GUID="2f3bf70d-98ce-4688-910a-cd59219a1ef0" title="Main 1" description="Main 1" templateFile="OCPNTemplate-2f3bf70d-98ce-4688-910a-cd59219a1ef0.conf" />
+</configs>
