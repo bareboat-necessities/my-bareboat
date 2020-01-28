@@ -1581,6 +1581,21 @@ telnet localhost 8375
 
 === Openplotter
 
+==== Basic Installation Steps
+
+.Basic Installation Steps
+ifdef::env-github[image::basic-install-steps.svg[Basic Installation Steps]]
+ifndef::env-github[]
+
+[plantuml,basic-install-steps,svg]
+....
+!include plantuml/basic-install-steps.puml
+....
+
+endif::[]
+
+{zwsp} +
+
 ==== Installation
 
 After completing installation you can see which packages got installed.

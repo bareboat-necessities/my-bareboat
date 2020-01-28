@@ -1,0 +1,27 @@
+@startuml
+start
+:Download OpenPlotter NOOB;
+:Create SD Card with NOOB;
+:Boot Pi from SD card;
+:Install OpenPlotter;
+:Install Raspbian Updates and Firmware Updates;
+:Configure Pi, Kernel, Interfaces, Video Memory Split;
+:Configure Touchscreen, Onscreen Keyboard, twofing, svkbd, desktop;
+:Update OpenPlotter applications;
+:Configure Serial, I2C, PyPilot, IMU, AIS;
+:Configure SignalK Connections;
+split
+ :Download Charts for OpenCPN;
+split again
+ :Install Plugins for OpenCPN;
+split again
+ :Create OpenCPN to SignalK Connection;
+end split
+:Configure OpenCPN, UI, Dashboard, Plugins;
+split
+:Configure SDR-RTL;
+split again
+:Configure Network;
+end split
+stop
+@enduml
