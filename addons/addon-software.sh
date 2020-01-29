@@ -3,8 +3,13 @@
 # enable aux audio
 amixer cset numid=3 1
 
-sudo apt install nmap predict git gpsd xmlstarlet
+# Additional marine related utilities
+sudo apt install predict gpsd rtl-ais klex
 
+# Additional utilities
+sudo apt install nmap git xmlstarlet
+
+# Install command line utility to show current location
 sudo apt install jq
 sudo bash -c 'cat << EOF > /usr/bin/gps-loc
 #!/bin/bash
@@ -12,6 +17,7 @@ curl -s http://localhost:3000/signalk/v1/api/vessels/self/navigation/position/ |
 EOF'
 sudo chmod +x /usr/bin/gps-loc
 
+# TODO: Does it help with reboots???
 sudo apt install uhubctl
 sudo bash -c 'cat << EOF > /lib/systemd/system-shutdown/hub-off.sh
 #!/bin/bash
