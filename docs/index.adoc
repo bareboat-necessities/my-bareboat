@@ -815,12 +815,12 @@ the shortest USB 3.0 type A male to female cable and put tape in it. And for the
 it inside USB 3.0 type-A male part connecting the hub. This is how it was done:
 
 .USB 3.0 self-powered hub backfeed and forward-feed power isolation male
-image::boat-computer/usb-hub-isolation-male.jpg[alt="USB 3.0 self-powered hub backfeed and forward-feed power isolation male", width="40%", align="center"]
+image::boat-computer/usb-hub-isolation-male.jpg[alt="USB 3.0 self-powered hub backfeed and forward-feed power isolation male", width="40%",  pdfwidth="40%", align="center"]
 
 {zwsp} +
 
 .USB 3.0 self-powered hub backfeed and forward-feed power isolation female
-image::boat-computer/usb-hub-isolation-female.jpg[alt="USB 3.0 self-powered hub backfeed and forward-feed power isolation female", width="40%", align="center"]
+image::boat-computer/usb-hub-isolation-female.jpg[alt="USB 3.0 self-powered hub backfeed and forward-feed power isolation female", width="40%",  pdfwidth="40%", align="center"]
 
 {zwsp} +
 
