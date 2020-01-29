@@ -7,7 +7,7 @@ mgrouch <mgrouch@users.noreply.github.com>
 :sectnumlevels: 3
 :encoding: utf-8
 :lang: en
-:title-logo-image: image:../../bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+:title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 :imagesdir: images
 :icons: font
 ifdef::env-github[]
@@ -22,7 +22,7 @@ endif::[]
 
 {zwsp} +
 
-image::../../bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+image::bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 
 {zwsp} +
 
