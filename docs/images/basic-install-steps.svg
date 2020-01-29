@@ -9,18 +9,18 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    contentScriptType="application/ecmascript"
    contentStyleType="text/css"
-   height="1432px"
+   height="1811px"
    preserveAspectRatio="none"
-   style="width:694px;height:1432px;"
+   style="width:694px;height:1811px;"
    version="1.1"
-   viewBox="0 0 694 1432"
+   viewBox="0 0 694 1811"
    width="694px"
    zoomAndPan="magnify"
-   id="svg291"
+   id="svg347"
    sodipodi:docname="basic-install-steps.svg"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06">
   <metadata
-     id="metadata295">
+     id="metadata351">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -42,20 +42,20 @@
      inkscape:pageshadow="2"
      inkscape:window-width="640"
      inkscape:window-height="480"
-     id="namedview293"
+     id="namedview349"
      showgrid="false"
-     inkscape:zoom="0.16480447"
+     inkscape:zoom="0.13031474"
      inkscape:cx="347"
-     inkscape:cy="716"
+     inkscape:cy="905.5"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg291" />
+     inkscape:current-layer="svg347" />
   <defs
      id="defs11">
     <filter
        height="300%"
-       id="fdfi7edfpgfge"
+       id="f1u7vd0jd95n2u"
        width="300%"
        x="-1"
        y="-1">
@@ -83,19 +83,19 @@
     </filter>
   </defs>
   <g
-     id="g289">
+     id="g345">
     <ellipse
        cx="346.5"
        cy="20"
        fill="#000000"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        rx="10"
        ry="10"
        style="stroke: none; stroke-width: 1.0;"
        id="ellipse13" />
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
@@ -115,7 +115,7 @@
        id="text17">Download OpenPlotter NOOB</text>
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
@@ -135,13 +135,13 @@
        id="text21">Create SD Card with NOOB</text>
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
-       width="139"
-       x="277"
+       width="146"
+       x="273.5"
        y="158.2656"
        id="rect23" />
     <text
@@ -149,19 +149,19 @@
        font-family="sans-serif"
        font-size="12"
        lengthAdjust="spacingAndGlyphs"
-       textLength="119"
-       x="287"
+       textLength="126"
+       x="283.5"
        y="179.8672"
-       id="text25">Boot Pi from SD card</text>
+       id="text25">Attach Pi to the router</text>
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
-       width="125"
-       x="284"
+       width="139"
+       x="277"
        y="212.3984"
        id="rect27" />
     <text
@@ -169,19 +169,19 @@
        font-family="sans-serif"
        font-size="12"
        lengthAdjust="spacingAndGlyphs"
-       textLength="105"
-       x="294"
+       textLength="119"
+       x="287"
        y="234"
-       id="text29">Install OpenPlotter</text>
+       id="text29">Boot Pi from SD card</text>
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
-       width="298"
-       x="197.5"
+       width="125"
+       x="284"
        y="266.5313"
        id="rect31" />
     <text
@@ -189,19 +189,19 @@
        font-family="sans-serif"
        font-size="12"
        lengthAdjust="spacingAndGlyphs"
-       textLength="278"
-       x="207.5"
+       textLength="105"
+       x="294"
        y="288.1328"
-       id="text33">Install Raspbian Updates and Firmware Updates</text>
+       id="text33">Install OpenPlotter</text>
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
-       width="317"
-       x="188"
+       width="298"
+       x="197.5"
        y="320.6641"
        id="rect35" />
     <text
@@ -209,19 +209,19 @@
        font-family="sans-serif"
        font-size="12"
        lengthAdjust="spacingAndGlyphs"
-       textLength="297"
-       x="198"
+       textLength="278"
+       x="207.5"
        y="342.2656"
-       id="text37">Configure Pi, Kernel, Interfaces, Video Memory Split</text>
+       id="text37">Install Raspbian Updates and Firmware Updates</text>
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
-       width="421"
-       x="136"
+       width="358"
+       x="167.5"
        y="374.7969"
        id="rect39" />
     <text
@@ -229,19 +229,19 @@
        font-family="sans-serif"
        font-size="12"
        lengthAdjust="spacingAndGlyphs"
-       textLength="401"
-       x="146"
+       textLength="338"
+       x="177.5"
        y="396.3984"
-       id="text41">Configure Touchscreen, Onscreen Keyboard, twofing, svkbd, desktop</text>
+       id="text41">Configure Pi, Kernel, Interfaces, Video Memory Split, Audio</text>
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
-       width="207"
-       x="243"
+       width="421"
+       x="136"
        y="428.9297"
        id="rect43" />
     <text
@@ -249,19 +249,19 @@
        font-family="sans-serif"
        font-size="12"
        lengthAdjust="spacingAndGlyphs"
-       textLength="187"
-       x="253"
+       textLength="401"
+       x="146"
        y="450.5313"
-       id="text45">Update OpenPlotter applications</text>
+       id="text45">Configure Touchscreen, Onscreen Keyboard, twofing, svkbd, desktop</text>
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
-       width="308"
-       x="192.5"
+       width="207"
+       x="243"
        y="483.0625"
        id="rect47" />
     <text
@@ -269,19 +269,19 @@
        font-family="sans-serif"
        font-size="12"
        lengthAdjust="spacingAndGlyphs"
-       textLength="288"
-       x="202.5"
+       textLength="187"
+       x="253"
        y="504.6641"
-       id="text49">Configure Serial, I2C, PyPilot, IMU, GPS sensor, AIS</text>
+       id="text49">Update OpenPlotter applications</text>
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
-       width="391"
-       x="151"
+       width="308"
+       x="192.5"
        y="537.1953"
        id="rect51" />
     <text
@@ -289,28 +289,68 @@
        font-family="sans-serif"
        font-size="12"
        lengthAdjust="spacingAndGlyphs"
+       textLength="288"
+       x="202.5"
+       y="558.7969"
+       id="text53">Configure Serial, I2C, PyPilot, IMU, GPS sensor, AIS</text>
+    <rect
+       fill="#FEFECE"
+       filter="url(#f1u7vd0jd95n2u)"
+       height="34.1328"
+       rx="12.5"
+       ry="12.5"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       width="391"
+       x="151"
+       y="591.3281"
+       id="rect55" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
        textLength="371"
        x="161"
-       y="558.7969"
-       id="text53">Configure SignalK Connections, SignalK Time Sync, SignalK NMEA</text>
+       y="612.9297"
+       id="text57">Configure SignalK Connections, SignalK Time Sync, SignalK NMEA</text>
+    <rect
+       fill="#FEFECE"
+       filter="url(#f1u7vd0jd95n2u)"
+       height="34.1328"
+       rx="12.5"
+       ry="12.5"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       width="194"
+       x="249.5"
+       y="645.4609"
+       id="rect59" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="174"
+       x="259.5"
+       y="667.0625"
+       id="text61">Configure SignalK Dashboards</text>
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
        x1="108.5"
        x2="561"
-       y1="591.3281"
-       y2="591.3281"
-       id="line55" />
+       y1="699.5938"
+       y2="699.5938"
+       id="line63" />
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
        width="197"
        x="10"
-       y="611.3281"
-       id="rect57" />
+       y="719.5938"
+       id="rect65" />
     <text
        fill="#000000"
        font-family="sans-serif"
@@ -318,19 +358,19 @@
        lengthAdjust="spacingAndGlyphs"
        textLength="177"
        x="20"
-       y="632.9297"
-       id="text59">Download Charts for OpenCPN</text>
+       y="741.1953"
+       id="text67">Download Charts for OpenCPN</text>
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
        width="176"
        x="235"
-       y="611.3281"
-       id="rect61" />
+       y="719.5938"
+       id="rect69" />
     <text
        fill="#000000"
        font-family="sans-serif"
@@ -338,19 +378,19 @@
        lengthAdjust="spacingAndGlyphs"
        textLength="156"
        x="245"
-       y="632.9297"
-       id="text63">Install Plugins for OpenCPN</text>
+       y="741.1953"
+       id="text71">Install Plugins for OpenCPN</text>
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
        width="244"
        x="439"
-       y="611.3281"
-       id="rect65" />
+       y="719.5938"
+       id="rect73" />
     <text
        fill="#000000"
        font-family="sans-serif"
@@ -358,26 +398,26 @@
        lengthAdjust="spacingAndGlyphs"
        textLength="224"
        x="449"
-       y="632.9297"
-       id="text67">Create OpenCPN to SignalK Connection</text>
+       y="741.1953"
+       id="text75">Create OpenCPN to SignalK Connection</text>
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
        x1="108.5"
        x2="561"
-       y1="665.4609"
-       y2="665.4609"
-       id="line69" />
+       y1="773.7266"
+       y2="773.7266"
+       id="line77" />
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
        width="273"
        x="210"
-       y="685.4609"
-       id="rect71" />
+       y="793.7266"
+       id="rect79" />
     <text
        fill="#000000"
        font-family="sans-serif"
@@ -385,26 +425,26 @@
        lengthAdjust="spacingAndGlyphs"
        textLength="253"
        x="220"
-       y="707.0625"
-       id="text73">Configure OpenCPN, UI, Dashboard, Plugins</text>
+       y="815.3281"
+       id="text81">Configure OpenCPN, UI, Dashboard, Plugins</text>
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
        x1="267"
-       x2="424"
-       y1="739.5938"
-       y2="739.5938"
-       id="line75" />
+       x2="587"
+       y1="847.8594"
+       y2="847.8594"
+       id="line83" />
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
        width="127"
        x="203.5"
-       y="759.5938"
-       id="rect77" />
+       y="867.8594"
+       id="rect85" />
     <text
        fill="#000000"
        font-family="sans-serif"
@@ -412,53 +452,133 @@
        lengthAdjust="spacingAndGlyphs"
        textLength="107"
        x="213.5"
-       y="781.1953"
-       id="text79">Configure Network</text>
+       y="889.4609"
+       id="text87">Configure Network</text>
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
+       height="34.1328"
+       rx="12.5"
+       ry="12.5"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       width="286"
+       x="124"
+       y="921.9922"
+       id="rect89" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="266"
+       x="134"
+       y="943.5938"
+       id="text91">Configure Network Disk mounting from Router</text>
+    <rect
+       fill="#FEFECE"
+       filter="url(#f1u7vd0jd95n2u)"
+       height="34.1328"
+       rx="12.5"
+       ry="12.5"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       width="453"
+       x="40.5"
+       y="976.125"
+       id="rect93" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="433"
+       x="50.5"
+       y="997.7266"
+       id="text95">Make backup copy of Charts and configs on the disk attached to the router</text>
+    <rect
+       fill="#FEFECE"
+       filter="url(#f1u7vd0jd95n2u)"
+       height="34.1328"
+       rx="12.5"
+       ry="12.5"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       width="219"
+       x="157.5"
+       y="1030.2578"
+       id="rect97" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="199"
+       x="167.5"
+       y="1051.8594"
+       id="text99">Set up Alt Network Boot as Backup</text>
+    <rect
+       fill="#FEFECE"
+       filter="url(#f1u7vd0jd95n2u)"
+       height="34.1328"
+       rx="12.5"
+       ry="12.5"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       width="280"
+       x="127"
+       y="1084.3906"
+       id="rect101" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="260"
+       x="137"
+       y="1105.9922"
+       id="text103">Set up Iridium Satellite Modem (if you have it)</text>
+    <rect
+       fill="#FEFECE"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
        width="131"
-       x="358.5"
-       y="759.5938"
-       id="rect81" />
+       x="521.5"
+       y="976.125"
+       id="rect105" />
     <text
        fill="#000000"
        font-family="sans-serif"
        font-size="12"
        lengthAdjust="spacingAndGlyphs"
        textLength="111"
-       x="368.5"
-       y="781.1953"
-       id="text83">Configure SDR-RTL</text>
+       x="531.5"
+       y="997.7266"
+       id="text107">Configure SDR-RTL</text>
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
        x1="267"
-       x2="424"
-       y1="813.7266"
-       y2="813.7266"
-       id="line85" />
+       x2="587"
+       y1="1138.5234"
+       y2="1138.5234"
+       id="line109" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
        x1="244.5"
        x2="409"
-       y1="833.7266"
-       y2="833.7266"
-       id="line87" />
+       y1="1158.5234"
+       y2="1158.5234"
+       id="line111" />
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
        width="97"
        x="196"
-       y="853.7266"
-       id="rect89" />
+       y="1178.5234"
+       id="rect113" />
     <text
        fill="#000000"
        font-family="sans-serif"
@@ -466,19 +586,19 @@
        lengthAdjust="spacingAndGlyphs"
        textLength="77"
        x="206"
-       y="875.3281"
-       id="text91">Calibrate IMU</text>
+       y="1200.125"
+       id="text115">Calibrate IMU</text>
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
        width="176"
        x="321"
-       y="853.7266"
-       id="rect93" />
+       y="1178.5234"
+       id="rect117" />
     <text
        fill="#000000"
        font-family="sans-serif"
@@ -486,26 +606,26 @@
        lengthAdjust="spacingAndGlyphs"
        textLength="156"
        x="331"
-       y="875.3281"
-       id="text95">Configure Weather Services</text>
+       y="1200.125"
+       id="text119">Configure Weather Services</text>
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
        x1="244.5"
        x2="409"
-       y1="907.8594"
-       y2="907.8594"
-       id="line97" />
+       y1="1232.6563"
+       y2="1232.6563"
+       id="line121" />
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
        width="45"
        x="324"
-       y="927.8594"
-       id="rect99" />
+       y="1252.6563"
+       id="rect123" />
     <text
        fill="#000000"
        font-family="sans-serif"
@@ -513,22 +633,22 @@
        lengthAdjust="spacingAndGlyphs"
        textLength="25"
        x="334"
-       y="949.4609"
-       id="text101">Test</text>
+       y="1274.2578"
+       id="text125">Test</text>
     <rect
        fill="#FFFFFF"
-       filter="url(#fdfi7edfpgfge)"
-       height="407.418"
+       filter="url(#f1u7vd0jd95n2u)"
+       height="461.5508"
        style="stroke: #000000; stroke-width: 2.0;"
        width="320"
        x="186.5"
-       y="972.4453"
-       id="rect103" />
+       y="1297.2422"
+       id="rect127" />
     <path
-       d="M284.5,973.4453 L284.5,981.9336 L274.5,991.9336 L186.5,991.9336 "
+       d="M284.5,1298.2422 L284.5,1306.7305 L274.5,1316.7305 L186.5,1316.7305 "
        fill="none"
        style="stroke: #000000; stroke-width: 2.0;"
-       id="path105" />
+       id="path129" />
     <text
        fill="#000000"
        font-family="sans-serif"
@@ -536,137 +656,17 @@
        lengthAdjust="spacingAndGlyphs"
        textLength="88"
        x="189.5"
-       y="986.9805"
-       id="text107">On-the-Boat</text>
+       y="1311.7773"
+       id="text131">On-the-Boat</text>
     <rect
        fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        height="34.1328"
        rx="12.5"
        ry="12.5"
        style="stroke: #A80036; stroke-width: 1.5;"
        width="300"
        x="196.5"
-       y="1008.9336"
-       id="rect109" />
-    <text
-       fill="#000000"
-       font-family="sans-serif"
-       font-size="12"
-       lengthAdjust="spacingAndGlyphs"
-       textLength="280"
-       x="206.5"
-       y="1030.5352"
-       id="text111">Mount the hardware in the cabin and the cockpit</text>
-    <rect
-       fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
-       height="34.1328"
-       rx="12.5"
-       ry="12.5"
-       style="stroke: #A80036; stroke-width: 1.5;"
-       width="113"
-       x="290"
-       y="1063.0664"
-       id="rect113" />
-    <text
-       fill="#000000"
-       font-family="sans-serif"
-       font-size="12"
-       lengthAdjust="spacingAndGlyphs"
-       textLength="93"
-       x="300"
-       y="1084.668"
-       id="text115">Attach Antennas</text>
-    <rect
-       fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
-       height="34.1328"
-       rx="12.5"
-       ry="12.5"
-       style="stroke: #A80036; stroke-width: 1.5;"
-       width="267"
-       x="213"
-       y="1117.1992"
-       id="rect117" />
-    <text
-       fill="#000000"
-       font-family="sans-serif"
-       font-size="12"
-       lengthAdjust="spacingAndGlyphs"
-       textLength="247"
-       x="223"
-       y="1138.8008"
-       id="text119">Set up WiFi router connection to the marina</text>
-    <rect
-       fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
-       height="34.1328"
-       rx="12.5"
-       ry="12.5"
-       style="stroke: #A80036; stroke-width: 1.5;"
-       width="176"
-       x="258.5"
-       y="1171.332"
-       id="rect121" />
-    <text
-       fill="#000000"
-       font-family="sans-serif"
-       font-size="12"
-       lengthAdjust="spacingAndGlyphs"
-       textLength="156"
-       x="268.5"
-       y="1192.9336"
-       id="text123">Calibrate Leveling and Axis</text>
-    <rect
-       fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
-       height="34.1328"
-       rx="12.5"
-       ry="12.5"
-       style="stroke: #A80036; stroke-width: 1.5;"
-       width="223"
-       x="235"
-       y="1225.4648"
-       id="rect125" />
-    <text
-       fill="#000000"
-       font-family="sans-serif"
-       font-size="12"
-       lengthAdjust="spacingAndGlyphs"
-       textLength="203"
-       x="245"
-       y="1247.0664"
-       id="text127">Attach Wind, Speed, Depth Sensors</text>
-    <rect
-       fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
-       height="34.1328"
-       rx="12.5"
-       ry="12.5"
-       style="stroke: #A80036; stroke-width: 1.5;"
-       width="110"
-       x="291.5"
-       y="1279.5977"
-       id="rect129" />
-    <text
-       fill="#000000"
-       font-family="sans-serif"
-       font-size="12"
-       lengthAdjust="spacingAndGlyphs"
-       textLength="90"
-       x="301.5"
-       y="1301.1992"
-       id="text131">Attach AutoPilot</text>
-    <rect
-       fill="#FEFECE"
-       filter="url(#fdfi7edfpgfge)"
-       height="34.1328"
-       rx="12.5"
-       ry="12.5"
-       style="stroke: #A80036; stroke-width: 1.5;"
-       width="45"
-       x="324"
        y="1333.7305"
        id="rect133" />
     <text
@@ -674,484 +674,710 @@
        font-family="sans-serif"
        font-size="12"
        lengthAdjust="spacingAndGlyphs"
+       textLength="280"
+       x="206.5"
+       y="1355.332"
+       id="text135">Mount the hardware in the cabin and the cockpit</text>
+    <rect
+       fill="#FEFECE"
+       filter="url(#f1u7vd0jd95n2u)"
+       height="34.1328"
+       rx="12.5"
+       ry="12.5"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       width="113"
+       x="290"
+       y="1387.8633"
+       id="rect137" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="93"
+       x="300"
+       y="1409.4648"
+       id="text139">Attach Antennas</text>
+    <rect
+       fill="#FEFECE"
+       filter="url(#f1u7vd0jd95n2u)"
+       height="34.1328"
+       rx="12.5"
+       ry="12.5"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       width="93"
+       x="300"
+       y="1441.9961"
+       id="rect141" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="73"
+       x="310"
+       y="1463.5977"
+       id="text143">Attach Audio</text>
+    <rect
+       fill="#FEFECE"
+       filter="url(#f1u7vd0jd95n2u)"
+       height="34.1328"
+       rx="12.5"
+       ry="12.5"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       width="267"
+       x="213"
+       y="1496.1289"
+       id="rect145" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="247"
+       x="223"
+       y="1517.7305"
+       id="text147">Set up WiFi router connection to the marina</text>
+    <rect
+       fill="#FEFECE"
+       filter="url(#f1u7vd0jd95n2u)"
+       height="34.1328"
+       rx="12.5"
+       ry="12.5"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       width="176"
+       x="258.5"
+       y="1550.2617"
+       id="rect149" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="156"
+       x="268.5"
+       y="1571.8633"
+       id="text151">Calibrate Leveling and Axis</text>
+    <rect
+       fill="#FEFECE"
+       filter="url(#f1u7vd0jd95n2u)"
+       height="34.1328"
+       rx="12.5"
+       ry="12.5"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       width="223"
+       x="235"
+       y="1604.3945"
+       id="rect153" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="203"
+       x="245"
+       y="1625.9961"
+       id="text155">Attach Wind, Speed, Depth Sensors</text>
+    <rect
+       fill="#FEFECE"
+       filter="url(#f1u7vd0jd95n2u)"
+       height="34.1328"
+       rx="12.5"
+       ry="12.5"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       width="110"
+       x="291.5"
+       y="1658.5273"
+       id="rect157" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="90"
+       x="301.5"
+       y="1680.1289"
+       id="text159">Attach AutoPilot</text>
+    <rect
+       fill="#FEFECE"
+       filter="url(#f1u7vd0jd95n2u)"
+       height="34.1328"
+       rx="12.5"
+       ry="12.5"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       width="45"
+       x="324"
+       y="1712.6602"
+       id="rect161" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
        textLength="25"
        x="334"
-       y="1355.332"
-       id="text135">Test</text>
+       y="1734.2617"
+       id="text163">Test</text>
     <ellipse
        cx="346.5"
-       cy="1410.8633"
+       cy="1789.793"
        fill="#FFFFFF"
-       filter="url(#fdfi7edfpgfge)"
+       filter="url(#f1u7vd0jd95n2u)"
        rx="11"
        ry="11"
        style="stroke: #000000; stroke-width: 1.0;"
-       id="ellipse137" />
+       id="ellipse165" />
     <ellipse
        cx="346.5"
-       cy="1410.8633"
+       cy="1789.793"
        fill="#000000"
        rx="6"
        ry="6"
        style="stroke: #7F7F7F; stroke-width: 1.0;"
-       id="ellipse139" />
+       id="ellipse167" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
        x1="346.5"
        x2="346.5"
        y1="30"
        y2="50"
-       id="line141" />
-    <polygon
-       fill="#A80036"
-       points="342.5,40,346.5,50,350.5,40,346.5,44"
-       style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon143" />
-    <line
-       style="stroke: #A80036; stroke-width: 1.5;"
-       x1="346.5"
-       x2="346.5"
-       y1="84.1328"
-       y2="104.1328"
-       id="line145" />
-    <polygon
-       fill="#A80036"
-       points="342.5,94.1328,346.5,104.1328,350.5,94.1328,346.5,98.1328"
-       style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon147" />
-    <line
-       style="stroke: #A80036; stroke-width: 1.5;"
-       x1="346.5"
-       x2="346.5"
-       y1="138.2656"
-       y2="158.2656"
-       id="line149" />
-    <polygon
-       fill="#A80036"
-       points="342.5,148.2656,346.5,158.2656,350.5,148.2656,346.5,152.2656"
-       style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon151" />
-    <line
-       style="stroke: #A80036; stroke-width: 1.5;"
-       x1="346.5"
-       x2="346.5"
-       y1="192.3984"
-       y2="212.3984"
-       id="line153" />
-    <polygon
-       fill="#A80036"
-       points="342.5,202.3984,346.5,212.3984,350.5,202.3984,346.5,206.3984"
-       style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon155" />
-    <line
-       style="stroke: #A80036; stroke-width: 1.5;"
-       x1="346.5"
-       x2="346.5"
-       y1="246.5313"
-       y2="266.5313"
-       id="line157" />
-    <polygon
-       fill="#A80036"
-       points="342.5,256.5313,346.5,266.5313,350.5,256.5313,346.5,260.5313"
-       style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon159" />
-    <line
-       style="stroke: #A80036; stroke-width: 1.5;"
-       x1="346.5"
-       x2="346.5"
-       y1="300.6641"
-       y2="320.6641"
-       id="line161" />
-    <polygon
-       fill="#A80036"
-       points="342.5,310.6641,346.5,320.6641,350.5,310.6641,346.5,314.6641"
-       style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon163" />
-    <line
-       style="stroke: #A80036; stroke-width: 1.5;"
-       x1="346.5"
-       x2="346.5"
-       y1="354.7969"
-       y2="374.7969"
-       id="line165" />
-    <polygon
-       fill="#A80036"
-       points="342.5,364.7969,346.5,374.7969,350.5,364.7969,346.5,368.7969"
-       style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon167" />
-    <line
-       style="stroke: #A80036; stroke-width: 1.5;"
-       x1="346.5"
-       x2="346.5"
-       y1="408.9297"
-       y2="428.9297"
        id="line169" />
     <polygon
        fill="#A80036"
-       points="342.5,418.9297,346.5,428.9297,350.5,418.9297,346.5,422.9297"
+       points="342.5,40,346.5,50,350.5,40,346.5,44"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon171" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
        x1="346.5"
        x2="346.5"
-       y1="463.0625"
-       y2="483.0625"
+       y1="84.1328"
+       y2="104.1328"
        id="line173" />
     <polygon
        fill="#A80036"
-       points="342.5,473.0625,346.5,483.0625,350.5,473.0625,346.5,477.0625"
+       points="342.5,94.1328,346.5,104.1328,350.5,94.1328,346.5,98.1328"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon175" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
        x1="346.5"
        x2="346.5"
-       y1="517.1953"
-       y2="537.1953"
+       y1="138.2656"
+       y2="158.2656"
        id="line177" />
     <polygon
        fill="#A80036"
-       points="342.5,527.1953,346.5,537.1953,350.5,527.1953,346.5,531.1953"
+       points="342.5,148.2656,346.5,158.2656,350.5,148.2656,346.5,152.2656"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon179" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="108.5"
-       x2="108.5"
-       y1="592.8281"
-       y2="611.3281"
+       x1="346.5"
+       x2="346.5"
+       y1="192.3984"
+       y2="212.3984"
        id="line181" />
     <polygon
        fill="#A80036"
-       points="104.5,601.3281,108.5,611.3281,112.5,601.3281,108.5,605.3281"
+       points="342.5,202.3984,346.5,212.3984,350.5,202.3984,346.5,206.3984"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon183" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="323"
-       x2="323"
-       y1="592.8281"
-       y2="611.3281"
+       x1="346.5"
+       x2="346.5"
+       y1="246.5313"
+       y2="266.5313"
        id="line185" />
     <polygon
        fill="#A80036"
-       points="319,601.3281,323,611.3281,327,601.3281,323,605.3281"
+       points="342.5,256.5313,346.5,266.5313,350.5,256.5313,346.5,260.5313"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon187" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="561"
-       x2="561"
-       y1="592.8281"
-       y2="611.3281"
+       x1="346.5"
+       x2="346.5"
+       y1="300.6641"
+       y2="320.6641"
        id="line189" />
     <polygon
        fill="#A80036"
-       points="557,601.3281,561,611.3281,565,601.3281,561,605.3281"
+       points="342.5,310.6641,346.5,320.6641,350.5,310.6641,346.5,314.6641"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon191" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="108.5"
-       x2="108.5"
-       y1="645.4609"
-       y2="665.4609"
+       x1="346.5"
+       x2="346.5"
+       y1="354.7969"
+       y2="374.7969"
        id="line193" />
     <polygon
        fill="#A80036"
-       points="104.5,655.4609,108.5,665.4609,112.5,655.4609,108.5,659.4609"
+       points="342.5,364.7969,346.5,374.7969,350.5,364.7969,346.5,368.7969"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon195" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="323"
-       x2="323"
-       y1="645.4609"
-       y2="665.4609"
+       x1="346.5"
+       x2="346.5"
+       y1="408.9297"
+       y2="428.9297"
        id="line197" />
     <polygon
        fill="#A80036"
-       points="319,655.4609,323,665.4609,327,655.4609,323,659.4609"
+       points="342.5,418.9297,346.5,428.9297,350.5,418.9297,346.5,422.9297"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon199" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="561"
-       x2="561"
-       y1="645.4609"
-       y2="665.4609"
+       x1="346.5"
+       x2="346.5"
+       y1="463.0625"
+       y2="483.0625"
        id="line201" />
     <polygon
        fill="#A80036"
-       points="557,655.4609,561,665.4609,565,655.4609,561,659.4609"
+       points="342.5,473.0625,346.5,483.0625,350.5,473.0625,346.5,477.0625"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon203" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
        x1="346.5"
        x2="346.5"
-       y1="571.3281"
-       y2="591.3281"
+       y1="517.1953"
+       y2="537.1953"
        id="line205" />
     <polygon
        fill="#A80036"
-       points="342.5,581.3281,346.5,591.3281,350.5,581.3281,346.5,585.3281"
+       points="342.5,527.1953,346.5,537.1953,350.5,527.1953,346.5,531.1953"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon207" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
        x1="346.5"
        x2="346.5"
-       y1="666.9609"
-       y2="685.4609"
+       y1="571.3281"
+       y2="591.3281"
        id="line209" />
     <polygon
        fill="#A80036"
-       points="342.5,675.4609,346.5,685.4609,350.5,675.4609,346.5,679.4609"
+       points="342.5,581.3281,346.5,591.3281,350.5,581.3281,346.5,585.3281"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon211" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="267"
-       x2="267"
-       y1="741.0938"
-       y2="759.5938"
+       x1="346.5"
+       x2="346.5"
+       y1="625.4609"
+       y2="645.4609"
        id="line213" />
     <polygon
        fill="#A80036"
-       points="263,749.5938,267,759.5938,271,749.5938,267,753.5938"
+       points="342.5,635.4609,346.5,645.4609,350.5,635.4609,346.5,639.4609"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon215" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="424"
-       x2="424"
-       y1="741.0938"
-       y2="759.5938"
+       x1="108.5"
+       x2="108.5"
+       y1="701.0938"
+       y2="719.5938"
        id="line217" />
     <polygon
        fill="#A80036"
-       points="420,749.5938,424,759.5938,428,749.5938,424,753.5938"
+       points="104.5,709.5938,108.5,719.5938,112.5,709.5938,108.5,713.5938"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon219" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="267"
-       x2="267"
-       y1="793.7266"
-       y2="813.7266"
+       x1="323"
+       x2="323"
+       y1="701.0938"
+       y2="719.5938"
        id="line221" />
     <polygon
        fill="#A80036"
-       points="263,803.7266,267,813.7266,271,803.7266,267,807.7266"
+       points="319,709.5938,323,719.5938,327,709.5938,323,713.5938"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon223" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="424"
-       x2="424"
-       y1="793.7266"
-       y2="813.7266"
+       x1="561"
+       x2="561"
+       y1="701.0938"
+       y2="719.5938"
        id="line225" />
     <polygon
        fill="#A80036"
-       points="420,803.7266,424,813.7266,428,803.7266,424,807.7266"
+       points="557,709.5938,561,719.5938,565,709.5938,561,713.5938"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon227" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="346.5"
-       x2="346.5"
-       y1="719.5938"
-       y2="739.5938"
+       x1="108.5"
+       x2="108.5"
+       y1="753.7266"
+       y2="773.7266"
        id="line229" />
     <polygon
        fill="#A80036"
-       points="342.5,729.5938,346.5,739.5938,350.5,729.5938,346.5,733.5938"
+       points="104.5,763.7266,108.5,773.7266,112.5,763.7266,108.5,767.7266"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon231" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="244.5"
-       x2="244.5"
-       y1="835.2266"
-       y2="853.7266"
+       x1="323"
+       x2="323"
+       y1="753.7266"
+       y2="773.7266"
        id="line233" />
     <polygon
        fill="#A80036"
-       points="240.5,843.7266,244.5,853.7266,248.5,843.7266,244.5,847.7266"
+       points="319,763.7266,323,773.7266,327,763.7266,323,767.7266"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon235" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="409"
-       x2="409"
-       y1="835.2266"
-       y2="853.7266"
+       x1="561"
+       x2="561"
+       y1="753.7266"
+       y2="773.7266"
        id="line237" />
     <polygon
        fill="#A80036"
-       points="405,843.7266,409,853.7266,413,843.7266,409,847.7266"
+       points="557,763.7266,561,773.7266,565,763.7266,561,767.7266"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon239" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="244.5"
-       x2="244.5"
-       y1="887.8594"
-       y2="907.8594"
+       x1="346.5"
+       x2="346.5"
+       y1="679.5938"
+       y2="699.5938"
        id="line241" />
     <polygon
        fill="#A80036"
-       points="240.5,897.8594,244.5,907.8594,248.5,897.8594,244.5,901.8594"
+       points="342.5,689.5938,346.5,699.5938,350.5,689.5938,346.5,693.5938"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon243" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="409"
-       x2="409"
-       y1="887.8594"
-       y2="907.8594"
+       x1="346.5"
+       x2="346.5"
+       y1="775.2266"
+       y2="793.7266"
        id="line245" />
     <polygon
        fill="#A80036"
-       points="405,897.8594,409,907.8594,413,897.8594,409,901.8594"
+       points="342.5,783.7266,346.5,793.7266,350.5,783.7266,346.5,787.7266"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon247" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="346.5"
-       x2="346.5"
-       y1="815.2266"
-       y2="833.7266"
+       x1="267"
+       x2="267"
+       y1="901.9922"
+       y2="921.9922"
        id="line249" />
     <polygon
        fill="#A80036"
-       points="342.5,823.7266,346.5,833.7266,350.5,823.7266,346.5,827.7266"
+       points="263,911.9922,267,921.9922,271,911.9922,267,915.9922"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon251" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="346.5"
-       x2="346.5"
-       y1="909.3594"
-       y2="927.8594"
+       x1="267"
+       x2="267"
+       y1="956.125"
+       y2="976.125"
        id="line253" />
     <polygon
        fill="#A80036"
-       points="342.5,917.8594,346.5,927.8594,350.5,917.8594,346.5,921.8594"
+       points="263,966.125,267,976.125,271,966.125,267,970.125"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon255" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="346.5"
-       x2="346.5"
-       y1="1043.0664"
-       y2="1063.0664"
+       x1="267"
+       x2="267"
+       y1="1010.2578"
+       y2="1030.2578"
        id="line257" />
     <polygon
        fill="#A80036"
-       points="342.5,1053.0664,346.5,1063.0664,350.5,1053.0664,346.5,1057.0664"
+       points="263,1020.2578,267,1030.2578,271,1020.2578,267,1024.2578"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon259" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="346.5"
-       x2="346.5"
-       y1="1097.1992"
-       y2="1117.1992"
+       x1="267"
+       x2="267"
+       y1="1064.3906"
+       y2="1084.3906"
        id="line261" />
     <polygon
        fill="#A80036"
-       points="342.5,1107.1992,346.5,1117.1992,350.5,1107.1992,346.5,1111.1992"
+       points="263,1074.3906,267,1084.3906,271,1074.3906,267,1078.3906"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon263" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="346.5"
-       x2="346.5"
-       y1="1151.332"
-       y2="1171.332"
+       x1="267"
+       x2="267"
+       y1="849.3594"
+       y2="867.8594"
        id="line265" />
     <polygon
        fill="#A80036"
-       points="342.5,1161.332,346.5,1171.332,350.5,1161.332,346.5,1165.332"
+       points="263,857.8594,267,867.8594,271,857.8594,267,861.8594"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon267" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="346.5"
-       x2="346.5"
-       y1="1205.4648"
-       y2="1225.4648"
+       x1="587"
+       x2="587"
+       y1="849.3594"
+       y2="976.125"
        id="line269" />
     <polygon
        fill="#A80036"
-       points="342.5,1215.4648,346.5,1225.4648,350.5,1215.4648,346.5,1219.4648"
+       points="583,966.125,587,976.125,591,966.125,587,970.125"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon271" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="346.5"
-       x2="346.5"
-       y1="1259.5977"
-       y2="1279.5977"
+       x1="267"
+       x2="267"
+       y1="1118.5234"
+       y2="1138.5234"
        id="line273" />
     <polygon
        fill="#A80036"
-       points="342.5,1269.5977,346.5,1279.5977,350.5,1269.5977,346.5,1273.5977"
+       points="263,1128.5234,267,1138.5234,271,1128.5234,267,1132.5234"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon275" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
-       x1="346.5"
-       x2="346.5"
-       y1="1313.7305"
-       y2="1333.7305"
+       x1="587"
+       x2="587"
+       y1="1010.2578"
+       y2="1138.5234"
        id="line277" />
     <polygon
        fill="#A80036"
-       points="342.5,1323.7305,346.5,1333.7305,350.5,1323.7305,346.5,1327.7305"
+       points="583,1128.5234,587,1138.5234,591,1128.5234,587,1132.5234"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon279" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
        x1="346.5"
        x2="346.5"
-       y1="961.9922"
-       y2="1008.9336"
+       y1="827.8594"
+       y2="847.8594"
        id="line281" />
     <polygon
        fill="#A80036"
-       points="342.5,998.9336,346.5,1008.9336,350.5,998.9336,346.5,1002.9336"
+       points="342.5,837.8594,346.5,847.8594,350.5,837.8594,346.5,841.8594"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon283" />
+    <line
+       style="stroke: #A80036; stroke-width: 1.5;"
+       x1="244.5"
+       x2="244.5"
+       y1="1160.0234"
+       y2="1178.5234"
+       id="line285" />
+    <polygon
+       fill="#A80036"
+       points="240.5,1168.5234,244.5,1178.5234,248.5,1168.5234,244.5,1172.5234"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon287" />
+    <line
+       style="stroke: #A80036; stroke-width: 1.5;"
+       x1="409"
+       x2="409"
+       y1="1160.0234"
+       y2="1178.5234"
+       id="line289" />
+    <polygon
+       fill="#A80036"
+       points="405,1168.5234,409,1178.5234,413,1168.5234,409,1172.5234"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon291" />
+    <line
+       style="stroke: #A80036; stroke-width: 1.5;"
+       x1="244.5"
+       x2="244.5"
+       y1="1212.6563"
+       y2="1232.6563"
+       id="line293" />
+    <polygon
+       fill="#A80036"
+       points="240.5,1222.6563,244.5,1232.6563,248.5,1222.6563,244.5,1226.6563"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon295" />
+    <line
+       style="stroke: #A80036; stroke-width: 1.5;"
+       x1="409"
+       x2="409"
+       y1="1212.6563"
+       y2="1232.6563"
+       id="line297" />
+    <polygon
+       fill="#A80036"
+       points="405,1222.6563,409,1232.6563,413,1222.6563,409,1226.6563"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon299" />
+    <line
+       style="stroke: #A80036; stroke-width: 1.5;"
+       x1="346.5"
+       x2="346.5"
+       y1="1140.0234"
+       y2="1158.5234"
+       id="line301" />
+    <polygon
+       fill="#A80036"
+       points="342.5,1148.5234,346.5,1158.5234,350.5,1148.5234,346.5,1152.5234"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon303" />
+    <line
+       style="stroke: #A80036; stroke-width: 1.5;"
+       x1="346.5"
+       x2="346.5"
+       y1="1234.1563"
+       y2="1252.6563"
+       id="line305" />
+    <polygon
+       fill="#A80036"
+       points="342.5,1242.6563,346.5,1252.6563,350.5,1242.6563,346.5,1246.6563"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon307" />
     <line
        style="stroke: #A80036; stroke-width: 1.5;"
        x1="346.5"
        x2="346.5"
        y1="1367.8633"
-       y2="1399.8633"
-       id="line285" />
+       y2="1387.8633"
+       id="line309" />
     <polygon
        fill="#A80036"
-       points="342.5,1389.8633,346.5,1399.8633,350.5,1389.8633,346.5,1393.8633"
+       points="342.5,1377.8633,346.5,1387.8633,350.5,1377.8633,346.5,1381.8633"
        style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon287" />
-    <!--MD5=[49c0f385d8e5bd803c835995b4867fa1]
+       id="polygon311" />
+    <line
+       style="stroke: #A80036; stroke-width: 1.5;"
+       x1="346.5"
+       x2="346.5"
+       y1="1421.9961"
+       y2="1441.9961"
+       id="line313" />
+    <polygon
+       fill="#A80036"
+       points="342.5,1431.9961,346.5,1441.9961,350.5,1431.9961,346.5,1435.9961"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon315" />
+    <line
+       style="stroke: #A80036; stroke-width: 1.5;"
+       x1="346.5"
+       x2="346.5"
+       y1="1476.1289"
+       y2="1496.1289"
+       id="line317" />
+    <polygon
+       fill="#A80036"
+       points="342.5,1486.1289,346.5,1496.1289,350.5,1486.1289,346.5,1490.1289"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon319" />
+    <line
+       style="stroke: #A80036; stroke-width: 1.5;"
+       x1="346.5"
+       x2="346.5"
+       y1="1530.2617"
+       y2="1550.2617"
+       id="line321" />
+    <polygon
+       fill="#A80036"
+       points="342.5,1540.2617,346.5,1550.2617,350.5,1540.2617,346.5,1544.2617"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon323" />
+    <line
+       style="stroke: #A80036; stroke-width: 1.5;"
+       x1="346.5"
+       x2="346.5"
+       y1="1584.3945"
+       y2="1604.3945"
+       id="line325" />
+    <polygon
+       fill="#A80036"
+       points="342.5,1594.3945,346.5,1604.3945,350.5,1594.3945,346.5,1598.3945"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon327" />
+    <line
+       style="stroke: #A80036; stroke-width: 1.5;"
+       x1="346.5"
+       x2="346.5"
+       y1="1638.5273"
+       y2="1658.5273"
+       id="line329" />
+    <polygon
+       fill="#A80036"
+       points="342.5,1648.5273,346.5,1658.5273,350.5,1648.5273,346.5,1652.5273"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon331" />
+    <line
+       style="stroke: #A80036; stroke-width: 1.5;"
+       x1="346.5"
+       x2="346.5"
+       y1="1692.6602"
+       y2="1712.6602"
+       id="line333" />
+    <polygon
+       fill="#A80036"
+       points="342.5,1702.6602,346.5,1712.6602,350.5,1702.6602,346.5,1706.6602"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon335" />
+    <line
+       style="stroke: #A80036; stroke-width: 1.5;"
+       x1="346.5"
+       x2="346.5"
+       y1="1286.7891"
+       y2="1333.7305"
+       id="line337" />
+    <polygon
+       fill="#A80036"
+       points="342.5,1323.7305,346.5,1333.7305,350.5,1323.7305,346.5,1327.7305"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon339" />
+    <line
+       style="stroke: #A80036; stroke-width: 1.5;"
+       x1="346.5"
+       x2="346.5"
+       y1="1746.793"
+       y2="1778.793"
+       id="line341" />
+    <polygon
+       fill="#A80036"
+       points="342.5,1768.793,346.5,1778.793,350.5,1768.793,346.5,1772.793"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon343" />
+    <!--MD5=[02582278e3423dca195cfffa88061e8e]
 @startuml
 start
 :Download OpenPlotter NOOB;
 :Create SD Card with NOOB;
+:Attach Pi to the router;
 :Boot Pi from SD card;
 :Install OpenPlotter;
 :Install Raspbian Updates and Firmware Updates;
-:Configure Pi, Kernel, Interfaces, Video Memory Split;
+:Configure Pi, Kernel, Interfaces, Video Memory Split, Audio;
 :Configure Touchscreen, Onscreen Keyboard, twofing, svkbd, desktop;
 :Update OpenPlotter applications;
 :Configure Serial, I2C, PyPilot, IMU, GPS sensor, AIS;
 :Configure SignalK Connections, SignalK Time Sync, SignalK NMEA;
+:Configure SignalK Dashboards;
 split
  :Download Charts for OpenCPN;
 split again
@@ -1162,6 +1388,10 @@ end split
 :Configure OpenCPN, UI, Dashboard, Plugins;
 split
 :Configure Network;
+:Configure Network Disk mounting from Router;
+:Make backup copy of Charts and configs on the disk attached to the router;
+:Set up Alt Network Boot as Backup;
+:Set up Iridium Satellite Modem (if you have it);
 split again
 :Configure SDR-RTL;
 end split
@@ -1174,6 +1404,7 @@ end split
 partition On-the-Boat {
 	:Mount the hardware in the cabin and the cockpit;
 	:Attach Antennas;
+	:Attach Audio;
 	:Set up WiFi router connection to the marina;
 	:Calibrate Leveling and Axis;
 	:Attach Wind, Speed, Depth Sensors;

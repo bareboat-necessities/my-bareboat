@@ -48,7 +48,10 @@ rectangle NodeRed [
  NodeRed
 ]
 Helmsman <-- OpenCPN
+Helmsman <-- MobileDevice
 MobileDevice <-- OpenCPN
+MobileDevice <-- SignalK
+MobileDevice <-- KPlex
 KPlex --> OpenCPN
 KPlex --> SignalK
 PyPilot <-- OtherSensors

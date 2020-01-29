@@ -2,14 +2,16 @@
 start
 :Download OpenPlotter NOOB;
 :Create SD Card with NOOB;
+:Attach Pi to the router;
 :Boot Pi from SD card;
 :Install OpenPlotter;
 :Install Raspbian Updates and Firmware Updates;
-:Configure Pi, Kernel, Interfaces, Video Memory Split;
+:Configure Pi, Kernel, Interfaces, Video Memory Split, Audio;
 :Configure Touchscreen, Onscreen Keyboard, twofing, svkbd, desktop;
 :Update OpenPlotter applications;
 :Configure Serial, I2C, PyPilot, IMU, GPS sensor, AIS;
 :Configure SignalK Connections, SignalK Time Sync, SignalK NMEA;
+:Configure SignalK Dashboards;
 split
  :Download Charts for OpenCPN;
 split again
@@ -20,6 +22,10 @@ end split
 :Configure OpenCPN, UI, Dashboard, Plugins;
 split
 :Configure Network;
+:Configure Network Disk mounting from Router;
+:Make backup copy of Charts and configs on the disk attached to the router;
+:Set up Alt Network Boot as Backup;
+:Set up Iridium Satellite Modem (if you have it);
 split again
 :Configure SDR-RTL;
 end split
@@ -32,6 +38,7 @@ end split
 partition On-the-Boat {
 	:Mount the hardware in the cabin and the cockpit;
 	:Attach Antennas;
+	:Attach Audio;
 	:Set up WiFi router connection to the marina;
 	:Calibrate Leveling and Axis;
 	:Attach Wind, Speed, Depth Sensors;
