@@ -15,6 +15,7 @@ sudo chmod +x /usr/bin/gps-loc
 sudo apt install uhubctl
 sudo bash -c 'cat << EOF > /lib/systemd/system-shutdown/hub-off.sh
 #!/bin/bash
-/sbin/uhubctl -l 2 -p 4 -a 0
+sudo /sbin/uhubctl -l 2 -p 4 -a 0
+echo '1-1' | sudo tee /sys/bus/usb/drivers/usb/unbind
 EOF'
 sudo chmod +x /lib/systemd/system-shutdown/hub-off.sh
