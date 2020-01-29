@@ -61,14 +61,14 @@ The boat computer is connected to the waterproof HDMI touchscreen in the cockpit
 *Boat Computer*
 
 .Boat Computer
-image::computer-front-panel.jpg[alt="Boat Computer Front View", width="75%",  pdfwidth="75%", align="center"]
+image::computer-front-panel.jpg[alt="Boat Computer Front View", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
 *Boat Gateway*
 
 .Boat Gateway
-image::boat-router/boat-router.jpg[alt="Boat Gateway Front View", width="75%",  pdfwidth="75%", align="center"]
+image::boat-router/boat-router.jpg[alt="Boat Gateway Front View", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -110,7 +110,7 @@ and dashboards as well as general Linux UI.
 {zwsp} +
 
 .Boat Computer, Front Panel
-image::front-panel-intf.jpg[alt="Boat Computer, Front Panel", width="75%",  pdfwidth="75%", align="center"]
+image::front-panel-intf.jpg[alt="Boat Computer, Front Panel", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -130,7 +130,7 @@ image::front-panel-intf.jpg[alt="Boat Computer, Front Panel", width="75%",  pdfw
 {zwsp} +
 
 .Boat Computer, Back Panel
-image::back-panel-intf.jpg[alt="Boat Computer, Back Panel", width="75%",  pdfwidth="75%", align="center"]
+image::back-panel-intf.jpg[alt="Boat Computer, Back Panel", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -143,7 +143,7 @@ standoffs. USB hub is mounted under a slight angle to give space to a screw whic
 
 
 .Boat Computer, Inside View
-image::computer-internals.jpg[alt="Boat Computer, Inside View", width="75%",  pdfwidth="75%", align="center"]
+image::computer-internals.jpg[alt="Boat Computer, Inside View", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -815,12 +815,12 @@ the shortest USB 3.0 type A male to female cable and put tape in it. And for the
 it inside USB 3.0 type-A male part connecting the hub. This is how it was done:
 
 .USB 3.0 self-powered hub backfeed and forward-feed power isolation male
-image::boat-computer/usb-hub-isolation-male.jpg[alt="USB 3.0 self-powered hub backfeed and forward-feed power isolation male", width="40%",  pdfwidth="40%", align="center"]
+image::boat-computer/usb-hub-isolation-male.jpg[alt="USB 3.0 self-powered hub backfeed and forward-feed power isolation male", width="40%",  pdfwidth="40vw", align="center"]
 
 {zwsp} +
 
 .USB 3.0 self-powered hub backfeed and forward-feed power isolation female
-image::boat-computer/usb-hub-isolation-female.jpg[alt="USB 3.0 self-powered hub backfeed and forward-feed power isolation female", width="40%",  pdfwidth="40%", align="center"]
+image::boat-computer/usb-hub-isolation-female.jpg[alt="USB 3.0 self-powered hub backfeed and forward-feed power isolation female", width="40%",  pdfwidth="40vw", align="center"]
 
 {zwsp} +
 
@@ -1078,12 +1078,12 @@ an operating system but very capable of running complex programs
 
 
 .Boat Router Front Panel View
-image::boat-router/router-front-panel-1.jpg[alt="Boat Router Front Panel View", width="75%",  pdfwidth="75%", align="center"]
+image::boat-router/router-front-panel-1.jpg[alt="Boat Router Front Panel View", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
 .Boat Router Front Panel Wiring
-image::boat-router/router-front-panel-2.jpg[alt="Boat Router Front Panel Wiring", width="75%",  pdfwidth="75%", align="center"]
+image::boat-router/router-front-panel-2.jpg[alt="Boat Router Front Panel Wiring", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -1104,12 +1104,12 @@ image::boat-router/router-front-panel-2.jpg[alt="Boat Router Front Panel Wiring"
 
 
 .Boat Router Back Panel View
-image::boat-router/router-back-panel-1.jpg[alt="Boat Router Back Panel View", width="75%",  pdfwidth="75%", align="center"]
+image::boat-router/router-back-panel-1.jpg[alt="Boat Router Back Panel View", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
 .Boat Router Back Panel Wiring
-image::boat-router/router-back-panel-2.jpg[alt="Boat Router Back Panel Wiring", width="75%",  pdfwidth="75%", align="center"]
+image::boat-router/router-back-panel-2.jpg[alt="Boat Router Back Panel Wiring", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -1119,17 +1119,17 @@ image::boat-router/router-back-panel-2.jpg[alt="Boat Router Back Panel Wiring", 
 {zwsp} +
 
 .Boat Router Inside
-image::boat-router/router-inside.jpg[alt="Boat Router Inside", width="75%",  pdfwidth="75%", align="center"]
+image::boat-router/router-inside.jpg[alt="Boat Router Inside", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
 .Boat Router Inside Top
-image::boat-router/router-inside-1.jpg[alt="Boat Router Inside Top", width="75%",  pdfwidth="75%", align="center"]
+image::boat-router/router-inside-1.jpg[alt="Boat Router Inside Top", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
 .Boat Router Inside Bottom
-image::boat-router/router-inside-2.jpg[alt="Boat Router Inside Bottom", width="75%",  pdfwidth="75%", align="center"]
+image::boat-router/router-inside-2.jpg[alt="Boat Router Inside Bottom", width="75%",  pdfwidth="75vw", align="center"]
 
 I've made an opening for easier access to SIM card and SD card slots. A better idea probably would be
 to have SD and SIM card extension cords and panel mounted slots.
@@ -1253,7 +1253,7 @@ https://m5stack.com/collections/m5-accessory/products/frame-panel-extended-insta
 |===
 
 .M5Stack ESP32 Controller Board
-image::m5stack-board.jpg[alt="M5Stack Board", width="75%",  pdfwidth="75%", align="center"]
+image::m5stack-board.jpg[alt="M5Stack Board", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -1265,7 +1265,7 @@ See: https://twitter.com/m5stack/status/1164091308895457280?lang=en
 
 
 .M5Stack LCD and Communication Module
-image::m5stack-lcd.jpg[alt="M5Stack LCD", width="75%",  pdfwidth="75%", align="center"]
+image::m5stack-lcd.jpg[alt="M5Stack LCD", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -1287,12 +1287,12 @@ I've just put another coax cable to GPS antenna connector and cut a bit of plast
 enough to put that cable through (SMA side on outside).
 
 .GL-X750 Antenna Mod
-image::gl-x750.jpg[alt="GL-X750 Antenna Mod", width="75%",  pdfwidth="75%", align="center"]
+image::gl-x750.jpg[alt="GL-X750 Antenna Mod", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
 .GL-X750 Case Mod
-image::gl-x750-antenna-mod.jpg[alt="GL-X750 Screws", width="75%",  pdfwidth="75%", align="center"]
+image::gl-x750-antenna-mod.jpg[alt="GL-X750 Screws", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -1455,12 +1455,12 @@ https://www.openairinterface.org/
 {zwsp} +
 
 .Boat Router Testbed
-image::boat-router/boat-router-testbed.jpg[alt="Boat Router Testbed", width="75%",  pdfwidth="75%", align="center", rotate]
+image::boat-router/boat-router-testbed.jpg[alt="Boat Router Testbed", width="75%",  pdfwidth="75vw", align="center", rotate]
 
 {zwsp} +
 
 .Boat Router LTE Speed
-image::boat-router/boat-router-lte-speed.jpg[alt="Boat Router LTE Speed", width="75%",  pdfwidth="75%", align="center"]
+image::boat-router/boat-router-lte-speed.jpg[alt="Boat Router LTE Speed", width="75%",  pdfwidth="75vw", align="center"]
 
 ===== Good
 
@@ -1622,7 +1622,7 @@ You would need to enable SPI, I2C, Serial Port, 1-Wire and Remote GPIO and
 disable Serial Console in Raspberry Pi Configuration utility. See:
 
 .Raspbian Interfaces Settings
-image::config/raspbian-settings.png[Raspbian Interfaces Settings, width="75%",  pdfwidth="75%", align="center"]
+image::config/raspbian-settings.png[Raspbian Interfaces Settings, width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -1693,14 +1693,14 @@ and set aliases to each serial device OpenPlotter recognizes. Aliases should be 
 be associated with unique device IDs. See:
 
 .Openplotter Serial Devices
-image::config/openplotter-serial-devices.png[Openplotter Serial Devices, width="75%",  pdfwidth="75%", align="center"]
+image::config/openplotter-serial-devices.png[Openplotter Serial Devices, width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
 After that create connections to SignalK
 
 .Openplotter Serial Connections
-image::config/openplotter-serial-connections.png[Openplotter Serial Connections, width="75%",  pdfwidth="75%", align="center"]
+image::config/openplotter-serial-connections.png[Openplotter Serial Connections, width="75%",  pdfwidth="75vw", align="center"]
 
 === Geolocation
 
@@ -1790,12 +1790,12 @@ openplotter-i2c
 and create sensors and connections as per screenshots below:
 
 .Openplotter I2C Sensors
-image::config/openplotter-i2c-sensors.png[Openplotter I2C Sensors, width="75%",  pdfwidth="75%", align="center"]
+image::config/openplotter-i2c-sensors.png[Openplotter I2C Sensors, width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
 .Openplotter I2C Connections
-image::config/openplotter-i2c-connections.png[Openplotter I2C Connections, width="75%",  pdfwidth="75%", align="center"]
+image::config/openplotter-i2c-connections.png[Openplotter I2C Connections, width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -1809,7 +1809,7 @@ openplotter-pypilot
 Create a connection like that:
 
 .Openplotter PyPilot Connections
-image::config/openplotter-pypilot-connections.png[Openplotter PyPilot Connections, width="75%",  pdfwidth="75%", align="center"]
+image::config/openplotter-pypilot-connections.png[Openplotter PyPilot Connections, width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -1910,12 +1910,12 @@ See: https://www.instructables.com/id/Raspberry-Pi-NOAA-Weather-Satellite-Receiv
 Another test site:
 
 .Test Setup
-image::boat-computer/boat-network-testbed.jpg[alt="Test Setup", width="75%",  pdfwidth="75%", align="center"]
+image::boat-computer/boat-network-testbed.jpg[alt="Test Setup", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
 .Cockpit Temporary Testbed
-image::boat-computer/cockpit-temp-testbed.jpg[alt="Cockpit Temporary Testbed", width="75%",  pdfwidth="75%", align="center"]
+image::boat-computer/cockpit-temp-testbed.jpg[alt="Cockpit Temporary Testbed", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -1930,14 +1930,14 @@ The solar panel is quickly detachable and removable.
 [.text-center]
 
 .Solar Panel/Wind Generator/Radar Pole Mast for Sailboat
-image::solar-panel-wind-generator-radar-sailboat-pole-mast.png[alt="Solar Panel/Wind Generator/Radar Pole Mast for Sailboat", width="75%",  pdfwidth="75%", align="center"]
+image::solar-panel-wind-generator-radar-sailboat-pole-mast.png[alt="Solar Panel/Wind Generator/Radar Pole Mast for Sailboat", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
 [.text-center]
 
 .Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View
-image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View", width="75%",  pdfwidth="75%", align="center"]
+image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
