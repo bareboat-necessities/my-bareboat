@@ -9,18 +9,18 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    contentScriptType="application/ecmascript"
    contentStyleType="text/css"
-   height="484px"
+   height="637px"
    preserveAspectRatio="none"
-   style="width:1026px;height:484px;"
+   style="width:897px;height:637px;"
    version="1.1"
-   viewBox="0 0 1026 484"
-   width="1026px"
+   viewBox="0 0 897 637"
+   width="897px"
    zoomAndPan="magnify"
-   id="svg134"
+   id="svg143"
    sodipodi:docname="software-arch.svg"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06">
   <metadata
-     id="metadata138">
+     id="metadata147">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -42,20 +42,20 @@
      inkscape:pageshadow="2"
      inkscape:window-width="640"
      inkscape:window-height="480"
-     id="namedview136"
+     id="namedview145"
      showgrid="false"
-     inkscape:zoom="0.28070175"
-     inkscape:cx="513"
-     inkscape:cy="242"
+     inkscape:zoom="0.32107023"
+     inkscape:cx="448.5"
+     inkscape:cy="318.5"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg134" />
+     inkscape:current-layer="svg143" />
   <defs
      id="defs11">
     <filter
        height="300%"
-       id="f7mwafzukczsm"
+       id="f6emyt6n04lud"
        width="300%"
        x="-1"
        y="-1">
@@ -83,22 +83,22 @@
     </filter>
   </defs>
   <g
-     id="g132">
+     id="g141">
     <!--MD5=[e936eb4e45c1a3c90330c6c931fce768]
 entity Helmsman-->
     <ellipse
-       cx="826.5"
-       cy="293"
+       cx="583.5"
+       cy="18"
        fill="#FEFECE"
-       filter="url(#f7mwafzukczsm)"
+       filter="url(#f6emyt6n04lud)"
        rx="8"
        ry="8"
        style="stroke: #A80036; stroke-width: 2.0;"
        id="ellipse13" />
     <path
-       d="M826.5,301 L826.5,328 M813.5,309 L839.5,309 M826.5,328 L813.5,343 M826.5,328 L839.5,343 "
+       d="M583.5,26 L583.5,53 M570.5,34 L596.5,34 M583.5,53 L570.5,68 M583.5,53 L596.5,68 "
        fill="none"
-       filter="url(#f7mwafzukczsm)"
+       filter="url(#f6emyt6n04lud)"
        style="stroke: #A80036; stroke-width: 2.0;"
        id="path15" />
     <text
@@ -107,19 +107,19 @@ entity Helmsman-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="72"
-       x="790.5"
-       y="363.5352"
+       x="547.5"
+       y="88.5352"
        id="text17">Helmsman</text>
     <!--MD5=[02e7be748b4e7cf055caf7a01af83a47]
 entity MobileDevice-->
     <rect
        fill="#FEFECE"
-       filter="url(#f7mwafzukczsm)"
+       filter="url(#f6emyt6n04lud)"
        height="77.4648"
        style="stroke: #A80036; stroke-width: 1.5;"
        width="283"
-       x="130"
-       y="286"
+       x="100"
+       y="151"
        id="rect19" />
     <text
        fill="#000000"
@@ -127,15 +127,15 @@ entity MobileDevice-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="93"
-       x="140"
-       y="309.5352"
+       x="110"
+       y="174.5352"
        id="text21">Phone/Tablet</text>
     <line
        style="stroke: #A80036; stroke-width: 1.0;"
-       x1="131"
-       x2="412"
-       y1="312.4883"
-       y2="312.4883"
+       x1="101"
+       x2="382"
+       y1="177.4883"
+       y2="177.4883"
        id="line23" />
     <text
        fill="#000000"
@@ -143,8 +143,8 @@ entity MobileDevice-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="246"
-       x="146"
-       y="330.0234"
+       x="116"
+       y="195.0234"
        id="text25">Can run NMEA/SignalK dashboards,</text>
     <text
        fill="#000000"
@@ -152,37 +152,37 @@ entity MobileDevice-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="251"
-       x="146"
-       y="346.5117"
+       x="116"
+       y="211.5117"
        id="text27">talkers, other chart plotting software</text>
     <!--MD5=[2c6745610cf24c504301673a479d038e]
 entity OpenCPN-->
     <polygon
        fill="#FEFECE"
-       filter="url(#f7mwafzukczsm)"
-       points="499,436,509,426,604,426,604,462.4883,594,472.4883,499,472.4883,499,436"
+       filter="url(#f6emyt6n04lud)"
+       points="317,589,327,579,422,579,422,615.4883,412,625.4883,317,625.4883,317,589"
        style="stroke: #000000; stroke-width: 1.5;"
        id="polygon29" />
     <line
        style="stroke: #000000; stroke-width: 1.5;"
-       x1="594"
-       x2="603"
-       y1="436"
-       y2="427"
+       x1="412"
+       x2="421"
+       y1="589"
+       y2="580"
        id="line31" />
     <line
        style="stroke: #000000; stroke-width: 1.5;"
-       x1="499"
-       x2="594"
-       y1="436"
-       y2="436"
+       x1="317"
+       x2="412"
+       y1="589"
+       y2="589"
        id="line33" />
     <line
        style="stroke: #000000; stroke-width: 1.5;"
-       x1="594"
-       x2="594"
-       y1="436"
-       y2="472.4883"
+       x1="412"
+       x2="412"
+       y1="589"
+       y2="625.4883"
        id="line35" />
     <text
        fill="#000000"
@@ -190,19 +190,19 @@ entity OpenCPN-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="65"
-       x="514"
-       y="459.5352"
+       x="332"
+       y="612.5352"
        id="text37">OpenCPN</text>
     <!--MD5=[5863e8b84f67d6c4cecae3d7228ec9e3]
 entity KPlex-->
     <rect
        fill="#FEFECE"
-       filter="url(#f7mwafzukczsm)"
+       filter="url(#f6emyt6n04lud)"
        height="93.9531"
        style="stroke: #000000; stroke-width: 1.5;"
        width="235"
-       x="349"
-       y="129"
+       x="273"
+       y="288"
        id="rect39" />
     <text
        fill="#000000"
@@ -210,8 +210,8 @@ entity KPlex-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="38"
-       x="359"
-       y="152.5352"
+       x="283"
+       y="311.5352"
        id="text41">KPlex</text>
     <text
        fill="#000000"
@@ -219,15 +219,15 @@ entity KPlex-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="123"
-       x="359"
-       y="169.0234"
+       x="283"
+       y="328.0234"
        id="text43">NMEA Multiplexor</text>
     <line
        style="stroke: #000000; stroke-width: 1.0;"
-       x1="350"
-       x2="583"
-       y1="171.9766"
-       y2="171.9766"
+       x1="274"
+       x2="507"
+       y1="330.9766"
+       y2="330.9766"
        id="line45" />
     <text
        fill="#000000"
@@ -235,8 +235,8 @@ entity KPlex-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="203"
-       x="365"
-       y="189.5117"
+       x="289"
+       y="348.5117"
        id="text47">running as a daemon process</text>
     <text
        fill="#000000"
@@ -244,19 +244,19 @@ entity KPlex-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="63"
-       x="365"
-       y="206"
+       x="289"
+       y="365"
        id="text49">TCP, UDP</text>
     <!--MD5=[f446b16278ece5920111f2a11fd0cfc0]
 entity SignalK-->
     <rect
        fill="#FEFECE"
-       filter="url(#f7mwafzukczsm)"
+       filter="url(#f6emyt6n04lud)"
        height="77.4648"
        style="stroke: #000000; stroke-width: 1.5;"
        width="235"
-       x="520"
-       y="286"
+       x="338"
+       y="442"
        id="rect51" />
     <text
        fill="#000000"
@@ -264,15 +264,15 @@ entity SignalK-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="51"
-       x="530"
-       y="309.5352"
+       x="348"
+       y="465.5352"
        id="text53">SignalK</text>
     <line
        style="stroke: #000000; stroke-width: 1.0;"
-       x1="521"
-       x2="754"
-       y1="312.4883"
-       y2="312.4883"
+       x1="339"
+       x2="572"
+       y1="468.4883"
+       y2="468.4883"
        id="line55" />
     <text
        fill="#000000"
@@ -280,8 +280,8 @@ entity SignalK-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="203"
-       x="536"
-       y="330.0234"
+       x="354"
+       y="486.0234"
        id="text57">running as a daemon process</text>
     <text
        fill="#000000"
@@ -289,19 +289,19 @@ entity SignalK-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="107"
-       x="536"
-       y="346.5117"
+       x="354"
+       y="502.5117"
        id="text59">HTTP, TCP, UDP</text>
     <!--MD5=[989ca5bf3da9a57929b13702cc440130]
 entity PyPilot-->
     <rect
        fill="#FEFECE"
-       filter="url(#f7mwafzukczsm)"
+       filter="url(#f6emyt6n04lud)"
        height="60.9766"
        style="stroke: #000000; stroke-width: 1.5;"
        width="235"
-       x="765"
-       y="145.5"
+       x="615"
+       y="304.5"
        id="rect61" />
     <text
        fill="#000000"
@@ -309,15 +309,15 @@ entity PyPilot-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="45"
-       x="775"
-       y="169.0352"
+       x="625"
+       y="328.0352"
        id="text63">PyPilot</text>
     <line
        style="stroke: #000000; stroke-width: 1.0;"
-       x1="766"
-       x2="999"
-       y1="171.9883"
-       y2="171.9883"
+       x1="616"
+       x2="849"
+       y1="330.9883"
+       y2="330.9883"
        id="line65" />
     <text
        fill="#000000"
@@ -325,19 +325,19 @@ entity PyPilot-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="203"
-       x="781"
-       y="189.5234"
+       x="631"
+       y="348.5234"
        id="text67">running as a daemon process</text>
     <!--MD5=[f89f39b4e78c3e79426ce4defbd572fe]
 entity SerialDevices-->
     <rect
        fill="#FEFECE"
-       filter="url(#f7mwafzukczsm)"
+       filter="url(#f6emyt6n04lud)"
        height="60.9766"
        style="stroke: #000000; stroke-width: 1.5;"
        width="153"
-       x="475"
-       y="8"
+       x="441"
+       y="159"
        id="rect69" />
     <text
        fill="#000000"
@@ -345,15 +345,15 @@ entity SerialDevices-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="133"
-       x="485"
-       y="31.5352"
+       x="451"
+       y="182.5352"
        id="text71">SerialDevices NMEA</text>
     <line
        style="stroke: #000000; stroke-width: 1.0;"
-       x1="476"
-       x2="627"
-       y1="34.4883"
-       y2="34.4883"
+       x1="442"
+       x2="593"
+       y1="185.4883"
+       y2="185.4883"
        id="line73" />
     <text
        fill="#000000"
@@ -361,19 +361,19 @@ entity SerialDevices-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="69"
-       x="491"
-       y="52.0234"
+       x="457"
+       y="203.0234"
        id="text75">/dev/stty*</text>
     <!--MD5=[52bd5c629548ed28ed95c8dc2eaa5bf1]
 entity OtherSensors-->
     <rect
        fill="#FEFECE"
-       filter="url(#f7mwafzukczsm)"
+       filter="url(#f6emyt6n04lud)"
        height="60.9766"
        style="stroke: #000000; stroke-width: 1.5;"
        width="117"
-       x="898"
-       y="294"
+       x="674"
+       y="450"
        id="rect77" />
     <text
        fill="#000000"
@@ -381,15 +381,15 @@ entity OtherSensors-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="97"
-       x="908"
-       y="317.5352"
+       x="684"
+       y="473.5352"
        id="text79">Other Sensors</text>
     <line
        style="stroke: #000000; stroke-width: 1.0;"
-       x1="899"
-       x2="1014"
-       y1="320.4883"
-       y2="320.4883"
+       x1="675"
+       x2="790"
+       y1="476.4883"
+       y2="476.4883"
        id="line81" />
     <text
        fill="#000000"
@@ -397,19 +397,19 @@ entity OtherSensors-->
        font-size="14"
        lengthAdjust="spacingAndGlyphs"
        textLength="80"
-       x="914"
-       y="338.0234"
+       x="690"
+       y="494.0234"
        id="text83">I2C, 1W, etc</text>
     <!--MD5=[813b17cf9d151d5aa05a8c71a0fcb692]
 entity Mosquitto-->
     <rect
        fill="#FEFECE"
-       filter="url(#f7mwafzukczsm)"
+       filter="url(#f6emyt6n04lud)"
        height="60.9766"
        style="stroke: #000000; stroke-width: 1.5;"
        width="89"
        x="6"
-       y="294"
+       y="450"
        id="rect85" />
     <text
        fill="#000000"
@@ -418,14 +418,14 @@ entity Mosquitto-->
        lengthAdjust="spacingAndGlyphs"
        textLength="69"
        x="16"
-       y="317.5352"
+       y="473.5352"
        id="text87">Mosquitto</text>
     <line
        style="stroke: #000000; stroke-width: 1.0;"
        x1="7"
        x2="94"
-       y1="320.4883"
-       y2="320.4883"
+       y1="476.4883"
+       y2="476.4883"
        id="line89" />
     <text
        fill="#000000"
@@ -434,18 +434,18 @@ entity Mosquitto-->
        lengthAdjust="spacingAndGlyphs"
        textLength="41"
        x="22"
-       y="338.0234"
+       y="494.0234"
        id="text91">MQTT</text>
     <!--MD5=[1efd3b1faf51fec4165793737020b578]
 entity NodeRed-->
     <rect
        fill="#FEFECE"
-       filter="url(#f7mwafzukczsm)"
+       filter="url(#f6emyt6n04lud)"
        height="36.4883"
        style="stroke: #000000; stroke-width: 1.5;"
        width="82"
        x="9.5"
-       y="158"
+       y="317"
        id="rect93" />
     <text
        fill="#000000"
@@ -454,146 +454,182 @@ entity NodeRed-->
        lengthAdjust="spacingAndGlyphs"
        textLength="62"
        x="19.5"
-       y="181.5352"
+       y="340.5352"
        id="text95">NodeRed</text>
     <!--MD5=[9709c0948f47c770d7cdf20208bf9a34]
 reverse link Helmsman to OpenCPN-->
     <path
-       d="M786.217,357.46 C781.711,360.535 777.089,363.449 772.5,366 C718.048,396.2626 650.346,419.8491 604.326,434.0186 "
+       d="M624.205,68.878 C689.864,102.707 816.901,179.432 867.5,288 C885.148,325.867 875.936,341.083 867.5,382 C854.113,446.93 860.236,477.546 808.5,519 C749.482,566.2884 525.66,589.6937 422.345,598.1629 "
        fill="none"
        id="Helmsman&lt;-OpenCPN"
        style="stroke: #A80036; stroke-width: 1.0;" />
     <polygon
        fill="#A80036"
-       points="790.317,354.596,780.6479,356.4689,786.2175,357.4585,785.2279,363.0281,790.317,354.596"
+       points="619.586,66.516,625.7787,74.1743,624.038,68.792,629.4203,67.0512,619.586,66.516"
        style="stroke: #A80036; stroke-width: 1.0;"
        id="polygon98" />
+    <!--MD5=[35ad9b96c14ee229a0283194c7f999e9]
+reverse link Helmsman to MobileDevice-->
+    <path
+       d="M542.422,66.316 C491.575,87.13 403.407,123.222 335.608,150.976 "
+       fill="none"
+       id="Helmsman&lt;-MobileDevice"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <polygon
+       fill="#A80036"
+       points="547.224,64.35,537.3795,64.058,542.5967,66.2443,540.4104,71.4616,547.224,64.35"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon101" />
     <!--MD5=[7c28ee4f2ade4647271b30fc4171fcbd]
 reverse link MobileDevice to OpenCPN-->
     <path
-       d="M362.813,365.102 C408.093,385.2351 461.134,408.8196 499.429,425.847 "
+       d="M228.152,233.41 C218.24,272.952 208.624,332.317 222.5,382 C245.236,463.407 311.23,541.4438 346.552,578.9001 "
        fill="none"
        id="MobileDevice&lt;-OpenCPN"
        style="stroke: #A80036; stroke-width: 1.0;" />
     <polygon
        fill="#A80036"
-       points="358.176,363.04,364.7753,370.3509,362.7449,365.071,368.0249,363.0406,358.176,363.04"
+       points="229.487,228.207,223.3753,235.9302,228.2441,233.0501,231.1242,237.9188,229.487,228.207"
        style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon101" />
+       id="polygon104" />
+    <!--MD5=[2c50fc95f304d9480cd7f30e7a18b07d]
+reverse link MobileDevice to SignalK-->
+    <path
+       d="M233.087,233.169 C227.52,274.997 225.904,338.072 255.5,382 C275.18,411.21 306.141,432.1 337.875,446.894 "
+       fill="none"
+       id="MobileDevice&lt;-SignalK"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <polygon
+       fill="#A80036"
+       points="233.783,228.177,228.5791,236.5388,233.0929,233.1291,236.5025,237.6429,233.783,228.177"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon107" />
+    <!--MD5=[fd4e49922dfb091f610e44fd70550a41]
+reverse link MobileDevice to KPlex-->
+    <path
+       d="M285.057,232.034 C303.002,249.557 323.859,269.924 342.264,287.897 "
+       fill="none"
+       id="MobileDevice&lt;-KPlex"
+       style="stroke: #A80036; stroke-width: 1.0;" />
+    <polygon
+       fill="#A80036"
+       points="281.038,228.109,284.6829,237.2586,284.6154,231.6021,290.2719,231.5347,281.038,228.109"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="polygon110" />
     <!--MD5=[fff00b58ffcd7aa38c56d6fa14b6a2d2]
 link KPlex to OpenCPN-->
     <path
-       d="M470.868,223.297 C475.563,262.503 484.865,319.188 502.5,366 C509.887,385.6094 521.772,405.8948 531.987,421.5027 "
+       d="M351.262,382.076 C338.909,399.746 326.841,420.726 320.5,442 C310.725,474.797 311.482,485.987 320.5,519 C325.981,539.0666 337.694,559.2164 348.293,574.6367 "
        fill="none"
        id="KPlex-&gt;OpenCPN"
        style="stroke: #A80036; stroke-width: 1.0;" />
     <polygon
        fill="#A80036"
-       points="534.819,425.7764,533.1829,416.0644,532.0575,421.6082,526.5137,420.4828,534.819,425.7764"
+       points="351.247,578.8567,349.3623,569.1899,348.3795,574.7607,342.8087,573.7779,351.247,578.8567"
        style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon104" />
+       id="polygon113" />
     <!--MD5=[2ce0bbeaac306e94c1cbaa732a2a2b95]
 link KPlex to SignalK-->
     <path
-       d="M521.076,223.395 C542.975,242.413 568.003,264.148 589.228,282.58 "
+       d="M411.604,382.24 C419.465,399.836 428.344,419.713 436.05,436.962 "
        fill="none"
        id="KPlex-&gt;SignalK"
        style="stroke: #A80036; stroke-width: 1.0;" />
     <polygon
        fill="#A80036"
-       points="593.145,285.981,588.9717,277.06,589.3696,282.7029,583.7267,283.1007,593.145,285.981"
+       points="438.191,441.754,438.1741,431.9052,436.1525,437.1884,430.8692,435.1668,438.191,441.754"
        style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon107" />
+       id="polygon116" />
     <!--MD5=[72715ee31c33dfdae858427aa5ca9a95]
 reverse link PyPilot to OtherSensors-->
     <path
-       d="M900.117,211.354 C912.62,236.443 929.236,269.787 941.187,293.77 "
+       d="M732.5,370.541 C732.5,394.717 732.5,426.395 732.5,449.537 "
        fill="none"
        id="PyPilot&lt;-OtherSensors"
        style="stroke: #A80036; stroke-width: 1.0;" />
     <polygon
        fill="#A80036"
-       points="897.833,206.769,898.2676,216.6083,900.0634,211.244,905.4276,213.0397,897.833,206.769"
+       points="732.5,365.502,728.5,374.502,732.5,370.502,736.5,374.502,732.5,365.502"
        style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon110" />
+       id="polygon119" />
     <!--MD5=[3896a38b8d08efe3a971dbce1ddc4546]
 link SignalK to OpenCPN-->
     <path
-       d="M610.76,363.21 C597.669,382.1619 582.22,404.5274 570.378,421.6701 "
+       d="M428.053,519.277 C415.382,537.1789 400.628,558.0224 389.101,574.3082 "
        fill="none"
        id="SignalK-&gt;OpenCPN"
        style="stroke: #A80036; stroke-width: 1.0;" />
     <polygon
        fill="#A80036"
-       points="567.449,425.9107,575.8551,420.7786,570.2906,421.7966,569.2726,416.2321,567.449,425.9107"
+       points="385.939,578.7745,394.4035,573.7394,388.8277,574.6934,387.8737,569.1175,385.939,578.7745"
        style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon113" />
+       id="polygon122" />
     <!--MD5=[161295f019cc5224b150462ab08d92ab]
 link SerialDevices to SignalK-->
     <path
-       d="M571.694,69.154 C582.04,86.153 594.005,108.041 601.5,129 C619.461,179.227 628.857,240.067 633.482,280.397 "
+       d="M525.097,220.035 C533.311,258.738 543.042,327.032 525.5,382 C519.091,402.083 506.928,421.576 494.516,437.848 "
        fill="none"
        id="SerialDevices-&gt;SignalK"
        style="stroke: #A80036; stroke-width: 1.0;" />
     <polygon
        fill="#A80036"
-       points="634.077,285.703,637.0492,276.3133,633.5198,280.7341,629.099,277.2048,634.077,285.703"
+       points="491.359,441.914,500.0381,437.2586,494.4255,437.9648,493.7194,432.3522,491.359,441.914"
        style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon116" />
+       id="polygon125" />
     <!--MD5=[dd5d1fc555f821bf9ce0cb5f7d2c8d3a]
 link SerialDevices to KPlex-->
     <path
-       d="M532.636,69.016 C522.626,85.208 510.052,105.549 498.562,124.135 "
+       d="M490.877,220.002 C474.717,238.515 453.681,262.615 435.044,283.967 "
        fill="none"
        id="SerialDevices-&gt;KPlex"
        style="stroke: #A80036; stroke-width: 1.0;" />
     <polygon
        fill="#A80036"
-       points="495.667,128.819,503.8027,123.2683,498.2968,124.5665,496.9986,119.0606,495.667,128.819"
+       points="431.593,287.92,440.5242,283.7686,434.8804,284.1526,434.4963,278.5088,431.593,287.92"
        style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon119" />
+       id="polygon128" />
     <!--MD5=[5bcc4a9ccbf01b8bce6d244018bf606e]
 link PyPilot to SignalK-->
     <path
-       d="M832.033,206.589 C795.541,228.708 745.823,258.843 705.784,283.111 "
+       d="M674.432,365.502 C633.48,387.012 578.172,416.064 533.393,439.585 "
        fill="none"
        id="PyPilot-&gt;SignalK"
        style="stroke: #A80036; stroke-width: 1.0;" />
     <polygon
        fill="#A80036"
-       points="701.447,285.74,711.217,284.4959,705.723,283.1484,707.0705,277.6544,701.447,285.74"
+       points="528.818,441.988,538.6458,441.3447,533.2447,439.6632,534.9262,434.2621,528.818,441.988"
        style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon122" />
+       id="polygon131" />
     <!--MD5=[4082e6ad461290f0ff05a81a415d337c]
 link Mosquitto to SignalK-->
     <path
-       d="M78.7466,289.656 C92.5218,275.413 110.355,260.534 130,253 C201.582,225.546 399.974,237.224 475,253 C504.796,259.265 535.793,271.342 562.628,283.812 "
+       d="M100.4085,480.5 C177.897,480.5 255.385,480.5 332.874,480.5 "
        fill="none"
        id="Mosquitto-SignalK"
        style="stroke: #A80036; stroke-width: 1.0;" />
     <polygon
        fill="#A80036"
-       points="567.243,285.979,560.7974,278.5323,562.7174,283.8533,557.3963,285.7733,567.243,285.979"
+       points="337.978,480.5,328.978,476.5,332.978,480.5,328.978,484.5,337.978,480.5"
        style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon125" />
+       id="polygon134" />
     <polygon
        fill="#A80036"
-       points="74.9708,293.649,84.0601,289.8563,78.4055,290.0154,78.2464,284.3608,74.9708,293.649"
+       points="95.1924,480.5,104.1924,484.5,100.1924,480.5,104.1924,476.5,95.1924,480.5"
        style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon127" />
+       id="polygon136" />
     <!--MD5=[50afe6e7886421f7a560e811bb9cfa30]
 link NodeRed to Mosquitto-->
     <path
-       d="M50.5,194.209 C50.5,217.637 50.5,258.862 50.5,288.677 "
+       d="M50.5,353.133 C50.5,375.939 50.5,415.619 50.5,444.644 "
        fill="none"
        id="NodeRed-&gt;Mosquitto"
        style="stroke: #A80036; stroke-width: 1.0;" />
     <polygon
        fill="#A80036"
-       points="50.5,293.731,54.5,284.731,50.5,288.731,46.5,284.731,50.5,293.731"
+       points="50.5,449.933,54.5,440.933,50.5,444.933,46.5,440.933,50.5,449.933"
        style="stroke: #A80036; stroke-width: 1.0;"
-       id="polygon130" />
-    <!--MD5=[9b0af70c922bdc2706b8d539c8ee9b98]
+       id="polygon139" />
+    <!--MD5=[4551d90ac8e30f69d44f0b23bc24433c]
 @startuml
 actor Helmsman [
  Helmsman
@@ -644,7 +680,10 @@ rectangle NodeRed [
  NodeRed
 ]
 Helmsman <- - OpenCPN
+Helmsman <- - MobileDevice
 MobileDevice <- - OpenCPN
+MobileDevice <- - SignalK
+MobileDevice <- - KPlex
 KPlex - -> OpenCPN
 KPlex - -> SignalK
 PyPilot <- - OtherSensors
