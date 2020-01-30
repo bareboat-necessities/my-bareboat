@@ -1,6 +1,6 @@
 = Bareboat Necessities Projects
 mgrouch <mgrouch@users.noreply.github.com>
-0.6, Jan 9, 2020, Bareboat Projects
+{docdate}, Bareboat Projects
 :imagesdir: images
 :doctype: book
 :organization: Bareboat Necessities
