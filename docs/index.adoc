@@ -1584,7 +1584,7 @@ telnet localhost 8375
 ==== Basic Installation Steps
 
 .Basic Installation Steps
-ifdef::env-github[image::basic-install-steps.svg[Basic Installation Steps]]
+ifdef::env-github[image::basic-install-steps.svg[Basic Installation Steps, width="75%"]]
 ifndef::env-github[]
 
 [plantuml,basic-install-steps,svg]
