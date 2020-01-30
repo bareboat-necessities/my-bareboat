@@ -1,6 +1,17 @@
 = Bareboat Necessities Projects
 mgrouch <mgrouch@users.noreply.github.com>
 0.6, Jan 9, 2020, Bareboat Projects
+:imagesdir: images
+:doctype: book
+:organization: Bareboat Necessities
+ifdef::backend-pdf[]
+:pdf-theme: chronicles
+:pdf-themesdir: {docdir}
+:title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+:source-highlighter: rouge
+endif::[]
+:experimental:
+:reproducible:
 :toc:
 :toc-placement: left
 :toclevels: 4
@@ -8,8 +19,6 @@ mgrouch <mgrouch@users.noreply.github.com>
 :sectnumlevels: 3
 :encoding: utf-8
 :lang: en
-:title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
-:imagesdir: images
 :icons: font
 ifdef::env-github[]
 :tip-caption: :bulb:
@@ -1586,7 +1595,7 @@ telnet localhost 8375
 ==== Basic Installation Steps
 
 .Basic Installation Steps
-ifdef::env-github[image::basic-install-steps.svg[Basic Installation Steps, width="75%"]]
+ifdef::env-github[image::basic-install-steps.svg[Basic Installation Steps, width="75%", height="75%"]]
 ifndef::env-github[]
 
 [plantuml,basic-install-steps,svg]
