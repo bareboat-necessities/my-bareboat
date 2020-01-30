@@ -4,16 +4,19 @@ mgrouch <mgrouch@users.noreply.github.com>
 :imagesdir: images
 :doctype: book
 :organization: Bareboat Necessities
+:title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 ifdef::backend-pdf[]
 :pdf-theme: chronicles
 :pdf-themesdir: {docdir}
-:title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 :source-highlighter: rouge
+:front-cover-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+endif::[]
+ifdef::backend-html5[]
+:toc-placement: left
 endif::[]
 :experimental:
 :reproducible:
 :toc:
-:toc-placement: left
 :toclevels: 4
 :sectnums:
 :sectnumlevels: 3
@@ -28,6 +31,7 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 :env-github:
+:toc-placement!: manual
 
 {zwsp} +
 
