@@ -7,10 +7,9 @@ mgrouch <mgrouch@users.noreply.github.com>
 :title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 ifdef::backend-pdf[]
 :source-highlighter: rouge
-:front-cover-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 :toc-placement!: manual
 endif::[]
-ifdef::backend-html5[]
+ifndef::backend-pdf[]
 :toc-placement: left
 endif::[]
 :experimental:
@@ -29,13 +28,16 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 :env-github:
-:toc-placement!: manual
 
 {zwsp} +
+
+ifndef::backend-pdf[]
 
 image::bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 
 {zwsp} +
+
+endif::[]
 
 https://github.com/bareboat-necessities/my-bareboat
 
