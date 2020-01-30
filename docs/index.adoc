@@ -10,13 +10,13 @@ ifdef::backend-pdf[]
 :pdf-themesdir: {docdir}
 :source-highlighter: rouge
 :front-cover-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+:toc-placement!: manual
 endif::[]
 ifdef::backend-html5[]
 :toc-placement: left
 endif::[]
 :experimental:
 :reproducible:
-:toc:
 :toclevels: 4
 :sectnums:
 :sectnumlevels: 3
