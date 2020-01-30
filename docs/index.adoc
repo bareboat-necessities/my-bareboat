@@ -30,6 +30,8 @@ https://github.com/bareboat-necessities/my-bareboat
 
 {zwsp} +
 
+toc::[]
+
 == Boat Electronics Project
 
 This document describes a DIY project of building a marine computer, a boat LTE/WiFi gateway, and
@@ -2025,7 +2027,6 @@ Another Raspberry Pi Boating Project
 
 {zwsp} +
 
-toc::[]
 
 
 
