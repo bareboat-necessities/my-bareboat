@@ -1,7 +1,8 @@
 = Bareboat Necessities Projects
 mgrouch <mgrouch@users.noreply.github.com>
 0.6, Jan 9, 2020, Bareboat Projects
-:toc: left
+:toc:
+:toc-placement: left
 :toclevels: 4
 :sectnums:
 :sectnumlevels: 3
@@ -17,7 +18,6 @@ ifdef::env-github[]
 :caution-caption: :fire:
 :warning-caption: :warning:
 endif::[]
-:toc-placement!: manual
 :env-github:
 
 {zwsp} +
