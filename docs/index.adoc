@@ -6,8 +6,6 @@ mgrouch <mgrouch@users.noreply.github.com>
 :organization: Bareboat Necessities
 :title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 ifdef::backend-pdf[]
-:pdf-theme: chronicles
-:pdf-themesdir: {docdir}
 :source-highlighter: rouge
 :front-cover-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 :toc-placement!: manual
