@@ -751,6 +751,12 @@ https://geekworm.com/collections/raspberry-pi-4/products/raspberry-pi-x710-power
 https://geekworm.com/collections/raspberry-pi-4/products/raspberry-pi-x828-stackable-2-5-sata-hdd-ssd-shield
 
 
+NOTE: (Update: Jan 2020) There is even better board came out. SupTronics X180. 7-Port USB 3.0 self powered hub shield
+for raspberry pi 4. So I'd use x710 and x180 combo.
+
+http://www.suptronics.com/miniPCkits/x180.html
+
+
 * RTC Clock
 * Opto couplers for NMEA interfaces
 * Safe power down method
@@ -761,6 +767,35 @@ https://geekworm.com/collections/raspberry-pi-4/products/raspberry-pi-x828-stack
 
 .Amp Meter Wiring Diagram
 image::amp-meter-wiring.jpg[alt="Amp Meter Wiring Diagram"]
+
+====== Real blue water (off-shore) boat features (just brain storming)
+
+* GPS and chartplotter
+* AutoPilot (PyPilot)
+* AIS
+* True Radar
+* Automated WeatherFax via RTL-SDR, Satellite Weather, GRIBs via https://sailmail.com/
+* Integration with Satellite Modems as Iridium
+* Low power usage
+* Weather Routing
+* Better Integration with SSB radio via SDR stick, Morse decoding/encoding (?)
+* Better Celestial Navigation
+* Bilge Alarm, Better Alarms Overall (Deadman, Anchor Watch, Collision Avoidance, Jibe Warning, Landfall)
+* Better monitoring of power usage of the boat
+* Integration with Solar/Wind power generators
+* Lightning strike front detection
+* Wind/Speed/Drift (There are through hull transducers already which measure drift) NMEA sensors with True Wind calculation
+* Comfort features: E-mail, Instagram, Spotify, Log Book, Blog Keeping better integration
+* Integration with windlass and bow thrusters
+* Active Captain, Squidd.io type of services integrated
+* Security features, VPN, AdBlocking, Fire Alarms, Motion Sensors
+* Better integration with engine sensors (temp, power, oil pressure, RPM, fuel usage, etc)
+* FishFinder integration
+* NightVision
+* Sail Trim sensors and integration with powered winches
+* More Maps and Charts
+* Search and Rescue Patterns
+* M5Stack deserves more attention
 
 
 ==== Testing Boat Computer and Cockpit Display
