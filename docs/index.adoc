@@ -39,7 +39,7 @@ image::bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 
 endif::[]
 
-https://github.com/bareboat-necessities/my-bareboat
+https://bareboat-necessities.github.io
 
 {zwsp} +
 

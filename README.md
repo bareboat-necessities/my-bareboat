@@ -3,7 +3,9 @@
 # Bareboat Necessities
 Opensource hardware and software solutions for sailing and sailboats
 
-[Documentation](docs/index.adoc)
+[Home](https://bareboat-necessities.github.io)
+
+[Documentation](https://bareboat-necessities.github.io/my-bareboat)
 
 [Landing Page](https://bareboat-necessities.wixsite.com/my-bareboat)
 
