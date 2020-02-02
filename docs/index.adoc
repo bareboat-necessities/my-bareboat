@@ -190,7 +190,7 @@ with additional software.
 
 
 
-[cols="4", options="header"]
+[cols="1,6,1,1", options="header"]
 |===
 
 
@@ -209,9 +209,9 @@ Dimensions exterior: W 230mm, D 210mm, H 86mm
 * Brand (from inside markings): BAHAR
 * Model: BDH 20014-A2
 
-https://szomk.en.alibaba.com/product/60455131585-213058437/Customized_case_box_enclosure_for_gsm_modem_plastic_enclosures.html
+https://a.aliexpress.com/_svVwOa
 
-| $17.10, Delivery: $13 | Alibaba
+| 2 * $19.80, Delivery: $7 | AliExpress
 
 
 
@@ -219,10 +219,9 @@ https://szomk.en.alibaba.com/product/60455131585-213058437/Customized_case_box_e
 
 a|ABS Black Plastic Sheets Size 12" x 12", 0.118"-1/8" thick, 2-Pack, 1 Side Textured, Black
 
-https://www.ebay.com/itm/ABS-Black-Plastic-Sheets-You-Pick-The-Size-1-2-4-8-Pack-Options-1-Side-Textured/142746168237
+https://www.amazon.com/dp/B0007WTF02
 
-| $19.20 | Ebay
-
+| $10 | Amazon
 
 
 | 12v to 5v step-down converter
