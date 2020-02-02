@@ -244,6 +244,27 @@ https://www.amazon.com/dp/B07Q2B4ZY9
 | $35 | Amazon
 
 
+
+| Jumper Wires
+a| 120pcs Breadboard Jumper Wires 10cm 15cm 20cm 30cm 40cm 50cm 100cm Optional Arduino Wire Dupont Cable Assorted
+Kit Male to Female Male to Male Female to Female Multicolored Ribbon Cables
+
+https://www.amazon.com/dp/B07GD2BWPY
+
+| $5.80 | Amazon
+
+
+
+| Waterproofing Spray for PCB, Conformal Coating (Optional)
+
+a| 422B-340G Silicone Conformal Coating, Clear, 12 oz Aerosol
+
+https://www.amazon.com/dp/B008O9YGQI
+
+| $22.45 | Amazon
+
+
+
 | Heat Shrink Connections (Optional, You might have enough)
 a| 450pcs Heat Shrink Wire Connectors DIY Kit Heat Shrink Butt Connectors Crimping Tool Heat Shrink Tubing Heat Gun
 Waterproof Marine Automotive Terminals Set
@@ -256,16 +277,17 @@ https://www.amazon.com/dp/B07W41Y7CF
 | Heat Shrink Tubing (Optional, You might have enough)
 a| Heat Shrink Tubing
 
-TBD
-
-| TBD | TBD
+| $6 | Local auto store
 
 
 
 | Fuses
 a| Fuses
 
-| TBD | Local Store
+6x30mm
+
+| $6 | Local hardware store
+
 
 |===
 
@@ -528,7 +550,7 @@ https://www.amazon.com/dp/B07FKPJ4QQ
 
 
 
-| AIS Antenna panel connector
+| AIS and RTL-SDR Antenna panel connectors
 
 a| 2pcs SO239 Adapter UHF Female to Female Jack Bulkhead RF Connector, Impedance:50 Ohm
 
@@ -771,6 +793,26 @@ https://www.amazon.com/dp/B07B416CPK
 
 
 
+| USB Isolator (Optional)
+
+a| USB To USB Isolator Industrial Grade Digital Isolators With Shell 12Mbps Speed ADUM4160/ADUM316 USB Isolator Drop Ship
+
+https://a.aliexpress.com/_sobQw2
+
+| 11.20 | AliExpress
+
+
+
+| USB Type-B short cable
+
+a| USB 3.0 A Male AM to USB 3.0 B Type Male BM USB3.0 Cable 0.6m
+
+https://a.aliexpress.com/_rv8IcU
+
+| $6 | AliExpress
+
+
+
 | SSD Flash Drive
 a| TBD: Model Samsung
 | $45 | Amazon
@@ -822,24 +864,6 @@ https://www.amazon.com/dp/B072MNBC9M
 | $53.50 | Amazon
 
 
-
-| Jumper Wires
-a| 120pcs Breadboard Jumper Wires 10cm 15cm 20cm 30cm 40cm 50cm 100cm Optional Arduino Wire Dupont Cable Assorted
-Kit Male to Female Male to Male Female to Female Multicolored Ribbon Cables
-
-https://www.amazon.com/dp/B07GD2BWPY
-
-| $5.80 | Amazon
-
-
-
-| Waterproofing Spray for PCB, Conformal Coating (Optional)
-
-a| 422B-340G Silicone Conformal Coating, Clear, 12 oz Aerosol
-
-https://www.amazon.com/dp/B008O9YGQI
-
-| $22.45 | Amazon
 
 
 
