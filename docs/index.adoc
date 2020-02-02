@@ -1399,6 +1399,24 @@ https://www.amazon.com/dp/B005UWD0EG
 | $5.30 | Amazon
 
 
+| GPS RF Connectors
+a| Pack of 4 RF U.FL(IPEX/IPX) Mini PCI to SMA Female Pigtail Antenna
+Wi-Fi Coaxial RG-178 Low Loss Cable (4 inches (10 cm))
+
+https://www.amazon.com/dp/B074RJ5LM7
+
+| $15.30 | Amazon
+
+
+
+| LTE RF Connectors
+a| SMA Extension Cable Pigtail Male to Female WiFi Antenna Cable RF RG316 Coaxial
+Coax Jumper FPV SMA Antenna Wire (4 inch (4 Pcs))
+
+https://www.amazon.com/dp/B0813RPPTX
+
+| $12 | Amazon
+
 
 
 | Ethernet Switch
