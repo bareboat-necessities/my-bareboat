@@ -133,7 +133,7 @@ image::front-panel-intf.jpg[alt="Boat Computer, Front Panel", width="75%",  pdfw
 
 * 1 Ethernet port 1Gbit (for the WiFi router)
 * 1 USB 2.0 port for GPS (or something else)
-* 1 NMEA-0183 port (More can be added in the same DYI fashion)
+* 1 NMEA-0183 port (More can be added in the same DIY fashion)
 * DC power 2-wire input cord mounted inside a waterproof gland for 12v boat connection. SAE-type connector
 * DC power 2-wire output cord mounted inside a waterproof gland for 12v cockpit connection. SAE-type connector
 (black male)
@@ -149,7 +149,7 @@ image::back-panel-intf.jpg[alt="Boat Computer, Back Panel", width="75%",  pdfwid
 
 {zwsp} +
 
-*Boat Computer Inside View*
+*Boat Computer Inside*
 
 NOTE: Raspberry Pi lays on top of the middle divider made out of plastic sheet. The power supply (12v to 5v step-down
 converter) is mounted from the other side under the middle divider. The USB hub doesn't fit by height to simply lay
@@ -157,8 +157,8 @@ on the divider, so there is a little shelf made out of the same plastic sheet an
 standoffs. USB hub is mounted under a slight angle to give space to a screw which closes the enclosure.
 
 
-.Boat Computer, Inside View
-image::computer-internals.jpg[alt="Boat Computer, Inside View", width="75%",  pdfwidth="75vw", align="center"]
+.Boat Computer, Inside
+image::computer-internals.jpg[alt="Boat Computer, Inside", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -237,14 +237,6 @@ https://www.amazon.com/dp/B01M03288J
 
 
 
-| Screws, Nuts
-
-a| Screws, nuts, etc for electronics
-
-| $4.5 | Microcenter
-
-
-
 | Standoffs
 a| Hilitchi 120Pcs M3 Nylon Hex Spacers Screw Nut Standoff Plastic Accessories Assortment (Black)
 
@@ -255,6 +247,14 @@ a| Hilitchi 120Pcs M3 Nylon Hex Spacers Screw Nut Standoff Plastic Accessories A
 https://www.amazon.com/dp/B012G6E62I
 
 | $6 | Amazon
+
+
+
+| Screws, Nuts
+
+a| Screws, nuts, etc for electronics
+
+| $4.5 | Microcenter
 
 
 
@@ -352,22 +352,22 @@ https://www.amazon.com/dp/B072KGMJ5N
 
 | Panel, etc
 
-a| Cllena Dual USB Socket Charger 2.1A&2.1A + LED Voltmeter + 12V Power Outlet + 5 Gang ON-Off Toggle Switch
-Multi-Functions Panel for Car Boat Marine RV Truck Camper Vehicles GPS Mobiles
+a| 5 Gang 3 Pin Rocker Switch Panel Waterproof On-Off Toggle Switches with Pre-wired for
+Car Vehicle Trailer Truck SUV Marine Boat RV Ship
 
-https://www.amazon.com/dp/B0785LZQLK
+https://www.amazon.com/dp/B07Z1Q8Y3G
 
-NOTE: Used for panel parts: Voltmeter, Switches, Fuses, 12v DC Wires
+NOTE: Used for panel parts: Switches, 12v DC Wires
 
-| $34 | Amazon
+| $12 | Amazon
 
 
 
 | Light Pipes
 a| Fiber optic light pipes with lenses for panel mount for transfer of inside LED indicators light
-to the front panel
+to the front panel (long)
 
-* SMFLP12.0 492-1291-ND LIGHT PIPE CLEAR FLEXIBLE 12" (10 pack)
+* SMFLP12.0 492-1291-ND LIGHT PIPE CLEAR FLEXIBLE 12" (5 pack)
 
 * Brand: Bivar Inc
 
@@ -375,7 +375,26 @@ to the front panel
 
 https://www.digikey.com/product-detail/en/bivar-inc/SMFLP12.0/492-1291-ND/2407239
 
-| $28, Delivery: $9 | DigiKey
+| $15, Delivery: $7 | DigiKey
+
+
+| Light Pipes
+a| Fiber optic light pipes with lenses for panel mount for transfer of inside LED indicators light
+to the front panel (short)
+
+* Digi-Key Part Number 	492-1293-ND (LIGHT PIPE CLEAR FLEXIBLE 6", SMFLP6.0)
+
+* Light Pipe Single Clear Flexible 6" (152.4mm) Round with Flat Top, 4mm Board/Panel Mount, Press Fit (5 pack)
+
+* Brand: Bivar Inc
+
+* 4mm Board/Panel Mount
+
+https://www.digikey.com/product-detail/en/bivar-inc/SMFLP6.0/492-1293-ND/2407240
+
+| $9 | DigiKey
+
+
 
 
 
@@ -1211,7 +1230,7 @@ https://www.amazon.com/dp/B07712LKJM
 
 
 
-| LTE 4G/3G and Wifi Router (GL-AR750 is not needed if you pick this)
+| GL-X750 LTE 4G/3G and Wifi Router (It's the best choice, GL-AR750 is not needed if you pick this)
 a| GL.iNet Spitz (GL-X750) 4G Router & 4G Modem (with Sim card slot) for your area and cellular provider
 
 * Transfer 4G LTE signal to Wi-Fi, 5G (433Mbps), 2.4G(300Mbps) Wi-Fi, 4G (EC25, EP06) PCIe modules
@@ -1223,8 +1242,31 @@ a| GL.iNet Spitz (GL-X750) 4G Router & 4G Modem (with Sim card slot) for your ar
 
 https://www.gl-inet.com/products/gl-x750/
 
-| $119 + Modem: $20 + (Optional bluetooth module and wall mount): $16 | gl-inet.com
+| $119 + Modem: $20 + (Optional not really needed
+bluetooth module and wall mount: $16) | gl-inet.com
 
+| WiFi RF Connector Cable (*RP*)
+a| U.FL Mini PCI to *Reverse Polarity* SMA Pigtail Antenna WiFi Cable Pack of 2
+
+* Reverse Polarity SMA Female ( *Pin in center* ) to IPX ufl Female Coaxial Connector
+
+https://www.amazon.com/dp/B005UWD0EG
+
+| $5.30 | Amazon
+
+
+
+| Antenna Cable
+a| Low Loss RG58 WiFi Cable N Male to RP SMA Male Connector Hole in Center Pigtail SMA Cable 10M for
+3G/4G/LTE/Ham/GPS/RF Radio to Antenna or Surge Arrester Use
+
+* Connector Gender 	N male , RP SMA Male
+* Model Number 	Lii-03695
+* Cable Length 	32.8 feet
+
+https://www.amazon.com/dp/B075MBXBY2
+
+| $16 | Amazon
 
 
 | Long Range WiFi Antenna
@@ -1242,6 +1284,16 @@ https://www.amazon.com/dp/B07PG8RPSL
 NOTE: This has RP SMA connector, so corresponding panel mount part will need to be RP SMA.
 
 | $36 | Amazon
+
+
+| IPEX U.FL Solder Sockets
+a|
+10pcs IPEX U.FL SMD SMT Solder for PCB Mount Socket Jack Female RF Coaxial Connector
+
+https://www.amazon.com/dp/B07V3BV15W
+
+| $7 | Amazon
+
 
 
 | LTE/4G/3G Antenna
