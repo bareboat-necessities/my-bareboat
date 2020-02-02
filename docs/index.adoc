@@ -490,15 +490,6 @@ https://www.amazon.com/dp/B01D0N7AI8
 
 
 
-| Breadboard
-a| Electronics-Salon 4x Prototype Breakout PCB Shield Board Kit for Raspberry Pi 3 2 B+ A+, Breadboard DIY
-
-https://www.amazon.com/dp/B07BF8Z3HS
-
-| $15 | Amazon
-
-
-
 | Terminal Block for NMEA 0183
 
 a| Brand Name: QSU
