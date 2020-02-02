@@ -41,6 +41,12 @@ endif::[]
 
 https://bareboat-necessities.github.io
 
+https://github.com/bareboat-necessities/my-bareboat
+
+https://github.com/bareboat-necessities/my-bareboat/issues
+
+https://bareboat-necessities.wixsite.com/my-bareboat
+
 {zwsp} +
 
 toc::[]
@@ -184,6 +190,86 @@ Raspberry Pi 4 has also WiFi and BlueTooth interfaces:
 WiFi can be used to set up access to the boat computer from smart phones and tablets
 with additional software.
 
+==== Tools and Supplies
+
+[cols="1,6,1,1", options="header"]
+|===
+
+
+
+|Item
+|Description
+|Cost
+|Source
+
+
+| Standoffs
+a| Hilitchi 120Pcs M3 Nylon Hex Spacers Screw Nut Standoff Plastic Accessories Assortment (Black)
+
+* UNSPSC Code: 31161816
+* Thread Size: M3
+* Part Number: HNLM3
+
+https://www.amazon.com/dp/B012G6E62I
+
+| $6 | Amazon
+
+
+
+| Screws, Nuts
+
+a| Screws, nuts, etc for electronics
+
+| $4.5 | Microcenter
+
+
+
+| Cable ties
+a| Cable ties
+
+| $5 | Homedepot
+
+
+
+| Soldering
+a| Soldering Iron Kit - Soldering Iron 60 W Adjustable Temperature, Digital Multimeter, Wire Cutter,
+Stand, Soldering Iron Tip Set, Desoldering Pump, Solder Wick, Tweezers, Rosin, Wire - [110 V, US Plug]
+
+* Heat Time: 60 seconds
+* Wattage: 60
+* UNSPSC Code: 41110000
+
+https://www.amazon.com/dp/B07Q2B4ZY9
+
+| $35 | Amazon
+
+
+| Heat Shrink Connections (Optional, You might have enough)
+a| 450pcs Heat Shrink Wire Connectors DIY Kit Heat Shrink Butt Connectors Crimping Tool Heat Shrink Tubing Heat Gun
+Waterproof Marine Automotive Terminals Set
+
+https://www.amazon.com/dp/B07W41Y7CF
+
+| $42 | Amazon
+
+
+| Heat Shrink Tubing (Optional, You might have enough)
+a| Heat Shrink Tubing
+
+TBD
+
+| TBD | TBD
+
+
+
+| Fuses
+a| Fuses
+
+| TBD | Local Store
+
+|===
+
+
 ==== Boat Computer Enclosure
 
 ===== Enclosure Parts
@@ -236,46 +322,6 @@ https://www.amazon.com/dp/B01M03288J
 | $9.60 | Amazon
 
 
-
-| Standoffs
-a| Hilitchi 120Pcs M3 Nylon Hex Spacers Screw Nut Standoff Plastic Accessories Assortment (Black)
-
-* UNSPSC Code: 31161816
-* Thread Size: M3
-* Part Number: HNLM3
-
-https://www.amazon.com/dp/B012G6E62I
-
-| $6 | Amazon
-
-
-
-| Screws, Nuts
-
-a| Screws, nuts, etc for electronics
-
-| $4.5 | Microcenter
-
-
-
-| Cable ties
-a| Cable ties
-
-| $5 | Homedepot
-
-
-
-| Soldering
-a| Soldering Iron Kit - Soldering Iron 60 W Adjustable Temperature, Digital Multimeter, Wire Cutter,
-Stand, Soldering Iron Tip Set, Desoldering Pump, Solder Wick, Tweezers, Rosin, Wire - [110 V, US Plug]
-
-* Heat Time: 60 seconds
-* Wattage: 60
-* UNSPSC Code: 41110000
-
-https://www.amazon.com/dp/B07Q2B4ZY9
-
-| $35 | Amazon
 
 |===
 
@@ -371,7 +417,7 @@ Motorcycle Boat ATV Truck Refit Accessories
 
 https://a.aliexpress.com/_rw5xSI
 
-| $6 | AliExpress
+| $4 | AliExpress
 
 
 | Current (Ampere meter) and Voltmeter (2-pack)
@@ -381,9 +427,9 @@ https://a.aliexpress.com/_sr9X34
 | $6 | AliExpress
 
 
-| Light Pipes
+| Light Pipes (long)
 a| Fiber optic light pipes with lenses for panel mount for transfer of inside LED indicators light
-to the front panel (long)
+to the front panel
 
 * SMFLP12.0 492-1291-ND LIGHT PIPE CLEAR FLEXIBLE 12" (5 pack)
 
@@ -396,9 +442,9 @@ https://www.digikey.com/product-detail/en/bivar-inc/SMFLP12.0/492-1291-ND/240723
 | $15, Delivery: $7 | DigiKey
 
 
-| Light Pipes
+| Light Pipes (short)
 a| Fiber optic light pipes with lenses for panel mount for transfer of inside LED indicators light
-to the front panel (short)
+to the front panel
 
 * Digi-Key Part Number 	492-1293-ND (LIGHT PIPE CLEAR FLEXIBLE 6", SMFLP6.0)
 
@@ -429,14 +475,6 @@ https://www.amazon.com/dp/B012CTCWES
 
 
 
-| Heat Shrink
-a| 450pcs Heat Shrink Wire Connectors DIY Kit Heat Shrink Butt Connectors Crimping Tool Heat Shrink Tubing Heat Gun
-Waterproof Marine Automotive Terminals Set
-
-https://www.amazon.com/dp/B07W41Y7CF
-
-| $42 | Amazon
-
 |===
 
 ===== Back Panel
@@ -452,6 +490,17 @@ https://www.amazon.com/dp/B07W41Y7CF
 |Source
 
 
+
+| SAE DC 2-pin connector
+
+a| 14AWG 100CM SAE TO SAE Quick Disconnect Extension Cable Sae Power Connector Heavy Duty With Dust Cap
+
+https://a.aliexpress.com/_rQdwfe
+
+| $5 | AliExpress
+
+
+
 | RF connector for RTL-SDR to panel
 
 a| SMA Male to UHF PL-259 Male RG316 RF Coax Cable 1 ft
@@ -465,7 +514,7 @@ https://www.amazon.com/dp/B07TF6LZC7
 
 
 
-| RF Connector to panel
+| RF Connector to panel for GPS antenna
 
 a| SMA Socket Connector Panel Chassis Mount SMA Female to Female Bulkhead Extendable Antenna Jack Adapter
 for Antennas Wireless LAN Devices Coaxial Cable, Pack of 2
@@ -539,20 +588,20 @@ https://www.amazon.com/dp/B07RPW5XGB
 
 | Waterproof Cable Glands
 
-a| 35pcs Cable Gland Waterproof Cable Fixing Head Suitable for 3mm-14mm M12 M16 M18 M20 M22 Cable Gland Joints Assortment Set (M-Black)
+a| 35pcs Cable Gland Waterproof Cable Fixing Head Suitable for 3mm-14mm M12 M16 M18 M20 M22
+Cable Gland Joints Assortment Set (M-Black)
 
 https://www.amazon.com/dp/B07TSC34D5
 
 | $11 | Amazon
 
+| HDMI and USB 3.0 Panel Mount cord
+a| USB 3.0 & HDMI to HDMI + USB3.0 AUX Extension Dash Panel Waterproof Car Flush Mount Cable For Car
+Boat and Motorcycle - 3ft
 
+https://a.aliexpress.com/_sGY9fK
 
-| HDMI adapters
-a| Cable Matters 2-Pack Micro HDMI to HDMI Adapter (HDMI to Micro HDMI Adapter) 6 Inches with 4K and HDR Support
-
-https://www.amazon.com/dp/B00JDRHQ58
-
-| $9 | Amazon
+| $8.50 | AliExpress
 
 
 
@@ -697,6 +746,14 @@ a| TBD: Model
 | SD Card
 a| TBD: Model
 | $25 | Amazon
+
+
+| HDMI adapters
+a| Cable Matters 2-Pack Micro HDMI to HDMI Adapter (HDMI to Micro HDMI Adapter) 6 Inches with 4K and HDR Support
+
+https://www.amazon.com/dp/B00JDRHQ58
+
+| $9 | Amazon
 
 
 
@@ -959,7 +1016,6 @@ pi@openplotter:~ $ sudo hdparm -Tt /dev/sda
 
 Make sure you use correct tools for:
 
-* Gluing
 * Soldering
 * Screwing
 
@@ -1266,6 +1322,8 @@ https://www.gl-inet.com/products/gl-x750/
 | $119 + Modem: $20 + (Optional not really needed
 bluetooth module and wall mount: $16) | gl-inet.com
 
+
+
 | WiFi RF Connector Cable (*RP*)
 a| U.FL Mini PCI to *Reverse Polarity* SMA Pigtail Antenna WiFi Cable Pack of 2
 
@@ -1274,6 +1332,16 @@ a| U.FL Mini PCI to *Reverse Polarity* SMA Pigtail Antenna WiFi Cable Pack of 2
 https://www.amazon.com/dp/B005UWD0EG
 
 | $5.30 | Amazon
+
+
+
+| Micro Sim Adapter
+a| Sim Card Adapter Kit Includs Nano Sim Adapter / Micro Sim Adapter / Needle / Storage Sheet( Sim Card Holder )
+
+https://www.amazon.com/dp/B00HSOUQXM
+
+| $4.30 | Amazon
+
 
 
 
