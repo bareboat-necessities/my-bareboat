@@ -547,7 +547,7 @@ https://www.amazon.com/dp/B00JDRHQ58
 
 
 
-| GPS G-mouse
+| GPS G-mouse (Optional)
 a| GlobalSat BU-353-S4 USB GPS Receiver (Black)
 
 * 48-Channel All-In-View Tracking
@@ -560,7 +560,7 @@ https://www.amazon.com/dp/B008200LHW
 
 
 
-| GPS Antenna
+| GPS Antenna (Optional)
 
 a| Waterproof Active GPS Antenna with Magnetic Base - 28dB - 3-5V - SMA Connector and Adapter Included
 
@@ -576,7 +576,7 @@ https://www.amazon.com/dp/B0769FRT6X
 
 
 
-| Optional GPS Antenna
+| GPS Antenna
 
 a| GPS Boat Antenna Compatible with Beidou 30dB SMA Male External Navigation Receiver 0.2 Meter Wire
 
