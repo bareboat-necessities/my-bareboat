@@ -313,7 +313,7 @@ image::front-panel.svg[alt="Front Panel Diagram"]
 a| DIY 1 to 2 SAE Power Extension Cable Adapter Connector 2 Pin Quick Connect
 Disconnect Plug SAE Power Extension Cable 18AWG 300mm (Pack of 2)
 
-https://www.aliexpress.com/item/32908624917.html
+https://a.aliexpress.com/_seDmsO
 
 | $10 | AliExpress
 
@@ -325,7 +325,7 @@ a| SAE Connector DC Power Cable, 16 AWG Quick Disconnect (Pack of 2)
 
 NOTE: Used with 5v to distinguish from red/black for 12v
 
-https://www.aliexpress.com/item/33017381703.html
+https://a.aliexpress.com/_sKPLty
 
 | $2 | AliExpress
 
