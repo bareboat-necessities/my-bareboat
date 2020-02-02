@@ -595,6 +595,8 @@ https://www.amazon.com/dp/B07TSC34D5
 
 | $11 | Amazon
 
+
+
 | HDMI and USB 3.0 Panel Mount cord
 a| USB 3.0 & HDMI to HDMI + USB3.0 AUX Extension Dash Panel Waterproof Car Flush Mount Cable For Car
 Boat and Motorcycle - 3ft
@@ -648,8 +650,40 @@ https://www.amazon.com/dp/B07ZBVG1PK
 
 | $16.25 | Amazon
 
+
+| GPS Antenna Cable
+
+a| SMA Male to SMA Female Wifi Antenna Connector Extension RG174 Cable
+
+* 8 meter
+
+https://a.aliexpress.com/_subQWM
+
+| $8.40 | AliExpress
+
+
+| AIS Antenna
+a| Tram VHF Marine Antenna
+
+https://www.amazon.com/dp/B01DUSBJ94
+
+| $24.15 | Amazon
+
+
+
+| AIS Antenna Cable
+
+a| RG-58A/U Coaxial Cable w/Molded PL-259 Connectors (18 feet)
+
+https://www.amazon.com/dp/B001JT1IWU
+
+| $9 | Amazon
+
 |===
 
+===== NMEA Pinout and Color Coding
+
+TBD
 
 ===== Assembly Activities
 
@@ -737,15 +771,16 @@ https://www.amazon.com/dp/B07B416CPK
 
 
 
-| SSD Drive
-a| TBD: Model
+| SSD Flash Drive
+a| TBD: Model Samsung
 | $45 | Amazon
 
 
 
 | SD Card
-a| TBD: Model
+a| TBD: Model Samsung
 | $25 | Amazon
+
 
 
 | HDMI adapters
@@ -780,18 +815,11 @@ https://www.amazon.com/dp/B011HVUEME
 
 a| BerryGPS-IMUv3 - GPS and 10DOF for The Raspberry Pi - Accelerometer, Gyroscope, Magnetometer and Barometric/Altitude Sensor
 
+NOTE: You can ask to pre-solder a header
+
 https://www.amazon.com/dp/B072MNBC9M
 
 | $53.50 | Amazon
-
-
-
-| Tram VHF Marine Antenna
-a| https://www.amazon.com/dp/B01DUSBJ94
-
- For AIS
-
-| $24.15 | Amazon
 
 
 
@@ -805,7 +833,7 @@ https://www.amazon.com/dp/B07GD2BWPY
 
 
 
-| Waterproofing Spray for PCB, Conformal Coating
+| Waterproofing Spray for PCB, Conformal Coating (Optional)
 
 a| 422B-340G Silicone Conformal Coating, Clear, 12 oz Aerosol
 
@@ -813,7 +841,9 @@ https://www.amazon.com/dp/B008O9YGQI
 
 | $22.45 | Amazon
 
-| RTC Clock
+
+
+| RTC Clock (Optional)
 a| ?
 
 | ? | ?
@@ -844,9 +874,8 @@ http://www.suptronics.com/miniPCkits/x180.html
 * RTC Clock
 * Opto couplers for NMEA interfaces
 * Safe power down method
-* Boot from USB SSD
+* Boot from USB SATA SSD
 * Coaxial Lightning Arresters for RF cables
-* Add AmpMeter to Front Panels
 * Mount SD card reader to front panel to swap easier
 
 .Amp Meter Wiring Diagram
@@ -1217,7 +1246,7 @@ an operating system but very capable of running complex programs
 
 * Panel Mounted M5Stack LCD Display with 3 Buttons
 
-* USB 2.0 Port RJ45 connected to M5Stack
+* USB 2.0 Port connected to M5Stack
 
 * Amp and Volt Meter
 
@@ -1345,7 +1374,7 @@ https://www.amazon.com/dp/B00HSOUQXM
 
 
 
-| Antenna Cable
+| WiFi Antenna Cable
 a| Low Loss RG58 WiFi Cable N Male to RP SMA Male Connector Hole in Center Pigtail SMA Cable 10M for
 3G/4G/LTE/Ham/GPS/RF Radio to Antenna or Surge Arrester Use
 
