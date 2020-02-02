@@ -1357,19 +1357,6 @@ to have SD and SIM card extension cords and panel mounted slots.
 
 
 
-| WiFi Router (not needed if you go with GL-X750 option)
-a|
-GL.iNet GL-AR750 Travel AC Router, 300Mbps(2.4G)+433Mbps(5G) Wi-Fi, 128MB RAM, MicroSD Storage Support, OpenWrt/LEDE
-
-* OpenWrt/LEDE (open source)
-* OpenVPN client pre-installed
-* 128MB RAM, up to 128GB MicroSD slot, USB 2.0 port, three Ethernet ports, and optional PoE module
-
-https://www.amazon.com/dp/B07712LKJM
-
-| $45 | Amazon
-
-
 
 | GL-X750 LTE 4G/3G and Wifi Router (It's the best choice, GL-AR750 is not needed if you pick this)
 a| GL.iNet Spitz (GL-X750) 4G Router & 4G Modem (with Sim card slot) for your area and cellular provider
@@ -1385,6 +1372,20 @@ https://www.gl-inet.com/products/gl-x750/
 
 | $119 + Modem: $20 + (Optional not really needed
 bluetooth module and wall mount: $16) | gl-inet.com
+
+
+
+| WiFi Router (not needed if you go with GL-X750 option)
+a|
+GL.iNet GL-AR750 Travel AC Router, 300Mbps(2.4G)+433Mbps(5G) Wi-Fi, 128MB RAM, MicroSD Storage Support, OpenWrt/LEDE
+
+* OpenWrt/LEDE (open source)
+* OpenVPN client pre-installed
+* 128MB RAM, up to 128GB MicroSD slot, USB 2.0 port, three Ethernet ports, and optional PoE module
+
+https://www.amazon.com/dp/B07712LKJM
+
+| $45 | Amazon
 
 
 
@@ -1406,6 +1407,15 @@ a| Tenda S105 V2.0 Slim 5-Port Fast Ethernet Switch
 https://www.microcenter.com/product/486440/tenda-s105-v20-slim-5-port-fast-ethernet-switch
 
 | $9 | Microcenter
+
+
+| Ethernet short patch cables 5-pack
+a| Ethernet short patch cables 5-pack
+
+QVS CAT 5e Snagless Network Cable 6 in. 5 Pack – Multi-Colored
+
+| $12.50 | Microcenter
+
 
 
 
