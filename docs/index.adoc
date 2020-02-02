@@ -871,9 +871,11 @@ https://www.amazon.com/dp/B072MNBC9M
 
 
 | RTC Clock (Optional)
-a| ?
+a| 2pcs DS3231 AT24C32 IIC RTC Clock Module Real Time Clock Module for Arduino Raspberry Pi
 
-| ? | ?
+https://www.amazon.com/dp/B082G6MXVR
+
+| $7 | Amazon
 
 |===
 
@@ -1214,6 +1216,12 @@ https://a.aliexpress.com/_sXL1Bu
 
 | $1 | AliExpress
 
+
+
+| In-Line Marine Fuse Holder
+a| In-Line Marine Fuse Holder 6x30 mm
+
+| $7 | Amazon
 
 
 
