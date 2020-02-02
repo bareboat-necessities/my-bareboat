@@ -308,6 +308,14 @@ image::front-panel.svg[alt="Front Panel Diagram"]
 |Source
 
 
+| 2-Wire DC connectors SAE (Red, **Black**) Pack of 2
+
+a| DIY 1 to 2 SAE Power Extension Cable Adapter Connector 2 Pin Quick Connect
+Disconnect Plug SAE Power Extension Cable 18AWG 300mm (Pack of 2)
+
+https://www.aliexpress.com/item/32908624917.html
+
+| $10 | AliExpress
 
 
 
@@ -354,6 +362,16 @@ https://www.amazon.com/dp/B07Z1Q8Y3G
 NOTE: Used for panel parts: Switches, 12v DC Wires
 
 | $12 | Amazon
+
+
+
+| Voltmeter
+a| DC 12V-24V Digital Panel Voltmeter Voltage Meter Tester Led Display For Car Auto
+Motorcycle Boat ATV Truck Refit Accessories
+
+https://a.aliexpress.com/_rw5xSI
+
+| $6 | AliExpress
 
 
 
