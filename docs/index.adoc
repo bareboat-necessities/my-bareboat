@@ -309,23 +309,17 @@ image::front-panel.svg[alt="Front Panel Diagram"]
 
 
 
-| 2-Wire DC connector (Red, **Black**)
-
-a| SAE Connector DC Power Cable, 16 AWG Quick Disconnect, Dust Cap (6 Pcs 1.2 Foot)
-
-https://www.amazon.com/dp/B07MP9MYKP
-
-| $13 | Amazon
-
 
 
 | 2-Wire DC connector (Red, **White**)
 
-a| SAE Connector DC Power Cable, 16 AWG Quick Disconnect
+a| SAE Connector DC Power Cable, 16 AWG Quick Disconnect (Pack of 2)
 
 NOTE: Used with 5v to distinguish from red/black for 12v
 
-| $3 | Autozone
+https://www.aliexpress.com/item/33017381703.html
+
+| $2 | AliExpress
 
 
 
