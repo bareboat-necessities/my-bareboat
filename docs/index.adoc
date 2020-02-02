@@ -297,7 +297,7 @@ image::front-panel.svg[alt="Front Panel Diagram"]
 
 {zwsp} +
 
-[cols="4", options="header"]
+[cols="1,6,1,1", options="header"]
 |===
 
 
@@ -417,7 +417,7 @@ https://www.amazon.com/dp/B07W41Y7CF
 
 ===== Back Panel
 
-[cols="4", options="header"]
+[cols="1,6,1,1", options="header"]
 |===
 
 
@@ -622,7 +622,7 @@ https://creativecommons.org/licenses/by-sa/4.0/deed.en
 
 ====== Sensors and Parts
 
-[cols="4", options="header"]
+[cols="1,6,1,1", options="header"]
 |===
 
 
@@ -956,7 +956,7 @@ image::cockpit-display.svg[alt="Cockpit Display Diagram"]
 {zwsp} +
 
 
-[cols="4", options="header"]
+[cols="1,6,1,1", options="header"]
 |===
 
 
@@ -1198,7 +1198,7 @@ to have SD and SIM card extension cords and panel mounted slots.
 
 {zwsp} +
 
-[cols="4", options="header"]
+[cols="1,6,1,1", options="header"]
 |===
 
 
