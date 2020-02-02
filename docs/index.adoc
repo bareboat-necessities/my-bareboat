@@ -1076,7 +1076,9 @@ https://www.amazon.com/dp/B0776T8QDC
 
 
 
-| AcuRite 02020 Portable Lightning Detector
+
+
+| AcuRite 02020 Portable Lightning Detector (Optional)
 a|
 * Detects lightning bolts and storms within 25 miles
 * Warning light, audible alarm and text alerts
@@ -1084,6 +1086,16 @@ a|
 https://www.amazon.com/dp/B00EO1H3X8
 
 | $30 | Amazon
+
+
+
+| 12v to 1.5v DC Converter (Optional - For AcuRite Lightning Detector)
+a| AMS1117 1.5V (4.75-12V) output 1.5V Step Down Power Supply Module AMS1117-1.5V
+
+https://a.aliexpress.com/_sXL1Bu
+
+| $1 | AliExpress
+
 
 
 
