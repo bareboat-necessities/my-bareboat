@@ -164,7 +164,7 @@ standoffs. USB hub is mounted under a slight angle to give space to a screw whic
 
 
 .Boat Computer, Inside
-image::computer-internals.jpg[alt="Boat Computer, Inside", width="75%",  pdfwidth="75vw", align="center"]
+image::computer-internals.jpg[alt="Boat Computer, Inside", width="75%", pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -705,7 +705,21 @@ https://www.amazon.com/dp/B001JT1IWU
 
 ===== NMEA Pinout and Color Coding
 
-TBD
+.NMEA Wiring Colors
+image::nmea-wiring-colors.jpg[alt="NMEA Wiring Colors", width="75%", pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
+[cols="1,1,1"]
+|===
+|1|White |Tx+
+|2|Brown |Tx-
+|3|Yellow|Rx+
+|4|Green |Rx-
+|5|Black |Gnd
+|===
+
+{zwsp} +
 
 ===== Assembly Activities
 
