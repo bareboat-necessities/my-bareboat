@@ -192,7 +192,7 @@ with additional software.
 
 ==== Tools and Supplies
 
-[cols="1,6,1,1", options="header"]
+[cols="5,12,3,4", options="header"]
 |===
 
 
@@ -298,7 +298,7 @@ a| Fuses
 
 
 
-[cols="1,6,1,1", options="header"]
+[cols="5,12,3,4", options="header"]
 |===
 
 
@@ -365,7 +365,7 @@ image::front-panel.svg[alt="Front Panel Diagram"]
 
 {zwsp} +
 
-[cols="1,6,1,1", options="header"]
+[cols="5,12,3,4", options="header"]
 |===
 
 
@@ -501,7 +501,7 @@ https://www.amazon.com/dp/B012CTCWES
 
 ===== Back Panel
 
-[cols="1,6,1,1", options="header"]
+[cols="5,12,3,4", options="header"]
 |===
 
 
@@ -764,7 +764,7 @@ https://creativecommons.org/licenses/by-sa/4.0/deed.en
 
 ====== Sensors and Parts
 
-[cols="1,6,1,1", options="header"]
+[cols="5,12,3,4", options="header"]
 |===
 
 
@@ -1110,7 +1110,7 @@ image::cockpit-display.svg[alt="Cockpit Display Diagram"]
 {zwsp} +
 
 
-[cols="1,6,1,1", options="header"]
+[cols="5,12,3,4", options="header"]
 |===
 
 
@@ -1370,7 +1370,7 @@ to have SD and SIM card extension cords and panel mounted slots.
 
 {zwsp} +
 
-[cols="1,6,1,1", options="header"]
+[cols="5,12,3,4", options="header"]
 |===
 
 
