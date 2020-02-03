@@ -2271,6 +2271,19 @@ To reproduce this design you would need only a pipe cutter tool and a drill.
 The top is quick release adjustable angle (two axis). Removable for winter storage.
 The solar panel is quickly detachable and removable.
 
+Most of the components are common marine rail fittings for 1" tubing. The top one component to make tee join
+is aluminum drying or display rack pipe fitting tee connector for 25mm round tube
+available from many vendors. It works perfectly. I use an eye nut for quick release instead of a regular nut.
+
+There is also a closed body turnbuckle in the design. It needs a securing wire to be fixed in place to prevent
+unscrewing.
+
+The pipe cutter which worked perfectly easy for me on stainless steel is this one:
+
+https://www.amazon.com/dp/B077966G15
+
+The markings say "GT-Q50A" which points to R'DEER tool (Hong Kong brand).
+
 [.text-center]
 
 .Solar Panel/Wind Generator/Radar Pole Mast for Sailboat
