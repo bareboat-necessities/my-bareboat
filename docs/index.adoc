@@ -8,6 +8,8 @@ mgrouch <mgrouch@users.noreply.github.com>
 ifdef::backend-pdf[]
 :source-highlighter: rouge
 :toc-placement!: manual
+:pdf-page-size: Letter
+:plantumlconfig: plantuml.cfg
 endif::[]
 ifndef::backend-pdf[]
 :toc-placement: left
