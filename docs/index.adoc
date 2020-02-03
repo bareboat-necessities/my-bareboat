@@ -710,6 +710,9 @@ image::nmea-wiring-colors.jpg[alt="NMEA Wiring Colors", width="75%", pdfwidth="7
 
 {zwsp} +
 
+Looking at the back side from the back
+{zwsp} +
+
 [cols="1,1,1"]
 |===
 |1|White |Tx+
@@ -720,6 +723,12 @@ image::nmea-wiring-colors.jpg[alt="NMEA Wiring Colors", width="75%", pdfwidth="7
 |===
 
 {zwsp} +
+
+.NMEA Pins 1,2,3,4,5 (1 is left, 5 is right)
+image::nmea-pins.jpg[alt="NMEA Pins 1,2,3,4,5 (1 is left, 5 is right)", width="75%", pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
 
 ===== Assembly Activities
 
