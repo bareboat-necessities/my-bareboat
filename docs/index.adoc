@@ -706,11 +706,8 @@ https://www.amazon.com/dp/B001JT1IWU
 ===== NMEA Pinout and Color Coding
 
 .NMEA Wiring Colors
-image::nmea-wiring-colors.jpg[alt="NMEA Wiring Colors", width="75%", pdfwidth="75vw", align="center"]
+image::nmea-wiring-colors.jpg[alt="NMEA Wiring Colors", width="50%", pdfwidth="50vw", align="center"]
 
-{zwsp} +
-
-Looking at the back side from the back
 {zwsp} +
 
 [cols="1,1,1"]
@@ -725,7 +722,7 @@ Looking at the back side from the back
 {zwsp} +
 
 .NMEA Pins 1,2,3,4,5 (1 is left, 5 is right)
-image::nmea-pins.jpg[alt="NMEA Pins 1,2,3,4,5 (1 is left, 5 is right)", width="75%", pdfwidth="75vw", align="center"]
+image::nmea-pins.jpg[alt="NMEA Pins 1,2,3,4,5 (1 is left, 5 is right)", width="50%", pdfwidth="50vw", align="center"]
 
 {zwsp} +
 
@@ -922,6 +919,9 @@ for raspberry pi 4. So I'd use x710 and x180 combo.
 
 http://www.suptronics.com/miniPCkits/x180.html
 
+
+NOTE: Another couple of interesting boards are discussed here http://forum.openmarine.net/showthread.php?tid=1666&page=3
+NMEA multiplexer, current, voltage and RPM sensors for engine/battery monitoring and fridge and thermostat control board.
 
 * RTC Clock
 * Opto couplers for NMEA interfaces
