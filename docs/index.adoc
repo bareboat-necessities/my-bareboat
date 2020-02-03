@@ -710,7 +710,9 @@ image::nmea-wiring-colors.jpg[alt="NMEA Wiring Colors", width="50%", pdfwidth="5
 
 {zwsp} +
 
-[cols="1,1,1"]
+NMEA Pins:
+
+[cols="1,4,2", width="30%"]
 |===
 |1|White |Tx+
 |2|Brown |Tx-
@@ -721,8 +723,8 @@ image::nmea-wiring-colors.jpg[alt="NMEA Wiring Colors", width="50%", pdfwidth="5
 
 {zwsp} +
 
-.NMEA Pins 1,2,3,4,5 (1 is left, 5 is right)
-image::nmea-pins.jpg[alt="NMEA Pins 1,2,3,4,5 (1 is left, 5 is right)", width="50%", pdfwidth="50vw", align="center"]
+.NMEA Pins 1-2-3-4-5. 1 is left, 5 is right
+image::nmea-pins.jpg[alt="NMEA Pins 1-2-3-4-5. 1 is left, 5 is right", width="50%", pdfwidth="50vw", align="center"]
 
 {zwsp} +
 
