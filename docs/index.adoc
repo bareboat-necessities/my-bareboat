@@ -1807,6 +1807,8 @@ image::boat-network/openwrt-wan-settings.png[alt="OpenWrt WAN Settings", width="
 
 {zwsp} +
 
+On the screenshot above UniFiNet would be marina's WiFi SSID.
+
 .OpenWrt Local WiFi Settings
 image::boat-network/openwrt-settings.png[alt="OpenWrt Local WiFi Settings", width="75%",  pdfwidth="75vw", align="center"]
 
