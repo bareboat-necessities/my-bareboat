@@ -1753,7 +1753,7 @@ OpenCPN installed on an android tablet connected via WiFi to KPLex. And with thi
 and local private WiFi.
 
 NOTE: FlashDrive Stick inserted into the router USB port is automatically shared on network via samba. You should
-mount it using this command:
+mount it using this command from Raspberry Pi:
 
 [source, shell]
 ------
