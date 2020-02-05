@@ -1252,6 +1252,15 @@ a| In-Line Marine Fuse Holder 6x30 mm
 
 
 
+| SSD Flash Drive
+a| Samsung Fit Plus USB 3.1 Flash Drive 128GB
+
+https://www.amazon.com/dp/B07D7PDLXC
+
+| $30 | Amazon
+
+
+
 | Wireless Phone Charger and Holder (Optional: I think I can DIY much cheaper)
 a| ScanStrut ROKK Wireless - Active (SC-CW-04E) 12v / 24v Waterproof Wireless Phone Charging Mount
 
@@ -1762,6 +1771,21 @@ sudo mount -t cifs //gl-x750/SamsungUSB /media/Share -o user=guest,vers=1.0
 
 ===== Local WiFi, VNC, etc
 
+Raspberry Pi4 supports only one band in access point (AP) mode. So it is either 2.4GHz or 5GHz but not both.
+I've set it up to be on 5G for faster speed. For IoT devices I've enabled 2G band on the router.
+
+On the screen shots below their SSIDs are "boatWiFi-5g" and "boatWiFi-IoT".
+
+.Boat Network Settings
+image::boat-network/boat-access-point.png[alt="Boat Network Settings", width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
+.Boat Access Point Status
+image::boat-network/boat-access-point-status.png[alt="Boat Access Point Status", width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
 ====== VNC
 
 https://www.realvnc.com/raspberrypi/
@@ -1769,6 +1793,8 @@ https://www.realvnc.com/raspberrypi/
 ===== WiFi Gateway
 
 https://www.gl-inet.com/products/gl-ar750/
+
+
 
 ====== OpenVPN
 
@@ -1811,7 +1837,7 @@ https://www.openairinterface.org/
 {zwsp} +
 
 .Boat Router Testbed
-image::boat-router/boat-router-testbed.jpg[alt="Boat Router Testbed", width="75%",  pdfwidth="75vw", align="center", rotate]
+image::boat-router/boat-router-testbed.jpg[alt="Boat Router Testbed", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -2175,6 +2201,18 @@ Check your set up
 -----
 openplotter-startup check
 -----
+
+==== SignalK Connections
+
+. Set up SignalK to Sync up time with GPS.
+. Set up SignalK to translate data into NMEA0183
+. The created connections should look like this:
+
+.SignalK Connections
+image::boat-network/signalk-connections.png[SignalK Connections, width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
 
 ==== Calibration
 
