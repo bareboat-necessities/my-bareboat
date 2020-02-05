@@ -1720,6 +1720,7 @@ direction=out
 
 Add startup script
 
+[source]
 ----
 
 cat > /etc/init.d/modem-gps-init
