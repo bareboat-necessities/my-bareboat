@@ -1794,6 +1794,23 @@ https://www.realvnc.com/raspberrypi/
 
 https://www.gl-inet.com/products/gl-ar750/
 
+In web UI of your OpenWrt router:
+
+. Click internet.
+. Add repeater.
+. Connect to marina WiFi
+
+The UI should look like this when you set up LTE and port WiFi connections:
+
+.OpenWrt WAN Settings
+image::boat-network/openwrt-wan-settings.png[alt="OpenWrt WAN Settings", width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
+.OpenWrt Local WiFi Settings
+image::boat-network/openwrt-settings.png[alt="OpenWrt Local WiFi Settings", width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
 
 
 ====== OpenVPN
