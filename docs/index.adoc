@@ -1687,8 +1687,19 @@ image::KPlex-OpenWrt-Router.png[alt="KPlex on OpenWrt Router"]
 AT command for the GPS needs to be run every time on boot. This needs to be scripted.
 Install the program called 'socat'. With it you can send commands to the modem from command line.
 
+[source]
+----
  echo "AT+QGPS=1" | socat - /dev/ttyUSB2,crnl
+----
 
+[source]
+----
+vi /etc/kpex.conf
+----
+
+Put these lines
+
+[source]
 ----
 
 [serial]
