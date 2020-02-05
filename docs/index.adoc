@@ -730,6 +730,18 @@ image::nmea-pins.jpg[alt="NMEA Pins 1-2-3-4-5. 1 is left, 5 is right", width="50
 
 {zwsp} +
 
+When wiring NMEA 0183 devices:
+
+ Transmit (Tx) (+) should connect to a receive (Rx) (+)
+ Tx (-) should connect to a Rx (-)
+ Rx (+) should connect to a Tx (+)
+ Rx (-) should connect to a Tx (-)
+
+. In the event the sending device has a Tx (-), but there is not a corresponding Rx (-) on the receiving device,
+leave the sending device's Tx (-) disconnected. Failure to follow this guideline can damage the sending device.
+
+. In the event that the receiving device has a Rx (-), but there is no corresponding Tx (-) on the sending device,
+bring the Rx (-) to ground.
 
 ===== Assembly Activities
 
