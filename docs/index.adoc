@@ -2303,6 +2303,37 @@ So for calibration you might need to bring a higher resolution HDMI screen.
 NOTE: When complicated issues arise (if you think it is hardware related) try to find out a chipset of the device in question and start
 googling the chipset and the symptoms. Usually it gives better results than just searching by the vendor/model.
 
+=== SDR
+
+Install SDR receiver app called GQRX
+
+[source, shell]
+-----
+sudo apt install rtl-sdr rtl-ais gqrx-sdr
+-----
+
+
+
+Easiest way to try your RTL-SDR dongle is via tuning to FM station.
+
+. Launch GQRX
+. Set up input SDR dongle and audio output
+. Tune to a FM station (Example 104.3 MHz in my area) (see screen shot)
+. Adjust gain in audio control. You should hear clear radio.
+
+.Receiving FM radio with RTL-SDR
+image::boat-computer/gqrx-sdr-receiver.png[alt="Receiving FM radio with RTL-SDR", width="100%",  pdfwidth="100vw", align="center"]
+
+{zwsp} +
+
+
+See also:
+
+https://danielpocock.com/quickstart-sdr-ham-radio-gqrx-gnu-radio/
+
+https://danielpocock.com/building-loop-antenna-sdr-shortwave-ham-oscal17/
+
+
 === AIS
 
 Setting up dAISy AIS is very straight forward. It does require higher baud rate, so make sure you specify it correctly.
