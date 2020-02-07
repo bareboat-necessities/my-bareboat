@@ -71,7 +71,7 @@ This boat electronics project includes:
 * Other NMEA devices, engine/battery status, bilge pump monitoring, etc
 * Optional air mouse with a wireless keyboard and a touchpad
 * Lightning EMI sensor and alarm
-* RTL-SDR for weather fax, satellite weather, AIS, RTL 433, morse code decoder, etc
+* RTL-SDR for weather fax, NavTex, satellite weather, AIS, RTL 433, morse code decoder, etc
 * Boat IoT Integration via MQTT
 * Can be used with Iridium Satellite Modems
 * Can be used for processing transmissions received from SSB radio via audio interface
@@ -885,7 +885,17 @@ https://shop.wegmatt.com/products/daisy-ais-receiver?variant=7104299008036
 
 a| RTL-SDR Blog V3 R820T2 RTL2832U 1PPM TCXO HF Bias Tee SMA Software Defined Radio with Dipole Antenna Kit
 
+* RTL-SDR blog software defined radio receiver with RTL2832U ADC chip, R820T2 tuner, 1PPM TCXO,
+* SMA F connector and aluminium case with passive cooling.
+* Tunes from 500 kHz to 1.7 GHz with up to 3.2 MHz (2.4 MHz stable) of bandwidth
+
 https://www.amazon.com/dp/B011HVUEME
+
+NOTE: There might be a better choice: "100KHz-1.7GHz Full Band UV HF RTL-SDR USB Tuner Receiver R820T+8232U Ham Radio"
+on AliExpress and other stores. It has 2 antenna connectors one for HF 100KHz~30MHz band and another one for
+25MHz~1.7GHz VHF/UHF bands. 100KHz~30MHz range is needed for NavTex messages and WeatherFax.
+https://www.aliexpress.com/item/32810030125.html
+
 
 | $30 | Amazon
 
