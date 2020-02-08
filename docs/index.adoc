@@ -2504,6 +2504,8 @@ Another Raspberry Pi Boating Project
 
 * https://www.openscad.org/[OpenSCAD]
 
+* https://easyeda.com/[PCB Design]
+
 * https://www.nasamarine.com/product/clipper-wireless-wind/[NASA Marine Wireless Wind Instrument]
 
 * https://rigpi.net/[RigPi]
