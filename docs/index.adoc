@@ -891,11 +891,12 @@ a| RTL-SDR Blog V3 R820T2 RTL2832U 1PPM TCXO HF Bias Tee SMA Software Defined Ra
 
 https://www.amazon.com/dp/B011HVUEME
 
-NOTE: There might be a better choice: "100KHz-1.7GHz Full Band UV HF RTL-SDR USB Tuner Receiver R820T+8232U Ham Radio"
-on AliExpress and other stores. It has 2 antenna connectors one for HF 100KHz~30MHz band and another one for
+NOTE: There might be a better suitable choice: "100KHz-1.7GHz Full Band UV HF RTL-SDR USB Tuner Receiver R820T+8232U Ham Radio"
+on AliExpress ($22) and other stores. It has 2 antenna connectors one for HF 100KHz~30MHz band and another one for
 25MHz~1.7GHz VHF/UHF bands. 100KHz~30MHz range is needed for NavTex messages and WeatherFax.
-https://www.aliexpress.com/item/32810030125.html
+https://a.aliexpress.com/_sfo9ho
 
+NOTE: Or SdrPlay dongle (more expensive, about $120)
 
 | $30 | Amazon
 
@@ -948,6 +949,11 @@ http://www.suptronics.com/miniPCkits/x180.html
 
 NOTE: Another couple of interesting boards are discussed here http://forum.openmarine.net/showthread.php?tid=1666&page=3
 NMEA multiplexer, current, voltage and RPM sensors for engine/battery monitoring and fridge and thermostat control board.
+
+https://github.com/boatybits/boatymonpy
+
+https://github.com/boatybits/ESP_Fridge
+
 
 * RTC Clock
 * Opto couplers for NMEA interfaces
