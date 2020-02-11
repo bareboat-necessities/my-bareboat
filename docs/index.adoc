@@ -2349,6 +2349,13 @@ https://danielpocock.com/quickstart-sdr-ham-radio-gqrx-gnu-radio/
 
 https://danielpocock.com/building-loop-antenna-sdr-shortwave-ham-oscal17/
 
+=== NavTex
+
+https://en.wikipedia.org/wiki/List_of_Navtex_stations
+
+Decoder software for NavText is available here. Download the Java version to work on raspberry pi.
+http://www.frisnit.com/navtex/
+
 
 === AIS
 
