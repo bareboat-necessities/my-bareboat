@@ -2357,6 +2357,26 @@ Decoder software for NavText is available here. Download the Java version to wor
 http://www.frisnit.com/navtex/
 
 
+[cols="5,12,3,4", options="header"]
+|===
+
+
+
+|Item
+|Description
+|Cost
+|Source
+
+
+
+| Antenna for SDR radio weather fax and NavTex
+a|   Active Antenna 10Khz To 30Mhz Mini Whip Hf Lf Vlf Vhf Sdr Rx With Portable Cable
+https://a.aliexpress.com/_sUWwnl
+
+| $26.10 | AliExpress
+
+|===
+
 === AIS
 
 Setting up dAISy AIS is very straight forward. It does require higher baud rate, so make sure you specify it correctly.
