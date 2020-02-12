@@ -2356,6 +2356,8 @@ https://en.wikipedia.org/wiki/List_of_Navtex_stations
 Decoder software for NavText is available here. Download the Java version to work on raspberry pi.
 http://www.frisnit.com/navtex/
 
+OpenSource (GPL Licensed) NavTex decoder: https://arachnoid.com/JNX/
+
 
 [cols="5,12,3,4", options="header"]
 |===
