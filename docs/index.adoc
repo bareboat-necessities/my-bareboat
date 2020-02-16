@@ -954,6 +954,7 @@ https://github.com/boatybits/boatymonpy
 
 https://github.com/boatybits/ESP_Fridge
 
+NOTE: One more board: https://github.com/mairas/sailor-hat-hardware/blob/master/README.md
 
 * RTC Clock
 * Opto couplers for NMEA interfaces
@@ -1171,6 +1172,9 @@ https://www.amazon.com/dp/B008ZNWOYY
 a| Argonaut M7-gen2 + Water Sealed back
 
 https://www.argonautcomputer.com/products/m7-smart-touch-monitor
+
+NOTE: Here is another (DIY) option:
+http://forum.openmarine.net/showthread.php?tid=1547&page=2
 
 | $518 | argonautcomputer.com
 
@@ -2385,6 +2389,10 @@ Setting up dAISy AIS is very straight forward. It does require higher baud rate,
 After plugging into USB and antenna and registering in openplotter-serial in device mapping and connections it should
 start giving AIS targets sentences via NMEA. If it doesn't see any ships close by then it doesn't send any sentences.
 
+==== AIS with SDR
+
+https://pysselilivet.blogspot.com/2018/06/ais-reciever-for-raspberry.html
+
 === Weather
 
 There are multiple ways to receive weather predictions:
@@ -2489,6 +2497,8 @@ Another Raspberry Pi Boating Project
 
 * https://openplotter.readthedocs.io/en/latest/[OpenPlotter Documentation]
 
+* https://cloudsmith.io/~openplotter/repos/openplotter/packages/[OpenPlotter builds]
+
 * http://pysselilivet.blogspot.com/2019/08/openplotter-beta-v2-quick-install-guide.html[OpenPlotter 2.x beta install guide]
 
 * http://forum.openmarine.net/[OpenPlotter Forums]
@@ -2504,6 +2514,8 @@ Another Raspberry Pi Boating Project
 * http://www.stripydog.com/kplex/[KPlex]
 
 * https://github.com/canboat[CAN Boat]
+
+* https://open-boat-projects.org/[Open Boat Projects]
 
 * https://squidd.io/squiddio_pi[Squidd.io as an OpenCPN plugin]
 
