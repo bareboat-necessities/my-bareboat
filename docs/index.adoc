@@ -2419,7 +2419,7 @@ See: https://www.instructables.com/id/Raspberry-Pi-NOAA-Weather-Satellite-Receiv
 
 I've looked at number of media and music player projects available on raspberry pi and the one
 which works nice on openplotter and cockpit touch display is Mopidy with Spotify extension
-and Web UI extension.
+and MusicBox Web UI extension.
 
 Install from apt.mopidy.com
 
