@@ -2479,9 +2479,17 @@ Run:
 
 Open Chromium browser http://localhost:6680
 
+[.text-center]
+
+.Mopidy MusicBox on Openplotter
+image::boat-computer/mopidy-musicbox.png[alt="Mopidy MusicBox on Openplotter", width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
 You should later register mopidy as a service to start automatically and create a menu
 link to open Mopidy Web UI directly from desktop menu.
 
+{zwsp} +
 
 === Testing
 
@@ -2494,6 +2502,13 @@ image::boat-computer/boat-network-testbed.jpg[alt="Test Setup", width="75%",  pd
 
 .Cockpit Temporary Testbed
 image::boat-computer/cockpit-temp-testbed.jpg[alt="Cockpit Temporary Testbed", width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
+[.text-center]
+
+.Argonaut M7 in Navpod with OpenPlotter
+image::boat-computer/argonaut-m7-in-navpod.jpg[alt="Argonaut M7 in Navpod with OpenPlotter", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
