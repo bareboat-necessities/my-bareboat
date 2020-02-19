@@ -2454,6 +2454,9 @@ sudo python3 -m pip install mem systems
 # Install Mopidy MusicBox Web Client:
 sudo python3 -m pip install Mopidy-MusicBox-Webclient
 
+# Install YouTube support
+sudo python3 -m pip install --pre Mopidy-YouTube
+
 ----
 
 Configure Spotify https://mopidy.com/ext/spotify/
