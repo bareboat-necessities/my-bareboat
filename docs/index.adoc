@@ -2465,6 +2465,9 @@ Edit mopidy.conf
 
 [source]
 ----
+[mpd]
+hostname = ::
+
 [spotify]
 enable = true
 username = alice
@@ -2492,6 +2495,8 @@ image::boat-computer/mopidy-musicbox.png[alt="Mopidy MusicBox on Openplotter", w
 
 You should later register mopidy as a service to start automatically and create a menu
 link to open Mopidy Web UI directly from desktop menu.
+
+You can use your smart phone to control the player with one of the MPD client applications.
 
 {zwsp} +
 
