@@ -2414,6 +2414,78 @@ See: https://www.instructables.com/id/Raspberry-Pi-NOAA-Weather-Satellite-Receiv
 
 === NMEA Wind Sensor
 
+
+=== Music Player
+
+I've looked at number of media and music player projects available on raspberry pi and the one
+which works nice on openplotter and cockpit touch display is Mopidy with Spotify extension
+and Web UI extension.
+
+Install from apt.mopidy.com
+
+See:
+https://docs.mopidy.com/en/latest/installation/raspberrypi/
+
+https://docs.mopidy.com/en/latest/installation/debian/#debian-install
+
+
+For Raspberry PI you should first try installing via apt. If pre-build package
+doesn't exists then you use python3 pip.
+
+[source, shell]
+----
+
+# Add the archive’s GPG key:
+wget -q -O - https://apt.mopidy.com/mopidy.gpg | sudo apt-key add -
+
+# Add the APT repo to your package sources:
+sudo wget -q -O /etc/apt/sources.list.d/mopidy.list https://apt.mopidy.com/buster.list
+
+sudo adduser mopidy video
+
+# Install Mopidy and all dependencies:
+sudo apt update
+sudo apt install mopidy mopidy-mpd mopidy-spotify
+
+# Install some needed packages
+sudo python3 -m pip install mem systems
+
+# Install Mopify Client:
+#sudo python3 -m pip install Mopidy-Mopify
+
+# Install Mopidy Web Client:
+sudo python3 -m pip install Mopidy-MusicBox-Webclient
+
+----
+
+Configure Spotify https://mopidy.com/ext/spotify/
+
+Edit mopidy.conf
+
+[source]
+----
+[spotify]
+enable = true
+username = alice
+password = secret
+client_id = ... client_id value you got from https://mopidy.com/ext/spotify/ ...
+client_secret = ... client_secret value you got from https://mopidy.com/ext/spotify/ ...
+----
+
+
+Run:
+
+[source, shell]
+----
+/usr/bin/mopidy
+----
+
+Open Chromium browser http://localhost:6680
+
+You should later register mopidy as a service to start automatically and create a menu
+link to open Mopidy Web UI directly from desktop menu.
+
+
 === Testing
 
 Another test site:
