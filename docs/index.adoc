@@ -2446,7 +2446,7 @@ sudo adduser mopidy video
 
 # Install Mopidy and all dependencies:
 sudo apt update
-sudo apt install mopidy mopidy-mpd mopidy-spotify
+sudo apt install mopidy mopidy-mpd mopidy-spotify mopidy-tunein
 
 # Install some needed packages
 sudo python3 -m pip install mem systems
