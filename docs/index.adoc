@@ -2497,6 +2497,14 @@ You should later register mopidy as a service to start automatically and create 
 link to open Mopidy Web UI directly from desktop menu.
 
 You can use your smart phone to control the player with one of the MPD client applications.
+I used 'MPDPlayer' on iphone. You create connection:
+
+ openplotter:6600
+
+or
+
+ 10.10.10.1:6600
+
 
 {zwsp} +
 
