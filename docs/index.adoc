@@ -2450,10 +2450,7 @@ sudo apt install mopidy mopidy-mpd mopidy-spotify
 # Install some needed packages
 sudo python3 -m pip install mem systems
 
-# Install Mopify Client:
-#sudo python3 -m pip install Mopidy-Mopify
-
-# Install Mopidy Web Client:
+# Install Mopidy MusicBox Web Client:
 sudo python3 -m pip install Mopidy-MusicBox-Webclient
 
 ----
