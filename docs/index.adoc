@@ -73,6 +73,7 @@ This boat electronics project includes:
 * Lightning EMI sensor and alarm
 * RTL-SDR for weather fax, NavTex, satellite weather, AIS, RTL 433, morse code decoder, etc
 * Boat IoT Integration via MQTT
+* Music Player
 * Can be used with Iridium Satellite Modems
 * Can be used for processing transmissions received from SSB radio via audio interface
 * Variety of options of using wireless handheld devices such as smart phones and tablets
