@@ -1014,7 +1014,7 @@ image::opencpn-2.png[alt="OpenCPN Vector", align="center"]
 .OpenCPN Dashboard
 image::opencpn-3.png[alt="OpenCPN Dashboard", align="center"]
 
-Saving it as a template in OPenCPN was a bit tricky on 7" screen as OpenCPN window is too big to see 'OK' button.
+Saving it as a template in OpenCPN was a bit tricky on 7" screen as OpenCPN window is too big to see 'OK' button.
 I had to press Ctrl-Tab twice followed by Enter, doing it basically blindly.
 
 {zwsp} +
