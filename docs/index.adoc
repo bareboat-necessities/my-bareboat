@@ -2011,6 +2011,15 @@ telnet localhost 8375
 
 * Grafana http://localhost:3001
 
+* Freeboard (in-browser chart plotter) http://localhost:3000/@signalk/freeboard-sk/
+
+* Instruments Dashboard http://localhost:3000/@signalk/instrumentpanel/
+
+* KIP Dashboard http://localhost:3000/@mxtommy/kip/
+
+* SailGauge Wind Display http://localhost:3000/@signalk/sailgauge/
+
+* Music Player (Mopidy) http://localhost:6680
 
 
 === Openplotter
@@ -2398,12 +2407,14 @@ https://pysselilivet.blogspot.com/2018/06/ais-reciever-for-raspberry.html
 
 There are multiple ways to receive weather predictions:
 
-* Download GRIB files via internet. (Only works if internet is available).
+* Download GRIB files via internet. (Only works if internet is available). You have this functionality
+as a part of GRIB OpenCPN plugin.
 
 * GRIB files via SSB radio (out of scope here)
 
 * Weather FAX (some people just connect radio to computer audio input, record audio file and covert it
-using utility into image). It would be nice to completely automate this process using RTL-SDR.
+using utility into image). You have this supported via OpenCPN WeatherFax plugin.
+It would be nice to completely automate this process using RTL-SDR.
 +
 See: https://www.rtl-sdr.com/tag/weather-fax/
 
@@ -2415,11 +2426,16 @@ See: https://www.instructables.com/id/Raspberry-Pi-NOAA-Weather-Satellite-Receiv
 
 === NMEA Wind Sensor
 
+You can connect NMEA to your boat computer or
+for older wind transducers there is a hard way:
+
+https://hackaday.io/project/12986-nasa-wind-decoder
+
 
 === Music Player
 
 I've looked at number of media and music player projects available on raspberry pi and the one
-which works nice on openplotter and cockpit touch display is Mopidy with Spotify extension
+which works nice on OpenPlotter and cockpit touch display is Mopidy with Spotify extension
 and MusicBox Web UI extension.
 
 Install from apt.mopidy.com
@@ -2586,6 +2602,12 @@ http://raspex.exton.se/?p=1234
 
 Another Raspberry Pi Boating Project
 
+=== LysMarine
+
+http://lysmarineos.com
+
+LysMarine
+
 == Links
 
 * https://opencpn.org/[OpenCPN]
@@ -2627,6 +2649,10 @@ Another Raspberry Pi Boating Project
 * http://openskipper.org/[OpenSkipper]
 
 * https://marinux.tuxfamily.org/[Marinux]
+
+* http://navigatrix.net/[Navigatrix]
+
+* http://lysmarineos.com[LysMarine]
 
 * https://www.raspberrypi.org/[RaspberryPi]
 
