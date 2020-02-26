@@ -2335,6 +2335,7 @@ googling the chipset and the symptoms. Usually it gives better results than just
 
 === SDR
 
+==== GQRX
 Install SDR receiver app called GQRX
 
 [source, shell]
@@ -2362,6 +2363,21 @@ See also:
 https://danielpocock.com/quickstart-sdr-ham-radio-gqrx-gnu-radio/
 
 https://danielpocock.com/building-loop-antenna-sdr-shortwave-ham-oscal17/
+
+==== Cubic SDR
+
+Another SDR application available for Raspberry Pi is CubicSDR:
+
+[source, shell]
+----
+sudo apt install cubicsdr
+----
+
+
+.Cubic SDR
+image::boat-computer/cubic-sdr.png[alt="Cubic SDR", width="100%",  pdfwidth="100vw", align="center"]
+
+{zwsp} +
 
 === NavTex
 
@@ -2422,6 +2438,26 @@ See: https://www.rtl-sdr.com/tag/weather-fax/
 +
 See: https://www.instructables.com/id/Raspberry-Pi-NOAA-Weather-Satellite-Receiver/
 
+Discussion about WeatherFax on Raspberry Pi https://www.raspberrypi.org/forums/viewtopic.php?t=260690
+
+
+==== QtVlm
+
+OpenCPN Weather plugins provide weather and weather routing functionality.
+
+There is one more (non-opensource) software solution called 'QtVlm'
+
+https://www.meltemus.com/
+
+which is available for Raspberry Pi.
+
+I've installed and played with it and I have found it it too difficult to use on a small cockpit touchscreen.
+
+
+.QtVlm
+image::boat-computer/qtvlm.png[alt="QtVlm", width="100%",  pdfwidth="100vw", align="center"]
+
+{zwsp} +
 
 
 === NMEA Wind Sensor
