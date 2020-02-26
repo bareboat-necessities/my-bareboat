@@ -9,7 +9,7 @@ sudo apt-get update
 sudo apt install gpsd klex
 
 # Additional SDR related utilities
-sudo apt install rtl-sdr rtl-ais predict hamfax
+sudo apt install rtl-sdr rtl-ais predict hamfax gnuradio
 
 # GQRX SDR Radio Receiver
 sudo apt install gqrx-sdr
