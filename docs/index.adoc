@@ -2432,6 +2432,34 @@ for older wind transducers there is a hard way:
 https://hackaday.io/project/12986-nasa-wind-decoder
 
 
+=== Text to Speech
+
+Visual alarms are of no use if you do not watch. So we could add text-to-speech:
+
+[source, shell]
+----
+wget -q https://ftp-master.debian.org/keys/release-10.asc -O- | sudo apt-key add -
+echo "deb http://deb.debian.org/debian buster non-free" | sudo tee -a /etc/apt/sources.list
+sudo apt update
+sudo apt install libttspico-utils
+sudo apt install sox
+----
+
+Example of playing message:
+[source, shell]
+----
+pico2wave -l  en-US -w /tmp/pico2wave.wav "Passenger Announcement: \
+ Follow these few rules to make your trip enjoyable for everyone on board. \
+ Move around the boat on its high side. \
+ Always hold on to something steady and that does not move: shrouds, grab rail when you are outside of the cabin. \
+ If you can not swim, wear a life jacket if you move outside of the cabin. \
+ Watch your head and listen to the crew warnings when you are around the boom. The boom can swing fast if the wind changes. \
+ In case if someone falls overboard, throw anything that floats to the victim and shout: Man overboard! pointing at the victim. \
+ Do not put into a marine toilet anything, which you have not eaten or drunk first. \
+ Do not throw plastic overboard. \
+ Watch the horizon. If you feel sea sick, try to stay outside of the cabin." && play -qV0 /tmp/pico2wave.wav treble 24  gain -l 6
+----
+
 === Music Player
 
 I've looked at number of media and music player projects available on raspberry pi and the one
