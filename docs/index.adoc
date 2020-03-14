@@ -2747,11 +2747,11 @@ image::boat-computer/argonaut-m7-in-navpod.jpg[alt="Argonaut M7 in Navpod with O
 . Marine Traffic
 . Ship Finder
 . PredictWind
-. US Coast Guard
-. SeaTow
 . NOAA Weather
 . Weather Underground
 . Tide Alert
+. US Coast Guard
+. SeaTow
 . Snag a Slip
 . ActiveCaptain
 . CruisersSailingForums
