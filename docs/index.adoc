@@ -1865,6 +1865,19 @@ https://www.helium.com/
 
 ===== Boat IoT, MQTT, M5Stack
 
+M5Stack is programmed using Arduino IDE. I've set it up on iMac following these instructions:
+
+https://docs.makerfactory.io/m5stack/core/quickstart/macos/
+
+The basic steps are:
+
+* Install cp210x driver
+* Install Arduino IDE
+* Register board manager
+* Download and install m5stack libraries (m5stack core development kit, m5ez, ezTime)
+
+NMEA Display software for M5Stack https://github.com/andyrbarrow/MQTTNMEADisplay
+
 ====== MQTT
 
 http://mqtt.org/
