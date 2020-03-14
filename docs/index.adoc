@@ -2738,6 +2738,27 @@ image::boat-computer/argonaut-m7-in-navpod.jpg[alt="Argonaut M7 in Navpod with O
 
 {zwsp} +
 
+== Mobile Applications (Smart Phones and Tablets)
+
+. iNavX
+. Navionics
+. OpenCPN
+. SeaIQ
+. Marine Traffic
+. Ship Finder
+. PredictWind
+. US Coast Guard
+. SeaTow
+. NOAA Weather
+. Weather Underground
+. Tide Alert
+. Snag a Slip
+. ActiveCaptain
+. CruisersSailingForums
+. Boatsetter
+. GoSailing
+. NauticEd
+. Knot Guide
 
 == Pole for Sailboat Solar Panel / Wind Generator
 
