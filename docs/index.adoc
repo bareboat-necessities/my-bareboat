@@ -1624,6 +1624,9 @@ https://m5stack.com/products/lan-module
 
 https://m5stack.com/collections/m5-base/products/lan-module
 
+NOTE: You can use Base26 module instead https://m5stack.com/collections/m5-base/products/base-26proto-industrial-board-module
+you will have only WiFi connectivity
+
 | $14 | m5stack.com
 
 
@@ -2219,7 +2222,7 @@ For the original NOAA Chart Tile Service please visit http://tileservice.charts.
 
 
 .Map of tileset sections
-image::https://raw.githubusercontent.com/vokkim/noaa-nautical-charts/master/map.jpg[Map of tileset sections, width="75%",  pdfwidth="75vw", align="center"]
+image::https://raw.githubusercontent.com/vokkim/noaa-nautical-charts/master/map.jpg[Map of tileset sections, width="95%",  pdfwidth="95vw", align="center"]
 
 
 http://tileservice.charts.noaa.gov/tileset.html#50000_1-locator[NOAA Tileset locator]
