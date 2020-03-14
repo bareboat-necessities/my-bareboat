@@ -2738,28 +2738,6 @@ image::boat-computer/argonaut-m7-in-navpod.jpg[alt="Argonaut M7 in Navpod with O
 
 {zwsp} +
 
-== Mobile Applications (Smart Phones and Tablets)
-
-. iNavX
-. Navionics
-. OpenCPN
-. SEAiq
-. Marine Traffic
-. Ship Finder
-. PredictWind
-. NOAA Weather
-. Weather Underground
-. Tide Alert
-. US Coast Guard
-. SeaTow
-. Snag a Slip
-. ActiveCaptain
-. CruisersSailingForums
-. Boatsetter
-. GoSailing
-. NauticEd
-. Knot Guide
-
 == Pole for Sailboat Solar Panel / Wind Generator
 
 This is no welding, no bends solution. The pole is built from universal stainless steel marine components.
@@ -2793,6 +2771,30 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast.png[alt="Solar Panel/
 
 .Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View
 image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View", width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
+== Mobile Applications (Smart Phones and Tablets)
+
+. iNavX
+. Navionics
+. OpenCPN
+. SEAiq
+. Marine Traffic
+. Ship Finder
+. PredictWind
+. NOAA Weather
+. Weather Underground
+. Tide Alert
+. US Coast Guard
+. SeaTow
+. Snag a Slip
+. ActiveCaptain
+. CruisersSailingForums
+. Boatsetter
+. GoSailing
+. NauticEd
+. Knot Guide
 
 {zwsp} +
 
