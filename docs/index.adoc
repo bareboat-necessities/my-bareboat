@@ -2199,7 +2199,7 @@ http://tileservice.charts.noaa.gov/tileset.html#50000_1-locator[NOAA Tileset loc
 https://tileservice.charts.noaa.gov/#usage-policy[NOAA Chart Tile Service Usage policy]
 
 
-[cols="5,12,3", options="header"]
+[cols="3,8,5", options="header"]
 |===
 |No | Baseline MBTiles | Updates MBTiles
 |01|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_01.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_01-updates.mbtiles[Updates]
