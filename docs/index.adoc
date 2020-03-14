@@ -2743,7 +2743,7 @@ image::boat-computer/argonaut-m7-in-navpod.jpg[alt="Argonaut M7 in Navpod with O
 . iNavX
 . Navionics
 . OpenCPN
-. SeaIQ
+. SEAiq
 . Marine Traffic
 . Ship Finder
 . PredictWind
