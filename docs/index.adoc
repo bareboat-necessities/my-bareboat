@@ -2206,6 +2206,8 @@ You download charts via OpenCPN chart downloader plugin.
 |40 | Hawaiian Islands
 |===
 
+{zwsp} +
+
 ===== NOAA Nautical Chart MBTiles
 
 Additionally, you can use links for MBtiles from here:
