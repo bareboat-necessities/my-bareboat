@@ -2175,6 +2175,61 @@ a location from inside your house.
 
 === Charts and OpenCPN
 
+==== Charts
+
+You download charts via OpenCPN chart downloader plugin.
+
+
+===== NOAA Nautical Chart MBTiles
+
+Additionally, you can use links for MBtiles from here:
+
+https://github.com/vokkim/noaa-nautical-charts
+
+This is a list of available NOAA quilted nautical chart tilesets in MBTiles format.
+For the original NOAA Chart Tile Service please visit http://tileservice.charts.noaa.gov/
+
+
+.Map of tileset sections
+image::https://github.com/vokkim/noaa-nautical-charts/blob/master/map.jpg[Map of tileset sections, width="75%",  pdfwidth="75vw", align="center"]
+
+
+http://tileservice.charts.noaa.gov/tileset.html#50000_1-locator[NOAA Tileset locator]
+
+https://tileservice.charts.noaa.gov/#usage-policy[NOAA Chart Tile Service Usage policy]
+
+
+[cols="5,12,3", options="header"]
+|===
+|No | Baseline MBTiles | Updates MBTiles
+|01|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_01.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_01-updates.mbtiles[Updates]
+|02|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_02.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_02-updates.mbtiles[Updates]
+|03|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_03.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_03-updates.mbtiles[Updates]
+|04|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_04.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_04-updates.mbtiles[Updates]
+|05|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_05.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_05-updates.mbtiles[Updates]
+|06|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_06.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_06-updates.mbtiles[Updates]
+|07|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_07.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_07-updates.mbtiles[Updates]
+|08|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_08.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_08-updates.mbtiles[Updates]
+|09|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_09.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_09-updates.mbtiles[Updates]
+|10|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_10.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_10-updates.mbtiles[Updates]
+|11|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_11.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_11-updates.mbtiles[Updates]
+|12|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_12.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_12-updates.mbtiles[Updates]
+|13|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_13.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_13-updates.mbtiles[Updates]
+|14|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_14.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_14-updates.mbtiles[Updates]
+|15|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_15.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_15-updates.mbtiles[Updates]
+|16|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_16.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_16-updates.mbtiles[Updates]
+|17|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_17.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_17-updates.mbtiles[Updates]
+|18|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_18.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_18-updates.mbtiles[Updates]
+|19|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_19.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_19-updates.mbtiles[Updates]
+|20|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_20.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_20-updates.mbtiles[Updates]
+|21|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_21.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_21-updates.mbtiles[Updates]
+|22|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_22.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_22-updates.mbtiles[Updates]
+|23|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_23.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_23-updates.mbtiles[Updates]
+|24|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_24.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_24-updates.mbtiles[Updates]
+|25|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_25.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_25-updates.mbtiles[Updates]
+|26|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_26.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_26-updates.mbtiles[Updates]
+|===
+
 ==== Touch Screen
 
 One of the issues that kept bugging me was the lack of multitouch support on a touchscreen
