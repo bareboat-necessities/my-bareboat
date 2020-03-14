@@ -2191,7 +2191,7 @@ For the original NOAA Chart Tile Service please visit http://tileservice.charts.
 
 
 .Map of tileset sections
-image::https://github.com/vokkim/noaa-nautical-charts/blob/master/map.jpg[Map of tileset sections, width="75%",  pdfwidth="75vw", align="center"]
+image::https://raw.githubusercontent.com/vokkim/noaa-nautical-charts/master/map.jpg[Map of tileset sections, width="75%",  pdfwidth="75vw", align="center"]
 
 
 http://tileservice.charts.noaa.gov/tileset.html#50000_1-locator[NOAA Tileset locator]
