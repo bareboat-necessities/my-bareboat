@@ -2179,25 +2179,34 @@ a location from inside your house.
 
 You download charts via OpenCPN chart downloader plugin.
 
+===== NOAA RNC Regions
 
-===== NOAA Nautical Chart MBTiles
+[cols="3,20", options="header"]
+|===
+|No | Description
+|02 | Block Island, RI to the Canadian Border
+|03 | New York to Nantucket and Cape May, New Jersey
+|04 | Chesapeake and Delaware Bays===== NOAA Nautical Chart MBTiles
+|06 | Norfolk, VA to Florida - The Intracoastal Waterway
+|07 | Florida East Coast and the KeysAdditionally, you can use links for MBtiles from here:
+|08 | Florida West Coast and the Keys
+|10 | Puerto Rico and US Virgin Islandshttps://github.com/vokkim/noaa-nautical-charts
+|12 | Southern California - Point Arena to Mexican Border
+|13 | Lake MichiganThis is a list of available NOAA quilted nautical chart tilesets in MBTiles format.
+|14 | San Francisco to Cape FlatteryFor the original NOAA Chart Tile Service please visit http://tileservice.charts.noaa.gov/
+|15 | Pacific NorthWest - Puget Sound to Canadian Border
+|17 | Mobile, AL to Mexican Border
+|22 | Lake Superior and Lake Huron.Map of tileset sections
+|24 | Lake Erie (US Waters)image::https://raw.githubusercontent.com/vokkim/noaa-nautical-charts/master/map.jpg[Map of tileset sections, width="75%",  pdfwidth="75vw", align="center"]
+|26 | Lake Ontario (US Waters)
+|30 | Southeast Alaska
+|32 | South Central Alaskahttp://tileservice.charts.noaa.gov/tileset.html#50000_1-locator[NOAA Tileset locator]
+|34 | Alaska - The Aleutians and Bristol Bay
+|36 | Alaska - Norton Sound to Beaufort Seahttps://tileservice.charts.noaa.gov/#usage-policy[NOAA Chart Tile Service Usage policy]
+|40 | Hawaiian Islands
+|===
 
-Additionally, you can use links for MBtiles from here:
-
-https://github.com/vokkim/noaa-nautical-charts
-
-This is a list of available NOAA quilted nautical chart tilesets in MBTiles format.
-For the original NOAA Chart Tile Service please visit http://tileservice.charts.noaa.gov/
-
-
-.Map of tileset sections
-image::https://raw.githubusercontent.com/vokkim/noaa-nautical-charts/master/map.jpg[Map of tileset sections, width="75%",  pdfwidth="75vw", align="center"]
-
-
-http://tileservice.charts.noaa.gov/tileset.html#50000_1-locator[NOAA Tileset locator]
-
-https://tileservice.charts.noaa.gov/#usage-policy[NOAA Chart Tile Service Usage policy]
-
+{zwsp} +
 
 [cols="3,8,5", options="header"]
 |===
