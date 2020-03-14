@@ -1878,6 +1878,8 @@ The basic steps are:
 
 NMEA Display software for M5Stack https://github.com/andyrbarrow/MQTTNMEADisplay
 
+http://forum.openmarine.net/showthread.php?tid=1819
+
 ====== MQTT
 
 http://mqtt.org/
