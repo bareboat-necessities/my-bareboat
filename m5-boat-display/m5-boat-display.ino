@@ -43,7 +43,21 @@ void mainmenu_nmea_debug() {
   }
   ez.canvas.println("connection succeeded");
 
-  while(true) {
+  unsigned long timeout = millis();
+  while (client.available() == 0) {
+        if (millis() - timeout > 5000) {
+            ez.canvas.println(">>> client timeout!");
+            client.stop();
+            return;
+        }
+  }
+    
+  while (client.available()) {
+     String line = client.readStringUntil('\r');
+     ez.canvas.println(line);
+  }
+    
+  while (true) {
     String btn = ez.buttons.poll();
     if (btn == "Exit") break;
   }
