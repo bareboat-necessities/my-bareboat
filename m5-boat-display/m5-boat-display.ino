@@ -67,7 +67,7 @@ void nmea_debug() {
     }
     
     while (client.available()) {
-       String line = client.readStringUntil('\r');
+       String line = client.readStringUntil('\n');
        ez.canvas.println(line);
        lines++;
        if (lines >= MAX_LINES) return;
