@@ -1880,8 +1880,6 @@ NMEA Display software for M5Stack https://github.com/andyrbarrow/MQTTNMEADisplay
 
 http://forum.openmarine.net/showthread.php?tid=1819
 
-Weather station with M5Stack https://github.com/botofancalin/Esp32-Weather-Station-Color
-
 ====== MQTT
 
 http://mqtt.org/
@@ -2784,7 +2782,6 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Pane
 . Ship Finder
 . PredictWind
 . NOAA Weather
-. Weather Underground
 . Tide Alert
 . US Coast Guard
 . SeaTow
