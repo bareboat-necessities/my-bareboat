@@ -14,7 +14,7 @@ void setup() {
 }
 
 void loop() {
-  ezMenu mainmenu("Welcome to M5ez");
+  ezMenu mainmenu("M5 Boat Display");
   mainmenu.txtSmall();
   mainmenu.addItem("Flexible text menus", mainmenu_menus);
   mainmenu.addItem("Image menus", mainmenu_image);
@@ -113,7 +113,7 @@ void mainmenu_buttons() {
   ez.canvas.lmargin(20);
   ez.canvas.println("");      
   ez.canvas.println("You can have three buttons");
-  ez.canvas.println("with defined funtions.");
+  ez.canvas.println("with defined functions.");
   ez.buttons.show("One # Two # Done");
   printButton();
   ez.canvas.clear();
