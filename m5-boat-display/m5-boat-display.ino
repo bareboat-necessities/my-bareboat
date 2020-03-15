@@ -32,35 +32,47 @@ void loop() {
 }
 
 void mainmenu_nmea_debug() {
-  WiFiClient client;
+
   ez.screen.clear();
   ez.header.show("NMEA Debug");
   ez.buttons.show("#" + back_button + "#");
   ez.canvas.font(&FreeSans9pt7b);
+
+  nmea_debug();  
+  while (true) {
+    String btn = ez.buttons.poll();
+    if (btn == "Exit") break;
+  }
+}
+
+void nmea_debug() {
+  WiFiClient client;
   if (!client.connect(host, port)) {
     ez.canvas.println("connection failed");
     return;
   }
   ez.canvas.println("connection succeeded");
 
-  unsigned long timeout = millis();
-  while (client.available() == 0) {
-        if (millis() - timeout > 5000) {
-            ez.canvas.println(">>> client timeout!");
-            client.stop();
-            return;
-        }
-  }
-    
-  while (client.available()) {
-     String line = client.readStringUntil('\r');
-     ez.canvas.println(line);
-  }
-    
+  int lines = 0;
+  const int MAX_LINES = 5;
   while (true) {
-    String btn = ez.buttons.poll();
-    if (btn == "Exit") break;
-  }
+    unsigned long timeout = millis();
+    while (client.available() == 0) {
+      if (millis() - timeout > 5000) {
+         ez.canvas.println(">>> client timeout!");
+         client.stop();
+         return;
+      }
+      delay(100);
+    }
+    
+    while (client.available()) {
+       String line = client.readStringUntil('\r');
+       ez.canvas.println(line);
+       lines++;
+       if (lines >= MAX_LINES) return;
+    }
+  }  
 }
 
 void mainmenu_sys() {
