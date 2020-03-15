@@ -1,7 +1,5 @@
 #include <M5ez.h>
-
 #include <ezTime.h>
-
 #include <WiFi.h>
 
 #include "images.h"
@@ -11,7 +9,8 @@
 const char* host = "gl-x750";
 const int port = 10110;
 
-String back_button = "Exit";
+const char* EXIT = "Exit";
+String back_button = EXIT;
 
 void setup() {
   #include <themes/default.h>
@@ -32,20 +31,21 @@ void loop() {
 }
 
 void mainmenu_nmea_debug() {
-
   ez.screen.clear();
   ez.header.show("NMEA Debug");
   ez.buttons.show("#" + back_button + "#");
   ez.canvas.font(&FreeSans9pt7b);
-
-  nmea_debug();  
-  while (true) {
-    String btn = ez.buttons.poll();
-    if (btn == "Exit") break;
+  nmea_loop();  
+  while (!nmea_loop_interrupted()) {
   }
 }
 
-void nmea_debug() {
+boolean nmea_loop_interrupted() {
+    String btn = ez.buttons.poll();
+    return btn == EXIT;
+}
+
+void nmea_loop() {
   WiFiClient client;
   if (!client.connect(host, port)) {
     ez.canvas.println("connection failed");
@@ -68,11 +68,18 @@ void nmea_debug() {
     
     while (client.available()) {
        String line = client.readStringUntil('\n');
-       ez.canvas.println(line);
+       on_nmea_sentence(line);
        lines++;
-       if (lines >= MAX_LINES) return;
+       if (lines >= MAX_LINES) {
+         client.stop();
+         return;
+       }
     }
   }  
+}
+
+boolean on_nmea_sentence(String line) {
+  ez.canvas.println(line);
 }
 
 void mainmenu_sys() {
