@@ -36,8 +36,9 @@ void mainmenu_nmea_debug() {
   ez.buttons.show("#" + back_button + "#");
   ez.canvas.font(&FreeSans9pt7b);
   const int MAX_LINES = 5;
-  nmea_loop(true, MAX_LINES, on_nmea_sentence);  
-  while (!nmea_loop_interrupted()) {
+  boolean done = nmea_loop(true, MAX_LINES, on_nmea_sentence);  
+  if (!done) {
+    while (!nmea_loop_interrupted()) {}
   }
 }
 
@@ -46,11 +47,11 @@ boolean nmea_loop_interrupted() {
   return btn == EXIT;
 }
 
-void nmea_loop(boolean debug, int maxLines, void (&onMessage)(String&)) {
+boolean nmea_loop(boolean debug, int maxLines, void (&onMessage)(String&)) {
   WiFiClient client;
   if (!client.connect(host, port)) {
     ez.canvas.println("connection failed");
-    return;
+    return false;
   }
   if (debug) ez.canvas.println("connection succeeded");
 
@@ -61,18 +62,19 @@ void nmea_loop(boolean debug, int maxLines, void (&onMessage)(String&)) {
       if (millis() - timeout > 5000) {
         ez.canvas.println(">>> client timeout!");
         client.stop();
-        return;
+        return false;
       }
       delay(100);
     }
     
     while (client.available() > 0) {
       String line = client.readStringUntil('\n');
-      onMessage(line);
       lines++;
-      if (maxLines > 0 && lines >= maxLines) {
+      onMessage(line);
+      boolean done = nmea_loop_interrupted();
+      if ((maxLines > 0 && lines >= maxLines) || done) {
         client.stop();
-        return;
+        return done;
       }
     }
   }  
