@@ -35,7 +35,8 @@ void mainmenu_nmea_debug() {
   ez.header.show("NMEA Debug");
   ez.buttons.show("#" + back_button + "#");
   ez.canvas.font(&FreeSans9pt7b);
-  nmea_loop();  
+  const int MAX_LINES = 5;
+  nmea_loop(MAX_LINES);  
   while (!nmea_loop_interrupted()) {
   }
 }
@@ -45,7 +46,7 @@ boolean nmea_loop_interrupted() {
     return btn == EXIT;
 }
 
-void nmea_loop() {
+void nmea_loop(int maxLines) {
   WiFiClient client;
   if (!client.connect(host, port)) {
     ez.canvas.println("connection failed");
@@ -54,10 +55,9 @@ void nmea_loop() {
   ez.canvas.println("connection succeeded");
 
   int lines = 0;
-  const int MAX_LINES = 5;
   while (true) {
     unsigned long timeout = millis();
-    while (client.available() == 0) {
+    while (client.available() <= 0) {
       if (millis() - timeout > 5000) {
          ez.canvas.println(">>> client timeout!");
          client.stop();
@@ -66,11 +66,11 @@ void nmea_loop() {
       delay(100);
     }
     
-    while (client.available()) {
+    while (client.available() > 0) {
        String line = client.readStringUntil('\n');
        on_nmea_sentence(line);
        lines++;
-       if (lines >= MAX_LINES) {
+       if (lines >= maxLines) {
          client.stop();
          return;
        }
@@ -78,7 +78,7 @@ void nmea_loop() {
   }  
 }
 
-boolean on_nmea_sentence(String line) {
+boolean on_nmea_sentence(String &line) {
   ez.canvas.println(line);
 }
 
@@ -98,5 +98,5 @@ void mainmenu_sys() {
 void powerOff() { m5.powerOFF(); }
 
 void aboutM5boat() {
-  ez.msgBox("About M5 Boat Display", "By Bareboat-Necessities | | https://bareboat-necessities.github.io");
+  ez.msgBox("About M5 Boat Display", "By Bareboat-Necessities | | bareboat-necessities.github.io");
 }
