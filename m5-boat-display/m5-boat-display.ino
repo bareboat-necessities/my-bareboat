@@ -286,7 +286,9 @@ String toTimestamp(boolean valid, TinyGPSTime& time, TinyGPSDate& date) {
   if (!valid) {
     return String('-');
   }
-  return String() + date.day() + '/' + date.month() + ' ' + time.hour() + ':' + time.minute() + ':' + time.second();  
+  char buf[20];
+  sprintf(buf, "%02d/%02d %02d:%02d:%02d", date.day(), date.month(), time.hour(), time.minute(), time.second());
+  return String(buf);  
 }
 
 void mainmenu_sys() {
