@@ -104,9 +104,7 @@ void on_nmea_sentence(String& line) {
   for (int i = 0; i < line.length(); i++) {
     gps.encode(line.charAt(i));
   }
-  if (gps.location.isUpdated()) {
-    displayInfo();
-  }
+  displayInfo();
 }
 
 void on_nmea_sentence_debug(String& line) {
@@ -137,7 +135,9 @@ void printAngle(char* label, boolean valid, float value, boolean prevValid, floa
   }
   eraseDegree();
   print(angle);
-  printDegree();
+  if (valid) {
+    printDegree();
+  }
   ez.canvas.println();
 }
 
@@ -156,7 +156,9 @@ void printCoord(char* label, boolean valid, float value, boolean prevValid, floa
   }
   eraseDegree();
   print(prefix);
-  printDegree();
+  if (valid) {
+    printDegree();
+  }
   if (prevSuffix != suffix) {
     erase(prevSuffix);
   }
