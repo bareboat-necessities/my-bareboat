@@ -104,9 +104,9 @@ void on_nmea_sentence(String &line) {
   for (int i = 0; i < line.length(); i++) {
     gps.encode(line.charAt(i));
   }
-  //if (gps.location.isUpdated()) {
+  if (gps.location.isUpdated()) {
     displayInfo();
-  //}
+  }
 }
 
 void on_nmea_sentence_debug(String &line) {
@@ -114,7 +114,8 @@ void on_nmea_sentence_debug(String &line) {
 }
 
 void displayInfo() {
-  ez.canvas.font(&FreeSans12pt7b);
+  ez.canvas.font(&FreeMonoBold12pt7b);
+  ez.canvas.clear();
   ez.canvas.lmargin(10);
   ez.canvas.y(ez.canvas.top() + 10);
   ez.canvas.x(ez.canvas.lmargin());
@@ -127,11 +128,11 @@ void displayInfo() {
     String latiTude = northSouth;
     latiTude += degreesToDegMin(latRaw);
 
-    M5.lcd.fillRect(ez.canvas.lmargin(), ez.canvas.top() + 10, 320, 23, ez.theme->background); //erase partial place for updating data
+    //M5.lcd.fillRect(ez.canvas.lmargin(), ez.canvas.top() + 10, 320, 23, ez.theme->background); //erase partial place for updating data
     ez.canvas.print("LAT: ");
     ez.canvas.println(latiTude);
     // Kludge to get a degree symbol
-    M5.Lcd.drawEllipse(ez.canvas.lmargin() + 164, ez.canvas.top() + 13, 3, 3, ez.theme->foreground);
+    //M5.Lcd.drawEllipse(ez.canvas.lmargin() + 164, ez.canvas.top() + 13, 3, 3, ez.theme->foreground);
 
     float lonRaw = gps.location.lng();
     String eastWest = "E ";
@@ -140,11 +141,11 @@ void displayInfo() {
     }
     String longiTude = eastWest;
     longiTude += degreesToDegMin(lonRaw);
-    M5.lcd.fillRect(10, ez.canvas.top() + 40, 320, 23, ez.theme->background); //erase partial place for updating data
+    //M5.lcd.fillRect(10, ez.canvas.top() + 40, 320, 23, ez.theme->background); //erase partial place for updating data
     ez.canvas.print("LON: ");
     ez.canvas.println(longiTude);
     // Kludge to get a degree symbol
-    M5.Lcd.drawEllipse(ez.canvas.lmargin() + 164, ez.canvas.top() + 43, 3, 3, ez.theme->foreground);
+    //M5.Lcd.drawEllipse(ez.canvas.lmargin() + 164, ez.canvas.top() + 43, 3, 3, ez.theme->foreground);
   } else {
     ez.canvas.println("LAT:  -");
     ez.canvas.println("LON:  -");
@@ -152,19 +153,20 @@ void displayInfo() {
 
   // Speed over ground
   if (gps.speed.isValid()) {
-    M5.lcd.fillRect(10, ez.canvas.top() + 70, 320, 23, ez.theme->background); //erase partial place for updating data
-    ez.canvas.print("SOG:");
-    if (gps.speed.knots() < 1) ez.canvas.print(" ");
-    ez.canvas.println(gps.speed.knots(), 1);
+    //M5.lcd.fillRect(10, ez.canvas.top() + 70, 320, 23, ez.theme->background); //erase partial place for updating data
+    ez.canvas.print("SOG: ");
+    ez.canvas.print(gps.speed.knots(), 1);
+    ez.canvas.println("kt");
   } else {
     ez.canvas.println("SOG:  -");
   }
 
   // Course over ground
   if (gps.course.isValid()) {
-    ez.canvas.print("COG:");
-    ez.canvas.println(gps.course.deg(), 0);
-    M5.Lcd.drawEllipse(ez.canvas.lmargin() + 276, ez.canvas.top() + 73, 3, 3, ez.theme->foreground);
+    ez.canvas.print("COG: ");
+    ez.canvas.print(gps.course.deg(), 0);
+    M5.Lcd.drawEllipse(ez.canvas.x() + 4, ez.canvas.y() + 4, 3, 3, ez.theme->foreground);
+    M5.Lcd.drawEllipse(ez.canvas.x() + 4, ez.canvas.y() + 4, 4, 4, ez.theme->foreground);
   } else {
     ez.canvas.println("COG:  -");
   }
@@ -181,7 +183,7 @@ String degreesToDegMin(float x) {
   if (degRaw < 100) degMin = "0";
   if (degRaw < 10) degMin = degMin + "0";
   degMin = degMin + degRaw;
-  degMin = degMin + " "; //leave some space for the degree character which comes later
+  degMin = degMin + '`';
   if (minutesRemainder < 10) degMin = degMin + "0";
   degMin = degMin + String(minutesRemainder, 4);
   degMin = degMin + "\'";
