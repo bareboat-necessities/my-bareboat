@@ -141,7 +141,9 @@ void printAngle(char* label, boolean valid, float value, boolean prevValid, floa
 }
 
 String formatAngle(float value, boolean valid) {
-  return valid ? String(value > 0 ? value : -value, 0) : String('-');  
+  String str = String(value > 0 ? value : -value, 0);
+  str.trim();
+  return valid ? str : String('-');  
 }
 
 void printCoord(char* label, boolean valid, float value, boolean prevValid, float prevValue, char a, char b) {
