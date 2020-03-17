@@ -132,7 +132,6 @@ void printAngle(char* label, boolean valid, float value, boolean prevValid, floa
   String angle = formatAngle(value, valid);
   if (prevAngle != angle) {
     erase(prevAngle);
-    eraseDegree();
   }
   print(angle);
   if (valid) {
@@ -142,7 +141,7 @@ void printAngle(char* label, boolean valid, float value, boolean prevValid, floa
 }
 
 String formatAngle(float value, boolean valid) {
-  return valid ? String(value, 0) : String('-');  
+  return valid ? String(value > 0 ? value : -value, 0) : String('-');  
 }
 
 void printCoord(char* label, boolean valid, float value, boolean prevValid, float prevValue, char a, char b) {
@@ -153,7 +152,6 @@ void printCoord(char* label, boolean valid, float value, boolean prevValid, floa
   String prevSuffix = coordSuffix(prevValue, prevValid);
   if (prevPrefix != prefix) {
     erase(prevPrefix);
-    eraseDegree();
   }
   print(prefix);
   if (valid) {
@@ -219,6 +217,7 @@ void erase(String& value) {
   int y = ez.canvas.y();  
   ez.canvas.color(bg);
   ez.canvas.print(value);
+  eraseDegree();
   ez.canvas.color(fg);
   ez.canvas.x(x);
   ez.canvas.y(y);
