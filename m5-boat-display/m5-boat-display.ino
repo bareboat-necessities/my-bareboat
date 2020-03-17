@@ -113,10 +113,10 @@ void on_nmea_sentence_debug(String& line) {
   ez.canvas.println(line);
 }
 
-void printSpeed(char* label, boolean valid, float value, float prevValue, char* ending) {
+void printSpeed(char* label, boolean valid, float value, boolean prevValid, float prevValue, char* ending) {
   printLabel(label);
-  String prevSpeed = formatSpeed(prevValue, ending);
-  String speed = formatSpeed(value, ending);
+  String prevSpeed = formatSpeed(prevValue, prevValid, ending);
+  String speed = formatSpeed(value, valid, ending);
   if (prevSpeed != speed) {
     erase(prevSpeed);
   }
@@ -124,14 +124,14 @@ void printSpeed(char* label, boolean valid, float value, float prevValue, char* 
   ez.canvas.println();
 }
 
-String formatSpeed(float value, char* ending) {
-  return String(value, 1) + ' ' + ending;  
+String formatSpeed(float value, boolean valid, char* ending) {
+  return valid ? String(value, 1) + ' ' + ending : String('-');  
 }
 
-void printAngle(char* label, boolean valid, float value, float prevValue) {
+void printAngle(char* label, boolean valid, float value, boolean prevValid, float prevValue) {
   printLabel(label);
-  String prevAngle = formatAngle(prevValue);
-  String angle = formatAngle(value);
+  String prevAngle = formatAngle(prevValue, prevValid);
+  String angle = formatAngle(value, valid);
   if (prevAngle != angle) {
     erase(prevAngle);
   }
@@ -141,16 +141,16 @@ void printAngle(char* label, boolean valid, float value, float prevValue) {
   ez.canvas.println();
 }
 
-String formatAngle(float value) {
-  return String(value, 0);  
+String formatAngle(float value, boolean valid) {
+  return valid ? String(value, 0) : String('-');  
 }
 
 void printCoord(char* label, boolean valid, float value, boolean prevValid, float prevValue, char a, char b) {
   printLabel(label);
   String prefix = coordPrefix(value, valid, a, b);
   String prevPrefix = coordPrefix(prevValue, prevValid, a, b);
-  String suffix = coordSuffix(value);
-  String prevSuffix = coordSuffix(prevValue);
+  String suffix = coordSuffix(value, valid);
+  String prevSuffix = coordSuffix(prevValue, prevValid);
   if (prevPrefix != prefix) {
     erase(prevPrefix);
   }
@@ -196,7 +196,10 @@ String coordPrefix(float value, boolean valid, char a, char b) {
   return result + degrees;  
 }
 
-String coordSuffix(float value) {
+String coordSuffix(float value, boolean valid) {
+  if (!valid) {
+    return String();
+  }
   float deg = value;
   if (deg < 0) {
     deg = (-deg);
@@ -252,11 +255,11 @@ void displayInfo() {
   prevLON = gps.location.lng();
   prevValidLOC = locValid;
   
-  printSpeed("SOG", gps.speed.isValid(), gps.speed.knots(), prevSOG, "kt"); 
+  printSpeed("SOG", gps.speed.isValid(), gps.speed.knots(), prevValidSOG, prevSOG, "kt"); 
   prevSOG = gps.speed.knots(); 
   prevValidSOG = gps.speed.isValid();
   
-  printAngle("COG", gps.course.isValid(), gps.course.deg(), prevCOG); 
+  printAngle("COG", gps.course.isValid(), gps.course.deg(), prevValidCOG, prevCOG); 
   prevCOG = gps.course.deg(); 
   prevValidCOG = gps.course.isValid();
 }
