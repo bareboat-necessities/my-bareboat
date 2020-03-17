@@ -1880,6 +1880,10 @@ NMEA Display software for M5Stack https://github.com/andyrbarrow/MQTTNMEADisplay
 
 http://forum.openmarine.net/showthread.php?tid=1819
 
+I've made my own custom version. The code for the sketch is located here:
+
+https://github.com/bareboat-necessities/my-bareboat/tree/master/m5-boat-display
+
 ====== MQTT
 
 http://mqtt.org/
