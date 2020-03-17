@@ -100,7 +100,7 @@ boolean nmea_loop(boolean debug, int maxLines, void (&onMessage)(String&)) {
   }  
 }
 
-void on_nmea_sentence(String &line) {
+void on_nmea_sentence(String& line) {
   for (int i = 0; i < line.length(); i++) {
     gps.encode(line.charAt(i));
   }
@@ -109,87 +109,150 @@ void on_nmea_sentence(String &line) {
   }
 }
 
-void on_nmea_sentence_debug(String &line) {
+void on_nmea_sentence_debug(String& line) {
   ez.canvas.println(line);
 }
 
+void printSpeed(char* label, boolean valid, float value, float prevValue, char* ending) {
+  printLabel(label);
+  String prevSpeed = formatSpeed(prevValue);
+  erase(prevSpeed);
+  String speed = formatSpeed(value);
+  print(speed + ' ');
+  ez.canvas.println(ending);
+}
+
+String formatSpeed(float value) {
+  return String(value, 1);  
+}
+
+void printAngle(char* label, boolean valid, float value, float prevValue) {
+  printLabel(label);
+  String prevAngle = formatAngle(prevValue);
+  erase(prevAngle);
+  eraseDegree();
+  String angle = formatAngle(value);
+  print(angle);
+  printDegree();
+  ez.canvas.println();
+}
+
+String formatAngle(float value) {
+  return String(value, 0);  
+}
+
+void printCoord(char* label, boolean valid, float value, boolean prevValid, float prevValue, char a, char b) {
+  printLabel(label);
+  String prefix = coordPrefix(value, valid, a, b);
+  String prevPrefix = coordPrefix(prevValue, prevValid, a, b);
+  String suffix = coordSuffix(value);
+  String prevSuffix = coordSuffix(prevValue);
+  erase(prevPrefix);
+  eraseDegree();
+  print(prefix);
+  printDegree();
+  erase(prevSuffix);
+  print(suffix);
+  ez.canvas.println();
+}
+
+void printDegreeWithColor(uint16_t color) {
+  M5.Lcd.drawEllipse(ez.canvas.x() + 4, ez.canvas.y() + 4, 3, 3, color);
+  M5.Lcd.drawEllipse(ez.canvas.x() + 4, ez.canvas.y() + 4, 4, 4, color);
+}
+
+void printDegree() {
+  printDegreeWithColor(ez.theme->foreground);
+  ez.canvas.x(ez.canvas.x() + 20);
+}
+
+void eraseDegree() {
+  printDegreeWithColor(ez.theme->background);
+}
+
+String coordPrefix(float value, boolean valid, char a, char b) {
+  if (!valid) {
+    return String('-');
+  }
+  String result = String(a);
+  if (value < 0) {
+    result = String(b);
+    value = (-value);
+  }
+  result += ' ';
+  int deg = value;
+  String degrees = "";
+  if (deg < 100) degrees += '0';
+  if (deg < 10) degrees += '0';
+  degrees = degrees + deg;
+  return result + degrees;  
+}
+
+String coordSuffix(float value) {
+  float deg = value;
+  if (deg < 0) {
+    deg = (-deg);
+  }
+  float minutesRemainder = (deg - ((int)deg)) * 60.0;
+  String minutes = "";
+  if (minutesRemainder < 10) minutes = minutes + "0";
+  return minutes + String(minutesRemainder, 4);
+}
+
+void erase(String& value) {  
+  uint16_t fg = ez.canvas.color();
+  uint16_t bg = ez.theme->background;
+  int x = ez.canvas.x();
+  int y = ez.canvas.y();  
+  ez.canvas.color(bg);
+  ez.canvas.print(value);
+  ez.canvas.color(fg);
+  ez.canvas.x(x);
+  ez.canvas.y(y);
+}
+
+void print(String& value) {
+  ez.canvas.print(value);
+}
+
+void printLabel(char* label) {
+  ez.canvas.print(label);  
+  ez.canvas.print(": ");
+}
+
+boolean prevValidLOC = false;
+boolean prevValidSOG = false;
+boolean prevValidCOG = false;
+
+float prevLAT;
+float prevLON;
+float prevSOG;
+float prevCOG;
+
 void displayInfo() {
   ez.canvas.font(&FreeMonoBold12pt7b);
-  ez.canvas.clear();
   ez.canvas.lmargin(10);
   ez.canvas.y(ez.canvas.top() + 10);
   ez.canvas.x(ez.canvas.lmargin());
-  if (gps.location.isValid()) {
-    float latRaw = gps.location.lat();
-    String northSouth = "N ";
-    if (latRaw < 0) {
-      northSouth = "S ";
-    }
-    String latiTude = northSouth;
-    latiTude += degreesToDegMin(latRaw);
 
-    //M5.lcd.fillRect(ez.canvas.lmargin(), ez.canvas.top() + 10, 320, 23, ez.theme->background); //erase partial place for updating data
-    ez.canvas.print("LAT: ");
-    ez.canvas.println(latiTude);
-    // Kludge to get a degree symbol
-    //M5.Lcd.drawEllipse(ez.canvas.lmargin() + 164, ez.canvas.top() + 13, 3, 3, ez.theme->foreground);
-
-    float lonRaw = gps.location.lng();
-    String eastWest = "E ";
-    if (lonRaw < 0) {
-      eastWest = "W ";
-    }
-    String longiTude = eastWest;
-    longiTude += degreesToDegMin(lonRaw);
-    //M5.lcd.fillRect(10, ez.canvas.top() + 40, 320, 23, ez.theme->background); //erase partial place for updating data
-    ez.canvas.print("LON: ");
-    ez.canvas.println(longiTude);
-    // Kludge to get a degree symbol
-    //M5.Lcd.drawEllipse(ez.canvas.lmargin() + 164, ez.canvas.top() + 43, 3, 3, ez.theme->foreground);
-  } else {
-    ez.canvas.println("LAT:  -");
-    ez.canvas.println("LON:  -");
-  }
-
-  // Speed over ground
-  if (gps.speed.isValid()) {
-    //M5.lcd.fillRect(10, ez.canvas.top() + 70, 320, 23, ez.theme->background); //erase partial place for updating data
-    ez.canvas.print("SOG: ");
-    ez.canvas.print(gps.speed.knots(), 1);
-    ez.canvas.println("kt");
-  } else {
-    ez.canvas.println("SOG:  -");
-  }
-
-  // Course over ground
-  if (gps.course.isValid()) {
-    ez.canvas.print("COG: ");
-    ez.canvas.print(gps.course.deg(), 0);
-    M5.Lcd.drawEllipse(ez.canvas.x() + 4, ez.canvas.y() + 4, 3, 3, ez.theme->foreground);
-    M5.Lcd.drawEllipse(ez.canvas.x() + 4, ez.canvas.y() + 4, 4, 4, ez.theme->foreground);
-  } else {
-    ez.canvas.println("COG:  -");
-  }
+  boolean locValid = gps.location.isValid();
+  
+  printCoord("LAT", locValid, gps.location.lat(), prevValidLOC, prevLAT, 'N', 'S'); 
+  prevLAT = gps.location.lat();
+  
+  printCoord("LON", locValid, gps.location.lng(), prevValidLOC, prevLON, 'E', 'W'); 
+  prevLON = gps.location.lng();
+  prevValidLOC = locValid;
+  
+  printSpeed("SOG", gps.speed.isValid(), gps.speed.knots(), prevSOG, "kt"); 
+  prevSOG = gps.speed.knots(); 
+  prevValidSOG = gps.speed.isValid();
+  
+  printAngle("COG", gps.course.isValid(), gps.course.deg(), prevCOG); 
+  prevCOG = gps.course.deg(); 
+  prevValidCOG = gps.course.isValid();
 }
 
-String degreesToDegMin(float x) {
-  if (x < 0) {
-    x = (-x);
-  }
-  int degRaw = x;
-  float degFloat = float(degRaw);
-  float minutesRemainder = (x - degFloat) * 60.0;
-  String degMin = "";
-  if (degRaw < 100) degMin = "0";
-  if (degRaw < 10) degMin = degMin + "0";
-  degMin = degMin + degRaw;
-  degMin = degMin + '`';
-  if (minutesRemainder < 10) degMin = degMin + "0";
-  degMin = degMin + String(minutesRemainder, 4);
-  degMin = degMin + "\'";
-
-  return (degMin);
-}
 void mainmenu_sys() {
   ezMenu images;
   images.imgBackground(TFT_BLACK);
