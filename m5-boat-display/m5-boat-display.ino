@@ -11,7 +11,7 @@ const char* host = "gl-x750";
 const int port = 10110;
 
 const char* EXIT = "Exit";
-String back_button = EXIT;
+const String back_button = EXIT;
 
 TinyGPSPlus gps;
 
@@ -225,7 +225,7 @@ void coordPrefix(char* valueStr, float value, boolean valid, char a, char b) {
     p = b;
     value = (-value);
   }
-  sprintf(valueStr, "%c %03d", p, (int)value);
+  sprintf(valueStr, "%c %03d", p, (int) value);
 }
 
 void coordSuffix(char* valueStr, float value, boolean valid) {
@@ -302,10 +302,11 @@ void displayInfo() {
 }
 
 void toTimestamp(char* buf, boolean valid, TinyGPSTime& time, TinyGPSDate& date) {
-  if (!valid) {
+  if (!valid || date.day() == 0) {
     initNA(buf);
+  } else {
+    sprintf(buf, "%02d/%02d %02d:%02d:%02d", date.day(), date.month(), time.hour(), time.minute(), time.second());
   }
-  sprintf(buf, "%02d/%02d %02d:%02d:%02d", date.day(), date.month(), time.hour(), time.minute(), time.second());
 }
 
 void initNA(char* buf) {
