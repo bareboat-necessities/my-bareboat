@@ -115,17 +115,17 @@ void on_nmea_sentence_debug(String& line) {
 
 void printSpeed(char* label, boolean valid, float value, float prevValue, char* ending) {
   printLabel(label);
-  String prevSpeed = formatSpeed(prevValue);
-  String speed = formatSpeed(value);
+  String prevSpeed = formatSpeed(prevValue, ending);
+  String speed = formatSpeed(value, ending);
   if (prevSpeed != speed) {
     erase(prevSpeed);
   }
-  print(speed + ' ');
-  ez.canvas.println(ending);
+  print(speed);
+  ez.canvas.println();
 }
 
-String formatSpeed(float value) {
-  return String(value, 1);  
+String formatSpeed(float value, char* ending) {
+  return String(value, 1) + ' ' + ending;  
 }
 
 void printAngle(char* label, boolean valid, float value, float prevValue) {
@@ -165,8 +165,8 @@ void printCoord(char* label, boolean valid, float value, boolean prevValid, floa
 }
 
 void printDegreeWithColor(uint16_t color) {
-  M5.Lcd.drawEllipse(ez.canvas.x() + 4, ez.canvas.y() + 4, 3, 3, color);
-  M5.Lcd.drawEllipse(ez.canvas.x() + 4, ez.canvas.y() + 4, 4, 4, color);
+  M5.Lcd.drawEllipse(ez.canvas.x() + 5, ez.canvas.y() + 4, 3, 3, color);
+  M5.Lcd.drawEllipse(ez.canvas.x() + 5, ez.canvas.y() + 4, 4, 4, color);
 }
 
 void printDegree() {
@@ -204,7 +204,7 @@ String coordSuffix(float value) {
   float minutesRemainder = (deg - ((int)deg)) * 60.0;
   String minutes = "";
   if (minutesRemainder < 10) minutes = minutes + "0";
-  return minutes + String(minutesRemainder, 4);
+  return minutes + String(minutesRemainder, 5) + '\'';
 }
 
 void erase(String& value) {  
