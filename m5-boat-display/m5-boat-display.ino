@@ -234,14 +234,25 @@ void printLabel(char* label) {
   ez.canvas.print(": ");
 }
 
+void printTime(char* label, boolean valid, String& value, boolean prevValid, String& prevValue) {
+  printLabel(label);
+  if (prevValue != value) {
+    erase(prevValue);
+  }
+  print(value);
+  ez.canvas.println();
+}
+
 boolean prevValidLOC = false;
 boolean prevValidSOG = false;
 boolean prevValidCOG = false;
+boolean prevValidTime = false;
 
 float prevLAT;
 float prevLON;
 float prevSOG;
 float prevCOG;
+String prevTime = String('-');
 
 void displayInfo() {
   ez.canvas.font(&FreeMonoBold12pt7b);
@@ -250,7 +261,6 @@ void displayInfo() {
   ez.canvas.x(ez.canvas.lmargin());
 
   boolean locValid = gps.location.isValid();
-  
   printCoord("LAT", locValid, gps.location.lat(), prevValidLOC, prevLAT, 'N', 'S'); 
   prevLAT = gps.location.lat();
   
@@ -265,6 +275,18 @@ void displayInfo() {
   printAngle("COG", gps.course.isValid(), gps.course.deg(), prevValidCOG, prevCOG); 
   prevCOG = gps.course.deg(); 
   prevValidCOG = gps.course.isValid();
+
+  String gpsTime = toTimestamp(gps.time.isValid(), gps.time, gps.date);
+  printTime("UTC", gps.time.isValid(), gpsTime, prevValidTime, prevTime); 
+  prevTime = gpsTime; 
+  prevValidTime = gps.time.isValid();
+}
+
+String toTimestamp(boolean valid, TinyGPSTime& time, TinyGPSDate& date) {
+  if (!valid) {
+    return String('-');
+  }
+  return String() + date.day() + '/' + date.month() + ' ' + time.hour() + ':' + time.minute() + ':' + time.second();  
 }
 
 void mainmenu_sys() {
