@@ -238,7 +238,7 @@ void coordSuffix(char* valueStr, float value, boolean valid) {
     deg = (-deg);
   }
   float minutesRemainder = (deg - ((int)deg)) * 60.0;
-  sprintf(valueStr, "%08.5f", minutesRemainder);
+  sprintf(valueStr, "%08.5f'", minutesRemainder);
 }
 
 void erase(char* value) {  
