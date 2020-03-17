@@ -132,8 +132,8 @@ void printAngle(char* label, boolean valid, float value, boolean prevValid, floa
   String angle = formatAngle(value, valid);
   if (prevAngle != angle) {
     erase(prevAngle);
+    eraseDegree();
   }
-  eraseDegree();
   print(angle);
   if (valid) {
     printDegree();
@@ -153,8 +153,8 @@ void printCoord(char* label, boolean valid, float value, boolean prevValid, floa
   String prevSuffix = coordSuffix(prevValue, prevValid);
   if (prevPrefix != prefix) {
     erase(prevPrefix);
+    eraseDegree();
   }
-  eraseDegree();
   print(prefix);
   if (valid) {
     printDegree();
