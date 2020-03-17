@@ -90,7 +90,7 @@ boolean nmea_loop_interrupted() {
   return btn == EXIT;
 }
 
-boolean nmea_loop(boolean debug, int maxLines, void (&onMessage)(String&)) {
+boolean nmea_loop(boolean debug, int maxLines, void (&onMessage)(const char*)) {
   WiFiClient client;
   if (!client.connect(host, port)) {
     ez.canvas.println(F("connection failed"));
@@ -118,7 +118,7 @@ boolean nmea_loop(boolean debug, int maxLines, void (&onMessage)(String&)) {
     while (client.available() > 0) {
       String line = client.readStringUntil('\n');
       lines++;
-      onMessage(line);
+      onMessage(line.c_str());
       boolean done = nmea_loop_interrupted();
       if ((maxLines > 0 && lines >= maxLines) || done) {
         client.stop();
@@ -128,14 +128,14 @@ boolean nmea_loop(boolean debug, int maxLines, void (&onMessage)(String&)) {
   }  
 }
 
-void on_nmea_sentence(String& line) {
-  for (int i = 0; i < line.length(); i++) {
-    gps.encode(line.charAt(i));
+void on_nmea_sentence(const char* line) {
+  for (int i = 0; *line != '\0'; i++, line++) {
+    gps.encode(*line);
   }
   displayInfo();
 }
 
-void on_nmea_sentence_debug(String& line) {
+void on_nmea_sentence_debug(const char* line) {
   ez.canvas.println(line);
 }
 
