@@ -116,8 +116,10 @@ void on_nmea_sentence_debug(String& line) {
 void printSpeed(char* label, boolean valid, float value, float prevValue, char* ending) {
   printLabel(label);
   String prevSpeed = formatSpeed(prevValue);
-  erase(prevSpeed);
   String speed = formatSpeed(value);
+  if (prevSpeed != speed) {
+    erase(prevSpeed);
+  }
   print(speed + ' ');
   ez.canvas.println(ending);
 }
@@ -129,9 +131,11 @@ String formatSpeed(float value) {
 void printAngle(char* label, boolean valid, float value, float prevValue) {
   printLabel(label);
   String prevAngle = formatAngle(prevValue);
-  erase(prevAngle);
-  eraseDegree();
   String angle = formatAngle(value);
+  if (prevAngle != angle) {
+    erase(prevAngle);
+  }
+  eraseDegree();
   print(angle);
   printDegree();
   ez.canvas.println();
@@ -147,11 +151,15 @@ void printCoord(char* label, boolean valid, float value, boolean prevValid, floa
   String prevPrefix = coordPrefix(prevValue, prevValid, a, b);
   String suffix = coordSuffix(value);
   String prevSuffix = coordSuffix(prevValue);
-  erase(prevPrefix);
+  if (prevPrefix != prefix) {
+    erase(prevPrefix);
+  }
   eraseDegree();
   print(prefix);
   printDegree();
-  erase(prevSuffix);
+  if (prevSuffix != suffix) {
+    erase(prevSuffix);
+  }
   print(suffix);
   ez.canvas.println();
 }
