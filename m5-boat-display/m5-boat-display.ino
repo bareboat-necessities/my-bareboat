@@ -67,11 +67,8 @@ void mainmenu_nmea_debug() {
   ez.header.show(F("NMEA Debug"));
   ez.buttons.show("#" + back_button + "#");
   ez.canvas.font(&FreeSans9pt7b);
-  const int MAX_LINES = 5;
-  boolean done = nmea_loop(true, MAX_LINES, on_nmea_sentence_debug);  
-  if (!done) {
-    while (!nmea_loop_interrupted()) {}
-  }
+  boolean done = nmea_loop(true, 5, on_nmea_sentence_debug);
+  checkDone(done);  
 }
 
 void mainmenu_location() {
@@ -80,6 +77,10 @@ void mainmenu_location() {
   ez.buttons.show("#" + back_button + "#");
   ez.canvas.font(&FreeSans9pt7b);
   boolean done = nmea_loop(false, -1, on_nmea_sentence);  
+  checkDone(done);  
+}
+
+void checkDone(boolean done) {
   if (!done) {
     while (!nmea_loop_interrupted()) {}
   }
@@ -327,7 +328,9 @@ void mainmenu_sys() {
   images.run();
 }
 
-void powerOff() { m5.powerOFF(); }
+void powerOff() { 
+  m5.powerOFF(); 
+}
 
 void aboutM5boat() {
   ez.msgBox(F("About M5 Boat Display"), F("By Bareboat-Necessities | | bareboat-necessities.github.io"));
