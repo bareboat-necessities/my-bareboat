@@ -1,14 +1,17 @@
 #include <M5ez.h>
 #include <ezTime.h>
 #include <WiFi.h>
+#include <Preferences.h>
 
 #include "TinyGPS++.h"
 #include "images.h"
 
 #define MAIN_DECLARED
 
-const char* host = "gl-x750";
+const char* host;
 const int port = 10110;
+
+char* nmea_sources[] = {"openplotter", "gl-x750"};
 
 const char* EXIT = "Exit";
 const String back_button = EXIT;
@@ -47,6 +50,8 @@ void setup() {
   initNA(prevTime);
   initNA(gpsTime);
   ezt::setDebug(INFO);
+  ez.settings.menuObj.addItem("NMEA source", nmea_source_menu);
+  nmea_source_begin();
   ez.begin();
 }
 
@@ -60,6 +65,53 @@ void loop() {
   mainmenu.upOnFirst(F("last|up"));
   mainmenu.downOnLast(F("first|down"));
   mainmenu.run();
+}
+
+void nmea_source_begin() {
+  host = nmea_sources[0];
+  Preferences prefs;
+  prefs.begin("M5ez", true);  // read-only
+  nmea_source_select(prefs.getString("nmeaSource", "").c_str());
+  prefs.end();
+}
+
+void nmea_source_select(const char* selectedSource) {
+  host = nmea_sources[0];
+  uint8_t size = sizeof(nmea_sources) / sizeof(nmea_sources[0]);
+  for (uint8_t n = 0; n < size; n++) {
+    if (!strcmp(selectedSource, nmea_sources[n])) {
+      host = nmea_sources[n];
+    }
+  }
+}
+
+void nmea_source_menu() {
+  const char* orig_name = host;
+  ezMenu thememenu("NMEA Source");
+  thememenu.txtSmall();
+  thememenu.buttons("up#Back#select##down#");
+  uint8_t size = sizeof(nmea_sources) / sizeof(nmea_sources[0]);
+  for (uint8_t n = 0; n < size; n++) {
+    if (!strcmp(orig_name, nmea_sources[n])) {
+      thememenu.addItem(nmea_sources[n]);
+    }
+  }
+  for (uint8_t n = 0; n < size; n++) {
+    if (strcmp(orig_name, nmea_sources[n])) {
+      thememenu.addItem(nmea_sources[n]);
+    }
+  }
+  while (thememenu.runOnce()) {
+    if (thememenu.pick()) {
+      nmea_source_select(thememenu.pickName().c_str());
+    }
+  }
+  if (!strcmp(orig_name, host)) {
+    Preferences prefs;
+    prefs.begin("M5ez");
+    prefs.putString("nmeaSource", host);
+    prefs.end();
+  }
 }
 
 void mainmenu_nmea_debug() {
@@ -94,6 +146,8 @@ boolean nmea_loop_interrupted() {
 boolean nmea_loop(boolean debug, int maxLines, void (&onMessage)(const char*)) {
   WiFiClient client;
   if (!client.connect(host, port)) {
+    ez.canvas.print(host);
+    ez.canvas.print(": ");
     ez.canvas.println(F("connection failed"));
     return false;
   }
