@@ -18,6 +18,19 @@ const String back_button = EXIT;
 
 TinyGPSPlus gps;
 
+// Sample: $WIMWV,27,R,00,N,A*26
+char* wind_prefix[] = {"WIMWV", "IIMWV"};
+
+TinyGPSCustom windAngle(gps, wind_prefix[0], 1); // Example: 214.8
+TinyGPSCustom windReference(gps, wind_prefix[0], 2); // Reference: R = Relative, T = True
+TinyGPSCustom windSpeed(gps, wind_prefix[0], 3); // Example: 0.1
+TinyGPSCustom windSpeedUnit(gps, wind_prefix[0], 4); // Units: M = Meter per second, N = Knots, K = Kilometres per hour
+
+TinyGPSCustom windAngleI(gps, wind_prefix[1], 1); // Example: 214.8
+TinyGPSCustom windReferenceI(gps, wind_prefix[1], 2); // Reference: R = Relative, T = True
+TinyGPSCustom windSpeedI(gps, wind_prefix[1], 3); // Example: 0.1
+TinyGPSCustom windSpeedUnitI(gps, wind_prefix[1], 4); // Units: M = Meter per second, N = Knots, K = Kilometres per hour
+
 boolean prevValidLOC = false;
 boolean prevValidSOG = false;
 boolean prevValidCOG = false;
@@ -59,6 +72,7 @@ void loop() {
   ezMenu mainmenu(F("M5 Boat Display"));
   mainmenu.txtSmall();
   mainmenu.addItem(F("Location"), mainmenu_location);
+  mainmenu.addItem(F("Wind"), mainmenu_wind);
   mainmenu.addItem(F("NMEA Debug"), mainmenu_nmea_debug);
   mainmenu.addItem(F("System Info"), mainmenu_sys);
   mainmenu.addItem(F("Built-in WiFi & Settings"), ez.settings.menu);
@@ -128,7 +142,16 @@ void mainmenu_location() {
   ez.header.show(F("Location"));
   ez.buttons.show("#" + back_button + "#");
   ez.canvas.font(&FreeSans9pt7b);
-  boolean done = nmea_loop(false, -1, on_nmea_sentence);  
+  boolean done = nmea_loop(false, -1, on_nmea_sentence_loc);  
+  checkDone(done);  
+}
+
+void mainmenu_wind() {
+  ez.screen.clear();
+  ez.header.show(F("Wind"));
+  ez.buttons.show("#" + back_button + "#");
+  ez.canvas.font(&FreeSans9pt7b);
+  boolean done = nmea_loop(false, -1, on_nmea_sentence_wind);  
   checkDone(done);  
 }
 
@@ -183,11 +206,21 @@ boolean nmea_loop(boolean debug, int maxLines, void (&onMessage)(const char*)) {
   }  
 }
 
-void on_nmea_sentence(const char* line) {
+void on_nmea_sentence_loc(const char* line) {
+  parse_sentence(line);
+  displayLocInfo();
+}
+
+void on_nmea_sentence_wind(const char* line) {
+  // parse_sentence("$WIMWV,27,R,00,N,A*26\r");
+  parse_sentence(line);
+  displayWindInfo();
+}
+
+void parse_sentence(const char* line) {
   for (int i = 0; *line != '\0'; i++, line++) {
     gps.encode(*line);
   }
-  displayInfo();
 }
 
 void on_nmea_sentence_debug(const char* line) {
@@ -327,7 +360,74 @@ void printTime(char* label, char* value, char* prevValue) {
   ez.canvas.println();
 }
 
-void displayInfo() {
+void displayWindInfo() {
+  drawWindScreen();
+}
+
+#define DEG2RAD 0.0174532925
+
+int fillArc(int x, int y, int start_angle, int seg_count, int rx, int ry, int w, unsigned int color) {
+
+  byte seg = 5; // Angle a single segment subtends
+  byte inc = 4; // Draw segments every 6 degrees
+
+  // Draw colour blocks every inc degrees
+  for (int i = start_angle; i < start_angle + seg * seg_count; i += inc) {
+    // Calculate pair of coordinates for segment start
+    float sx = cos((i - 90) * DEG2RAD);
+    float sy = sin((i - 90) * DEG2RAD);
+    uint16_t x0 = sx * (rx - w) + x;
+    uint16_t y0 = sy * (ry - w) + y;
+    uint16_t x1 = sx * rx + x;
+    uint16_t y1 = sy * ry + y;
+
+    // Calculate pair of coordinates for segment end
+    float sx2 = cos((i + seg - 90) * DEG2RAD);
+    float sy2 = sin((i + seg - 90) * DEG2RAD);
+    int x2 = sx2 * (rx - w) + x;
+    int y2 = sy2 * (ry - w) + y;
+    int x3 = sx2 * rx + x;
+    int y3 = sy2 * ry + y;
+
+    M5.Lcd.fillTriangle(x0, y0, x1, y1, x2, y2, color);
+    M5.Lcd.fillTriangle(x1, y1, x2, y2, x3, y3, color);
+  }
+  return 0;
+}
+
+void drawWindScreen() {
+  int circleCenterX = ez.canvas.lmargin() + 160;
+  int circleCenterY = ez.canvas.top() + 100;
+  // do the small ticks every 10 degrees
+  int roseAnglemark = 0;
+  while (roseAnglemark < 360) {
+    float roseAnglemarkradian = ((roseAnglemark - 90) * 71) / 4068.0;
+    float co = cos(roseAnglemarkradian);
+    float si = sin(roseAnglemarkradian);
+    M5.Lcd.drawLine (int(circleCenterX + 80 * co), int(circleCenterY + 80 * si), int(circleCenterX + 90 * co), int(circleCenterY + 90 * si), ez.theme->foreground);
+    roseAnglemark += 10;
+  }
+  // do the longer ticks every 30 degrees
+  roseAnglemark = 0;
+  while (roseAnglemark < 360) {
+    float roseAnglemarkradian = ((roseAnglemark - 90) * 71) / 4068.0;
+    float co = cos(roseAnglemarkradian);
+    float si = sin(roseAnglemarkradian);
+    M5.Lcd.drawLine (int(circleCenterX + 65 * co), int(circleCenterY + 65 * si), int(circleCenterX + 90 * co), int(circleCenterY + 90 * si), ez.theme->foreground);
+    roseAnglemark += 30;
+  }
+  // put red and green arcs on each side
+  fillArc(circleCenterX, circleCenterY, 20, 8, 98, 98, 8, TFT_GREEN);
+  fillArc(circleCenterX, circleCenterY, 300, 8, 98, 98, 8, TFT_RED);
+
+  // put App and True on left and right
+  ez.canvas.pos(ez.canvas.lmargin() + 10, ez.canvas.top() + 10);
+  ez.canvas.println("App");
+  ez.canvas.pos(ez.canvas.lmargin() + 250, ez.canvas.top() + 10);
+  ez.canvas.print("True");
+}
+
+void displayLocInfo() {
   ez.canvas.font(&FreeMonoBold12pt7b);
   ez.canvas.lmargin(10);
   ez.canvas.y(ez.canvas.top() + 10);
