@@ -183,7 +183,7 @@ boolean nmea_loop(boolean debug, int maxLines, void (&onMessage)(const char*)) {
     unsigned long timeout = millis();
     while (client.available() <= 0) {
       if (millis() - timeout > 5000) {
-        ez.canvas.println(F(">> client timeout!"));
+        ez.canvas.println(F("timeout!"));
         client.stop();
         return false;
       }
@@ -400,11 +400,9 @@ void drawWindScreen() {
   fillArc(circleCenterX, circleCenterY, 20, 8, 97, 97, 8, TFT_GREEN);
   fillArc(circleCenterX, circleCenterY, 300, 8, 97, 97, 8, TFT_RED);
 
-  // put App and True on left and right
+  // print apparent wind
   ez.canvas.pos(ez.canvas.lmargin() + 10, ez.canvas.top() + 10);
   ez.canvas.println("App");
-  ez.canvas.pos(ez.canvas.lmargin() + 250, ez.canvas.top() + 10);
-  ez.canvas.print("True");
 }
 
 void displayLocInfo() {
