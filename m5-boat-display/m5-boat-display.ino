@@ -457,10 +457,10 @@ void drawWindScreen() {
   const char* windAngle = wind_angle();
 
   // print wind speed
-  int left = !trueWind ? ez.canvas.lmargin() + 255 : ez.canvas.lmargin() + 10;
+  int left = trueWind ? ez.canvas.lmargin() + 255 : ez.canvas.lmargin() + 10;
   ez.canvas.pos(left, ez.canvas.top() + 10);
   ez.canvas.println(windType);
-  ez.canvas.pos(left - 10, ez.canvas.top() + 165);
+  ez.canvas.pos(left - 9, ez.canvas.top() + 165);
   ez.canvas.print(windSpeed);
   ez.canvas.print(' ');
   ez.canvas.println(units_name(windUnits));
@@ -468,6 +468,16 @@ void drawWindScreen() {
   if (!trueWind) {
     float angleDeg = parse_float(wind_angle());
     drawPointer(angleDeg, circleCenterX, circleCenterY, ez.theme->foreground);
+
+    // print angle in center
+    ez.canvas.pos(circleCenterX - 25, circleCenterY - 10);
+    if (angleDeg > 180) {
+      sprintf(tmp_buf, "%3.0f", abs(angleDeg - 360));
+    } else {
+      sprintf(tmp_buf, "%03.0f", abs(angleDeg));
+    }
+    ez.canvas.print(tmp_buf);
+    printDegree();
   }
 }
 
