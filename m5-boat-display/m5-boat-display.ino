@@ -23,6 +23,8 @@ TinyGPSPlus gps;
 // Sample: $WIMWV,27,R,00,N,A*26
 char* wind_prefix[] = {"WIMWV", "IIMWV"};
 
+int wind_prefix_index = 0;
+
 TinyGPSCustom windAngle(gps, wind_prefix[0], 1); // Example: 214.8
 TinyGPSCustom windReference(gps, wind_prefix[0], 2); // Reference: R = Relative, T = True
 TinyGPSCustom windSpeed(gps, wind_prefix[0], 3); // Example: 0.1
@@ -214,8 +216,8 @@ void on_nmea_sentence_loc(const char* line) {
 }
 
 void on_nmea_sentence_wind(const char* line) {
-  // parse_sentence("$WIMWV,27,R,00,N,A*26\r");
-  parse_sentence(line);
+  parse_sentence("$WIMWV,27,R,00,N,A*26\r");
+  //parse_sentence(line);
   displayWindInfo();
 }
 
@@ -389,6 +391,50 @@ void drawTicks(int circleCenterX, int circleCenterY, int rLow, int rHigh, int st
   }
 }
 
+const char* wind_ref() {
+  if (wind_prefix_index == 0) {
+    return windReference.value();
+  } else {
+    return windReferenceI.value();
+  }
+}
+
+const char* wind_speed() {
+  if (wind_prefix_index == 0) {
+    return windSpeed.value();
+  } else {
+    return windSpeedI.value();
+  }
+}
+
+const char* wind_units() {
+  if (wind_prefix_index == 0) {
+    return windSpeedUnit.value();
+  } else {
+    return windSpeedUnitI.value();
+  }
+}
+
+const char* wind_angle() {
+  if (wind_prefix_index == 0) {
+    return windAngle.value();
+  } else {
+    return windAngleI.value();
+  }
+}
+
+const char* units_name(const char* units) {
+  if (!strcmp("N", units)) {
+    return "kt";
+  } else if (!strcmp("K", units)) {
+    return "km/h";
+  } else if (!strcmp("M", units)) {
+    return "m/s";
+  } else {
+    return "";
+  }
+}
+
 void drawWindScreen() {
   int circleCenterX = ez.canvas.lmargin() + 160;
   int circleCenterY = ez.canvas.top() + 100;
@@ -400,9 +446,21 @@ void drawWindScreen() {
   fillArc(circleCenterX, circleCenterY, 20, 8, 97, 97, 8, TFT_GREEN);
   fillArc(circleCenterX, circleCenterY, 300, 8, 97, 97, 8, TFT_RED);
 
-  // print apparent wind
-  ez.canvas.pos(ez.canvas.lmargin() + 10, ez.canvas.top() + 10);
-  ez.canvas.println("App");
+  boolean trueWind = !strcmp(wind_ref(), "T");
+  
+  const char* windType = trueWind ? "True" : "App";
+  const char* windSpeed = wind_speed();
+  const char* windUnits = wind_units();
+  const char* windAngle = wind_angle();
+
+  // print wind speed
+  int left = !trueWind ? ez.canvas.lmargin() + 255 : ez.canvas.lmargin() + 10;
+  ez.canvas.pos(left, ez.canvas.top() + 10);
+  ez.canvas.println(windType);
+  ez.canvas.pos(left, ez.canvas.top() + 30);
+  ez.canvas.println(windSpeed);
+  ez.canvas.pos(left, ez.canvas.top() + 50);
+  ez.canvas.println(units_name(windUnits));
 }
 
 void displayLocInfo() {
