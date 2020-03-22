@@ -467,11 +467,11 @@ void drawWindScreen() {
     float angleDeg = parse_float(wind_angle());
     drawPointer(angleDeg, circleCenterX, circleCenterY, ez.theme->foreground);
 
-    ez.canvas.pos(circleCenterX - (6 * (strlen(windSpeed) + 1 + strlen(windUnits))), circleCenterY - 12);
+    ez.canvas.pos(circleCenterX - (6 * (strlen(windSpeed) + 1 + strlen(windUnits))), circleCenterY - 13);
     printSpeed(windSpeed, units_name(windUnits));
 
     // print angle in center
-    ez.canvas.pos(circleCenterX - 23, circleCenterY + 10);
+    ez.canvas.pos(circleCenterX - 23, circleCenterY + 9);
     if (angleDeg > 180) {
       sprintf(tmp_buf, "%03.0f", abs(angleDeg - 360));
     } else {
@@ -479,7 +479,7 @@ void drawWindScreen() {
     }
     ez.canvas.print(tmp_buf);
     printDegree();
-    ez.canvas.pos(circleCenterX - 40, circleCenterY + 30);
+    ez.canvas.pos(circleCenterX - 37, circleCenterY + 30);
   }
 }
 
@@ -491,10 +491,10 @@ void drawPointer(float angleDeg, int circleCenterX, int circleCenterY, unsigned 
   // Get the coords of the pointer
   int xp = round(circleCenterX + (68 * cos(windRad)));
   int yp = round(circleCenterY + (68 * sin(windRad)));
-  int xl = round(circleCenterX + (30 * cos(windRad - pointerWidth)));
-  int yl = round(circleCenterY + (30 * sin(windRad - pointerWidth)));
-  int xr = round(circleCenterX + (30 * cos(windRad + pointerWidth)));
-  int yr = round(circleCenterY + (30 * sin(windRad + pointerWidth)));
+  int xl = round(circleCenterX + (32 * cos(windRad - pointerWidth)));
+  int yl = round(circleCenterY + (32 * sin(windRad - pointerWidth)));
+  int xr = round(circleCenterX + (32 * cos(windRad + pointerWidth)));
+  int yr = round(circleCenterY + (32 * sin(windRad + pointerWidth)));
   M5.Lcd.fillTriangle(xp, yp, xl, yl, xr, yr, color);
 }
 
