@@ -467,11 +467,11 @@ void drawWindScreen() {
     float angleDeg = parse_float(wind_angle());
     drawPointer(angleDeg, circleCenterX, circleCenterY, ez.theme->foreground);
 
-    ez.canvas.pos(circleCenterX - (6 * (strlen(windSpeed) + 1 + strlen(windUnits))), circleCenterY - 13);
+    ez.canvas.pos(circleCenterX - (6 * (strlen(windSpeed) + 1 + strlen(windUnits))), circleCenterY - 15);
     printSpeed(windSpeed, units_name(windUnits));
 
     // print angle in center
-    ez.canvas.pos(circleCenterX - 23, circleCenterY + 9);
+    ez.canvas.pos(circleCenterX - 23, circleCenterY + 7);
     if (angleDeg > 180) {
       sprintf(tmp_buf, "%03.0f", abs(angleDeg - 360));
     } else {
@@ -479,7 +479,7 @@ void drawWindScreen() {
     }
     ez.canvas.print(tmp_buf);
     printDegree();
-    ez.canvas.pos(circleCenterX - 37, circleCenterY + 30);
+    ez.canvas.pos(circleCenterX - 33, circleCenterY + 30);
   }
 }
 
