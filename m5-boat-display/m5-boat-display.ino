@@ -6,7 +6,7 @@
 #include "TinyGPS++.h"
 #include "m5-draw.h"
 #include "images.h"
-#include "ubuntumono_bold14pt7b.h"
+#include "ubuntumono_regular14pt7b.h"
 
 #define MAIN_DECLARED
 
@@ -381,21 +381,21 @@ void drawTick(int angleDeg, int circleCenterX, int circleCenterY, int rLow, int 
                         round(circleCenterX + rHigh * coL), round(circleCenterY + rHigh * siL), color);
 }
 
+void drawTicks(int circleCenterX, int circleCenterY, int rLow, int rHigh, int step, unsigned int color) {  
+  int roseAnglemark = 0;
+  while (roseAnglemark < 360) {
+    drawTick(roseAnglemark, circleCenterX, circleCenterY, rLow, rHigh, 1.0, color);
+    roseAnglemark += step;
+  }
+}
+
 void drawWindScreen() {
   int circleCenterX = ez.canvas.lmargin() + 160;
   int circleCenterY = ez.canvas.top() + 100;
   // do the small ticks every 10 degrees
-  int roseAnglemark = 0;
-  while (roseAnglemark < 360) {
-    drawTick(roseAnglemark, circleCenterX, circleCenterY, 83, 89, 1.0, ez.theme->foreground);
-    roseAnglemark += 10;
-  }
+  drawTicks(circleCenterX, circleCenterY, 83, 89, 10, ez.theme->foreground);
   // do the longer ticks every 30 degrees
-  roseAnglemark = 0;
-  while (roseAnglemark < 360) {
-    drawTick(roseAnglemark, circleCenterX, circleCenterY, 71, 89, 1.0, ez.theme->foreground);
-    roseAnglemark += 30;
-  }
+  drawTicks(circleCenterX, circleCenterY, 71, 89, 30, ez.theme->foreground);
   // put red and green arcs on each side
   fillArc(circleCenterX, circleCenterY, 20, 8, 97, 97, 8, TFT_GREEN);
   fillArc(circleCenterX, circleCenterY, 300, 8, 97, 97, 8, TFT_RED);
@@ -406,7 +406,7 @@ void drawWindScreen() {
 }
 
 void displayLocInfo() {
-  ez.canvas.font(&ubuntumono_bold14pt7b);
+  ez.canvas.font(&ubuntumono_regular14pt7b);
   ez.canvas.lmargin(10);
   ez.canvas.y(ez.canvas.top() + 10);
   ez.canvas.x(ez.canvas.lmargin());
