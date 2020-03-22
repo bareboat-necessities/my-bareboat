@@ -217,9 +217,44 @@ void on_nmea_sentence_loc(const char* line) {
   displayLocInfo();
 }
 
+#define NMEA_END_CHAR_1 '\n'
+#define NMEA_MAX_LENGTH 128
+
+uint8_t nmea_get_checksum(const char *sentence) {
+  const char *n = sentence + 1; // Plus one, skip '$'
+  uint8_t chk = 0;
+  /* While current char isn't '*' or sentence ending (newline) */
+  while ('*' != *n && NMEA_END_CHAR_1 != *n) {
+    if ('\0' == *n || n - sentence > NMEA_MAX_LENGTH) {
+      /* Sentence too long or short */
+      return 0;
+    }
+    chk ^= (uint8_t) *n;
+    n++;
+  }
+  return chk;
+}
+
+
+char foo[128];
+char foo2[128];
+
+void gen_sentence() {
+  float angle = (rand() % 3600) / 10.0;
+  float speed = (rand() % 200) / 10.0; 
+  sprintf(foo, "$WIMWV,%.1f,R,%.1f,N,A*", angle, speed);
+  uint8_t sum = nmea_get_checksum(foo);  
+  sprintf(foo2, "%s%02X\r", foo, sum);
+}
+
 void on_nmea_sentence_wind(const char* line) {
-  parse_sentence("$WIMWV,27,R,00,N,A*26\r");
+  //parse_sentence("$WIMWV,27,R,00,N,A*26\r");
   //parse_sentence(line);
+
+  gen_sentence();
+  parse_sentence(foo2);
+  parse_sentence(line);
+  
   displayWindInfo();
 }
 
