@@ -157,6 +157,7 @@ void mainmenu_wind() {
   ez.header.show(F("Wind"));
   ez.buttons.show("#" + back_button + "#");
   ez.canvas.font(&FreeSans9pt7b);
+  drawWindCircle();
   boolean done = nmea_loop(false, -1, on_nmea_sentence_wind);  
   checkDone(done);  
 }
@@ -241,8 +242,8 @@ char foo2[128];
 
 void gen_sentence() {
   float angle = (rand() % 3600) / 10.0;
-  float speed = (rand() % 200) / 10.0; 
-  sprintf(foo, "$WIMWV,%.1f,R,%.1f,N,A*", angle, speed);
+  float speed = (rand() % 1000) / 10.0; 
+  sprintf(foo, "$WIMWV,%.1f,R,%.1f,K,A*", angle, speed);
   uint8_t sum = nmea_get_checksum(foo);  
   sprintf(foo2, "%s%02X\r", foo, sum);
 }
@@ -472,9 +473,17 @@ const char* units_name(const char* units) {
   }
 }
 
-void drawWindScreen() {
-  int circleCenterX = ez.canvas.lmargin() + 160;
-  int circleCenterY = ez.canvas.top() + 100;
+int getCenterX() {
+  return ez.canvas.lmargin() + 160;
+}
+
+int getCenterY() {
+  return ez.canvas.top() + 100;
+}
+
+void drawWindCircle() {
+  int circleCenterX = getCenterX();
+  int circleCenterY = getCenterY();
   // do the small ticks every 10 degrees
   drawTicks(circleCenterX, circleCenterY, 83, 89, 10, ez.theme->foreground);
   // do the longer ticks every 30 degrees
@@ -482,6 +491,11 @@ void drawWindScreen() {
   // put red and green arcs on each side
   fillArc(circleCenterX, circleCenterY, 20, 8, 97, 97, 8, TFT_GREEN);
   fillArc(circleCenterX, circleCenterY, 300, 8, 97, 97, 8, TFT_RED);
+}
+
+void drawWindScreen() {
+  int circleCenterX = getCenterX();
+  int circleCenterY = getCenterY();
 
   boolean trueWind = !strcmp("T", wind_ref());
   
@@ -514,18 +528,18 @@ void drawWindScreen() {
     drawPointer(angleDeg, circleCenterX, circleCenterY, ez.theme->foreground);
 
     sprintf(tmp_buf, "%.0f", parse_float(wind_speed()));
-    ez.canvas.pos(circleCenterX - (6 * (strlen(tmp_buf) + 1 + strlen(windUnits))), circleCenterY - 14);
+    ez.canvas.pos(circleCenterX - (6 * (strlen(tmp_buf) + 1 + strlen(windUnits))) - 2, circleCenterY - 13);
     print_speed(tmp_buf, units_name(windUnits));
 
     // print angle in center
-    ez.canvas.pos(circleCenterX - 21, circleCenterY + 6);
+    ez.canvas.pos(circleCenterX - 21, circleCenterY + 7);
     if (angleDeg > 180) {
       sprintf(tmp_buf, "%03.0f", abs(angleDeg - 360));
     } else {
       sprintf(tmp_buf, "%03.0f", abs(angleDeg));
     }
     print_angle(tmp_buf);
-    ez.canvas.pos(circleCenterX - 33, circleCenterY + 26);
+    ez.canvas.pos(circleCenterX - 33, circleCenterY + 27);
   }
 }
 
