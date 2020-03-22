@@ -462,15 +462,17 @@ void drawWindScreen() {
   sprintf(tmp_buf, "%.0f", parse_float(wind_speed()));
   print_speed(tmp_buf, units_name(windUnits));
 
-  float realWindangle = parse_float(windAngle);
-  if ((gps.course.deg() + realWindangle) <= 360) {
-    realWindangle = gps.course.deg() + realWindangle;
-  } else {
-    realWindangle = (gps.course.deg() + realWindangle) - 360;
+  if (gps.course.isValid()) {
+    float realWindangle = parse_float(windAngle);
+    if ((gps.course.deg() + realWindangle) <= 360) {
+      realWindangle = gps.course.deg() + realWindangle;
+    } else {
+      realWindangle = (gps.course.deg() + realWindangle) - 360;
+    }
+    ez.canvas.pos(left, ez.canvas.top() + 165);
+    sprintf(tmp_buf, "%.0f", realWindangle);
+    print_angle(tmp_buf);
   }
-  ez.canvas.pos(left, ez.canvas.top() + 165);
-  sprintf(tmp_buf, "%.0f", realWindangle);
-  print_angle(tmp_buf);
 
   if (!trueWind) {
     float angleDeg = parse_float(wind_angle());
