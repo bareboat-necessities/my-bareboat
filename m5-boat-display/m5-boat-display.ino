@@ -61,6 +61,8 @@ char COGstr[5];
 char prevTime[20];
 char gpsTime[20];
 
+char tmp_buf[20];
+
 void setup() {
   #include <themes/dark.h>
   #include <themes/default.h>
@@ -446,10 +448,11 @@ void drawWindScreen() {
   fillArc(circleCenterX, circleCenterY, 20, 8, 97, 97, 8, TFT_GREEN);
   fillArc(circleCenterX, circleCenterY, 300, 8, 97, 97, 8, TFT_RED);
 
-  boolean trueWind = !strcmp(wind_ref(), "T");
+  boolean trueWind = !strcmp("T", wind_ref());
   
   const char* windType = trueWind ? "True" : "App";
-  const char* windSpeed = wind_speed();
+  sprintf(tmp_buf, "%.0f", parse_float(wind_speed()));
+  const char* windSpeed = tmp_buf;
   const char* windUnits = wind_units();
   const char* windAngle = wind_angle();
 
@@ -457,19 +460,30 @@ void drawWindScreen() {
   int left = !trueWind ? ez.canvas.lmargin() + 255 : ez.canvas.lmargin() + 10;
   ez.canvas.pos(left, ez.canvas.top() + 10);
   ez.canvas.println(windType);
-  ez.canvas.pos(left, ez.canvas.top() + 30);
-  ez.canvas.println(windSpeed);
-  ez.canvas.pos(left, ez.canvas.top() + 50);
+  ez.canvas.pos(left - 10, ez.canvas.top() + 165);
+  ez.canvas.print(windSpeed);
+  ez.canvas.print(' ');
   ez.canvas.println(units_name(windUnits));
 
-  // print wind arrow
-  float angleDeg = parse_float(wind_angle());
+  if (!trueWind) {
+    float angleDeg = parse_float(wind_angle());
+    drawPointer(angleDeg, circleCenterX, circleCenterY, ez.theme->foreground);
+  }
+}
+
+void drawPointer(float angleDeg, int circleCenterX, int circleCenterY, unsigned int color) {
   float windRad = degToRad(angleDeg - 90);
   float co = cos(windRad);
   float si = sin(windRad);
-  int r = 69; 
-  M5.Lcd.drawLine(circleCenterX, circleCenterY, round(circleCenterX + r * co), round(circleCenterY + r * si), ez.theme->foreground);
-
+  float pointerWidth = 0.1745; // 10 degrees in radians. 
+  // Get the coords of the pointer
+  int xp = round(circleCenterX + (68 * cos(windRad)));
+  int yp = round(circleCenterY + (68 * sin(windRad)));
+  int xl = round(circleCenterX + (30 * cos(windRad - pointerWidth)));
+  int yl = round(circleCenterY + (30 * sin(windRad - pointerWidth)));
+  int xr = round(circleCenterX + (30 * cos(windRad + pointerWidth)));
+  int yr = round(circleCenterY + (30 * sin(windRad + pointerWidth)));
+  M5.Lcd.fillTriangle(xp, yp, xl, yl, xr, yr, color);
 }
 
 float parse_float(const char* str) {
