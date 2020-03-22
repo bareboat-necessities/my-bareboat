@@ -461,23 +461,25 @@ void drawWindScreen() {
   ez.canvas.pos(left, ez.canvas.top() + 10);
   ez.canvas.println(windType);
   ez.canvas.pos(left - 9, ez.canvas.top() + 165);
-  ez.canvas.print(windSpeed);
-  ez.canvas.print(' ');
-  ez.canvas.println(units_name(windUnits));
+  printSpeed(windSpeed, units_name(windUnits));
 
   if (!trueWind) {
     float angleDeg = parse_float(wind_angle());
     drawPointer(angleDeg, circleCenterX, circleCenterY, ez.theme->foreground);
 
+    ez.canvas.pos(circleCenterX - (6 * (strlen(windSpeed) + 1 + strlen(windUnits))), circleCenterY - 12);
+    printSpeed(windSpeed, units_name(windUnits));
+
     // print angle in center
-    ez.canvas.pos(circleCenterX - 25, circleCenterY - 10);
+    ez.canvas.pos(circleCenterX - 23, circleCenterY + 10);
     if (angleDeg > 180) {
-      sprintf(tmp_buf, "%3.0f", abs(angleDeg - 360));
+      sprintf(tmp_buf, "%03.0f", abs(angleDeg - 360));
     } else {
       sprintf(tmp_buf, "%03.0f", abs(angleDeg));
     }
     ez.canvas.print(tmp_buf);
     printDegree();
+    ez.canvas.pos(circleCenterX - 40, circleCenterY + 30);
   }
 }
 
@@ -494,6 +496,12 @@ void drawPointer(float angleDeg, int circleCenterX, int circleCenterY, unsigned 
   int xr = round(circleCenterX + (30 * cos(windRad + pointerWidth)));
   int yr = round(circleCenterY + (30 * sin(windRad + pointerWidth)));
   M5.Lcd.fillTriangle(xp, yp, xl, yl, xr, yr, color);
+}
+
+void printSpeed(const char* speed, const char* units) {
+  ez.canvas.print(speed);
+  ez.canvas.print(' ');
+  ez.canvas.print(units);
 }
 
 float parse_float(const char* str) {
