@@ -504,10 +504,10 @@ void drawWindScreen() {
   const char* windAngle = wind_angle();
 
   // print wind speed
-  int left = trueWind ? ez.canvas.lmargin() + 255 : ez.canvas.lmargin() + 1;
-  ez.canvas.pos(left, ez.canvas.top() + 125);
+  int left = trueWind ? ez.canvas.lmargin() + 244 : ez.canvas.lmargin() + 1;
+  ez.canvas.pos(left, ez.canvas.top() + 134);
   ez.canvas.println(windType);
-  ez.canvas.pos(left, ez.canvas.top() + 145);
+  ez.canvas.pos(left, ez.canvas.top() + 153);
   sprintf(tmp_buf, "%.0f", parse_float(wind_speed()));
   print_speed(tmp_buf, units_name(windUnits));
 
@@ -518,7 +518,7 @@ void drawWindScreen() {
     } else {
       realWindangle = (gps.course.deg() + realWindangle) - 360;
     }
-    ez.canvas.pos(left, ez.canvas.top() + 165);
+    ez.canvas.pos(left, ez.canvas.top() + 172);
     sprintf(tmp_buf, "%.0f", realWindangle);
     print_angle(tmp_buf);
   }
@@ -527,6 +527,7 @@ void drawWindScreen() {
     float angleDeg = parse_float(wind_angle());
     drawPointer(angleDeg, circleCenterX, circleCenterY, ez.theme->foreground);
 
+    // print speed in center
     sprintf(tmp_buf, "%.0f", parse_float(wind_speed()));
     ez.canvas.pos(circleCenterX - (6 * (strlen(tmp_buf) + 1 + strlen(windUnits))) - 2, circleCenterY - 13);
     print_speed(tmp_buf, units_name(windUnits));
