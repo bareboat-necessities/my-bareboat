@@ -461,6 +461,19 @@ void drawWindScreen() {
   ez.canvas.println(windSpeed);
   ez.canvas.pos(left, ez.canvas.top() + 50);
   ez.canvas.println(units_name(windUnits));
+
+  // print wind arrow
+  float angleDeg = parse_float(wind_angle());
+  float windRad = degToRad(angleDeg - 90);
+  float co = cos(windRad);
+  float si = sin(windRad);
+  int r = 69; 
+  M5.Lcd.drawLine(circleCenterX, circleCenterY, round(circleCenterX + r * co), round(circleCenterY + r * si), ez.theme->foreground);
+
+}
+
+float parse_float(const char* str) {
+  return strtof(str, NULL);
 }
 
 void displayLocInfo() {

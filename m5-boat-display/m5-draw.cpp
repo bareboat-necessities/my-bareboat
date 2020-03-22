@@ -32,6 +32,6 @@ void fillArc(int x, int y, int start_angle, int seg_count, int rx, int ry, int w
   }
 }
 
-float degToRad(int angleDeg) {
+float degToRad(float angleDeg) {
   return angleDeg * DEG2RAD;
 }
