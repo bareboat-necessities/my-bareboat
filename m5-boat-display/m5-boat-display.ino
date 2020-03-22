@@ -239,9 +239,11 @@ uint8_t nmea_get_checksum(const char *sentence) {
 
 char foo[128];
 char foo2[128];
+float fooAng = 0.0;
 
 void gen_sentence() {
-  float angle = (rand() % 3600) / 10.0;
+  fooAng = fooAng + 1;
+  float angle = fooAng;
   float speed = (rand() % 1000) / 10.0; 
   sprintf(foo, "$WIMWV,%.1f,R,%.1f,K,A*", angle, speed);
   uint8_t sum = nmea_get_checksum(foo);  
@@ -402,8 +404,14 @@ void printTime(char* label, char* value, char* prevValue) {
   ez.canvas.println();
 }
 
+unsigned long last_wind_update = 0;
+
 void displayWindInfo() {
-  drawWindScreen();
+  unsigned long now = millis();
+  if (wind_angle_updated() && (now - last_wind_update > 200)) {
+    drawWindScreen();
+    last_wind_update = now;
+  }
 }
 
 void drawTick(int angleDeg, int circleCenterX, int circleCenterY, int rLow, int rHigh, float archDeg, unsigned int color) {
@@ -461,6 +469,14 @@ const char* wind_angle() {
   }
 }
 
+boolean wind_angle_updated() {
+  if (wind_prefix_index == 0) {
+    return windAngle.isUpdated();
+  } else {
+    return windAngleI.isUpdated();
+  }
+}
+
 const char* units_name(const char* units) {
   if (!strcmp("N", units)) {
     return "kt";
@@ -493,16 +509,18 @@ void drawWindCircle() {
   fillArc(circleCenterX, circleCenterY, 300, 8, 97, 97, 8, TFT_RED);
 }
 
-void drawWindScreen() {
+void drawWindScreen() {  
   int circleCenterX = getCenterX();
   int circleCenterY = getCenterY();
-
+  
   boolean trueWind = !strcmp("T", wind_ref());
   
   const char* windType = trueWind ? "True" : "App";
   const char* windUnits = wind_units();
   const char* windAngle = wind_angle();
-
+  
+  M5.Lcd.fillEllipse(circleCenterX, circleCenterY, 70, 70, ez.theme->background);
+  
   // print wind speed
   int left = trueWind ? ez.canvas.lmargin() + 244 : ez.canvas.lmargin() + 1;
   ez.canvas.pos(left, ez.canvas.top() + 134);
@@ -510,7 +528,7 @@ void drawWindScreen() {
   ez.canvas.pos(left, ez.canvas.top() + 153);
   sprintf(tmp_buf, "%.0f", parse_float(wind_speed()));
   print_speed(tmp_buf, units_name(windUnits));
-
+  
   if (gps.course.isValid()) {
     float realWindangle = parse_float(windAngle);
     if ((gps.course.deg() + realWindangle) <= 360) {
@@ -522,16 +540,16 @@ void drawWindScreen() {
     sprintf(tmp_buf, "%.0f", realWindangle);
     print_angle(tmp_buf);
   }
-
+  
   if (!trueWind) {
     float angleDeg = parse_float(wind_angle());
     drawPointer(angleDeg, circleCenterX, circleCenterY, ez.theme->foreground);
-
+  
     // print speed in center
     sprintf(tmp_buf, "%.0f", parse_float(wind_speed()));
     ez.canvas.pos(circleCenterX - (6 * (strlen(tmp_buf) + 1 + strlen(windUnits))) - 2, circleCenterY - 13);
     print_speed(tmp_buf, units_name(windUnits));
-
+  
     // print angle in center
     ez.canvas.pos(circleCenterX - 21, circleCenterY + 7);
     if (angleDeg > 180) {
