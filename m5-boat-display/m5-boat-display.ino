@@ -3,6 +3,7 @@
 #include <WiFi.h>
 #include <Preferences.h>
 
+#include "UbuntuMono_Bold12pt7b.h"
 #include "TinyGPS++.h"
 #include "images.h"
 
@@ -395,30 +396,43 @@ int fillArc(int x, int y, int start_angle, int seg_count, int rx, int ry, int w,
   return 0;
 }
 
+float degToRad(int angleDeg) {
+  return angleDeg * 71 / 4068.0;
+}
+
+void drawTick(int angleDeg, int circleCenterX, int circleCenterY, int rLow, int rHigh, float archDeg, unsigned int color) {
+    float roseAnglemarkradian = degToRad(angleDeg - 90);
+    float roseAnglemarkradianH = degToRad(angleDeg - 90 + archDeg);
+    float roseAnglemarkradianL = degToRad(angleDeg - 90 - archDeg);
+    float co = cos(roseAnglemarkradian);
+    float si = sin(roseAnglemarkradian);
+    float coH = cos(roseAnglemarkradianH);
+    float siH = sin(roseAnglemarkradianH);
+    float coL = cos(roseAnglemarkradianL);
+    float siL = sin(roseAnglemarkradianL);
+    M5.Lcd.fillTriangle(round(circleCenterX + rLow * co), round(circleCenterY + rLow * si), 
+                        round(circleCenterX + rHigh * coH), round(circleCenterY + rHigh * siH), 
+                        round(circleCenterX + rHigh * coL), round(circleCenterY + rHigh * siL), color);
+}
+
 void drawWindScreen() {
   int circleCenterX = ez.canvas.lmargin() + 160;
   int circleCenterY = ez.canvas.top() + 100;
   // do the small ticks every 10 degrees
   int roseAnglemark = 0;
   while (roseAnglemark < 360) {
-    float roseAnglemarkradian = ((roseAnglemark - 90) * 71) / 4068.0;
-    float co = cos(roseAnglemarkradian);
-    float si = sin(roseAnglemarkradian);
-    M5.Lcd.drawLine (int(circleCenterX + 80 * co), int(circleCenterY + 80 * si), int(circleCenterX + 90 * co), int(circleCenterY + 90 * si), ez.theme->foreground);
+    drawTick(roseAnglemark, circleCenterX, circleCenterY, 83, 89, 1.0, ez.theme->foreground);
     roseAnglemark += 10;
   }
   // do the longer ticks every 30 degrees
   roseAnglemark = 0;
   while (roseAnglemark < 360) {
-    float roseAnglemarkradian = ((roseAnglemark - 90) * 71) / 4068.0;
-    float co = cos(roseAnglemarkradian);
-    float si = sin(roseAnglemarkradian);
-    M5.Lcd.drawLine (int(circleCenterX + 65 * co), int(circleCenterY + 65 * si), int(circleCenterX + 90 * co), int(circleCenterY + 90 * si), ez.theme->foreground);
+    drawTick(roseAnglemark, circleCenterX, circleCenterY, 71, 89, 1.0, ez.theme->foreground);
     roseAnglemark += 30;
   }
   // put red and green arcs on each side
-  fillArc(circleCenterX, circleCenterY, 20, 8, 98, 98, 8, TFT_GREEN);
-  fillArc(circleCenterX, circleCenterY, 300, 8, 98, 98, 8, TFT_RED);
+  fillArc(circleCenterX, circleCenterY, 20, 8, 97, 97, 8, TFT_GREEN);
+  fillArc(circleCenterX, circleCenterY, 300, 8, 97, 97, 8, TFT_RED);
 
   // put App and True on left and right
   ez.canvas.pos(ez.canvas.lmargin() + 10, ez.canvas.top() + 10);
@@ -428,7 +442,7 @@ void drawWindScreen() {
 }
 
 void displayLocInfo() {
-  ez.canvas.font(&FreeMonoBold12pt7b);
+  ez.canvas.font(&UbuntuMono_Bold12pt7b);
   ez.canvas.lmargin(10);
   ez.canvas.y(ez.canvas.top() + 10);
   ez.canvas.x(ez.canvas.lmargin());
