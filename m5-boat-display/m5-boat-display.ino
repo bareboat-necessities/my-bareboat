@@ -3,9 +3,10 @@
 #include <WiFi.h>
 #include <Preferences.h>
 
-#include "UbuntuMono_Bold12pt7b.h"
 #include "TinyGPS++.h"
+#include "m5-draw.h"
 #include "images.h"
+#include "ubuntumono_bold14pt7b.h"
 
 #define MAIN_DECLARED
 
@@ -219,7 +220,7 @@ void on_nmea_sentence_wind(const char* line) {
 }
 
 void parse_sentence(const char* line) {
-  for (int i = 0; *line != '\0'; i++, line++) {
+  for (; *line != '\0'; line++) {
     gps.encode(*line);
   }
 }
@@ -365,41 +366,6 @@ void displayWindInfo() {
   drawWindScreen();
 }
 
-#define DEG2RAD 0.0174532925
-
-int fillArc(int x, int y, int start_angle, int seg_count, int rx, int ry, int w, unsigned int color) {
-
-  byte seg = 5; // Angle a single segment subtends
-  byte inc = 4; // Draw segments every 6 degrees
-
-  // Draw colour blocks every inc degrees
-  for (int i = start_angle; i < start_angle + seg * seg_count; i += inc) {
-    // Calculate pair of coordinates for segment start
-    float sx = cos((i - 90) * DEG2RAD);
-    float sy = sin((i - 90) * DEG2RAD);
-    uint16_t x0 = sx * (rx - w) + x;
-    uint16_t y0 = sy * (ry - w) + y;
-    uint16_t x1 = sx * rx + x;
-    uint16_t y1 = sy * ry + y;
-
-    // Calculate pair of coordinates for segment end
-    float sx2 = cos((i + seg - 90) * DEG2RAD);
-    float sy2 = sin((i + seg - 90) * DEG2RAD);
-    int x2 = sx2 * (rx - w) + x;
-    int y2 = sy2 * (ry - w) + y;
-    int x3 = sx2 * rx + x;
-    int y3 = sy2 * ry + y;
-
-    M5.Lcd.fillTriangle(x0, y0, x1, y1, x2, y2, color);
-    M5.Lcd.fillTriangle(x1, y1, x2, y2, x3, y3, color);
-  }
-  return 0;
-}
-
-float degToRad(int angleDeg) {
-  return angleDeg * 71 / 4068.0;
-}
-
 void drawTick(int angleDeg, int circleCenterX, int circleCenterY, int rLow, int rHigh, float archDeg, unsigned int color) {
     float roseAnglemarkradian = degToRad(angleDeg - 90);
     float roseAnglemarkradianH = degToRad(angleDeg - 90 + archDeg);
@@ -442,7 +408,7 @@ void drawWindScreen() {
 }
 
 void displayLocInfo() {
-  ez.canvas.font(&UbuntuMono_Bold12pt7b);
+  ez.canvas.font(&ubuntumono_bold14pt7b);
   ez.canvas.lmargin(10);
   ez.canvas.y(ez.canvas.top() + 10);
   ez.canvas.x(ez.canvas.lmargin());
