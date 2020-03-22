@@ -451,35 +451,44 @@ void drawWindScreen() {
   boolean trueWind = !strcmp("T", wind_ref());
   
   const char* windType = trueWind ? "True" : "App";
-  sprintf(tmp_buf, "%.0f", parse_float(wind_speed()));
-  const char* windSpeed = tmp_buf;
   const char* windUnits = wind_units();
   const char* windAngle = wind_angle();
 
   // print wind speed
-  int left = trueWind ? ez.canvas.lmargin() + 255 : ez.canvas.lmargin() + 10;
-  ez.canvas.pos(left, ez.canvas.top() + 10);
+  int left = trueWind ? ez.canvas.lmargin() + 255 : ez.canvas.lmargin() + 1;
+  ez.canvas.pos(left, ez.canvas.top() + 125);
   ez.canvas.println(windType);
-  ez.canvas.pos(left - 9, ez.canvas.top() + 165);
-  printSpeed(windSpeed, units_name(windUnits));
+  ez.canvas.pos(left, ez.canvas.top() + 145);
+  sprintf(tmp_buf, "%.0f", parse_float(wind_speed()));
+  print_speed(tmp_buf, units_name(windUnits));
+
+  float realWindangle = parse_float(windAngle);
+  if ((gps.course.deg() + realWindangle) <= 360) {
+    realWindangle = gps.course.deg() + realWindangle;
+  } else {
+    realWindangle = (gps.course.deg() + realWindangle) - 360;
+  }
+  ez.canvas.pos(left, ez.canvas.top() + 165);
+  sprintf(tmp_buf, "%.0f", realWindangle);
+  print_angle(tmp_buf);
 
   if (!trueWind) {
     float angleDeg = parse_float(wind_angle());
     drawPointer(angleDeg, circleCenterX, circleCenterY, ez.theme->foreground);
 
-    ez.canvas.pos(circleCenterX - (6 * (strlen(windSpeed) + 1 + strlen(windUnits))), circleCenterY - 15);
-    printSpeed(windSpeed, units_name(windUnits));
+    sprintf(tmp_buf, "%.0f", parse_float(wind_speed()));
+    ez.canvas.pos(circleCenterX - (6 * (strlen(tmp_buf) + 1 + strlen(windUnits))), circleCenterY - 14);
+    print_speed(tmp_buf, units_name(windUnits));
 
     // print angle in center
-    ez.canvas.pos(circleCenterX - 23, circleCenterY + 7);
+    ez.canvas.pos(circleCenterX - 21, circleCenterY + 6);
     if (angleDeg > 180) {
       sprintf(tmp_buf, "%03.0f", abs(angleDeg - 360));
     } else {
       sprintf(tmp_buf, "%03.0f", abs(angleDeg));
     }
-    ez.canvas.print(tmp_buf);
-    printDegree();
-    ez.canvas.pos(circleCenterX - 33, circleCenterY + 30);
+    print_angle(tmp_buf);
+    ez.canvas.pos(circleCenterX - 33, circleCenterY + 26);
   }
 }
 
@@ -498,7 +507,12 @@ void drawPointer(float angleDeg, int circleCenterX, int circleCenterY, unsigned 
   M5.Lcd.fillTriangle(xp, yp, xl, yl, xr, yr, color);
 }
 
-void printSpeed(const char* speed, const char* units) {
+void print_angle(const char* angle) {
+  ez.canvas.print(angle);
+  printDegree();
+}
+
+void print_speed(const char* speed, const char* units) {
   ez.canvas.print(speed);
   ez.canvas.print(' ');
   ez.canvas.print(units);
