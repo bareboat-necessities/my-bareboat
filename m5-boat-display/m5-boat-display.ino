@@ -244,7 +244,7 @@ float fooAng = 0.0;
 void gen_sentence() {
   fooAng = fooAng + 1;
   float angle = fooAng;
-  float speed = (rand() % 1000) / 10.0; 
+  float speed = (rand() % 10000) / 10.0; 
   sprintf(foo, "$WIMWV,%.1f,R,%.1f,K,A*", angle, speed);
   uint8_t sum = nmea_get_checksum(foo);  
   sprintf(foo2, "%s%02X\r", foo, sum);
@@ -523,9 +523,11 @@ void drawWindScreen() {
   
   // print wind speed
   int left = trueWind ? ez.canvas.lmargin() + 244 : ez.canvas.lmargin() + 1;
-  ez.canvas.pos(left, ez.canvas.top() + 134);
+  int startY = ez.canvas.top() + 134;
+  M5.lcd.fillRect(left, startY, 83, 60, ez.theme->background);
+  ez.canvas.pos(left, startY);
   ez.canvas.println(windType);
-  ez.canvas.pos(left, ez.canvas.top() + 153);
+  ez.canvas.pos(left, startY + 19);
   sprintf(tmp_buf, "%.0f", parse_float(wind_speed()));
   print_speed(tmp_buf, units_name(windUnits));
   
@@ -534,9 +536,9 @@ void drawWindScreen() {
     if ((gps.course.deg() + realWindangle) <= 360) {
       realWindangle = gps.course.deg() + realWindangle;
     } else {
-      realWindangle = (gps.course.deg() + realWindangle) - 360;
+      realWindangle = gps.course.deg() + realWindangle - 360;
     }
-    ez.canvas.pos(left, ez.canvas.top() + 172);
+    ez.canvas.pos(left, startY + 38);
     sprintf(tmp_buf, "%.0f", realWindangle);
     print_angle(tmp_buf);
   }
@@ -552,11 +554,7 @@ void drawWindScreen() {
   
     // print angle in center
     ez.canvas.pos(circleCenterX - 21, circleCenterY + 7);
-    if (angleDeg > 180) {
-      sprintf(tmp_buf, "%03.0f", abs(angleDeg - 360));
-    } else {
-      sprintf(tmp_buf, "%03.0f", abs(angleDeg));
-    }
+    sprintf(tmp_buf, "%03.0f", angleDeg > 180 ? abs(angleDeg - 360) : abs(angleDeg));
     print_angle(tmp_buf);
     ez.canvas.pos(circleCenterX - 33, circleCenterY + 27);
   }
