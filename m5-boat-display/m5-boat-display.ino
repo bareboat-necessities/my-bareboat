@@ -10,6 +10,8 @@
 
 #define MAIN_DECLARED
 
+//#define SIMULATE_WIND
+
 const char* host;
 const int port = 10110;
 
@@ -157,7 +159,8 @@ void mainmenu_wind() {
   ez.header.show(F("Wind"));
   ez.buttons.show("#" + back_button + "#");
   ez.canvas.font(&FreeSans9pt7b);
-  drawWindCircle();
+  drawWindCircle();  
+  drawWindNA();  
   boolean done = nmea_loop(false, -1, on_nmea_sentence_wind);  
   checkDone(done);  
 }
@@ -415,6 +418,11 @@ void displayWindInfo() {
     drawWindScreen();
     last_wind_update = now;
   }
+}
+
+void drawWindNA() {
+  ez.canvas.pos(getCenterX() - 10, getCenterY() - 7);
+  print("---");
 }
 
 void drawTick(int angleDeg, int circleCenterX, int circleCenterY, int rLow, int rHigh, float archDeg, unsigned int color) {
