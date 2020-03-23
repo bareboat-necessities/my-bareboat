@@ -243,12 +243,12 @@ uint8_t nmea_get_checksum(const char *sentence) {
 
 char tmp_1[NMEA_MAX_LENGTH];
 char tmp_2[NMEA_MAX_LENGTH];
-float simAng = 0.0;
+int simAng = 0;
 
 void gen_sentence() {
   simAng = simAng + 1;
   float speed = (rand() % 400) / 10.0; 
-  sprintf(tmp_1, "$WIMWV,%.1f,R,%.1f,N,A*", simAng, speed);
+  sprintf(tmp_1, "$WIMWV,%.1f,R,%.1f,N,A*", (simAng % 3600) / 10.0, speed);
   uint8_t sum = nmea_get_checksum(tmp_1);  
   sprintf(tmp_2, "%s%02X\r", tmp_1, sum);
 }
