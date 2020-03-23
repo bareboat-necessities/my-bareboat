@@ -244,8 +244,8 @@ float fooAng = 0.0;
 void gen_sentence() {
   fooAng = fooAng + 1;
   float angle = fooAng;
-  float speed = (rand() % 10000) / 10.0; 
-  sprintf(foo, "$WIMWV,%.1f,R,%.1f,K,A*", angle, speed);
+  float speed = (rand() % 400) / 10.0; 
+  sprintf(foo, "$WIMWV,%.1f,R,%.1f,N,A*", angle, speed);
   uint8_t sum = nmea_get_checksum(foo);  
   sprintf(foo2, "%s%02X\r", foo, sum);
 }
@@ -554,7 +554,7 @@ void drawWindScreen() {
   
     // print angle in center
     ez.canvas.pos(circleCenterX - 21, circleCenterY + 7);
-    sprintf(tmp_buf, "%03.0f", angleDeg > 180 ? abs(angleDeg - 360) : abs(angleDeg));
+    sprintf(tmp_buf, "%03.0f", (angleDeg > 180 ? abs(angleDeg - 360) : abs(angleDeg)));
     print_angle(tmp_buf);
     ez.canvas.pos(circleCenterX - 33, circleCenterY + 27);
   }
