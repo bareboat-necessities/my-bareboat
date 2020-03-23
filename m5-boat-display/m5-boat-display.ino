@@ -218,6 +218,8 @@ void on_nmea_sentence_loc(const char* line) {
   displayLocInfo();
 }
 
+#ifdef SIMULATE_WIND
+
 #define NMEA_END_CHAR_1 '\n'
 #define NMEA_MAX_LENGTH 128
 
@@ -236,27 +238,28 @@ uint8_t nmea_get_checksum(const char *sentence) {
   return chk;
 }
 
-
-char foo[128];
-char foo2[128];
-float fooAng = 0.0;
+char tmp_1[128];
+char tmp_2[128];
+float simAng = 0.0;
 
 void gen_sentence() {
-  fooAng = fooAng + 1;
-  float angle = fooAng;
+  simAng = simAng + 1;
   float speed = (rand() % 400) / 10.0; 
-  sprintf(foo, "$WIMWV,%.1f,R,%.1f,N,A*", angle, speed);
-  uint8_t sum = nmea_get_checksum(foo);  
-  sprintf(foo2, "%s%02X\r", foo, sum);
+  sprintf(tmp_1, "$WIMWV,%.1f,R,%.1f,N,A*", simAng, speed);
+  uint8_t sum = nmea_get_checksum(tmp_1);  
+  sprintf(tmp_2, "%s%02X\r", tmp_1, sum);
 }
 
-void on_nmea_sentence_wind(const char* line) {
-  //parse_sentence("$WIMWV,27,R,00,N,A*26\r");
-  //parse_sentence(line);
+#endif // SIMULATE_WIND
 
-  gen_sentence();
-  parse_sentence(foo2);
+void on_nmea_sentence_wind(const char* line) {  
   parse_sentence(line);
+
+#ifdef SIMULATE_WIND
+  gen_sentence();
+  parse_sentence(tmp_2);
+  //parse_sentence("$WIMWV,27,R,00,N,A*26\r");
+#endif // SIMULATE_WIND
   
   displayWindInfo();
 }
