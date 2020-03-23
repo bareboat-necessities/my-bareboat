@@ -241,8 +241,8 @@ uint8_t nmea_get_checksum(const char *sentence) {
   return chk;
 }
 
-char tmp_1[128];
-char tmp_2[128];
+char tmp_1[NMEA_MAX_LENGTH];
+char tmp_2[NMEA_MAX_LENGTH];
 float simAng = 0.0;
 
 void gen_sentence() {
@@ -564,8 +564,8 @@ void drawWindScreen() {
     print_speed(tmp_buf, units_name(windUnits));
   
     // print angle in center
-    ez.canvas.pos(circleCenterX - 21, circleCenterY + 7);
     sprintf(tmp_buf, "%03.0f", (angleDeg > 180 ? abs(angleDeg - 360) : abs(angleDeg)));
+    ez.canvas.pos(circleCenterX - (6 * (strlen(tmp_buf) + 1)) - 2, circleCenterY + 27);
     print_angle(tmp_buf);
     ez.canvas.pos(circleCenterX - 33, circleCenterY + 27);
   }
