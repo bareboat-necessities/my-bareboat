@@ -535,7 +535,7 @@ void drawWindScreen() {
   // print wind speed
   int left = trueWind ? ez.canvas.lmargin() + 244 : ez.canvas.lmargin() + 1;
   int startY = ez.canvas.top() + 134;
-  M5.lcd.fillRect(left, startY, 83, 60, ez.theme->background);
+  M5.Lcd.fillRect(left, startY, 83, 60, ez.theme->background);
   ez.canvas.pos(left, startY);
   ez.canvas.println(windType);
   ez.canvas.pos(left, startY + 19);
