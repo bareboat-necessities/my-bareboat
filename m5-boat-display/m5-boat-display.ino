@@ -575,14 +575,16 @@ void drawPointer(float angleDeg, int circleCenterX, int circleCenterY, unsigned 
   float windRad = degToRad(angleDeg - 90);
   float co = cos(windRad);
   float si = sin(windRad);
-  float pointerWidth = 0.1745; // 10 degrees in radians. 
+  float pointerWidth = 0.1745; // 10 degrees in radians.
+  int r1 = 68;
+  int r2 = 32; 
   // Get the coords of the pointer
-  int xp = round(circleCenterX + (68 * cos(windRad)));
-  int yp = round(circleCenterY + (68 * sin(windRad)));
-  int xl = round(circleCenterX + (32 * cos(windRad - pointerWidth)));
-  int yl = round(circleCenterY + (32 * sin(windRad - pointerWidth)));
-  int xr = round(circleCenterX + (32 * cos(windRad + pointerWidth)));
-  int yr = round(circleCenterY + (32 * sin(windRad + pointerWidth)));
+  int xp = round(circleCenterX + (r1 * cos(windRad)));
+  int yp = round(circleCenterY + (r1 * sin(windRad)));
+  int xl = round(circleCenterX + (r2 * cos(windRad - pointerWidth)));
+  int yl = round(circleCenterY + (r2 * sin(windRad - pointerWidth)));
+  int xr = round(circleCenterX + (r2 * cos(windRad + pointerWidth)));
+  int yr = round(circleCenterY + (r2 * sin(windRad + pointerWidth)));
   M5.Lcd.fillTriangle(xp, yp, xl, yl, xr, yr, color);
 }
 
