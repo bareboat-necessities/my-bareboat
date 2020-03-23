@@ -91,100 +91,6 @@ void loop() {
   mainmenu.run();
 }
 
-void nmea_wind_talker_begin() {
-  wind_prefix_index = 0;
-  Preferences prefs;
-  prefs.begin("M5ez", true);  // read-only
-  nmea_wind_talker_select(prefs.getString("nmeaWindTalker", "").c_str());
-  prefs.end();
-}
-
-void nmea_wind_talker_select(const char* selectedSource) {
-  wind_prefix_index = 0;
-  uint8_t size = sizeof(wind_prefix) / sizeof(wind_prefix[0]);
-  for (uint8_t n = 0; n < size; n++) {
-    if (!strcmp(selectedSource, wind_prefix[n])) {
-      wind_prefix_index = n;
-    }
-  }
-}
-
-void nmea_wind_talker_menu() {
-  const char* orig_name = wind_prefix[wind_prefix_index];
-  ezMenu thememenu("NMEA Wind Talker");
-  thememenu.txtSmall();
-  thememenu.buttons("up#Back#select##down#");
-  uint8_t size = sizeof(wind_prefix) / sizeof(wind_prefix[0]);
-  for (uint8_t n = 0; n < size; n++) {
-    if (!strcmp(orig_name, wind_prefix[n])) {
-      thememenu.addItem(wind_prefix[n]);
-    }
-  }
-  for (uint8_t n = 0; n < size; n++) {
-    if (strcmp(orig_name, wind_prefix[n])) {
-      thememenu.addItem(wind_prefix[n]);
-    }
-  }
-  while (thememenu.runOnce()) {
-    if (thememenu.pick()) {
-      nmea_wind_talker_select(thememenu.pickName().c_str());
-    }
-  }
-  if (!strcmp(orig_name, wind_prefix[wind_prefix_index])) {
-    Preferences prefs;
-    prefs.begin("M5ez");
-    prefs.putString("nmeaWindTalker", wind_prefix[wind_prefix_index]);
-    prefs.end();
-  }
-}
-
-void nmea_source_begin() {
-  host = nmea_sources[0];
-  Preferences prefs;
-  prefs.begin("M5ez", true);  // read-only
-  nmea_source_select(prefs.getString("nmeaSource", "").c_str());
-  prefs.end();
-}
-
-void nmea_source_select(const char* selectedSource) {
-  host = nmea_sources[0];
-  uint8_t size = sizeof(nmea_sources) / sizeof(nmea_sources[0]);
-  for (uint8_t n = 0; n < size; n++) {
-    if (!strcmp(selectedSource, nmea_sources[n])) {
-      host = nmea_sources[n];
-    }
-  }
-}
-
-void nmea_source_menu() {
-  const char* orig_name = host;
-  ezMenu thememenu("NMEA Source");
-  thememenu.txtSmall();
-  thememenu.buttons("up#Back#select##down#");
-  uint8_t size = sizeof(nmea_sources) / sizeof(nmea_sources[0]);
-  for (uint8_t n = 0; n < size; n++) {
-    if (!strcmp(orig_name, nmea_sources[n])) {
-      thememenu.addItem(nmea_sources[n]);
-    }
-  }
-  for (uint8_t n = 0; n < size; n++) {
-    if (strcmp(orig_name, nmea_sources[n])) {
-      thememenu.addItem(nmea_sources[n]);
-    }
-  }
-  while (thememenu.runOnce()) {
-    if (thememenu.pick()) {
-      nmea_source_select(thememenu.pickName().c_str());
-    }
-  }
-  if (!strcmp(orig_name, host)) {
-    Preferences prefs;
-    prefs.begin("M5ez");
-    prefs.putString("nmeaSource", host);
-    prefs.end();
-  }
-}
-
 void mainmenu_nmea_debug() {
   ez.screen.clear();
   ez.header.show(F("NMEA Debug"));
@@ -692,6 +598,100 @@ void toTimestamp(char* buf, boolean valid, TinyGPSTime& time, TinyGPSDate& date)
 void initNA(char* buf) {
   buf[0] = '-';
   buf[1] = '\0';
+}
+
+void nmea_wind_talker_begin() {
+  wind_prefix_index = 0;
+  Preferences prefs;
+  prefs.begin("M5ez", true);  // read-only
+  nmea_wind_talker_select(prefs.getString("nmeaWindTalker", "").c_str());
+  prefs.end();
+}
+
+void nmea_wind_talker_select(const char* selectedSource) {
+  wind_prefix_index = 0;
+  uint8_t size = sizeof(wind_prefix) / sizeof(wind_prefix[0]);
+  for (uint8_t n = 0; n < size; n++) {
+    if (!strcmp(selectedSource, wind_prefix[n])) {
+      wind_prefix_index = n;
+    }
+  }
+}
+
+void nmea_wind_talker_menu() {
+  const char* orig_name = wind_prefix[wind_prefix_index];
+  ezMenu thememenu("NMEA Wind Talker");
+  thememenu.txtSmall();
+  thememenu.buttons("up#Back#select##down#");
+  uint8_t size = sizeof(wind_prefix) / sizeof(wind_prefix[0]);
+  for (uint8_t n = 0; n < size; n++) {
+    if (!strcmp(orig_name, wind_prefix[n])) {
+      thememenu.addItem(wind_prefix[n]);
+    }
+  }
+  for (uint8_t n = 0; n < size; n++) {
+    if (strcmp(orig_name, wind_prefix[n])) {
+      thememenu.addItem(wind_prefix[n]);
+    }
+  }
+  while (thememenu.runOnce()) {
+    if (thememenu.pick()) {
+      nmea_wind_talker_select(thememenu.pickName().c_str());
+    }
+  }
+  if (!strcmp(orig_name, wind_prefix[wind_prefix_index])) {
+    Preferences prefs;
+    prefs.begin("M5ez");
+    prefs.putString("nmeaWindTalker", wind_prefix[wind_prefix_index]);
+    prefs.end();
+  }
+}
+
+void nmea_source_begin() {
+  host = nmea_sources[0];
+  Preferences prefs;
+  prefs.begin("M5ez", true);  // read-only
+  nmea_source_select(prefs.getString("nmeaSource", "").c_str());
+  prefs.end();
+}
+
+void nmea_source_select(const char* selectedSource) {
+  host = nmea_sources[0];
+  uint8_t size = sizeof(nmea_sources) / sizeof(nmea_sources[0]);
+  for (uint8_t n = 0; n < size; n++) {
+    if (!strcmp(selectedSource, nmea_sources[n])) {
+      host = nmea_sources[n];
+    }
+  }
+}
+
+void nmea_source_menu() {
+  const char* orig_name = host;
+  ezMenu thememenu("NMEA Source");
+  thememenu.txtSmall();
+  thememenu.buttons("up#Back#select##down#");
+  uint8_t size = sizeof(nmea_sources) / sizeof(nmea_sources[0]);
+  for (uint8_t n = 0; n < size; n++) {
+    if (!strcmp(orig_name, nmea_sources[n])) {
+      thememenu.addItem(nmea_sources[n]);
+    }
+  }
+  for (uint8_t n = 0; n < size; n++) {
+    if (strcmp(orig_name, nmea_sources[n])) {
+      thememenu.addItem(nmea_sources[n]);
+    }
+  }
+  while (thememenu.runOnce()) {
+    if (thememenu.pick()) {
+      nmea_source_select(thememenu.pickName().c_str());
+    }
+  }
+  if (!strcmp(orig_name, host)) {
+    Preferences prefs;
+    prefs.begin("M5ez");
+    prefs.putString("nmeaSource", host);
+    prefs.end();
+  }
 }
 
 void mainmenu_sys() {
