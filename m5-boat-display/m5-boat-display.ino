@@ -564,8 +564,8 @@ void drawWindScreen() {
     print_speed(tmp_buf, units_name(windUnits));
   
     // print angle in center
-    sprintf(tmp_buf, "%03.0f", (angleDeg > 180 ? abs(angleDeg - 360) : abs(angleDeg)));
-    ez.canvas.pos(circleCenterX - (6 * (strlen(tmp_buf) + 1)) - 2, circleCenterY + 27);
+    sprintf(tmp_buf, "%0.0f", (angleDeg > 180 ? abs(angleDeg - 360) : abs(angleDeg)));
+    ez.canvas.pos(circleCenterX - (6 * (strlen(tmp_buf) + 1)) - 2, circleCenterY + 7);
     print_angle(tmp_buf);
     ez.canvas.pos(circleCenterX - 33, circleCenterY + 27);
   }
