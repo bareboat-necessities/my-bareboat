@@ -2887,6 +2887,8 @@ LysMarine
 
 * https://github.com/merbanan/rtl_433[IoT RTL 433]
 
+* https://gpsd.gitlab.io/gpsd/NMEA.html[NMEA Protocol]
+
 * https://www.openscad.org/[OpenSCAD]
 
 * https://easyeda.com/[PCB Design]
