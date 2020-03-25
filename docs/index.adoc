@@ -1889,8 +1889,8 @@ Currently it supports GPS and Wind displays. I have an idea how to display more 
 
 {zwsp} +
 
-.M5 Stack Boat Display
-image::boat-router/m5stack-boat-display.jpg[alt="M5 Stack Boat Display", width="85%",  pdfwidth="85vw", align="center"]
+.M5Stack Boat Display
+image::boat-router/m5stack-boat-display.jpg[alt="M5Stack Boat Display", width="85%",  pdfwidth="85vw", align="center"]
 
 {zwsp} +
 
