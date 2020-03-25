@@ -2889,6 +2889,8 @@ LysMarine
 
 * https://gpsd.gitlab.io/gpsd/NMEA.html[NMEA Protocol]
 
+* https://gpsd.gitlab.io/gpsd/AIVDM.html[AIS NMEA]
+
 * https://www.openscad.org/[OpenSCAD]
 
 * https://easyeda.com/[PCB Design]
