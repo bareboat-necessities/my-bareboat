@@ -1880,9 +1880,19 @@ NMEA Display software for M5Stack https://github.com/andyrbarrow/MQTTNMEADisplay
 
 http://forum.openmarine.net/showthread.php?tid=1819
 
-I've made my own custom version. The code for the sketch is located here:
+I've made my own custom version. It doesn't require MQTT. It can connect via TCP to SignalK NMEA stream or to Kplex.
+The code for the sketch is located here:
 
 https://github.com/bareboat-necessities/my-bareboat/tree/master/m5-boat-display
+
+Currently it supports GPS and Wind displays. I have an idea how to display more from AIS in future.
+
+{zwsp} +
+
+.M5 Stack Boat Display
+image::boat-router/m5stack-boat-display.jpg[alt="M5 Stack Boat Display", width="85%",  pdfwidth="85vw", align="center"]
+
+{zwsp} +
 
 ====== MQTT
 
