@@ -4,7 +4,6 @@
         <groupId>com.bareboat-necessities</groupId>
         <artifactId>modules</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>ais-processor</artifactId>
     <version>1.0.0-SNAPSHOT</version>
@@ -20,6 +19,12 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>28.2-jre</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
         </dependencies>
     </dependencyManagement>
