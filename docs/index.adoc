@@ -2875,7 +2875,9 @@ LysMarine
 
 * https://open-boat-projects.org/[Open Boat Projects]
 
-* https://squidd.io/squiddio_pi[Squidd.io as an OpenCPN plugin]
+* https://squidd.io/squiddio_pi[Squidd.io as an OpenCPN Plugin]
+
+* https://github.com/Ptizef/navdata_pi[NavData OpenCPN Plugin]
 
 * https://github.com/sarfata?tab=repositories[KBox and other boat software]
 
