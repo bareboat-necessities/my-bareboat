@@ -2614,6 +2614,14 @@ pico2wave -l  en-US -w /tmp/pico2wave.wav "Passenger Announcement... \
 
 ----
 
+=== Creating Backup Boot SD Card
+
+Tutorial is here:
+
+http://pysselilivet.blogspot.com/2017/11/rpi-clone-raspberry-boot-disk.html
+
+It is based on rpi-clone software https://github.com/billw2/rpi-clone
+
 === SignalK Applications
 
 ==== Freeboard-SK
