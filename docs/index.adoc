@@ -2663,6 +2663,19 @@ sudo systemctl start avnav
 
 Open browser with URL: http://localhost:8099/
 
+if you do not have xdotool install it
+
+[source, shell]
+----
+sudo apt install xdotool
+----
+
+[source, shell]
+----
+chromium-browser -new-window http://localhost:8099; sleep 2; xdotool key F11
+----
+
+
 ===== AvNav Charts
 
 You can use mbtiles which you downloaded for OpenCPN. AvNav need to convert them first.
