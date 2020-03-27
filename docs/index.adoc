@@ -2566,13 +2566,86 @@ https://www.meltemus.com/
 
 which is available for Raspberry Pi.
 
-I've installed and played with it and I have found it it too difficult to use on a small cockpit touchscreen.
+I've installed and played with it and I have found it it too difficult to use on a small cockpit touchscreen with
+default settings, but they can be adjusted. It can also use the charts you would download for OpenCPN.
+So it even can be used as your main chart plotter.
 
+Installation:
+
+[source, shell]
+----
+wget https://www.meltemus.com/index.php/en/download/send/9-raspberrypi/197-qtvlm-5-9-7-6
+mv 197-qtvlm-5-9-7-6 qtVlm-5.9.7-p2-rpi.tar.gz
+
+gzip -cd < qtVlm-5.9.7-p2-rpi.tar.gz | tar xvf -
+----
+
+Running:
+[source, shell]
+----
+cd qtVlm
+./qtVlm_touchscreen -platform xcb
+----
 
 .QtVlm
 image::boat-computer/qtvlm.png[alt="QtVlm", width="100%",  pdfwidth="100vw", align="center"]
 
 {zwsp} +
+
+
+==== AvNav
+
+This is a nice char plotter which runs in a browser supports number of chart formats (You need to convert them though
+with the provided utility). Since it is running in Chromium browser, the touchscreen support is better.
+This is another option to use as main chart plotter instead of OpenCPN.
+
+References:
+
+* see https://github.com/wellenvogel/avnav
+* and https://github.com/free-x/avnav/wiki
+* and https://github.com/free-x
+
+Installation:
+
+[source, shell]
+----
+sudo wget -q -O - https://open-mind.space/repo/open-mind.space.gpg.key |  sudo apt-key add -
+
+sudo bash -c 'cat << EOF > /etc/apt/sources.list.d/extra.list
+deb https://open-mind.space/repo/ buster-stable avnav
+EOF'
+
+sudo apt update
+sudo apt install avnav
+----
+
+Edit config:
+
+[source, shell]
+----
+sudo nano /var/lib/avnav/avnav_server.xml
+----
+
+Edit host, NMEA port and http port:
+
+[source]
+----
+ ...
+ <AVNSocketReader host="localhost" port="10110"/>
+ <AVNHttpServer navurl="/viewer/avnav_navi.php" httpPort="8099" upzoom="0"
+ ...
+----
+
+Running:
+
+[source, shell]
+----
+sudo systemctl start avnav
+----
+
+Open browser with URL: http://localhost:8099/
+
+I'll need to update this document later to add how to convert charts for AvNav.
 
 
 === NMEA Wind Sensor
