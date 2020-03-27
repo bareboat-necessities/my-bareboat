@@ -2617,6 +2617,11 @@ EOF'
 
 sudo apt update
 sudo apt install avnav
+sudo apt install xterm
+
+mkdir -p /home/pi/AvNavCharts/out
+
+sudo systemctl enable avnav
 ----
 
 Edit config:
@@ -2628,12 +2633,17 @@ sudo nano /var/lib/avnav/avnav_server.xml
 
 Edit host, NMEA port and http port:
 
-[source]
+[source, xml]
 ----
+<AVNServer>
  ...
  <AVNSocketReader host="localhost" port="10110"/>
  <AVNHttpServer navurl="/viewer/avnav_navi.php" httpPort="8099" upzoom="0"
+     chartbase="maps" empty="nonexistent">
+   <Directory urlpath="maps" path="/home/pi/AvNavCharts/out"/>
  ...
+ </AVNHttpServer>
+</AVNServer>
 ----
 
 Running:
@@ -2645,7 +2655,36 @@ sudo systemctl start avnav
 
 Open browser with URL: http://localhost:8099/
 
-I'll need to update this document later to add how to convert charts for AvNav.
+===== AvNav Charts
+
+You can use mbtiles which you downloaded for OpenCPN. AvNav need to convert them first.
+To convert:
+
+[source, shell]
+----
+avnav -g
+----
+
+select .mbtiles file, press 'Convert', wait for process to finish.
+Next
+
+[source, shell]
+----
+chromium-browser http://localhost:8099
+----
+
+. click arrow down icon on right side toolbar, this will bring you to chart upload screen
+. click arrow up icon on right side. select .gemf file and upload the file
+
+
+For more documentation:
+
+[source, shell]
+----
+ git clone https://github.com/wellenvogel/avnav.git
+ chromium-browser avnav/docs/en_install.html
+ chromium-browser avnav/docs/en_charts.html
+----
 
 
 === NMEA Wind Sensor

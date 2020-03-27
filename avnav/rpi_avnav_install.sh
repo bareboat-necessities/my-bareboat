@@ -12,13 +12,20 @@ EOF'
 
 sudo apt update
 sudo apt install avnav
+sudo apt install xterm
+
+mkdir -p /home/pi/AvNavCharts/out
+
+sudo systemctl enable avnav
 
 # sudo nano /var/lib/avnav/avnav_server.xml
 #
 # <AVNSocketReader host="localhost" port="10110"/>
 #
+# <AVNHttpServer navurl="/viewer/avnav_navi.php" httpPort="8099" upzoom="0" chartbase="maps" empty="nonexistent">
 #
-# <AVNHttpServer navurl="/viewer/avnav_navi.php" httpPort="8099" upzoom="0"
+#     <Directory urlpath="maps" path="/home/pi/AvNavCharts/out"></Directory>
+#
 #
 # sudo systemctl start avnav
 #
