@@ -13,6 +13,7 @@ EOF'
 sudo apt update
 sudo apt install avnav
 sudo apt install xterm
+sudo apt install mpg123
 
 mkdir -p /home/pi/AvNavCharts/out
 
