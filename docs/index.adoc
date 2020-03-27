@@ -2534,7 +2534,7 @@ start giving AIS targets sentences via NMEA. If it doesn't see any ships close b
 
 https://pysselilivet.blogspot.com/2018/06/ais-reciever-for-raspberry.html
 
-=== Weather
+=== Other Free Chart Plotting Software and Weather Routing
 
 There are multiple ways to receive weather predictions:
 
