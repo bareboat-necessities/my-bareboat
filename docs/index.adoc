@@ -2529,12 +2529,12 @@ https://a.aliexpress.com/_sUWwnl
 
 | $26.10 | AliExpress
 
+|===
 
 RTL SDR v3 in Direct sampling mode allows listening to HF signals between about 500 kHz to 28.8 MHz
 
 More info here : https://www.rtl-sdr.com/rtl-sdr-blog-v-3-dongles-user-guide/
 
-|===
 
 === AIS
 
