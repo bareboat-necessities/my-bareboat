@@ -2505,7 +2505,7 @@ image::boat-computer/cubic-sdr.png[alt="Cubic SDR", width="100%",  pdfwidth="100
 
 https://en.wikipedia.org/wiki/List_of_Navtex_stations
 
-Decoder software for NavText is available here. Download the Java version to work on raspberry pi.
+Decoder software for NavTex is available here. Download the Java version to work on raspberry pi.
 http://www.frisnit.com/navtex/
 
 OpenSource (GPL Licensed) NavTex decoder: https://arachnoid.com/JNX/
@@ -2528,6 +2528,11 @@ a|   Active Antenna 10Khz To 30Mhz Mini Whip Hf Lf Vlf Vhf Sdr Rx With Portable 
 https://a.aliexpress.com/_sUWwnl
 
 | $26.10 | AliExpress
+
+
+RTL SDR v3 in Direct sampling mode allows listening to HF signals between about 500 kHz to 28.8 MHz
+
+More info here : https://www.rtl-sdr.com/rtl-sdr-blog-v-3-dongles-user-guide/
 
 |===
 
@@ -2678,7 +2683,7 @@ chromium-browser -new-window http://localhost:8099; sleep 2; xdotool key F11
 
 ===== AvNav Charts
 
-You can use mbtiles which you downloaded for OpenCPN. AvNav need to convert them first.
+You can use mbtiles which you downloaded for OpenCPN. AvNav needs to convert them first.
 To convert:
 
 [source, shell]
@@ -2710,7 +2715,7 @@ For more documentation:
 
 === NMEA Wind Sensor
 
-You can connect NMEA to your boat computer or
+You can connect via NMEA to your boat computer or
 for older wind transducers there is a hard way:
 
 https://hackaday.io/project/12986-nasa-wind-decoder
