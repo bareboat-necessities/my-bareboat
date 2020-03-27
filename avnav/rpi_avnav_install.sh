@@ -17,3 +17,6 @@ sudo apt install avnav
 # <AVNHttpServer navurl="/viewer/avnav_navi.php" httpPort="8099" upzoom="0"
 #
 # sudo systemctl start avnav
+#
+# Open browser with URL: http://localhost:8099/
+#
