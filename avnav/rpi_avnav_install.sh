@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# See https://github.com/wellenvogel/avnav
+# and https://github.com/free-x/avnav/wiki
+# and https://github.com/free-x
+
 sudo wget -q -O - https://open-mind.space/repo/open-mind.space.gpg.key |  sudo apt-key add -
 
 sudo bash -c 'cat << EOF > /etc/apt/sources.list.d/extra.list
