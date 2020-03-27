@@ -2088,6 +2088,13 @@ To see which available OpenCPN packages are there:
 apt-cache search opencpn
 ----
 
+I also like to add firefox as additional browser in case chromium fails to display some page.
+
+[source,shell]
+----
+sudo apt install firefox-esr
+----
+
 
 ==== Initial Settings
 
