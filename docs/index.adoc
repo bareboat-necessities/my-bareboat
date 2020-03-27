@@ -2952,6 +2952,10 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Pane
 
 == Third-Party Projects
 
+=== S/Y Curiosity SignalK setup
+
+https://bergie.iki.fi/blog/signalk-boat-iot/
+
 === Boat Chartplotter using stick PC
 
 https://www.youtube.com/watch?v=JYhsQSQOEbM&feature=youtu.be
