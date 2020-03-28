@@ -17,6 +17,8 @@ sudo apt install mpg123
 
 mkdir -p /home/pi/AvNavCharts/out
 
+sudo adduser avnav audio
+
 sudo systemctl enable avnav
 
 # sudo nano /var/lib/avnav/avnav_server.xml

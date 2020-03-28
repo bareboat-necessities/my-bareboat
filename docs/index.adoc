@@ -2607,7 +2607,7 @@ image::boat-computer/qtvlm.png[alt="QtVlm", width="100%",  pdfwidth="100vw", ali
 
 ==== AvNav
 
-This is a nice char plotter which runs in a browser supports number of chart formats (You need to convert them though
+This is a nice chart plotter which runs in a browser supports number of chart formats (You need to convert them though
 with the provided utility). Since it is running in Chromium browser, the touchscreen support is better.
 This is another option to use as main chart plotter instead of OpenCPN.
 
@@ -2633,6 +2633,8 @@ sudo apt install xterm
 sudo apt install mpg123
 
 mkdir -p /home/pi/AvNavCharts/out
+
+sudo adduser avnav audio
 
 sudo systemctl enable avnav
 ----
@@ -2810,6 +2812,7 @@ wget -q -O - https://apt.mopidy.com/mopidy.gpg | sudo apt-key add -
 sudo wget -q -O /etc/apt/sources.list.d/mopidy.list https://apt.mopidy.com/buster.list
 
 sudo adduser mopidy video
+sudo adduser mopidy audio
 
 # Install Mopidy and all dependencies:
 sudo apt update
