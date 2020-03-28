@@ -2813,6 +2813,7 @@ sudo wget -q -O /etc/apt/sources.list.d/mopidy.list https://apt.mopidy.com/buste
 
 sudo adduser mopidy video
 sudo adduser mopidy audio
+sudo xhost +SI:localuser:mopidy
 
 # Install Mopidy and all dependencies:
 sudo apt update
@@ -2835,8 +2836,18 @@ Edit mopidy.conf
 
 [source]
 ----
+nano /home/pi/.config/mopidy/mopidy.conf
+----
+
+[source]
+----
 [mpd]
 hostname = 0.0.0.0
+
+[audio]
+#mixer = software
+#mixer_volume =
+output = alsasink
 
 [spotify]
 enable = true
@@ -2863,8 +2874,28 @@ image::boat-computer/mopidy-musicbox.png[alt="Mopidy MusicBox on Openplotter", w
 
 {zwsp} +
 
-You should later register mopidy as a service to start automatically and create a menu
-link to open Mopidy Web UI directly from desktop menu.
+Now register mopidy as a service to start automatically
+
+[source, shell]
+----
+sudo systemctl enable mopidy
+sudo cp /home/pi/.config/mopidy/mopidy.conf /etc/mopidy/mopidy.conf
+sudo cp /home/pi/.config/mopidy/mopidy.conf /var/lib/mopidy/.config/mopid
+----
+
+Reboot.
+
+You should later create a menu link to open Mopidy Web UI directly from desktop menu via this command:
+
+[source, shell]
+----
+sudo apt install xdotool
+----
+
+[source, shell]
+----
+chromium-browser -new-window http://openplotter:6680/musicbox_webclient; sleep 3; xdotool key F11
+----
 
 You can use your smart phone to control the player with one of the MPD client applications.
 I used 'MPDPlayer' on iphone and MPDroid on android. You create connection:
