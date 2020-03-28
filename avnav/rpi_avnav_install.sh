@@ -21,6 +21,7 @@ sudo adduser avnav audio
 
 sudo systemctl enable avnav
 
+
 # sudo nano /var/lib/avnav/avnav_server.xml
 #
 # <AVNSocketReader host="localhost" port="10110"/>
@@ -31,6 +32,11 @@ sudo systemctl enable avnav
 #
 #
 # sudo systemctl start avnav
+
+sudo apt install xdotool
+
 #
 # Open browser with URL: http://localhost:8099/
+#
+# chromium-browser -new-window http://localhost:8099; sleep 2; xdotool key F11
 #
