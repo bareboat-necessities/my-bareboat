@@ -2901,16 +2901,25 @@ sudo cp /home/pi/.config/mopidy/mopidy.conf /var/lib/mopidy/.config/mopid
 
 Reboot.
 
-You should later create a menu link to open Mopidy Web UI directly from desktop menu via this command:
+Create a menu link to open Mopidy Web UI directly from desktop menu via this command:
 
 [source, shell]
 ----
 sudo apt install xdotool
-----
 
-[source, shell]
-----
-chromium-browser -new-window http://openplotter:6680/musicbox_webclient; sleep 3; xdotool key F11
+sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/musicbox.desktop
+[Desktop Entry]
+Type=Application
+Name=MusicBox
+GenericName=Music
+Comment=Mopidy MusicBox
+Exec=sh -c "chromium-browser -new-window http://openplotter:6680/musicbox_webclient; sleep 2; xdotool key F11"
+Terminal=false
+Icon=sound
+Categories=Sound
+Keywords=Sound
+EOF'
+
 ----
 
 You can use your smart phone to control the player with one of the MPD client applications.
