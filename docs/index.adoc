@@ -2858,6 +2858,7 @@ nano /home/pi/.config/mopidy/mopidy.conf
 [source]
 ----
 [mpd]
+enable = true
 hostname = 0.0.0.0
 
 [audio]
