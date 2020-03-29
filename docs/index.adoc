@@ -2670,17 +2670,33 @@ sudo systemctl start avnav
 
 Open browser with URL: http://localhost:8099/
 
-if you do not have xdotool install it
+Register menu item:
 
 [source, shell]
 ----
 sudo apt install xdotool
+
+sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/avnav.desktop
+[Desktop Entry]
+Type=Application
+Name=AvNav
+GenericName=ChartPlotter
+Comment=ChartPlotter
+Exec=sh -c "chromium-browser -new-window http://localhost:8099; sleep 2; xdotool key F11"
+Terminal=false
+Icon=globe
+Categories=ChartPlotter,OpenPlotter
+Keywords=ChartPlotter,OpenPlotter
+EOF'
+
 ----
 
-[source, shell]
-----
-chromium-browser -new-window http://localhost:8099; sleep 2; xdotool key F11
-----
+{zwsp} +
+
+.AvNav ChartPlotter
+image::boat-computer/avnav-chartplotter.png[alt="AvNav ChartPlotter", width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
 
 
 ===== AvNav Charts
@@ -2890,28 +2906,12 @@ You should later create a menu link to open Mopidy Web UI directly from desktop 
 [source, shell]
 ----
 sudo apt install xdotool
-
-sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/avnav.desktop
-[Desktop Entry]
-Type=Application
-Name=AvNav
-GenericName=ChartPlotter
-Comment=ChartPlotter
-Exec=sh -c "chromium-browser -new-window http://localhost:8099; sleep 2; xdotool key F11"
-Terminal=false
-Icon=globe
-Categories=ChartPlotter,OpenPlotter
-Keywords=ChartPlotter,OpenPlotter
-EOF'
-
 ----
 
-{zwsp} +
-
-.AvNav ChartPlotter
-image::boat-computer/avnav-chartplotter.png[alt="AvNav ChartPlotter", width="75%",  pdfwidth="75vw", align="center"]
-
-{zwsp} +
+[source, shell]
+----
+chromium-browser -new-window http://openplotter:6680/musicbox_webclient; sleep 3; xdotool key F11
+----
 
 You can use your smart phone to control the player with one of the MPD client applications.
 I used 'MPDPlayer' on iphone and MPDroid on android. You create connection:
