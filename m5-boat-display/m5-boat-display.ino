@@ -15,7 +15,7 @@
 const char* host;
 const int port = 10110;
 
-char* nmea_sources[] = {"openplotter", "gl-x750"};
+char* nmea_sources[] = {"openplotter", "openplotter.local", "gl-x750"};
 
 const char* EXIT = "Exit";
 const String back_button = EXIT;
