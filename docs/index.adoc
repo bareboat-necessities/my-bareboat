@@ -2879,7 +2879,6 @@ client_secret = ... client_secret value you got from https://mopidy.com/ext/spot
 timeout = 60
 ----
 
-
 Run:
 
 [source, shell]
@@ -2905,8 +2904,6 @@ sudo cp /home/pi/.config/mopidy/mopidy.conf /etc/mopidy/mopidy.conf
 sudo cp /home/pi/.config/mopidy/mopidy.conf /var/lib/mopidy/.config/mopidy/mopidy.conf
 ----
 
-
-
 [source, shell]
 ----
 sudo nano /usr/lib/systemd/system/mopidy.service
@@ -2919,7 +2916,7 @@ make sure you edit ExecStart line like this:
 ExecStart=sh -c 'while ! ping -c 1 -n -w 1 spotify.com; do sleep 5; done;/usr/bin/mopidy --option mpd/enabled=true --config /usr/share/mopidy/conf.d:/etc/mopidy/mopidy.conf'
 ----
 
-MPD needs for spotify play ist to be available to start properly.
+MPD needs for spotify play list to be available to start properly.
 
 Reboot.
 
