@@ -2897,7 +2897,7 @@ Now register mopidy as a service to start automatically
 ----
 sudo systemctl enable mopidy
 sudo cp /home/pi/.config/mopidy/mopidy.conf /etc/mopidy/mopidy.conf
-sudo cp /home/pi/.config/mopidy/mopidy.conf /var/lib/mopidy/.config/mopid
+sudo cp /home/pi/.config/mopidy/mopidy.conf /var/lib/mopidy/.config/mopidy/mopidy.conf
 ----
 
 Reboot.
