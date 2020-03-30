@@ -2796,6 +2796,30 @@ https://github.com/SignalK/sailgauge
 
 https://github.com/vokkim/tuktuk-chart-plotter
 
+You can install it from inside SignalK AppStore. You would also need to install Charts SignalK plugin.
+
+Create a symbolic link in ~/.signalk/charts to .mbtiles files of your sailing areas.
+
+[source, shell]
+----
+cd ~/.signalk/charts/
+ln -s /home/pi/Charts/MBTiles/NOAA/MBTILES_17.mbtiles mbtiles_17.mbtiles
+----
+
+restart signalK (can be done fromSignalK UI if you logged in as admin)
+
+open browser with URL: http://localhost:3000/tuktuk-chart-plotter/
+
+On the left side/bottom check the checkbox with the tiles file.
+
+[.text-center]
+
+.TukTuk Plotter
+image::boat-computer/tuktuk-plotter.png[alt="TukTuk Plotter", width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
+
 ==== KIP Dashboard
 
 https://github.com/mxtommy/Kip
