@@ -2910,7 +2910,7 @@ sudo nano /etc/init.d/mopidy
 make sure you add 2 lines:
 
  cp /home/pi/.config/mopidy/mopidy.conf /etc/mopidy/mopidy.conf
- cp /home/pi/.config/mopidy/mopidy.conf /var/lib/mopidy/.config/mopidy/
+ cp /home/pi/.config/mopidy/mopidy.conf /var/lib/mopidy/.config/mopidy/mopidy.conf
 
 like this (on service startup)
 
@@ -2920,7 +2920,7 @@ like this (on service startup)
         --startas $DAEMON --test > /dev/null \
         || return 1
     cp /home/pi/.config/mopidy/mopidy.conf /etc/mopidy/mopidy.conf
-    cp /home/pi/.config/mopidy/mopidy.conf /var/lib/mopidy/.config/mopidy/
+    cp /home/pi/.config/mopidy/mopidy.conf /var/lib/mopidy/.config/mopidy/mopidy.conf
     start-stop-daemon --start --quiet --name $NAME --pidfile $PIDFILE \
         --chuid $DAEMON_USER:$DAEMON_GROUP --background --make-pidfile \
         --startas $DAEMON -- --quiet --config $CONFIG_FILES \
