@@ -2297,6 +2297,10 @@ https://tileservice.charts.noaa.gov/#usage-policy[NOAA Chart Tile Service Usage 
 |26|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_26.mbtiles[Download Baseline]|http://tileservice.charts.noaa.gov/mbtiles/50000_1/MBTILES_26-updates.mbtiles[Updates]
 |===
 
+===== OpenMap Tiles (Non-marine)
+
+https://openmaptiles.org/
+
 ==== Touch Screen
 
 One of the issues that kept bugging me was the lack of multitouch support on a touchscreen
@@ -2806,7 +2810,7 @@ cd ~/.signalk/charts/
 ln -s /home/pi/Charts/MBTiles/NOAA/MBTILES_17.mbtiles mbtiles_17.mbtiles
 ----
 
-restart signalK (can be done fromSignalK UI if you logged in as admin)
+restart signalK (can be done from SignalK UI if you logged in as admin)
 
 open browser with URL: http://localhost:3000/tuktuk-chart-plotter/
 
