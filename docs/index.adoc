@@ -2684,13 +2684,13 @@ sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/avnav.desk
 [Desktop Entry]
 Type=Application
 Name=AvNav
-GenericName=ChartPlotter
-Comment=ChartPlotter
+GenericName=AvNav
+Comment=AvNav ChartPlotter
 Exec=sh -c "chromium-browser -new-window http://localhost:8099; sleep 3; xdotool key F11"
 Terminal=false
 Icon=globe
-Categories=ChartPlotter,OpenPlotter
-Keywords=ChartPlotter,OpenPlotter
+Categories=Navigation;ChartPlotter
+Keywords=Navigation;ChartPlotter
 EOF'
 
 ----
@@ -2958,13 +2958,13 @@ sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/musicbox.d
 [Desktop Entry]
 Type=Application
 Name=MusicBox
-GenericName=Music
+GenericName=MusicBox
 Comment=Mopidy MusicBox
 Exec=sh -c "chromium-browser -new-window http://openplotter:6680/musicbox_webclient; sleep 3; xdotool key F11"
 Terminal=false
 Icon=sound
-Categories=Sound
-Keywords=Sound
+Categories=AudioVideo;Multimedia;Sound
+Keywords=AudioVideo;Multimedia;Sound
 EOF'
 
 ----
