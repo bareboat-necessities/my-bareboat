@@ -51,6 +51,9 @@
         <Include>
             <And>
                 <Category>Development</Category>
+                <Not>
+                    <Category>HamRadio</Category>
+                </Not>
             </And>
             <Filename>emacs.desktop</Filename>
         </Include>
@@ -105,6 +108,9 @@
         <Include>
             <And>
                 <Category>AudioVideo</Category>
+                <Not>
+                    <Category>HamRadio</Category>
+                </Not>
             </And>
         </Include>
     </Menu>     <!-- End Multimedia -->
