@@ -1,5 +1,5 @@
 <!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
-        "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+        "https://specifications.freedesktop.org/menu-spec/menu-latest.dtd">
 <Menu>
     <Name>Applications</Name>
     <Directory>lxde-menu-applications.directory</Directory>
@@ -183,9 +183,9 @@
         <Name>Navigation</Name>
         <Directory>Navigation.directory</Directory>
         <Include>
-            <And>
+            <Or>
                 <Category>Navigation</Category>
-            </And>
+            </Or>
         </Include>
     </Menu>
     <!-- OpenPlotter -->
@@ -208,6 +208,9 @@
         </Include>
     </Menu>
     <Layout>
+        <Menuname>Navigation</Menuname>
+        <Menuname>OpenPlotter</Menuname>
+        <Menuname>Radio</Menuname>
         <Menuname>Development</Menuname>
         <Menuname>Education</Menuname>
         <Menuname>Office</Menuname>
@@ -220,9 +223,6 @@
         <Menuname>Accessories</Menuname>
         <Merge type="files"/>
         <Merge type="menus"/>
-        <Menuname>Navigation</Menuname>
-        <Menuname>OpenPlotter</Menuname>
-        <Menuname>Radio</Menuname>
         <Separator/>
         <Menuname>DesktopSettings</Menuname>
         <Menuname>Help</Menuname>
