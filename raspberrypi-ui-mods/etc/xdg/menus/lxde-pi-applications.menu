@@ -150,6 +150,9 @@
                 <Not>
                     <Category>Screensaver</Category>
                 </Not>
+                <Not>
+                    <Category>HamRadio</Category>
+                </Not>
             </And>
         </Include>
     </Menu> <!-- End Other -->
@@ -202,9 +205,10 @@
         <Name>Radio</Name>
         <Directory>Radio.directory</Directory>
         <Include>
-            <And>
+            <Or>
                 <Category>Radio</Category>
-            </And>
+                <Category>HamRadio</Category>
+            </Or>
         </Include>
     </Menu>
     <Layout>
