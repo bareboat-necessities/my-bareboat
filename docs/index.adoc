@@ -2680,13 +2680,19 @@ Register menu item:
 ----
 sudo apt install xdotool
 
+wget https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/raspberrypi-ui-mods/usr/share/raspi-ui-overrides/desktop-directories/Navigation.directory
+sudo cp Navigation.directory /usr/share/raspi-ui-overrides/desktop-directories/
+
+wget https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/raspberrypi-ui-mods/etc/xdg/menus/lxde-pi-applications.menu
+sudo cp lxde-pi-applications.menu /etc/xdg/menus/
+
 sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/avnav.desktop
 [Desktop Entry]
 Type=Application
 Name=AvNav
 GenericName=AvNav
 Comment=AvNav ChartPlotter
-Exec=sh -c "chromium-browser -new-window http://localhost:8099; sleep 3; xdotool key F11"
+Exec=sh -c "chromium-browser -new-window http://localhost:8099; sleep 4; xdotool key F11"
 Terminal=false
 Icon=globe
 Categories=Navigation;ChartPlotter
@@ -2954,13 +2960,19 @@ Create a menu link to open Mopidy Web UI directly from desktop menu via this com
 ----
 sudo apt install xdotool
 
+wget https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/raspberrypi-ui-mods/usr/share/raspi-ui-overrides/desktop-directories/Radio.directory
+sudo cp Radio.directory /usr/share/raspi-ui-overrides/desktop-directories/
+
+wget https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/raspberrypi-ui-mods/etc/xdg/menus/lxde-pi-applications.menu
+sudo cp lxde-pi-applications.menu /etc/xdg/menus/
+
 sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/musicbox.desktop
 [Desktop Entry]
 Type=Application
 Name=MusicBox
 GenericName=MusicBox
 Comment=Mopidy MusicBox
-Exec=sh -c "chromium-browser -new-window http://openplotter:6680/musicbox_webclient; sleep 3; xdotool key F11"
+Exec=sh -c "chromium-browser -new-window http://openplotter:6680/musicbox_webclient; sleep 4; xdotool key F11"
 Terminal=false
 Icon=sound
 Categories=AudioVideo;Multimedia;Sound
