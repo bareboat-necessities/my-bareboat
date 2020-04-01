@@ -2838,6 +2838,14 @@ EOF'
 
 ----
 
+[.text-center]
+
+.Freeboard-SK
+image::boat-computer/freeboard-sk.png[alt="Freeboard-SK", width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
+You can also add additional sail instruments to the main view.
 
 ==== InstrumentPanel
 
