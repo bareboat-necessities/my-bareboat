@@ -2794,6 +2794,37 @@ It is based on rpi-clone software https://github.com/billw2/rpi-clone
 
 https://github.com/SignalK/freeboard-sk
 
+Freeboard SK takes charts from SignalK Charts plugin which you install from SignalK app store.
+I've configured it to point to .mbtiles chart file for my sailing region.
+
+Login into SignalK (http://localhost:3000) as admin and go to AppStore link (left side) and
+install Charts plugin. Then restart the SignalK server from UI and login again as admin.
+Go to 'Server' (left side) then 'Plugin Config' / 'Signal K Charts'. Put word 'charts' into
+Path field, check 'Active', and proceed with creating symbolic links to your .mbtiles files in
+/home/pi/.signalk/charts directory. (See AvNav Charts installation section in this document).
+
+Create Menu entry:
+
+[source, shell]
+----
+sudo apt install xdotool
+
+sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/freeboard-sk.desktop
+[Desktop Entry]
+Type=Application
+Name=Freeboard-SK
+GenericName=Freeboard-SK
+Comment=Freeboard-SK ChartPlotter
+Exec=sh -c "chromium-browser -new-window http://localhost:3000/@signalk/freeboard-sk; sleep 5; xdotool key F11"
+Terminal=false
+Icon=globe
+Categories=Navigation;ChartPlotter
+Keywords=Navigation;ChartPlotter
+EOF'
+
+----
+
+
 ==== InstrumentPanel
 
 https://github.com/SignalK/instrumentpanel
