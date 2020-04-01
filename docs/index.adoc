@@ -2864,9 +2864,9 @@ Put this into SignalK API URL:
  http://localhost:3000
 
 Now you can edit widgets to match your sensors. After you are done with it you can lock the screen.
+You can create several pages of dashboards
 
-Add menu:
-
+Add the menu:
 
 [source, shell]
 ----
