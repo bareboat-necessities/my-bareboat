@@ -2854,6 +2854,39 @@ EOF'
 
 https://github.com/mxtommy/Kip
 
+Set up:
+
+Visit http://localhost:3000/@mxtommy/kip with your browser. Hit F11 to go fullscreen.
+Go to App Settings.
+
+Put this into SignalK API URL:
+
+ http://localhost:3000
+
+Now you can edit widgets to match your sensors. After you are done with it you can lock the screen.
+
+Add menu:
+
+
+[source, shell]
+----
+sudo apt install xdotool
+
+sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/signalk-kip.desktop
+[Desktop Entry]
+Type=Application
+Name=SignalK KIP Dashboard
+GenericName=SignalK KIP Dashboard
+Comment=SignalK KIP Dashboard
+Exec=sh -c "chromium-browser -new-window http://localhost:3000/@mxtommy/kip; sleep 5; xdotool key F11"
+Terminal=false
+Icon=globe
+Categories=Navigation;SignalK
+Keywords=Navigation;SignalK
+EOF'
+
+----
+
 
 === Music Player
 
