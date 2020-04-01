@@ -2807,6 +2807,14 @@ You can check for charts by accessing this URL:
 
 http://localhost:3000/signalk/v1/api/resources/charts
 
+The following plugins should be installed installed on the Signal K node server to enable full functionality:
+
+* freeeboard-sk-helper (Course information)
+* sk-resources-fs (Routes, Waypoints, Notes & Regions provider)
+* @signalk/charts-plugin (Charts provider)
+* signalk-anchoralarm-plugin (anchor alarm settings & notifications)
+* signalk-simple-notifications (depth alarm notifications)
+
 Create Menu entry:
 
 [source, shell]
