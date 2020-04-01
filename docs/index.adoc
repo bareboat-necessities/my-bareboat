@@ -2829,6 +2829,26 @@ image::boat-computer/tuktuk-plotter.png[alt="TukTuk Plotter", width="75%",  pdfw
 
 {zwsp} +
 
+Register in Menu
+
+[source, shell]
+----
+sudo apt install xdotool
+
+sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/tuktuk.desktop
+[Desktop Entry]
+Type=Application
+Name=TukTuk
+GenericName=TukTuk
+Comment=TukTuk ChartPlotter
+Exec=sh -c "chromium-browser -new-window http://localhost:3000/tuktuk-chart-plotter; sleep 5; xdotool key F11"
+Terminal=false
+Icon=globe
+Categories=Navigation;ChartPlotter
+Keywords=Navigation;ChartPlotter
+EOF'
+
+----
 
 ==== KIP Dashboard
 
