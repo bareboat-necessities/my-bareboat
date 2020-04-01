@@ -2851,9 +2851,56 @@ You can also add additional sail instruments to the main view.
 
 https://github.com/SignalK/instrumentpanel
 
+InstrumentPanel in installable via SignalK AppStore.
+
+Add menu entry:
+
+[source, shell]
+----
+sudo apt install xdotool
+
+sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/instrument-panel-sk.desktop
+[Desktop Entry]
+Type=Application
+Name=InstrumentPanel
+GenericName=InstrumentPanel
+Comment=InstrumentPanel for SignalK
+Exec=sh -c "chromium-browser -new-window http://localhost:3000/@signalk/instrumentpanel; sleep 7; xdotool key F11"
+Terminal=false
+Icon=globe
+Categories=Navigation;ChartPlotter
+Keywords=Navigation;ChartPlotter
+EOF'
+
+----
+
+
 ==== SailGauge
 
 https://github.com/SignalK/sailgauge
+
+SailGauge in installable via SignalK AppStore.
+
+Add menu entry:
+
+[source, shell]
+----
+sudo apt install xdotool
+
+sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/sailgauge-sk.desktop
+[Desktop Entry]
+Type=Application
+Name=SailGauge
+GenericName=SailGauge
+Comment=SailGauge for SignalK
+Exec=sh -c "chromium-browser -new-window http://localhost:3000/@signalk/sailgauge; sleep 7; xdotool key F11"
+Terminal=false
+Icon=globe
+Categories=Navigation;ChartPlotter
+Keywords=Navigation;ChartPlotter
+EOF'
+
+----
 
 ==== Tuktuk Chart Plotter
 
@@ -3176,6 +3223,8 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Pane
 . GoSailing
 . NauticEd
 . Knot Guide
+
+Samsung Galaxy Tab Active Pro is a good example of a rugged tablet.
 
 {zwsp} +
 
