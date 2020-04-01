@@ -2815,6 +2815,8 @@ The following plugins should be installed installed on the Signal K node server 
 * signalk-anchoralarm-plugin (anchor alarm settings & notifications)
 * signalk-simple-notifications (depth alarm notifications)
 
+It takes some time to download and install them from AppStore via SignalK web UI.
+
 Create Menu entry:
 
 [source, shell]
