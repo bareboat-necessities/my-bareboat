@@ -2590,10 +2590,22 @@ Installation:
 
 [source, shell]
 ----
-wget https://www.meltemus.com/index.php/en/download/send/9-raspberrypi/197-qtvlm-5-9-7-6
-mv 197-qtvlm-5-9-7-6 qtVlm-5.9.7-p2-rpi.tar.gz
-
+curl https://www.meltemus.com/index.php/en/download/send/9-raspberrypi/197-qtvlm-5-9-7-6 > qtVlm-5.9.7-p2-rpi.tar.gz
 gzip -cd < qtVlm-5.9.7-p2-rpi.tar.gz | tar xvf -
+
+sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/qtvlm.desktop
+[Desktop Entry]
+Type=Application
+Name=QtVlm
+GenericName=QtVlm
+Comment=QtVlm ChartPlotter
+Exec=sh -c "cd /home/pi/qtVlm; ./qtVlm_touchscreen -platform xcb; sleep 6; xdotool key F11"
+Terminal=false
+Icon=globe
+Categories=Navigation;ChartPlotter
+Keywords=Navigation;ChartPlotter
+EOF'
+
 ----
 
 Running:
