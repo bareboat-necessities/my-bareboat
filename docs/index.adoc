@@ -3384,6 +3384,12 @@ LysMarine
 * https://github.com/martinber/noaa-apt[NOAA APT weather satellite image decoder, for Linux, Windows, RPi 2+ and OSX]
 
 * https://github.com/ms8r/celnav[Celestial Navigation]
+
+* https://sailmail.com/[SailMail]
+
+* https://farkwar.com/[Farkwar is a free position reporting service]
+
+* https://www.mmsn.org/[Maritime Mobile Service Network]
 {zwsp} +
 
 
