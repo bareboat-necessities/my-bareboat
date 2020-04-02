@@ -2186,6 +2186,8 @@ image::config/openplotter-serial-connections.png[Openplotter Serial Connections,
 
 === Geolocation
 
+==== GNSS
+
 BU-353S4 GPS USB mouse by default is using binary SiRF protocol. You need to switch it once to NMEA before first use.
 
 [source, shell]
@@ -2211,6 +2213,12 @@ sudo gpsctl -n /dev/ttyUSB0
 
 To obtain a fix GPS receiver needs a clear sky view. You need to have it outside. Chances are it is not going to find
 a location from inside your house.
+
+==== Celestial Navigation
+
+OpenCPN has a plugin to calculate a fix from various object sightings.
+
+KStars is a program for the night sky view catalog. Can be installed from official archives using apt.
 
 === Charts and OpenCPN
 
