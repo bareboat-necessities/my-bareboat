@@ -3351,6 +3351,7 @@ LysMarine
 
 * https://github.com/martinber/noaa-apt[NOAA APT weather satellite image decoder, for Linux, Windows, RPi 2+ and OSX]
 
+* https://github.com/ms8r/celnav[Celestial Navigation]
 {zwsp} +
 
 
