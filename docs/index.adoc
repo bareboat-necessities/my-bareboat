@@ -2599,9 +2599,9 @@ Type=Application
 Name=QtVlm
 GenericName=QtVlm
 Comment=QtVlm ChartPlotter
-Exec=sh -c "cd /home/pi/qtVlm; ./qtVlm_touchscreen -platform xcb; sleep 6; xdotool key F11"
+Exec=sh -c "cd /home/pi/qtVlm; ./qtVlm -platform xcb"
 Terminal=false
-Icon=globe
+Icon=/home/pi/qtVlm/icon/qtVlm_48x48.png
 Categories=Navigation;ChartPlotter
 Keywords=Navigation;ChartPlotter
 EOF'
