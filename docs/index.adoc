@@ -100,10 +100,11 @@ NOTE: Keep in mind that by following this document you are building devices to b
 All connections and wiring need to follow marine standards which are more strict than automotive. All nuts and bolts
 need to be properly tightened. I've run into issues in my sailboat experience on water just because of
 one missing washer  (It was in mechanical system on gear switch wire). Heat shrink tubing, wire grades are different
-for marine standards. Corrosion in misty salt water air is much higher than on the ground. A boat is exposed
-to the elements more than house or automobile appliances. If you doubt you did something right you better of
-revisiting it or seeking peer review from  other sailors. The same works the other way. If you see something wrong
-here with the design let us know :) There is issues reporting system in GitHub:
+for marine standards. Corrosion in misty salt water air is much higher than on the ground. Conformant coating
+is recommended for PCBs. A boat is exposed to the elements more than house or automobile appliances.
+If you doubt you did something right you better of  revisiting it or seeking peer review from  other sailors.
+The same works the other way. If you see something wrong here with the design let us know :)
+There is issues reporting system in GitHub:
 https://github.com/bareboat-necessities/my-bareboat/issues
 
 NOTE: Although this document describes mostly instructions on building hardware components, it is designed in
@@ -2220,6 +2221,14 @@ OpenCPN has a plugin to calculate a fix from various object sightings.
 
 KStars is a program for the night sky view catalog. Can be installed from official archives using apt.
 
+==== NTP Time Server Synchronization from GPS
+
+This post describes how to set it up with couple of lines in config files.
+
+https://agile4life.blog/2018/07/16/sailing-with-linux-nmea-gpsd-iridium/
+
+In case if you have OpenWrt boat router then it might be better to set it up on the router.
+
 === Charts and OpenCPN
 
 ==== Charts
@@ -3009,6 +3018,21 @@ EOF'
 
 ----
 
+=== Iridium Satellite Phone as dial-up modem
+
+These couple links will give you information of how to connect your Satellite phone and use it
+as dial-up TCP/IP modem.
+
+https://agile4life.blog/2018/07/16/sailing-with-linux-nmea-gpsd-iridium/
+
+https://github.com/tdolby/python-iridium-modem/
+
+[source, shell]
+----
+sudo apt install wvdial ppp pppstatus picocom
+----
+
+I think it can be even done on your boat OpenWrt router.
 
 === Music Player
 
