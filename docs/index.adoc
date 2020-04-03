@@ -2566,6 +2566,31 @@ Newbie Startup Bumps - RTL-SDR for NavTex and Weatherfax
 
 https://www.rtl-sdr.com/forum/viewtopic.php?t=1519
 
+==== JNX Installation
+
+[source, shell]
+----
+sudo apt install default-jdk
+mkdir JNX
+cd JNX
+curl https://arachnoid.com/JNX/JNX.jar > JNX.jar
+curl https://arachnoid.com/JNX/JNX_source.tar.gz > JNX_source.tar.gz
+
+sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/jnx.desktop
+[Desktop Entry]
+Type=Application
+Name=JNX
+GenericName=JNX
+Comment=JNX NavTex Decoder
+Exec=sh -c "cd /home/pi/JNX; java -jar JNX.jar"
+Terminal=false
+Icon=radio
+Categories=HamRadio,Radio,Weather
+Keywords=HamRadio,Radio,Weather
+EOF'
+
+----
+
 === AIS
 
 Setting up dAISy AIS is very straight forward. It does require higher baud rate, so make sure you specify it correctly.
@@ -2597,6 +2622,32 @@ See: https://www.instructables.com/id/Raspberry-Pi-NOAA-Weather-Satellite-Receiv
 
 Discussion about WeatherFax on Raspberry Pi https://www.raspberrypi.org/forums/viewtopic.php?t=260690
 
+==== WeatherFax JWX
+
+See: https://arachnoid.com/JWX/
+
+[source, shell]
+----
+sudo apt install default-jdk
+mkdir JWX
+cd JWX
+curl https://arachnoid.com/JWX/resources/JWX.jar > JWX.jar
+curl https://arachnoid.com/JWX/resources/JWX_source.tar.bz2 > JWX_source.tar.bz2
+
+sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/jwx.desktop
+[Desktop Entry]
+Type=Application
+Name=JWX
+GenericName=JWX
+Comment=JWX WeatherFax Decoder
+Exec=sh -c "cd /home/pi/JWX; java -jar JWX.jar"
+Terminal=false
+Icon=radio
+Categories=HamRadio,Radio,Weather
+Keywords=HamRadio,Radio,Weather
+EOF'
+
+----
 
 ==== QtVlm
 
