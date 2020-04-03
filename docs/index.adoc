@@ -2556,6 +2556,15 @@ RTL SDR v3 in Direct sampling mode allows listening to HF signals between about 
 
 More info here : https://www.rtl-sdr.com/rtl-sdr-blog-v-3-dongles-user-guide/
 
+Upconverters for SDR:
+
+https://www.rtl-sdr.com/nooelec-releases-the-ham-it-up-nano-hf-upconverter/
+
+See also this discussion:
+
+Newbie Startup Bumps - RTL-SDR for NavTex and Weatherfax
+
+https://www.rtl-sdr.com/forum/viewtopic.php?t=1519
 
 === AIS
 
