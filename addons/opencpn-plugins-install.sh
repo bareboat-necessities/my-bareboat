@@ -26,6 +26,7 @@ opencpn-plugin-tactics              \
 opencpn-plugin-vfkaps               \
 opencpn-plugin-watchdog             \
 opencpn-plugin-weatherfax           \
-opencpn-plugin-weatherrouting
+opencpn-plugin-weatherrouting       \
+ofc-pi
 
 # See also https://github.com/Ptizef/navdata_pi

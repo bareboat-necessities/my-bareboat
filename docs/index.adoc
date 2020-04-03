@@ -3287,7 +3287,7 @@ http://www.sailcut.com/
 
 [source, shell]
 ----
-sudo apt install sailcut
+sudo apt install sailcut saillcut-doc
 ----
 
 [.text-center]
