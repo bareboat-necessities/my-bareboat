@@ -2591,6 +2591,42 @@ EOF'
 
 ----
 
+=== WeatherFax JWX
+
+See: https://arachnoid.com/JWX/
+
+[source, shell]
+----
+sudo apt install default-jdk
+mkdir JWX
+cd JWX
+curl https://arachnoid.com/JWX/resources/JWX.jar > JWX.jar
+curl https://arachnoid.com/JWX/resources/JWX_source.tar.bz2 > JWX_source.tar.bz2
+
+sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/jwx.desktop
+[Desktop Entry]
+Type=Application
+Name=JWX
+GenericName=JWX
+Comment=JWX WeatherFax Decoder
+Exec=sh -c "cd /home/pi/JWX; java -jar JWX.jar"
+Terminal=false
+Icon=radio
+Categories=HamRadio;Radio;Weather
+Keywords=HamRadio;Radio;Weather
+EOF'
+
+----
+
+=== GPredict for Satellite Weather
+
+See: http://gpredict.oz9aec.net/
+
+[source, shell]
+----
+sudo apt install gpredict
+----
+
 === AIS
 
 Setting up dAISy AIS is very straight forward. It does require higher baud rate, so make sure you specify it correctly.
@@ -2621,42 +2657,6 @@ See: https://www.rtl-sdr.com/tag/weather-fax/
 See: https://www.instructables.com/id/Raspberry-Pi-NOAA-Weather-Satellite-Receiver/
 
 Discussion about WeatherFax on Raspberry Pi https://www.raspberrypi.org/forums/viewtopic.php?t=260690
-
-==== WeatherFax JWX
-
-See: https://arachnoid.com/JWX/
-
-[source, shell]
-----
-sudo apt install default-jdk
-mkdir JWX
-cd JWX
-curl https://arachnoid.com/JWX/resources/JWX.jar > JWX.jar
-curl https://arachnoid.com/JWX/resources/JWX_source.tar.bz2 > JWX_source.tar.bz2
-
-sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/jwx.desktop
-[Desktop Entry]
-Type=Application
-Name=JWX
-GenericName=JWX
-Comment=JWX WeatherFax Decoder
-Exec=sh -c "cd /home/pi/JWX; java -jar JWX.jar"
-Terminal=false
-Icon=radio
-Categories=HamRadio;Radio;Weather
-Keywords=HamRadio;Radio;Weather
-EOF'
-
-----
-
-==== GPredict for Satellite Weather
-
-See: http://gpredict.oz9aec.net/
-
-[source, shell]
-----
-sudo apt install gpredict
-----
 
 ==== QtVlm
 
