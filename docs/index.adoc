@@ -2545,10 +2545,21 @@ OpenSource (GPL Licensed) NavTex decoder: https://arachnoid.com/JNX/
 
 
 | Antenna for SDR radio weather fax and NavTex
-a|   Active Antenna 10Khz To 30Mhz Mini Whip Hf Lf Vlf Vhf Sdr Rx With Portable Cable
+a| Active Antenna 10Khz To 30Mhz Mini Whip Hf Lf Vlf Vhf Sdr Rx With Portable Cable
 https://a.aliexpress.com/_sUWwnl
 
 | $26.10 | AliExpress
+
+
+| HF Upconverter
+a| Ham It Up Nano - Tiny HF, MF & LF Upconverter w/TCXO
+
+* Ham It Up Nano is a highly portable HF upconverter for radios and software defined radio devices like our NESDR series (RTL-SDR) and the HackRF
+* Wide frequency capability of 100kHz-65MHz, 1PPM accuracy, and bias-tee powerable!
++
+https://www.amazon.com/dp/B084KL1MXM
+
+| $50.00 | Amazon
 
 |===
 
