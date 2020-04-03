@@ -2585,8 +2585,8 @@ Comment=JNX NavTex Decoder
 Exec=sh -c "cd /home/pi/JNX; java -jar JNX.jar"
 Terminal=false
 Icon=radio
-Categories=HamRadio,Radio,Weather
-Keywords=HamRadio,Radio,Weather
+Categories=HamRadio;Radio;Weather
+Keywords=HamRadio;Radio;Weather
 EOF'
 
 ----
@@ -2643,8 +2643,8 @@ Comment=JWX WeatherFax Decoder
 Exec=sh -c "cd /home/pi/JWX; java -jar JWX.jar"
 Terminal=false
 Icon=radio
-Categories=HamRadio,Radio,Weather
-Keywords=HamRadio,Radio,Weather
+Categories=HamRadio;Radio;Weather
+Keywords=HamRadio;Radio;Weather
 EOF'
 
 ----
