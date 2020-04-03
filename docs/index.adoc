@@ -3297,6 +3297,33 @@ image::boat-computer/sailcut-cad.png[alt="SailCut CAD", width="75%",  pdfwidth="
 
 {zwsp} +
 
+=== For Racers
+
+Boats Scenario
+
+a Race Scenario drawing tool.
+
+http://boats.sourceforge.net/
+
+[source, shell]
+----
+sudo apt install boats
+
+sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/boats-scenario.desktop
+[Desktop Entry]
+Type=Application
+Name=Boats Scenario
+GenericName=Boats Scenario
+Comment=Boats Scenario
+Exec=boats
+Terminal=false
+Icon=globe
+Categories=Navigation;Sailing
+Keywords=Navigation;Sailing
+EOF'
+
+----
+
 === Testing
 
 Another test site:
