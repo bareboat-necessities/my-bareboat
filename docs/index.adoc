@@ -2649,6 +2649,15 @@ EOF'
 
 ----
 
+==== GPredict for Satellite Weather
+
+See: http://gpredict.oz9aec.net/
+
+[source, shell]
+----
+sudo apt install gpredict
+----
+
 ==== QtVlm
 
 OpenCPN Weather plugins provide weather and weather routing functionality.
