@@ -2571,6 +2571,7 @@ https://www.rtl-sdr.com/forum/viewtopic.php?t=1519
 [source, shell]
 ----
 sudo apt install default-jdk
+cd /home/pi
 mkdir JNX
 cd JNX
 curl https://arachnoid.com/JNX/JNX.jar > JNX.jar
@@ -2598,6 +2599,7 @@ See: https://arachnoid.com/JWX/
 [source, shell]
 ----
 sudo apt install default-jdk
+cd /home/pi
 mkdir JWX
 cd JWX
 curl https://arachnoid.com/JWX/resources/JWX.jar > JWX.jar
@@ -2780,6 +2782,7 @@ Register menu item:
 ----
 sudo apt install xdotool
 
+cd /home/pi
 curl https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/raspberrypi-ui-mods/usr/share/raspi-ui-overrides/desktop-directories/Navigation.directory > Navigation.directory && \
 sudo cp Navigation.directory /usr/share/raspi-ui-overrides/desktop-directories/
 
@@ -3227,6 +3230,8 @@ Create a menu link to open Mopidy Web UI directly from desktop menu via this com
 [source, shell]
 ----
 sudo apt install xdotool
+
+cd /home/pi
 
 curl https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/raspberrypi-ui-mods/usr/share/raspi-ui-overrides/desktop-directories/Radio.directory > Radio.directory && \
 sudo cp Radio.directory /usr/share/raspi-ui-overrides/desktop-directories/
