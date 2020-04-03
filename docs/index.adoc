@@ -3277,6 +3277,26 @@ or
 
 {zwsp} +
 
+
+=== Sail CAD
+
+Sailcut CAD is a sail design and plotting software which allows you to design and visualise your own sail and
+compute the accurate development of all panels in flat sheets.
+
+http://www.sailcut.com/
+
+[source, shell]
+----
+sudo apt install sailcut
+----
+
+[.text-center]
+
+.SailCut CAD
+image::boat-computer/sailcut-cad.png[alt="SailCut CAD", width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
 === Testing
 
 Another test site:
