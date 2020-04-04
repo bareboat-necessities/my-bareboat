@@ -2716,7 +2716,7 @@ sudo apt install predict
 sudo apt install gpredict
 
 cd /home/pi
-curl https://wxtoimgrestored.xyz/downloads/wxtoimg_2.10.11-1_i386.deb > wxtoimg_2.10.11-1_i386.deb
+curl https://wxtoimgrestored.xyz/beta/wxtoimg-armhf-2.11.2-beta.deb > wxtoimg-armhf-2.11.2-beta.deb
 sudo dpkg -i wxtoimg-armhf-2.11.2-beta.deb
 wxtoimg
 ----
