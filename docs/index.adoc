@@ -2497,6 +2497,37 @@ googling the chipset and the symptoms. Usually it gives better results than just
 
 === SDR
 
+==== Install Command line RTL_SDR with direct sample mode support
+
+[source, shell]
+-----
+sudo apt install cmake libusb-1.0.0-dev build-essential
+git clone https://github.com/bareboat-necessities/my-bareboat
+cd my-bareboat/rtl-sdr/ && mkdir build && cd build
+cmake ../ -DINSTALL_UDEV_RULES=ON
+make && sudo make install && sudo ldconfig
+/usr/local/bin/rtl_sdr
+-----
+
+You should see an option to enable direct sample mode
+
+[source]
+-----
+rtl_sdr, an I/Q recorder for RTL2832 based DVB-T receivers
+
+Usage: -f frequency_to_tune_to [Hz]
+[-s samplerate (default: 2048000 Hz)]
+[-d device_index (default: 0)]
+[-g gain (default: 0 for auto)]
+[-p ppm_error (default: 0)]
+[-b output_block_size (default: 16 * 16384)]
+[-n number of samples to read (default: 0, infinite)]
+[-S force sync output (default: async)]
+[-D direct_sampling_mode, 0 (default/off), 1 (I), 2 (Q), 3 (no-mod)]
+[-N no dithering (default: use dithering)]
+filename (a '-' dumps samples to stdout)
+-----
+
 ==== Command Line
 
 Example:
