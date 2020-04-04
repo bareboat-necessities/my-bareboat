@@ -2528,6 +2528,17 @@ Usage: -f frequency_to_tune_to [Hz]
 filename (a '-' dumps samples to stdout)
 -----
 
+Blacklist interfering Linux RTL drivers
+
+[source]
+-----
+sudo bash -c 'cat << EOF > /etc/modprobe.d/no-rtl.conf
+blacklist dvb_usb_rtl28xxu
+blacklist rtl2832
+blacklist rtl2830
+EOF'
+-----
+
 ==== Command Line
 
 Example:
