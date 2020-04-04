@@ -2221,6 +2221,12 @@ OpenCPN has a plugin to calculate a fix from various object sightings.
 
 KStars is a program for the night sky view catalog. Can be installed from official archives using apt.
 
+https://kde.org/applications/education/org.kde.kstars
+
+Stellarium is a free open source planetarium for your computer
+
+https://stellarium.org/
+
 ==== NTP Time Server Synchronization from GPS
 
 This post describes how to set it up with couple of lines in config files.
