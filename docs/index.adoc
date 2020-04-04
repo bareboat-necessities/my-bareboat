@@ -3312,9 +3312,9 @@ sudo apt install boats
 sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/boats-scenario.desktop
 [Desktop Entry]
 Type=Application
-Name=Boats Scenario
-GenericName=Boats Scenario
-Comment=Boats Scenario
+Name=Boat Scenario
+GenericName=Boat Scenario
+Comment=Boat Scenario
 Exec=boats
 Terminal=false
 Icon=globe
