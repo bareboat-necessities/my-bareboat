@@ -2652,6 +2652,25 @@ Setting up dAISy AIS is very straight forward. It does require higher baud rate,
 After plugging into USB and antenna and registering in openplotter-serial in device mapping and connections it should
 start giving AIS targets sentences via NMEA. If it doesn't see any ships close by then it doesn't send any sentences.
 
+==== GNU AIS + GUI
+
+GNU AIS + GUI
+
+http://gnuais.sourceforge.net/
+
+[source, shell]
+----
+sudo apt install gnuais
+sudo apt install gnuaisgui
+----
+
+start
+[source, shell]
+----
+gnuaisgui
+----
+
+
 ==== AIS with SDR
 
 https://pysselilivet.blogspot.com/2018/06/ais-reciever-for-raspberry.html
