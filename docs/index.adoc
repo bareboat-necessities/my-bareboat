@@ -2235,6 +2235,19 @@ https://agile4life.blog/2018/07/16/sailing-with-linux-nmea-gpsd-iridium/
 
 In case if you have OpenWrt boat router then it might be better to set it up on the router.
 
+==== GPSBabel
+
+GPSBabel converts waypoints, tracks, and routes between popular GPS receivers such as Garmin or
+Magellan and mapping programs like Google Earth or Basecamp. Literally hundreds of GPS receivers
+and programs are supported.
+
+https://www.gpsbabel.org/
+
+[source, shell]
+------
+sudo apt install gpsbabel
+------
+
 === Charts and OpenCPN
 
 ==== Charts
@@ -2616,6 +2629,7 @@ See: https://arachnoid.com/JWX/
 [source, shell]
 ----
 sudo apt install default-jdk
+sudo apt install hamfax
 cd /home/pi
 mkdir JWX
 cd JWX
@@ -3547,6 +3561,8 @@ LysMarine
 * https://farkwar.com/[Farkwar is a free position reporting service]
 
 * https://www.mmsn.org/[Maritime Mobile Service Network]
+
+* http://weewx.com/[Free Weather Station Software for Linux]
 {zwsp} +
 
 
