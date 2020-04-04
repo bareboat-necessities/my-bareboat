@@ -2713,7 +2713,14 @@ See: http://gpredict.oz9aec.net/
 [source, shell]
 ----
 sudo apt install gpredict
+
+cd /home/pi
+curl https://wxtoimgrestored.xyz/downloads/wxtoimg_2.10.11-1_i386.deb > wxtoimg_2.10.11-1_i386.deb
+sudo dpkg -i wxtoimg-armhf-2.11.2-beta.deb
+wxtoimg
 ----
+
+See: https://www.instructables.com/id/Raspberry-Pi-NOAA-Weather-Satellite-Receiver/
 
 === AIS
 
