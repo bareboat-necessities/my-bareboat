@@ -2723,6 +2723,13 @@ wxtoimg
 
 See: https://www.instructables.com/id/Raspberry-Pi-NOAA-Weather-Satellite-Receiver/
 
+Instead of wxtoimg I think it's possible to use:
+
+* NOAA APT weather satellite image decoder, for Linux, Windows, RPi 2+ and OSX
++
+https://github.com/martinber/noaa-apt
+
+
 === AIS
 
 Setting up dAISy AIS is very straight forward. It does require higher baud rate, so make sure you specify it correctly.
