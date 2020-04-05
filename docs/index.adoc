@@ -2730,6 +2730,20 @@ Instead of wxtoimg I think it's possible to use:
 https://github.com/martinber/noaa-apt
 
 
+[source, shell]
+----
+mkdir ~/noaa-apt
+cd ~/noaa-apt
+wget https://github.com/martinber/noaa-apt/releases/download/v1.1.2/noaa-apt-1.1.2-armv7-linux-gnueabihf.zip
+unzip noaa-apt-1.1.2-armv7-linux-gnueabihf.zip
+----
+
+[source, shell]
+----
+cd ~/noaa-apt
+./noaa-apt
+----
+
 === AIS
 
 Setting up dAISy AIS is very straight forward. It does require higher baud rate, so make sure you specify it correctly.
