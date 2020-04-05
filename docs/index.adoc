@@ -2596,6 +2596,15 @@ image::boat-computer/cubic-sdr.png[alt="Cubic SDR", width="100%",  pdfwidth="100
 
 {zwsp} +
 
+=== FlDigi - Universal Software Modem for SDR, and more
+
+FlDigi has decoders for used in marine communications SitorB/NavTex, RTTY, WeFax, CW, etc
+
+[source, shell]
+----
+sudo apt install fldigi
+----
+
 === NavTex
 
 https://en.wikipedia.org/wiki/List_of_Navtex_stations
