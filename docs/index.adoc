@@ -3257,6 +3257,11 @@ RTL-SDR Tutorial: Decoding Inmarsat STD-C EGC Messages
 
 https://www.rtl-sdr.com/rtl-sdr-tutorial-decoding-inmarsat-std-c-egc-messages/
 
+OpenSource Decoder code (C#):
+
+https://bitbucket.org/scytalec/scytalec
+
+
 === Music Player
 
 I've looked at number of media and music player projects available on raspberry pi and the one
