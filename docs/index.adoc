@@ -3251,6 +3251,12 @@ sudo apt install wvdial ppp pppstatus picocom
 
 I think it can be even done on your boat OpenWrt router.
 
+=== Inmarsat Fleet Decoder with SDR
+
+RTL-SDR Tutorial: Decoding Inmarsat STD-C EGC Messages
+
+https://www.rtl-sdr.com/rtl-sdr-tutorial-decoding-inmarsat-std-c-egc-messages/
+
 === Music Player
 
 I've looked at number of media and music player projects available on raspberry pi and the one
