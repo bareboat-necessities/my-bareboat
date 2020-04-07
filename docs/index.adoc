@@ -2241,6 +2241,12 @@ Stellarium and disable one more group of buttons in front of 'Exit' button.
 Challenge: It would be interesting to integrate Stellarium for on board IMU to
 turn it into augmented reality app. And make a planetarium in the cabin with a projector. :)
 
+I think it shouldn't be difficult based on this code
+
+https://github.com/daniel-s-ingram/stellarium-oculus/commit/8b78c323de54a7e35aae61815ba60bcfa25f3492#diff-25d902c24283ab8cfbac54dfa101ad31
+
+See history in https://github.com/daniel-s-ingram/stellarium-oculus
+
 ==== NTP Time Server Synchronization from GPS
 
 This post describes how to set it up with couple of lines in config files.
