@@ -3261,6 +3261,37 @@ OpenSource Decoder code (C#):
 
 https://bitbucket.org/scytalec/scytalec
 
+Install C3 (Mono) on Raspberry Pi
+
+[source, shell]
+----
+sudo apt install mono-complete
+----
+
+[cols="5,12,3,4", options="header"]
+|===
+
+
+
+|Item
+|Description
+|Cost
+|Source
+
+
+
+| Antenna for SDR radio weather fax and NavTex
+a| RTL-SDR Blog Active L-Band 1525 - 1637 Inmarsat to Iridium Patch Antenna Set
+https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/
+
+https://www.amazon.com/dp/B07WGWZS1D
+
+
+| $42.00 | rtl-sdr.com / Amazon / Ebay
+
+
+|===
+
 
 === Music Player
 
