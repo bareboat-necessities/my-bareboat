@@ -2227,6 +2227,17 @@ Stellarium is a free open source planetarium for your computer
 
 https://stellarium.org/
 
+[source, shell]
+------
+sudo apt install stellarium
+------
+
+Stellarium starts in full screen mode and with my screen resolution the 'Exit'
+button is not visible on my touchscreen. You need to go into configuration screen in
+Stellarium and disable one more group of buttons in front of 'Exit' button.
+
+'Exit' button is on bottom right.
+
 ==== NTP Time Server Synchronization from GPS
 
 This post describes how to set it up with couple of lines in config files.
