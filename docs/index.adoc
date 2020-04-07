@@ -2238,6 +2238,9 @@ Stellarium and disable one more group of buttons in front of 'Exit' button.
 
 'Exit' button is on bottom right.
 
+Challenge: It would be interesting to integrate Stellarium for on board IMU to
+turn it into augmented reality app. And make a planetarium in the cabin with a projector. :)
+
 ==== NTP Time Server Synchronization from GPS
 
 This post describes how to set it up with couple of lines in config files.
