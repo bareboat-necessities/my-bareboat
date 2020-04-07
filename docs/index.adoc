@@ -2598,15 +2598,25 @@ image::boat-computer/cubic-sdr.png[alt="Cubic SDR", width="100%",  pdfwidth="100
 
 ==== SdrGlut
 
+Lightweight SDR radio
+
 [source, shell]
 ----
-sudo apt-get install build-essential libsoapysdr0.6 libsoapysdr-dev libopenal-dev \
- libliquid-dev freeglut3 freeglut3-dev libalut0 libalut-dev
+sudo apt install build-essential libsoapysdr0.6 libsoapysdr-dev libopenal-dev \
+ libliquid-dev freeglut3 freeglut3-dev libalut0 libalut-dev librtaudio-dev
 sudo apt-get install git
 cd /home/pi
 git clone https://github.com/righthalfplane/SdrGlut.git
 cd SdrGlut
 make -f makefileRaspbian
+----
+
+There are several recent versions of libliquid. The call to ampmodem_create differs. If a complier error happens, switch the line that is commented out. It occurs in two places.
+
+[source, C]
+----
+   f->demodAM = ampmodem_create(0.5, mode, iflag);
+// f->demodAM = ampmodem_create(0.5, 0.0, mode, iflag);
 ----
 
 Running:
