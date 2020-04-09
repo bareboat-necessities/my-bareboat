@@ -2600,6 +2600,8 @@ rtl_fm -M wbfm -f 104.3M | play -r 32k -t raw -e s -b 16 -c 1 -V1 -
 ==== GQRX
 Install SDR receiver app called GQRX
 
+https://gqrx.dk/
+
 [source, shell]
 -----
 sudo apt install rtl-sdr rtl-ais gqrx-sdr
@@ -2630,11 +2632,12 @@ https://danielpocock.com/building-loop-antenna-sdr-shortwave-ham-oscal17/
 
 Another SDR application available for Raspberry Pi is CubicSDR:
 
+https://cubicsdr.com/
+
 [source, shell]
 ----
 sudo apt install cubicsdr
 ----
-
 
 .Cubic SDR
 image::boat-computer/cubic-sdr.png[alt="Cubic SDR", width="100%",  pdfwidth="100vw", align="center"]
@@ -2644,6 +2647,8 @@ image::boat-computer/cubic-sdr.png[alt="Cubic SDR", width="100%",  pdfwidth="100
 ==== SdrGlut
 
 Lightweight SDR radio
+
+https://github.com/righthalfplane/SdrGlut
 
 [source, shell]
 ----
@@ -2673,7 +2678,7 @@ cd /home/pi/SdrGlut
 
 ==== Quisk
 
-
+Quisk is a Software Defined Radio (SDR) and is the software that controls receivers
 
 https://james.ahlstrom.name/quisk/
 
