@@ -948,9 +948,12 @@ for raspberry pi 4. So I'd use x710 and x180 combo.
 
 http://www.suptronics.com/miniPCkits/x180.html
 
-NOTE: (Update: Apr 2020)  Strato Pi SPBC12X board (https://www.sferalabs.cc/product/strato-pi-can-board/).
+NOTE: (Update: Apr 2020)  Strato Pi SPBC12X board (https://www.sferalabs.cc/product/strato-pi-can-board/)
+
+Strato Pi SPBC12X board:
+
 * 9-65Vdc power supply, with surge and reverse polarity protection
-* Controller Area Network (CAN) V2.0B interface, supports speeds up to 1Mb/s, with opto-isolator and
+* Controller Area Network (CAN) V2.0B interface, supports speeds up to 1Mb/s, with *opto-isolator* and
 electrostatic discharge protection
 * standard RS-485 interfaces to the Raspberry Pi serial line, with opto-isolator and
 electrostatic discharge protection
