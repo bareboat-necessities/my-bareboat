@@ -2257,6 +2257,19 @@ https://agile4life.blog/2018/07/16/sailing-with-linux-nmea-gpsd-iridium/
 
 In case if you have OpenWrt boat router then it might be better to set it up on the router.
 
+==== Time Zones at Sea
+
+{zwsp} +
+
+[quote, According to https://data.iana.org, Time Zones at Sea]
+A ship within the territorial waters of any nation uses that nation's time. In international waters,
+time zone boundaries are meridians 15° apart, except that UT−12 and UT+12 are each 7.5° wide and
+are separated by the 180° meridian (not by the International Date Line, which is for land
+and territorial waters only). A captain can change ship's clocks any time after entering
+a new time zone; midnight changes are common.
+
+https://github.com/wadda/timmeh
+
 ==== GPSBabel
 
 GPSBabel converts waypoints, tracks, and routes between popular GPS receivers such as Garmin or
@@ -3588,7 +3601,7 @@ image::boat-computer/sailcut-cad.png[alt="SailCut CAD", width="75%",  pdfwidth="
 
 Boats Scenario
 
-a Race Scenario drawing tool.
+Race Scenario drawing tool.
 
 http://boats.sourceforge.net/
 
