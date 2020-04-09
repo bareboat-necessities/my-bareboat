@@ -3718,7 +3718,7 @@ Samsung Galaxy Tab Active Pro is a good example of a rugged tablet.
 * https://www.hackster.io/news/a-raspberry-pi-makes-a-perfect-sailing-computer-for-your-boat-6b1bf0f696dd[
  A Raspberry Pi Makes a Perfect Sailing Computer for Your Boat, by Cameron Coward]
 
-* hhttps://openplotter.readthedocs.io/en/latest/description/examples.html#bareboat-necessities[
+* https://openplotter.readthedocs.io/en/latest/description/examples.html#bareboat-necessities[
 Openplotter's Hall of Fame]
 
 == Third-Party Projects
