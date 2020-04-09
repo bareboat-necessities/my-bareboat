@@ -948,6 +948,27 @@ for raspberry pi 4. So I'd use x710 and x180 combo.
 
 http://www.suptronics.com/miniPCkits/x180.html
 
+NOTE: (Update: Apr 2020)  Strato Pi SPBC12X board (https://www.sferalabs.cc/product/strato-pi-can-board/).
+* 9-65Vdc power supply, with surge and reverse polarity protection
+* Controller Area Network (CAN) V2.0B interface, supports speeds up to 1Mb/s, with opto-isolator and
+electrostatic discharge protection
+* standard RS-485 interfaces to the Raspberry Pi serial line, with opto-isolator and
+electrostatic discharge protection
+* real time clock with replaceable CR1025 back-up battery
+
+($140.00)
+https://www.mouser.com/ProductDetail/?qs=PqoDHHvF64%252BAaGJtJ2H51A%3D%3D
+
+or same without CAN-bus, model SPBB30X ($100.00):
+
+https://www.sferalabs.cc/product/strato-pi-base-board/
+
+Google for "industrial raspberry pi" to get more ideas.
+
+Raspberry Pi IP65 Weatherproof IoT Project Enclosure:
+https://sixfab.com/product/raspberry-pi-ip65-weatherproof-iot-project-enclosure/
+
+
 
 NOTE: Another couple of interesting boards are discussed here http://forum.openmarine.net/showthread.php?tid=1666&page=3
 NMEA multiplexer, current, voltage and RPM sensors for engine/battery monitoring and fridge and thermostat control board.
