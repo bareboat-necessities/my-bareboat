@@ -2687,6 +2687,24 @@ Running:
 python3 -m quisk
 ----
 
+==== GNU Radio Companion
+
+GNU Radio Companion is generic signal processing library often used with SDR.
+
+https://wiki.gnuradio.org/
+
+[source, shell]
+----
+sudo apt install gnuradio
+----
+
+Running:
+
+[source, shell]
+----
+gnuradio-companion
+----
+
 === FlDigi - Universal Software Modem for SDR, and more
 
 FlDigi has decoders for use in marine communications SitorB/NavTex, RTTY, WeFax, CW, etc
