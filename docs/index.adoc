@@ -2679,7 +2679,7 @@ python3 -m quisk
 
 === FlDigi - Universal Software Modem for SDR, and more
 
-FlDigi has decoders for used in marine communications SitorB/NavTex, RTTY, WeFax, CW, etc
+FlDigi has decoders for use in marine communications SitorB/NavTex, RTTY, WeFax, CW, etc
 
 [source, shell]
 ----
@@ -2821,6 +2821,8 @@ Instead of wxtoimg I think it's possible to use:
 +
 https://github.com/martinber/noaa-apt
 
+GPredict which comes from default raspberry Pi archives doesn't seem to support
+reading GPS location from GPSD daemon. You might have to compile it from the source.
 
 [source, shell]
 ----
