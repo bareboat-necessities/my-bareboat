@@ -2404,6 +2404,16 @@ want it on every boot):
 amixer cset numid=3 1
 -----
 
+==== OpenCPN Plugins
+
+There are many plugins which you should install for OpenCPN.
+The script to install them is here:
+
+https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/addons/opencpn-plugins-install.sh
+
+There are two dashbaord plugins with overlapping functionality.
+One is Dassboard Plugin and another one is Dashboard Tactics Plugin. It seems
+Dashboard Tactics Plugin is going to be better choice for long term.
 
 === Compass / IMU / Barometer / Thermometer
 
