@@ -5,7 +5,7 @@ twofing is a daemon which runs in the background and recognizes two-finger gestu
 # Installation
 
 ```
-sudo apt-get install \
+sudo apt install \
   build-essential \
   libx11-dev \
   libxtst-dev \

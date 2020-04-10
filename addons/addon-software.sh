@@ -3,7 +3,7 @@
 # enable aux audio
 amixer cset numid=3 1
 
-sudo apt-get update
+sudo apt update
 
 # Additional marine related utilities
 sudo apt install gpsd klex
@@ -18,7 +18,7 @@ sudo apt install gqrx-sdr
 sudo apt install cubicsdr
 
 # Universal Radio Hacker (urh)
-#sudo apt-get update
+#sudo apt update
 #sudo apt install python3-numpy python3-psutil python3-zmq python3-pyqt5 g++ libpython3-dev python3-pip cython3
 #sudo apt install librtlsdr-dev
 #sudo pip3 install urh
