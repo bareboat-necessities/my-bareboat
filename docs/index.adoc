@@ -2185,10 +2185,6 @@ handling of dark themes (There are reported bugs that in some screens they draw 
 
 I use PXFlat for icon, mouse, window border themes.
 
-'Other':
-Toolbar Style: Icons Only
-Toolbar Icon Size: Large Toolbar Icon
-
 Back to 'Widget' tab and 'Apply'
 
 For 800x480 resolution 12pt fonts in menus and dialogs are too big. You might not see full content of the forms.
@@ -2208,6 +2204,8 @@ obconf
 Click 'Desktops' tab, add new desktop
 
 Click 'Margins' tab, set all margins to 0
+
+Right click on taskbar. Check: 'Icons Only', 'Show windows from all desktops'.
 
 ===== Desktop
 
