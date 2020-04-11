@@ -2163,6 +2163,64 @@ dtoverlay=pi3-disable-bt
 * arm_64bit=1 is for enabling 64-bit linux kernel.
 * gpu_mem=512 reserves 512Mb of memory to the graphic video card.
 
+==== Look & Feel Settings
+
+===== Dark Theme
+
+[source, bash]
+----
+sudo apt install breeze-gtk-theme breeze-icon-theme breeze-icon-theme breeze-icon-theme-rcc breeze-cursor-theme
+----
+
+Start lxappearance
+[source, bash]
+----
+lxappearance
+----
+
+and choose 'Breeze-Dark' widget theme
+click 'Color tab'
+and set foreground colors to "#808080". This is needed to overcome existing bugs in OpenPlotter and OpenCPN
+handling of dark themes (There are reported bugs that in some screens they draw white font on white background).
+
+I use PXFlat for icon, mouse, window border themes.
+
+'Other':
+Toolbar Style: Icons Only
+Toolbar Icon Size: Large Toolbar Icon
+
+Back to 'Widget' tab and 'Apply'
+
+For 800x480 resolution 12pt fonts in menus and dialogs are too big. You might not see full content of the forms.
+So change it to 11pt in OpenCPN and Desktop Settings.
+
+Change desktop background color to black (Right Click on desktop -> Desktop Preferences).
+
+===== Multiple Desktops
+
+Start OpenBox config
+
+[source, bash]
+----
+obconf
+----
+
+Click 'Desktops' tab, add new desktop
+
+Click 'Margins' tab, set all margins to 0
+
+===== Desktop
+
+Desktop is actually configured via file manager preferences.
+
+[source, bash]
+----
+pcmanfm
+----
+
+'Edit'/'Preferences'
+
+
 ==== Setting Serial Devices
 
 [source, shell]
