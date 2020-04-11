@@ -2207,6 +2207,14 @@ Click 'Margins' tab, set all margins to 0
 
 Right click on taskbar. Check: 'Icons Only', 'Show windows from all desktops'.
 
+[source, bash]
+----
+lxpanelctrl config
+----
+
+Add desktop pager to panel
+
+
 ===== Desktop
 
 Desktop is actually configured via file manager preferences.
