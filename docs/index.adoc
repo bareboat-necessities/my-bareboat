@@ -2225,7 +2225,9 @@ pcmanfm
 ----
 
 'Edit'/'Preferences'
+Check 'Don't ask options on lauch executable'
 
+You can copy *.desktop files into ~/Desktop and use them as application launch shortcuts.
 
 ==== Setting Serial Devices
 
