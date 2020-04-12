@@ -2229,6 +2229,26 @@ Check 'Don't ask options on lauch executable'
 
 You can copy *.desktop files into ~/Desktop and use them as application launch shortcuts.
 
+You can use wmctrl command to switch between desktops and start programs on different desktops.
+
+[source, bash]
+----
+sudo apt install wmctrl
+----
+
+Examples:
+
+[source, bash]
+----
+
+# Switch to desktop #2
+wmctrl -s 1
+
+# Move Chromium to desktop #2
+wmctrl -i -r `wmctrl -l | grep Chromium | cut -d ' ' -f1` -t 1
+
+----
+
 ==== Setting Serial Devices
 
 [source, shell]
