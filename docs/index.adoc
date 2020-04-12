@@ -2868,7 +2868,7 @@ OpenSource (GPL Licensed) NavTex decoder: https://arachnoid.com/JNX/
 a| Active Antenna 10Khz To 30Mhz Mini Whip Hf Lf Vlf Vhf Sdr Rx With Portable Cable
 https://a.aliexpress.com/_sUWwnl
 
-Note: Search also for PA0RDT wini whip antennas.
+Note: Search also for PA0RDT mini whip antennas.
 
 | $26.10 | AliExpress
 
