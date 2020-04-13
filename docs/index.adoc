@@ -2359,6 +2359,25 @@ https://github.com/daniel-s-ingram/stellarium-oculus/commit/8b78c323de54a7e35aae
 
 See history in https://github.com/daniel-s-ingram/stellarium-oculus
 
+[source, shell]
+----
+sudo apt install build-essential cmake zlib1g-dev libgl1-mesa-dev gcc g++ \
+ graphviz doxygen gettext git \
+ qtscript5-dev libqt5svg5-dev qttools5-dev-tools qttools5-dev \
+ libqt5opengl5-dev qtmultimedia5-dev libqt5multimedia5-plugins \
+ libqt5serialport5 libqt5serialport5-dev qtpositioning5-dev libgps-dev \
+ libqt5positioning5 libqt5positioning5-plugins
+sudo apt install libdrm-dev qtbase5-dev
+curl -O https://github.com/Stellarium/stellarium/releases/download/v0.20.0/stellarium-0.20.0.tar.gz
+gzip -cd < stellarium-0.20.0.tar.gz | tar xvf -
+cd stellarium-0.20.0
+mkdir -p builds/unix
+cd builds/unix
+cmake ../../
+make -j4
+make install
+----
+
 ==== NTP Time Server Synchronization from GPS
 
 This post describes how to set it up with couple of lines in config files.
