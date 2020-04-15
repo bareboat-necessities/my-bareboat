@@ -2852,7 +2852,7 @@ Running:
 gnuradio-companion
 ----
 
-=== FlDigi - Universal Software Modem for SDR, and more
+==== FlDigi - Universal Software Modem for SDR, and more
 
 FlDigi has decoders for use in marine communications SitorB/NavTex, RTTY, WeFax, CW, etc
 
@@ -2860,6 +2860,32 @@ FlDigi has decoders for use in marine communications SitorB/NavTex, RTTY, WeFax,
 ----
 sudo apt install fldigi
 ----
+
+
+==== PACTOR
+
+PACTOR is a radio modulation mode used by amateur radio operators, marine radio stations,
+military or government users such as the Department of Homeland Security,
+and radio stations in isolated areas to send and receive digital information via radio.
+
+See:
+https://www.p4dragon.com/en/PMON.html
+
+[source, shell]
+----
+# https://www.p4dragon.com/en/PMON.html
+echo "deb https://www.scs-ptc.com/repo/packages/ buster non-free" | sudo tee /etc/apt/sources.list.d/scs.list > /dev/null
+wget -q -O - https://www.scs-ptc.com/repo/packages/scs.gpg.key | sudo apt-key add -
+sudo apt update
+sudo apt install pmon
+----
+
+Running:
+[source, shell]
+----
+pmon
+----
+
 
 === NavTex
 
