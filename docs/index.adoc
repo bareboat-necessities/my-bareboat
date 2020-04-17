@@ -53,7 +53,7 @@ https://bareboat-necessities.wixsite.com/my-bareboat
 
 PDF version:
 
-https://github.com/bareboat-necessities/my-bareboat/index.pdf
+https://bareboat-necessities.github.io/my-bareboat/index.pdf
 
 {zwsp} +
 
