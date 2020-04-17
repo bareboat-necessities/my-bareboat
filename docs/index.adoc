@@ -51,6 +51,12 @@ https://bareboat-necessities.wixsite.com/my-bareboat
 
 {zwsp} +
 
+PDF version:
+
+https://bareboat-necessities.wixsite.com/my-bareboat/index.pdf
+
+{zwsp} +
+
 toc::[]
 
 == Boat Electronics Project
