@@ -3918,10 +3918,6 @@ http://lysmarineos.com
 
 LysMarine
 
-=== Weather via the command line
-
-https://github.com/sailingthecrosswind/weather
-
 === Boat Chartplotter using stick PC
 
 https://www.youtube.com/watch?v=JYhsQSQOEbM&feature=youtu.be
