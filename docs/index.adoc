@@ -3892,15 +3892,13 @@ Samsung Galaxy Tab Active Pro is a good example of a rugged tablet.
 
 == Third-Party Projects
 
+=== Onboard Computer System
+
+https://github.com/LASER-WOLF/OnboardComputerSystem
+
 === S/Y Curiosity SignalK setup
 
 https://bergie.iki.fi/blog/signalk-boat-iot/
-
-=== Boat Chartplotter using stick PC
-
-https://www.youtube.com/watch?v=JYhsQSQOEbM&feature=youtu.be
-
-Marine Chartplotter PC - Open CPN on ASUS QM1
 
 === Sailing with Linux (NMEA, GPSd, Iridium)
 
@@ -3919,6 +3917,16 @@ Another Raspberry Pi Boating Project
 http://lysmarineos.com
 
 LysMarine
+
+=== Weather via the command line
+
+https://github.com/sailingthecrosswind/weather
+
+=== Boat Chartplotter using stick PC
+
+https://www.youtube.com/watch?v=JYhsQSQOEbM&feature=youtu.be
+
+Marine Chartplotter PC - Open CPN on ASUS QM1
 
 == Links
 
