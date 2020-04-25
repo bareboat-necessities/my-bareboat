@@ -194,6 +194,7 @@
         <Include>
             <Or>
                 <Category>Navigation</Category>
+                <Category>Astronomy</Category>
             </Or>
         </Include>
     </Menu>
