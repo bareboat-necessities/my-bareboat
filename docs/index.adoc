@@ -1013,7 +1013,7 @@ NOTE: One more board: https://github.com/mairas/sailor-hat-hardware/blob/master/
 * Mount SD card reader to front panel to swap easier
 
 .Amp Meter Wiring Diagram
-image::amp-meter-wiring.jpg[alt="Amp Meter Wiring Diagram", align="center"]
+image::amp-meter-wiring.jpg[alt="Amp Meter Wiring Diagram", width="75%",  pdfwidth="75vw", align="center"]
 
 ====== Real blue water (off-shore) boat features (just brain storming)
 
@@ -1050,17 +1050,17 @@ image::amp-meter-wiring.jpg[alt="Amp Meter Wiring Diagram", align="center"]
 ===== OpenCPN 5.0.522
 
 .OpenCPN MBTiles
-image::opencpn-1.png[alt="OpenCPN MBTiles", align="center"]
+image::opencpn-1.png[alt="OpenCPN MBTiles", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
 .OpenCPN Vector
-image::opencpn-2.png[alt="OpenCPN Vector", align="center"]
+image::opencpn-2.png[alt="OpenCPN Vector", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
 .OpenCPN Dashboard
-image::opencpn-3.png[alt="OpenCPN Dashboard", align="center"]
+image::opencpn-3.png[alt="OpenCPN Dashboard", width="75%",  pdfwidth="75vw", align="center"]
 
 Saving it as a template in OpenCPN was a bit tricky on 7" screen as OpenCPN window is too big to see 'OK' button.
 I had to press Ctrl-Tab twice followed by Enter, doing it basically blindly.
@@ -1938,7 +1938,7 @@ Currently it supports GPS and Wind displays. I have an idea how to display more 
 {zwsp} +
 
 .M5Stack Boat Display
-image::boat-router/m5stack-boat-display.jpg[alt="M5Stack Boat Display", width="85%",  pdfwidth="85vw", align="center"]
+image::boat-router/m5stack-boat-display.jpg[alt="M5Stack Boat Display", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -2107,7 +2107,7 @@ telnet localhost 8375
 ==== Basic Installation Steps
 
 .Basic Installation Steps
-ifdef::env-github[image::basic-install-steps.svg[Basic Installation Steps, width="75%", height="75%"]]
+ifdef::env-github[image::basic-install-steps.svg[Basic Installation Steps, width="70%", height="70%"]]
 ifndef::env-github[]
 
 [plantuml,basic-install-steps,svg]
@@ -2839,7 +2839,7 @@ Easiest way to try your RTL-SDR dongle is via tuning to FM station.
 . Adjust gain in audio control. You should hear clear radio.
 
 .Receiving FM radio with RTL-SDR
-image::boat-computer/gqrx-sdr-receiver.png[alt="Receiving FM radio with RTL-SDR", width="100%",  pdfwidth="100vw", align="center"]
+image::boat-computer/gqrx-sdr-receiver.png[alt="Receiving FM radio with RTL-SDR", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -2862,7 +2862,7 @@ sudo apt install cubicsdr
 ----
 
 .Cubic SDR
-image::boat-computer/cubic-sdr.png[alt="Cubic SDR", width="100%",  pdfwidth="100vw", align="center"]
+image::boat-computer/cubic-sdr.png[alt="Cubic SDR", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
@@ -3228,7 +3228,7 @@ cd qtVlm
 ----
 
 .QtVlm
-image::boat-computer/qtvlm.png[alt="QtVlm", width="100%",  pdfwidth="100vw", align="center"]
+image::boat-computer/qtvlm.png[alt="QtVlm", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
