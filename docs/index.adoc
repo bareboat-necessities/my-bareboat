@@ -2772,6 +2772,10 @@ reboot
 
 ==== Command Line
 
+Command line receiver and demodulator:
+
+http://kmkeen.com/rtl-demod-guide/
+
 Example:
 The following command will play FM 104.3 MHz Station on your speaker:
 
