@@ -2796,7 +2796,7 @@ sudo apt install multimon-ng netcat
 ==== Meta Packages for SDR and HAM radio
 
 Because there are so many separate packages for SDR and HAM radio software someone
-made a meta-packages which install bundles of packages for different aspects of radio interests.
+made a set of meta-packages which install bundles of packages for different aspects of radio interests.
 
 Names start with hamradio-*
 
