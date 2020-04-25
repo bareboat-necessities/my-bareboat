@@ -2784,6 +2784,15 @@ The following command will play FM 104.3 MHz Station on your speaker:
 rtl_fm -M wbfm -f 104.3M | play -r 32k -t raw -e s -b 16 -c 1 -V1 -
 -----
 
+==== MultimonNG decoders
+
+https://github.com/EliasOenal/multimon-ng
+
+[source, shell]
+-----
+sudo apt install multimon-ng
+-----
+
 ==== GQRX
 Install SDR receiver app called GQRX
 
