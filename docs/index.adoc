@@ -2235,6 +2235,8 @@ Right click on taskbar. Check: 'Icons Only', 'Show windows from all desktops'.
 Right click on taskbar. Select 'Add/Remove Panel Items', then 'Panel Applets/Add/Desktop Pager.
 Close.
 
+Or:
+
 [source, bash]
 ----
 lxpanelctrl config
@@ -2252,12 +2254,19 @@ Desktop is actually configured via file manager preferences.
 pcmanfm
 ----
 
-'Edit'/'Preferences'
-Check 'Don't ask options on lauch executable'
+'Edit'/'Preferences'.
+Check 'Don't ask options on launch executable'.
 
 You can copy *.desktop files into ~/Desktop and use them as application launch shortcuts.
 
-You can use wmctrl command to switch between desktops and start programs on different desktops.
+Example:
+[source, bash]
+----
+cp /usr/share/applications/opencpn.desktop ~/Desktop/
+----
+
+
+You can use 'wmctrl' command to switch between desktops and start programs on different desktops.
 
 [source, bash]
 ----
