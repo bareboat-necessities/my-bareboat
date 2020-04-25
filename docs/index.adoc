@@ -2303,6 +2303,16 @@ wmctrl -i -r `wmctrl -l | grep Chromium | cut -d ' ' -f1` -t 1
 
 ----
 
+===== Menus
+
+You will be installing other software which you do not what to appear mostly under 'Other' menu.
+You want more gradual menu structure than default. Install 'extra-xdg-menus'.
+
+[source, bash]
+----
+sudo apt install extra-xdg-menus
+----
+
 ==== Setting Serial Devices
 
 [source, shell]
