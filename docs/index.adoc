@@ -2119,6 +2119,14 @@ To see which available OpenCPN packages are there:
 apt-cache search opencpn
 ----
 
+Install missing ones:
+
+[source,shell]
+----
+sudo apt install `apt-cache search opencpn | cut -d ' ' -f1`
+----
+
+
 I also like to add firefox as additional browser in case chromium fails to display some page.
 
 [source,shell]
@@ -2129,17 +2137,22 @@ sudo apt install firefox-esr
 
 ==== Initial Settings
 
+[source,shell]
+----
+sudo rc_gui
+----
+
 [.text-center]
 
 You would need to enable SPI, I2C, Serial Port, 1-Wire and Remote GPIO and
-disable Serial Console in Raspberry Pi Configuration utility. See:
+disable Serial Console in Raspberry Pi Configuration utility. Set video memory to 512 (MB). See:
 
 .Raspbian Interfaces Settings
 image::config/raspbian-settings.png[Raspbian Interfaces Settings, width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
-Reboot after changing settings in Raspberry Pi Configuration screen.
+Disable screen blanking. Reboot after changing settings in Raspberry Pi Configuration screen.
 
 In Openplotter Serial you need to enable UART. This will disable Bluetooth. Reboot after it.
 
