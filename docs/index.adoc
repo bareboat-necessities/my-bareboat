@@ -2412,6 +2412,8 @@ Stellarium and disable one more group of buttons in front of 'Exit' button.
 
 'Exit' button is on bottom right.
 
+Also change fonts in settings to size 11 (from 13).
+
 Challenge: It would be interesting to integrate Stellarium for on board IMU to
 turn it into augmented reality app. And make a planetarium in the cabin with a projector. :)
 Also stars will let you check if your magnetic compass is correct.
