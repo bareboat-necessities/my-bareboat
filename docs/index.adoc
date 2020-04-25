@@ -2156,6 +2156,13 @@ Disable screen blanking. Reboot after changing settings in Raspberry Pi Configur
 
 In Openplotter Serial you need to enable UART. This will disable Bluetooth. Reboot after it.
 
+Edit /boot/config.txt to add (to enable 64-bit kernel)
+
+[source]
+-----
+arm_64bit=1
+-----
+
 Your /boot/config.txt should look like this (I've stripped the commented lines):
 
 [source]
@@ -2209,7 +2216,7 @@ Back to 'Widget' tab and 'Apply'
 For 800x480 resolution 12pt fonts in menus and dialogs are too big. You might not see full content of the forms.
 So change it to 11pt in OpenCPN and Desktop Settings.
 
-Change desktop background color to black (Right Click on desktop -> Desktop Preferences).
+Change desktop background color to black and text color to white (Right Click on desktop -> Desktop Preferences).
 
 ===== Multiple Desktops
 
@@ -2220,11 +2227,13 @@ Start OpenBox config
 obconf
 ----
 
-Click 'Desktops' tab, add new desktop
-
-Click 'Margins' tab, set all margins to 0
+Click 'Desktops' tab, add new desktop. Create couple desktops, give them names ('One', 'Two').
+Click 'Margins' tab, set all margins to 0. Save changes and exit obconf.
 
 Right click on taskbar. Check: 'Icons Only', 'Show windows from all desktops'.
+
+Right click on taskbar. Select 'Add/Remove Panel Items', then 'Panel Applets/Add/Desktop Pager.
+Close.
 
 [source, bash]
 ----
