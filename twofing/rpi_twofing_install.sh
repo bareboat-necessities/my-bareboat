@@ -4,10 +4,9 @@
 # and https://github.com/Plippo/twofing
 # and https://github.com/sjlongland/twofing
 
-sudo apt install build-essential libx11-dev libxtst-dev libxi-dev x11proto-randr-dev libxrandr-dev
-wget http://plippo.de/dwl/twofing/twofing-0.1.2.tar.gz
-tar -xvzf twofing-0.1.2.tar.gz
-cd twofing-0.1.2
+sudo apt install build-essential libx11-dev libxtst-dev libxi-dev x11proto-randr-dev libxrandr-dev git
+git clone https://github.com/Plippo/twofing.git
+cd twofing || exit 255
 make
 sudo cp twofing /usr/bin/
 sudo cat /proc/bus/input/devices # Find the device name to use as matching string, find Vendor and Product IDs
@@ -39,4 +38,4 @@ Name=Twofing
 Exec=twofing
 StartupNotify=false
 EOF
-reboot
+#reboot
