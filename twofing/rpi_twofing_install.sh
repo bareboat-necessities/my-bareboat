@@ -38,4 +38,5 @@ Name=Twofing
 Exec=twofing
 StartupNotify=false
 EOF
+rm -rf twofing
 #reboot
