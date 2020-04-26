@@ -2575,6 +2575,14 @@ It is easy to install. I've combined the script for my Argonaut M7 waterproof di
 
 See: https://github.com/bareboat-necessities/my-bareboat/blob/master/twofing/rpi_twofing_install.sh
 
+[source,shell]
+----
+curl -O https://github.com/bareboat-necessities/my-bareboat/blob/master/twofing/rpi_twofing_install.sh
+chmod +x rpi_twofing_install.sh
+./rpi_twofing_install.sh
+reboot
+----
+
 Now zooming works with two fingers, there is a right click emulation with two fingers touch as well.
 With few modifications it can work for other screens. You will need to find out vendorID, productID and
 name for your touch screen display.
