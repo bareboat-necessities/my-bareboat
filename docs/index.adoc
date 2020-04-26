@@ -2577,7 +2577,7 @@ See: https://github.com/bareboat-necessities/my-bareboat/blob/master/twofing/rpi
 
 [source,shell]
 ----
-curl -O https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/twofing/rpi_twofing_install.sh
+wget https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/twofing/rpi_twofing_install.sh
 chmod +x rpi_twofing_install.sh
 ./rpi_twofing_install.sh
 reboot
