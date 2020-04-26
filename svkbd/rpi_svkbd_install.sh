@@ -44,4 +44,4 @@ Plugin {
   }
 }
 EOF'
-sudo reboot
+#sudo reboot
