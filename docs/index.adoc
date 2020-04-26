@@ -2611,8 +2611,8 @@ See: https://github.com/bareboat-necessities/my-bareboat/blob/master/svkbd/rpi_s
 [source,shell]
 ----
 wget https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/svkbd/rpi_svkbd_install.sh
-chmod +x svkbdv.sh
-./svkbd.sh
+chmod +x rpi_svkbd_install.sh
+./rpi_svkbd_install.sh
 reboot
 ----
 
