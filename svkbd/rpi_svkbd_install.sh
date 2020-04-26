@@ -27,8 +27,8 @@ EOF'
 sudo chmod +x /usr/bin/toggle-keyboard.sh
 sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/toggle-keyboard.desktop
 [Desktop Entry]
-Name=Toggle Virtual Keyboard
-Comment=Toggle Virtual Keyboard
+Name=Virtual Keyboard
+Comment=Virtual Keyboard
 Exec=/usr/bin/toggle-keyboard.sh
 Type=Application
 Icon=keyboard.png
