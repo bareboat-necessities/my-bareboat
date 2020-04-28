@@ -3164,6 +3164,18 @@ http://gnuais.sourceforge.net/
 ----
 sudo apt install gnuais
 sudo apt install gnuaisgui
+
+sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/gnuaisgui.desktop
+[Desktop Entry]
+Type=Application
+Name=GNU AIS
+GenericName=GNU AIS
+Comment=GNU AIS
+Exec=gnuaisgui
+Terminal=false
+Categories=Navigation;ChartPlotter
+Keywords=Navigation;ChartPlotter
+EOF'
 ----
 
 start
