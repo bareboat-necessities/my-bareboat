@@ -3217,8 +3217,8 @@ Installation:
 [source, shell]
 ----
 cd /home/pi
-curl https://www.meltemus.com/index.php/en/download/send/9-raspberrypi/203-qtvlm-5-9-8-6 > qtVlm-5.9.8-rpi.tar.gz
-gzip -cd < qtVlm-5.9.8-rpi.tar.gz | tar xvf -
+curl https://www.meltemus.com/index.php/en/download/send/9-raspberrypi/209-qtvlm-5-9-8-p1-6 > qtVlm-5.9.8-p1-rpi.tar.gz
+gzip -cd < qtVlm-5.9.8-p1-rpi.tar.gz | tar xvf -
 curl https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/qtvlm-conf/qtVlm.ini > /home/pi/.qtVlm/qtVlm.ini
 
 sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/qtvlm.desktop
@@ -3882,7 +3882,7 @@ sudo bash -c 'cat << EOF > /usr/share/applications/boats.desktop
 [Desktop Entry]
 Type=Application
 Name=Boat Scenario
-GenericName=Boat Scenario
+GenericName=Boat Scenario````
 Comment=Race scenario drawing tool
 Exec=boats %F
 Terminal=false
