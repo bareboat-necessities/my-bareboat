@@ -3878,17 +3878,18 @@ http://boats.sourceforge.net/
 ----
 sudo apt install boats
 
-sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/boats-scenario.desktop
+sudo bash -c 'cat << EOF > /usr/share/applications/boats.desktop
 [Desktop Entry]
 Type=Application
 Name=Boat Scenario
 GenericName=Boat Scenario
-Comment=Boat Scenario
-Exec=boats
+Comment=Race scenario drawing tool
+Exec=boats %F
 Terminal=false
-Icon=globe
+Icon=boats.png
 Categories=Navigation;Sailing
 Keywords=Navigation;Sailing
+MimeType=application/x-boats
 EOF'
 
 ----
