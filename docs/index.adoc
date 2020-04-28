@@ -3686,7 +3686,7 @@ sudo apt install mono-complete
 
 
 
-| Antenna for SDR radio weather fax and NavTex
+| Antenna for SDR radio Inmarsat
 a| RTL-SDR Blog Active L-Band 1525 - 1637 Inmarsat to Iridium Patch Antenna Set
 https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/
 
