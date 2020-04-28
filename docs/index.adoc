@@ -2434,10 +2434,9 @@ sudo apt install build-essential cmake zlib1g-dev libgl1-mesa-dev gcc g++ \
  libqt5serialport5 libqt5serialport5-dev qtpositioning5-dev libgps-dev \
  libqt5positioning5 libqt5positioning5-plugins
 sudo apt install libdrm-dev qtbase5-dev
-curl -O https://github.com/Stellarium/stellarium/releases/download/v0.20.0/stellarium-0.20.0.tar.gz
-gzip -cd < stellarium-0.20.0.tar.gz | tar xvf -
-cd stellarium-0.20.0
-mkdir -p builds/unix
+curl -O -L https://github.com/Stellarium/stellarium/releases/download/v0.20.1/stellarium-0.20.1.tar.gz
+gzip -cd < stellarium-0.20.1.tar.gz | tar xvf -
+cd stellarium-0.20.1 && mkdir -p builds/unix
 cd builds/unix
 cmake ../../
 make -j4
