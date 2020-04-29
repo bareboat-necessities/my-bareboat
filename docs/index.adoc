@@ -2443,11 +2443,36 @@ make -j4
 sudo make install
 ----
 
-The manually build version of Stellarium will have GPSD support compiled in.
+The manually built version of Stellarium will have GPSD support compiled in.
 
  /usr/local/bin/stellarium
 
 Hit F6 and select to read location from GPS (GPSD daemon).
+
+Enable RemoteControl plugin in Stellarium:
+
+Edit ~/.stellarium/config.ini
+
+set
+[source]
+----
+[RemoteControl]
+autostart = true
+...
+
+[plugins_load_at_startup]
+RemoteControl = true
+...
+
+----
+
+To control view using heading we can issue the following command:
+[source, shell]
+----
+curl -X POST -d 'az=3.14' http://localhost:8090/api/main/view
+----
+
+az is azimuth in radians.
 
 ==== NTP Time Server Synchronization from GPS
 
