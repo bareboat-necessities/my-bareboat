@@ -6,7 +6,7 @@ amixer cset numid=3 1
 sudo apt update
 
 # Additional marine related utilities
-sudo apt install gpsd klex
+sudo apt install gpsd kplex
 
 # Additional SDR related utilities
 sudo apt install rtl-sdr rtl-ais predict hamfax gnuradio
