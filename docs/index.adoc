@@ -2474,6 +2474,22 @@ curl -X POST -d 'az=3.14' http://localhost:8090/api/main/view
 
 az is azimuth in radians.
 
+Install shell calculator
+[source, shell]
+----
+sudo apt install bc
+----
+
+Now if we read heading from SignalK we can update azimuth of view in Stellarium
+[source, shell]
+----
+MV=`curl -s http://localhost:3000/signalk/v1/api/vessels/self/navigation/magneticVariation/value`
+MH=`curl -s http://localhost:3000/signalk/v1/api/vessels/self/navigation/headingMagnetic/value`
+HT=`echo $MH + $MV | bc`
+curl -X POST -d "az=$HT" http://localhost:8090/api/main/view
+----
+
+
 ==== NTP Time Server Synchronization from GPS
 
 This post describes how to set it up with couple of lines in config files.
