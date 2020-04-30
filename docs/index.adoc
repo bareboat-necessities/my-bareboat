@@ -3501,7 +3501,7 @@ Login into SignalK (http://localhost:3000) as admin and go to AppStore link (lef
 install Charts plugin. Then restart the SignalK server from UI and login again as admin.
 Go to 'Server' (left side) then 'Plugin Config' / 'Signal K Charts'. Put word 'charts' into
 Path field, check 'Active', and proceed with creating symbolic links to your .mbtiles files in
-/home/pi/.signalk/charts directory. (See AvNav Charts installation section in this document).
+/home/pi/.signalk/charts directory. (See TukTuk Charts installation section in this document).
 
 You can check for charts by accessing this URL:
 
