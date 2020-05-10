@@ -2685,6 +2685,24 @@ There are two dashboard plugins with overlapping functionality.
 One is Dashboard Plugin and another one is Dashboard Tactics Plugin. It seems
 Dashboard Tactics Plugin is going to be a better choice for long term.
 
+==== Building OpenCPN from source
+
+[source, shell]
+----
+sudo apt-get -y install build-essential cmake gettext git-core gpsd gpsd-clients libgps-dev wx-common libwxgtk3.0-dev libglu1-mesa-dev libgtk2.0-dev wx3.0-headers libbz2-dev libtinyxml-dev libportaudio2 portaudio19-dev libcurl4-openssl-dev libexpat1-dev libcairo2-dev libarchive-dev liblzma-dev libexif-dev libelf-dev libsqlite3-dev bc bison flex libssl-dev python3 ddd htop
+
+git clone https://github.com/opencpn/opencpn.git
+
+cd opencpn && mkdir build && cd build
+
+cmake -DOCPN_BUNDLE_TCDATA=ON -DOCPN_BUNDLE_GSHHS=CRUDE -DCMAKE_BUILD_TYPE=RelWithDebInfo -DOCPN_USE_CRASHREPORT=OFF -DOCPN_ENABLE_PORTAUDIO=OFF -DOCPN_ENABLE_SYSTEM_CMD_SOUND=ON -DOCPN_FORCE_GTK3=OFF ..
+
+make -sj5
+
+sudo make install
+----
+
+
 === Compass / IMU / Barometer / Thermometer
 
 Launch
