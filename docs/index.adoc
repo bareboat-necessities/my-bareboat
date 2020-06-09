@@ -2685,6 +2685,14 @@ There are two dashboard plugins with overlapping functionality.
 One is Dashboard Plugin and another one is Dashboard Tactics Plugin. It seems
 Dashboard Tactics Plugin is going to be a better choice for long term.
 
+OpenCPN plugin for AIS radar was missing from the repositories. Here is the way to install it:
+
+[source, shell]
+----
+wget https://dl.cloudsmith.io/public/dan-dickey/opencpn-raspbian-unstable/deb/raspbian/pool/buster/main/a/ai/aisradar_pi_1.1-1_armhf.deb
+sudo dpkg -i aisradar_pi_1.1-1_armhf.deb
+----
+
 ==== Building OpenCPN from source
 
 [source, shell]
