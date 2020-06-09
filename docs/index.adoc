@@ -4036,6 +4036,23 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Pane
 
 {zwsp} +
 
+
+== Other (not electronics) Projects
+
+=== Water Tank Restoration
+
+How to Refurbish Water Tanks (By Eian Mathieson)
+
+https://www.cruisingworld.com/how-to-refurbish-water-tanks/
+
+The idea is to cut inspection ports in old aluminum tank. Sand inside. Clear corrosion with white vinegar.
+Fix the holes with J-B WaterWeld epoxy putty. Then coat whole inside with Jotun Jotacote 605 (certified for drinking
+water tanks). Do it in 3 coats with 24-hour difference. Seal inspection ports with polycarbonate cover plate,
+silicone gasket and screw-type deck plate.
+
+
+{zwsp} +
+
 == Mobile Applications (Smart Phones and Tablets)
 
 . iNavX
