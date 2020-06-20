@@ -173,6 +173,18 @@ navigation rules book on-board.
 . Heaving line with a float
 . Walkie-talkie for dinghy to boat communication
 . Search light
+. Fenders
+. Lifelines
+. Hand rails
+. MOB drills with the crew
+. Captain overboard drills and instruction
+. Boom safety instruction, Moving around the boat instructions
+. Loose nuts / bolts tightened
+. Sharp rigging elements covered with rigging tape
+. Thru hulls checked
+. Deck leaks calked
+
+
 
 ==== On-Board Living
 
@@ -194,6 +206,10 @@ navigation rules book on-board.
 . Rain coat/jacket
 . Blue tooth speakers
 . Folding electric bicycle
+. Fans in each cabin
+. Lights in each cabin
+. Tree hammock
+
 
 ==== Spare Parts
 
@@ -264,6 +280,8 @@ navigation rules book on-board.
 . Phone mount
 . GoPro camera + mounts
 . Waterproof sacks
+. Dry lube
+. Crowbar tool
 
 
 
@@ -277,6 +295,8 @@ navigation rules book on-board.
 . Long sleeve collared UV protective shirts
 . Sunscreen
 . Hand Soap
+. Q-tips
+
 
 ==== Food / Cooking
 
