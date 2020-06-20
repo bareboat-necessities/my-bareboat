@@ -104,6 +104,7 @@ navigation rules book on-board.
 . Credit cards
 . Boating safety certificate
 . US Coast Guard Courtesy Vessel Safety Check (recommended)
+. Scuba licenses
 
 
 ==== Safety
@@ -142,7 +143,31 @@ navigation rules book on-board.
 . Jacklines + tether
 . Dodger
 . Water tanks
-
+. Depth sounder
+. Sonar / Fish Finder
+. Inmarsat Fleet receiver
+. NavTex receiver
+. Means to receive weather fax
+. PACTOR modem
+. 4G/LTE internet router with on-board WiFi
+. Radar
+. Means to periodically report your location via internet
+. Weather routing software
+. Anemometer / Wind speed, direction sensors
+. Bilge alarm
+. Carbon monoxide alarm
+. Smoke detector
+. Various gas alarm sensors
+. Means to set up anchor alarm
+. Windlass
+. Whisker pole
+. Autopilot
+. Sea anchor
+. Lifeline netting
+. Boom tent
+. Rain water catcher
+. Swim ladder
+. Self-tailing winches
 
 
 === Level 1
