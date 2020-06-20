@@ -61,7 +61,68 @@ toc::[]
 
 == Bareboat Necessities Checklist
 
+This is the check list for a small sailboat (28 feet) and coastal cruising.
+
 === Level 0
+
+==== US Coast Guard Requirements
+
+. *Personal Flotation Devices.* One Type I, II, II, or V per person plus one Type IV throwable device.
+PFD's must be CG Approved, wearable by the intended user and readily accessible.
+The Type IV throwable device must be located such that it is immediately available
+. *Fire Extinguishers.* One B-II or two B-I
+. *Visual Distress Signals on Coastal Waters.* Minimum of three day-use and three night-use
+or three day/night combination pyrotechnic devices.
+Non-pyrotechnic substitutes: 1 orange flag (day-use) and 1 electric S-O-S signal light (night-use)
+. *Sound Producing Devices.* Horn or whistle recommended to signal intentions or position. Under Rule 33 of
+the Navigation Rules, boats under 20m MUST have aboard a means of making an efficient sound.
+. *Navigation Lights.* Sidelights, stern light, masthead light, running light.
+. *Pollution Regulations.* 5" X 8" Oil Discharge placard and 4" X 9" MARPOL Trash placards.
+. *Marine Sanitation Devices.* Vessels with installed head facilities must have an operable CG-Certified Type I, II,
+or III Marine Sanitation Device (MSD). Any "Y" value for discharge overboard must be located in
+such a manner or affixed to prevent accidental discharge of untreated waste into water.
+. *Navigation Rules.* Boaters should be familiar with the "Rules of the Road". It's recommended to have
+navigations rules book on-board.
+
+==== Safety
+
+. Emergency tiller
+. Manual bilge pump and handle
+. Automatic bilge pump
+. Boat hook
+. VHF with GPS and DSC (registered with MMSI for the vessel)
+. Radar reflector
+. Anchoring day shape ball
+. Spare bilge pump
+. Binnacle mounted compass
+. Paper charts of sailing area
+. Coastal medical emergency kit
+. Sunscreen
+. Bimini
+. 2 anchors with rode
+. Marine binoculars
+. Flashlights / spare batteries
+. Wood plugs strategically placed in compartments with seacocks
+. Signalling mirror
+. Boom stop with proper rope
+. Dinghy with oars
+. Dinghy davits (dinghy rings - in my case)
+. Fire blankets
+. Covid-19 masks
+. Lightning strike detector
+. Sailing gloves
+. 2 winch handles
+.
+. EPIRB
+. AIS
+. SSB radio
+. Satellite phone
+. Liferaft + ditch bag
+. Jacklines + tether
+. Dodger
+. Water tanks
+
+
 
 === Level 1
 
