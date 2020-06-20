@@ -78,11 +78,25 @@ Non-pyrotechnic substitutes: 1 orange flag (day-use) and 1 electric S-O-S signal
 the Navigation Rules, boats under 20m MUST have aboard a means of making an efficient sound.
 . *Navigation Lights.* Sidelights, stern light, masthead light, running light.
 . *Pollution Regulations.* 5" X 8" Oil Discharge placard and 4" X 9" MARPOL Trash placards.
+. *For Gasoline Engines: Ventilation, Backflame Control.* Backfire Flame Arrestors, CG regulated ventilation.
 . *Marine Sanitation Devices.* Vessels with installed head facilities must have an operable CG-Certified Type I, II,
 or III Marine Sanitation Device (MSD). Any "Y" value for discharge overboard must be located in
 such a manner or affixed to prevent accidental discharge of untreated waste into water.
 . *Navigation Rules.* Boaters should be familiar with the "Rules of the Road". It's recommended to have
 navigations rules book on-board.
+. *Float plan forms.*
+
+==== Legal
+
+. IDs and copies stored in dry place (in separate places)
+. Vessel current registration
+. Vessel insured for the area of sailing, Insurance ID
+. Towing services subscription Ex: SeaTow
+. Medical insurance IDs for crew
+. For VHF with DSC vessel MMSI must be properly registered
+. EPIRB properly registered
+. Passports and copies if sailing internationally
+
 
 ==== Safety
 
@@ -112,7 +126,6 @@ navigations rules book on-board.
 . Lightning strike detector
 . Sailing gloves
 . 2 winch handles
-.
 . EPIRB
 . AIS
 . SSB radio
