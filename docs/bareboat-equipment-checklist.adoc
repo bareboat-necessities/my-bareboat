@@ -61,7 +61,7 @@ toc::[]
 
 == Bareboat Necessities Checklist
 
-This is the check list for a small sailboat (28 feet) and coastal cruising.
+This is the check list for a small sailboat (28-feet) and coastal cruising.
 
 === Level 0
 
@@ -86,9 +86,10 @@ such a manner or affixed to prevent accidental discharge of untreated waste into
 navigations rules book on-board.
 . *Float plan forms.*
 
+
 ==== Legal
 
-. IDs and copies stored in dry place (in separate places)
+. IDs, driver licenses and copies stored in dry place (in separate places)
 . Vessel current registration
 . Vessel insured for the area of sailing, Insurance ID
 . Towing services subscription Ex: SeaTow
@@ -96,6 +97,12 @@ navigations rules book on-board.
 . For VHF with DSC vessel MMSI must be properly registered
 . EPIRB properly registered
 . Passports and copies if sailing internationally
+. Sailor resumes, logs, boating certifications, memberships, and licenses
+. SSB operator license
+. Some areas require VHF operator license
+. Credit cards
+. Boating safety certificate
+. US Coast Guard Courtesy Vessel Safety Check (recommended)
 
 
 ==== Safety
