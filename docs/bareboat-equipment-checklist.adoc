@@ -56,6 +56,10 @@ PDF version:
 https://bareboat-necessities.github.io/my-bareboat/bareboat-equipment-checklist.pdf
 
 
+{zwsp} +
+
+toc::[]
+
 This is the check list for a small sailboat (28-feet) and coastal cruising.
 
 
@@ -317,6 +321,3 @@ navigation rules book on-board.
 . Beach Volley Ball
 
 
-{zwsp} +
-
-toc::[]
