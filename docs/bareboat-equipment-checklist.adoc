@@ -12,7 +12,7 @@ ifdef::backend-pdf[]
 :plantumlconfig: plantuml.cfg
 endif::[]
 ifndef::backend-pdf[]
-:toc-placement: bottom
+:toc-placement: manual
 endif::[]
 :experimental:
 :reproducible:
@@ -55,9 +55,6 @@ PDF version:
 
 https://bareboat-necessities.github.io/my-bareboat/bareboat-equipment-checklist.pdf
 
-{zwsp} +
-
-toc::[]
 
 == Bareboat Necessities Checklist
 
@@ -322,3 +319,6 @@ navigation rules book on-board.
 . Beach Volley Ball
 
 
+{zwsp} +
+
+toc::[]
