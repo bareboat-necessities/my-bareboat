@@ -56,12 +56,10 @@ PDF version:
 https://bareboat-necessities.github.io/my-bareboat/bareboat-equipment-checklist.pdf
 
 
-== Bareboat Necessities Checklist
-
 This is the check list for a small sailboat (28-feet) and coastal cruising.
 
 
-=== US Coast Guard Requirements
+== US Coast Guard Requirements
 
 . *Personal Flotation Devices.* One Type I, II, II, or V per person plus one Type IV throwable device.
 PFD's must be CG Approved, wearable by the intended user and readily accessible.
@@ -84,7 +82,7 @@ navigation rules book on-board.
 . *Float plan forms.*
 
 
-=== Legal / Paperwork
+== Legal / Paperwork
 
 . IDs, driver licenses and copies stored in dry place (in separate places)
 . Vessel current registration
@@ -103,7 +101,7 @@ navigation rules book on-board.
 . Scuba licenses
 
 
-=== Safety
+== Safety
 
 . Emergency tiller
 . Manual bilge pump and handle
@@ -182,7 +180,7 @@ navigation rules book on-board.
 
 
 
-=== On-Board Living
+== On-Board Living
 
 . A/C
 . Cooler
@@ -205,7 +203,7 @@ navigation rules book on-board.
 . Tree hammock
 
 
-=== Spare Parts
+== Spare Parts
 
 . Spare Bilge Pump
 . Mobile Phone Charges
@@ -244,7 +242,7 @@ navigation rules book on-board.
 . Waterproof sacks
 . Dry lube
 
-=== Tools / Supplies
+== Tools / Supplies
 
 . Basic mechanical toolkit
 . Basic electrical toolkit
@@ -282,7 +280,7 @@ navigation rules book on-board.
 . Oil absorbing sheets / pads
 
 
-=== Hygiene / Health
+== Hygiene / Health
 
 . Tooth paste / brush
 . Hand sanitizer
@@ -294,7 +292,7 @@ navigation rules book on-board.
 . Q-tips
 
 
-=== Food / Cooking / Galley
+== Food / Cooking / Galley
 
 . Stove (Double-gimbaled is better)
 . Solar Stove
@@ -307,7 +305,7 @@ navigation rules book on-board.
 . Pressure cooker
 
 
-=== Entertainment
+== Entertainment
 
 . Blue tooth speakers
 . Computer (low power usage)
