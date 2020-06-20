@@ -171,6 +171,8 @@ navigation rules book on-board.
 . Sextant
 . Bow thrusters
 . Heaving line with a float
+. Walkie-talkie for dinghy to boat communication
+. Search light
 
 ==== On-Board Living
 
@@ -237,6 +239,34 @@ navigation rules book on-board.
 . Paper towels
 . Boat wash soap
 . Bag of rags
+. Duct tapes
+. Electrical tape
+. Voltmeter
+. Inspection mirror
+. Magnetic pick-up tool (telescoping or snake-type)
+. Wire crimping tool
+. Lighter
+. Bottle opener
+. Key to open tank caps
+. Engine key attached to a float
+. Spare engine key
+. Companion way lock
+. Spare companion way lock
+. Inflatable dingy pump
+. Shower pump
+. Liquid transfer pump
+. Cargo straps
+. Gear ties
+. Utility wire
+. Waterproof computer keyboard
+. USB/Ethernet cables
+. Phone charger cables
+. Phone mount
+. GoPro camera + mounts
+. Waterproof sacks
+
+
+
 
 ==== Hygiene / Health
 
