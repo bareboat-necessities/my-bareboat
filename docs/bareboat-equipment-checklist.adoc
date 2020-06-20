@@ -63,9 +63,8 @@ toc::[]
 
 This is the check list for a small sailboat (28-feet) and coastal cruising.
 
-=== Level 0
 
-==== US Coast Guard Requirements
+=== US Coast Guard Requirements
 
 . *Personal Flotation Devices.* One Type I, II, II, or V per person plus one Type IV throwable device.
 PFD's must be CG Approved, wearable by the intended user and readily accessible.
@@ -88,7 +87,7 @@ navigation rules book on-board.
 . *Float plan forms.*
 
 
-==== Legal
+=== Legal / Paperwork
 
 . IDs, driver licenses and copies stored in dry place (in separate places)
 . Vessel current registration
@@ -107,7 +106,7 @@ navigation rules book on-board.
 . Scuba licenses
 
 
-==== Safety
+=== Safety
 
 . Emergency tiller
 . Manual bilge pump and handle
@@ -186,10 +185,8 @@ navigation rules book on-board.
 
 
 
-==== On-Board Living
+=== On-Board Living
 
-. Stove (Double-gimbaled is better)
-. Solar Stove
 . A/C
 . Cooler
 . Sun Shower
@@ -211,7 +208,7 @@ navigation rules book on-board.
 . Tree hammock
 
 
-==== Spare Parts
+=== Spare Parts
 
 . Spare Bilge Pump
 . Mobile Phone Charges
@@ -222,18 +219,11 @@ navigation rules book on-board.
 . Spare oil filters
 . Spare fuel filters
 . Spare impeller
-. Fuses (variery)
+. Fuses (variety)
 . Some wires
 . Butt connectors / Heat shrink tubing
 . Spare Stainless Nuts/Bolts/Screws/Washers
 . Spare wood / Marine starboard
-. Basic mechanical toolkit
-. Basic electrical toolkit
-. Basic plumbing toolkit
-. Basic sewing toolkit
-. Hose
-. Broom (floating)
-. Shore power chord
 . Rigging parts, cotter pins
 . Zip lock bags
 . Acetone
@@ -247,27 +237,34 @@ navigation rules book on-board.
 . Spare gas for stove
 . Oil Lantern
 . Plastic wire ties
-. Various ropes
-. Carabiners
-. Stainless kitchen clips
-. Oil absorbing sheets / pads
 . Garbage bags
 . Paper towels
 . Boat wash soap
 . Bag of rags
 . Duct tapes
 . Electrical tape
+. GoPro camera + mounts
+. Waterproof sacks
+. Dry lube
+
+=== Tools / Supplies
+
+. Basic mechanical toolkit
+. Basic electrical toolkit
+. Basic carpenter toolkit
+. Basic plumbing toolkit
+. Basic sewing toolkit
+. Hose
+. Broom (floating)
+. Shore power chord
+. Crowbar tool
 . Voltmeter
 . Inspection mirror
 . Magnetic pick-up tool (telescoping or snake-type)
 . Wire crimping tool
 . Lighter
-. Bottle opener
+. Bottle opener / Corkscrew
 . Key to open tank caps
-. Engine key attached to a float
-. Spare engine key
-. Companion way lock
-. Spare companion way lock
 . Inflatable dingy pump
 . Shower pump
 . Liquid transfer pump
@@ -278,15 +275,17 @@ navigation rules book on-board.
 . USB/Ethernet cables
 . Phone charger cables
 . Phone mount
-. GoPro camera + mounts
-. Waterproof sacks
-. Dry lube
-. Crowbar tool
+. Engine key attached to a float
+. Spare engine key
+. Companion way lock
+. Spare companion way lock
+. Various ropes
+. Carabiners
+. Stainless kitchen clips
+. Oil absorbing sheets / pads
 
 
-
-
-==== Hygiene / Health
+=== Hygiene / Health
 
 . Tooth paste / brush
 . Hand sanitizer
@@ -298,8 +297,10 @@ navigation rules book on-board.
 . Q-tips
 
 
-==== Food / Cooking
+=== Food / Cooking / Galley
 
+. Stove (Double-gimbaled is better)
+. Solar Stove
 . Forks
 . Knives
 . Spoons
@@ -309,7 +310,7 @@ navigation rules book on-board.
 . Pressure cooker
 
 
-==== Entertainment
+=== Entertainment
 
 . Blue tooth speakers
 . Computer (low power usage)
@@ -318,13 +319,6 @@ navigation rules book on-board.
 . Small musical instruments (harmonica, ukulele, guitar, etc)
 . Books / Magazines
 . Travel Guides
-.
+. Beach Volley Ball
 
 
-=== Level 1
-
-Level 0 plus:
-
-=== Level 2
-
-Level 0 and 1 plus:
