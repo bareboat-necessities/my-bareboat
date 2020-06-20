@@ -1,0 +1,72 @@
+= Bareboat Necessities Checklist
+mgrouch <mgrouch@users.noreply.github.com>
+{docdate}, Bareboat Checklist
+:imagesdir: images
+:doctype: book
+:organization: Bareboat Necessities
+:title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+ifdef::backend-pdf[]
+:source-highlighter: rouge
+:toc-placement!: manual
+:pdf-page-size: Letter
+:plantumlconfig: plantuml.cfg
+endif::[]
+ifndef::backend-pdf[]
+:toc-placement: left
+endif::[]
+:experimental:
+:reproducible:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 3
+:encoding: utf-8
+:lang: en
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:env-github:
+
+{zwsp} +
+
+ifndef::backend-pdf[]
+
+image::bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+
+{zwsp} +
+
+endif::[]
+
+https://bareboat-necessities.github.io
+
+https://github.com/bareboat-necessities/my-bareboat
+
+https://github.com/bareboat-necessities/my-bareboat/issues
+
+https://bareboat-necessities.wixsite.com/my-bareboat
+
+{zwsp} +
+
+PDF version:
+
+https://bareboat-necessities.github.io/my-bareboat/bareboat-equipment-checklist.pdf
+
+{zwsp} +
+
+toc::[]
+
+== Bareboat Necessities Checklist
+
+=== Level 0
+
+=== Level 1
+
+Level 0 plus:
+
+=== Level 2
+
+Level 0 and 1 plus:
