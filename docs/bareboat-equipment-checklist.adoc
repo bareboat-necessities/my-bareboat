@@ -168,6 +168,9 @@ navigation rules book on-board.
 . Rain water catcher
 . Swim ladder
 . Self-tailing winches
+. Sextant
+. Bow thrusters
+. Heaving line with a float
 
 ==== On-Board Living
 
@@ -221,7 +224,15 @@ navigation rules book on-board.
 . Scissors
 . Pens/Pencils
 . Rigging knives (one per crew)
-. Oil wipes
+. Rigging tape
+. Stainless hose clamps
+. Spare gas for stove
+. Oil Lantern
+. Plastic wire ties
+. Various ropes
+. Carabiners
+. Stainless kitchen clips
+. Oil absorbing sheets / pads
 . Garbage bags
 . Paper towels
 . Boat wash soap
@@ -255,6 +266,9 @@ navigation rules book on-board.
 . Some board games (chess, etc)
 . Card games
 . Small musical instruments (harmonica, ukulele, guitar, etc)
+. Books / Magazines
+. Travel Guides
+.
 
 
 === Level 1
