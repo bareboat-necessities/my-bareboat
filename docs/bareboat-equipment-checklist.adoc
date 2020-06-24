@@ -91,36 +91,71 @@ navigation rules book on-board.
 . IDs, driver licenses and copies stored in dry place (in separate places)
 . Vessel current registration
 . Vessel insured for the area of sailing, Insurance ID
-. Towing services subscription Ex: SeaTow
-. Medical insurance IDs for crew
+. Towing services subscription (Ex: SeaTow, BoatUS)
+. Medical insurance IDs for the crew
 . For VHF with DSC vessel MMSI must be properly registered
 . EPIRB properly registered
 . Passports and copies if sailing internationally
 . Sailor resumes, logs, boating certifications, memberships, and licenses
 . SSB operator license
 . Some areas require VHF operator license
-. Credit cards
+. Credit cards (stored in separate places)
 . Boating safety certificate
 . US Coast Guard Courtesy Vessel Safety Check (recommended)
 . Scuba licenses
+. Ship's Log / Maintenance Log
+. Parameters of the boat printed on a separate paper:
+* Make, Model, Year, Call Sign, MMSI, Name, Home Port, Hull ID
+* Length, Draft, Beam, Bridge Clearance, Displacement, Keel Weight, Mast / Boom Lengths
+* Tanks Capacity (Water / Fuel / Holding Tank)
+* Engine Make, Model, Year, Oil Type, Oil Capacity
+* Propeller Shaft Size, Blades Type, Transmission Parameters
+* Sails Parameters, Area
+* Rig Maker, Winches Models, Anchor Types
+* Bilge Pump Capacity
+* Dinghy Hull #
 
 
 == Safety
 
+=== Good
+
+. All US Coast Guard safety requirements, PFDs, fire safety, distress signaling, navigation signals (See Chapter 1)
+. Hull (inspected properly)
+. Seacocks / Thru hulls checked, Hoses checked
+. Deck leaks calked
+. No deck hazards
+. Stuffing box checked for leaks
+. At least two boat batteries (marine grade)
+. Reliably working inboard diesel engine
+. Reliably working steering system
+. Solar panel and solar charger
+. Rigging checked / inspected, tensioned properly
+. Battery charger from shore power
+. Fenders
+. Dock Lines
+. Fuses in proper places
+. Spare fuses
+. Proper grounding wire of the boat
+. Proper marine wiring (wire grades for amps, proper insulation, good connectors, no loose connections generating heat,
+no hanging open wires, etc)
+. Sacrificial anodes installed in good shape
+. Shore power chord
 . Emergency tiller
 . Manual bilge pump and handle
 . Automatic bilge pump
 . Boat hook
 . VHF with GPS and DSC (registered with MMSI for the vessel)
+. GPS Chartplotter
 . Radar reflector
 . Anchoring day shape ball
-. Spare bilge pump
+. Spare 12v bilge pump
 . Binnacle mounted compass
-. Paper charts of sailing area
+. Paper charts of the sailing area
 . Coastal medical emergency kit
 . Sunscreen
 . Bimini
-. 2 anchors with rode
+. Two anchors with rode
 . Marine binoculars
 . Flashlights / spare batteries
 . Wood plugs strategically placed in compartments with seacocks
@@ -132,57 +167,72 @@ navigation rules book on-board.
 . Covid-19 masks
 . Lightning strike detector
 . Sailing gloves
-. 2 winch handles
+. Two winch handles
 . EPIRB
 . AIS
-. SSB radio
-. Satellite phone
-. Liferaft + ditch bag
 . Jacklines + tether
-. Dodger
-. Water tanks
+. Portable water tanks
 . Depth sounder
-. Sonar / Fish Finder
-. Inmarsat Fleet receiver
-. NavTex receiver
-. Means to receive weather fax
-. PACTOR modem
 . 4G/LTE internet router with on-board WiFi
 . Radar
 . Means to periodically report your location via internet
-. Weather routing software
 . Anemometer / Wind speed, direction sensors
+. Barometer
+. Boom tent
+. Swim ladder
+. Self-tailing winches
+. Heaving line with a float
+. Walkie-talkie for a dinghy to boat communication
+. Fenders
+. Lifelines
+. Hand rails
+. Loose nuts / bolts tightened
+. Sharp rigging elements covered with rigging tape
+. Installed spare halyard
+. Dry comfortable bunk bed with a fan and ways to secure yourself from falling
+. Clinometer
+
+=== Better
+
+. Search light
+. Sextant
+. Bow thrusters
+. Rain water catcher
+. Autopilot
+. Windlass
+. Anchor chain
+. Whisker pole
 . Bilge alarm
 . Carbon monoxide alarm
 . Smoke detector
 . Various gas alarm sensors
 . Means to set up anchor alarm
-. Windlass
-. Whisker pole
-. Autopilot
-. Sea anchor
 . Lifeline netting
-. Boom tent
+. SSB radio
+. Satellite phone (Ex: Iridium Go)
+. Liferaft + ditch bag
+. Sonar / Fish Finder
+. Inmarsat Fleet receiver
+. NavTex receiver
+. Means to receive weather fax
+. Weather routing software
+. PACTOR modem
+. Sea anchor
+. Dodger
+. Wind generator
+. Self-steering gear, wind vane
+. Spare rudder / spare steering
+. Gasoline electric generator
+. Means to climb the mast (bosun chair, steps, etc)
+. Water maker
 . Rain water catcher
-. Swim ladder
-. Self-tailing winches
-. Sextant
-. Bow thrusters
-. Heaving line with a float
-. Walkie-talkie for dinghy to boat communication
-. Search light
-. Fenders
-. Lifelines
-. Hand rails
+
+
+=== Crew Drills / Instructions
+
 . MOB drills with the crew
 . Captain overboard drills and instruction
 . Boom safety instruction, Moving around the boat instructions
-. Loose nuts / bolts tightened
-. Sharp rigging elements covered with rigging tape
-. Thru hulls checked
-. Deck leaks calked
-
-
 
 == On-Board Living
 
