@@ -145,7 +145,7 @@ no hanging open wires, etc)
 . Built-in manual bilge pump and handle
 . Automatic bilge pump
 . Spare 12v bilge pump
-. Boat hook
+. Boat hook (floating and telescoping)
 . VHF with GPS and DSC (registered with MMSI for the vessel)
 . GPS Chartplotter
 . Binnacle mounted compass
@@ -171,7 +171,7 @@ no hanging open wires, etc)
 . Sun glasses
 . Two winch handles
 . EPIRB
-. AIS
+. AIS integrated with chartplotter
 . Jacklines + tether
 . Portable water tanks
 . Depth sounder
