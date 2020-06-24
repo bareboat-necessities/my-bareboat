@@ -88,9 +88,9 @@ navigation rules book on-board.
 
 == Legal / Paperwork
 
-. IDs, driver licenses and copies stored in dry place (in separate places)
+. IDs, driver licenses and copies stored in dry places (in separate places)
 . Vessel current registration
-. Vessel insured for the area of sailing, Insurance ID
+. Vessel insured for the area of sailing, liability coverage, insurance ID
 . Towing services subscription (Ex: SeaTow, BoatUS)
 . Medical insurance IDs for the crew
 . For VHF with DSC vessel MMSI must be properly registered
@@ -102,6 +102,7 @@ navigation rules book on-board.
 . Credit cards (stored in separate places)
 . Boating safety certificate
 . US Coast Guard Courtesy Vessel Safety Check (recommended)
+. CPR licenses
 . Scuba licenses
 . Ship's Log / Maintenance Log
 . Parameters of the boat printed on a separate paper:
@@ -112,7 +113,7 @@ navigation rules book on-board.
 * Propeller Shaft Size, Blades Type, Transmission Parameters
 * Sails Parameters, Area
 * Rig Maker, Winches Models, Anchor Types
-* Bilge Pump Capacity
+* Bilge Pump Throughput Capacity
 * Dinghy Hull #
 
 
@@ -122,7 +123,7 @@ navigation rules book on-board.
 
 . All US Coast Guard safety requirements, PFDs, fire safety, distress signaling, navigation signals (See Chapter 1)
 . Hull (inspected properly)
-. Seacocks / Thru hulls checked, Hoses checked
+. Seacocks / Thru hulls checked, hoses checked
 . Deck leaks calked
 . No deck hazards
 . Stuffing box checked for leaks
@@ -146,11 +147,11 @@ no hanging open wires, etc)
 . Built-in manual bilge pump and handle
 . Automatic bilge pump
 . Spare 12v bilge pump
-. Boat hook (floating and telescoping)
+. Boat hook (telescoping floating)
 . VHF with GPS and DSC (registered with MMSI for the vessel)
-. GPS Chartplotter
-. Binnacle mounted compass
-. Paper charts of the sailing area
+. GPS Chartplotter, NMEA sensors connected
+. Binnacle mounted compass + handheld compass
+. Paper charts of the sailing area, dividers, protractor, etc
 . Radar reflector
 . Tide tables
 . Anchoring day shape ball
@@ -173,12 +174,12 @@ no hanging open wires, etc)
 . Sunhat with lanyard
 . Rain ponchos
 . Two winch handles
-. EPIRB
+. EPIRB (properly registered)
 . AIS integrated with chartplotter
 . Jacklines + tether
 . Portable water tanks
 . Depth sounder
-. 4G/LTE internet router with on-board WiFi
+. 4G/LTE internet router with on-board WiFi and SIM card for the sailing area
 . Anemometer / Wind speed, direction sensors
 . Barometer
 . Boom tent
@@ -190,8 +191,8 @@ no hanging open wires, etc)
 . Hand rails
 . Loose nuts / bolts tightened
 . Sharp rigging elements covered with rigging tape
-. Spare halyards (installed to be ready)
-. Dry comfortable bunk bed with a fan and ways to secure yourself from falling
+. Spare halyards (installed and ready)
+. Dry comfortable bunk with a fan and ways to secure yourself from falling
 . Clinometer
 . Engine key with a float
 . Companion way key with a float
@@ -224,7 +225,7 @@ no hanging open wires, etc)
 . Means to receive weather fax
 . Weather routing software
 . PACTOR modem for messaging off-shore
-. Sea anchor
+. Sea anchor, slowing drogue
 . Dodger
 . Wind generator
 . Self-steering gear, wind vane
@@ -238,6 +239,15 @@ no hanging open wires, etc)
 . MOB drills with the crew
 . Captain overboard drills and instruction
 . Boom safety instruction, Moving around the boat instructions
+. Marine head usage instruction
+. Environment protection instruction
+. Fire safety
+. Use of lifejackets, PFDs
+. Docking, anchoring, mooring, boarding, dinghy use
+. VHF, mayday
+. Distress signals
+. Engine start/stop/check
+. Tacking and gybing
 
 == On-Board Living
 
