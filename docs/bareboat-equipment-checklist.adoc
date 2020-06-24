@@ -169,8 +169,9 @@ no hanging open wires, etc)
 . Covid-19 masks
 . Lightning strike detector
 . Sailing gloves
-. Sun glasses with chord stripe
-. Sunhat with stripe
+. Sun glasses with lanyard
+. Sunhat with lanyard
+. Rain ponchos
 . Two winch handles
 . EPIRB
 . AIS integrated with chartplotter
