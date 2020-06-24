@@ -132,6 +132,7 @@ navigation rules book on-board.
 . Solar panel and solar charger
 . Rigging checked / inspected, tensioned properly
 . Battery charger from shore power
+. Shore power chord
 . Fenders
 . Dock Lines
 . Fuses in proper places
@@ -140,33 +141,34 @@ navigation rules book on-board.
 . Proper marine wiring (wire grades for amps, proper insulation, good connectors, no loose connections generating heat,
 no hanging open wires, etc)
 . Sacrificial anodes installed in good shape
-. Shore power chord
 . Emergency tiller
-. Manual bilge pump and handle
+. Built-in manual bilge pump and handle
 . Automatic bilge pump
+. Spare 12v bilge pump
 . Boat hook
 . VHF with GPS and DSC (registered with MMSI for the vessel)
 . GPS Chartplotter
-. Radar reflector
-. Anchoring day shape ball
-. Spare 12v bilge pump
 . Binnacle mounted compass
 . Paper charts of the sailing area
+. Radar reflector
+. Tide tables
+. Anchoring day shape ball
+. Two anchors with rode
 . Coastal medical emergency kit
 . Sunscreen
 . Bimini
-. Two anchors with rode
 . Marine binoculars
 . Flashlights / spare batteries
 . Wood plugs strategically placed in compartments with seacocks
 . Signalling mirror
-. Boom stop with proper rope
-. Dinghy with oars
+. Boom stop with proper rope (Ex: Capt Dan's boom brake)
+. Dinghy with oars, PFDs for the dinghy, dinghy bailer / scoop, dinghy foot pump, dock line / painter, floating flash light
 . Dinghy davits (dinghy rings - in my case)
 . Fire blankets
 . Covid-19 masks
 . Lightning strike detector
 . Sailing gloves
+. Sun glasses
 . Two winch handles
 . EPIRB
 . AIS
@@ -174,8 +176,6 @@ no hanging open wires, etc)
 . Portable water tanks
 . Depth sounder
 . 4G/LTE internet router with on-board WiFi
-. Radar
-. Means to periodically report your location via internet
 . Anemometer / Wind speed, direction sensors
 . Barometer
 . Boom tent
@@ -183,12 +183,11 @@ no hanging open wires, etc)
 . Self-tailing winches
 . Heaving line with a float
 . Walkie-talkie for a dinghy to boat communication
-. Fenders
 . Lifelines
 . Hand rails
 . Loose nuts / bolts tightened
 . Sharp rigging elements covered with rigging tape
-. Installed spare halyard
+. Spare halyards (installed to be ready)
 . Dry comfortable bunk bed with a fan and ways to secure yourself from falling
 . Clinometer
 
@@ -197,7 +196,10 @@ no hanging open wires, etc)
 . Search light
 . Sextant
 . Bow thrusters
+. Water maker
 . Rain water catcher
+. Radar
+. Means to periodically report your location via internet
 . Autopilot
 . Windlass
 . Anchor chain
@@ -216,7 +218,7 @@ no hanging open wires, etc)
 . NavTex receiver
 . Means to receive weather fax
 . Weather routing software
-. PACTOR modem
+. PACTOR modem for messaging off-shore
 . Sea anchor
 . Dodger
 . Wind generator
@@ -224,8 +226,6 @@ no hanging open wires, etc)
 . Spare rudder / spare steering
 . Gasoline electric generator
 . Means to climb the mast (bosun chair, steps, etc)
-. Water maker
-. Rain water catcher
 
 
 === Crew Drills / Instructions
