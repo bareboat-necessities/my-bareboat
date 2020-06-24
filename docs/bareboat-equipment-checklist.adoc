@@ -332,22 +332,24 @@ no hanging open wires, etc)
 . Inflatable dingy pump
 . Shower pump
 . Liquid transfer pump
-. Cargo straps
-. Gear ties
-. Utility wire
 . Waterproof computer keyboard
-. USB/Ethernet cables
-. Phone charger cables
 . Phone mount
 . Engine key attached to a float
 . Spare engine key
 . Companion way lock
 . Spare companion way lock
+
+== Supplies
+
+. Cargo straps
+. Gear ties
+. Utility wire
+. USB/Ethernet cables
+. Phone charger cables
 . Various ropes
 . Carabiners
 . Stainless kitchen clips
 . Oil absorbing sheets / pads
-
 
 == Hygiene / Health
 
