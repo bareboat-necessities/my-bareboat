@@ -154,7 +154,7 @@ no hanging open wires, etc)
 . Radar reflector
 . Tide tables
 . Anchoring day shape ball
-. Two anchors with rode
+. Two anchors with rode and length marking
 . Coastal medical emergency kit
 . Sunscreen
 . Bimini
@@ -192,6 +192,8 @@ no hanging open wires, etc)
 . Spare halyards (installed to be ready)
 . Dry comfortable bunk bed with a fan and ways to secure yourself from falling
 . Clinometer
+. Engine key with a float
+. Companion way key with a float
 
 === Better
 
