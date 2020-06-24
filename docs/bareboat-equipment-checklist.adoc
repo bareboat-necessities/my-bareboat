@@ -105,6 +105,8 @@ navigation rules book on-board.
 . CPR licenses
 . Scuba licenses
 . Ship's Log / Maintenance Log
+. Float plan forms
+. Emergency contacts
 . Parameters of the boat printed on a separate paper:
 * Make, Model, Year, Call Sign, MMSI, Name, Home Port, Hull ID
 * Length, Draft, Beam, Bridge Clearance, Displacement, Keel Weight, Mast / Boom Lengths
