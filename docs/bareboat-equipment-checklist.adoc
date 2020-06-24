@@ -141,6 +141,7 @@ navigation rules book on-board.
 . Proper marine wiring (wire grades for amps, proper insulation, good connectors, no loose connections generating heat,
 no hanging open wires, etc)
 . Sacrificial anodes installed in good shape
+. Lightning strike arrester for the antenna
 . Emergency tiller
 . Built-in manual bilge pump and handle
 . Automatic bilge pump
