@@ -124,6 +124,7 @@ https://newcontent.westmarine.com/content/documents/pdfs/WestAdvisor/USCG-Float-
 
 == Safety
 
+
 === Good
 
 . All US Coast Guard safety requirements, PFDs, fire safety, distress signaling, navigation signals (See Chapter 1)
@@ -205,6 +206,7 @@ no hanging open wires, etc)
 . Engine key with a float
 . Companion way key with a float
 
+
 === Better
 
 . Search light
@@ -257,6 +259,7 @@ no hanging open wires, etc)
 . Engine start/stop/check
 . Tacking, gybing, riffing, heaving to
 
+
 == On-Board Living
 
 . A/C (Ex: ZeroBreeze)
@@ -282,6 +285,7 @@ no hanging open wires, etc)
 . Marine toilet paper
 . Mobile Phone Charges
 
+
 == Spare Parts
 
 . Spare Bilge Pump
@@ -300,6 +304,7 @@ no hanging open wires, etc)
 . Spare swim ladder legs
 . Spare engine key
 . Spare companion way lock
+
 
 == Tools
 
@@ -326,6 +331,7 @@ no hanging open wires, etc)
 . Phone mount
 . Engine key attached to a float
 . Companion way lock
+
 
 == Supplies
 
@@ -359,6 +365,7 @@ no hanging open wires, etc)
 . GoPro camera + mounts
 . Waterproof sacks
 . Dry lube
+
 
 == Hygiene / Health
 
@@ -425,6 +432,39 @@ no hanging open wires, etc)
 . Snorkel, mask, fins, mesh bag
 . GoPro camera, mounts
 . Waterproof smartphone, charging cables, 12v adapter, unlocked
+. Camera drone, charger, remote
+. Scuba gear, oxygen tanks
+. Fishing gear, fishing poles, Finisng poles mounts, knives, lures, lines
+. Fishing Spear
+. Marine life Identification Book / app
+
+
+== Applications for smart phones / tablets
+
+. iNavX
+. Navionics
+. OpenCPN
+. SEAiq
+. Marine Traffic
+. Ship Finder
+. PredictWind
+. NOAA Weather
+. Tide Alert
+. US Coast Guard
+. SeaTow
+. Snag a Slip
+. ActiveCaptain
+. CruisersSailingForums
+. Boatsetter
+. GoSailing
+. NauticEd
+. Knot Guide
+. StarChart
+. WebMD
+
+
+
+
 
 
 
