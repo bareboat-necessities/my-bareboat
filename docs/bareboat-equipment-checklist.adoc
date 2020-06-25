@@ -250,10 +250,10 @@ no hanging open wires, etc)
 . Fire safety
 . Use of lifejackets, PFDs
 . Docking, anchoring, mooring, boarding, dinghy use
-. VHF, mayday
+. VHF, DSC, mayday, EPIRB
 . Distress signals
 . Engine start/stop/check
-. Tacking and gybing
+. Tacking, gybing, riffing, heaving to
 
 == On-Board Living
 
