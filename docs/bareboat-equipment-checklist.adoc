@@ -161,7 +161,7 @@ no hanging open wires, etc)
 . Radar reflector
 . Tide tables
 . Anchoring day shape ball
-. Two anchors with rode and length marking
+. Two anchors with rode and length marking (mount for securing anchor outside of locker or anchor roller)
 . Coastal medical emergency kit
 . Sunscreen
 . Bimini
@@ -286,6 +286,11 @@ no hanging open wires, etc)
 . Mobile Phone Charges
 . Mesh bags
 . Cargo net
+. Pen / Pencils / Erasers
+. Rubber bands
+. Cup holders
+. Fender holders
+
 
 == Spare Parts
 
@@ -445,6 +450,7 @@ no hanging open wires, etc)
 . Baking flour
 . Baking soda
 
+
 == Entertainment
 
 . Blue tooth speakers, audio cable
@@ -467,6 +473,7 @@ no hanging open wires, etc)
 . Marine life identification book / phone app
 . Skateboard, roller blades, scooter, helmets
 . Small underwater sea scooter
+
 
 == Applications for smart phones / tablets
 
