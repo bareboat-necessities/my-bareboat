@@ -284,7 +284,8 @@ no hanging open wires, etc)
 . Tree hammock
 . Marine toilet paper
 . Mobile Phone Charges
-
+. Mesh bags
+. Cargo net
 
 == Spare Parts
 
@@ -409,7 +410,8 @@ no hanging open wires, etc)
 . Zip lock bags
 . Water shoes (for use on dinghy)
 
-== Food / Cooking / Galley
+
+== Cooking / Galley
 
 . Stove (Double-gimbaled is better)
 . Solar Stove
@@ -421,6 +423,27 @@ no hanging open wires, etc)
 . Cooking pans
 . Pressure cooker
 
+
+== Food / Provisioning
+
+. Salt
+. Sugar
+. Pepper
+. Spices (Garlic powder, Onion powder, Bay leaves, Basilic, Dill, etc)
+. Steak sauce
+. White vinegar
+. Gatorade
+. Trail mix bags
+. Vegetable oil
+. Olive oil
+. Rice
+. Pasta
+. Pasta sauce
+. Canned fruit snacks
+. Canned soups
+. Drinking water
+. Baking flour
+. Baking soda
 
 == Entertainment
 
@@ -442,7 +465,8 @@ no hanging open wires, etc)
 . Fishing gear, fishing poles, fishing pole mounts, knives, lures, lines
 . Fishing spear / gun
 . Marine life identification book / phone app
-
+. Skateboard, roller blades, scooter, helmets
+. Small underwater sea scooter
 
 == Applications for smart phones / tablets
 
