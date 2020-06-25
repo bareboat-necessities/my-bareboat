@@ -259,34 +259,34 @@ no hanging open wires, etc)
 
 == On-Board Living
 
-. A/C
-. Cooler
-. Sun Shower
-. Boom Tent
+. A/C (Ex: ZeroBreeze)
+. Cooler (Cooler bags)
+. Sun Shower (with a foot pump, shower head, hose, adaptors)
+. Boom Tent, ties
 . Bimini
 . Dodger
 . Cockpit Table
 . Cabin Table
 . Swim suits
 . Towels
+. Beach towels
 . Bed sheets
 . Pillows
-. Snorkeling mask, tube, fins
-. Rain coat/jacket
+. Snorkeling mask, tube, fins, mesh bag
+. Rain coat/jacket/ponchos
 . Blue tooth speakers
 . Folding electric bicycle
 . Fans in each cabin
 . Lights in each cabin
 . Tree hammock
-
+. Marine toilet paper
+. Mobile Phone Charges
 
 == Spare Parts
 
 . Spare Bilge Pump
-. Mobile Phone Charges
 . Spare batteries
 . Spare cabin lights
-. Spare swim ladder legs
 . Spare alternator belt
 . Spare oil filters
 . Spare fuel filters
@@ -297,29 +297,11 @@ no hanging open wires, etc)
 . Spare Stainless Nuts/Bolts/Screws/Washers
 . Spare wood / Marine starboard
 . Rigging parts, cotter pins
-. Zip lock bags
-. Acetone
-. Holding Tank Septic Liquid
-. Matches / Lighter
-. Scissors
-. Pens/Pencils
-. Rigging knives (one per crew)
-. Rigging tape
-. Stainless hose clamps
-. Spare gas for stove
-. Oil Lantern
-. Plastic wire ties
-. Garbage bags
-. Paper towels
-. Boat wash soap
-. Bag of rags
-. Duct tapes
-. Electrical tape
-. GoPro camera + mounts
-. Waterproof sacks
-. Dry lube
+. Spare swim ladder legs
+. Spare engine key
+. Spare companion way lock
 
-== Tools / Supplies
+== Tools
 
 . Basic mechanical toolkit
 . Basic electrical toolkit
@@ -343,9 +325,7 @@ no hanging open wires, etc)
 . Waterproof computer keyboard
 . Phone mount
 . Engine key attached to a float
-. Spare engine key
 . Companion way lock
-. Spare companion way lock
 
 == Supplies
 
@@ -354,21 +334,67 @@ no hanging open wires, etc)
 . Utility wire
 . USB/Ethernet cables
 . Phone charger cables
-. Various ropes
+. Various ropes, ties
 . Carabiners
 . Stainless kitchen clips
 . Oil absorbing sheets / pads
+. Zip lock bags
+. Acetone
+. Holding Tank Septic Liquid
+. Matches / Lighter
+. Scissors
+. Pens/Pencils
+. Rigging knives (one per crew)
+. Rigging tape
+. Stainless hose clamps
+. Spare gas for stove
+. Oil Lantern
+. Plastic wire ties
+. Garbage bags
+. Paper towels
+. Boat wash soap
+. Bag of rags
+. Duct tapes
+. Electrical tape
+. GoPro camera + mounts
+. Waterproof sacks
+. Dry lube
 
 == Hygiene / Health
 
 . Tooth paste / brush
 . Hand sanitizer
-. Sun glasses
-. Sun Hat
+. Sun glasses, neck lanyard
+. Sun hat with lanyard
 . Long sleeve collared UV protective shirts
-. Sunscreen
+. Sunscreen, lip balm
 . Hand Soap
 . Q-tips
+. Supplements, vitamins
+. Skin moisturizer
+. Ibuprofen/Advil
+. Pepto Bismol
+. Wet wipes
+. Tylenol
+. Gatorade
+. Nail clipping toolkit
+. Bandages
+. Hydrogen peroxide
+. Antifungal creme
+. Antibiotic creme, neosporin
+. Allergy meds
+. Shampoo
+. Body wash
+. Deodorant
+. Shaving razor, shaving creme
+. Skin rash, anti itch creme
+. Burn creme
+. Scissors
+. Bandana
+. Ear plugs
+. Sea sickness meds, bracelet, ginger gum
+. Sleep mask
+. Marine toilet paper
 
 
 == Food / Cooking / Galley
@@ -396,8 +422,10 @@ no hanging open wires, etc)
 . Travel Guides
 . Beach Volley Ball
 . Balderdash
-. Snorkel, mask, fins
+. Snorkel, mask, fins, mesh bag
 . GoPro camera, mounts
+. Waterproof smartphone, charging cables, 12v adapter, unlocked
+
 
 
 
