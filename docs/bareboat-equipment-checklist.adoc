@@ -93,6 +93,8 @@ navigation rules book on-board.
 . Vessel insured for the area of sailing, liability coverage, insurance ID
 . Towing services subscription (Ex: SeaTow, BoatUS)
 . Medical insurance IDs for the crew
+. Vaccination records, vaccinations for travel area
+. Proof of onward travel if travelling internationally
 . For VHF with DSC vessel MMSI must be properly registered
 . EPIRB properly registered
 . Passports and copies if sailing internationally
@@ -384,13 +386,18 @@ no hanging open wires, etc)
 
 == Entertainment
 
-. Blue tooth speakers
-. Computer (low power usage)
+. Blue tooth speakers, audio cable
+. Downloaded music
+. Computer (low power usage), Movies (downloaded)
 . Some board games (chess, etc)
 . Card games
 . Small musical instruments (harmonica, ukulele, guitar, etc)
 . Books / Magazines
 . Travel Guides
 . Beach Volley Ball
+. Balderdash
+. Snorkel, mask, fins
+. GoPro camera, mounts
+
 
 
