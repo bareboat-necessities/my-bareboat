@@ -106,6 +106,7 @@ navigation rules book on-board.
 . Scuba licenses
 . Ship's Log / Maintenance Log
 . Float plan forms
+https://newcontent.westmarine.com/content/documents/pdfs/WestAdvisor/USCG-Float-Plan.pdf
 . Emergency contacts
 . Parameters of the boat printed on a separate paper:
 * Make, Model, Year, Call Sign, MMSI, Name, Home Port, Hull ID
@@ -163,7 +164,8 @@ no hanging open wires, etc)
 . Bimini
 . Marine binoculars
 . Flashlights / spare batteries
-. Wood plugs strategically placed in compartments with seacocks
+. Wood plugs strategically placed in compartments with seacocks, know where all seacocks located, know where hammer is
+. Hammer
 . Signalling mirror
 . Boom stop with proper rope (Ex: Capt Dan's boom brake)
 . Dinghy with oars, PFDs for the dinghy, dinghy bailer / scoop, dinghy foot pump, dock line / painter, floating flash light
@@ -176,11 +178,12 @@ no hanging open wires, etc)
 . Sunhat with lanyard
 . Rain ponchos
 . Two winch handles
-. EPIRB (properly registered)
+. EPIRB (properly registered, know activation procedure)
 . AIS integrated with chartplotter
 . Jacklines + tether
 . Portable water tanks
 . Depth sounder
+. Funnel, fuel strainer
 . 4G/LTE internet router with on-board WiFi and SIM card for the sailing area
 . Anemometer / Wind speed, direction sensors
 . Barometer
