@@ -206,6 +206,7 @@ no hanging open wires, etc)
 . Companion way key with a float
 . Spare foldable swim ladder (My Dingy Rings block swim ladder when dinghy is mounted)
 . Couple nylon rail mountable cleats
+. Child PFDs
 
 
 === Better
