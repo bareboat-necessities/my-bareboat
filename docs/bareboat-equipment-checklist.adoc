@@ -122,8 +122,8 @@ https://newcontent.westmarine.com/content/documents/pdfs/WestAdvisor/USCG-Float-
 * Dinghy Hull #
 . Dinghy registration if it has an outboard motor
 . Student ID cards
-. Paper charts for the sailing area
-. Tide charts
+. Paper charts for the sailing area (updated)
+. Tide charts (up-to-date)
 . Navigation rules book
 . Sail trim quick ref card
 . Navigation rules quick ref card
@@ -326,6 +326,7 @@ no hanging open wires, etc)
 . Envelopes, postal stamps
 . Flag pole
 . Flags
+. Daily-wear clothes
 
 
 == Spare Parts
@@ -401,7 +402,7 @@ no hanging open wires, etc)
 . Rigging tape
 . Stainless hose clamps
 . Spare gas for stove
-. Oil Lantern, liquid for it, funnel
+. Oil Lantern, liquid for it, funnel (or candle lantern)
 . Plastic wire ties
 . Garbage bags
 . Paper towels
@@ -435,10 +436,14 @@ no hanging open wires, etc)
 . Tylenol
 . Thermometer
 . Pepto bismol
+. Cotton balls
+. Tweezers
 . Wet wipes
 . Gatorade
+. Snakebite kit
 . Nail clipping toolkit
 . Bandages
+. First-aid manual (use Reeds Ocean Handbook)
 . Hydrogen peroxide
 . Anti-fungal creme
 . Antibiotic creme, neosporin
