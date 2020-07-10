@@ -122,6 +122,15 @@ https://newcontent.westmarine.com/content/documents/pdfs/WestAdvisor/USCG-Float-
 * Dinghy Hull #
 . Dinghy registration if it has an outboard motor
 . Student ID cards
+. Paper charts for the sailing area
+. Tide charts
+. Navigation rules book
+. Sail trim quick ref card
+. Navigation rules quick ref card
+. Quick ref card for weather forecasting
+. Sailboat electric book
+. Cards that can give you discounts
+
 
 == Safety
 
@@ -205,22 +214,23 @@ no hanging open wires, etc)
 . Dry comfortable bunk with a fan and ways to secure yourself from falling
 . Engine key with a float
 . Companion way key with a float
-. Spare foldable swim ladder (My Dingy Rings block swim ladder when dinghy is mounted)
+. Spare foldable swim ladder (My Dingy Rings block swim ladder when the dinghy is mounted)
 . Couple nylon rail mountable cleats
 . Child PFDs
+. Spreader halyard for signals and flags
 
 
 === Better
 
 . Search light
 . Sextant
-. Bow thrusters
+. Bow thrusters, joystick for control
 . Water maker
 . Rain water catcher
 . Radar
 . Means to periodically report your location via internet
 . Autopilot
-. Windlass
+. Windlass, windlass battery, anchor roller
 . Anchor chain
 . Whisker pole
 . Bilge alarm
@@ -248,13 +258,15 @@ no hanging open wires, etc)
 . Means to climb the mast (bosun chair, steps, etc)
 . Anchoring gloves
 . Clinometer
+. Spreader deck lights
 
 
 === Crew Drills / Instructions
 
+. Sailboat parts / marine lingo
 . MOB drills with the crew
 . Captain overboard drills and instruction
-. Boom safety instruction, Moving around the boat instructions
+. Boom safety instruction, moving around the boat instructions
 . Marine head usage instruction
 . Environment protection instruction
 . Fire safety
@@ -263,7 +275,7 @@ no hanging open wires, etc)
 . VHF, DSC, mayday, EPIRB
 . Distress signals
 . Engine start/stop/check
-. Tacking, gybing, reefing, heaving to
+. Tacking, gybing, reefing, heaving-to
 
 
 == On-Board Living
@@ -279,13 +291,14 @@ no hanging open wires, etc)
 . Fans in sleeping areas
 . Waterproof bags
 . A/C (Ex: ZeroBreeze)
-. Cooler (Cooler bags)
+. Cooler (cooler bags)
 . Sun Shower (with a foot pump, shower head, hose, adaptors)
-. Boom Tent, ties
+. Portable smartphone chargers
+. Boom tent, ties
 . Bimini
 . Dodger
-. Cockpit Table
-. Cabin Table
+. Cockpit table
+. Cabin table
 . Swim suits
 . Towels
 . Beach towels
@@ -299,7 +312,7 @@ no hanging open wires, etc)
 . Lights in each cabin
 . Tree hammock
 . Marine toilet paper
-. Mobile Phone Charges
+. Mobile phone chargers / cables
 . Mesh bags
 . Cargo net
 . Pen / Pencils / Erasers
@@ -310,11 +323,13 @@ no hanging open wires, etc)
 . 12-volt pluggable 3-way adaptor (cigarette lighter type plug)
 . 12-volt extension chord (cigarette lighter type plug)
 . Envelopes, postal stamps
+. Flag pole
+. Flags
 
 
 == Spare Parts
 
-. Spare Bilge Pump
+. Spare bilge pump (12-volt powered, pluggable)
 . Spare batteries
 . Spare cabin lights
 . Spare alternator belt
@@ -323,9 +338,9 @@ no hanging open wires, etc)
 . Spare impeller
 . Fuses (variety)
 . Some wires
-. Butt connectors / Heat shrink tubing
-. Spare Stainless Nuts/Bolts/Screws/Washers
-. Spare wood / Marine starboard
+. Butt connectors / heat shrink tubing
+. Spare stainless nuts/bolts/screws/washers
+. Spare wood / marine starboard
 . Rigging parts, cotter pins
 . Spare swim ladder legs
 . Spare engine key
@@ -349,7 +364,7 @@ no hanging open wires, etc)
 . Magnetic pick-up tool (telescoping or snake-type)
 . Wire crimping tool
 . Lighters, matches (windproof)
-. Bottle opener / Corkscrew
+. Bottle opener / corkscrew
 . Key to open tank caps
 . Inflatable dingy pump
 . Shower pump
@@ -377,10 +392,10 @@ no hanging open wires, etc)
 . Oil absorbing sheets / pads
 . Zip lock bags
 . Acetone
-. Holding Tank Septic Liquid
-. Matches / Lighter
+. Holding tank septic liquid
+. Matches / lighter
 . Scissors
-. Pens/Pencils
+. Pens/pencils
 . Rigging knives (one per crew)
 . Rigging tape
 . Stainless hose clamps
@@ -418,7 +433,7 @@ no hanging open wires, etc)
 . Ibuprofen/Advil
 . Tylenol
 . Thermometer
-. Pepto Bismol
+. Pepto bismol
 . Wet wipes
 . Gatorade
 . Nail clipping toolkit
@@ -454,8 +469,8 @@ no hanging open wires, etc)
 . Knives with covers
 . Ceramic knives with covers
 . Spoons
-. Plates
-. Cups / Glasses
+. Plates / bowls
+. Cups / glasses
 . Cooking pans
 . Spatula
 . Stainless steel cooking utensil set
@@ -493,7 +508,7 @@ no hanging open wires, etc)
 . Salt
 . Sugar
 . Black pepper
-. Spices (Garlic powder, Onion powder, Bay leaves, Basil, Dill, etc)
+. Spices (garlic powder, onion powder, bay leaves, basil, dill, etc)
 . Steak sauce
 . White vinegar
 . Gatorade
@@ -535,9 +550,10 @@ no hanging open wires, etc)
 . Some board games (chess, etc)
 . Card games
 . Small musical instruments (harmonica, ukulele, guitar, etc)
-. Books / Magazines
-. Travel Guides
-. Beach Volley Ball
+. Guitar tuner
+. Books / magazines
+. Travel guides
+. Beach volley ball
 . Balderdash
 . Snorkel, mask, fins, mesh bag
 . GoPro camera, mounts
