@@ -198,7 +198,7 @@ no hanging open wires, etc)
 . Funnel, fuel strainer
 . Spare engine oil (know how to check oil level)
 . 4G/LTE internet router with on-board WiFi and SIM card for the sailing area
-. Anemometer / Wind speed, direction sensors
+. Anemometer / wind speed, direction sensors
 . Barometer
 . Boom tent
 . Swim ladder
@@ -214,7 +214,7 @@ no hanging open wires, etc)
 . Dry comfortable bunk with a fan and ways to secure yourself from falling
 . Engine key with a float
 . Companion way key with a float
-. Spare foldable swim ladder (My Dingy Rings block the swim ladder when the dinghy is mounted)
+. Spare foldable swim ladder (my Dingy Rings block the swim ladder when the dinghy is mounted)
 . Couple nylon rail mountable cleats
 . Child PFDs
 . Spreader halyard for signals and flags
@@ -243,7 +243,7 @@ no hanging open wires, etc)
 . SSB radio
 . Satellite phone (Ex: Iridium Go)
 . Liferaft + ditch bag
-. Sonar / Fish Finder
+. Sonar / fish Finder
 . Inmarsat Fleet receiver
 . NavTex receiver
 . Means to receive weather fax
@@ -463,7 +463,7 @@ no hanging open wires, etc)
 
 == Cooking / Galley
 
-. Stove (Double-gimbaled is better)
+. Stove (double-gimbaled is better)
 . Solar Stove (Ex: SunGo Sport with a marine mount)
 . Forks
 . Knives with covers
