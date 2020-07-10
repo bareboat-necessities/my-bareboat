@@ -4089,6 +4089,11 @@ a/c vent. The drain from a/c will go to the bilge.
 My boat didn't have any overhead tie points in its cabin. So I installed L-track rail (smooth profile) bolted to existings
 overhead bolts.
 
+.Boat Air Conditioner ZeroBreeze
+image::boat-equipment/boat-air-conditioner-zero-breeze.jpg[alt="Boat Air Conditioner ZeroBreeze", width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
 === Double Gimbaled Stove for a Small Boat
 
 DIY by "SV Nimbus"
