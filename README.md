@@ -7,7 +7,7 @@ Opensource hardware and software solutions for sailing and sailboats
 
 [Documentation](https://bareboat-necessities.github.io/my-bareboat)
 
-[Trip Checklists](https://bareboat-necessities.github.io/bareboat-equipment-checklist)
+[Trip Checklists](https://bareboat-necessities.github.io/my-bareboat/bareboat-equipment-checklist)
 
 [Contacts Page](https://bareboat-necessities.wixsite.com/my-bareboat)
 
