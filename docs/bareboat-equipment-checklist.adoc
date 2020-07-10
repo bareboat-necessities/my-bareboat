@@ -290,6 +290,7 @@ no hanging open wires, etc)
 . Pillows (comfortable)
 . Snorkeling mask, tube, fins, mesh bag
 . Rain coat/jacket/ponchos
+. Windproof jackets
 . Blue tooth speakers
 . Folding electric bicycle
 . Lights in each cabin
@@ -329,7 +330,7 @@ no hanging open wires, etc)
 
 == Tools
 
-. Basic mechanical toolkit
+. Basic mechanical toolkit (wrenches, pliers, screwdrivers, hex keys, etc)
 . Basic electrical toolkit (wire cutter, voltmeter, crimping tool, butt connectors, electrical tape, heat shrink tubing)
 . Basic carpenter toolkit, saw
 . Basic plumbing toolkit
@@ -348,10 +349,14 @@ no hanging open wires, etc)
 . Inflatable dingy pump
 . Shower pump
 . Liquid transfer pump
-. Waterproof computer keyboard
-. Phone mount
+. Waterproof computer keyboard, mouse
+. Smart phone mount
 . Engine key attached to a float
 . Companion way lock with a float
+. Drill
+. Drill bits
+. Screwdriver bit set
+. Bar Clamp
 
 
 == Supplies
@@ -385,6 +390,9 @@ no hanging open wires, etc)
 . Electrical tape
 . Waterproof sacks
 . Dry lube
+. Air freshener
+. Odor neutralizing gel beads
+. Air deodorizer
 
 
 == Hygiene / Health
@@ -429,6 +437,7 @@ no hanging open wires, etc)
 . Zip lock bags
 . Water shoes (for use on dinghy)
 . Covid-19 masks, gloves
+. Nicotine patches
 
 
 == Cooking / Galley
@@ -461,7 +470,10 @@ no hanging open wires, etc)
 . Cutting board
 . Egg holder (plastic reusable)
 . Kitchen timer
-.
+. Kitchen liners
+. Napkins
+. Paper towels
+
 
 == Food / Provisioning
 
@@ -489,6 +501,7 @@ no hanging open wires, etc)
 . Cucumbers
 . Tomatoes
 . Lettuce
+. Bread, cookies
 . Apples
 . Coffee
 . Tea
@@ -497,6 +510,8 @@ no hanging open wires, etc)
 . Mayonnaise
 . Canned milk
 . Protein bars, granola bars
+. Pretzel sticks
+
 
 == Entertainment
 
@@ -536,7 +551,7 @@ no hanging open wires, etc)
 . Marine Traffic
 . Ship Finder
 . PredictWind
-. NOAA Weather
+. NOAA Weather Radar
 . Tide Alert
 . US Coast Guard
 . SeaTow
