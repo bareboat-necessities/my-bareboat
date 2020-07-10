@@ -93,7 +93,7 @@ navigation rules book on-board.
 . Vessel insured for the area of sailing, liability coverage, insurance ID
 . Towing services subscription (Ex: SeaTow, BoatUS)
 . Medical insurance IDs for the crew
-. Vaccination records, vaccinations for travel area
+. Vaccination records, vaccinations for the travel area
 . Proof of onward travel if travelling internationally
 . For VHF with DSC vessel MMSI must be properly registered
 . EPIRB properly registered
@@ -120,7 +120,7 @@ https://newcontent.westmarine.com/content/documents/pdfs/WestAdvisor/USCG-Float-
 * Rig Maker, Winches Models, Anchor Types
 * Bilge Pump Throughput Capacity
 * Dinghy Hull #
-
+. Dinghy registration if it has an outboard motor
 
 == Safety
 
@@ -148,7 +148,6 @@ https://newcontent.westmarine.com/content/documents/pdfs/WestAdvisor/USCG-Float-
 . Proper marine wiring (wire grades for amps, proper insulation, good connectors, no loose connections generating heat,
 no hanging open wires, etc)
 . Sacrificial anodes installed in good shape
-. Lightning strike arrester for the antenna
 . Emergency tiller
 . Built-in manual bilge pump and handle
 . Automatic bilge pump
@@ -195,16 +194,18 @@ no hanging open wires, etc)
 . Swim ladder
 . Self-tailing winches
 . Heaving line with a float
-. Walkie-talkie for a dinghy to boat communication
+. Walkie-talkie for a dinghy-to-boat communication
+. Dinghy bailer
 . Lifelines
 . Hand rails
 . Loose nuts / bolts tightened
 . Sharp rigging elements covered with rigging tape
 . Spare halyards (installed and ready)
 . Dry comfortable bunk with a fan and ways to secure yourself from falling
-. Clinometer
 . Engine key with a float
 . Companion way key with a float
+. Spare foldable swim ladder (My Dingy Rings block swim ladder when dinghy is mounted)
+. Couple nylon rail mountable cleats
 
 
 === Better
@@ -226,6 +227,7 @@ no hanging open wires, etc)
 . Various gas alarm sensors
 . Means to set up anchor alarm
 . Lifeline netting
+. Lightning strike arrester for the antenna
 . SSB radio
 . Satellite phone (Ex: Iridium Go)
 . Liferaft + ditch bag
@@ -242,6 +244,8 @@ no hanging open wires, etc)
 . Spare rudder / spare steering
 . Gasoline electric generator
 . Means to climb the mast (bosun chair, steps, etc)
+. Anchoring gloves
+. Clinometer
 
 
 === Crew Drills / Instructions
@@ -257,11 +261,20 @@ no hanging open wires, etc)
 . VHF, DSC, mayday, EPIRB
 . Distress signals
 . Engine start/stop/check
-. Tacking, gybing, riffing, heaving to
+. Tacking, gybing, reefing, heaving to
 
 
 == On-Board Living
 
+. Comfortable head
+. Comfortable dry bunk
+. Convenient dish washing set up
+. Energy saving lights (all)
+. Solar cockpit lights
+. Companionway rain cover
+. 12 volt vacuum
+. Fans in sleeping areas
+. Waterproof bags
 . A/C (Ex: ZeroBreeze)
 . Cooler (Cooler bags)
 . Sun Shower (with a foot pump, shower head, hose, adaptors)
@@ -274,12 +287,11 @@ no hanging open wires, etc)
 . Towels
 . Beach towels
 . Bed sheets
-. Pillows
+. Pillows (comfortable)
 . Snorkeling mask, tube, fins, mesh bag
 . Rain coat/jacket/ponchos
 . Blue tooth speakers
 . Folding electric bicycle
-. Fans in each cabin
 . Lights in each cabin
 . Tree hammock
 . Marine toilet paper
@@ -290,6 +302,9 @@ no hanging open wires, etc)
 . Rubber bands
 . Cup holders
 . Fender holders
+. Dust pan, brush
+. 12-volt pluggable 3-way adaptor (cigarette lighter type plug)
+. 12-volt extension chord (cigarette lighter type plug)
 
 
 == Spare Parts
@@ -315,8 +330,8 @@ no hanging open wires, etc)
 == Tools
 
 . Basic mechanical toolkit
-. Basic electrical toolkit
-. Basic carpenter toolkit
+. Basic electrical toolkit (wire cutter, voltmeter, crimping tool, butt connectors, electrical tape, heat shrink tubing)
+. Basic carpenter toolkit, saw
 . Basic plumbing toolkit
 . Basic sewing toolkit
 . Hose
@@ -327,7 +342,7 @@ no hanging open wires, etc)
 . Inspection mirror
 . Magnetic pick-up tool (telescoping or snake-type)
 . Wire crimping tool
-. Lighter
+. Lighters, matches (windproof)
 . Bottle opener / Corkscrew
 . Key to open tank caps
 . Inflatable dingy pump
@@ -336,12 +351,12 @@ no hanging open wires, etc)
 . Waterproof computer keyboard
 . Phone mount
 . Engine key attached to a float
-. Companion way lock
+. Companion way lock with a float
 
 
 == Supplies
 
-. Cargo straps
+. Cargo straps 1-inch width (+ clam buckles, tri glide buckles)
 . Gear ties
 . Utility wire
 . USB/Ethernet cables
@@ -360,7 +375,7 @@ no hanging open wires, etc)
 . Rigging tape
 . Stainless hose clamps
 . Spare gas for stove
-. Oil Lantern
+. Oil Lantern, liquid for it, funnel
 . Plastic wire ties
 . Garbage bags
 . Paper towels
@@ -368,7 +383,6 @@ no hanging open wires, etc)
 . Bag of rags
 . Duct tapes
 . Electrical tape
-. GoPro camera + mounts
 . Waterproof sacks
 . Dry lube
 
@@ -396,10 +410,10 @@ no hanging open wires, etc)
 . Nail clipping toolkit
 . Bandages
 . Hydrogen peroxide
-. Antifungal creme
+. Anti-fungal creme
 . Antibiotic creme, neosporin
 . Skin rash, anti itch creme
-. Allergy meds
+. Allergy medications
 . Shampoo
 . Body wash
 . Bath sponges
@@ -409,17 +423,18 @@ no hanging open wires, etc)
 . Scissors
 . Bandana
 . Ear plugs
-. Sea sickness meds, bracelet, ginger gum
+. Sea sickness medications, bracelet, ginger gum, ear plugs
 . Sleep mask
 . Marine toilet paper
 . Zip lock bags
 . Water shoes (for use on dinghy)
+. Covid-19 masks, gloves
 
 
 == Cooking / Galley
 
 . Stove (Double-gimbaled is better)
-. Solar Stove
+. Solar Stove (Ex: SunGo Sport with a marine mount)
 . Forks
 . Knives
 . Spoons
@@ -427,14 +442,33 @@ no hanging open wires, etc)
 . Cups / Glasses
 . Cooking pans
 . Pressure cooker
-
+. Windshield for the stove
+. Multi grater
+. Thermos
+. Mugs
+. Double gimbaled mug holder (Ex: Osculati)
+. Matches, lighters
+. Gas for the stove
+. Utencils holder
+. Spice rack
+. Zip-lock bags
+. Coffee maker
+. Potatoes peeler
+. Wine glasses (plastic)
+. Brushes for dish washing
+. Frying pan
+. Toaster or camping toast making tool (Ex: By Primus)
+. Cutting board
+. Egg holder (plastic reusable)
+. Kitchen timer
+.
 
 == Food / Provisioning
 
 . Salt
 . Sugar
-. Pepper
-. Spices (Garlic powder, Onion powder, Bay leaves, Basilic, Dill, etc)
+. Black pepper
+. Spices (Garlic powder, Onion powder, Bay leaves, Basil, Dill, etc)
 . Steak sauce
 . White vinegar
 . Gatorade
@@ -449,7 +483,20 @@ no hanging open wires, etc)
 . Drinking water
 . Baking flour
 . Baking soda
-
+. Potatoes
+. Onions
+. Carrots
+. Cucumbers
+. Tomatoes
+. Lettuce
+. Apples
+. Coffee
+. Tea
+. Ketchup
+. Mustard
+. Mayonnaise
+. Canned milk
+. Protein bars, granola bars
 
 == Entertainment
 
@@ -473,6 +520,11 @@ no hanging open wires, etc)
 . Marine life identification book / phone app
 . Skateboard, roller blades, scooter, helmets
 . Small underwater sea scooter
+. GoPro camera + mounts
+. Folding electric bike
+. Domino
+. Chess
+. 3D Connect Four
 
 
 == Applications for smart phones / tablets

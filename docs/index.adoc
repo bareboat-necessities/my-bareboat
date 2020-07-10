@@ -3837,7 +3837,7 @@ hostname = ::
 
 [audio]
 #mixer = software
-#mixer_volume =
+mixer_volume = 90
 output = alsasink
 
 [spotify]
