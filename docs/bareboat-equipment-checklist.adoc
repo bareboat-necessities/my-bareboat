@@ -214,7 +214,7 @@ no hanging open wires, etc)
 . Dry comfortable bunk with a fan and ways to secure yourself from falling
 . Engine key with a float
 . Companion way key with a float
-. Spare foldable swim ladder (My Dingy Rings block swim ladder when the dinghy is mounted)
+. Spare foldable swim ladder (My Dingy Rings block the swim ladder when the dinghy is mounted)
 . Couple nylon rail mountable cleats
 . Child PFDs
 . Spreader halyard for signals and flags
@@ -315,7 +315,7 @@ no hanging open wires, etc)
 . Mobile phone chargers / cables
 . Mesh bags
 . Cargo net
-. Pen / Pencils / Erasers
+. Pen / pencils / erasers
 . Rubber bands
 . Cup holders
 . Fender holders
@@ -426,7 +426,7 @@ no hanging open wires, etc)
 . Sun hat with lanyard
 . Long sleeve collared UV protective shirts
 . Sunscreen, lip balm
-. Hand Soap
+. Hand soap
 . Q-tips
 . Supplements, vitamins
 . Skin moisturizer
@@ -546,7 +546,7 @@ no hanging open wires, etc)
 
 . Blue tooth speakers, audio cable
 . Downloaded music
-. Computer (low power usage), Movies (downloaded)
+. Computer (low power usage), movies (downloaded)
 . Some board games (chess, etc)
 . Card games
 . Small musical instruments (harmonica, ukulele, guitar, etc)
