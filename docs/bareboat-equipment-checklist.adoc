@@ -591,6 +591,7 @@ no hanging open wires, etc)
 . Domino
 . Chess
 . 3D Connect Four
+. Boogie board
 
 
 == Applications for smart phones / tablets
