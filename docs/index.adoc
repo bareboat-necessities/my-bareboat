@@ -4002,13 +4002,18 @@ image::boat-computer/argonaut-m7-in-navpod.jpg[alt="Argonaut M7 in Navpod with O
 
 === Set-up on the boat
 
-.Boat Computer Router in Cabin
+.Boat Computer and Router in Cabin
 image::boat-equipment/boat-computer-router-in-cabin.jpg[alt="Boat Computer Router in Cabin", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
 .Argonaut M7 in Cockpit
 image::boat-equipment/argonaut-m7-cockpit-display.jpg[alt="Argonaut M7 in Cockpit", width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
+.AIS OpenCPN Plugin in Cockpit
+image::boat-equipment/ais-display-in-cockpit.jpg[alt="AIS OpenCPN Plugin in Cockpit", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
