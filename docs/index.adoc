@@ -4000,6 +4000,23 @@ image::boat-computer/argonaut-m7-in-navpod.jpg[alt="Argonaut M7 in Navpod with O
 
 {zwsp} +
 
+=== Set-up on the boat
+
+.Boat Computer Router in Cabin
+image::boat-equipment/boat-computer-router-in-cabin.jpg[alt="Boat Computer Router in Cabin", width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
+.Argonaut M7 in Cockpit
+image::boat-equipment/argonaut-m7-cockpit-display.jpg[alt="Argonaut M7 in Cockpit", width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
+.Solar Panel/Pole, Dinghy Rings, Solar Stove
+image::boat-equipment/dinghy-rings-solar-pole-solar-stove.jpg[alt="Solar Panel/Pole, Dinghy Rings, Solar Stove", width="75%",  pdfwidth="75vw", align="center"]
+
+{zwsp} +
+
 == Pole for Sailboat Solar Panel / Wind Generator
 
 This is no welding, no bends solution. The pole is built from universal stainless steel marine components.
@@ -4033,23 +4050,6 @@ image::solar-panel-wind-generator-radar-sailboat-pole-mast.png[alt="Solar Panel/
 
 .Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View
 image::solar-panel-wind-generator-radar-sailboat-pole-mast-2.jpg[alt="Solar Panel/Wind Generator/Radar Pole Mast for Sailboat View", width="75%",  pdfwidth="75vw", align="center"]
-
-{zwsp} +
-
-=== Set-up on the boat
-
-.Boat Computer Router in Cabin
-image::boat-equipment/boat-computer-router-in-cabin.jpg[alt="Boat Computer Router in Cabin", width="75%",  pdfwidth="75vw", align="center"]
-
-{zwsp} +
-
-.Argonaut M7 in Cockpit
-image::boat-equipment/argonaut-m7-cockpit-display.jpg[alt="Argonaut M7 in Cockpit", width="75%",  pdfwidth="75vw", align="center"]
-
-{zwsp} +
-
-.Solar Panel/Pole, Dinghy Rings, Solar Stove
-image::boat-equipment/dinghy-rings-solar-pole-solar-stove.jpg[alt="Solar Panel/Pole, Dinghy Rings, Solar Stove", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
