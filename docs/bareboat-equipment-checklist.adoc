@@ -121,6 +121,7 @@ https://newcontent.westmarine.com/content/documents/pdfs/WestAdvisor/USCG-Float-
 * Bilge Pump Throughput Capacity
 * Dinghy Hull #
 . Dinghy registration if it has an outboard motor
+. Student ID cards
 
 == Safety
 
@@ -308,6 +309,7 @@ no hanging open wires, etc)
 . Dust pan, brush
 . 12-volt pluggable 3-way adaptor (cigarette lighter type plug)
 . 12-volt extension chord (cigarette lighter type plug)
+. Envelopes, postal stamps
 
 
 == Spare Parts
@@ -481,6 +483,9 @@ no hanging open wires, etc)
 . Kitchen liners
 . Napkins
 . Paper towels
+. Aluminum foil
+. Plastic wraps
+. Some bubble wrap
 
 
 == Food / Provisioning
