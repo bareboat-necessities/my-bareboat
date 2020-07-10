@@ -266,13 +266,14 @@ no hanging open wires, etc)
 
 == On-Board Living
 
-. Comfortable head
+. Comfortable head, convenient to clean and flush
 . Comfortable dry bunk
 . Convenient dish washing set up
+. Convenient hand wash set up
 . Energy saving lights (all)
 . Solar cockpit lights
 . Companionway rain cover
-. 12 volt vacuum
+. 12-volt vacuum
 . Fans in sleeping areas
 . Waterproof bags
 . A/C (Ex: ZeroBreeze)
@@ -326,6 +327,7 @@ no hanging open wires, etc)
 . Spare swim ladder legs
 . Spare engine key
 . Spare companion way lock
+. Utility wire
 
 
 == Tools
@@ -412,6 +414,7 @@ no hanging open wires, etc)
 . Skin moisturizer
 . Ibuprofen/Advil
 . Tylenol
+. Thermometer
 . Pepto Bismol
 . Wet wipes
 . Gatorade
@@ -445,11 +448,15 @@ no hanging open wires, etc)
 . Stove (Double-gimbaled is better)
 . Solar Stove (Ex: SunGo Sport with a marine mount)
 . Forks
-. Knives
+. Knives with covers
+. Ceramic knives with covers
 . Spoons
 . Plates
 . Cups / Glasses
 . Cooking pans
+. Spatula
+. Stainless steel cooking utensil set
+. Kettle
 . Pressure cooker
 . Windshield for the stove
 . Multi grater
