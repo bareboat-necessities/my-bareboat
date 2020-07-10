@@ -123,14 +123,15 @@ https://newcontent.westmarine.com/content/documents/pdfs/WestAdvisor/USCG-Float-
 . Dinghy registration if it has an outboard motor
 . Student ID cards
 . Paper charts for the sailing area (updated)
-. Tide charts (up-to-date)
+. Tide / current charts (up-to-date)
 . Navigation rules book
 . Sail trim quick ref card
 . Navigation rules quick ref card
 . Quick ref card for weather forecasting
 . Sailboat electric book
 . Cards that can give you discounts
-
+. Chart No. 1
+. Nautical Almanac
 
 == Safety
 
@@ -354,7 +355,7 @@ no hanging open wires, etc)
 
 . Basic mechanical toolkit (wrenches, pliers, screwdrivers, hex keys, etc)
 . Basic electrical toolkit (wire cutter, voltmeter, crimping tool, butt connectors, electrical tape, heat shrink tubing)
-. Basic carpenter toolkit, saw
+. Basic carpenter toolkit, hacksaw
 . Basic plumbing toolkit
 . Basic sewing toolkit
 . Hose
@@ -379,6 +380,7 @@ no hanging open wires, etc)
 . Drill bits
 . Screwdriver bit set
 . Bar Clamp
+. Vise-grips
 
 
 == Supplies
@@ -415,6 +417,10 @@ no hanging open wires, etc)
 . Air freshener
 . Odor neutralizing gel beads
 . Air deodorizer
+. Assorted bungee cords
+. Assorted shackles
+. Sail ties
+. Sail repair kit
 
 
 == Hygiene / Health
