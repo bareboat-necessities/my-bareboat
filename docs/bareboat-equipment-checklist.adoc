@@ -283,6 +283,7 @@ floating flash light. Make sure the dinghy doesn't obstruct the stern light
 . Distress signals, bilge pump operation
 . Engine start/stop/check
 . Tacking, gybing, reefing, heaving-to, hoisting sails, steering, use of swim ladder
+. Night sailing, docking
 
 
 == On-Board Living
