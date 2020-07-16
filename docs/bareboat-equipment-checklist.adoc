@@ -278,11 +278,11 @@ floating flash light. Make sure the dinghy doesn't obstruct the stern light
 . Environment protection instruction
 . Fire safety
 . Use of lifejackets, PFDs
-. Docking, anchoring, mooring, boarding, dinghy use
-. VHF, DSC, mayday, EPIRB
-. Distress signals
+. Docking, anchoring, mooring, boarding, dinghy use, rafting up
+. VHF, DSC, Mayday, EPIRB
+. Distress signals, bilge pump operation
 . Engine start/stop/check
-. Tacking, gybing, reefing, heaving-to
+. Tacking, gybing, reefing, heaving-to, hoisting sails, steering, use of swim ladder
 
 
 == On-Board Living
