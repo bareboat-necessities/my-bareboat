@@ -41,13 +41,15 @@ image::bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 
 endif::[]
 
-https://bareboat-necessities.github.io
+https://bareboat-necessities.github.io[Project Home]
 
-https://github.com/bareboat-necessities/my-bareboat
+https://github.com/bareboat-necessities/my-bareboat[Project on GitHub]
 
-https://github.com/bareboat-necessities/my-bareboat/issues
+https://github.com/bareboat-necessities/my-bareboat/issues[Project Issues]
 
-https://bareboat-necessities.wixsite.com/my-bareboat
+https://bareboat-necessities.wixsite.com/my-bareboat[Bareboat Necessities on Wix]
+
+https://bareboat-necessities.github.io/my-bareboat/bareboat-equipment-checklist[Equipment Checklists]
 
 {zwsp} +
 
