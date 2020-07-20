@@ -540,6 +540,8 @@ NOTE: Cooking below deck possesses a risk. Store cooking propane/butane gas cont
 The bilge should be well ventilated to allow heavier than air flammable gases to escape. Prefer
 cooking on an outside gas grill.
 
+NOTE: Even if the risk is low but consequences are catastrophic you still need to mitigate the risk.
+
 == Food / Provisioning
 
 . Salt
