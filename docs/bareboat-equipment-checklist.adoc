@@ -637,6 +637,7 @@ NOTE: Even if the risk is low but consequences are catastrophic you still need t
 . Radio, radar, navigation electronics
 . Ship logs
 . Sail trim
+. Tides / currents
 
 === Engineer
 
@@ -692,6 +693,11 @@ NOTE: Even if the risk is low but consequences are catastrophic you still need t
 . Landmarks
 . Person on a watch out
 . Anchor watch
+
+=== Pilot
+
+. Dinghy operation
+. Boat to shore movements (from anchoring / mooring)
 
 
 == Entertainment
