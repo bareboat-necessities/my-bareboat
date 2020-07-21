@@ -591,6 +591,7 @@ NOTE: Even if the risk is low but consequences are catastrophic you still need t
 . Coffee
 . Tea
 . Ketchup
+. Canned beans / dry beans
 . Mustard
 . Mayonnaise
 . Canned milk
