@@ -240,6 +240,9 @@ floating flash light. Make sure the dinghy doesn't obstruct the stern light
 . Anchor chain, anchor bridle
 . Whisker pole
 . Bilge alarm
+. Marine ventilation plug (to close ventilation in rough weather)
+. Lee cloth
+. Storm shutters
 . Carbon monoxide alarm
 . Smoke detector
 . Various gas alarm sensors
@@ -423,6 +426,7 @@ Do not use carton boxes.
 . Pens/pencils
 . Rigging knives (one per crew)
 . Rigging tape
+. Whipping twine
 . Stainless hose clamps
 . Spare LPG gas for stove (stored outside)
 . Oil Lantern, liquid for it, funnel (or candle lantern and candles for it)
