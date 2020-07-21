@@ -580,7 +580,8 @@ NOTE: Even if the risk is low but consequences are catastrophic you still need t
 . Lemons, limes
 . Carrots
 . Potatoes
-. Potatoes chips / tortilla chips
+. Tortilla chips / potatoes chips
+. Fruit snacks / dry fruits
 . Cookies
 . Cucumbers
 . Tomatoes
