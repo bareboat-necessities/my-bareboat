@@ -284,6 +284,7 @@ floating flash light. Make sure the dinghy doesn't obstruct the stern light
 . Engine start/stop/check
 . Tacking, gybing, reefing, heaving-to, hoisting sails, steering, use of swim ladder
 . Night sailing, docking
+. Abandon ship, rig loss, fire, flooding, steering malfunction, accidental gybe, injured crew member
 
 
 == On-Board Living
@@ -619,6 +620,73 @@ NOTE: Even if the risk is low but consequences are catastrophic you still need t
 . Pickles
 . Beer
 . White wine / sparkling wine
+
+
+== Crew roles
+
+=== Captain / Skipper
+
+. In-charge
+. Safety
+. Decision maker
+
+=== Navigator
+
+. Position / weather tracking
+. Radio, radar, navigation electronics
+. Ship logs
+. Sail trim
+
+=== Engineer
+
+. Hull / integrity
+. Fire safety
+. Mechanical and electric equipment
+. Repairs / maintenance
+. Tools / spares
+. Plumbing / hull
+. Radio equipment
+
+=== Cook
+
+. Food and galley
+. Provisioning
+
+=== Boatswain
+
+. Rig / spars / mast
+. Running rigging
+. Anchors
+. Deck equipment / safety gear
+
+=== Helmsman
+
+. Whoever is at the helm
+
+=== Accountant / Bookkeeper
+
+. Expense tracking
+
+=== Doctor
+
+. Healthcare
+
+=== DJ / animator
+
+. Entertainment
+. Music
+
+=== Photographer / video operator
+
+. Photo
+. Video
+
+=== Lookout
+
+. Observation of hazards
+. Landmarks
+. Person on a watch out
+. Anchor watch
 
 
 == Entertainment
