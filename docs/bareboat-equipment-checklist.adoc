@@ -587,7 +587,7 @@ NOTE: Even if the risk is low but consequences are catastrophic you still need t
 . Cucumbers
 . Tomatoes
 . Lettuce
-. Bread, cookies
+. Bread
 . Apples
 . Coffee
 . Tea
