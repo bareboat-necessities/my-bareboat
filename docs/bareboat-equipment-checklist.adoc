@@ -284,7 +284,8 @@ floating flash light. Make sure the dinghy doesn't obstruct the stern light
 . Engine start/stop/check
 . Tacking, gybing, reefing, heaving-to, hoisting sails, steering, use of swim ladder
 . Night sailing, docking
-. Abandon ship, rig loss, fire, flooding, steering malfunction, accidental gybe, injured crew member
+. Abandon ship, rig loss, fire, flooding, steering malfunction, accidental gybe, injured crew member,
+storm / squall procedures
 
 
 == On-Board Living
