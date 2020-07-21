@@ -663,6 +663,10 @@ NOTE: Even if the risk is low but consequences are catastrophic you still need t
 === Helmsman
 
 . Whoever is at the helm
+. Maintain course and speed
+. Watch out for vessels and obstructions
+. Monitor trim / rig / voltage / nav lights / weather conditions
+. Notify captain
 
 === Accountant / Bookkeeper
 
