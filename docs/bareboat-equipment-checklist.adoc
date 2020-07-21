@@ -237,7 +237,7 @@ floating flash light. Make sure the dinghy doesn't obstruct the stern light
 . Means to periodically report your location via internet
 . Autopilot
 . Windlass, windlass battery, anchor roller
-. Anchor chain
+. Anchor chain, anchor bridle
 . Whisker pole
 . Bilge alarm
 . Carbon monoxide alarm
