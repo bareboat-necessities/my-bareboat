@@ -422,7 +422,7 @@ Do not use carton boxes.
 . Rigging knives (one per crew)
 . Rigging tape
 . Stainless hose clamps
-. Spare gas for stove
+. Spare LPG gas for stove (stored outside)
 . Oil Lantern, liquid for it, funnel (or candle lantern and candles for it)
 . Plastic wire ties
 . Garbage bags
