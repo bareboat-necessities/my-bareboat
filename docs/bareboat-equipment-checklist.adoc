@@ -145,7 +145,7 @@ https://newcontent.westmarine.com/content/documents/pdfs/WestAdvisor/USCG-Float-
 . All US Coast Guard safety requirements, PFDs, fire safety, distress signaling, navigation signals (See Chapter 1)
 . Hull (inspected properly)
 . Seacocks / thru hulls checked, hoses checked
-. Deck leaks calked
+. Deck leaks caulked
 . No deck hazards
 . Stuffing box checked for leaks
 . At least two boat batteries (marine grade)
@@ -437,6 +437,8 @@ Do not use carton boxes.
 . Sail ties
 . Sail repair kit
 . Glue
+. Marine caulk
+. Caulking gun
 . Sand paper
 . Measuring tape
 . Bag of dehumidifying pellets
