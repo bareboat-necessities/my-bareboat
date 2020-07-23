@@ -145,6 +145,7 @@ https://newcontent.westmarine.com/content/documents/pdfs/WestAdvisor/USCG-Float-
 . All US Coast Guard safety requirements, PFDs, fire safety, distress signaling, navigation signals (See Chapter 1)
 . Hull (inspected properly)
 . Seacocks / thru hulls checked, hoses checked
+. Compliance with ABYC standards
 . Deck leaks caulked
 . No deck hazards
 . Stuffing box checked for leaks
