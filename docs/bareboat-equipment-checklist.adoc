@@ -160,6 +160,7 @@ https://newcontent.westmarine.com/content/documents/pdfs/WestAdvisor/USCG-Float-
 . Dock Lines
 . Fuses in proper places
 . Spare fuses
+. Spare bulbs for each navigation light
 . Proper grounding wire of the boat
 . Proper marine wiring (wire grades for amps, proper insulation, good connectors, no loose connections generating heat,
 no hanging open wires, etc)
