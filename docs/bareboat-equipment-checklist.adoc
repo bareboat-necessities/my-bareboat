@@ -165,7 +165,7 @@ no hanging open wires, etc)
 . Sacrificial anodes installed in good shape
 . Emergency tiller
 . Built-in manual bilge pump and handle
-. Automatic bilge pump with proper vented anti-siphon valve
+. Automatic bilge pump with proper vented loop and anti-siphon valve
 . Spare 12v bilge pump
 . Boat hook (telescoping floating)
 . VHF with GPS and DSC (registered with MMSI for the vessel)
