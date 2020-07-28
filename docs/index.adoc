@@ -3477,6 +3477,11 @@ for older wind transducers there is a hard way:
 https://hackaday.io/project/12986-nasa-wind-decoder
 
 
+=== NMEA Sleuth Chromium Extension
+
+Install NMEA Sleuth from https://panaaj.bitbucket.io/
+Launch Chromium browser and install NMEA Sleuth extension from Chrome Web Store.
+
 === Text to Speech
 
 Visual alarms are of no use if you do not watch. So we could add text-to-speech:
