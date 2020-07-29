@@ -4101,8 +4101,8 @@ image::boat-equipment/boat-air-conditioner-zero-breeze.jpg[alt="Boat Air Conditi
 
 {zwsp} +
 
-NOTE: Unfortunately power supply which comes with ZeroBreeze is not waterproof (I do not know why they would
-build a tent A/C with no waterproof power supply). And it broke right away. I had
+NOTE: Unfortunately the power supply which comes with ZeroBreeze is not waterproof (I do not know why they would
+build a tent A/C with no waterproof power supply). It broke right away. I had
 to replace it with:
 https://www.amazon.com/dp/B07SB2WY7Z
 (LED Power Supply 200W High-powerTransformer Waterproof IP67 12V DC Driver Adapter for Outdoor Use)
