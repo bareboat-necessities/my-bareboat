@@ -132,7 +132,7 @@ https://newcontent.westmarine.com/content/documents/pdfs/WestAdvisor/USCG-Float-
 . Cards that can give you discounts
 . Chart No. 1
 . Nautical almanac
-. Coat pilot book
+. Coast pilot book
 . The Annapolis Book of Seamanship
 . Knots quick ref
 
@@ -175,7 +175,7 @@ no hanging open wires, etc)
 . Binnacle mounted compass + handheld compass
 . Paper charts of the sailing area, dividers, protractor, etc
 . Radar reflector
-. Tide tables
+. Tide/current tables
 . Anchoring day shape ball
 . Two anchors with rode and length marking (mount for securing anchor outside of locker or anchor roller)
 . Coastal medical emergency kit
