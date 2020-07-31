@@ -4038,6 +4038,11 @@ https://www.pine64.org/
 ARM 64 based solutions: SBC, Laptop, Phone, Watch with Linux. Waterproof casing is available too.
 Worth alternative to raspberry pi product line.
 
+=== LilyGO esp32 watch 2020
+
+https://usa.banggood.com/LILYGO-TTGO-T-Watch-2020-ESP32-Main-Chip-1_54-Inch-Touch-Display-Programmable-Wearable-Environmental-Interaction-Watch-p-1671427.html
+
+esp32 programmable water resistant low cost watch
 
 == Pole for Sailboat Solar Panel / Wind Generator
 
