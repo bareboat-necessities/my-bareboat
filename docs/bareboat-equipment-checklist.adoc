@@ -168,7 +168,7 @@ no hanging open wires, etc)
 . Emergency tiller
 . Built-in manual bilge pump and handle
 . Automatic bilge pump with proper vented loop and anti-siphon valve
-. Spare 12v bilge pump (ready to be deployed)
+. Spare 12v bilge pump (easily deployable)
 . Boat hook (telescoping floating)
 . VHF with GPS and DSC (registered with MMSI for the vessel)
 . GPS Chartplotter, NMEA sensors connected
