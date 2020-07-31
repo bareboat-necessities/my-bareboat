@@ -4029,6 +4029,16 @@ image::boat-equipment/dinghy-rings-solar-pole-solar-stove.jpg[alt="Solar Panel/P
 
 {zwsp} +
 
+== Other Hardware Platforms
+
+=== Pine64
+
+https://www.pine64.org/
+
+ARM 64 based solutions: SBC, Laptop, Phone, Watch with Linux. Waterproof casing is available too.
+Worth alternative to raspberry pi product line.
+
+
 == Pole for Sailboat Solar Panel / Wind Generator
 
 This is no welding, no bends solution. The pole is built from universal stainless steel marine components.
