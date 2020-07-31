@@ -168,7 +168,7 @@ no hanging open wires, etc)
 . Emergency tiller
 . Built-in manual bilge pump and handle
 . Automatic bilge pump with proper vented loop and anti-siphon valve
-. Spare 12v bilge pump
+. Spare 12v bilge pump (ready to be deployed)
 . Boat hook (telescoping floating)
 . VHF with GPS and DSC (registered with MMSI for the vessel)
 . GPS Chartplotter, NMEA sensors connected
@@ -239,7 +239,7 @@ floating flash light. Make sure the dinghy doesn't obstruct the stern light
 . Means to periodically report your location via internet
 . Autopilot
 . Windlass, windlass battery, anchor roller
-. Anchor chain, anchor bridle
+. Anchor chain, anchor bridle/snubber
 . Whisker pole
 . Bilge alarm
 . Marine ventilation plug (to close ventilation in rough weather)
@@ -692,6 +692,10 @@ NOTE: Even if the risk is low but consequences are catastrophic you still need t
 
 . Photo
 . Video
+
+=== Fisherman
+
+. Anything fishing
 
 === Lookout
 
