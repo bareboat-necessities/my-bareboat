@@ -252,6 +252,7 @@ floating flash light. Make sure the dinghy doesn't obstruct the stern light
 . Means to set up anchor alarm
 . Lifeline netting
 . Lightning strike arrester for the antenna
+. Lazy jacks
 . SSB radio
 . Satellite phone (Ex: Iridium Go)
 . Liferaft + ditch bag
