@@ -242,6 +242,7 @@ floating flash light. Make sure the dinghy doesn't obstruct the stern light
 . Anchor chain, anchor bridle/snubber
 . Whisker pole
 . Bilge alarm
+. MOB retrieval and recovery gear (Ex: MobMat)
 . Marine ventilation plug (to close ventilation in rough weather)
 . Lee cloth
 . Storm shutters
@@ -345,6 +346,7 @@ storm / squall procedures, grounding
 . Small reading light
 . Binnacle cover
 . Sail cover
+. Head mounted flashlight
 
 NOTE: Store items in plastic transparent zip lock bags (Easy to see). Expect everything to get wet,
 corrode, leak, spill, tip over (and damage other items). Remove all packaging and stickers.
