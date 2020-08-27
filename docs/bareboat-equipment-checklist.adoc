@@ -212,7 +212,7 @@ floating flash light. Make sure the dinghy doesn't obstruct the stern light
 . Swim ladder
 . Self-tailing winches
 . Heaving line with a float
-. Walkie-talkie for a dinghy-to-boat communication
+. Walkie-talkie for a dinghy-to-boat communication, anchoring communication
 . Dinghy bailer
 . Lifelines
 . Hand rails
@@ -273,6 +273,9 @@ floating flash light. Make sure the dinghy doesn't obstruct the stern light
 . Clinometer
 . Spreader deck lights
 . Diver-down flag and buoy
+. Dinghy outboard
+. Pushpit outboard mount for dinghy outboard motor
+. Android tablet with spare GPS navigation software and charts
 
 
 === Crew Drills / Instructions
