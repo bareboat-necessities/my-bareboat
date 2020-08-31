@@ -25,6 +25,18 @@
  Time to hold = 4 (4 S)
  Mouse sensitivity = 8 (any movement > 8 pixels cancels current click emulation)
 
+ To list input devices:
+ xinput --list
+
+ Just :
+ - compile the .cpp file
+ - add a line in XDG autostart file : "/etc/xdg/lxsession/LXDE-pi/autostart":
+ @/home/pi/mouse/ts-mouse
+
+ (ts-mouse file is supposed to be in /home/pi/mouse ...)
+
+ See also: https://www.raspberrypi.org/forums/viewtopic.php?t=121602&start=50
+
 */
 
 #include <fcntl.h>
