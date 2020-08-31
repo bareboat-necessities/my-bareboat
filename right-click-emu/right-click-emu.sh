@@ -4,6 +4,7 @@
 
 sudo apt install build-essential libevdev2 libevdev-dev
 #git clone 'https://github.com/PeterCxy/evdev-right-click-emulation.git'
+#git clone 'https://github.com/ixnewton/evdev-right-click-emulation.git'
 git clone -b 'hold-right-click' https://github.com/pfpacket/evdev-right-click-emulation.git'
 cd 'evdev-right-click-emulation' || make all
 sudo cp 'out/evdev-rce' '/usr/local/bin/'
