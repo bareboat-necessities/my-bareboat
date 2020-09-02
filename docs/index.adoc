@@ -3952,6 +3952,25 @@ or
 
 {zwsp} +
 
+=== USB Audio Dongle with audio input/output
+
+Raspberry Pi doesn't have audio input. For it you can use external USB audio dongle card.
+
+Example: Adafruit https://www.adafruit.com/product/1475
+
+Setting up instructions: https://www.alsa-project.org/wiki/Setting_the_default_device
+
+Find your desired card with:
+
+   cat /proc/asound/cards
+
+and then put into /etc/asound.conf the following:
+
+   defaults.pcm.card 1
+   defaults.ctl.card 1
+
+Replace "1" with number of your card determined above.
+
 
 === Sail CAD
 
