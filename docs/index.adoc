@@ -2654,7 +2654,7 @@ sudo cp twofing /usr/bin/
 NOTE: After using it underway during two-week cruise I noticed that more important than two finger zoom is
 the ability to perform right click. I've added the script which will turn on emulation of right click with a long touch.
 This way you can add way points in OpenCPN and do other actions which require a right mouse click. (Ex: access to
-context menu)
+the context menu)
 
 [source,shell]
 ----
