@@ -24,7 +24,7 @@ sudo apt install cubicsdr
 #sudo pip3 install urh
 
 # Additional utilities
-sudo apt install nmap git xmlstarlet
+sudo apt install nmap git xmlstarlet sysstat
 
 # Install command line utility to show current location
 sudo apt install jq
