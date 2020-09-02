@@ -4074,6 +4074,9 @@ https://www.amazon.com/dp/B07GZTWX85
 There is also a closed body turnbuckle in the design. It needs a securing wire to be fixed in place to prevent
 unscrewing.
 
+NOTE: I had to add one more turnbuckle to form a stiff triangle to better hold the mast vertically. Two
+turnbuckles mounts to the same bolt on the pole and attach to two different points on the vertical stancion.
+
 The pipe cutter which worked perfectly easy for me on stainless steel is this one:
 
 https://www.amazon.com/dp/B077966G15
