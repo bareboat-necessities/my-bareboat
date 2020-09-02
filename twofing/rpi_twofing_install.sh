@@ -32,12 +32,13 @@ EOF'
 sudo bash -c 'cat << EOF > /etc/udev/rules.d/99-input-tagging.rules
 ACTION=="add", KERNEL=="event*", SUBSYSTEM=="input", TAG+="systemd", , ENV{SYSTEMD_ALIAS}+="/sys/subsystem/input/devices/$env{ID_SERIAL}"
 EOF'
-cat << EOF >> ~/.config/autostart/twofing-startup.desktop
+cat << EOF > ~/.config/autostart/twofing-startup.desktop
 [Desktop Entry]
 Type=Application
 Name=Twofing
 Exec=twofing
 StartupNotify=false
 EOF
+
 rm -rf twofing
 #reboot
