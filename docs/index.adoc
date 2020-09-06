@@ -2617,6 +2617,8 @@ https://openmaptiles.org/
 
 ==== Touch Screen
 
+===== Multi-touch emulation with twofing
+
 One of the issues that kept bugging me was the lack of multitouch support on a touchscreen
 in OpenCPN and Raspbian UI in general. Well there is a fix! The solution requires the program called 'twofing'.
 It is easy to install. I've combined the script for my Argonaut M7 waterproof display.
@@ -2651,6 +2653,8 @@ make
 sudo cp twofing /usr/bin/
 ------
 
+===== Right click emulation with long touch
+
 NOTE: After using it underway during two-week cruise I noticed that more important than two finger zoom is
 the ability to perform right click. I've added the script which will turn on emulation of right click with a long touch.
 This way you can add way points in OpenCPN and do other actions which require a right mouse click. (Ex: access to
@@ -2663,6 +2667,8 @@ chmod +x right-click-emu.sh
 ./right-click-emu.sh
 reboot
 ----
+
+===== On-screen keyboard
 
 One more issue is entering the text on a touchscreen. I've added virtual on screen keyboard. I've compared
 several and the one I liked the most is svkbd.
