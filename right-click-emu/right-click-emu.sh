@@ -11,7 +11,7 @@ make all
 sudo cp 'out/evdev-rce' '/usr/local/bin/'
 chmod +x '/usr/local/bin/evdev-rce'
 
-sudo usermod -G 'input' -a pi
+sudo usermod -a -G 'input' pi
 
 echo 'uinput' | sudo tee -a /etc/modules
 
