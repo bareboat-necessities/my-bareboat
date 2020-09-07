@@ -1005,9 +1005,10 @@ https://github.com/boatybits/boatymonpy
 
 https://github.com/boatybits/ESP_Fridge
 
-NOTE: Sept 2020
+NOTE: Sept 2020.
 Couple more interesting boards:
-CarPiHat  https://www.hackster.io/news/carpihat-offers-multi-feature-interfaces-between-your-raspberry-pi-and-any-12v-vehicle-system-48846b7839cb
+
+CarPiHat https://www.hackster.io/news/carpihat-offers-multi-feature-interfaces-between-your-raspberry-pi-and-any-12v-vehicle-system-48846b7839cb
 
 PiJuice https://github.com/PiSupply/PiJuice
 
