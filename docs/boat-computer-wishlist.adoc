@@ -1,0 +1,106 @@
+= Boat Computer Wishlist
+mgrouch <mgrouch@users.noreply.github.com>
+{docdate}, Boat Computer Wishlist
+:imagesdir: images
+:doctype: book
+:organization: Bareboat Necessities
+:title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+ifdef::backend-pdf[]
+:source-highlighter: rouge
+:toc-placement!: manual
+:pdf-page-size: Letter
+:plantumlconfig: plantuml.cfg
+endif::[]
+ifndef::backend-pdf[]
+:toc-placement: manual
+endif::[]
+:experimental:
+:reproducible:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 3
+:encoding: utf-8
+:lang: en
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:env-github:
+
+{zwsp} +
+
+ifndef::backend-pdf[]
+
+image::bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+
+{zwsp} +
+
+endif::[]
+
+https://bareboat-necessities.github.io
+
+https://github.com/bareboat-necessities/my-bareboat
+
+https://github.com/bareboat-necessities/my-bareboat/issues
+
+https://bareboat-necessities.wixsite.com/my-bareboat
+
+{zwsp} +
+
+PDF version:
+
+https://bareboat-necessities.github.io/my-bareboat/boat-computer-wishlist.pdf
+
+
+{zwsp} +
+
+toc::[]
+
+== Wishlist for Raspberry Pi extension board for marine computer
+
+The wishlist is inspired by MCC board (https://github.com/Thomas-GeDaD/openplotter-MCS/blob/master/QuickGuide_MCS.pdf),
+as well as CarPiHat, number of SupTronics boards, Moitessier Hat,
+PiJuice, SixFab boards
+
+. RTC clock
+. UPS
+. Lithium Ion battery mounting place
+. Port for solar power input
+. Charging from solar, overcharge protection. If solar is enough then
+work from solar and charge, if not then from lithium battery, if not enough
+from 12v house battery, if not enough then do a safe shutdown, but when
+solar comes back up (or house battery) start the pi automatically
+. 7-port USB hub (can be USB 2.0) self-powered, non back feeding
+. Audio in/out
+. SSD drive interface, place to mount SSD
+. Supplied with IP67 or better panel mounted interfaces (round holes) and cords to the board
+for USB, HDMI, Audio in/out, Ethernet, NMEA, power, momentary switch button, RF ports for antennas
+(GPS, AIS, SDR radio, etc)
+. External panel mounted SD card reader extension (IP68 or better) for easy software and charts swap
+. Panel mount status lights or (better) small (like m5stack) LCD display
+. Built-in on-board NMEA multiplexor functionality
+. Panel mount amp and volt meter
+. Panel mount USB charger port and cigarette 12v port (waterproof)
+. Conformant of over the board
+. Two options to install the board
+* mount inside a panel
+* install in supplied protective case with wires routed via glands + waterproof case vent
+. Plus all existing MCC board functionality (optocoupled interfaces, self healing fuse, CAN bus,
+5 NMEA 0183 interfaces, 1-wire, etc)
+. Ports for engine RPM, temperature, bilge pump monitoring, liquid levels inputs,
+navigation lights programmable controls, inputs for various gas alarm sensors, anchor windlass controls,
+bow thruster controls, a/c controls, fridge controls interface, water heater controls,
+air blower controls, seacocks state inputs, heel/pitch/roll, IMU (heading), environment (air temp, pressure, water temp)
+rudder position
+. Integration with on-board WiFi, LTE router via ethernet
+. Integration with SDR radio, SSB via audio in and USB (AIS, NavTex, Weather fax, Inmarsat Fleet)
+. Integration with Iridium satellite phone as a modem
+. Integration with radar
+. Integration with sonar, fishfinders
+. Integration with depth, speed, wind transducers, autopilot via NMEA
+. Integration with lidar or color night vision camera
+
