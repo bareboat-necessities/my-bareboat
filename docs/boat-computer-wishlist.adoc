@@ -95,7 +95,7 @@ for USB, HDMI, Audio in/out, Ethernet, NMEA, power, momentary switch button, RF 
 navigation lights programmable controls, inputs for various gas alarm sensors, anchor windlass controls,
 bow thruster controls, a/c controls, fridge controls interface, water heater controls,
 air blower controls, seacocks state inputs, heel/pitch/roll, IMU (heading), environment (air temp, pressure, water temp)
-rudder position, interfaces to electric winches, sail tension sensors ports
+rudder position, interfaces to electric winches, sail tension sensors ports, live well tank controls
 . Integration with on-board WiFi, LTE router via ethernet
 . Integration with SDR radio, SSB via audio in and USB (AIS, NavTex, Weather fax, Inmarsat Fleet)
 . Integration with Iridium satellite phone as a modem
