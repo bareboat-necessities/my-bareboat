@@ -84,6 +84,7 @@ for USB, HDMI, Audio in/out, Ethernet, NMEA, power, momentary switch button, RF 
 . Panel mount status lights or (better) small (like m5stack) LCD display
 . Built-in on-board NMEA multiplexor functionality
 . Panel mount amp and volt meter
+. Buzzer for alarms
 . Panel mount USB charger port and cigarette 12v port (waterproof)
 . Conformant of over the board
 . Two options to install the board
