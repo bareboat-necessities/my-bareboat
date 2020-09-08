@@ -69,7 +69,7 @@ PiJuice, SixFab boards
 . RTC clock
 . UPS
 . Lithium Ion battery mounting place
-. Port for solar power input
+. Port for solar / wind power input
 . Charging from solar, overcharge protection. If solar is enough then
 work from solar and charge, if not then from lithium battery, if not enough
 from 12v house battery, if not enough then do a safe shutdown, but when
