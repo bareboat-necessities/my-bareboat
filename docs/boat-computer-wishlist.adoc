@@ -91,7 +91,7 @@ for USB, HDMI, Audio in/out, Ethernet, NMEA, power, momentary switch button, RF 
 * mount inside a panel
 * install in supplied protective case with wires routed via glands + waterproof case vent
 . Plus all existing MCS board functionality (optocoupled interfaces, self healing fuse, CAN bus,
-5 NMEA 0183 interfaces, 1-wire, etc)
+5 NMEA 0183 interfaces, 1-wire, I2C ports, etc)
 . Ports for engine RPM, temperature, oil pressure, bilge pump monitoring, liquid levels inputs,
 navigation lights programmable controls, inputs for various gas alarm sensors, anchor windlass controls,
 bow thruster controls, a/c controls, fridge controls interface, water heater controls,
