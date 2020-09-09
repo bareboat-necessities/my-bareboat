@@ -62,9 +62,9 @@ toc::[]
 
 == Wishlist for Raspberry Pi extension board for marine computer
 
-The wishlist is inspired by MCC board (https://github.com/Thomas-GeDaD/openplotter-MCS/blob/master/QuickGuide_MCS.pdf),
+The wishlist is inspired by MCS board (https://github.com/Thomas-GeDaD/openplotter-MCS/blob/master/QuickGuide_MCS.pdf),
 as well as CarPiHat, number of SupTronics boards, Moitessier Hat,
-PiJuice, SixFab boards
+PiJuice, SixFab, PICAN-M boards
 
 . RTC clock
 . UPS
@@ -90,7 +90,7 @@ for USB, HDMI, Audio in/out, Ethernet, NMEA, power, momentary switch button, RF 
 . Two options to install the board
 * mount inside a panel
 * install in supplied protective case with wires routed via glands + waterproof case vent
-. Plus all existing MCC board functionality (optocoupled interfaces, self healing fuse, CAN bus,
+. Plus all existing MCS board functionality (optocoupled interfaces, self healing fuse, CAN bus,
 5 NMEA 0183 interfaces, 1-wire, etc)
 . Ports for engine RPM, temperature, oil pressure, bilge pump monitoring, liquid levels inputs,
 navigation lights programmable controls, inputs for various gas alarm sensors, anchor windlass controls,
