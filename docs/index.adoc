@@ -4354,6 +4354,9 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 * https://www.mmsn.org/[Maritime Mobile Service Network]
 
 * http://weewx.com/[Free Weather Station Software for Linux]
+
+* https://gpsd.gitlab.io/gpsd/NMEA.html[NMEA]
+
 {zwsp} +
 
 
