@@ -1956,6 +1956,14 @@ image::boat-router/m5stack-boat-display.jpg[alt="M5Stack Boat Display", width="7
 
 {zwsp} +
 
+====== NMEA to WiFi on ESP32
+
+Couple projects
+
+https://github.com/jcable/nmea-link
+
+https://github.com/jeelabs/esp-link
+
 ====== MQTT
 
 http://mqtt.org/
