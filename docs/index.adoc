@@ -1006,11 +1006,13 @@ https://github.com/boatybits/boatymonpy
 https://github.com/boatybits/ESP_Fridge
 
 NOTE: Sept 2020.
-Couple more interesting boards:
+Few more interesting boards:
 
 CarPiHat https://www.hackster.io/news/carpihat-offers-multi-feature-interfaces-between-your-raspberry-pi-and-any-12v-vehicle-system-48846b7839cb
 
 PiJuice https://github.com/PiSupply/PiJuice
+
+PICAN-M https://copperhilltech.com/pican-m-nmea-0183-nmea-2000-hat-for-raspberry-pi/
 
 NOTE: One more board: https://github.com/mairas/sailor-hat-hardware/blob/master/README.md
 
@@ -1020,6 +1022,8 @@ NOTE: One more board: https://github.com/mairas/sailor-hat-hardware/blob/master/
 * Boot from USB SATA SSD
 * Coaxial Lightning Arresters for RF cables
 * Mount SD card reader to front panel to swap easier
+
+My wishlist for the perfect board https://bareboat-necessities.github.io/my-bareboat/boat-computer-wishlist.html
 
 .Amp Meter Wiring Diagram
 image::amp-meter-wiring.jpg[alt="Amp Meter Wiring Diagram", width="75%",  pdfwidth="75vw", align="center"]
