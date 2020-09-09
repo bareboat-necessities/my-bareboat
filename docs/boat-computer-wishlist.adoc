@@ -86,7 +86,7 @@ for USB, HDMI, Audio in/out, Ethernet, NMEA, power, momentary switch button, RF 
 . Panel mount amp and volt meter
 . Buzzer for alarms
 . Panel mount USB charger port and cigarette 12v port (waterproof)
-. Conformant of over the board
+. Conformant cvoating of the board
 . Two options to install the board
 * mount inside a panel
 * install in supplied protective case with wires routed via glands + waterproof case vent
