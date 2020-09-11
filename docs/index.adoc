@@ -926,6 +926,13 @@ https://www.amazon.com/dp/B072MNBC9M
 
 
 
+| SD card Extender Panel Mount (Optional)
+a| Micro SD card Extender Panel Mount
+
+https://www.thingiverse.com/thing:3854077
+
+|  | Thingiverse
+
 
 
 | RTC Clock (Optional)
@@ -1601,6 +1608,12 @@ https://www.amazon.com/dp/B00HSOUQXM
 | $4.30 | Amazon
 
 
+| Panel Mount Waterproof SIM card adapter
+a| Cable Gland for SIM: Waterproof IP67 Feed-Thru
+
+https://www.data-alliance.net/cable-gland-for-fiber-usb-sim-terminal-block-waterproof-ip67-feed-thru/
+
+| $6.80 | data-alliance.net
 
 
 | WiFi Antenna Cable
