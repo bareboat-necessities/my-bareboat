@@ -992,6 +992,8 @@ https://sixfab.com/product/raspberry-pi-ip65-weatherproof-iot-project-enclosure/
 NOTE: Another couple of interesting boards are discussed here http://forum.openmarine.net/showthread.php?tid=1666&page=3
 NMEA multiplexer, current, voltage and RPM sensors for engine/battery monitoring and fridge and thermostat control board.
 
+====== GeDad MCS (Marine Control Server) Board
+
 GeDad MCS (Marine Control Server) Board (75.00€):
 
 https://github.com/Thomas-GeDaD/openplotter-MCS
@@ -1012,6 +1014,8 @@ https://drive.google.com/file/d/10Kz2WCoy9cHQC1AGTumh03V0267kdZyj/view?usp=drive
 https://github.com/boatybits/boatymonpy
 
 https://github.com/boatybits/ESP_Fridge
+
+https://easyeda.com/lordzahl/Svala
 
 NOTE: Sept 2020.
 Few more interesting boards:
