@@ -105,3 +105,10 @@ rudder position, interfaces to electric winches, sail tension sensors ports, liv
 . Integration with depth, speed, wind transducers, autopilot via NMEA
 . Integration with lidar or color night vision camera
 
+== Wishlist for OpenWtr router extension board for marine LTE/WiFi router
+
+. 4-6 NMEA 1083 ports multiplexed via TCP/IP using Kplex running on OpenWrt
+. External panel mounted SIM card reader extension (IP67 or better) for easy swap
+. Supplied with IP67 or better panel mounted interfaces (round holes) and cords to the router
+for USB, Ethernet, NMEA, power, momentary switch button, RF ports for antennas
+(GPS, WiFi, etc)
