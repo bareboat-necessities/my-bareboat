@@ -2042,6 +2042,10 @@ antennas LTE performed well.
 
 ==== Other Ideas
 
+Connect NMEA multiplexer to the router via USB. Here is one affordable NMEA multiplexer:
+
+https://www.tindie.com/products/Quarkelec/qk-a031-nmea-0183-multiplexer-with-seatalk-convert/
+
 Rudder Position project
 
 https://hackaday.io/project/168592-opencpn-chart-plotter-w-autopilot-and-waypoints
