@@ -57,7 +57,14 @@ a:hover, a:focus {
 .toolbar {
     margin: 0px 10px 10px 0px;
     color: white;
-    height: 40px;
+    height: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-bar {
+    margin: 0px 10px 10px 0px;
+    color: white;
+    height: 32px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -76,6 +83,10 @@ a:hover, a:focus {
     bottom: 10px;
 }
 
+.button-bar span {
+    border-radius: 4px;
+}
+
     </style>
 </head>
 <body style="background: black;">
@@ -85,6 +96,9 @@ a:hover, a:focus {
         <span style="padding-left:10px;">073°02'.097W</span>
         <span style="padding-left:16px;">COG: 210°T</span>
         <span style="padding-left:16px;">SOG: 3.6 kt</span>
+        <span style="padding-left:16px;">BAT: 12.6v</span>
+        <span style="padding-left:16px;">Bilge: OK</span>
+        <span style="padding-left:16px;">Fuel: 50%</span>
         <span style="float:right;">12:45pm</span>
     </div>
     <div class="main-panel">
@@ -121,6 +135,23 @@ a:hover, a:focus {
             <div><img src="img/settings2.svg" alt="Settings" class="main-icon"/></div>
         </div>
     </div>
+    <div class="toolbar">
+        <span>Depth: 50 ft</span>
+        <span style="padding-left:14px;">App Wind: 15 kt</span>
+        <span style="padding-left:14px;">Atm Press: 1013.25 mb</span>
+        <span style="padding-left:14px;">RPM: 2000</span>
+        <span style="padding-left:16px; float:right;">Sunset: 7:10pm</span>
+        <span style="padding-left:16px; float:right;">Sunrise: 6:60am</span>
+    </div>
+    <div class="button-bar">
+        <span style="padding: 4px; background: red;">Distress: Off</span>
+        <span style="padding: 4px; background: red; margin-left:14px;">MOB: Off</span>
+        <span style="padding: 4px; margin-left:14px;">AnchorWatch: Off</span>
+        <span style="padding: 4px; margin-left:14px; background: white; color: green;">AutoPilot: On</span>
+        <span style="padding: 4px; margin-left:14px; background: white; color: green;">NavLt: On</span>
+        <span style="padding: 4px; margin-left:14px; background: white; color: green;">RunLt: On</span>
+        <span style="padding: 4px; margin-left:14px;">MastHLt: Off</span>
+   </div>
     <div class="credits">
         <div style="color: white;">Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a
                 href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
