@@ -36,6 +36,7 @@ a:hover, a:focus {
     background: #101010;
     margin: 0 auto;
     padding: 10px;
+    position: relative;
 }
 
 .tile {
@@ -68,6 +69,11 @@ a:hover, a:focus {
     height: 110px;
 }
 
+.credits {
+    position: absolute;
+    bottom: 10px;
+}
+
     </style>
 </head>
 <body style="background: black;">
@@ -88,7 +94,7 @@ a:hover, a:focus {
             <div>Radar</div>
             <div><img src="img/radar2.svg" alt="Radar" class="main-icon"/></div>
         </div>
-        <div class="tile" style="background: DodgerBlue;">
+        <div class="tile" style="background: RoyalBlue;">
             <div>Weather</div>
             <div><img src="img/weather2.svg" alt="Weather" class="main-icon"/></div>
         </div>
@@ -109,7 +115,7 @@ a:hover, a:focus {
             <div><img src="img/settings2.svg" alt="Settings" class="main-icon"/></div>
         </div>
     </div>
-    <div>
+    <div class="credits">
         <div style="color: white;">Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a
                 href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </div>
