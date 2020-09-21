@@ -20,7 +20,7 @@ after_failure:
   - docker logs asciidoc-to-pdf
 
 after_success:
-  - cd output ; cp -R ../docs/images images
+  - cd output ; cp -R ../docs/images images; cp -R ../docs/cockpit-ui cockpit-ui
   - git init
   - git config user.name "${GH_USER_NAME}"
   - git config user.email "{GH_USER_EMAIL}"
