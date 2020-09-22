@@ -16,7 +16,6 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 body {
     margin-top: 50px;
     font-family: Arial, Helvetica, sans-serif;
@@ -44,7 +43,7 @@ a:hover, a:focus {
 .tile {
     border-radius: 10px;
     width: 160px;
-    height: 140px;
+    height: 138px;
     margin: 0px 10px 10px 0px;
     padding: 8px;
     color: White;
@@ -55,7 +54,7 @@ a:hover, a:focus {
 }
 
 .toolbar {
-    margin: 0px 8px 2px 0px;
+    margin: 0px 6px 2px 0px;
     color: white;
     height: 32px;
     font-family: Arial, Helvetica, sans-serif;
@@ -80,7 +79,7 @@ a:hover, a:focus {
 
 .credits {
     position: absolute;
-    bottom: 10px;
+    bottom: 2px;
 }
 
 .button-bar span {
@@ -89,13 +88,17 @@ a:hover, a:focus {
 
     </style>
     <script>
-function showPanel(int id) {
-  var x = document.getElementById("panel" + id);
+function showPanel(prefix, id) {
+  var x = document.getElementById(prefix + id);
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
+}
+function show(id) {
+  showPanel('panel', id);
+  showPanel('next-btn', id);
 }
     </script>
 </head>
@@ -111,41 +114,85 @@ function showPanel(int id) {
         <span style="padding-left:12px;">Fuel: 50%</span>
         <span style="float:right;">12:45pm</span>
     </div>
-    <div id="panel1" class="main-panel">
-        <div class="tile" style="background: Peru;">
-            <div>Chart</div>
-            <div><img src="img/chart2.svg" alt="Chart" class="main-icon"/></div>
+    <div>
+        <div id="next-btn2" style="color: white; padding: 142px 0; display: none; float: left;"
+             onclick="show(2); show(1);">
+            <div style="font-family: Arial, Helvetica, sans-serif; font-size: 24pt;">&nbsp;&lt;&nbsp;</div>
         </div>
-        <div class="tile" style="background: ForestGreen;">
-            <div>Dashboard</div>
-            <div><img src="img/dashboard2.svg" alt="Dashboard" class="main-icon"/></div>
+        <div id="panel1" class="main-panel" style="float: left;">
+            <div class="tile" style="background: Peru;">
+                <div>Chart</div>
+                <div><img src="img/chart2.svg" alt="Chart" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: ForestGreen;">
+                <div>Dashboard</div>
+                <div><img src="img/dashboard2.svg" alt="Dashboard" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: Olive;">
+                <div>Radar</div>
+                <div><img src="img/radar2.svg" alt="Radar" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: RoyalBlue;">
+                <div>Weather</div>
+                <div><img src="img/weather2.svg" alt="Weather" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: SeaGreen;">
+                <div>Camera</div>
+                <div><img src="img/camera2.svg" alt="Camera" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: IndianRed;">
+                <div>Audio</div>
+                <div><img src="img/audio2.svg" alt="Audio" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: SteelBlue;">
+                <div>Internet</div>
+                <div><img src="img/internet2.svg" alt="Internet" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: SaddleBrown;">
+                <div>Settings</div>
+                <div><img src="img/settings2.svg" alt="Settings" class="main-icon"/></div>
+            </div>
         </div>
-        <div class="tile" style="background: Olive;">
-            <div>Radar</div>
-            <div><img src="img/radar2.svg" alt="Radar" class="main-icon"/></div>
+        <div id="panel2" class="main-panel" style="display: none; float: left;">
+            <div class="tile" style="background: Peru;">
+                <div>Power</div>
+                <div><img src="img/power2.svg" alt="Power" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: ForestGreen;">
+                <div>Engine</div>
+                <div><img src="img/engine2.svg" alt="Engine" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: Olive;">
+                <div>Plumbing</div>
+                <div><img src="img/plumbing2.svg" alt="Plumbing" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: RoyalBlue;">
+                <div>Maintenance</div>
+                <div><img src="img/maintenance2.svg" alt="Maintenance" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: SeaGreen;">
+                <div>Apps</div>
+                <div><img src="img/apps2.svg" alt="Apps" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: IndianRed;">
+                <div>Travel</div>
+                <div><img src="img/travel2.svg" alt="Travel" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: SteelBlue;">
+                <div>Paperwork</div>
+                <div><img src="img/paperwork2.svg" alt="Paperwork" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: SaddleBrown;">
+                <div>Provisioning</div>
+                <div><img src="img/provisioning2.svg" alt="Provisioning" class="main-icon"/></div>
+            </div>
         </div>
-        <div class="tile" style="background: RoyalBlue;">
-            <div>Weather</div>
-            <div><img src="img/weather2.svg" alt="Weather" class="main-icon"/></div>
-        </div>
-        <div class="tile" style="background: SeaGreen;">
-            <div>Camera</div>
-            <div><img src="img/camera2.svg" alt="Camera" class="main-icon"/></div>
-        </div>
-        <div class="tile" style="background: IndianRed;">
-            <div>Audio</div>
-            <div><img src="img/audio2.svg" alt="Audio" class="main-icon"/></div>
-        </div>
-        <div class="tile" style="background: SteelBlue;">
-            <div>Internet</div>
-            <div><img src="img/internet2.svg" alt="Internet" class="main-icon"/></div>
-        </div>
-        <div class="tile" style="background: SaddleBrown;">
-            <div>Settings</div>
-            <div><img src="img/settings2.svg" alt="Settings" class="main-icon"/></div>
+        <div id="next-btn1" style="color: white; padding: 142px 0; float: right;">
+            <div style="font-family: Arial, Helvetica, sans-serif; font-size: 24pt;"
+                 onclick="show(1); show(2);">&nbsp;&gt;&nbsp;</div>
         </div>
     </div>
-    <div class="toolbar">
+    <div class="toolbar" style="clear: both;">
         <span>Depth: &uarr;50 ft</span>
         <span style="padding-left:16px;">AppWind: &uarr;15.2 kt</span>
         <span style="padding-left:16px;">AtmPress: &uarr;1013.25 mb</span>
