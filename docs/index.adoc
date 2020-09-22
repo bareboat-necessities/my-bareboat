@@ -2054,6 +2054,12 @@ Cockpit UI design
 
 https://bareboat-necessities.github.io/my-bareboat/cockpit-ui/cockpit-ui.html
 
+.Cockpit Home Page
+image::cockpit-home-page.png[Cockpit Home Page, align="center"]
+
+{zwsp} +
+
+
 == Boat Software
 
 === Software Data Flow
