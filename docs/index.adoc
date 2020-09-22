@@ -2050,6 +2050,10 @@ Rudder Position project
 
 https://hackaday.io/project/168592-opencpn-chart-plotter-w-autopilot-and-waypoints
 
+Cockpit UI design
+
+https://bareboat-necessities.github.io/my-bareboat/cockpit-ui/cockpit-ui.html
+
 == Boat Software
 
 === Software Data Flow
@@ -4394,6 +4398,12 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 * http://weewx.com/[Free Weather Station Software for Linux]
 
 * https://gpsd.gitlab.io/gpsd/NMEA.html[NMEA]
+
+* https://github.com/LarsSchy/SMAC-M[Making vector tiles]
+
+* https://t-rex.tileserver.ch/[Vector Tile Server]
+
+* https://www.automotivelinux.org/blog/agl-at-sea/[Maritime Grade Linux]
 
 {zwsp} +
 
