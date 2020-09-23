@@ -4411,6 +4411,8 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 
 * https://www.automotivelinux.org/blog/agl-at-sea/[Maritime Grade Linux]
 
+* https://github.com/terre-virtuelle/navisu[NaVisu is an open-source marine navigation software]
+
 {zwsp} +
 
 
