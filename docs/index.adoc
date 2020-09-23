@@ -4413,6 +4413,8 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 
 * https://github.com/terre-virtuelle/navisu[NaVisu is an open-source marine navigation software]
 
+* https://commons.wikimedia.org/wiki/Category:Nautical_Chart_Icons[Nautical_Chart_Icons]
+
 {zwsp} +
 
 
