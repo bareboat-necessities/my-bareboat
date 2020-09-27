@@ -4350,7 +4350,7 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 
 * https://cloudsmith.io/~openplotter/repos/openplotter/packages/[OpenPlotter builds]
 
-* http://pysselilivet.blogspot.com/2019/08/openplotter-beta-v2-quick-install-guide.html[OpenPlotter 2.x beta install guide]
+* http://pysselilivet.blogspot.com/2019/08/openplotter-beta-v2-quick-install-guide.html[OpenPlotter 2.x install guide]
 
 * http://forum.openmarine.net/[OpenPlotter Forums]
 
