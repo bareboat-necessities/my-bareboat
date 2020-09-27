@@ -1026,6 +1026,8 @@ PiJuice https://github.com/PiSupply/PiJuice
 
 PICAN-M https://copperhilltech.com/pican-m-nmea-0183-nmea-2000-hat-for-raspberry-pi/
 
+Boat IO board from CatamaranElectronics.com https://www.catamaranelectronics.com/boat-io
+
 NOTE: One more board: https://github.com/mairas/sailor-hat-hardware/blob/master/README.md
 
 * RTC Clock
