@@ -4446,8 +4446,6 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 
 * http://registry.iho.int/beta/portrayal/list.do[S-100 Portrayal Register]
 
-* https://github.com/weewx/weewx[Open source software for your weather station]
-
 * https://www.quark-elec.com[Quark-elec]
 
 {zwsp} +
