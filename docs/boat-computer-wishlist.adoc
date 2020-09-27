@@ -104,6 +104,7 @@ rudder position, interfaces to electric winches, sail tension sensors ports, liv
 . Integration with sonar, fishfinders
 . Integration with depth, speed, wind transducers, autopilot via NMEA
 . Integration with lidar or color night vision camera
+. Relays for programmatic nav/running/anchor lights on/off
 
 == Wishlist for OpenWtr router extension board for marine LTE/WiFi router
 
