@@ -1387,6 +1387,21 @@ https://scanstrut.com/products/waterproof-wireless-charge/rokk-sc-wc-04-detail
 
 {zwsp} +
 
+==== Other display options for a cockpit
+
+* Shenzhen United Touch Technology Co. http://www.unitedtouch.cn/
++
+Model: WT070B24, Brand: WinTouch, Capacitive Touch Screen 7 inch, (600 nits or custom higher), IP65, 1024x600, Cost under $100
++
+https://www.alibaba.com/product-detail/Good-quality-marine-navigation-system-touchscreen_62059970636.html
+
+* Shenzhen Shinho Electronic Technology Co. https://www.sihovision.com/
++
+Model: SL07W, Brand Sihovision, Capacitive Touch Screen 7 inch, (1000 nits), IP65, 1024x600, Cost under $300
++
+https://www.sihovision.com/industrial-touch-monitor/7-inch-industrial-wide-temperaturer-lcd-monitor-with-remote-control-1.html
+
+
 === Boat Gateway Box
 
 The second box is a boat LTE/WiFi/IoT gateway device and it is an extension to the boat computer.
