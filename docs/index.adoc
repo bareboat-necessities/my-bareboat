@@ -1037,6 +1037,10 @@ NOTE: One more board: https://github.com/mairas/sailor-hat-hardware/blob/master/
 * Coaxial Lightning Arresters for RF cables
 * Mount SD card reader to front panel to swap easier
 
+Do consider commercial NMEA multiplexers, they can offer good value for their price
+Example: Quark-elec https://www.quark-elec.com
+
+
 My wishlist for the perfect board https://bareboat-necessities.github.io/my-bareboat/boat-computer-wishlist.html
 
 .Amp Meter Wiring Diagram
