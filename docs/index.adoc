@@ -2027,13 +2027,8 @@ https://m5stack.com/
 
 https://github.com/merbanan/rtl_433
 
+
 ===== Boat Cellular LTE Voice and Data Gateway
-
-====== SMS
-
-====== OpenAirInterface
-
-https://www.openairinterface.org/
 
 ==== Testing the Boat Gateway
 
