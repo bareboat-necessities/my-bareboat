@@ -370,6 +370,9 @@ https://www.thingiverse.com/thing:1355018
 
 It's called 'The Ultimate Box Maker'.
 
+NOTE: Another nice case. DeskPi Pro (with SSD support and safe shutdown) https://deskpi.com/products/deskpi-pro-for-raspberry-pi-4
+
+
 
 ===== Front Panel
 
