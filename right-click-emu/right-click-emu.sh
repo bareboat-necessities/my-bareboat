@@ -2,7 +2,7 @@
 
 # See https://fmirkes.github.io/articles/20190827.html
 
-sudo apt install build-essential libevdev2 libevdev-dev
+sudo apt install build-essential libevdev2 libevdev-dev libinput-dev
 #git clone 'https://github.com/PeterCxy/evdev-right-click-emulation.git'
 #git clone 'https://github.com/ixnewton/evdev-right-click-emulation.git'
 git clone -b 'hold-right-click' 'https://github.com/pfpacket/evdev-right-click-emulation.git'
