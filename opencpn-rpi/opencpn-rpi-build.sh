@@ -19,6 +19,8 @@ cd build || exit 255
 cmake -DOCPN_BUNDLE_TCDATA=ON -DOCPN_BUNDLE_GSHHS=ON -DOCPN_USE_GL=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo \
  -DOCPN_USE_CRASHREPORT=ON -DOCPN_ENABLE_PORTAUDIO=OFF -DOCPN_ENABLE_SYSTEM_CMD_SOUND=ON -DOCPN_FORCE_GTK3=ON ..
 
+# in ../src/glChartCanvas.cpp add #include <GL/glx.h>
+
 make -sj5
 
 sudo make install
