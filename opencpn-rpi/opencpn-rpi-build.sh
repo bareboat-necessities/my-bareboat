@@ -8,9 +8,12 @@ sudo apt-get -y install build-essential cmake gettext git-core gpsd gpsd-clients
  libexpat1-dev libcairo2-dev libarchive-dev liblzma-dev libexif-dev libelf-dev libsqlite3-dev \
  bc bison flex libssl-dev python3 ddd htop
 
-git clone https://github.com/opencpn/opencpn.git
+git clone -b PPA-5.2.0.8 https://github.com/opencpn/opencpn.git
 
 cd opencpn && mkdir build
+
+# in CMakeLists.txt replace references to 3.0 wxWidgets to 3.1 wxWidgets
+
 cd build || exit 255
 
 cmake -DOCPN_BUNDLE_TCDATA=ON -DOCPN_BUNDLE_GSHHS=ON -DOCPN_USE_GL=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo \
