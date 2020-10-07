@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get -y install build-essential cmake gettext git-core libgtk-3-dev libgtk-3-0
+sudo apt-get -y install build-essential cmake gettext git-core libgtk-3-dev libgtk-3-0 libglu1-mesa-dev
 
 git clone -b v3.1.4 --recurse-submodules https://github.com/wxWidgets/wxWidgets.git
 cd wxWidgets || exit 255
