@@ -10,10 +10,11 @@ cd wxWidgets || exit 255
 mkdir build-gtk
 cd build-gtk || exit 255
 
-../configure --with-gtk=3 --with-libpng=sys --with-libjpeg=sys --with-libtiff=sys --with-regex=builtin \
+../configure --with-gtk=3 --with-libpng=sys --with-libjpeg=sys --with-libtiff=sys --with-regex=sys \
+ --with-zlib=sys --with-expat=sys \
  --enable-display --enable-geometry --enable-graphics_ctx --enable-mediactrl --enable-sound \
- --with-zlib=builtin --with-expat=builtin --enable-unicode --enable-aui --with-opengl \
- --enable-debug --enable-exceptions --enable-webview LDFLAGS="-static-libgcc -static-libstdc++"
+ --enable-unicode --with-opengl \
+ --enable-webview
 make -sj5
 sudo make install
 sudo ldconfig
