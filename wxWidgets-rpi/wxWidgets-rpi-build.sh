@@ -10,10 +10,20 @@ cd wxWidgets || exit 255
 mkdir build-gtk
 cd build-gtk || exit 255
 
-../configure --with-gtk=3 --with-libpng=sys --with-libjpeg=sys --with-libtiff=sys --with-regex=sys \
- --with-zlib=sys --with-expat=sys \
- --enable-display --enable-geometry --enable-graphics_ctx --enable-mediactrl --enable-sound \
- --enable-unicode --with-opengl \
+../configure \
+ --with-gtk=3 \
+ --with-libpng=sys \
+ --with-libjpeg=sys \
+ --with-libtiff=sys \
+ --with-regex=sys \
+ --with-zlib=sys \
+ --with-expat=sys \
+ --enable-display \
+ --enable-geometry \
+ --enable-graphics_ctx \
+ --enable-mediactrl \
+ --enable-sound \
+ --with-opengl \
  --enable-webview
 make -sj5
 sudo make install
