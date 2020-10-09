@@ -7,7 +7,7 @@ sudo apt-get -y install build-essential cmake gettext git-core libgtk-3-dev libg
 git clone --recurse-submodules https://github.com/wxWidgets/wxWidgets.git
 cd wxWidgets || exit 255
 
-git checkout 301e5ec9fe3719fac8a2786e8675b19e2242183e
+#git checkout 301e5ec9fe3719fac8a2786e8675b19e2242183e
 
 mkdir build-gtk
 cd build-gtk || exit 255
