@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Build gtk3 before
+# See ../gtk3-rpi/
+
 sudo apt-get -y install build-essential cmake gettext git-core libgtk-3-dev libgl1-mesa-dev libglu1-mesa-dev \
  libgtk2.0-dev \
  zlib1g-dev libjpeg-dev libpng-dev libtiff5-dev libsm-dev autotools-dev autoconf libexpat1-dev libxt-dev \
