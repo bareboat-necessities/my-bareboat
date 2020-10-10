@@ -39,3 +39,8 @@ git clone -b "debian/3.24.23-2" https://salsa.debian.org/gnome-team/gtk3.git
 cd gtk3 || exit 255
 
 dpkg-buildpackage -rfakeroot -b -uc -us
+
+sudo dpkg -i ../libgtk-3-common_3.24.23-2_all.deb
+sudo dpkg -i ../libgtk-3-0_3.24.23-2_armhf.deb
+sudo dpkg -i ../gir1.2-gtk-3.0_3.24.23-2_armhf.deb
+sudo dpkg -i ../libgtk-3-dev_3.24.23-2_armhf.deb
