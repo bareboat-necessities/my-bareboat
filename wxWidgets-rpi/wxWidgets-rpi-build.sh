@@ -10,11 +10,11 @@ cd wxWidgets || exit 255
 
 #git checkout 301e5ec9fe3719fac8a2786e8675b19e2242183e
 
-mkdir build-gtk2
-cd build-gtk2 || exit 255
+mkdir build-gtk3
+cd build-gtk3 || exit 255
 
 ../configure \
- --with-gtk=2 \
+ --with-gtk=3 \
  --with-libpng=sys \
  --with-libjpeg=sys \
  --with-libtiff=sys \
