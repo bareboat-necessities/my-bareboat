@@ -29,7 +29,7 @@ Version=1.0
 Type=Application
 Name=evdev-rce
 GenericName=Enable long-press-to-right-click gesture
-Exec=env LONG_CLICK_INTERVAL=2000 LONG_CLICK_FUZZ=50 /usr/local/bin/evdev-rce
+Exec=env LONG_CLICK_INTERVAL=800 LONG_CLICK_FUZZ=50 /usr/local/bin/evdev-rce
 Terminal=true
 StartupNotify=false
 EOF
