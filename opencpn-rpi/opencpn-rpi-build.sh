@@ -10,6 +10,7 @@ sudo apt-get -y install build-essential cmake gettext git-core gpsd gpsd-clients
  libexpat1-dev libcairo2-dev libarchive-dev liblzma-dev libexif-dev libelf-dev libsqlite3-dev \
  bc bison flex libssl-dev python3 ddd htop
 
+# git clone https://github.com/bareboat-necessities/OpenCPN.git
 git clone -b PPA-5.2.0.8 https://github.com/opencpn/opencpn.git
 
 cd opencpn && mkdir build
