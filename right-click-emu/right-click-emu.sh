@@ -23,6 +23,7 @@ sudo udevadm trigger
 
 # $HOME/.config/autostart/evdev-rce.desktop
 
+mkdir -p ~/.config/autostart
 cat << EOF > ~/.config/autostart/evdev-rce.desktop
 [Desktop Entry]
 Version=1.0
