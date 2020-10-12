@@ -26,11 +26,11 @@ cd gdk-pixbuf || exit 255
 sudo apt-get -y install dh-exec meson libglib2.0-doc
 dpkg-buildpackage -rfakeroot -b -uc -us
 
-sudo dpkg -i ../libgdk-pixbuf2.0-bin_2.40.0+dfsg-5_armhf.deb
+sudo dpkg -i ../libgdk-pixbuf2.0-bin_2.40.0+dfsg-5_*.deb
 sudo dpkg -i ../libgdk-pixbuf2.0-common_2.40.0+dfsg-5_all.deb
-sudo dpkg -i ../libgdk-pixbuf2.0-0_2.40.0+dfsg-5_armhf.deb
-sudo dpkg -i ../gir1.2-gdkpixbuf-2.0_2.40.0+dfsg-5_armhf.deb
-sudo dpkg -i ../libgdk-pixbuf2.0-dev_2.40.0+dfsg-5_armhf.deb
+sudo dpkg -i ../libgdk-pixbuf2.0-0_2.40.0+dfsg-5_*.deb
+sudo dpkg -i ../gir1.2-gdkpixbuf-2.0_2.40.0+dfsg-5_*.deb
+sudo dpkg -i ../libgdk-pixbuf2.0-dev_2.40.0+dfsg-5_*.deb
 
 cd ..
 
@@ -41,6 +41,6 @@ cd gtk3 || exit 255
 dpkg-buildpackage -rfakeroot -b -uc -us
 
 sudo dpkg -i ../libgtk-3-common_3.24.23-2_all.deb
-sudo dpkg -i ../libgtk-3-0_3.24.23-2_armhf.deb
-sudo dpkg -i ../gir1.2-gtk-3.0_3.24.23-2_armhf.deb
-sudo dpkg -i ../libgtk-3-dev_3.24.23-2_armhf.deb
+sudo dpkg -i ../libgtk-3-0_3.24.23-2_*.deb
+sudo dpkg -i ../gir1.2-gtk-3.0_3.24.23-2_*.deb
+sudo dpkg -i ../libgtk-3-dev_3.24.23-2_*.deb
