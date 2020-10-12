@@ -23,7 +23,7 @@ git clone -b "debian/2.40.0+dfsg-5" https://salsa.debian.org/gnome-team/gdk-pixb
 
 cd gdk-pixbuf || exit 255
 
-sudo apt-get -y install dh-exec meson
+sudo apt-get -y install dh-exec meson libglib2.0-doc
 dpkg-buildpackage -rfakeroot -b -uc -us
 
 sudo dpkg -i ../libgdk-pixbuf2.0-bin_2.40.0+dfsg-5_armhf.deb
