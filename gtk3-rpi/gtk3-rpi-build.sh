@@ -36,7 +36,7 @@ sudo apt-get -y install dh-exec meson \
     libpango1.0-dev                   \
     libwayland-dev                    \
     libxcomposite-dev                 \
-    ibxcursor-dev                     \
+    libxcursor-dev                    \
     libxdamage-dev                    \
     libxext-dev l                     \
     ibxfixes-dev                      \
