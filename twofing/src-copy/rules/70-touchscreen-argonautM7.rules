@@ -3,4 +3,4 @@ SUBSYSTEMS=="usb",ACTION=="add",KERNEL=="event*",ATTRS{idVendor}=="04d8",ATTRS{i
 SUBSYSTEMS=="usb",ACTION=="add",KERNEL=="event*",ATTRS{idVendor}=="222a",ATTRS{idProduct}=="0001",SYMLINK+="twofingtouch",RUN+="/bin/chmod a+r /dev/twofingtouch"
 KERNEL=="event*",ATTRS{name}=="Argonaut. Touchscreen",SYMLINK+="twofingtouch",RUN+="/bin/chmod a+r /dev/twofingtouch"
 KERNEL=="event*",ATTRS{name}=="Microchip Technology, Inc.",SYMLINK+="twofingtouch",RUN+="/bin/chmod a+r /dev/twofingtouch"
-KERNEL=="event*",ATTRS{name}=="ILITEK ILITEK-TP Mouse",SYMLINK+="twofingtouch",RUN+="/bin/chmod a+r /dev/twofingtouch"
+KERNEL=="event*",ATTRS{name}=="ILITEK ILITEK-TP",SYMLINK+="twofingtouch",RUN+="/bin/chmod a+r /dev/twofingtouch"
