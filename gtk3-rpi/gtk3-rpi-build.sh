@@ -23,7 +23,32 @@ git clone -b "debian/2.40.0+dfsg-5" https://salsa.debian.org/gnome-team/gdk-pixb
 
 cd gdk-pixbuf || exit 255
 
-sudo apt-get -y install dh-exec meson libglib2.0-doc
+sudo apt-get -y install dh-exec meson \
+    libglib2.0-doc                    \
+    libatk-bridge2.0-dev              \
+    libatk1.0-dev                     \
+    libcairo2-dev                     \
+    libegl1-mesa-dev                  \
+    libepoxy-dev                      \
+    libfontconfig1-dev                \
+    libfribidi-dev                    \
+    libharfbuzz-dev                   \
+    libpango1.0-dev                   \
+    libwayland-dev                    \
+    libxcomposite-dev                 \
+    ibxcursor-dev                     \
+    libxdamage-dev                    \
+    libxext-dev l                     \
+    ibxfixes-dev                      \
+    libxi-dev                         \
+    libxinerama-dev                   \
+    libxkbcommon-dev                  \
+    libxml2-utils                     \
+    libxrandr-dev                     \
+    wayland-protocols                 \
+    libatk1.0-doc                     \
+    libpango1.0-doc
+
 dpkg-buildpackage -rfakeroot -b -uc -us
 
 sudo dpkg -i ../libgdk-pixbuf2.0-bin_2.40.0+dfsg-5_*.deb
