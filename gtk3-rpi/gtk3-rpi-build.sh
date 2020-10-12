@@ -38,7 +38,7 @@ sudo apt-get -y install dh-exec meson \
     libxcomposite-dev                 \
     libxcursor-dev                    \
     libxdamage-dev                    \
-    libxext-dev l                     \
+    libxext-dev                       \
     ibxfixes-dev                      \
     libxi-dev                         \
     libxinerama-dev                   \
