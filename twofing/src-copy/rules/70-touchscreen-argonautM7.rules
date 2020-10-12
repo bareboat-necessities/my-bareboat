@@ -1,4 +1,5 @@
 SUBSYSTEMS=="usb",ACTION=="add",KERNEL=="event*",ATTRS{idVendor}=="0000",ATTRS{idProduct}=="0009",SYMLINK+="twofingtouch",RUN+="/bin/chmod a+r /dev/twofingtouch"
 SUBSYSTEMS=="usb",ACTION=="add",KERNEL=="event*",ATTRS{idVendor}=="04d8",ATTRS{idProduct}=="f724",SYMLINK+="twofingtouch",RUN+="/bin/chmod a+r /dev/twofingtouch"
+SUBSYSTEMS=="usb",ACTION=="add",KERNEL=="event*",ATTRS{idVendor}=="222a",ATTRS{idProduct}=="0001",SYMLINK+="twofingtouch",RUN+="/bin/chmod a+r /dev/twofingtouch"
 KERNEL=="event*",ATTRS{name}=="Argonaut. Touchscreen",SYMLINK+="twofingtouch",RUN+="/bin/chmod a+r /dev/twofingtouch"
 KERNEL=="event*",ATTRS{name}=="Microchip Technology, Inc.",SYMLINK+="twofingtouch",RUN+="/bin/chmod a+r /dev/twofingtouch"
