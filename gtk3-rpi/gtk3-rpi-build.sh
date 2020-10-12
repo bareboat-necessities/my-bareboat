@@ -39,7 +39,7 @@ sudo apt-get -y install dh-exec meson \
     libxcursor-dev                    \
     libxdamage-dev                    \
     libxext-dev                       \
-    ibxfixes-dev                      \
+    libxfixes-dev                     \
     libxi-dev                         \
     libxinerama-dev                   \
     libxkbcommon-dev                  \
