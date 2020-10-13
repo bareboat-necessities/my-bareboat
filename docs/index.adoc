@@ -2315,6 +2315,16 @@ So change it to 11pt in OpenCPN and Desktop Settings.
 
 Change desktop background color to black and text color to white (Right Click on desktop -> Desktop Preferences).
 
+===== Fonts
+
+Default Raspberry OS fonts are not very readable on small displays in cocktpit (especially under sunlight)
+Install Ubuntu fonts and switch to using them.
+
+[source, bash]
+----
+ sudo apt install fonts-ubuntu
+----
+
 ===== Multiple Desktops
 
 Start OpenBox config
