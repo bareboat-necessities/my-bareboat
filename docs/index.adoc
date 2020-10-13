@@ -2288,6 +2288,9 @@ dtoverlay=pi3-disable-bt
 
 ==== Look & Feel Settings
 
+You want to change all your look and feel settings BEFORE you install OpenCPN (otherwise it will still mix it
+with old settings)
+
 ===== Dark Theme
 
 [source, bash]
