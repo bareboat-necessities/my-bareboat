@@ -20,7 +20,7 @@ Original from this post: [Direct Sampling Mode in 820T2 DVB-T on Linux os &#8211
 Run as `root` user:
 
 ```
-root@pc:/home# apt install build-essential git cmake -y
+root@pc:/home# apt-get -y install build-essential git cmake -y
 root@pc:/home# git clone https://github.com/bclswl0827/rtl-sdr.git
 root@pc:/home# cd rtl-sdr
 root@pc:/home/rtl-sdr# mkdir build

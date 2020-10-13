@@ -2,7 +2,7 @@
 
 # install OpenCPN plugins
 
-sudo apt install                    \
+sudo apt-get -y install                    \
 opencpn-plugin-calculator           \
 opencpn-plugin-celestial            \
 opencpn-plugin-chartscale           \

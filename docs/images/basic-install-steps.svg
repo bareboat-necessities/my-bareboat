@@ -252,7 +252,7 @@
        textLength="401"
        x="146"
        y="450.5313"
-       id="text45">Configure Touchscreen, Onscreen Keyboard, twofing, svkbd, desktop</text>
+       id="text45">Configure Touchscreen, Onscreen Keyboard, evdev-rce, twofing, onboard, desktop</text>
     <rect
        fill="#FEFECE"
        filter="url(#f1u7vd0jd95n2u)"
@@ -1373,7 +1373,7 @@ start
 :Install OpenPlotter;
 :Install Raspbian Updates and Firmware Updates;
 :Configure Pi, Kernel, Interfaces, Video Memory Split, Audio;
-:Configure Touchscreen, Onscreen Keyboard, twofing, svkbd, desktop;
+:Configure Touchscreen, Onscreen Keyboard, evdev-rce, twofing, onboard, desktop;
 :Update OpenPlotter applications;
 :Configure Serial, I2C, PyPilot, IMU, GPS sensor, AIS;
 :Configure SignalK Connections, SignalK Time Sync, SignalK NMEA;

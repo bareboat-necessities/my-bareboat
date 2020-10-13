@@ -2,7 +2,7 @@
 
 # See https://fmirkes.github.io/articles/20190827.html
 
-sudo apt install build-essential libevdev2 libevdev-dev libinput-dev
+sudo apt-get -y install build-essential libevdev2 libevdev-dev libinput-dev
 git clone -b 'hold-right-click' 'https://github.com/bareboat-necessities/evdev-right-click-emulation.git'
 cd 'evdev-right-click-emulation' || exit 255
 make all

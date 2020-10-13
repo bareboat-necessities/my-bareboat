@@ -3,7 +3,7 @@
 # See https://tools.suckless.org/x/svkbd/
 # and https://slackbuilds.org/repository/14.2/accessibility/svkbd/
 
-sudo apt install build-essential libx11-dev libxtst-dev libxi-dev
+sudo apt-get -y install build-essential libx11-dev libxtst-dev libxi-dev
 wget http://ponce.cc/slackware/sources/repo/svkbd-20140130.tar.gz
 gzip -cd svkbd-20140130.tar.gz | tar xvf -
 cd svkbd-20140130/

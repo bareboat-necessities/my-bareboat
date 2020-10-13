@@ -4,7 +4,7 @@
 # and https://github.com/Plippo/twofing
 # and https://github.com/sjlongland/twofing
 
-sudo apt install build-essential libx11-dev libxtst-dev libxi-dev x11proto-randr-dev libxrandr-dev git
+sudo apt-get -y install build-essential libx11-dev libxtst-dev libxi-dev x11proto-randr-dev libxrandr-dev git
 git clone https://github.com/Plippo/twofing.git
 
 cd twofing || exit 255
@@ -15,7 +15,7 @@ sudo bash -c 'cat << EOF > /etc/udev/rules.d/70-touchscreen-argonautM7.rules
 SUBSYSTEMS=="usb",ACTION=="add",KERNEL=="event*",ATTRS{idVendor}=="0000",ATTRS{idProduct}=="0009",SYMLINK+="twofingtouch",RUN+="/bin/chmod a+r /dev/twofingtouch"
 KERNEL=="event*",ATTRS{name}=="Argonaut. Touchscreen",SYMLINK+="twofingtouch",RUN+="/bin/chmod a+r /dev/twofingtouch"
 EOF'
-sudo apt install xserver-xorg-input-evdev xinput-calibrator
+sudo apt-get -y install xserver-xorg-input-evdev xinput-calibrator
 sudo bash -c 'cat << EOF > /usr/share/X11/xorg.conf.d/90-touchinput.conf
 Section "InputClass"
     Identifier "calibration"

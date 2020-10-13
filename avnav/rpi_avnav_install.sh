@@ -11,9 +11,9 @@ deb https://open-mind.space/repo/ buster-stable avnav
 EOF'
 
 sudo apt update
-sudo apt install avnav
-sudo apt install xterm
-sudo apt install mpg123
+sudo apt-get -y install avnav
+sudo apt-get -y install xterm
+sudo apt-get -y install mpg123
 
 mkdir -p /home/pi/AvNavCharts/out
 
@@ -33,7 +33,7 @@ sudo systemctl enable avnav
 #
 # sudo systemctl start avnav
 
-sudo apt install xdotool
+sudo apt-get -y install xdotool
 
 #
 # Open browser with URL: http://localhost:8099/

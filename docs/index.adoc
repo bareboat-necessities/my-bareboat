@@ -1167,7 +1167,7 @@ temp=48.0'C
 Check your USB set up
 [source, shell]
 -----
-pi@openplotter:~ $ sudo apt install uhubctl
+pi@openplotter:~ $ sudo apt-get -y install uhubctl
 pi@openplotter:~ $ sudo uhubctl
 Current status for hub 2-1.4 [05e3:0612 GenesysLogic USB3.0 Hub, USB 3.00, 4 ports]
   Port 1: 02a0 power 5gbps Rx.Detect
@@ -1201,7 +1201,7 @@ Current status for hub 1 [1d6b:0002 Linux 4.19.97-v8+ xhci-hcd xHCI Host Control
 Check SSD Drive transfer speed
 [source, shell]
 -----
-pi@openplotter:~ $ sudo apt install hdparm
+pi@openplotter:~ $ sudo apt-get -y install hdparm
 pi@openplotter:~ $ sudo hdparm -Tt /dev/sda
 
 /dev/sda:
@@ -2125,7 +2125,7 @@ On your boat computer install nmap
 
 [source, shell]
 -----
-sudo apt install nmap
+sudo apt-get -y install nmap
 -----
 
 and use
@@ -2220,7 +2220,7 @@ Install missing ones:
 
 [source,shell]
 ----
-sudo apt install `apt-cache search opencpn | cut -d ' ' -f1`
+sudo apt-get -y install `apt-cache search opencpn | cut -d ' ' -f1`
 ----
 
 
@@ -2228,7 +2228,7 @@ I also like to add firefox as additional browser in case chromium fails to displ
 
 [source,shell]
 ----
-sudo apt install firefox-esr
+sudo apt-get -y install firefox-esr
 ----
 
 
@@ -2295,7 +2295,7 @@ with old settings)
 
 [source, bash]
 ----
-sudo apt install breeze-gtk-theme breeze-icon-theme breeze-icon-theme breeze-icon-theme-rcc breeze-cursor-theme
+sudo aapt-get -y install breeze-gtk-theme breeze-icon-theme breeze-icon-theme breeze-icon-theme-rcc breeze-cursor-theme
 ----
 
 Start lxappearance
@@ -2325,7 +2325,7 @@ Install Ubuntu fonts and switch to using them.
 
 [source, bash]
 ----
- sudo apt install fonts-ubuntu
+ sudo apt-get -y install fonts-ubuntu
 ----
 
 ===== Multiple Desktops
@@ -2380,7 +2380,7 @@ You can use 'wmctrl' command to switch between desktops and start programs on di
 
 [source, bash]
 ----
-sudo apt install wmctrl
+sudo apt-get -y install wmctrl
 ----
 
 Examples:
@@ -2403,7 +2403,7 @@ You want more gradual menu structure than default. Install 'extra-xdg-menus'.
 
 [source, bash]
 ----
-sudo apt install extra-xdg-menus
+sudo apt-get -y install extra-xdg-menus
 ----
 
 ==== Setting Serial Devices
@@ -2460,7 +2460,7 @@ BU-353S4 GPS USB mouse by default is using binary SiRF protocol. You need to swi
 
 [source, shell]
 ------
-sudo apt install gpsd-clients
+sudo apt-get -y install gpsd-clients
 ------
 
 Do
@@ -2496,7 +2496,7 @@ https://stellarium.org/
 
 [source, shell]
 ------
-sudo apt install stellarium
+sudo apt-get -y install stellarium
 ------
 
 Stellarium starts in full screen mode and with my screen resolution the 'Exit'
@@ -2520,13 +2520,13 @@ See history in https://github.com/daniel-s-ingram/stellarium-oculus
 
 [source, shell]
 ----
-sudo apt install build-essential cmake zlib1g-dev libgl1-mesa-dev gcc g++ \
+sudo apt-get -y installv build-essential cmake zlib1g-dev libgl1-mesa-dev gcc g++ \
  graphviz doxygen gettext git \-plugins \
  libqt5serialport5 libqt5serialport5-dev qtpositioni
  qtscript5-dev libqt5svg5-dev qttools5-dev-tools qttools5-dev \
  libqt5opengl5-dev qtmultimedia5-dev libqt5multimedia5ng5-dev libgps-dev \
  libqt5positioning5 libqt5positioning5-plugins
-sudo apt install libdrm-dev qtbase5-dev
+sudo apt-get -y install libdrm-dev qtbase5-dev
 curl -O -L https://github.com/Stellarium/stellarium/releases/download/v0.20.1/stellarium-0.20.1.tar.gz
 gzip -cd < stellarium-0.20.1.tar.gz | tar xvf -
 cd stellarium-0.20.1 && mkdir -p builds/unix
@@ -2570,7 +2570,7 @@ az is azimuth in radians.
 Install shell calculator
 [source, shell]
 ----
-sudo apt install bc
+sudo apt-get -y install bc
 ----
 
 Now if we read heading from SignalK we can update azimuth of view in Stellarium
@@ -2614,7 +2614,7 @@ https://www.gpsbabel.org/
 
 [source, shell]
 ------
-sudo apt install gpsbabel
+sudo apt-get -y install gpsbabel
 ------
 
 === Charts and OpenCPN
@@ -2762,20 +2762,17 @@ reboot
 ===== On-screen keyboard
 
 One more issue is entering the text on a touchscreen. I've added virtual on screen keyboard. I've compared
-several and the one I liked the most is svkbd.
+several ones, and the one I liked the most is onboard https://github.com/linuxmint/onboard
 
 I've made a script to install it.
-See: https://github.com/bareboat-necessities/my-bareboat/blob/master/svkbd/rpi_svkbd_install.sh
+See: https://github.com/bareboat-necessities/my-bareboat/blob/master/onboard/onboard-install-rpi.sh
 
 [source,shell]
 ----
-wget https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/svkbd/rpi_svkbd_install.sh
-chmod +x rpi_svkbd_install.sh
-./rpi_svkbd_install.sh
-reboot
+sudo apt-get -y install dbus-x11 onboard
 ----
 
-With 'twofing' fix and an on-screen svkbd keyboard OpenCPN is much more usable on my touch screen display.
+With 'twofing' fix and an on-screen 'onboard' keyboard OpenCPN is much more usable on my touch screen display.
 Smooth Panning/Zooming, OpenGL, and Touchscreen should be all enabled in OpenCPN settings.
 
 The sound didn't work out of aux port. By default Raspberry Buster uses HDMI audio output and Argonaut M7 doesn't
@@ -2942,7 +2939,7 @@ googling the chipset and the symptoms. Usually it gives better results than just
 
 [source, shell]
 -----
-sudo apt install cmake libusb-1.0.0-dev build-essential
+sudo apt-get -y install cmake libusb-1.0.0-dev build-essential
 git clone https://github.com/bareboat-necessities/my-bareboat
 cd my-bareboat/rtl-sdr/ && mkdir build && cd build
 cmake ../ -DINSTALL_UDEV_RULES=ON
@@ -3003,7 +3000,7 @@ https://github.com/EliasOenal/multimon-ng
 
 [source, shell]
 -----
-sudo apt install multimon-ng netcat
+sudo apt-get -y install multimon-ng netcat
 -----
 
 ==== Meta Packages for SDR and HAM radio
@@ -3017,7 +3014,7 @@ Example:
 
 [source, shell]
 -----
-sudo apt install hamradio-sdr
+sudo apt-get -y install hamradio-sdr
 -----
 
 ==== GQRX
@@ -3027,7 +3024,7 @@ https://gqrx.dk/
 
 [source, shell]
 -----
-sudo apt install rtl-sdr rtl-ais gqrx-sdr
+sudo apt-get -y install rtl-sdr rtl-ais gqrx-sdr
 -----
 
 
@@ -3059,7 +3056,7 @@ https://cubicsdr.com/
 
 [source, shell]
 ----
-sudo apt install cubicsdr
+sudo apt-get -y install cubicsdr
 ----
 
 .Cubic SDR
@@ -3075,9 +3072,9 @@ https://github.com/righthalfplane/SdrGlut
 
 [source, shell]
 ----
-sudo apt install build-essential libsoapysdr0.6 libsoapysdr-dev libopenal-dev \
+sudo apt-get -y install build-essential libsoapysdr0.6 libsoapysdr-dev libopenal-dev \
  libliquid-dev freeglut3 freeglut3-dev libalut0 libalut-dev librtaudio-dev
-sudo apt install git
+sudo apt-get -y install git
 cd /home/pi
 git clone https://github.com/righthalfplane/SdrGlut.git
 cd SdrGlut
@@ -3107,16 +3104,16 @@ https://james.ahlstrom.name/quisk/
 
 [source, shell]
 ----
-sudo apt install python3-wxgtk4.0 ## Use this for Python3
-sudo apt install libfftw3-dev
-sudo apt install libasound2-dev
-sudo apt install portaudio19-dev
-sudo apt install libpulse-dev
-sudo apt install python3-dev
-sudo apt install libpython3-dev
-sudo apt install python3-usb
-sudo apt install python3-setuptools
-sudo apt install python3-pip
+sudo apt-get -y install python3-wxgtk4.0 ## Use this for Python3
+sudo apt-get -y install libfftw3-dev
+sudo apt-get -y install libasound2-dev
+sudo apt-get -y install portaudio19-dev
+sudo apt-get -y install libpulse-dev
+sudo apt-get -y install python3-dev
+sudo apt-get -y install libpython3-dev
+sudo apt-get -y install python3-usb
+sudo apt-get -y install python3-setuptools
+sudo apt-get -y install python3-pip
 sudo python3 -m pip install --upgrade quisk
 
 ----
@@ -3136,7 +3133,7 @@ https://wiki.gnuradio.org/
 
 [source, shell]
 ----
-sudo apt install gnuradio
+sudo apt-get -y install gnuradio
 ----
 
 Running:
@@ -3152,7 +3149,7 @@ FlDigi has decoders for use in marine communications SitorB/NavTex, RTTY, WeFax,
 
 [source, shell]
 ----
-sudo apt install fldigi
+sudo apt-get -y install fldigi
 ----
 
 
@@ -3171,7 +3168,7 @@ https://www.p4dragon.com/en/PMON.html
 echo "deb https://www.scs-ptc.com/repo/packages/ buster non-free" | sudo tee /etc/apt/sources.list.d/scs.list > /dev/null
 wget -q -O - https://www.scs-ptc.com/repo/packages/scs.gpg.key | sudo apt-key add -
 sudo apt update
-sudo apt install pmon
+sudo apt-get -y install pmon
 ----
 
 Running:
@@ -3242,7 +3239,7 @@ https://www.rtl-sdr.com/forum/viewtopic.php?t=1519
 
 [source, shell]
 ----
-sudo apt install default-jdk
+sudo apt-get -y install default-jdk
 cd /home/pi
 mkdir JNX
 cd JNX
@@ -3270,8 +3267,8 @@ See: https://arachnoid.com/JWX/
 
 [source, shell]
 ----
-sudo apt install default-jdk
-sudo apt install hamfax
+sudo apt-get -y install default-jdk
+sudo apt-get -y install hamfax
 cd /home/pi
 mkdir JWX
 cd JWX
@@ -3299,8 +3296,8 @@ See: http://gpredict.oz9aec.net/
 
 [source, shell]
 ----
-sudo apt install predict
-sudo apt install gpredict
+sudo apt-get -y install predict
+sudo apt-get -y install gpredict
 
 cd /home/pi
 curl https://wxtoimgrestored.xyz/beta/wxtoimg-armhf-2.11.2-beta.deb > wxtoimg-armhf-2.11.2-beta.deb
@@ -3347,8 +3344,8 @@ http://gnuais.sourceforge.net/
 
 [source, shell]
 ----
-sudo apt install gnuais
-sudo apt install gnuaisgui
+sudo apt-get -y install gnuais
+sudo apt-get -y install gnuaisgui
 
 sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/gnuaisgui.desktop
 [Desktop Entry]
@@ -3470,9 +3467,9 @@ deb https://open-mind.space/repo/ buster-stable avnav
 EOF'
 
 sudo apt update
-sudo apt install avnav
-sudo apt install xterm
-sudo apt install mpg123
+sudo apt-get -y install avnav
+sudo apt-get -y install xterm
+sudo apt-get -y install mpg123
 
 mkdir -p /home/pi/AvNavCharts/out
 
@@ -3516,7 +3513,7 @@ Register menu item:
 
 [source, shell]
 ----
-sudo apt install xdotool
+sudo apt-get -y install xdotool
 
 cd /home/pi
 curl https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/raspberrypi-ui-mods/usr/share/raspi-ui-overrides/desktop-directories/Navigation.directory > Navigation.directory && \
@@ -3602,8 +3599,8 @@ Visual alarms are of no use if you do not watch. So we could add text-to-speech:
 wget -q https://ftp-master.debian.org/keys/release-10.asc -O- | sudo apt-key add -
 echo "deb http://deb.debian.org/debian buster non-free" | sudo tee -a /etc/apt/sources.list
 sudo apt update
-sudo apt install libttspico-utils
-sudo apt install sox
+sudo apt-get -y install libttspico-utils
+sudo apt-get -y install sox
 ----
 
 Example of playing message:
@@ -3665,7 +3662,7 @@ Create Menu entry:
 
 [source, shell]
 ----
-sudo apt install xdotool
+sudo apt-get -y install xdotool
 
 sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/freeboard-sk.desktop
 [Desktop Entry]
@@ -3701,7 +3698,7 @@ Add menu entry:
 
 [source, shell]
 ----
-sudo apt install xdotool
+sudo apt-get -y install xdotool
 
 sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/instrument-panel-sk.desktop
 [Desktop Entry]
@@ -3729,7 +3726,7 @@ Add menu entry:
 
 [source, shell]
 ----
-sudo apt install xdotool
+sudo apt-get -y install xdotool
 
 sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/sailgauge-sk.desktop
 [Desktop Entry]
@@ -3777,7 +3774,7 @@ Register in Menu
 
 [source, shell]
 ----
-sudo apt install xdotool
+sudo apt-get -y install xdotool
 
 sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/tuktuk.desktop
 [Desktop Entry]
@@ -3814,7 +3811,7 @@ Add the menu:
 
 [source, shell]
 ----
-sudo apt install xdotool
+sudo apt-get -y install xdotool
 
 sudo bash -c 'cat << EOF > /usr/share/raspi-ui-overrides/applications/signalk-kip.desktop
 [Desktop Entry]
@@ -3842,7 +3839,7 @@ https://github.com/tdolby/python-iridium-modem/
 
 [source, shell]
 ----
-sudo apt install wvdial ppp pppstatus picocom
+sudo apt-get -y install wvdial ppp pppstatus picocom
 ----
 
 I think it can be even done on your boat OpenWrt router.
@@ -3861,7 +3858,7 @@ Install C3 (Mono) on Raspberry Pi
 
 [source, shell]
 ----
-sudo apt install mono-complete
+sudo apt-get -y install mono-complete
 ----
 
 [cols="5,12,3,4", options="header"]
@@ -3921,7 +3918,7 @@ sudo xhost +SI:localuser:mopidy
 
 # Install Mopidy and all dependencies:
 sudo apt update
-sudo apt install mopidy mopidy-mpd mopidy-spotify mopidy-tunein
+sudo apt-get -y install mopidy mopidy-mpd mopidy-spotify mopidy-tunein
 
 # Install some needed packages
 sudo python3 -m pip install mem systems
@@ -4012,7 +4009,7 @@ Create a menu link to open Mopidy Web UI directly from desktop menu via this com
 
 [source, shell]
 ----
-sudo apt install xdotool
+sudo apt-get -y install xdotool
 
 cd /home/pi
 
@@ -4078,7 +4075,7 @@ http://www.sailcut.com/
 
 [source, shell]
 ----
-sudo apt install sailcut saillcut-doc
+sudo apt-get -y install sailcut saillcut-doc
 ----
 
 [.text-center]
@@ -4098,7 +4095,7 @@ http://boats.sourceforge.net/
 
 [source, shell]
 ----
-sudo apt install boats
+sudo apt-get -y install boats
 
 sudo bash -c 'cat << EOF > /usr/share/applications/boats.desktop
 [Desktop Entry]
