@@ -4438,7 +4438,7 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 
 * https://t-rex.tileserver.ch/[Vector Tile Server]
 
-* https://gdal.orgindex.html/[GDAL documentation]
+* https://gdal.org/[GDAL documentation]
 
 * https://www.automotivelinux.org/blog/agl-at-sea/[Maritime Grade Linux]
 
