@@ -4456,7 +4456,7 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 
 * https://www.quark-elec.com[Quark-elec]
 
-* https://github.com/redpesk-marine[RedPesk Marine]
+* https://github.com/redpesk-marine/documentation/tree/fulup-draft[RedPesk Marine]
 
 {zwsp} +
 
