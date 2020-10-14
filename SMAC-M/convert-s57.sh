@@ -12,7 +12,8 @@
 # export SMAC_M_HOME=`pwd` ; export ENC_ROOT=~/ENC_ROOT/US5CT1GQ/ ; export OUT=my_config.toml; ./convert-s57.sh
 #
 #
-# The result stored under chart-installation/data_files_conversion/shp_s57data/shp/
+# The result stored under ${SMAC_M_HOME}/../chart-installation/data_files_conversion/shp_s57data/shp/
+# see (-enhancedchartdata argument)
 #
 
 OLD_DIR=`pwd`
