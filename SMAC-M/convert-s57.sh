@@ -9,7 +9,7 @@
 #
 # Example:
 #
-# export SMAC_M_HOME=`pwd` ; export ENC_ROOT=~/ENC_ROOT/US5CT1GQ/ ; export OUT=foo.xml; ./convert-s57.sh
+# export SMAC_M_HOME=`pwd` ; export ENC_ROOT=~/ENC_ROOT/US5CT1GQ/ ; export OUT=my_config.toml; ./convert-s57.sh
 #
 
 OLD_DIR=`pwd`
@@ -27,5 +27,7 @@ python3 ${SMAC_M_HOME}/bin/generate_toml_config.py \
      --displaycategory Standard \
      --rule-set-path ./chart-installation/generate_map_files/resources/rules \
      -o ${OUT}
+
+python3 ${SMAC_M_HOME}/bin/generate_shapefiles.py ${OUT}
 
 cd ${OLD_DIR} || exit 255
