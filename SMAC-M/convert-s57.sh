@@ -33,4 +33,6 @@ python3 ${SMAC_M_HOME}/bin/generate_toml_config.py \
 
 python3 ${SMAC_M_HOME}/bin/generate_shapefiles.py ${OUT}
 
+python3 ./chart-installation/generate_map_files/generate_map_config.py ${OUT}
+
 cd ${OLD_DIR} || exit 255
