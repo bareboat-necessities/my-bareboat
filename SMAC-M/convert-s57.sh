@@ -2,16 +2,23 @@
 
 #
 # run it like this:
-#  SMAC_M_HOME=<path_to where you cloned https://github.com/LarsSchy/SMAC-M> \
-#  ENC_ROOT=<path to directory with ENC files> \
-#  OUT=<output-toml-config> \
+#  export SMAC_M_HOME=<path_to where you cloned https://github.com/LarsSchy/SMAC-M> ; \
+#  export ENC_ROOT=<path to directory with ENC files> ; \
+#  export OUT=<output-toml-config> ; \
 #  ./convert-s57.sh
+#
+# Example:
+#
+# export SMAC_M_HOME=`pwd` ; export ENC_ROOT=~/ENC_ROOT/US5CT1GQ/ ; export OUT=foo.xml; ./convert-s57.sh
+#
 
 OLD_DIR=`pwd`
 
 cd ${SMAC_M_HOME} || exit 255
 
-python3 ./bin/generate_toml_config.py \
+source "$(pipenv --venv)/bin/activate"
+
+python3 ${SMAC_M_HOME}/bin/generate_toml_config.py \
      --chart ${ENC_ROOT} \
      -rule-default-color IHO \
      --chartsymbols ./chart-installation/generate_map_files/resources/chartsymbols/chartsymbols_S57.xml \
