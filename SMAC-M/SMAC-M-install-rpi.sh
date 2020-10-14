@@ -9,6 +9,8 @@ pip3 install --user pipenv
 
 git clone https://github.com/LarsSchy/SMAC-M
 cd ./SMAC-M || exit 255
+
+. ~/.bashrc
 pipenv install
 pipenv run pip install "GDAL<=$(gdal-config --version)"
 
