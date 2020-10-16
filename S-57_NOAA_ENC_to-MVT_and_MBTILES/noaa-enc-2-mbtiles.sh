@@ -13,7 +13,7 @@ export S57_PROFILE=iw
 #export OGR_S57_OPTIONS="RETURN_PRIMITIVES=ON,RETURN_LINKAGES=ON,LNAM_REFS=ON,SPLIT_MULTIPOINT=ON,ADD_SOUNDG_DEPTH=ON"
 #export S57_PROFILE=
 
-MAXZOOM=5
+MAXZOOM=12
 NOAA_FILE=NJ_ENCs.zip
 
 mkdir noaa_enc/
@@ -38,17 +38,19 @@ do
    echo "processing $in"
    set -x
 
-#   ogr2ogr -append -skipfailures -update \
-#      -f MVT -dsco FORMAT=DIRECTORY -dsco MAXZOOM=${MAXZOOM} -dialect SQLITE \
-#      -nlt POINT25D \
-#      -fieldTypeToString StringList,IntegerList \
-#      `basename $in .000`-mvt $in
-
    ogr2ogr -append -skipfailures -update \
-      -f MVT -dsco FORMAT=MBTILES -dsco MAXZOOM=${MAXZOOM} -dialect SQLITE \
+      -f MVT -dsco FORMAT=DIRECTORY -dsco MAXZOOM=${MAXZOOM} \
+      -dsco TILING_SCHEME="EPSG:3857,-20037508.343,20037508.343,40075016.686" -dialect SQLITE \
       -nlt POINT25D \
       -fieldTypeToString StringList,IntegerList \
-      `basename $in .000`.mbtiles $in
+      `basename $in .000`-mvt $in
+
+#   ogr2ogr -append -skipfailures -update \
+#      -f MVT -dsco FORMAT=MBTILES -dsco MAXZOOM=${MAXZOOM} \
+#      -dsco TILING_SCHEME="EPSG:3857,-20037508.343,20037508.343,40075016.686" -dialect SQLITE \
+#      -nlt POINT25D \
+#      -fieldTypeToString StringList,IntegerList \
+#      `basename $in .000`.mbtiles $in
 
    set +x
 done
