@@ -4,9 +4,6 @@
 # these are needed for ogr2ogr s-57 plugin
 export OGR_S57_OPTIONS="RETURN_PRIMITIVES=ON,RETURN_LINKAGES=ON,LNAM_REFS=ON,SPLIT_MULTIPOINT=ON,ADD_SOUNDG_DEPTH=ON,RECODE_BY_DSSI=ON"
 
-# Needed for export plugin
-export S57_PROFILE=iw
-
 MAXZOOM=5
 
 NOAA_FILE=NJ_ENCs.zip
@@ -28,6 +25,7 @@ rm -rf *-mvt *.temp.db || true
 find . -name "US*.000" -type f | while read -r in
 do
     ogr2ogr -append -skipfailures -f MVT -dsco FORMAT=DIRECTORY -dsco MAXZOOM=${MAXZOOM} -dialect SQLITE \
+   --config S57_PROFILE iw \
      `basename $in .000`-mvt $in ;
 done
 
