@@ -12,6 +12,7 @@ unzip ${NOAA_FILE}
 rm -rf ${NOAA_FILE} || true
 cd ..
 
+# these are needed to keep ogr2ogr from crashing
 wget https://raw.githubusercontent.com/OpenCPN/OpenCPN/master/data/s57data/s57objectclasses.csv
 wget https://raw.githubusercontent.com/OpenCPN/OpenCPN/master/data/s57data/s57attributes.csv
 
