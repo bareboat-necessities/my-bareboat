@@ -2,7 +2,7 @@
 
 # IMPORTANT!!!
 # these are needed for ogr2ogr s-57 plugin
-export OGR_S57_OPTIONS="RETURN_PRIMITIVES=ON,RETURN_LINKAGES=ON,LNAM_REFS=ON,SPLIT_MULTIPOINT=ON,ADD_SOUNDG_DEPTH=ON"
+export OGR_S57_OPTIONS="RETURN_PRIMITIVES=ON,RETURN_LINKAGES=ON,LNAM_REFS=ON,SPLIT_MULTIPOINT=ON,ADD_SOUNDG_DEPTH=ON,RECODE_BY_DSSI=ON"
 
 MAXZOOM=5
 
@@ -24,6 +24,10 @@ wget https://raw.githubusercontent.com/OpenCPN/OpenCPN/master/data/s57data/s57at
 rm -rf *-mvt *.temp.db || true
 find . -name "US*.000" -type f | while read -r in
   do  ogr2ogr -append -skipfailures -f MVT -dsco FORMAT=DIRECTORY -dsco MAXZOOM=${MAXZOOM} \
+    -explodecollections \
+    --config S57_PROFILE iw --config OGR_S57_OPTIONS \
+    -mapFieldType StringList\|All=JSonStringList \
+    -mapFieldType IntegerList\|All=JSonIntegerList \
      `basename $in .000`-mvt $in
 done
 
