@@ -4,6 +4,8 @@
 # these are needed for ogr2ogr s-57 plugin
 export OGR_S57_OPTIONS="RETURN_PRIMITIVES=ON,RETURN_LINKAGES=ON,LNAM_REFS=ON,SPLIT_MULTIPOINT=ON,ADD_SOUNDG_DEPTH=ON"
 
+MAXZOOM=5
+
 NOAA_FILE=NJ_ENCs.zip
 
 mkdir noaa_enc/
@@ -20,7 +22,8 @@ wget https://raw.githubusercontent.com/OpenCPN/OpenCPN/master/data/s57data/s57ob
 wget https://raw.githubusercontent.com/OpenCPN/OpenCPN/master/data/s57data/s57attributes.csv
 
 rm -rf *-mvt *.temp.db || true
-find . -name "US*.000" -type f | while read -r in; do  ogr2ogr -append -skipfailures -f MVT -dsco FORMAT=DIRECTORY -dsco MAXZOOM=5 `basename $in .000`-mvt $in; done
+find . -name "US*.000" -type f | while read -r in; do  ogr2ogr -append -skipfailures -f MVT \
+ -dsco FORMAT=DIRECTORY -dsco MAXZOOM=${MAXZOOM} `basename $in .000`-mvt $in; done
 
 # Displaying projection CRS EPSG:3857
 # WSG 84 Pseudo-Mercator
