@@ -4,6 +4,7 @@
 # https://gdal.org/drivers/vector/mvt.html
 # https://github.com/alukach/s57-vector-tile-server
 # https://github.com/LarsSchy/SMAC-M
+# https://plugins.qgis.org/plugins/loadthemall/
 
 # IMPORTANT!!!
 # these are needed for ogr2ogr s-57 plugin
