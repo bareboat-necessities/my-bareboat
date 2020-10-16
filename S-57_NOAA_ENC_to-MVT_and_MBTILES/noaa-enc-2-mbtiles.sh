@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# IMPORTANT!!!
+# these are needed for ogr2ogr s-57 plugin
 export OGR_S57_OPTIONS="RETURN_PRIMITIVES=ON,RETURN_LINKAGES=ON,LNAM_REFS=ON,SPLIT_MULTIPOINT=ON,ADD_SOUNDG_DEPTH=ON"
 
 NOAA_FILE=NJ_ENCs.zip
@@ -12,6 +14,7 @@ unzip ${NOAA_FILE}
 rm -rf ${NOAA_FILE} || true
 cd ..
 
+# IMPORTANT!!!
 # these are needed to keep ogr2ogr from crashing
 wget https://raw.githubusercontent.com/OpenCPN/OpenCPN/master/data/s57data/s57objectclasses.csv
 wget https://raw.githubusercontent.com/OpenCPN/OpenCPN/master/data/s57data/s57attributes.csv
