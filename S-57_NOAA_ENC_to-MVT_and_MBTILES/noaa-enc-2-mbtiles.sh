@@ -1,9 +1,15 @@
 #!/bin/bash
 
+# https://gdal.org/drivers/vector/s57.html
+#
+
 # IMPORTANT!!!
 # these are needed for ogr2ogr s-57 plugin
-export OGR_S57_OPTIONS="RETURN_PRIMITIVES=ON,RETURN_LINKAGES=ON,LNAM_REFS=ON,SPLIT_MULTIPOINT=ON,ADD_SOUNDG_DEPTH=ON,RECODE_BY_DSSI=ON"
-export S57_PROFILE=
+export OGR_S57_OPTIONS="RETURN_PRIMITIVES=ON,RETURN_LINKAGES=ON,LNAM_REFS=ON,SPLIT_MULTIPOINT=ON,ADD_SOUNDG_DEPTH=ON,LIST_AS_STRING=ON,RECODE_BY_DSSI=ON"
+export S57_PROFILE=iw
+
+#export OGR_S57_OPTIONS="RETURN_PRIMITIVES=ON,RETURN_LINKAGES=ON,LNAM_REFS=ON,SPLIT_MULTIPOINT=ON,ADD_SOUNDG_DEPTH=ON"
+#export S57_PROFILE=
 
 MAXZOOM=5
 NOAA_FILE=NJ_ENCs.zip
@@ -21,12 +27,16 @@ cd ..
 wget https://raw.githubusercontent.com/OpenCPN/OpenCPN/master/data/s57data/s57attributes.csv
 wget https://raw.githubusercontent.com/OpenCPN/OpenCPN/master/data/s57data/s57objectclasses.csv
 
+cp s57attributes.csv s57attributes_iw.csv
+cp s57objectclasses.csv s57objectclasses_iw.csv
+
 rm -rf *-mvt *.temp.db || true
 find . -name "*.000" -type f | while read -r in
 do
    echo "processing $in"
    ogr2ogr -append -skipfailures -update \
       -f MVT -dsco FORMAT=DIRECTORY -dsco MAXZOOM=${MAXZOOM} -dialect SQLITE \
+      -nlt POINT25D \
       -fieldTypeToString StringList,IntegerList \
       `basename $in .000`-mvt $in
 done
