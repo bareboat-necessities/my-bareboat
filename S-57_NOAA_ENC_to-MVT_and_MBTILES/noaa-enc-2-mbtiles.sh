@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # https://gdal.org/drivers/vector/s57.html
-#
+# https://gdal.org/drivers/vector/mvt.html
+# https://github.com/alukach/s57-vector-tile-server
+# https://github.com/LarsSchy/SMAC-M
 
 # IMPORTANT!!!
 # these are needed for ogr2ogr s-57 plugin
@@ -34,14 +36,23 @@ rm -rf *-mvt *.temp.db || true
 find . -name "*.000" -type f | while read -r in
 do
    echo "processing $in"
+   set -x
+
+#   ogr2ogr -append -skipfailures -update \
+#      -f MVT -dsco FORMAT=DIRECTORY -dsco MAXZOOM=${MAXZOOM} -dialect SQLITE \
+#      -nlt POINT25D \
+#      -fieldTypeToString StringList,IntegerList \
+#      `basename $in .000`-mvt $in
+
    ogr2ogr -append -skipfailures -update \
-      -f MVT -dsco FORMAT=DIRECTORY -dsco MAXZOOM=${MAXZOOM} -dialect SQLITE \
+      -f MVT -dsco FORMAT=MBTILES -dsco MAXZOOM=${MAXZOOM} -dialect SQLITE \
       -nlt POINT25D \
       -fieldTypeToString StringList,IntegerList \
-      `basename $in .000`-mvt $in
+      `basename $in .000`.mbtiles $in
+
+   set +x
 done
 
 # Displaying projection CRS EPSG:3857
 # WSG 84 Pseudo-Mercator
-
 
