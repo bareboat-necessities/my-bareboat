@@ -25,10 +25,10 @@ rm -rf *-mvt *.temp.db || true
 find . -name "*.000" -type f | while read -r in
 do
    echo "processing $in"
-    ogr2ogr -append -skipfailures -update \
-     -f MVT -dsco FORMAT=DIRECTORY -dsco MAXZOOM=${MAXZOOM} -dialect SQLITE \
-     -fieldTypeToString StringList,IntegerList \
-     `basename $in .000`-mvt $in
+   ogr2ogr -append -skipfailures -update \
+      -f MVT -dsco FORMAT=DIRECTORY -dsco MAXZOOM=${MAXZOOM} -dialect SQLITE \
+      -fieldTypeToString StringList,IntegerList \
+      `basename $in .000`-mvt $in
 done
 
 # Displaying projection CRS EPSG:3857
