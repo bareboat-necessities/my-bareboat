@@ -4,6 +4,9 @@
 # these are needed for ogr2ogr s-57 plugin
 export OGR_S57_OPTIONS="RETURN_PRIMITIVES=ON,RETURN_LINKAGES=ON,LNAM_REFS=ON,SPLIT_MULTIPOINT=ON,ADD_SOUNDG_DEPTH=ON,RECODE_BY_DSSI=ON"
 
+# Needed for export plugin
+export S57_PROFILE=iw
+
 MAXZOOM=5
 
 NOAA_FILE=NJ_ENCs.zip
