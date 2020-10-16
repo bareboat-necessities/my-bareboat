@@ -22,13 +22,9 @@ wget https://raw.githubusercontent.com/OpenCPN/OpenCPN/master/data/s57data/s57ob
 wget https://raw.githubusercontent.com/OpenCPN/OpenCPN/master/data/s57data/s57attributes.csv
 
 rm -rf *-mvt *.temp.db || true
-find . -name "US*.000" -type f |
-while read -r in
+find . -name "US*.000" -type f | while read -r in
 do
-    ogr2ogr -append -skipfailures -f MVT -dsco FORMAT=DIRECTORY -dsco MAXZOOM=${MAXZOOM} \
-    -explodecollections \
-    --config S57_PROFILE iw --config OGR_S57_OPTIONS \
-    -mapFieldType StringList\|All=JSonStringList,IntegerList\|All=JSonIntegerList \
+    ogr2ogr -append -skipfailures -f MVT -dsco FORMAT=DIRECTORY -dsco MAXZOOM=${MAXZOOM} -dialect SQLITE \
      `basename $in .000`-mvt $in ;
 done
 
