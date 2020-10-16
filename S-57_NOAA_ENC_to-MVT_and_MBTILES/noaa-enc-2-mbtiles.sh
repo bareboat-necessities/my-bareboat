@@ -13,7 +13,7 @@ cd  noaa_enc/ || exit 255
 rm -rf ${NOAA_FILE} || true
 wget https://www.charts.noaa.gov/ENCs/${NOAA_FILE}
 unzip ${NOAA_FILE}
-rm -rf ${NOAA_FILE} || true
+rm -rf *.zip || true
 cd ..
 
 # IMPORTANT!!!
@@ -25,7 +25,6 @@ rm -rf *-mvt *.temp.db || true
 find . -name "US*.000" -type f | while read -r in
 do
     ogr2ogr -append -skipfailures -f MVT -dsco FORMAT=DIRECTORY -dsco MAXZOOM=${MAXZOOM} -dialect SQLITE \
-    -mapFieldType StringList\|JSonStringList,IntegerList\|JSonIntegerList \
      `basename $in .000`-mvt $in ;
 done
 
