@@ -10,10 +10,10 @@ NOAA_FILE=NJ_ENCs.zip
 
 mkdir noaa_enc/
 cd  noaa_enc/ || exit 255
-rm -rf ${NOAA_FILE} || true
+rm -rf *.zip || true
 wget https://www.charts.noaa.gov/ENCs/${NOAA_FILE}
 unzip ${NOAA_FILE}
-rm -rf *.zip || true
+rm -rf ${NOAA_FILE} || true
 cd ..
 
 # IMPORTANT!!!
