@@ -25,6 +25,7 @@ rm -rf *-mvt *.temp.db || true
 find . -name "US*.000" -type f | while read -r in
 do
     ogr2ogr -append -skipfailures -f MVT -dsco FORMAT=DIRECTORY -dsco MAXZOOM=${MAXZOOM} -dialect SQLITE \
+    -mapFieldType StringList\|JSonStringList,IntegerList\|JSonIntegerList \
      `basename $in .000`-mvt $in ;
 done
 
