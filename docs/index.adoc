@@ -2295,7 +2295,7 @@ with old settings)
 
 [source, bash]
 ----
-sudo aapt-get -y install breeze-gtk-theme breeze-icon-theme breeze-icon-theme breeze-icon-theme-rcc breeze-cursor-theme
+sudo apt-get -y install breeze-gtk-theme breeze-icon-theme breeze-icon-theme breeze-icon-theme-rcc breeze-cursor-theme
 ----
 
 Start lxappearance
