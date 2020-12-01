@@ -2749,7 +2749,7 @@ sudo cp twofing /usr/bin/
 NOTE: After using it underway during two-week cruise I noticed that more important than two finger zoom is
 the ability to perform right click. I've added the script which will turn on emulation of right click with a long touch.
 This way you can add way points in OpenCPN and do other actions which require a right mouse click. (Ex: access to
-the context menu)
+the context menu). The program is called evdev-rce.
 
 [source,shell]
 ----
@@ -2765,7 +2765,8 @@ One more issue is entering the text on a touchscreen. I've added virtual on scre
 several ones, and the one I liked the most is onboard https://github.com/linuxmint/onboard
 
 I've made a script to install it.
-See: https://github.com/bareboat-necessities/my-bareboat/blob/master/onboard/onboard-install-rpi.sh
+See:
+https://github.com/bareboat-necessities/my-bareboat/blob/master/onboard-rpi/onboard-install-rpi.sh
 
 [source,shell]
 ----
