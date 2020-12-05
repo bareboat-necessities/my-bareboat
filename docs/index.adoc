@@ -1850,7 +1850,7 @@ Install the program called 'socat'. With it you can send commands to the modem f
 
 [source]
 ----
-vi /etc/kpex.conf
+vi /etc/kplex.conf
 ----
 
 Put these lines
@@ -4342,6 +4342,13 @@ LysMarine
 Bareboat Necessities build of LysMarine:
 
 https://github.com/bareboat-necessities/lysmarine_gen
+
+=== Android on raspberry pi
+
+LineageOS runs Android on raspberry pi
+
+https://konstakang.com/devices/rpi4/LineageOS17.1/
+
 
 === Boat Chartplotter using stick PC
 
