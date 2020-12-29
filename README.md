@@ -9,6 +9,8 @@ Opensource hardware and software solutions for sailing and sailboats
 
 [Trip Checklists](https://bareboat-necessities.github.io/my-bareboat/bareboat-equipment-checklist)
 
+[BBN Edition of LysMarine OS for Raspberry Pi](https://github.com/bareboat-necessities/lysmarine_gen)
+
 [Contacts Page](https://bareboat-necessities.wixsite.com/my-bareboat)
 
 ------

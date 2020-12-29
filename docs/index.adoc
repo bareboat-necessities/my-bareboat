@@ -51,6 +51,8 @@ https://bareboat-necessities.wixsite.com/my-bareboat[Bareboat Necessities on Wix
 
 https://bareboat-necessities.github.io/my-bareboat/bareboat-equipment-checklist[Equipment Checklists]
 
+https://github.com/bareboat-necessities/lysmarine_gen[BBN Edition of LysMarine OS for Raspberry Pi]
+
 {zwsp} +
 
 PDF version:
