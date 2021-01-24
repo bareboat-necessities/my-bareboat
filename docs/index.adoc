@@ -3889,6 +3889,14 @@ https://www.amazon.com/dp/B07WGWZS1D
 |===
 
 
+=== SailMail
+
+https://getpat.io/
+
+https://github.com/la5nta/pat
+
+
+
 === Music Player
 
 I've looked at number of media and music player projects available on raspberry pi and the one
@@ -4173,6 +4181,13 @@ Worth alternative to raspberry pi product line.
 https://usa.banggood.com/LILYGO-TTGO-T-Watch-2020-ESP32-Main-Chip-1_54-Inch-Touch-Display-Programmable-Wearable-Environmental-Interaction-Watch-p-1671427.html
 
 esp32 programmable water resistant low cost watch
+
+=== Car Android Systems
+
+BOSS Audio Systems Marine Rated Weatherproof MRCP9685A Apple CarPlay Android Auto
+
+https://www.theverge.com/2020/10/5/21502773/boss-audio-android-auto-boats-weatherproof-touchscreen-carplay-android
+
 
 == Pole for Sailboat Solar Panel / Wind Generator
 
