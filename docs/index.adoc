@@ -3902,6 +3902,8 @@ https://seabits.com/set-up-signal-k-and-grafana-on-raspberry-pi-with-pican-m-nme
 
 https://seabits.com/nmea-2000-powered-raspberry-pi/
 
+https://copperhilltech.com/pican-m-nmea-0183-nmea-2000-hat-for-raspberry-pi/
+
 https://github.com/thomasonw/NMEA2000_socketCAN
 
 
