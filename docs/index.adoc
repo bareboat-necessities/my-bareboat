@@ -3898,6 +3898,8 @@ https://github.com/la5nta/pat
 
 === NMEA 2000
 
+Raspberry Pi with PICAN-M NMEA 2000 board
+
 https://seabits.com/set-up-signal-k-and-grafana-on-raspberry-pi-with-pican-m-nmea-2000-board/
 
 https://seabits.com/nmea-2000-powered-raspberry-pi/
