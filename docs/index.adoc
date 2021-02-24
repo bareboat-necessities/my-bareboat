@@ -89,6 +89,7 @@ This boat electronics project includes:
 * Variety of options of using wireless handheld devices such as smart phones and tablets
 to connect to boat systems via WiFi and bluetooth. There are many marine applications available for
 smart phones and tablets.
+* Marine OS Linux Distribution https://github.com/bareboat-necessities/lysmarine_gen
 
 The boat computer is connected to the waterproof HDMI touchscreen in the cockpit.
 
