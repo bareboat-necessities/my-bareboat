@@ -4376,7 +4376,7 @@ https://github.com/bareboat-necessities/lysmarine_gen
 
 LineageOS runs Android on raspberry pi
 
-https://konstakang.com/devices/rpi4/LineageOS17.1/
+https://konstakang.com/devices/rpi4/
 
 
 === Boat Chartplotter using stick PC
@@ -4518,7 +4518,4 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 * https://github.com/bareboat-necessities/lysmarine_gen[Marine OS by BBN]
 
 {zwsp} +
-
-
-
 
