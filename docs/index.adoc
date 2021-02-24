@@ -4511,7 +4511,7 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 
 * https://www.boatcontroller.nl/en/[PC Nautic BoatController]
 
-* https://github.com/victronenergy/venus/wikip[Venus OS]
+* https://github.com/victronenergy/venus[Venus OS]
 
 * https://github.com/LASER-WOLF/OnboardComputerSystem[Laser Wolf Onboard Computer System]
 
