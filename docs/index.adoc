@@ -4393,7 +4393,7 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 
 * https://cloudsmith.io/~dan-dickey/repos/opencpn-raspbian-unstable/packages/[OpenCPN dev builds for Pi]
 
-* http://sailoog.com/openplotter[OpenPlotter]
+* https://openmarine.net/[OpenPlotter]
 
 * https://openplotter.readthedocs.io/en/latest/[OpenPlotter Documentation]
 
@@ -4403,7 +4403,7 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 
 * http://forum.openmarine.net/[OpenPlotter Forums]
 
-* https://www.rooco.eu/[Moitessier HAT]
+* https://www.rooco.eu/[Moitessier HAT and other HATs]
 
 * https://pypilot.org/[PyPilot]
 
@@ -4430,8 +4430,6 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 * https://marinux.tuxfamily.org/[Marinux]
 
 * http://navigatrix.net/[Navigatrix]
-
-* http://lysmarineos.com[LysMarine]
 
 * https://www.raspberrypi.org/[RaspberryPi]
 
@@ -4466,6 +4464,8 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 * https://github.com/ms8r/celnav[Celestial Navigation]
 
 * https://sailmail.com/[SailMail]
+
+* https://getpat.io/[WinLink for Raspberry Pi]
 
 * https://farkwar.com/[Farkwar is a free position reporting service]
 
