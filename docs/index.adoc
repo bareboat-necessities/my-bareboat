@@ -4499,6 +4499,20 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 
 * https://github.com/redpesk-marine/documentation/tree/fulup-draft[RedPesk Marine]
 
+* https://seabits.com/nmea-2000-powered-raspberry-pi/[NMEA 2000 powered Raspberry Pi]
+
+* https://navio2.emlid.com/[Autopilot HAT for Raspberry Pi Powered by ArduPilot and ROS]
+
+* https://open-boat-projects.org/en/sensesp/[SensESP]
+
+* https://www.boatcontroller.nl/en/[PC Nautic BoatController]
+
+* https://github.com/victronenergy/venus/wikip[Venus OS]
+
+* https://github.com/LASER-WOLF/OnboardComputerSystem[Laser Wolf Onboard Computer System]
+
+* https://github.com/bareboat-necessities/lysmarine_gen[Marine OS by BBN]
+
 {zwsp} +
 
 
