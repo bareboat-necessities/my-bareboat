@@ -4499,7 +4499,7 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 
 * https://github.com/SailingTools/pyAirmail[Python implementation of the Airmail Client for send/receive emails over the Sailmail and Winlink networks]
 
-* https://konstakang.com/devices/rpi4/[LineageOS Android 11 for Raspberry Pi 4]
+* https://konstakang.com/devices/rpi4/[LineageOS Android for Raspberry Pi 4]
 
 * https://github.com/redpesk-marine/documentation/tree/fulup-draft[RedPesk Marine]
 
