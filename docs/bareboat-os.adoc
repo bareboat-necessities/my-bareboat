@@ -1,0 +1,89 @@
+= Bareboat Necessities OS Documentation
+mgrouch <mgrouch@users.noreply.github.com>
+{docdate}, Bareboat Necessities OS Documentation
+:imagesdir: images
+:doctype: book
+:organization: Bareboat Necessities
+:title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+ifdef::backend-pdf[]
+:source-highlighter: rouge
+:toc-placement!: manual
+:pdf-page-size: Letter
+:plantumlconfig: plantuml.cfg
+endif::[]
+ifndef::backend-pdf[]
+:toc-placement: manual
+endif::[]
+:experimental:
+:reproducible:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 3
+:encoding: utf-8
+:lang: en
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:env-github:
+
+{zwsp} +
+
+ifndef::backend-pdf[]
+
+image::bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+
+{zwsp} +
+
+endif::[]
+
+https://bareboat-necessities.github.io
+
+https://github.com/bareboat-necessities/lysmarine_gen
+
+https://github.com/bareboat-necessities/lysmarine_gen/issues
+
+https://bareboat-necessities.wixsite.com/my-bareboat
+
+{zwsp} +
+
+PDF version:
+
+https://bareboat-necessities.github.io/my-bareboat/bareboat-os.pdf
+
+
+{zwsp} +
+
+toc::[]
+
+
+== Getting Started
+
+=== Download Image
+
+=== Prepare SD Card
+
+=== First Boot from SD Card
+
+=== Setting up Network
+
+=== Set Timezone / Locale
+
+=== Change Password
+
+=== SSD Boot
+
+=== Set up GPS
+
+=== Set up AIS
+
+=== Set up Charts
+
+=== Music Players
+
+=== Shutting Down / Rebooting
+
