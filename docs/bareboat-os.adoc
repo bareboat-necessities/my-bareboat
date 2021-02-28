@@ -245,7 +245,7 @@ doesn't have built-in sound input). Proper antennas required for correct recepti
 
 ==== IP Cameras
 
-Should be easy to integrate using previnstalled VLC
+Should be easy to integrate using pre-installed VLC
 
 ==== MotionEye
 
