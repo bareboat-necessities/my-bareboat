@@ -158,6 +158,17 @@ ls -l /dev/ttyLYS*
 
 === Set up Charts
 
+OS image comes with several chartplotters:
+
+* OpenCPN
+* AvNav
+* Freeboard-SK
+
+with extensive set of plugins as well as weather GRIB file viewers
+
+* XyGrib
+
+
 ==== OpenCPN
 
 * Start OpenCPN. Go into Tools/Options/Charts/Chart Downloader tab.
@@ -194,6 +205,41 @@ Play music on iPhone. Select AirPlay on your iPhone and cast to 'lysmarine' airp
 
 Install MPD compatible media player on your mobile device and from it you can
 control playing your Mopidy library on your raspberry pi.
+
+=== Interfacing with ship systems
+
+The first place to start configuring boat interfaces would be SignalK.
+SignalK comes with many plugins to talk to many boat devices with the support of various
+protocols.
+
+==== NMEA 0183
+
+If you use FTDI USB serial to USB sticks the OS should recognize them right away,
+and if they are wired correctly to NMEA devices (ex: wind/depth/speed/GPS) their reading
+should automatically show up in instrument dashboards.
+
+==== NMEA 2000
+
+Check SignalK plugin settings and SignalK documentation.
+
+==== IMU
+
+Check PyPilot settings and PyPilot documentation.
+
+==== Barometer / Temperature / Humidity
+
+Check SignalK plugin settings and SignalK documentation.
+
+==== Other
+
+Many other devices are supported (usually via SignalK)
+
+=== Marine Radio
+
+OS image comes with many HAM radio applications, decoders for many marine specific
+signals and protocols. Many SDR products should work. Decoding is also possible using
+external HAM receivers connected via sound input port (USB sound card required as respberry pi
+doesn't have built-in sound input). Proper antennas required for correct reception.
 
 === Shutting Down / Rebooting
 
