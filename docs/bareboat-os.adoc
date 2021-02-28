@@ -65,25 +65,143 @@ toc::[]
 
 === Download Image
 
+Download SD card image (2.3 Gb file):
+
+https://github.com/bareboat-necessities/lysmarine_gen#download
+
 === Prepare SD Card
+
+Write the downloaded image to SD card. You can use Raspberry Pi Imager for that:
+
+https://www.raspberrypi.org/software/
+
+If your screen resolution is lower than 1024x600 you would need to manually
+set it in /boot/config.txt file, by mounting /boot partition of your SD card
+(on windows its done just by inserting it into SD card slot and editing in a plain text
+editor).
 
 === First Boot from SD Card
 
+Insert SD card into raspberry pi SD card slot and power on.
+Wait for boot process to run GUI (about 2 mins).
+
 === Setting up Network
+
+==== Wired Ethernet
+
+If you have wired ethernet router you can just plug-in your raspberry pi ethernet port into the
+router
+
+==== WiFi Client
+
+Go into network settings menu and delete WiFi wireless access point.
+When raspberry pi WiFi card discovers your WiFi router network click to connect to wifi
+and enter the correct WiFi password.
 
 === Set Timezone / Locale
 
+Open Terminal from GUI and on the terminal command line:
+
+[source, shell]
+----
+cd ~/add-ons
+./timezone-setup.sh
+----
+
 === Change Password
+
+Open Terminal from GUI and on the terminal command line:
+
+[source, shell]
+----
+cd ~/add-ons
+./change-password.sh
+----
 
 === SSD Boot
 
+If you have an SSD drive, and you would like to boot from it (which would be a better way, and
+it would greatly improve the performance of the system) then you can follow the steps below:
+
+The OS image comes with utility called 'rpi-clone' preinstalled. If you have a custom case
+for your raspberry pi (Ex. DeskPi Pro), then you would need to install vendor drivers for your
+case per vendor instructions.
+
+Open Terminal from GUI and your command line for rpi-clone should look like
+(check usage https://github.com/billw2/rpi-clone as there might be nuances for your particular
+set up):
+
+[source, shell]
+----
+sudo rpi-clone sda
+----
+
+Follow the prompts.
+
 === Set up GPS
+
+Plugin your GPS USB mouse and OS should recognize it. Check:
+
+[source, shell]
+----
+ls -l /dev/ttyLYS*
+----
 
 === Set up AIS
 
+Plugin your dAISy AIS receiver into USB and OS should recognize it. Check:
+
+[source, shell]
+----
+ls -l /dev/ttyLYS*
+----
+
 === Set up Charts
+
+==== OpenCPN
+
+* Start OpenCPN. Go into Tools/Options/Charts/Chart Downloader tab.
+* Click 'Add Catalog'. For USA: click USA NOAA & Inland Charts / ENC / By Region.
+* Pick your region, click (or touch) 'OK'
+* Click 'Update' (to update the catalog)
+* Click 'Download Charts...' tab
+* Right-click (or long touch) in the charts list
+* Click 'Select all' from the pop-up menu
+* Press 'Download selected charts' button, and wait for it to finish
+* Press 'Apply' button
+* Click 'Chart Files' tab
+* Press 'Prepare all ENC Charts' button
+* Press 'OK' button when done
+
+==== AvNav
+
+When you are online NOAA raster MB tiles should work out of the box.
 
 === Music Players
 
+The OS image comes with Mopidy, MPD server, MusicBox, Shairport-Sync (AirPlay) server.
+The default audio output set up to audio jack port.
+
+==== MusicBox
+
+Start MusicBox web UI. Try pre-configured playlist, or you can search Tune-In or YouTube.
+
+==== Playing from your iPhone (Spotify, etc)
+
+Play music on iPhone. Select AirPlay on your iPhone and cast to 'lysmarine' airplay target.
+
+==== Playing from mobile phones with MPD applications
+
+Install MPD compatible media player on your mobile device and from it you can
+control playing your Mopidy library on your raspberry pi.
+
 === Shutting Down / Rebooting
+
+On the desktop click arrow to get to the second set of desktop icons.
+Click on the 'Commands' icon. You will see a menu from where
+you can perform restart/shutdown, and more.
+
+=== Known Issues and Workarounds
+
+See: https://github.com/bareboat-necessities/lysmarine_gen/issues
 
