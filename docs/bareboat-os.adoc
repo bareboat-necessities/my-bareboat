@@ -241,6 +241,56 @@ signals and protocols. Many SDR products should work. Decoding is also possible 
 external HAM receivers connected via sound input port (USB sound card required as respberry pi
 doesn't have built-in sound input). Proper antennas required for correct reception.
 
+=== Cameras
+
+==== IP Cameras
+
+Should be easy to integrate using previnstalled VLC
+
+==== MotionEye
+
+This is work in progress which wouldn't be difficult to complete if there is a demand for it.
+
+=== Cruising within Cellular Phone Reception
+
+Adding some OpenWrt LTE/4G router greatly improves your boat connectivity to
+the world near shore. You should definitely do it to have internet access from your boat.
+
+The OS image gives you internet applications for:
+
+* Email
+* Chat
+* Facebook
+* YouTube
+* Browser
+* On-Line Weather
+* On-Line Charts
+* Marina Booking
+* Sailing Education
+* SMS
+* and much more
+
+=== Offshore Features
+
+For offshore sailors there are number of features pre-loaded into the OS image
+
+* NavTex
+* Inmarsat Fleet (receiving messages)
+* Using Iridium as modem
+* WeatherFax
+* GRIB (could be over SSB)
+* AirMail / WinLink
+* SDR / HAM Radio Apps
+* AIS
+* Weather Routing / Climatology
+* Celestial Navigation
+* Autopilot (PyPilot)
+* Satellite Weather
+* Radars (several supported)
+* Location Reporting
+
+They do require additional hardware, set up and dedication.
+
 === Shutting Down / Rebooting
 
 On the desktop click arrow to get to the second set of desktop icons.
