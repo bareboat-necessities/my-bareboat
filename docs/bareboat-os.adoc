@@ -249,7 +249,20 @@ Should be easy to integrate using pre-installed VLC
 
 ==== MotionEye
 
-This is work in progress which wouldn't be difficult to complete if there is a demand for it.
+By default, motioneye service installed but disabled. To enable:
+
+[source, shell]
+----
+sudo systemctl enable motioneye
+sudo systemctl start motioneye
+sudo systemctl status motioneye
+----
+
+Point your browser to http://localhost:8765/
+
+Default user: admin
+
+Password is empty.
 
 === Cruising within Cellular Phone Reception
 
