@@ -315,3 +315,7 @@ you can perform restart/shutdown, and more.
 
 See: https://github.com/bareboat-necessities/lysmarine_gen/issues
 
+=== HOWTOs
+
+Please send us your HowTo, and we can add it here for everyone to find. Thanks
+
