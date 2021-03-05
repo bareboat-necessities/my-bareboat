@@ -259,8 +259,6 @@ sudo systemctl stop motioneye
 sudo systemctl status motioneye
 ----
 
-Point your browser to http://localhost:8765/
-
 Default user: admin
 
 Password is empty.
