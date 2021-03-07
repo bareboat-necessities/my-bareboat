@@ -4539,6 +4539,8 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 
 * https://github.com/scherererer/SonarPhony[Reverse-engineered interface to SonarPhone fish finders]
 
+* https://canable.io/[An Open-Source USB to CAN Adapter]
+
 * https://github.com/bareboat-necessities/lysmarine_gen[Marine OS by BBN]
 
 {zwsp} +
