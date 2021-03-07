@@ -4519,6 +4519,26 @@ Marine Chartplotter PC - Open CPN on ASUS QM1
 
 * https://github.com/LASER-WOLF/OnboardComputerSystem[Laser Wolf Onboard Computer System]
 
+* https://www.kickstarter.com/projects/andreasebrle/raspberry-compute-module-4-carrier-board-with-iso-interfaces[Raspberry Compute Module 4 Carrier with ISO Interfaces]
+
+* https://github.com/luigifcruz/pisdr-image/[PiSdr]
+
+* https://github.com/ciompi/EngineMonitor[EngineMonitor]
+
+* https://github.com/ieb/sailinstruments[Sail Instruments]
+
+* https://github.com/Hackerfleet/hfos[HFOS The Hackerfleet Operating System]
+
+* https://github.com/VladimirKalachikhin/Galadriel-map[GaladrielMap]
+
+* https://learn.adafruit.com/circuitpython-libaries-linux-odroid-c2/i2c-sensors-devices[I2C Sensors]
+
+* https://github.com/hatlabs/SH-RPi-hardware[Sailor Hat for Raspberry Pi (SH-RPi)]
+
+* http://www.boat-project.com/electro/potting.htm[Creating small permanent waterproof electronic modules]
+
+* https://github.com/scherererer/SonarPhony[Reverse-engineered interface to SonarPhone fish finders]
+
 * https://github.com/bareboat-necessities/lysmarine_gen[Marine OS by BBN]
 
 {zwsp} +
