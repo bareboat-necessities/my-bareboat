@@ -69,6 +69,17 @@ Download SD card image (2.3 Gb file):
 
 https://github.com/bareboat-necessities/lysmarine_gen#download
 
+==== 32-bit vs 64-bit images
+
+- There are pros and cons to each
+- 32-bit takes less memory but runs slower
+- 32-bit is more supported at the moment (Some cameras not supported on 64-bit yet at the time of writing this)
+- QtVlm, wxfax, many OpenCPN plugins are 32-bit only
+- You still can run 64-bit kernel with 32-bit image (user space programs will be 32-bit)
+- 32-bit is available on more hardware
+- 64-bit OS and OpenCPN are working fine but technically still called 'beta'
+- Most of the open (minor) issues are present in both 32 and 64 bit images
+
 === Prepare SD Card
 
 Write the downloaded image to SD card. You can use Raspberry Pi Imager for that:
