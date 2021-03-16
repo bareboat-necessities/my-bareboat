@@ -113,6 +113,13 @@ Change /etc/wpa_supplicant/wpa_supplicant.conf to add line for your country (exa
 country=US
 ----
 
+Change /etc/default/crda to set your country (example):
+
+[source]
+----
+REGDOMAIN=US
+----
+
 When raspberry pi WiFi card discovers your WiFi router network click to connect to wifi
 and enter the correct WiFi password.
 
