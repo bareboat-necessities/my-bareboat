@@ -106,6 +106,9 @@ router
 ==== WiFi Client
 
 Go into network settings menu and delete WiFi wireless access point.
+
+NOTE: You need to set up WiFi country
+
 Change /etc/wpa_supplicant/wpa_supplicant.conf to add line for your country (example):
 
 [source]
