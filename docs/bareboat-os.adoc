@@ -344,6 +344,12 @@ from add-ons folder ~/add-ons/ by running:
 
 NOTE: As of moment of writing this procedure doesn't work on arm64.
 
+=== How it is Made
+
+For those who are comfortable writing software the scripts to create this image
+stored on the image itself (for the reference) in /install_scripts.
+The full source code to create the image is available at <https://github.com/bareboat-necessities/lysmarine_gen>
+
 === Shutting Down / Rebooting
 
 On the desktop click arrow to get to the second set of desktop icons.
