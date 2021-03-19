@@ -53,6 +53,10 @@ https://bareboat-necessities.github.io/my-bareboat/bareboat-equipment-checklist[
 
 https://github.com/bareboat-necessities/lysmarine_gen[BBN Edition of LysMarine OS for Raspberry Pi]
 
+https://github.com/bareboat-necessities/lysmarine_gen[Bareboat Necessities Marine Linux OS for Raspberry Pi]
+
+https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html[Bareboat Necessities OS Getting Started]
+
 {zwsp} +
 
 PDF version:

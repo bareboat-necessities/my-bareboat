@@ -328,6 +328,19 @@ For offshore sailors there are number of features pre-loaded into the OS image
 
 They do require additional hardware, set up and dedication.
 
+=== Watching Movies
+
+Watching on-line (or listening) prepaid copyrighted content (NetFlix, Amazone PrimeVideo, Google, Spotify, etc) in
+a web browser as Chromium requires closed-source DRM libraries. On arm32 version of the OS you can install it
+from add-ons folder ~/add-ons/ by running:
+
+[source, shell]
+----
+./widevine-lib-install.sh
+----
+
+NOTE: As of moment of writing this procedure doesn't work on arm64.
+
 === Shutting Down / Rebooting
 
 On the desktop click arrow to get to the second set of desktop icons.
