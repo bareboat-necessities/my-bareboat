@@ -342,7 +342,8 @@ from add-ons folder ~/add-ons/ by running:
 ./widevine-lib-install.sh
 ----
 
-NOTE: As of moment of writing this procedure doesn't work on arm64.
+NOTE: As of moment of writing this procedure doesn't work on arm64. It does work om arm32, and even on
+arm32 with 64-bit kernel.
 
 === How it is Made
 
