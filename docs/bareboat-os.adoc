@@ -361,6 +361,18 @@ you can perform restart/shutdown, and more.
 
 See: https://github.com/bareboat-necessities/lysmarine_gen/issues
 
+==== Touchscreen
+
+* Some applications (namely OpenCPN and gtk2 based as well as some Qt) sometimes stop responding to touch events.
+There is a workaround. With your finger you can toggle maximized mode via window frame icon then you
+MOVE the window frame by dragging window header few pixels, and switch back to maximized mode if needed.
+This should restore touch events in that app.
+
+* Some gtk3 applications menus (ex: terminal) have issues handling touch events. You can select a menu item
+with touch but to perform a click on it you would actually need to perform similated right click
+by holding finger a bit longer and letting it go.
+
+
 === HOWTOs
 
 Please send us your HowTo, and we can add it here for everyone to find. Thanks
