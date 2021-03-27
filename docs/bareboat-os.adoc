@@ -126,6 +126,12 @@ REGDOMAIN=US
 When raspberry pi WiFi card discovers your WiFi router network click to connect to wifi
 and enter the correct WiFi password.
 
+==== WiFi Access Point
+
+Wi-Fi connections managed by widely used Gnome NetworkManager. Look for 'nmcli' documentation
+(command line interface to NetworkManager).
+
+
 === Set Timezone / Locale
 
 Open Terminal from GUI and on the terminal command line:
