@@ -131,6 +131,14 @@ and enter the correct WiFi password.
 Wi-Fi connections managed by widely used Gnome NetworkManager. Look for 'nmcli' documentation
 (command line interface to NetworkManager).
 
+==== Typical Setup on a Boat
+
+* Raspberry Pi wired to OpenWrt LTE/4G/WiFi router via ethernet port
+* Raspberry Pi provides 5GHz WiFi 802.11ac local access point for boat local WiFi network
+* OpenWrt LTE/4G/WiFi router provides WiFi connection to marinas
+* OpenWrt LTE/4G/WiFi router provides access to the Intenet via LTE/4G cellular data network
+* OpenWrt LTE/4G/WiFi router provides 2.4GHz (WiFi 802.11n) local access point for boat IoT devices
+* OpenWrt LTE/4G/WiFi router serves as firewall
 
 === Set Timezone / Locale
 
