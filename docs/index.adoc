@@ -2091,6 +2091,18 @@ image::cockpit-home-page.png[Cockpit Home Page, align="center"]
 
 == Boat Software
 
+=== Key Open Source Software Components / Players
+
+* Charting Software, OpenCPN (by David Register and others)
+* Off-shore features, Climatology/Weather Routing/Weather Fax/GRIB/Celestial Navigation/DIY Autopilots/PyPilot (by Sean D'Pagnier)
+* Sensors and Marine Data Protocols, SignalK (Scott Bender and others)
+* User friendly raspberry pi server configuration, OpenPlotter and some hardware, sensors (by sailoog and other)
+* Web based tiling charting, AvNav (by Andreas Vogel)
+* Decoding radio signal protocols, HamRadio and SDR community
+* Many others who build core protocol/sensor/data formats libraries
+* User UI friendly OS distribution bundling all components together (cockpit/touchscreen and more) (by authors of lysmarine and BBN edition of it)
+
+
 === Software Data Flow
 
 .Software Architecture
