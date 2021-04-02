@@ -2099,7 +2099,7 @@ image::cockpit-home-page.png[Cockpit Home Page, align="center"]
 * User friendly raspberry pi server configuration, OpenPlotter and some hardware, sensors (by sailoog and other)
 * Web based tiling charting, AvNav (by Andreas Vogel)
 * Decoding radio signal protocols, HamRadio and SDR community
-* Many others who build core protocol/sensor/data formats libraries
+* Many others who build core protocol/sensor/data formats/controller code libraries
 * User UI friendly OS distribution bundling all components together (cockpit/touchscreen and more) (by authors of lysmarine and BBN edition of it)
 
 
