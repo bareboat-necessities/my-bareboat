@@ -140,6 +140,14 @@ Wi-Fi connections managed by widely used Gnome NetworkManager. Look for 'nmcli' 
 * OpenWrt LTE/4G/WiFi router provides 2.4GHz (WiFi 802.11n) local access point for boat IoT devices
 * OpenWrt LTE/4G/WiFi router serves as firewall
 
+If you use raspberry pi WiFi it is better to disable WiFi power management:
+
+[source, shell]
+----
+sudo systemctl unmask wifi_powersave@off.service
+sudo systemctl enable wifi_powersave@off.service
+----
+
 === Set Timezone / Locale
 
 Open Terminal from GUI and on the terminal command line:
