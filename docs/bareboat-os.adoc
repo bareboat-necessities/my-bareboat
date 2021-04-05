@@ -169,6 +169,18 @@ cd ~/add-ons
 ./change-password.sh
 ----
 
+=== International Keyboard
+
+Keyboard layout controlled by pre-installed ibus application. To add a language:
+
+[source, shell]
+----
+ibus-setup
+----
+
+I also disable it from showing up in system tray, and I rely on switching languages using
+onboard keyboard Win-Space key combo.
+
 === SSD Boot
 
 If you have an SSD drive, and you would like to boot from it (which would be a better way, and
