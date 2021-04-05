@@ -146,6 +146,7 @@ If you use raspberry pi WiFi it is better to disable WiFi power management:
 ----
 sudo systemctl unmask wifi_powersave@off.service
 sudo systemctl enable wifi_powersave@off.service
+sudo systemctl start wifi_powersave@off.service
 ----
 
 === Set Timezone / Locale
