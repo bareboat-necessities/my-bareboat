@@ -264,6 +264,7 @@ Starting PyPilot server:
 
 [source, shell]
 ----
+sudo systemctl enable pypilot@pypilot
 sudo systemctl start pypilot@pypilot
 ----
 
