@@ -207,6 +207,13 @@ Plugin your dAISy AIS receiver into USB and OS should recognize it. Check:
 ls -l /dev/ttyLYS*
 ----
 
+=== Update OpenCPN Plugins
+
+* Start OpenCPN
+* Go to Tools/Options/Plugins
+* Update Plugin Catalog
+* Browse plugins list and update plugins when an update available (one by one)
+
 === Set up Charts
 
 OS image comes with several chartplotters:
