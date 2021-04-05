@@ -258,6 +258,15 @@ with extensive set of plugins as well as weather GRIB file viewers
 
 When you are online NOAA raster MB tiles should work out of the box.
 
+=== PyPilot
+
+Starting PyPilot server:
+
+[source, shell]
+----
+sudo systemctl start pypilot@pypilot
+----
+
 === Music Players
 
 The OS image comes with Mopidy, MPD server, MusicBox, Shairport-Sync (AirPlay) server.
