@@ -258,6 +258,11 @@ with extensive set of plugins as well as weather GRIB file viewers
 
 When you are online NOAA raster MB tiles should work out of the box.
 
+=== SignalK
+
+SignalK manages its own updates. Login into SignalK Marine Data Server web UI application
+and perform updates via its app store.
+
 === PyPilot
 
 Starting PyPilot server:
