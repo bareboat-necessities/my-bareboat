@@ -423,6 +423,12 @@ On the desktop click arrow to get to the second set of desktop icons.
 Click on the 'Commands' icon. You will see a menu from where
 you can perform restart/shutdown, and more.
 
+==== Safe Power-Down
+
+Raspberry pi doesn't have a safe power-off feature. I.e. it doesn't perform OS shutdown before
+powering off with a button. There are numerous third-party solutions with raspberry pi hats or
+custom cases. Make sure you do not forget to install required software for them per vendor documentation.
+
 === Known Issues and Workarounds
 
 See: https://github.com/bareboat-necessities/lysmarine_gen/issues
