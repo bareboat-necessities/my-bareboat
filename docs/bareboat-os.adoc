@@ -159,6 +159,15 @@ cd ~/add-ons
 ./timezone-setup.sh
 ----
 
+For changing locale (ex: to en_US.UTF-8):
+[source, shell]
+----
+sudo su
+perl -pi -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/g' /etc/locale.gen
+locale-gen en_US.UTF-8
+update-locale en_US.UTF-8
+----
+
 === Change Password
 
 Open Terminal from GUI and on the terminal command line:
