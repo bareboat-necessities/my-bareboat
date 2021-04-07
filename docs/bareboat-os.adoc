@@ -347,7 +347,6 @@ cd ~/add-ons
 ./os-settings.sh
 ----
 
-
 - Enable 'IMU only' pypilot service
 
 [source, shell]
@@ -355,6 +354,15 @@ cd ~/add-ons
 sudo systemctl enable pypilot_boatimu
 sudo systemctl start pypilot_boatimu
 ----
+
+- At this point you should be able to see reading of pitch/roll, etc, and magnetic heading.
+Which you would need to calibrate.
+
+- Start pypilot calibration. Press 'Boat Level' when the boat leveled. (Your IMU must be obviously
+mounted hard to the boat, can't be just hanging).
+For magnetic heading: IMU doesn't know how you oriented it inside (where bow is pointing), so you need to adjust
+it by filling magnetic heading adjustment field.
+
 
 
 ==== Barometer / Temperature / Humidity
@@ -371,7 +379,7 @@ cd ~/add-ons
 ./os-settings.sh
 ----
 
-To check if it's working:
+- To check if it's working:
 
 [source, shell]
 ----
@@ -379,10 +387,12 @@ lsmod | grep i2c-dev
 i2cdetect 1
 ----
 
-. Login into SignalK Marine Data Server
+- Login into SignalK Marine Data Server
 
-. Enable BMP or BME sensor plugin. Give it correct i2c address.
+- Enable BMP or BME sensor plugin. Give it correct i2c address. Restart SignalK server.
 
+- At this point you should be able to see barometric pressure and temperature (possibly humidity)
+in your data feed.
 
 ==== Other
 
