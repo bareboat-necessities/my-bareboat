@@ -287,6 +287,15 @@ sudo systemctl enable pypilot@pypilot
 sudo systemctl start pypilot@pypilot
 ----
 
+=== Weather
+
+You can add weather budgie desktop applet. Unfortunately it is linked to a fixed location which is
+fine for a day-sailor but doesn't work for others.
+
+Off-shore sailors or even coastal cruisers should focus on using XyGrib and GRIB plugin for OpenCPN.
+
+For real blue water sailors OpenCPN Climatology and OpenCPN weather routing plugins are essential.
+
 === Music Players
 
 The OS image comes with Mopidy, MPD server, MusicBox, Shairport-Sync (AirPlay) server.
