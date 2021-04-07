@@ -361,7 +361,7 @@ sudo systemctl start pypilot_boatimu
 
 Check SignalK plugin settings and SignalK documentation.
 
-General steps are
+General steps are:
 
 - enable i2c (Interface options)
 
@@ -371,7 +371,7 @@ cd ~/add-ons
 ./os-settings.sh
 ----
 
-To check if it's working
+To check if it's working:
 
 [source, shell]
 ----
