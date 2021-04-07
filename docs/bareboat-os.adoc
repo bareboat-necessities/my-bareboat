@@ -337,9 +337,52 @@ Check SignalK plugin settings and SignalK documentation.
 
 Check PyPilot settings and PyPilot documentation.
 
+General steps are
+
+- enable i2c (Interface options)
+
+[source, shell]
+----
+cd ~/add-ons
+./os-settings.sh
+----
+
+
+- Enable 'IMU only' pypilot service
+
+[source, shell]
+----
+sudo systemctl enable pypilot_boatimu
+sudo systemctl start pypilot_boatimu
+----
+
+
 ==== Barometer / Temperature / Humidity
 
 Check SignalK plugin settings and SignalK documentation.
+
+General steps are
+
+- enable i2c (Interface options)
+
+[source, shell]
+----
+cd ~/add-ons
+./os-settings.sh
+----
+
+To check if it's working
+
+[source, shell]
+----
+lsmod | grep i2c-dev
+i2cdetect 1
+----
+
+. Login into SignalK Marine Data Server
+
+. Enable BMP or BME sensor plugin. Give it correct i2c address.
+
 
 ==== Other
 
