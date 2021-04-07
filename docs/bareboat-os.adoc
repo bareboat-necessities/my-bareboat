@@ -80,6 +80,9 @@ https://github.com/bareboat-necessities/lysmarine_gen#download
 - 64-bit OS and OpenCPN are working fine but technically still called 'beta'
 - Most of the open (minor) issues are present in both 32 and 64 bit images
 
+NOTE: Switch from 32-bit kernel to 64-bit kernel has an impact on java installation.
+See (workaround): https://github.com/bareboat-necessities/lysmarine_gen/issues/44
+
 === Prepare SD Card
 
 Write the downloaded image to SD card. You can use Raspberry Pi Imager for that:
