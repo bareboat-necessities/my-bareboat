@@ -275,6 +275,10 @@ with extensive set of plugins as well as weather GRIB file viewers
 
 When you are online NOAA raster MB tiles should work out of the box.
 
+==== SignalK, FreeBoard-SK, TukTuk
+
+Follow SignalK documentation to install offline charts for these.
+
 === SignalK
 
 SignalK manages its own updates. Login into SignalK Marine Data Server web UI application
@@ -511,6 +515,10 @@ you can perform restart/shutdown, and more.
 Raspberry pi doesn't have a safe power-off feature. I.e. it doesn't perform OS shutdown before
 powering off with a button. There are numerous third-party solutions with raspberry pi hats or
 custom cases. Make sure you do not forget to install required software for them per vendor documentation.
+
+=== Customizing Desktop
+
+Desktop can be customized by editing the JavaScript file in /var/www/bbn-launcher.
 
 === Known Issues and Workarounds
 
