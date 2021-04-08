@@ -347,15 +347,15 @@ cd ~/add-ons
 ./os-settings.sh
 ----
 
-- Enable 'IMU only' pypilot service
+- Enable pypilot service
 
 [source, shell]
 ----
-sudo systemctl enable pypilot_boatimu
-sudo systemctl start pypilot_boatimu
+sudo systemctl enable pypilot@pypilot
+sudo systemctl start pypilot@pypilot
 ----
 
-- At this point you should be able to see reading of pitch/roll, etc, and magnetic heading.
+- At this point you should be able to see reading of pitch/roll, etc, and magnetic heading in pypilot control.
 Which you would need to calibrate.
 
 - Start pypilot calibration. Press 'Boat Level' when the boat leveled. (Your IMU must be obviously
@@ -363,6 +363,19 @@ mounted hard to the boat, can't be just hanging).
 For magnetic heading: IMU doesn't know how you oriented it inside (where bow is pointing), so you need to adjust
 it by filling magnetic heading adjustment field.
 
+- Establish connection from PyPilot to SignalK. To achieve this due to a bug in pypilot zeroconf
+service auto-discovery you need to shutdown mopidy and avnav temporarily.
+
+[source, shell]
+----
+sudo systemctl stop mopidy
+sudo systemctl stop avnav
+sudo systemctl restart pypilot@pypilot
+----
+
+- Go to SignalK web UI as admin and approve the access request from PyPilot for READ/WRITE access.
+
+- IMU data should start flowing into SignalK
 
 
 ==== Barometer / Temperature / Humidity
