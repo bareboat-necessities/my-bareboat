@@ -520,6 +520,12 @@ custom cases. Make sure you do not forget to install required software for them 
 
 Desktop can be customized by editing the JavaScript file in /var/www/bbn-launcher.
 
+=== Customizing On First Boot
+
+You can add additional customizations which will be performed on system first boot by
+mounting OS image and editing /boot/first-boot.sh script. That script as its name suggests
+executes only once on the first boot.
+
 === Known Issues and Workarounds
 
 See: https://github.com/bareboat-necessities/lysmarine_gen/issues
