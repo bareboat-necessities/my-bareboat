@@ -78,7 +78,7 @@ https://github.com/bareboat-necessities/lysmarine_gen#download
 - You still can run 64-bit kernel with 32-bit image, user space programs will be 32-bit. (Add arm_64bit=1 into /boot/config.txt)
 - 32-bit is available on more hardware
 - 64-bit OS and OpenCPN are working fine but technically still called 'beta'
-- Most of the open (minor) issues are present in both 32 and 64 bit images
+- Most of the open (minor) issues are present in both 32 and 64-bit images
 
 NOTE: Switch from 32-bit kernel to 64-bit kernel has an impact on java installation.
 See (workaround): https://github.com/bareboat-necessities/lysmarine_gen/issues/44
@@ -110,7 +110,7 @@ router
 
 Go into network settings menu and delete WiFi wireless access point.
 
-NOTE: You need to set up WiFi country
+NOTE: You need to set up WiFi country.
 
 Change /etc/wpa_supplicant/wpa_supplicant.conf to add line for your country (example):
 
@@ -139,7 +139,7 @@ Wi-Fi connections managed by widely used Gnome NetworkManager. Look for 'nmcli' 
 * Raspberry Pi wired to OpenWrt LTE/4G/WiFi router via ethernet port
 * Raspberry Pi provides 5GHz WiFi 802.11ac local access point for boat local WiFi network
 * OpenWrt LTE/4G/WiFi router provides WiFi connection to marinas
-* OpenWrt LTE/4G/WiFi router provides access to the Intenet via LTE/4G cellular data network
+* OpenWrt LTE/4G/WiFi router provides access to the Internet via LTE/4G cellular data network
 * OpenWrt LTE/4G/WiFi router provides 2.4GHz (WiFi 802.11n) local access point for boat IoT devices
 * OpenWrt LTE/4G/WiFi router serves as firewall
 
@@ -368,7 +368,7 @@ For magnetic heading: IMU doesn't know how you oriented it inside (where bow is 
 it by filling magnetic heading adjustment field.
 
 - Establish connection from PyPilot to SignalK. To achieve this due to a bug in pypilot zeroconf
-service auto-discovery you need to shutdown mopidy and avnav temporarily.
+service auto-discovery you need to shut down mopidy and avnav temporarily.
 
 [source, shell]
 ----
@@ -419,7 +419,7 @@ Many other devices are supported (usually via SignalK)
 
 OS image comes with many HAM radio applications, decoders for many marine specific
 signals and protocols. Many SDR products should work. Decoding is also possible using
-external HAM receivers connected via sound input port (USB sound card required as respberry pi
+external HAM receivers connected via sound input port (USB sound card required as raspberry pi
 doesn't have built-in sound input). Proper antennas required for correct reception.
 
 === Cameras
@@ -486,7 +486,7 @@ They do require additional hardware, set up and dedication.
 
 === Watching Movies
 
-Watching on-line (or listening) prepaid copyrighted content (NetFlix, Amazone PrimeVideo, Google, Spotify, etc) in
+Watching on-line (or listening) prepaid copyrighted content (Netflix, Amazon PrimeVideo, Google, Spotify, etc) in
 a web browser as Chromium requires closed-source DRM libraries. On arm32 version of the OS you can install it
 from add-ons folder ~/add-ons/ by running:
 
@@ -495,14 +495,14 @@ from add-ons folder ~/add-ons/ by running:
 ./widevine-lib-install.sh
 ----
 
-NOTE: As of moment of writing this procedure doesn't work on arm64. It does work om arm32, and even on
+NOTE: As of moment of writing this procedure doesn't work on arm64. It does work on arm32, and even on
 arm32 with 64-bit kernel.
 
 === How it is Made
 
 For those who are comfortable writing software the scripts to create this image
 stored on the image itself (for the reference) in /install_scripts.
-The full source code to create the image is available at <https://github.com/bareboat-necessities/lysmarine_gen>
+The full source code to create the image is available at: <https://github.com/bareboat-necessities/lysmarine_gen>
 
 === Shutting Down / Rebooting
 
@@ -538,7 +538,7 @@ MOVE the window frame by dragging window header few pixels, and switch back to m
 This should restore touch events in that app.
 
 * Some gtk3 applications menus (ex: terminal) have issues handling touch events. You can select a menu item
-with touch but to perform a click on it you would actually need to perform similated right click
+with touch but to perform a click on it you would actually need to perform simulated right click
 by holding finger a bit longer and letting it go.
 
 === Suggestions
