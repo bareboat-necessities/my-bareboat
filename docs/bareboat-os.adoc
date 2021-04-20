@@ -425,6 +425,20 @@ Enable OpenCPN 'Dashboard' plugin, add instruments. Dashboards are dockable to t
 * You should request KIP token to be registered in SignalK, then go into SignalK app and
 authorize it. After that edit instruments and layout in KIP dashboard settings.
 
+=== Remote Access
+
+==== VNC
+
+OS image comes with VNC pre configured. You can change default password by removing
+/home/user/.vnc/passwd file and accessing VNC server from client. On the first login
+it will prompt to set up a new password.
+
+OS image also provides VNC client app.
+
+==== ssh
+
+OS image comes with ssh enabled. You can log in using ssh user: 'user'.
+
 === Marine Radio
 
 OS image comes with many HAM radio applications, decoders for many marine specific
