@@ -65,7 +65,7 @@ toc::[]
 
 === Download Image
 
-Download SD card image (2.3 Gb file):
+Download SD card image (~2.5 Gb file):
 
 https://github.com/bareboat-necessities/lysmarine_gen#download
 
@@ -250,6 +250,7 @@ OS image comes with several chartplotters:
 * OpenCPN
 * AvNav
 * Freeboard-SK
+* TukTuk
 
 with extensive set of plugins as well as weather GRIB file viewers
 
@@ -271,9 +272,13 @@ with extensive set of plugins as well as weather GRIB file viewers
 * Press 'Prepare all ENC Charts' button
 * Press 'OK' button when done
 
+O-Charts can be registered using preinstalled OpenCPN plugins (on arm32 user space make sure to update plugins on-line
+from OpenCPN catalog) with O-Charts USB dongle or key.
+
 ==== AvNav
 
-When you are online NOAA raster MB tiles should work out of the box.
+When you are online NOAA raster MB tiles should work out of the box. O-Charts can be registered using AvNav plugin
+with O-Charts USB dongle or key.
 
 ==== SignalK, FreeBoard-SK, TukTuk
 
@@ -314,7 +319,8 @@ Start MusicBox web UI. Try pre-configured playlist, or you can search Tune-In or
 
 ==== Playing from your iPhone (Spotify, etc)
 
-Play music on iPhone. Select AirPlay on your iPhone and cast to 'lysmarine' airplay target.
+Play music on iPhone. Select AirPlay on your iPhone and cast to 'lysmarine' airplay target (your phone must be
+on lysmarine WiFi).
 
 ==== Playing from mobile phones with MPD applications
 
@@ -367,15 +373,7 @@ mounted hard to the boat, can't be just hanging).
 For magnetic heading: IMU doesn't know how you oriented it inside (where bow is pointing), so you need to adjust
 it by filling magnetic heading adjustment field.
 
-- Establish connection from PyPilot to SignalK. To achieve this due to a bug in pypilot zeroconf
-service auto-discovery you need to shut down mopidy and avnav temporarily.
-
-[source, shell]
-----
-sudo systemctl stop mopidy
-sudo systemctl stop avnav
-sudo systemctl restart pypilot@pypilot
-----
+- Establish connection from PyPilot to SignalK.
 
 - Go to SignalK web UI as admin and approve the access request from PyPilot for READ/WRITE access.
 
@@ -406,7 +404,7 @@ i2cdetect 1
 
 - Login into SignalK Marine Data Server
 
-- Enable BMP or BME sensor plugin. Give it correct i2c address. Restart SignalK server.
+- Enable BMP or BME sensor plugin. Give it correct i2c address. Reduce poll timeout to 20 sec. Restart SignalK server.
 
 - At this point you should be able to see barometric pressure and temperature (possibly humidity)
 in your data feed.
