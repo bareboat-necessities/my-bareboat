@@ -413,6 +413,18 @@ in your data feed.
 
 Many other devices are supported (usually via SignalK)
 
+=== Instrument Dashboards
+
+==== OpenCPN
+
+Enable OpenCPN 'Dashboard' plugin, add instruments. Dashboards are dockable to the right on bottom of OpenCPN canvas.
+
+==== KIP
+
+* Load KIP demo. In setting of KIP dashboard change the URL to http://localhost
+* You should request KIP token to be registered in SignalK, then go into SignalK app and
+authorize it. After that edit instruments and layout in KIP dashboard settings.
+
 === Marine Radio
 
 OS image comes with many HAM radio applications, decoders for many marine specific
