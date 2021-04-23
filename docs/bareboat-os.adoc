@@ -565,6 +565,11 @@ This should restore touch events in that app.
 with touch but to perform a click on it you would actually need to perform simulated right click
 by holding finger a bit longer and letting it go.
 
+=== Add-ons
+
+Check /home/user/add-ons directory. It contains number of scripts for installing many additional programs
+which for one or another reason couldn't be a part of the distribution image.
+
 === Suggestions
 
 The beauty of Linux is that you can customize it for your needs in infinite ways.
