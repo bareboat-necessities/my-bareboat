@@ -88,7 +88,7 @@ So as of time of writing this the best performance/compatibility is the 32-bit i
 - Install 32-bit image
 - Upgrade and install all additional plugins for OpenCPN via OpenCPN plugin downloader after updating the catalog.
 - Switch to 64-bit kernel in /boot/config.txt
-- Proceed with all other configuration steps
+- Proceed with all other configuration steps.
 
 === Prepare SD Card
 
