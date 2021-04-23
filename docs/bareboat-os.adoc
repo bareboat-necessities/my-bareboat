@@ -63,6 +63,18 @@ toc::[]
 
 == Getting Started
 
+=== Why use BBN OS?
+
+Why use BBN OS? Some people use just commercial marine electronics on board, some ones use smart tablets and marine
+Wi-Fi multiplexers. All these solutions lack one important component - an onboard computer capable of monitoring
+and controlling all aspects of the boat systems, and capable of storing data. Some people put Intel processor based computer for that.
+Intel-based solutions are more power consuming. With BBN OS you can build central boat computer meeting your needs.
+All on low power consuming raspberry pi with flexibility of adding countless choices of sensors to talk to
+all boat systems, internet, local WiFi, cameras, NMEA network, and able to decode marine radio protocols.
+BBN OS is free and open source. It is based on commonly used community supported open source projects such as SignalK,
+PyPilot, OpenCPN, and others. BBN OS graphical user interface will let you build a cockpit front-end to all functionality
+of the OS from chartplotting, dashboards, weather information, to media player, etc.
+
 === Download Image
 
 Download SD card image (~2.5 Gb file):
