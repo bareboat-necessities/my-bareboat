@@ -615,6 +615,8 @@ I would use waterproof glands for exits from the enclosure and pigtail connector
 
 * dAISy AIS is better solution than SDR
 
+* Use USB 2.0 hub where USB 3.0 not required
+
 For older hardware solutions (lot of it is still valid) see:
 
 https://bareboat-necessities.github.io/my-bareboat/
