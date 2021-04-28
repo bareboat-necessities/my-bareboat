@@ -129,6 +129,9 @@ if it gains some community. Some software components might become part of this p
 sub-hobby in recreational sailing and boating. So if same functionality can be built cheaper it probably should be, and
 here is the reason to change this document.
 
+NOTE: As of March 2021 our preferred software for OS: https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html
+
+
 === Boat Computer
 
 The boat computer runs on Raspberry Pi (Raspbian Linux) with OpenPlotter 2.0 installed. The boat computer will reside
