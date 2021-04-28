@@ -70,7 +70,7 @@ Wi-Fi multiplexers. All these solutions lack one important component - an onboar
 and controlling all aspects of the boat systems, and capable of storing data. Some people put Intel-based computer for that.
 Intel-based solutions are more power consuming. With BBN OS you can build a central boat computer meeting your needs.
 All on low power consuming raspberry pi with flexibility of adding countless choices of sensors to talk to
-all boat systems, Internet, local WiFi, cameras, NMEA network, and a system able to decode marine radio protocols.
+all boat systems, Internet, local Wi-Fi, cameras, NMEA network, and a system able to decode marine radio protocols.
 BBN OS is free and open source. It is based on commonly used community supported open source projects such as SignalK,
 PyPilot, OpenCPN, and others. BBN OS graphical user interface will let you build a cockpit front-end to all functionality
 of the OS from chartplotting, dashboards, weather information, to media player, etc.
@@ -125,11 +125,11 @@ Wait for boot process to run GUI (about 2 mins).
 If you have wired ethernet router you can just plug-in your raspberry pi ethernet port into the
 router
 
-==== WiFi Client
+==== Wi-Fi Client
 
-Go into network settings menu and delete WiFi wireless access point.
+Go into network settings menu and delete Wi-Fi wireless access point.
 
-NOTE: You need to set up WiFi country.
+NOTE: You need to set up Wi-Fi country.
 
 Change /etc/wpa_supplicant/wpa_supplicant.conf to add line for your country (example):
 
@@ -145,13 +145,17 @@ Change /etc/default/crda to set your country (example):
 REGDOMAIN=US
 ----
 
-When raspberry pi WiFi card discovers your WiFi router network click to connect to wifi
-and enter the correct WiFi password.
+When raspberry pi Wi-Fi card discovers your Wi-Fi router network click to connect to Wi-Fi
+and enter the correct Wi-Fi password.
 
-==== WiFi Access Point
+When password storage manager pops up to enter the password for your password storage I just normally leave it blank, so
+I'm not prompted again.
 
-Wi-Fi connections managed by widely used Gnome NetworkManager. Look for 'nmcli' documentation
-(command line interface to NetworkManager).
+==== Wi-Fi Access Point
+
+Wi-Fi connections are managed by widely used Gnome NetworkManager. Look for 'nmcli' documentation
+(command line interface to NetworkManager). Or you can figure it out from Administration/Advanced Network Settings
+app menu. By default, OS image is set up to provide you an access point.
 
 ==== Typical Setup on a Boat
 
@@ -339,7 +343,7 @@ Start MusicBox web UI. Try pre-configured playlist, or you can search Tune-In or
 ==== Playing from your iPhone (Spotify, etc)
 
 Play music on iPhone. Select AirPlay on your iPhone and cast to 'lysmarine' airplay target (your phone must be
-on lysmarine WiFi).
+on lysmarine-hotspot WiFi).
 
 ==== Playing from mobile phones with MPD applications
 
@@ -594,7 +598,7 @@ which for one or another reason couldn't be a part of the distribution image.
 The beauty of Linux is that you can customize it for your needs in infinite ways.
 While this distro aimed to strike common need, you will find that number of post-install
 customization steps would be required. The key is to script those steps, make them non-interactive,
-make the steps requite NO GIU. In that case your set up becomes RE-PRODUCIBLE in case of new
+make the steps requite NO GUI. In that case your set up becomes RE-PRODUCIBLE in case of new
 OS image releases. You can share your post-install scripts, so the system can be improved and even more fine-tuned.
 
 === Hardware
