@@ -727,24 +727,27 @@ Brief explanation:
 
 Check with commands:
 
-. sudo I2c-detect -y 1
- should show addresses on the bus, then
+ sudo I2c-detect -y 1
 
-. systemctl status pypilot@pypilot
+should show addresses on the bus, then
+
+ systemctl status pypilot@pypilot
+
 should show that pypilot service is enabled, running and has no errors
 
-. telnet localhost 20220
+ telnet localhost 20220
+
 should show stream of heading NMEA data from pypilot
 
-. telnet localhost 10110
-should show both GPS and heading NMEA sentences from SignalK
+ telnet localhost 10110
 
-Also this FAQ for common berryGPS issues
+should show both GPS and heading NMEA sentences from SignalK.
+
+Also, check this FAQ for common berryGPS issues:
 
 https://ozzmaker.com/berrygps_imu-faq/
 
-disabling echo on serial port might be required, as well
-as enabling ZDA NMEA time sentence
+disabling echo on serial port might be required, as well as enabling ZDA NMEA time sentence.
 
 ==== RTL8812AU drivers
 
@@ -752,6 +755,9 @@ Following these steps it compiled fine from the first attempt https://github.com
 
 There is also a script to install various additional WiFi cards drivers
 
+[source, shell]
+----
 cd /home/user/add-ons
 ./wifi-drivers-install.sh
+----
 
