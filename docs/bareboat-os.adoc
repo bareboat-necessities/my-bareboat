@@ -631,3 +631,41 @@ https://bareboat-necessities.github.io/my-bareboat/
 
 Please send us your HowTo, and we can add it here for everyone to find. Thanks
 
+==== BerryGPS-IMU V3
+
+- Install the BerryGPS-IMU V3 hat
+- Follow steps to enable i2c and disable serial port https://ozzmaker.com/berrygps-setup-guide-raspberry-pi/
+- Reboot
+- sudo i2cdetect -y 1 (should show you addresses)
+- Create pypilot connection to signalK (see https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html#_imu )
+- Set up barometer feed from SignalK ( https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html#_barometer_temperature_humidity )
+- IMU data heading etc should come from pypilot NMEA
+- check it with telnet localhost 20220
+
+Brief explanation:
+
+- i2c should be enabled, serial console disabled in config.txt
+- i2c driver should be loaded at boot (that's what raspi-config step does)
+- At this point you should have data readable from GPS (via /dev/serial0) and IMU / barometer (via i2c)
+- Now you set up routing of this data into dashboards, chartplotters
+- IMU is read by pypilot, which feeds it via 20220 tcp port using NMEA 0183 format
+- pypilot also needs to have connection via SignalK web socket to port 80 of signalK
+- That connection needs to be authorized made READ/WRITE in signalK using their token exchange procedure
+- GPS is read by signalK by creating NMEA connection to /dev/serial0 port (set correct baud rate)
+- Barometric/temp data is read by SignalK using signalK BME280 plugin. Make sure setting polling interval below 30 seconds (because OpenCPN expires non-navigational data every 30 seconds)
+- Calibrate level IMU on water. Calibrate your IMU compass, using pyPilot calibration utility.
+- I use external GPS antenna with it (It needs to be an active antenna). There is a jumper/or switch on the Berry board to choose external antenna
+
+Check with commands:
+
+. sudo I2c-detect -y 1
+ should show addresses on the bus, then
+
+. systemctl status pypilot@pypilot
+should show that pypilot service is enabled, running and has no errors
+
+. telnet localhost 20220
+should show stream of heading NMEA data from pypilot
+
+. telnet localhost 10110
+should show both GPS and heading NMEA sentences from SignalK
