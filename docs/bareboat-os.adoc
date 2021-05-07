@@ -669,3 +669,10 @@ should show stream of heading NMEA data from pypilot
 
 . telnet localhost 10110
 should show both GPS and heading NMEA sentences from SignalK
+
+Also this FAQ for common berryGPS issues
+
+https://ozzmaker.com/berrygps_imu-faq/
+
+disabling echo on serial port might be required, as well
+as enabling ZDA NMEA time sentence
