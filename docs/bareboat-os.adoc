@@ -567,6 +567,8 @@ custom cases. Make sure you do not forget to install required software for them 
 
 Desktop can be customized by editing the JavaScript file in /var/www/bbn-launcher.
 
+PyPilot web client looks better in dark skin. Switch to the dark theme if it wasn't done for you automatically.
+
 === Customizing On First Boot
 
 You can add additional customizations which will be performed on system first boot by
