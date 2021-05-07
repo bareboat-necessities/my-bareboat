@@ -617,6 +617,53 @@ by holding finger a bit longer and letting it go.
 Check /home/user/add-ons directory. It contains number of scripts for installing many additional programs
 which for one or another reason couldn't be a part of the distribution image.
 
+=== Default Ports
+
+See:
+
+[source, shell]
+----
+sudo netstat -tulpen
+----
+
+[source]
+----
+
+Proto  Port       Transport            Program/Service
+tcp    22         ssh                  sshd Secure Remote Shell
+tcp    25         smtp                 exim4 e-mail
+tcp    80         http/WS              SignalK
+tcp    139        netbios              smbd
+tcp    445        smb                  smbd
+tcp    631        CUPS                 cupsd Printing
+tcp    2947       gpsd                 gpsd
+tcp    4713       pulseaudio           pulseaudio audio
+tcp    4997       http                 bbn-desktop
+tcp    5000       airplay              shairport-sync music
+tcp    5900       vnc                  x11vnc
+tcp    6600       mpd                  Mopidy MPD Music
+tcp    6680       http                 Mopidy Music
+tcp    8080       http                 PyPilot_web
+tcp    8082       http                 AvNav Ocharts
+tcp    8085       http                 AvNav Updater
+tcp    8099       http                 AvNav
+tcp    8375       http/json            SignalK Deltas
+tcp    8765       http                 motioneye
+tcp    10110      NMEA 0183            SignalK
+tcp    20220      NMEA 0183            PyPilot
+tcp    23322      json                 PyPilot
+tcp    34567      NMEA 0183            AvNav NMEA out
+udp    68         DHCP                 dhclient
+udp    323        ntp                  chronyd time service
+udp    631        IPP                  CUPS Internet Printing Protocol
+udp    5353       service discovery    chromium, others (bonjour, zeroconf, mDNS)
+udp    10116      NMEA 0183            AvNav, KPlex
+udp    40334      mDNS                 avahi-daemon
+udp    46572      mDNS                 avahi-daemon
+
+----
+
+
 === Suggestions
 
 The beauty of Linux is that you can customize it for your needs in infinite ways.
