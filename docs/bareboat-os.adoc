@@ -206,6 +206,15 @@ cd ~/add-ons
 ./change-password.sh
 ----
 
+To change root password:
+
+[source, shell]
+----
+sudo su
+passwd
+exit
+----
+
 === International Keyboard
 
 Keyboard layout controlled by pre-installed ibus application. To add a language:
