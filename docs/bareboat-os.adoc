@@ -467,7 +467,7 @@ x11vnc -usepw
 sudo systemctl restart vnc
 ----
 
-sOS image also provides VNC client app.
+OS image also provides VNC client app.
 
 ==== ssh
 
