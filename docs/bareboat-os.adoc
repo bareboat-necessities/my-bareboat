@@ -196,6 +196,8 @@ update-locale en_US.UTF-8
 
 === Change Password
 
+Default user password is changeme. You would want to modify it.
+
 Open Terminal from GUI and on the terminal command line:
 
 [source, shell]
