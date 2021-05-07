@@ -452,11 +452,22 @@ authorize it. After that edit instruments and layout in KIP dashboard settings.
 
 ==== VNC
 
-OS image comes with VNC pre configured. You can change default password by removing
-/home/user/.vnc/passwd file and accessing VNC server from client. On the first login
-it will prompt to set up a new password.
+OS image comes with VNC pre configured. Default password is changeme.
+You can change default password by removing /home/user/.vnc/passwd file and running
 
-OS image also provides VNC client app.
+[source, shell]
+----
+x11vnc -usepw
+----
+
+(Hit CTRL/C after changing password).
+
+[source, shell]
+----
+sudo systemctl restart vnc
+----
+
+sOS image also provides VNC client app.
 
 ==== ssh
 
