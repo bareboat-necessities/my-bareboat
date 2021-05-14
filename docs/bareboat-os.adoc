@@ -669,7 +669,7 @@ udp    46572      mDNS                 avahi-daemon
 The beauty of Linux is that you can customize it for your needs in infinite ways.
 While this distro aimed to strike common need, you will find that number of post-install
 customization steps would be required. The key is to script those steps, make them non-interactive,
-make the steps requite NO GUI. In that case your set up becomes RE-PRODUCIBLE in case of new
+make the steps requite NO GUI. In that case your set up becomes REPRODUCIBLE in case of new
 OS image releases. You can share your post-install scripts, so the system can be improved and even more fine-tuned.
 
 === Hardware
