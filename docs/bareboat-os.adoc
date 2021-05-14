@@ -727,7 +727,7 @@ Brief explanation:
 
 Check with commands:
 
- sudo I2c-detect -y 1
+ sudo i2cdetect -y 1
 
 should show addresses on the bus, then
 
