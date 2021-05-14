@@ -438,7 +438,11 @@ i2cdetect 1
 
 - Login into SignalK Marine Data Server
 
-- Enable BMP or BME sensor plugin. Give it correct i2c address. Reduce poll timeout to 20 sec. Restart SignalK server.
+- Enable BMP or BME sensor plugin. Give it correct i2c address. Reduce poll timeout to 20 sec.
+
+- Change 'salon.inside' to 'outside' (one word) for OpenCPN to display readings.
+
+- Restart SignalK server.
 
 - At this point you should be able to see barometric pressure and temperature (possibly humidity)
 in your data feed.
