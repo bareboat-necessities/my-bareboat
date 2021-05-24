@@ -1,7 +1,10 @@
 ![Bareboat Necessities Logo](./bareboat-necessities-logo.svg)
 
 # Bareboat Necessities
-Opensource hardware and software solutions for sailing and sailboats
+Opensource hardware and software solutions for sailing and sailboats.
+
+Do not forget to check our [ ⛵⛵⛵ ](https://github.com/bareboat-necessities/lysmarine_gen)  [ BBN Marine OS for Raspberry Pi ](https://github.com/bareboat-necessities/lysmarine_gen) 
+
 
 [Home](https://bareboat-necessities.github.io)
 
