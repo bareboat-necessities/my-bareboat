@@ -1001,7 +1001,6 @@ Raspberry Pi IP65 Weatherproof IoT Project Enclosure:
 https://sixfab.com/product/raspberry-pi-ip65-weatherproof-iot-project-enclosure/
 
 
-
 NOTE: Another couple of interesting boards are discussed here http://forum.openmarine.net/showthread.php?tid=1666&page=3
 NMEA multiplexer, current, voltage and RPM sensors for engine/battery monitoring and fridge and thermostat control board.
 
@@ -1049,6 +1048,17 @@ NOTE: One more board: https://github.com/mairas/sailor-hat-hardware/blob/master/
 * Boot from USB SATA SSD
 * Coaxial Lightning Arresters for RF cables
 * Mount SD card reader to front panel to swap easier
+
+BluesWireless Notecard:
+https://shop.blues.io/products/raspberry-pi-starter-kit
+
+* Integrated Quectel cellular modem.
+* Secure element with a factory-installed ECC P-384 certificate provisioned at chip manufacture.
+* Integrated GPS and Accelerometer.
+* Designed operate on battery power, be "always-on" to maintain time & location, while typically drawing less than 8µA, when idle.
+* Bundled with 10-years and 500MB of cellular data. No cellular subscriptions, SIM fees or monthly minimums apply.
+* PTCRB Certified Module.
+
 
 Do consider commercial NMEA multiplexers, they can offer good value for their price
 Example: Quark-elec https://www.quark-elec.com
