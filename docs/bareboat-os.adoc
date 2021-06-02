@@ -488,6 +488,13 @@ OS image also provides VNC client app.
 
 OS image comes with ssh enabled. You can log in using ssh user: 'user'.
 
+==== Android Devices
+
+OS image comes with scrcpy pre-installed and pre-configured. You can view and control your Android devices.
+You need to enable USB debugging on your Android device or follow the instructions
+to enable controlling it via WiFi. See: https://github.com/Genymobile/scrcpy
+
+
 === Marine Radio
 
 OS image comes with many HAM radio applications, decoders for many marine specific
