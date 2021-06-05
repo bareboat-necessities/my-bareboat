@@ -745,7 +745,7 @@ should show addresses on the bus, then
 
  systemctl status pypilot@pypilot
 
-should show that pypilot service is enabled, running and has no errors
+should show that pypilot service as enabled, running and has no errors
 
  telnet localhost 20220
 
