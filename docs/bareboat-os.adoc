@@ -715,6 +715,7 @@ Please send us your HowTo, and we can add it here for everyone to find. Thanks
 
 - Install the BerryGPS-IMU V3 hat
 - Follow steps to enable i2c and disable serial port https://ozzmaker.com/berrygps-setup-guide-raspberry-pi/
+- Remove serial console mentioned in /boot/cmdline.txt (argument with serial0 and baud rate)
 - Reboot
 - sudo i2cdetect -y 1 (should show you addresses)
 - Create pypilot connection to signalK (see https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html#_imu )
