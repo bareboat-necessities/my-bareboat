@@ -493,7 +493,7 @@ OS image comes with ssh enabled. You can log in using ssh user: 'user'.
 OS image comes with scrcpy pre-installed and pre-configured. You can view and control your Android devices.
 You need to enable USB debugging on your Android device or follow the instructions
 to enable controlling it via WiFi. See: https://github.com/Genymobile/scrcpy
-In most cases you just need to enable USB debugging on your Android device and plug it in.
+In most cases you just need to enable USB debugging on your Android device and plug it in (thanks to autoadb).
 
 === Marine Radio
 
