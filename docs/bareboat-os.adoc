@@ -664,6 +664,7 @@ tcp    10110      NMEA 0183            SignalK
 tcp    20220      NMEA 0183            PyPilot
 tcp    23322      json                 PyPilot
 tcp    34567      NMEA 0183            AvNav NMEA out
+tcp    41447      spotify              librespot
 udp    68         DHCP                 dhclient
 udp    323        ntp                  chronyd time service
 udp    631        IPP                  CUPS Internet Printing Protocol
