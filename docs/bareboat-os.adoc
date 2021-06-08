@@ -643,11 +643,11 @@ sudo netstat -tulpen
 Proto  Port       Transport            Program/Service
 tcp    22         ssh                  sshd Secure Remote Shell
 tcp    25         smtp                 exim4 e-mail
-tcp    80         http/WS              SignalK
 tcp    139        netbios              smbd
 tcp    445        smb                  smbd
 tcp    631        CUPS                 cupsd Printing
 tcp    2947       gpsd                 gpsd
+tcp    3000       http/WS              SignalK
 tcp    4713       pulseaudio           pulseaudio audio
 tcp    4997       http                 bbn-desktop
 tcp    5000       airplay              shairport-sync music
