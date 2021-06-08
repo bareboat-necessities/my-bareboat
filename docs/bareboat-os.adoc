@@ -459,7 +459,7 @@ Enable OpenCPN 'Dashboard' plugin, add instruments. Dashboards are dockable to t
 
 ==== KIP
 
-* Load KIP demo. In setting of KIP dashboard change the URL to http://localhost
+* Load KIP demo. In setting of KIP dashboard change the URL to http://localhost:3000
 * You should request KIP token to be registered in SignalK, then go into SignalK app and
 authorize it. After that edit instruments and layout in KIP dashboard settings.
 
