@@ -773,4 +773,3 @@ There is also a script to install various additional WiFi cards drivers
 cd /home/user/add-ons
 ./wifi-drivers-install.sh
 ----
-
