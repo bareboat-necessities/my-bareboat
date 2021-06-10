@@ -361,6 +361,11 @@ on lysmarine-hotspot WiFi).
 Install MPD compatible media player on your mobile device and from it you can
 control playing your Mopidy library on your raspberry pi.
 
+==== Playing Spotify
+
+Start yoour Spotify app on your mobile device which is connected to boat WiFi.
+Select 'Lysmarine' device as target to play on pi via raspotify. You need to have a premium Spotify account.
+
 === Interfacing with ship systems
 
 The first place to start configuring boat interfaces would be SignalK.
