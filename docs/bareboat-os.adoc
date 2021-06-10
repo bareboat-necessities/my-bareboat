@@ -656,6 +656,7 @@ tcp    3000       http/WS              SignalK
 tcp    4713       pulseaudio           pulseaudio audio
 tcp    4997       http                 bbn-desktop
 tcp    5000       airplay              shairport-sync music
+tcp    5037       adb                  android adb
 tcp    5900       vnc                  x11vnc
 tcp    6600       mpd                  Mopidy MPD Music
 tcp    6680       http                 Mopidy Music
@@ -669,7 +670,7 @@ tcp    10110      NMEA 0183            SignalK
 tcp    20220      NMEA 0183            PyPilot
 tcp    23322      json                 PyPilot
 tcp    34567      NMEA 0183            AvNav NMEA out
-tcp    41447      spotify              librespot
+tcp    dynamic    spotify              librespot
 udp    68         DHCP                 dhclient
 udp    323        ntp                  chronyd time service
 udp    631        IPP                  CUPS Internet Printing Protocol
