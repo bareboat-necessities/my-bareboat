@@ -672,12 +672,12 @@ tcp    23322      json                 PyPilot
 tcp    34567      NMEA 0183            AvNav NMEA out
 tcp    dynamic    spotify              librespot
 udp    68         DHCP                 dhclient
+udp    137        nmb                  nmbd
+udp    138        nmb                  nmbd
 udp    323        ntp                  chronyd time service
 udp    631        IPP                  CUPS Internet Printing Protocol
-udp    5353       service discovery    chromium, others (bonjour, zeroconf, mDNS)
+udp    5353       service discovery    avahi-daemon, chromium, others (bonjour, zeroconf, mDNS)
 udp    10116      NMEA 0183            AvNav, KPlex
-udp    40334      mDNS                 avahi-daemon
-udp    46572      mDNS                 avahi-daemon
 
 ----
 
