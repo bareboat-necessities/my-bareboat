@@ -744,6 +744,12 @@ Brief explanation:
 - Calibrate level IMU on water. Calibrate your IMU compass, using pyPilot calibration utility.
 - I use external GPS antenna with it (It needs to be an active antenna). There is a jumper/or switch on the Berry board to choose external antenna
 
+NOTE: Cellular, GPS, WiFi Antenna (3 in one), Model AFCJF3, Price $80
+Designed for marine and recreational vehicles (RV), this multi-band
+Cellular, GPS, WiFi Antenna (696 MHz - 5900 MHz / 5.9 GHz) is a 3-way omni-directional,
+IP67 waterproof antenna for harsh environment communication applications.
+https://www.signalbooster.com/products/cellular-gps-wifi-antenna
+
 Check with commands:
 
  sudo i2cdetect -y 1
