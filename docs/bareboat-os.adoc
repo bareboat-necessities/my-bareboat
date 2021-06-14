@@ -412,7 +412,7 @@ mounted hard to the boat, can't be just hanging).
 For magnetic heading: IMU doesn't know how you oriented it inside (where bow is pointing), so you need to adjust
 it by filling magnetic heading adjustment field.
 
-- Establish connection from PyPilot to SignalK.
+- Establish connection from PyPilot to SignalK (restart PyPilot just before doing it to get a fresh valid request)
 
 - Go to SignalK web UI as admin and approve the access request from PyPilot for READ/WRITE access.
 
