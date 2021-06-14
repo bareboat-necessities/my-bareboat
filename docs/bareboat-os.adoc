@@ -538,7 +538,7 @@ The OS image gives you internet applications for:
 
 * Email
 * Chat
-* Facebook
+* FB
 * YouTube
 * Browser
 * On-Line Weather
