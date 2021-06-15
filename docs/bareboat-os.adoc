@@ -323,6 +323,8 @@ Follow SignalK documentation to install offline charts for these.
 SignalK manages its own updates. Login into SignalK Marine Data Server web UI application
 and perform updates via its app store.
 
+For SignalK support visit: https://signalk-dev.slack.com/
+
 === PyPilot
 
 Starting PyPilot server:
