@@ -113,3 +113,34 @@ rudder position, interfaces to electric winches, sail tension sensors ports, liv
 . Supplied with IP67 or better panel mounted interfaces (round holes) and cords to the router
 for USB, Ethernet, NMEA, power, momentary switch button, RF ports for antennas
 (GPS, WiFi, etc)
+
+== Wishlist for Power Board
+
+This board would allow Pi to be up 24/7.
+
+. Port for solar / wind power input
+. Port for 12v house battery input
+. 12v output to power external monitor
+. Lithium Ion battery mounting place
+. Charging from solar, overcharge protection. If solar is enough then
+work from solar and charge, if not then from lithium battery, if not enough
+from 12v house battery, if not enough then do a safe shutdown, but when
+solar comes back up (or house battery) start the pi automatically
+. UPS via lithium battery
+. RTC clock
+. SSD drive interface, place to mount SSD
+. 7-port USB hub (can be USB 2.0) self-powered, non back feeding
+. Audio input (and better than default pi audio output)
+. Supplied with IP67 or better panel mounted interfaces (round holes) and cords to the board
+for USB, HDMI, Audio in/out, Ethernet, power, momentary switch button, RF ports for antennas
+(GPS, AIS, SDR radio, etc)
+. External panel mounted SD card reader extension (IP68 or better) for easy software and charts swap
+. 5v ports to power extension IO board and Pi
+. Safe shutdown button connector (with panel mountable momentary button)
+. Programmable buzzer
+. Connectors for front panel status lights
+. Connectors for front panel amp/volt meter indicator
+. Conformant coating of the board
+
+And all sensors, NMEA, GPS/AIS, Radio, Bluetooth, relays done as a separate IO board.
+
