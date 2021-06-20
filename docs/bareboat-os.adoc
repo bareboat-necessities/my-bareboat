@@ -529,6 +529,11 @@ longer HDMI. You can't use HDMI camera, HDMI is used merely as wire signal exten
 
 https://www.arducam.com/product/arducam-csi-hdmi-cable-extension-module-15pin-60mm-fpc-cable-raspberry-pi-camera-specific-pack-2-1-set/
 
+==== Low light vision
+
+Sionyx has some boating oriented solutions:
+https://www.sionyx.com/pages/boating
+
 
 ==== MotionEye
 
