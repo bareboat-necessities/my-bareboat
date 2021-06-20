@@ -725,6 +725,7 @@ https://bareboat-necessities.github.io/my-bareboat/
 === Most useful features for average short cruises
 
 * GPS, OpenCPN off-line charts for your sailing area
+* IMU Compass
 * Tides / Currents in OpenCPN
 * Waypoints, routes in OpenCPN, tracking
 * AIS in OpenCPN
