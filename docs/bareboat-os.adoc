@@ -735,6 +735,7 @@ https://bareboat-necessities.github.io/my-bareboat/
 * Barograph
 * Autopilot (if equipped)
 * Cameras for docking and night light
+* Local boat WiFi hotspot and LTE gateway
 
 
 === HOWTOs
