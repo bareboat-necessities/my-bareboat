@@ -720,6 +720,22 @@ For older hardware solutions (lot of it is still valid) see:
 
 https://bareboat-necessities.github.io/my-bareboat/
 
+
+
+=== Most useful features for average short cruises
+
+* GPS, OpenCPN off-line charts for your sailing area
+* Tides / Currents in OpenCPN
+* Waypoints, routes in OpenCPN, tracking
+* AIS in OpenCPN
+* Weather Windy, etc if using LTE internet
+* Music players
+* Dashboards Wind, Speed, Depth, GPS, Local Sunset, etc
+* Barograph
+* Autopilot (if equipped)
+* Cameras for docking and night light
+
+
 === HOWTOs
 
 Please send us your HowTo, and we can add it here for everyone to find. Thanks
