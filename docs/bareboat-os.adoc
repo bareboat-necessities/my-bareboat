@@ -534,6 +534,7 @@ https://www.arducam.com/product/arducam-csi-hdmi-cable-extension-module-15pin-60
 Sionyx has some boating oriented solutions:
 https://www.sionyx.com/pages/boating
 
+Image stabilization for boat movements is an important factor too.
 
 ==== MotionEye
 
