@@ -626,6 +626,8 @@ See: https://github.com/bareboat-necessities/lysmarine_gen/issues
 If GPS is lost in OpenCPN the first thing to try is to restart SignalK. You can do it from touchscreen
 via desktop 'Commands' icon.
 
+Do not create data loops with your data flows between OpenCPN, AvNav, SignalK, GPSd, Kplex, PyPilot.
+
 ==== Touchscreen
 
 * Some applications (namely OpenCPN and gtk2 based as well as some Qt) sometimes stop responding to touch events.
