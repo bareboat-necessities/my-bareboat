@@ -516,6 +516,15 @@ doesn't have built-in sound input). Proper antennas required for correct recepti
 Should be easy to integrate using pre-installed VLC.
 See URL in /var/www/bbn-launcher/bbn-launcher.js
 
+IP cameras usually have some delay in video display.
+
+==== Connecting cameras to CSI on raspberry pi
+
+Geekworm Raspberry Pi Hdmi-in Module, Hdmi to CSI-2 could be used to solve distance issue with CSI cameras.
+
+https://geekworm.com/products/raspberry-pi-hdmi-to-csi-2-adapter-board-with-15-pin-ffc-cable
+
+
 ==== MotionEye
 
 By default, motioneye service installed and enabled. To disable:
