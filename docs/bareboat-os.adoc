@@ -524,6 +524,11 @@ Geekworm Raspberry Pi Hdmi-in Module, Hdmi to CSI-2 could be used to solve dista
 
 https://geekworm.com/products/raspberry-pi-hdmi-to-csi-2-adapter-board-with-15-pin-ffc-cable
 
+Another trick with Arducam CSI to HDMI Cable extension is for CSI cameras to connect to raspberry pi over
+longer HDMI. You can't use HDMI camera, HDMI is used merely as wire signal extension for CSI.
+
+https://www.arducam.com/product/arducam-csi-hdmi-cable-extension-module-15pin-60mm-fpc-cable-raspberry-pi-camera-specific-pack-2-1-set/
+
 
 ==== MotionEye
 
