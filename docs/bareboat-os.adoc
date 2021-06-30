@@ -507,10 +507,10 @@ sudo systemctl start vncserver-x11-serviced.service
 reboot
 ----
 
-Create an account on realvnc.com web site. Login from your pi's RealVNC server into
+Create an account on realvnc.com website. Login from your pi's RealVNC server into
 realvnc.com cloud using the account you set up. Set-up a password on your pi's VNC server for
-users to connect. While being logged in into realvnc.com web site create a team and invite
-people you want to have a remote desktop access to your pi. When they accept your invite
+users to connect. While being logged in into realvnc.com website create a team and invite
+people you want to have remote desktop access to your pi. When they accept your invite
 let them know the password to connect to your local VNC server. They would need to download
 realVNC viewer (can be for PC, Linux, Mac, etc) and follow the instructions from the invite.
 
