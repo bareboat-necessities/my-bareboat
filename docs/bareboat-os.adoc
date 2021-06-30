@@ -491,6 +491,29 @@ sudo systemctl restart vnc
 
 OS image also provides VNC client app.
 
+===== RealVNC with cloud connectivity
+
+By default BBN OS comes with x11vnc server which works fine for a local network access.
+If you want remote desktop access from Internet then you might install
+realvnc server instead:
+
+[source, shell]
+----
+sudo systemctl stop vnc
+sudo systemctl disable vnc
+sudo apt-get -y install realvnc-vnc-server
+sudo systemctl enable vncserver-x11-serviced.service
+sudo systemctl start vncserver-x11-serviced.service
+reboot
+----
+
+Create an account on realvnc.com web site. Login from your pi's RealVNC server into
+realvnc.com cloud using the account you set up. Set-up a password on your pi's VNC server for
+users to connect. While being logged in into realvnc.com web site create a team and invite
+people you want to have a remote desktop access to your pi. When they accept your invite
+let them know the password to connect to your local VNC server. They would need to download
+realVNC viewer (can be for PC, Linux, Mac, etc) and follow the instructions from the invite.
+
 ==== ssh
 
 OS image comes with ssh enabled. You can log in using ssh user: 'user'.
