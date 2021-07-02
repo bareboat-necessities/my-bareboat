@@ -747,6 +747,10 @@ OS image releases. You can share your post-install scripts, so the system can be
 While the system supports touchscreens during set-up phase you would still want to have a regular wired keyboard
 and mouse attached to it as there is plenty of activities involved on the shell command line.
 
+You do not have to be a software engineer to install the system. A mechanic, electrician, paralegal professional,
+civil engineer, money manager are few examples of people with different backgrounds who were able to
+install and set it up for their boats.
+
 
 === Hardware
 
