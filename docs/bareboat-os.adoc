@@ -807,6 +807,30 @@ https://bareboat-necessities.github.io/my-bareboat/
 * Cameras for docking and night light
 * Local boat WiFi hotspot and LTE gateway
 
+=== IoT
+
+==== Mosquitto MQTT Server
+
+BBN OS image comes with Mosquitto clients and server preinstalled but disabled. To enable and start it:
+
+. Enable and start Mosquitto server (on default port 1883)
++
+[source]
+----
+sudo systemctl enable mosquitto
+sudo systemctl start mosquitto
+----
+
+. Subscribe to topics
++
+[source]
+----
+mosquitto_sub -t '#'
+----
+
+. Publish from SignalK: Enable MQTT Gateway plugin. Pick 'Send data to remote server' with URL mqtt://localhost.
+Add topic (Ex: navigation.headingMagnetic). Restart SignalK and observe the data stream in the subscriber.
+
 
 === Data Analytics
 
