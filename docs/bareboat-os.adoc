@@ -175,6 +175,9 @@ sudo systemctl enable wifi_powersave@off.service
 sudo systemctl start wifi_powersave@off.service
 ----
 
+NOTE: It is important to protect your installation from unauthorized access from the Internet. Make sure you put your
+raspberry pi behind a router which adds a firewall protection. It is also important to change default passwords.
+
 === Set Timezone / Locale
 
 Open Terminal from GUI and on the terminal command line:
