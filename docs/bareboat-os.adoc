@@ -856,6 +856,16 @@ sudo systemctl start grafana-server
 
 . Access http://localhost:3080  with user and password 'admin'.
 
+==== InfluxDB
+
+. Enable and start InfluxDB server (on default ports 8086 (client-server), 8088 (RPC))
++
+[source]
+----
+sudo systemctl unmask influxdb.service
+sudo systemctl enable influxdb
+sudo systemctl start influxdb
+----
 
 === HOWTOs
 
