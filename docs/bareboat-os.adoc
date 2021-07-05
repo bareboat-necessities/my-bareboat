@@ -528,6 +528,17 @@ You need to enable USB debugging on your Android device or follow the instructio
 to enable controlling it via WiFi. See: https://github.com/Genymobile/scrcpy
 In most cases you just need to enable USB debugging on your Android device and plug it in (thanks to autoadb).
 
+==== Browsers
+
+The URLs of the applications on your boat computer:
+
+* http://lysmarine:8080 PyPilot
+* http://lysmarine:3000 SignalK
+* http://lysmarine:8099 AvNav
+* http://lysmarine:6680 Mopidy Music Box
+* http://lysmarine:8765 MotionEye Cameras
+
+
 === Marine Radio
 
 OS image comes with many HAM radio applications, decoders for many marine specific
