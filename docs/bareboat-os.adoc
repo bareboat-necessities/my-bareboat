@@ -867,6 +867,9 @@ sudo systemctl enable influxdb
 sudo systemctl start influxdb
 ----
 
+. Initialize database and connect to it (for example) from SignalK barograph plugin.
+
+
 === HOWTOs
 
 Please send us your HowTo, and we can add it here for everyone to find. Thanks
