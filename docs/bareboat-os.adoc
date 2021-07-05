@@ -808,6 +808,31 @@ https://bareboat-necessities.github.io/my-bareboat/
 * Local boat WiFi hotspot and LTE gateway
 
 
+=== Data Analytics
+
+==== Grafana
+
+BBN OS image comes with grafana preinstalled but disabled. To enable and start it:
+
+. Edit the /etc/grafana/grafana.ini file and change line ';http_port = 3000' to 'http_port = 3080' (to avoid conflict with SignalK)
++
+[source]
+----
+sudo nano /etc/grafana/grafana.ini
+----
+
+. Enable and start Grafana server
++
+[source]
+----
+sudo systemctl enable grafana-server
+sudo systemctl start grafana-server
+----
+
+
+. Access http://localhost:3080  with user and password 'admin'.
+
+
 === HOWTOs
 
 Please send us your HowTo, and we can add it here for everyone to find. Thanks
