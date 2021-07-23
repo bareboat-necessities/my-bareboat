@@ -6,7 +6,7 @@ services:
 before_install:
   - mkdir -p output
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker pull asciidoctor/docker-asciidoctor
+  - docker pull asciidoctor/docker-asciidoctor:1.7
 
 script:
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-html asciidoctor/docker-asciidoctor asciidoctor -b html5 -d book -a icons=font -a toc=left -D /documents/output docs/*.adoc
