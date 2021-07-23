@@ -943,3 +943,9 @@ There is also a script to install various additional WiFi cards drivers
 cd /home/user/add-ons
 ./wifi-drivers-install.sh
 ----
+
+==== Cloud Storage
+
+Using rclone you can store and sync your files on many cloud vendors storage.
+More: https://github.com/rclone/rclone
+
