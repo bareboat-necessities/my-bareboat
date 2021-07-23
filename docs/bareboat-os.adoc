@@ -199,7 +199,8 @@ update-locale en_US.UTF-8
 
 === Change Password
 
-Default user and root passwords are changeme. You would want to modify it.
+Default user and root passwords are changeme. You would want to modify it before your computer connects on-line to
+the Internet.
 
 Open Terminal from GUI and on the terminal command line:
 
