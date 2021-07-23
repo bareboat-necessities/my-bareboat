@@ -279,7 +279,7 @@ ls -l /dev/ttyLYS*
 NOTE: Due to a bug in OpenCPN https://github.com/bareboat-necessities/lysmarine_gen/issues/53
 Updating plugins on a system booted with arm64 kernel doesn't work even if userspace is armhf.
 As a workaround: boot with armhf kernel, update all plugins
-and only then switch to arm64 kernel
+and only then switch to arm64 kernel.
 
 === Set up Charts
 
@@ -308,7 +308,7 @@ with extensive set of plugins as well as weather GRIB file viewers
 * Press 'Apply' button
 * Click 'Chart Files' tab
 * Press 'Prepare all ENC Charts' button
-* Press 'OK' button when done
+* Press 'OK' button when done.
 
 O-Charts can be registered using preinstalled OpenCPN plugins (on arm32 user space make sure to update plugins on-line
 from OpenCPN catalog) with O-Charts USB dongle or key.
@@ -773,7 +773,7 @@ This is not my first build of the boat computer with raspberry pi. A lot of idea
 older (2020 build which was based on OpenPlotter). For up-to-date build I would change few things:
 
 * Instead of expensive Argonaut M7 I would have used
-(Model: SL07W, Brand Sihovision, Capacitive Touch Screen 7 inch, (1000 nits), IP65, 1024x600, Cost under $300):
+(Model: SL07W, Brand Sihovision, Capacitive Touch Screen 7-inch, (1000 nits), IP65, 1024x600, Cost under $300):
 https://www.sihovision.com/industrial-touch-monitor/7-inch-industrial-wide-temperaturer-lcd-monitor-with-remote-control-1.html
 
 * My waterproofing technique would be cheaper and better. Instead of costly connectors at the back of the computer (even if it is below deck)
@@ -899,7 +899,7 @@ Brief explanation:
 - GPS is read by signalK by creating NMEA connection to /dev/serial0 port (set correct baud rate)
 - Barometric/temp data is read by SignalK using signalK BME280 plugin. Make sure setting polling interval below 30 seconds (because OpenCPN expires non-navigational data every 30 seconds)
 - Calibrate level IMU on water. Calibrate your IMU compass, using pyPilot calibration utility.
-- I use external GPS antenna with it (It needs to be an active antenna). There is a jumper/or switch on the Berry board to choose external antenna
+- I use external GPS antenna with it. (It needs to be an active antenna). There is a jumper/or switch on the Berry board to choose external antenna
 
 NOTE: Cellular, GPS, WiFi Antenna (3 in one), Model AFCJF3, Price $80
 Designed for marine and recreational vehicles (RV), this multi-band
@@ -915,11 +915,11 @@ should show addresses on the bus, then
 
  systemctl status pypilot@pypilot
 
-should show that pypilot service as enabled, running and has no errors
+should show that pypilot service as enabled, running and has no errors.
 
  telnet localhost 20220
 
-should show stream of heading NMEA data from pypilot
+should show stream of heading NMEA data from pypilot.
 
  telnet localhost 10110
 
