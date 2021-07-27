@@ -357,6 +357,10 @@ The default audio output set up to audio jack port.
 
 Start MusicBox web UI. Try pre-configured playlist, or you can search Tune-In or YouTube.
 
+==== Iris
+
+Iris is an alernative player to MusicBox. Iris is also included in the BBN OS image.
+
 ==== Playing from your iPhone (Spotify, etc)
 
 Play music on iPhone. Select AirPlay on your iPhone and cast to 'lysmarine' airplay target (your phone must be
@@ -512,7 +516,7 @@ The URLs of the applications on your boat computer:
 * http://lysmarine:8080 PyPilot
 * http://lysmarine:3000 SignalK
 * http://lysmarine:8099 AvNav
-* http://lysmarine:6680 Mopidy Music Box
+* http://lysmarine:6680 Mopidy MusicBox/Iris
 * http://lysmarine:8765 MotionEye Cameras
 
 === Headless Operation
