@@ -515,6 +515,17 @@ The URLs of the applications on your boat computer:
 * http://lysmarine:6680 Mopidy Music Box
 * http://lysmarine:8765 MotionEye Cameras
 
+=== Headless Operation
+
+It's possible to disable booting into GUI by running:
+
+[source, shell]
+----
+sudo raspi-config
+----
+
+and selecting booting into console under System Options / Boot - Auto Login.
+
 
 === Marine Radio
 
