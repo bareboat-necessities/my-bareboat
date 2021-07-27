@@ -478,38 +478,14 @@ authorize it. After that edit instruments and layout in KIP dashboard settings.
 
 ==== VNC
 
-OS image comes with VNC pre configured. Default password is changeme.
-You can change default password by removing /home/user/.vnc/passwd file and running
+BBN OS image comes with RealVNC server pre-installed and ready to be used on the local network.
 
-[source, shell]
-----
-x11vnc -usepw
-----
-
-(Hit CTRL/C after changing password).
-
-[source, shell]
-----
-sudo systemctl restart vnc
-----
+IMPORTANT: You need to change the authentication method or the default unix user password before connecting the
+system to the Internet.
 
 OS image also provides VNC client app.
 
 ===== RealVNC with cloud connectivity
-
-By default BBN OS comes with x11vnc server which works fine for a local network access.
-If you want remote desktop access from Internet then you might install
-realvnc server instead:
-
-[source, shell]
-----
-sudo systemctl stop vnc
-sudo systemctl disable vnc
-sudo apt-get -y install realvnc-vnc-server
-sudo systemctl enable vncserver-x11-serviced.service
-sudo systemctl start vncserver-x11-serviced.service
-reboot
-----
 
 Create an account on realvnc.com website. Login from your pi's RealVNC server into
 realvnc.com cloud using the account you set up. Set-up a password on your pi's VNC server for
