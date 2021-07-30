@@ -157,6 +157,11 @@ Wi-Fi connections are managed by widely used Gnome NetworkManager. Look for 'nmc
 (command line interface to NetworkManager). Or you can figure it out from Administration/Advanced Network Settings
 app menu. By default, OS image is set up to provide you an access point.
 
+==== Using iPhone as Internet gateway
+
+Enable Personal Hotspot on iphone. Plug it in into pi with BBN OS via USB and tell iPhone to trust the connected computer.
+You will have tethered Internet connection from pi via iPhone.
+
 ==== Typical Setup on a Boat
 
 * Raspberry Pi wired to OpenWrt LTE/4G/WiFi router via ethernet port
