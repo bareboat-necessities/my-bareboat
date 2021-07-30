@@ -160,7 +160,7 @@ app menu. By default, OS image is set up to provide you an access point.
 ==== Using iPhone as Internet gateway
 
 Enable Personal Hotspot on iphone. Plug it in into pi with BBN OS via USB and tell iPhone to trust the connected computer.
-You will have tethered Internet connection from pi via iPhone.
+You will have tethered Internet connection from pi via iPhone (using usbmuxd).
 
 ==== Typical Setup on a Boat
 
