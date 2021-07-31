@@ -160,7 +160,7 @@ app menu. By default, OS image is set up to provide you an access point.
 ==== Using iPhone as Internet gateway
 
 Enable Personal Hotspot on iphone. Plug it in into pi with BBN OS via USB and tell iPhone to trust the connected computer.
-You will have tethered Internet connection from pi via iPhone (using usbmuxd).
+You will have a tethered Internet connection from your pi via iPhone (using usbmuxd).
 
 ==== Typical Setup on a Boat
 
@@ -945,4 +945,11 @@ cd /home/user/add-ons
 
 Using rclone you can store and sync your files on many cloud vendors storage.
 More: https://github.com/rclone/rclone
+
+==== Using your smartphone as NMEA GPS receiver
+
+Install GPS2IP application on your smartphone. Start it and enable GPS2IP in it.
+Your phone should be on the same local network as your boat computer.
+In SignalK add gps2ip_on_smartphone NMEA TCP connection to the IP address shown in
+GPS2IP app and the port specified there (usually 11123).
 
