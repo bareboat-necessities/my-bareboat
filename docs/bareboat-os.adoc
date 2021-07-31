@@ -955,8 +955,8 @@ More: https://github.com/rclone/rclone
 
 Install GPS2IP application on your smartphone. Start it and enable GPS2IP in it.
 Your phone should be on the same local network as your boat computer.
-In SignalK add gps2ip_on_smartphone NMEA TCP connection to the IP address shown in
-GPS2IP app and the port specified there (usually 11123).
+In SignalK add gps2ip_on_smartphone NMEA TCP connection to the IP address (it's better to use DNS name)
+shown in GPS2IP app and the port specified there (usually 11123).
 
 ==== How to navigate with your iPhone as GPS receiver and have an Internet access on a boat within cellular reception
 
