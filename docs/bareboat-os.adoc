@@ -163,6 +163,9 @@ app menu. By default, OS image is set up to provide you an access point.
 Enable Personal Hotspot on iphone. Plug it in into pi with BBN OS via USB and tell iPhone to trust the connected computer.
 You will have a tethered Internet connection from your pi via iPhone (using usbmuxd).
 
+You do not have to be plugged in into USB if your phone and a boat computer are on the same local
+Wi-Fi network.
+
 ==== Typical Setup on a Boat
 
 * Raspberry Pi wired to OpenWrt LTE/4G/WiFi router via ethernet port
@@ -960,6 +963,6 @@ GPS2IP app and the port specified there (usually 11123).
 If you have a smartphone on board then you can use it as a source of NMEA GPS data and Internet provider
 for all your boat devices connected to your boat computer.
 
-* Follow steps <<tether>> to connect to your phone and use it as Internet hotspot
+* Follow steps <<tether>> to connect to your phone and use it as an Internet hotspot.
 
-* Follow steps <<phone_gps>> to use your phone GPS as NMEA 0183 source of GPS data
+* Follow steps <<phone_gps>> to use your phone GPS as NMEA 0183 source of GPS data.
