@@ -905,6 +905,7 @@ sudo systemctl start influxdb
 
 . Initialize database and connect to it (for example) from SignalK barograph plugin.
 
+Chronograf and Kapasitor also come pre-installed.
 
 === HOWTOs
 
