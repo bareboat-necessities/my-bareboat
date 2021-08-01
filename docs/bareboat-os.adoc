@@ -792,6 +792,12 @@ For older hardware solutions (lot of it is still valid) see:
 https://bareboat-necessities.github.io/my-bareboat/
 
 
+=== Printing
+
+Printing from Chromium is a bit unconvenient. You need to choose 'Print' menu, then
+scroll down and choose 'More Settings' and select 'Print Using System Dialog' which
+will let you to choose a printer.
+
 
 === Most useful features for average short cruises
 
