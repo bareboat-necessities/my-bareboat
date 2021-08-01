@@ -697,10 +697,19 @@ This should restore touch events in that app.
 with touch but to perform a click on it you would actually need to perform simulated right click
 by holding finger a bit longer and letting it go.
 
+==== Wi-Fi DNS
+
+If you use your devices on WiFi networks they might get assigned different IP addresses from DHCP servers.
+However, DNS servers tend to cache (remember) name to IP address mappings for quite some time.
+Thus, you can run into DNS name resolution issues if you do not configure DHCP servers to assign
+consistent IP addresses (by MAC address for example) to all your devices.
+
+
 === Add-ons
 
 Check /home/user/add-ons directory. It contains number of scripts for installing many additional programs
 which for one or another reason couldn't be a part of the distribution image.
+
 
 === Default Ports
 
