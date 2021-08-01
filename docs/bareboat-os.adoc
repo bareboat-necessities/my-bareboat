@@ -712,7 +712,7 @@ by holding finger a bit longer and letting it go.
 
 ==== Wi-Fi DNS
 
-If you use your devices on WiFi networks they might get assigned different IP addresses from DHCP servers.
+If you use your devices on LAN or WiFi networks they might get assigned different IP addresses from DHCP servers.
 However, DNS servers tend to cache (remember) name to IP address mappings for quite some time.
 Thus, you can run into DNS name resolution issues if you do not configure DHCP servers to assign
 consistent IP addresses (by MAC address for example) to all your devices.
