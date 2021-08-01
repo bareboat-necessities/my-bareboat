@@ -704,6 +704,8 @@ However, DNS servers tend to cache (remember) name to IP address mappings for qu
 Thus, you can run into DNS name resolution issues if you do not configure DHCP servers to assign
 consistent IP addresses (by MAC address for example) to all your devices.
 
+Another situation which can cause name resolution issues in DNS is when one device configured
+to be able to choose multiple Wi-Fi networks to connect to.
 
 === Add-ons
 
