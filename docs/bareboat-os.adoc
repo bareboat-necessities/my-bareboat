@@ -546,8 +546,17 @@ Make sure your lysmarine computer is mapped to a static IP address on your netwo
 ==== Casting from Chromium to your TV
 
 You can start Chromium and cast browser tab or whole desktop to your smart TV via ChromeCast protocol
-using Chromium menu 'Cast' option  and selecting appropriate source.
+using Chromium menu 'Cast' option and selecting an appropriate source. Your TV and your boat computer need to be
+on the same network (LAN or Wi-Fi).
 
+==== SmartPhone Applications
+
+There are many applications for smartphones which will take live NMEA data stream from your boat computer
+host: lysmarine, port: 10110.
+
+There are several ones which will even discover SignalK and use SignalK protocol. Examples: SignalK Monitor, SignalK.
+
+Your phone and your boat computer need to be on the same Wi-Fi network.
 
 === Headless Operation
 
