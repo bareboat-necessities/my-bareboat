@@ -541,6 +541,14 @@ The URLs of the applications on your boat computer:
 * http://lysmarine:6680 Mopidy MusicBox/Iris
 * http://lysmarine:8765 MotionEye Cameras
 
+Make sure your lysmarine computer is mapped to a static IP address on your network via MAC address mapping on your router.
+
+==== Casting from Chromium to your TV
+
+You can start Chromium and cast browser tab or whole desktop to your smart TV via ChromeCast protocol
+using Chromium menu 'Cast' option  and selecting appropriate source.
+
+
 === Headless Operation
 
 It's possible to disable booting into GUI by running:
