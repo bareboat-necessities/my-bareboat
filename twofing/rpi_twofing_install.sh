@@ -16,6 +16,11 @@ SUBSYSTEMS=="usb",ACTION=="add",KERNEL=="event*",ATTRS{idVendor}=="0000",ATTRS{i
 KERNEL=="event*",ATTRS{name}=="Argonaut. Touchscreen",SYMLINK+="twofingtouch",RUN+="/bin/chmod a+r /dev/twofingtouch"
 EOF'
 sudo apt-get -y install xserver-xorg-input-evdev xinput-calibrator
+
+# To find name for MatchProduct:
+#
+# udevadm info -a -n /dev/touchscreen0 | grep "ATTRS{name}" | sed -e 's#.*=="##' -e 's#"$##'
+#
 sudo bash -c 'cat << EOF > /usr/share/X11/xorg.conf.d/90-touchinput.conf
 Section "InputClass"
     Identifier "calibration"
