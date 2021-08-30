@@ -11,9 +11,9 @@ cd twofing || exit 255
 make
 sudo cp twofing /usr/bin/
 sudo cat /proc/bus/input/devices # Find the device name to use as matching string, find Vendor and Product IDs
-sudo bash -c 'cat << EOF > /etc/udev/rules.d/70-touchscreen-argonautM7.rules
-SUBSYSTEMS=="usb",ACTION=="add",KERNEL=="event*",ATTRS{idVendor}=="0000",ATTRS{idProduct}=="0009",SYMLINK+="twofingtouch",RUN+="/bin/chmod a+r /dev/twofingtouch"
-KERNEL=="event*",ATTRS{name}=="Argonaut. Touchscreen",SYMLINK+="twofingtouch",RUN+="/bin/chmod a+r /dev/twofingtouch"
+sudo bash -c 'cat << EOF > /etc/udev/rules.d/70-touchscreen.rules
+SUBSYSTEMS=="input", KERNEL=="event[0-9]*", ENV{ID_INPUT_TOUCHSCREEN}=="1", SYMLINK+="touchscreen0"
+SUBSYSTEMS=="input", KERNEL=="event[0-9]*", ENV{ID_INPUT_TOUCHSCREEN}=="1", SYMLINK+="twofingtouch", RUN+="/bin/chmod a+r /dev/twofingtouch"
 EOF'
 sudo apt-get -y install xserver-xorg-input-evdev xinput-calibrator
 
