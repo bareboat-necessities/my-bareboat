@@ -21,14 +21,13 @@ sudo apt-get -y install xserver-xorg-input-evdev xinput-calibrator
 #
 # udevadm info -a -n /dev/touchscreen0 | grep "ATTRS{name}" | sed -e 's#.*=="##' -e 's#"$##'
 #
+MATCH_PRODUCT=$(udevadm info -a -n /dev/touchscreen0 | grep "ATTRS{name}" | sed -e 's#.*=="##' -e 's#"$##')
 sudo bash -c 'cat << EOF > /usr/share/X11/xorg.conf.d/90-touchinput.conf
 Section "InputClass"
     Identifier "calibration"
     Driver "evdev"
-    MatchProduct "Argonaut. Touchscreen"
+    MatchProduct "'"${MATCH_PRODUCT}"'"
     MatchDevicePath "/dev/input/event*"
-    Option "Calibration" "272 9847 186 10033"
-    Option "Emulate3Buttons" "True"
     Option "EmulateThirdButton" "1"
     Option "EmulateThirdButtonTimeout" "750"
     Option "EmulateThirdButtonMoveThreshold" "30"
