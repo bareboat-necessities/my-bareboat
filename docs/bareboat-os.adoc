@@ -75,6 +75,24 @@ BBN OS is free and open source. It is based on commonly used community supported
 PyPilot, OpenCPN, and others. BBN OS graphical user interface will let you build a cockpit front-end to all functionality
 of the OS from chartplotting, dashboards, weather information, to media player, etc.
 
+==== Use Cases
+
+* Cockpit Touchscreen Chartplotter
+* Nav Station Computer
+* Desktop Computer
+* Pi Based Laptop
+* Headless Server
+* Media Player
+* Autopilot
+* SSB Radio Decoder
+* Marine Data Server, Multiplexer
+* Wi-Fi Access Point
+* Cameras Monitoring
+* Data Analytics Server
+* Weather Station
+* Boat Dashboards
+* File Server
+
 === Download Image
 
 Download SD card image (~2.5 Gb file):
