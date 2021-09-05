@@ -947,7 +947,7 @@ sudo systemctl start influxdb
 
 Chronograf and Kapasitor also come pre-installed.
 
-=== How can YOU help
+=== How YOU can help
 
 . Add a star on our github project page https://github.com/bareboat-necessities/lysmarine_gen
 . Report a bug https://github.com/bareboat-necessities/lysmarine_gen/issues
