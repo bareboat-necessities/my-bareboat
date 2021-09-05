@@ -947,6 +947,14 @@ sudo systemctl start influxdb
 
 Chronograf and Kapasitor also come pre-installed.
 
+=== How can YOU help
+
+. Add a star on our github project page https://github.com/bareboat-necessities/lysmarine_gen
+. Report a bug https://github.com/bareboat-necessities/lysmarine_gen/issues
+. Spread the word. There are many sailing forums on Internet and Facebook. Let other people know what BBN OS could do for you.
+. Respond to a question in our discussion forums https://github.com/bareboat-necessities/lysmarine_gen/discussions
+
+
 === HOWTOs
 
 Please send us your HowTo, and we can add it here for everyone to find. Thanks
