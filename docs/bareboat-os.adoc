@@ -955,6 +955,7 @@ Chronograf and Kapasitor also come pre-installed.
 . Respond to a question in our discussion forums: https://github.com/bareboat-necessities/lysmarine_gen/discussions
 . Post a video on YouTube explaining how you use BBN OS on your boat
 . Submit a github pull request with code changes to improve BBN OS
+. Post a blog article or contribute to HOWTOs section of this document
 
 === HOWTOs
 
