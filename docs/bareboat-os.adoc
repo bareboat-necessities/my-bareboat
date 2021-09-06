@@ -133,7 +133,7 @@ editor).
 
 Quality of SD card is essential for performance of your system. BBN OS comes
 with disk benchmarking tool. Good SD card would show about 42 MB/sec (or higher) read i/o speed in it.
-SSD drives would show much better results: 145 MB/sec read and 135 MB/sec write i/o speed.
+SSD drives would show much better results: 145 MB/sec read and 135 MB/sec write i/o speed or higher.
 
 === First Boot from SD Card
 
