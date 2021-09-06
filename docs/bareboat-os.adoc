@@ -951,6 +951,12 @@ sudo systemctl start influxdb
 
 Chronograf and Kapasitor also come pre-installed.
 
+=== Power consumption
+
+With Raspberry Pi4 power consumption of your system should be around under 4.5 watts without a monitor.
+A monitor depending on it's size and backlight brightness (needed for sunlight readability) can add
+another 5 watts or even more.
+
 === How you can help
 
 . Add a star on our github project page https://github.com/bareboat-necessities/lysmarine_gen
