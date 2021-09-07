@@ -957,6 +957,24 @@ With Raspberry Pi4 power consumption of your system should be around under 4.5 w
 A monitor depending on it's size and backlight brightness (needed for sunlight readability) can add
 another 5 watts or even more.
 
+=== Upgrading your System
+
+Your system packages can be upgraded following standard Debian packaging system procedure:
+
+[source]
+----
+sudo apt update
+sudo apt upgrade
+----
+
+SignalK server and modules can be upgraded using SignalK App Store.
+
+OpenCPN charts can be updated using OpenCPN chart downloader plugin.
+
+NOTE: As result of software upgrades you might end up with a configuration which wasn't previously tested.
+Though you might be able to get some support via community forums at:
+https://github.com/bareboat-necessities/lysmarine_gen/discussions
+
 === How you can help
 
 . Add a star on our github project page https://github.com/bareboat-necessities/lysmarine_gen
