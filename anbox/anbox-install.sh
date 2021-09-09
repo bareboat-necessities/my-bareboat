@@ -15,15 +15,18 @@ sudo apt install build-essential cmake cmake-data debhelper dbus google-mock \
 git clone https://github.com/anbox/anbox.git
 cd anbox
 #git submodule init
-git reset --hard 31d584e13d24b1889566ae77e7cabc88e6414ebf
-#git reset --hard 3ed2e6d5c360d57b6aa61386e279adf3ff155ded
+#git reset --hard 31d584e13d24b1889566ae77e7cabc88e6414ebf
+git reset --hard 3ed2e6d5c360d57b6aa61386e279adf3ff155ded
 git submodule update --init
 wget -O anbox-patch.zip "https://www.raspberrypi.org/forums/download/file.php?id=47177&sid=6efa5aaef4401f0bc981550e9a3dd499"
 unzip anbox-patch.zip
-#git apply anbox-patch.diff
-git apply anbox-patch-latest.diff
+git apply anbox-patch.diff
+#git apply anbox-patch-latest.diff
 
 sed -i "s/set(PROCESSOR_IS_ARM FALSE)/set(PROCESSOR_IS_ARM TRUE)/" external/cpu_features/CMakeLists.txt
+
+sed -i "s/add_subdirectory(tests)/#add_subdirectory(tests)/" CMakeLists.txt
+
 
 mkdir build
 cd build
