@@ -23,7 +23,7 @@ unzip anbox-patch.zip
 #git apply anbox-patch.diff
 git apply anbox-patch-latest.diff
 
-sed -i "s/set(PROCESSOR_IS_AARCH64 FALSE)/set(PROCESSOR_IS_AARCH64 TRUE)/" external/cpu_features/CMakeLists.txt
+sed -i "s/set(PROCESSOR_IS_ARM FALSE)/set(PROCESSOR_IS_ARM TRUE)/" external/cpu_features/CMakeLists.txt
 
 mkdir build
 cd build
