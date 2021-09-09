@@ -11,7 +11,7 @@ sudo apt install build-essential cmake cmake-data debhelper dbus google-mock \
     libdw-dev libdwarf-dev binutils-dev \
     pkg-config protobuf-compiler python3-minimal
     
-git clone https://github.com/anbox/anbox.git
+git clone --recurse-submodules -j8  https://github.com/anbox/anbox.git
 cd anbox
 #git reset --hard 3ed2e6d5c360d57b6aa61386e279adf3ff155ded
 git submodule init
