@@ -33,6 +33,7 @@ sudo cp android-7.1.2_r39.1-anbox_armv7a_neon-userdebug.img /var/lib/anbox/andro
 
 sudo mkdir /dev/binderfs
 sudo mount -t binder binder /dev/binderfs
+cd ..
 sudo ./scripts/anbox-bridge.sh start
 sudo ANBOX_LOG_LEVEL=debug anbox container-manager --daemon --privileged --data-path=/var/lib/anbox
 anbox session-manager --single-window
