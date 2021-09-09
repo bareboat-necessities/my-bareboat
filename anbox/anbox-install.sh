@@ -23,6 +23,8 @@ unzip anbox-patch.zip
 #git apply anbox-patch.diff
 git apply anbox-patch-latest.diff
 
+echo " set(PROCESSOR_IS_AARCH64 TRUE)" >> external/cpu_features/CMakeLists.txt
+
 mkdir build
 cd build
 cmake ..
