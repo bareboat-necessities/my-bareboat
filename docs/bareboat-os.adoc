@@ -961,6 +961,14 @@ another 5 watts or even more.
 
 === Upgrading your System
 
+Fixes verified by the development team can be installed by running:
+
+[source]
+----
+cd /home/user/add-ons
+./hot-fixes-install.sh
+----
+
 Your system packages can be upgraded following standard Debian packaging system procedure:
 
 [source]
