@@ -745,6 +745,8 @@ Do not create data loops with your data flows between OpenCPN, AvNav, SignalK, G
 
 ==== Touchscreen
 
+NOTE: The touchscreen issues mentioned below fixed since 2021-09-10 release.
+
 * Some applications (namely OpenCPN and gtk2 based as well as some Qt) sometimes stop responding to touch events.
 There is a workaround. With your finger you can toggle maximized mode via window frame icon then you
 MOVE the window frame by dragging window header few pixels, and switch back to maximized mode if needed.
