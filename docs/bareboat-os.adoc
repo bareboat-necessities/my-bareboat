@@ -99,6 +99,11 @@ Download SD card image (~2.5 Gb file):
 
 https://github.com/bareboat-necessities/lysmarine_gen#download
 
+Alternative place to download if the previous link doesn't work for you:
+
+https://archive.org/details/lysmarine-bbn-linux-LTS
+
+
 ==== 32-bit vs 64-bit images
 
 - There are pros and cons to each
