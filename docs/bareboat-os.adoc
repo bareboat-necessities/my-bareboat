@@ -994,6 +994,21 @@ NOTE: As result of software upgrades you might end up with a configuration which
 Though you might be able to get some support via community forums at:
 https://github.com/bareboat-necessities/lysmarine_gen/discussions
 
+=== Data Flow
+
+.Data Flow
+ifdef::env-github[image::bbn-os-data-flow.svg[Data Flow]]
+ifndef::env-github[]
+
+[plantuml,bbn-os-data-flow,svg]
+....
+!include plantuml/bbn-os-data-flow.puml
+....
+
+endif::[]
+
+{zwsp} +
+
 === How you can help
 
 . Add a star on our github project page https://github.com/bareboat-necessities/lysmarine_gen
