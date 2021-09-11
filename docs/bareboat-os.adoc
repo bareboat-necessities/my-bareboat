@@ -1100,3 +1100,9 @@ for all your boat devices connected to your boat computer.
 * Follow steps <<tether>> (or <<tether_android>>) to connect to your phone and use it as an Internet hotspot.
 
 * Follow steps <<phone_gps>> to use your phone GPS as NMEA 0183 source of GPS data.
+
+==== Autostart programs on desktop startup
+
+You can set up which programs you want to autostart when desktop comes up in
+Administration->Budgie Desktop Settings. Many users would probably want OpenCPN and KIP Dashboard
+right away.
