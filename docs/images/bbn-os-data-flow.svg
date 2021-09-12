@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="775px" preserveAspectRatio="none" style="width:1642px;height:775px;" version="1.1" viewBox="0 0 1642 775" width="1642.5px" zoomAndPan="magnify"><defs><filter height="300%" id="f14vgkoourcu17" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.5"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="5.0" dy="5.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[e936eb4e45c1a3c90330c6c931fce768]
+entity Helmsman--><ellipse cx="846.875" cy="540.625" fill="#FEFECE" filter="url(#f14vgkoourcu17)" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.875;"/><path d="M846.875,550.625 L846.875,584.375 M830.625,560.625 L863.125,560.625 M846.875,584.375 L830.625,603.125 M846.875,584.375 L863.125,603.125 " fill="none" filter="url(#f14vgkoourcu17)" style="stroke:#A80036;stroke-width:1.875;"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="81.25" x="806.25" y="628.1665">Helmsman</text><!--MD5=[2c6745610cf24c504301673a479d038e]
+entity OpenCPN--><polygon fill="#FEFECE" filter="url(#f14vgkoourcu17)" points="1093.75,720,1106.25,707.5,1222.5,707.5,1222.5,754.5117,1210,767.0117,1093.75,767.0117,1093.75,720" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="1210" x2="1222.5" y1="720" y2="707.5"/><line style="stroke:#000000;stroke-width:1.875;" x1="1093.75" x2="1210" y1="720" y2="720"/><line style="stroke:#000000;stroke-width:1.875;" x1="1210" x2="1210" y1="720" y2="767.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="78.75" x="1112.5" y="750.6665">OpenCPN</text><!--MD5=[9fb9e530f5016f340df65aea842fea77]
+entity AvNav--><polygon fill="#FEFECE" filter="url(#f14vgkoourcu17)" points="755.625,720,768.125,707.5,855.625,707.5,855.625,754.5117,843.125,767.0117,755.625,767.0117,755.625,720" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="843.125" x2="855.625" y1="720" y2="707.5"/><line style="stroke:#000000;stroke-width:1.875;" x1="755.625" x2="843.125" y1="720" y2="720"/><line style="stroke:#000000;stroke-width:1.875;" x1="843.125" x2="843.125" y1="720" y2="767.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="50" x="774.375" y="750.6665">AvNav</text><!--MD5=[3e075532f0ed648598fc022a930f2c8a]
+entity PyPilot_Web--><polygon fill="#FEFECE" filter="url(#f14vgkoourcu17)" points="899.375,720,911.875,707.5,1049.375,707.5,1049.375,754.5117,1036.875,767.0117,899.375,767.0117,899.375,720" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="1036.875" x2="1049.375" y1="720" y2="707.5"/><line style="stroke:#000000;stroke-width:1.875;" x1="899.375" x2="1036.875" y1="720" y2="720"/><line style="stroke:#000000;stroke-width:1.875;" x1="1036.875" x2="1036.875" y1="720" y2="767.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="100" x="918.125" y="750.6665">PyPilot_Web</text><!--MD5=[2c976c5ac154faeb3dc8fd0ef81a6680]
+entity KIP_Dashboard--><polygon fill="#FEFECE" filter="url(#f14vgkoourcu17)" points="537.5,720,550,707.5,711.25,707.5,711.25,754.5117,698.75,767.0117,537.5,767.0117,537.5,720" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="698.75" x2="711.25" y1="720" y2="707.5"/><line style="stroke:#000000;stroke-width:1.875;" x1="537.5" x2="698.75" y1="720" y2="720"/><line style="stroke:#000000;stroke-width:1.875;" x1="698.75" x2="698.75" y1="720" y2="767.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="123.75" x="556.25" y="750.6665">KIP_Dashboard</text><!--MD5=[62b13d10835fd599d30f8ba040b17a5a]
+entity gpsd--><rect fill="#FEFECE" filter="url(#f14vgkoourcu17)" height="79.0234" style="stroke:#000000;stroke-width:1.875;" width="105" x="1204.375" y="191.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="38.75" x="1216.875" y="221.9165">gpsd</text><line style="stroke:#000000;stroke-width:1.25;" x1="1205.625" x2="1308.125" y1="225.7617" y2="225.7617"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="80" x="1216.875" y="248.9282">TCP, UDP</text><!--MD5=[f446b16278ece5920111f2a11fd0cfc0]
+entity SignalK--><rect fill="#FEFECE" filter="url(#f14vgkoourcu17)" height="79.0234" style="stroke:#000000;stroke-width:1.875;" width="268.75" x="563.75" y="368.75"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="60" x="576.25" y="399.4165">SignalK</text><line style="stroke:#000000;stroke-width:1.25;" x1="565" x2="831.25" y1="403.2617" y2="403.2617"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="243.75" x="576.25" y="426.4282">HTTP, TCP, UDP, WebSockets</text><!--MD5=[989ca5bf3da9a57929b13702cc440130]
+entity PyPilot--><rect fill="#FEFECE" filter="url(#f14vgkoourcu17)" height="47.0117" style="stroke:#000000;stroke-width:1.875;" width="78.75" x="935" y="556.875"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="53.75" x="947.5" y="587.5415">PyPilot</text><!--MD5=[f4bddb039ac1c7e99e56d0d78d3e2009]
+entity GPS_SerialDevices--><polygon fill="#FEFECE" filter="url(#f14vgkoourcu17)" points="933.75,20,946.25,7.5,1162.5,7.5,1162.5,86.5234,1150,99.0234,933.75,99.0234,933.75,20" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="1150" x2="1162.5" y1="20" y2="7.5"/><line style="stroke:#000000;stroke-width:1.875;" x1="933.75" x2="1150" y1="20" y2="20"/><line style="stroke:#000000;stroke-width:1.875;" x1="1150" x2="1150" y1="20" y2="99.0234"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="153.75" x="952.5" y="50.6665">GPS_SerialDevices</text><line style="stroke:#000000;stroke-width:1.25;" x1="933.75" x2="1150" y1="54.5117" y2="54.5117"/><line style="stroke:#000000;stroke-width:1.25;" x1="1150" x2="1162.5" y1="54.5117" y2="42.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="178.75" x="952.5" y="77.6782">/dev/ttyLYS_gps_*, etc</text><!--MD5=[286991dbb404d603ef56d9c645e87160]
+entity CanBus_Devices--><polygon fill="#FEFECE" filter="url(#f14vgkoourcu17)" points="905.625,197.5,918.125,185,1160.625,185,1160.625,264.0234,1148.125,276.5234,905.625,276.5234,905.625,197.5" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="1148.125" x2="1160.625" y1="197.5" y2="185"/><line style="stroke:#000000;stroke-width:1.875;" x1="905.625" x2="1148.125" y1="197.5" y2="197.5"/><line style="stroke:#000000;stroke-width:1.875;" x1="1148.125" x2="1148.125" y1="197.5" y2="276.5234"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="205" x="924.375" y="228.1665">CAN_Devices NMEA 2000</text><line style="stroke:#000000;stroke-width:1.25;" x1="905.625" x2="1148.125" y1="232.0117" y2="232.0117"/><line style="stroke:#000000;stroke-width:1.25;" x1="1148.125" x2="1160.625" y1="232.0117" y2="219.5117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="173.75" x="924.375" y="255.1782">ifconfig can0 interface</text><!--MD5=[f89f39b4e78c3e79426ce4defbd572fe]
+entity SerialDevices--><polygon fill="#FEFECE" filter="url(#f14vgkoourcu17)" points="20,186.25,32.5,173.75,298.75,173.75,298.75,274.7852,286.25,287.2852,20,287.2852,20,186.25" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="286.25" x2="298.75" y1="186.25" y2="173.75"/><line style="stroke:#000000;stroke-width:1.875;" x1="20" x2="286.25" y1="186.25" y2="186.25"/><line style="stroke:#000000;stroke-width:1.875;" x1="286.25" x2="286.25" y1="186.25" y2="287.2852"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="205" x="38.75" y="216.9165">SerialDevices NMEA 0183</text><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="228.75" x="38.75" y="238.9282">AIS, Wind, Speed, Depth, etc</text><line style="stroke:#000000;stroke-width:1.25;" x1="20" x2="286.25" y1="242.7734" y2="242.7734"/><line style="stroke:#000000;stroke-width:1.25;" x1="286.25" x2="298.75" y1="242.7734" y2="230.2734"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="130" x="38.75" y="265.9399">/dev/ttyLYS*, etc</text><!--MD5=[52bd5c629548ed28ed95c8dc2eaa5bf1]
+entity OtherSensors--><polygon fill="#FEFECE" filter="url(#f14vgkoourcu17)" points="343.125,197.5,355.625,185,773.125,185,773.125,264.0234,760.625,276.5234,343.125,276.5234,343.125,197.5" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="760.625" x2="773.125" y1="197.5" y2="185"/><line style="stroke:#000000;stroke-width:1.875;" x1="343.125" x2="760.625" y1="197.5" y2="197.5"/><line style="stroke:#000000;stroke-width:1.875;" x1="760.625" x2="760.625" y1="197.5" y2="276.5234"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="380" x="361.875" y="228.1665">Other Sensors (Barometer, Temp, Humidity, etc)</text><line style="stroke:#000000;stroke-width:1.25;" x1="343.125" x2="760.625" y1="232.0117" y2="232.0117"/><line style="stroke:#000000;stroke-width:1.25;" x1="760.625" x2="773.125" y1="232.0117" y2="219.5117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="96.25" x="361.875" y="255.1782">I2C, 1W, etc</text><!--MD5=[ae8265c62b5fdfc486198cf91618d43d]
+entity IMU--><polygon fill="#FEFECE" filter="url(#f14vgkoourcu17)" points="876.875,375,889.375,362.5,1289.375,362.5,1289.375,441.5234,1276.875,454.0234,876.875,454.0234,876.875,375" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="1276.875" x2="1289.375" y1="375" y2="362.5"/><line style="stroke:#000000;stroke-width:1.875;" x1="876.875" x2="1276.875" y1="375" y2="375"/><line style="stroke:#000000;stroke-width:1.875;" x1="1276.875" x2="1276.875" y1="375" y2="454.0234"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="362.5" x="895.625" y="405.6665">IMU Sensors (Compass, Gyro, Accelerometer)</text><line style="stroke:#000000;stroke-width:1.25;" x1="876.875" x2="1276.875" y1="409.5117" y2="409.5117"/><line style="stroke:#000000;stroke-width:1.25;" x1="1276.875" x2="1289.375" y1="409.5117" y2="397.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="26.25" x="895.625" y="432.6782">I2C</text><!--MD5=[bc4470fdf94251c4ee91a3f475c22871]
+entity Servo--><polygon fill="#FEFECE" filter="url(#f14vgkoourcu17)" points="1333.125,375,1345.625,362.5,1588.125,362.5,1588.125,441.5234,1575.625,454.0234,1333.125,454.0234,1333.125,375" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="1575.625" x2="1588.125" y1="375" y2="362.5"/><line style="stroke:#000000;stroke-width:1.875;" x1="1333.125" x2="1575.625" y1="375" y2="375"/><line style="stroke:#000000;stroke-width:1.875;" x1="1575.625" x2="1575.625" y1="375" y2="454.0234"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="205" x="1351.875" y="405.6665">Servo, Actuator Controller</text><line style="stroke:#000000;stroke-width:1.25;" x1="1333.125" x2="1575.625" y1="409.5117" y2="409.5117"/><line style="stroke:#000000;stroke-width:1.25;" x1="1575.625" x2="1588.125" y1="409.5117" y2="397.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="46.25" x="1351.875" y="432.6782">Servo</text><!--MD5=[815fd9da0e6722f436b814cbd0b66e90]
+link GPS_SerialDevices to gpsd--><path codeLine="61" d="M1101.3375,98.9875 C1133.5625,126 1174.425,160.25 1206.175,186.875 " fill="none" id="GPS_SerialDevices-to-gpsd" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="1211.1875,191.075,1205.7864,180.012,1206.4008,187.0563,1199.3565,187.6707,1211.1875,191.075" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[570f99416b406f08c595ba639815d239]
+link GPS_SerialDevices to SignalK--><path codeLine="62" d="M977.7,98.825 C947.0875,119.7375 911.7625,146.1375 883.125,173.75 C836.975,218.2625 834.225,237.2625 794.375,287.5 C774.375,312.7125 751.8125,340.725 733.5625,363.275 " fill="none" id="GPS_SerialDevices-to-SignalK" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="729.4875,368.2875,740.4498,362.6848,733.4179,363.4281,732.6747,356.3962,729.4875,368.2875" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[161295f019cc5224b150462ab08d92ab]
+link SerialDevices to SignalK--><path codeLine="63" d="M299.1375,280.3375 C306.4,282.775 313.6,285.175 320.625,287.5 C402.825,314.675 495.5375,344 568.5,366.8 " fill="none" id="SerialDevices-to-SignalK" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="574.6,368.7,565.3452,360.5815,568.6326,366.8419,562.3722,370.1293,574.6,368.7" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[afcbde6de0b1bb04245c648693a04780]
+link CanBus_Devices to SignalK--><path codeLine="64" d="M948.1625,276.2625 C895.6,303.7125 828.6,338.7125 777.175,365.575 " fill="none" id="CanBus_Devices-to-SignalK" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="771.625,368.475,783.9114,367.6959,777.1642,365.5803,779.2799,358.8331,771.625,368.475" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[bcc77cd6638a15232935d91788e2841c]
+link OtherSensors to SignalK--><path codeLine="65" d="M593.8125,276.4875 C615.075,303.075 641.9625,336.6625 663.1,363.1 " fill="none" id="OtherSensors-to-SignalK" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="667.25,368.2875,664.1318,356.3779,663.3478,363.4053,656.3204,362.6213,667.25,368.2875" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[1294af374f58db8e0c560fbc46076aa2]
+link IMU to PyPilot--><path codeLine="66" d="M1054.55,454.0375 C1034.8125,484.9 1009.1625,524.9875 992.2625,551.425 " fill="none" id="IMU-to-PyPilot" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="988.7875,556.85,999.0665,550.0747,992.1591,551.5874,990.6463,544.6801,988.7875,556.85" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[7d7668e893fc6e1f39050251e6d9bc95]
+reverse link Servo to PyPilot--><path codeLine="67" d="M1327.5625,455.9 C1222.075,492.775 1081.575,541.9 1013.9875,565.525 " fill="none" id="Servo-backto-PyPilot" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="1333.5,453.8125,1321.2322,452.7816,1327.5962,455.8637,1324.5141,462.2277,1333.5,453.8125" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[654c3f236876a29bde783cccf00b8d53]
+link gpsd to SignalK--><path codeLine="68" d="M1211.55,270.0625 C1202.1625,276.625 1192.0375,282.825 1181.875,287.5 C1046.25,349.975 999.025,325.425 854.375,362.5 C848.7625,363.9375 843.0375,365.4375 837.2625,366.9625 " fill="none" id="gpsd-to-SignalK" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="830.975,368.6375,843.1313,370.5834,837.0157,367.0338,840.5653,360.9182,830.975,368.6375" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[4905e8888340f75b82ed5e4cc577f894]
+link gpsd to OpenCPN--><path codeLine="69" d="M1309.4,233.65 C1389.975,239.55 1541.95,263.9375 1610.625,362.5 C1633.8125,395.775 1630.3,418.2875 1610.625,453.75 C1528.825,601.25 1334.4,681.8625 1228.9875,716.1 " fill="none" id="gpsd-to-OpenCPN" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="1222.8,718.0875,1235.0438,719.3729,1228.7451,716.1593,1231.9587,709.8607,1222.8,718.0875" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[3592278562d0681104f3c53417d49e4f]
+link PyPilot to OpenCPN--><path codeLine="70" d="M1001.4875,604.65 C1032.4125,630.6375 1083.25,673.35 1118.5875,703.0375 " fill="none" id="PyPilot-to-OpenCPN" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="1123.6875,707.3125,1118.2864,696.2495,1118.9008,703.2938,1111.8565,703.9082,1123.6875,707.3125" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[1564396c3ff4660149bb7a7032905d3f]
+link PyPilot to AvNav--><path codeLine="71" d="M949.475,604.65 C921.1625,630.55 874.675,673.0875 842.2375,702.7625 " fill="none" id="PyPilot-to-AvNav" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="837.55,707.0375,849.2257,703.1337,842.1617,702.8191,842.4763,695.755,837.55,707.0375" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[5bcc4a9ccbf01b8bce6d244018bf606e]
+link PyPilot to SignalK--><path codeLine="72" d="M968.0125,556.775 C958.3,547.6625 944.725,537.325 931.875,528.75 C889.6125,500.575 840.2875,472.45 797.5875,450.5875 " fill="none" id="PyPilot-to-SignalK" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="791.875,447.6875,799.6282,457.2505,797.4436,450.5253,804.1687,448.3407,791.875,447.6875" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[cff28be213a32040177148025f101f1c]
+link SignalK to PyPilot--><path codeLine="74" d="M753.3375,447.6875 C792.1,469.925 843.9625,499.3 888.125,528.75 C901.575,537.7125 915.8125,548.625 929.35,558.025 " fill="none" id="SignalK-to-PyPilot" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="934.7125,561.675,928.233,551.207,929.5482,558.1547,922.6005,559.4699,934.7125,561.675" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[3896a38b8d08efe3a971dbce1ddc4546]
+link SignalK to OpenCPN--><path codeLine="73" d="M818.625,447.525 C908.2125,476.65 1017.9,514.1625 1035.625,528.75 C1092.35,575.4375 1128.8875,655.725 1146.25,701.5375 " fill="none" id="SignalK-to-OpenCPN" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="1148.475,707.4875,1149.2065,695.1982,1146.2805,701.6354,1139.8432,698.7094,1148.475,707.4875" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[523a1ee00215f82b348749854a993120]
+link SignalK to AvNav--><path codeLine="75" d="M710.6625,447.5125 C731.7125,511.5 773.8125,639.525 794.1375,701.3125 " fill="none" id="SignalK-to-AvNav" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="796.15,707.4375,797.4022,695.1903,794.2057,701.4976,787.8984,698.3011,796.15,707.4375" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[61cc47c0c590ecbcd8f78c7f4600b47b]
+link SignalK to KIP_Dashboard--><path codeLine="76" d="M689.525,447.5125 C675.0875,511.5 646.2,639.525 632.2625,701.3125 " fill="none" id="SignalK-to-KIP_Dashboard" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="630.875,707.4375,638.2239,697.5605,632.2478,701.3401,628.4681,695.364,630.875,707.4375" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[59de0fd755c143e4f31e3deea5acb1c7]
+reverse link PyPilot to PyPilot_Web--><path codeLine="78" d="M961.5875,610.9875 C957.3875,638.4875 957.3875,679.5125 961.575,707.0375 " fill="none" id="PyPilot-backto-PyPilot_Web" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="962.675,604.65,955.8214,614.8769,961.6041,610.8076,965.6735,616.5903,962.675,604.65" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[d783e1f4f9b28ef4135842a15a4dbac3]
+link PyPilot to PyPilot_Web--><path codeLine="79" d="M986.7625,604.65 C991.9375,629.9125 992.6375,671 988.8625,700.55 " fill="none" id="PyPilot-to-PyPilot_Web" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="987.925,707.0375,994.4489,696.5971,988.7989,700.8489,984.5471,695.1989,987.925,707.0375" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[964b7699a1fca1fb00b5f0317e8a9122]
+link Helmsman to PyPilot_Web--><path codeLine="81" d="M887.5625,631.15 C908.2625,656.2 932.7125,685.8 950.375,707.1875 " fill="none" id="Helmsman-PyPilot_Web" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[1869bc191f9e78c2d8952f7c28e17528]
+link Helmsman to OpenCPN--><path codeLine="82" d="M887.8125,615.675 C895.95,621.6625 904.6125,627.55 913.125,632.5 C971.425,666.3875 1042.9125,695.375 1093.5875,714.0125 " fill="none" id="Helmsman-OpenCPN" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[78f8eed09abb3c678c87f5f3ec9106bf]
+link Helmsman to AvNav--><path codeLine="83" d="M833.25,632.85 C826.6375,657.6125 818.925,686.475 813.3375,707.3875 " fill="none" id="Helmsman-AvNav" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[e13c94628734c6a272945b16030566bd]
+link Helmsman to KIP_Dashboard--><path codeLine="84" d="M806.0625,610.1875 C766.3,637.7875 706.125,679.525 666.0625,707.325 " fill="none" id="Helmsman-KIP_Dashboard" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[63d28be0ae8b3b4bb93f08ebe2282114]
+@startuml
+actor Helmsman [
+ Helmsman
+]
+node OpenCPN [
+ OpenCPN
+]
+node AvNav [
+ AvNav
+]
+node PyPilot_Web [
+ PyPilot_Web
+]
+node KIP_Dashboard [
+ KIP_Dashboard
+]
+rectangle gpsd [
+ gpsd
+ - - - -
+ TCP, UDP
+]
+rectangle SignalK [
+ SignalK
+ - - - -
+ HTTP, TCP, UDP, WebSockets
+]
+rectangle PyPilot [
+ PyPilot
+]
+node GPS_SerialDevices [
+ GPS_SerialDevices
+ - - - -
+ /dev/ttyLYS_gps_*, etc
+]
+node CanBus_Devices [
+ CAN_Devices NMEA 2000
+ - - - -
+ ifconfig can0 interface
+]
+node SerialDevices [
+ SerialDevices NMEA 0183
+ AIS, Wind, Speed, Depth, etc
+ - - - -
+ /dev/ttyLYS*, etc
+]
+node OtherSensors [
+ Other Sensors (Barometer, Temp, Humidity, etc)
+ - - - -
+ I2C, 1W, etc
+]
+node IMU [
+ IMU Sensors (Compass, Gyro, Accelerometer)
+ - - - -
+ I2C
+]
+node Servo [
+ Servo, Actuator Controller
+ - - - -
+ Servo
+]
+
+GPS_SerialDevices - -> gpsd
+GPS_SerialDevices - -> SignalK
+SerialDevices - -> SignalK
+CanBus_Devices - -> SignalK
+OtherSensors - -> SignalK
+IMU - -> PyPilot
+Servo <- - PyPilot
+gpsd - -> SignalK
+gpsd - -> OpenCPN
+PyPilot - -> OpenCPN
+PyPilot - -> AvNav
+PyPilot - -> SignalK
+SignalK - -> OpenCPN
+SignalK - -> PyPilot
+SignalK - -> AvNav
+SignalK - -> KIP_Dashboard
+
+PyPilot <- - PyPilot_Web
+PyPilot - -> PyPilot_Web
+
+Helmsman - - PyPilot_Web
+Helmsman - - OpenCPN
+Helmsman - - AvNav
+Helmsman - - KIP_Dashboard
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 05:25:05 EST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

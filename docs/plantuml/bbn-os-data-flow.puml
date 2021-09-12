@@ -2,63 +2,86 @@
 actor Helmsman [
  Helmsman
 ]
-agent MobileDevice [
- Phone/Tablet
- ----
- Can run NMEA/SignalK dashboards,
- talkers, other chart plotting software
-]
 node OpenCPN [
  OpenCPN
 ]
-rectangle KPlex [
- KPlex
- NMEA Multiplexor
+node AvNav [
+ AvNav
+]
+node PyPilot_Web [
+ PyPilot_Web
+]
+node KIP_Dashboard [
+ KIP_Dashboard
+]
+rectangle gpsd [
+ gpsd
  ----
- running as a daemon process
  TCP, UDP
 ]
 rectangle SignalK [
  SignalK
  ----
- running as a daemon process
- HTTP, TCP, UDP
+ HTTP, TCP, UDP, WebSockets
 ]
 rectangle PyPilot [
  PyPilot
- ----
- running as a daemon process
 ]
-rectangle SerialDevices [
- SerialDevices NMEA
+node GPS_SerialDevices [
+ GPS_SerialDevices
  ----
- /dev/stty*
+ /dev/ttyLYS_gps_*, etc
 ]
-rectangle OtherSensors [
- Other Sensors
+node CanBus_Devices [
+ CAN_Devices NMEA 2000
+ ----
+ ifconfig can0 interface
+]
+node SerialDevices [
+ SerialDevices NMEA 0183
+ AIS, Wind, Speed, Depth, etc
+ ----
+ /dev/ttyLYS*, etc
+]
+node OtherSensors [
+ Other Sensors (Barometer, Temp, Humidity, etc)
  ----
  I2C, 1W, etc
 ]
-rectangle Mosquitto [
- Mosquitto
+node IMU [
+ IMU Sensors (Compass, Gyro, Accelerometer)
  ----
- MQTT
+ I2C
 ]
-rectangle NodeRed [
- NodeRed
+node Servo [
+ Servo, Actuator Controller
+ ----
+ Servo
 ]
-Helmsman <-- OpenCPN
-Helmsman <-- MobileDevice
-MobileDevice <-- OpenCPN
-MobileDevice <-- SignalK
-MobileDevice <-- KPlex
-KPlex --> OpenCPN
-KPlex --> SignalK
-PyPilot <-- OtherSensors
-SignalK --> OpenCPN
+
+GPS_SerialDevices --> gpsd
+GPS_SerialDevices --> SignalK
 SerialDevices --> SignalK
-SerialDevices --> KPlex
+CanBus_Devices --> SignalK
+OtherSensors --> SignalK
+IMU --> PyPilot
+Servo <-- PyPilot
+gpsd --> SignalK
+gpsd --> OpenCPN
+PyPilot --> OpenCPN
+PyPilot --> AvNav
 PyPilot --> SignalK
-Mosquitto <-> SignalK
-NodeRed --> Mosquitto
+SignalK --> OpenCPN
+SignalK --> PyPilot
+SignalK --> AvNav
+SignalK --> KIP_Dashboard
+
+PyPilot <-- PyPilot_Web
+PyPilot --> PyPilot_Web
+
+Helmsman -- PyPilot_Web
+Helmsman -- OpenCPN
+Helmsman -- AvNav
+Helmsman -- KIP_Dashboard
+
 @enduml
