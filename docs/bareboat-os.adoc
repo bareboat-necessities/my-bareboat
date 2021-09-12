@@ -569,8 +569,16 @@ The URLs of the applications on your boat computer:
 
 * http://lysmarine:8080 PyPilot
 * http://lysmarine:3000 SignalK
+* http://lysmarine:3000/@mxtommy/kip/ KIP
+* http://lysmarine:3000/@signalk/signalk-node-red Node Red
+* http://lysmarine:3000/admin/#/e/_signalk_vesselpositions Vessels Positions
+* http://lysmarine:3000/tuktuk-chart-plotter/ TukTuk Chartplotter
+* http://lysmarine:3000/@signalk/signalk-autopilot/ SK Autopilot
+* http://lysmarine:3000/@signalk/freeboard-sk SK Freeboard
 * http://lysmarine:8099 AvNav
-* http://lysmarine:6680 Mopidy MusicBox/Iris
+* http://lysmarine:6680 Mopidy
+* http://lysmarine:6680/musicbox_webclient/ Mopidy MusicBox
+* http://lysmarine:6680/iris/ Mopidy Iris
 * http://lysmarine:8765 MotionEye Cameras
 
 Make sure your lysmarine computer is mapped to a static IP address on your network via MAC address mapping on your router.
