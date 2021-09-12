@@ -1019,7 +1019,7 @@ endif::[]
 {zwsp} +
 
 
-=== How you can help
+== How you can help
 
 . Add a star on our github project page https://github.com/bareboat-necessities/lysmarine_gen
 . Report a bug (or contribute to resolving an existing issue) https://github.com/bareboat-necessities/lysmarine_gen/issues
@@ -1030,11 +1030,11 @@ endif::[]
 . Post a blog article or contribute to HOWTOs section of this document.
 . Of course, the BBN OS is completely open-source and free to use.
 
-=== HOWTOs
+== HOWTOs
 
 Please send us your HowTo, and we can add it here for everyone to find. Thanks
 
-==== BerryGPS-IMU V3
+=== BerryGPS-IMU V3
 
 - Install the BerryGPS-IMU V3 hat
 - Follow steps to enable i2c and disable serial port https://ozzmaker.com/berrygps-setup-guide-raspberry-pi/
@@ -1092,7 +1092,7 @@ disabling echo on serial port might be required, as well as enabling ZDA NMEA ti
 
 ublox GPS receivers have extensive configuration. Check: https://gpsd.io/ubxtool-examples.html
 
-==== RTL8812AU drivers
+=== RTL8812AU drivers
 
 Following these steps it compiled fine from the first attempt https://github.com/aircrack-ng/rtl8812au
 
@@ -1104,20 +1104,20 @@ cd /home/user/add-ons
 ./wifi-drivers-install.sh
 ----
 
-==== Cloud Storage
+=== Cloud Storage
 
 Using rclone you can store and sync your files on many cloud vendors storage.
 More: https://github.com/rclone/rclone
 
 [#phone_gps]
-==== Using your smartphone as NMEA GPS receiver
+=== Using your smartphone as NMEA GPS receiver
 
 Install GPS2IP application on your smartphone. Start it and enable GPS2IP in it.
 Your phone should be on the same local network as your boat computer.
 In SignalK add gps2ip_on_smartphone NMEA TCP connection to the IP address 
 shown in GPS2IP app and the port specified there (usually 11123).
 
-==== How to navigate with your smartphone as GPS receiver and have an Internet access on a boat within cellular reception
+=== How to navigate with your smartphone as GPS receiver and have an Internet access on a boat within cellular reception
 
 If you have a smartphone on board then you can use it as a source of NMEA GPS data and Internet provider
 for all your boat devices connected to your boat computer.
@@ -1126,7 +1126,7 @@ for all your boat devices connected to your boat computer.
 
 * Follow steps <<phone_gps>> to use your phone GPS as NMEA 0183 source of GPS data.
 
-==== Autostart programs on desktop startup
+=== Autostart programs on desktop startup
 
 You can set up which programs you want to autostart when desktop comes up in
 Administration->Budgie Desktop Settings. Many users would probably want OpenCPN and KIP Dashboard
