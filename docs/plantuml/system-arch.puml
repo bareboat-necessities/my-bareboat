@@ -138,26 +138,26 @@ database NAS [
  Time Series Data, etc
 ]
 
-RPI -- GPS
-RPI -- IMU
+RPI -u- GPS
+RPI -l- IMU
 RPI -- NMEA_2000
 RPI -- NMEA_Mux
-RPI -- Eth_Hub
+RPI -u- Eth_Hub
 RPI -- USB_Hub
-RPI -- Touchscreen
-RPI -- Cameras
-RPI --> Speakers
+RPI -u- Touchscreen
+RPI -u- Cameras
+RPI -u-> Speakers
 RPI -- SSB
 RPI -- Iridium
 RPI -- Other_Sensors
-RPI -- WiFi_Local
+RPI -u- WiFi_Local
 
-SmartPhone - WiFi_Local
+SmartPhone -- WiFi_Local
 
-Eth_Hub -- Router
+Eth_Hub -r- Router
 Eth_Hub -- Radar
 Eth_Hub -- NAS
-Eth_Hub -- Dish_Router
+Eth_Hub -u- Dish_Router
 
 USB_Hub -- SDR
 USB_Hub -- Weather
