@@ -178,6 +178,8 @@ cloud Cloud_Internet [
 
 cloud Lora [
  LoraWAN
+ Asset Tracking
+ Dinghy Locator
 ]
 
 rectangle Esp32 [
