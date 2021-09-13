@@ -84,6 +84,11 @@ rectangle Mic [
 
 rectangle Cameras [
  Cameras
+ ----
+ WebCam, Mast,
+ Night (FLIR),
+ low light vision,
+ IP, docking, etc
 ]
 
 node SDR [
