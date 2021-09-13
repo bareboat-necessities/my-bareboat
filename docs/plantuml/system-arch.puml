@@ -110,6 +110,11 @@ rectangle Lights [
  Lights
 ]
 
+rectangle Keyboard_Mouse [
+ Keyboard
+ Mouse
+]
+
 rectangle Weather [
  NavTex
  WeatherFax
@@ -144,6 +149,7 @@ Eth_Hub -- Dish_Router
 
 USB_Hub -- SDR
 USB_Hub -- Weather
+USB_Hub -- Keyboard_Mouse
 
 Other_Sensors -- AC
 Other_Sensors -- Fridge
