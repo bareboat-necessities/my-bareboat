@@ -10,7 +10,7 @@ rectangle RPI [
 ]
 
 rectangle GPS [
- GPS
+ GPS USB
 ]
 
 rectangle IMU [
