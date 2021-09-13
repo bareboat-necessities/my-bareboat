@@ -158,7 +158,7 @@ RPI -- USB_Hub
 RPI -u- Touchscreen
 RPI -u- Cameras
 RPI -u-> Speakers
-RPI -- SSB
+RPI -u- SSB
 RPI -u- Iridium
 RPI -- Other_Sensors
 RPI -u- WiFi_Local
@@ -189,6 +189,7 @@ Skipper -- Touchscreen
 Skipper -- Speakers
 Skipper -- Cameras
 Skipper -- Iridium
+Skipper -- SSB
 Skipper -- SmartPhone
 Skipper -- Keyboard_Mouse
 
