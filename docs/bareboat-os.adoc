@@ -95,7 +95,7 @@ of the OS from chartplotting, dashboards, weather information, to media player, 
 
 ==== Smart Boat
 
-.Smart Boat
+.Smart Boat Diagram
 ifdef::env-github[image::system-arch.svg[Smart Boat]]
 ifndef::env-github[]
 
