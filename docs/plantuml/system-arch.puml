@@ -131,7 +131,9 @@ node Fridge [
 ]
 
 rectangle Lights_Fans [
- Lights,
+ Lights: (Nav, Anchor,
+ Running, Mast, Cabin,
+ Underwater, Search, etc)
  Fans
  Bilge/Engine Blower
 ]
