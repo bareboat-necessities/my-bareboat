@@ -24,10 +24,11 @@ rectangle IMU [
 ]
 
 rectangle NMEA_2000 [
- NMEA2000 Bus
+ <b>NMEA2000 Bus
  ----
  engine sensors,
- fishfinder, sonar
+ fishfinder, sonar,
+ etc
 ]
 
 node NMEA_Mux [
@@ -37,7 +38,7 @@ node NMEA_Mux [
 ]
 
 rectangle NMEA_0183 [
- NMEA 0183 Devices
+ <b>NMEA 0183 Devices
  ----
  AIS transducer/receiver
  GPS, VHF, compass
@@ -70,7 +71,7 @@ node Radar [
 ]
 
 node Touchscreen [
- HDMI Touchscreen
+ <b>HDMI Touchscreen
 ]
 
 rectangle Speakers [
@@ -143,7 +144,7 @@ database NAS [
 ]
 
 cloud Cloud_Internet [
- Internet
+ <b>Internet
  Cloud Storage
  Cloud Services
 ]
@@ -158,7 +159,7 @@ RPI -u- Touchscreen
 RPI -u- Cameras
 RPI -u-> Speakers
 RPI -- SSB
-RPI -- Iridium
+RPI -u- Iridium
 RPI -- Other_Sensors
 RPI -u- WiFi_Local
 RPI -u- Keyboard_Mouse
@@ -182,10 +183,12 @@ NMEA_Mux -- AP
 
 Cloud_Internet -- Dish_Router
 Cloud_Internet -- Router
+Cloud_Internet -- Iridium
 
 Skipper -- Touchscreen
 Skipper -- Speakers
 Skipper -- Cameras
+Skipper -- Iridium
 Skipper -- SmartPhone
 Skipper -- Keyboard_Mouse
 
