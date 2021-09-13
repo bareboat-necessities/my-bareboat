@@ -3,6 +3,8 @@
 rectangle RPI [
  Rpi4, BBN OS
  ----
+ Local WiFi
+ CanBus Interface
  Sound Card
 ]
 
@@ -90,8 +92,21 @@ rectangle Other_Sensors [
  Other_Sensors
  ----
  IoT, 1w, i2c, etc
- battery monitoring
+ battery/chargers monitoring
  fluid levels
+ env temp/pressure/humid
+]
+
+rectangle AC [
+ A/C
+]
+
+rectangle Fridge [
+ Fridge
+]
+
+rectangle Lights [
+ Lights
 ]
 
 rectangle Weather [
@@ -128,6 +143,10 @@ Eth_Hub -- Dish_Router
 
 USB_Hub -- SDR
 USB_Hub -- Weather
+
+Other_Sensors -- AC
+Other_Sensors -- Fridge
+Other_Sensors -- Lights
 
 NMEA_Mux -- NMEA_0183
 NMEA_Mux -- AP
