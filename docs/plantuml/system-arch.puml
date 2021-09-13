@@ -129,6 +129,7 @@ node Pumps [
 node Fridge [
  Fridge
  Watermaker
+ Live well
 ]
 
 rectangle Lights_Fans [
