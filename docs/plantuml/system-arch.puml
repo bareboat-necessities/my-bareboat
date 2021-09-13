@@ -138,6 +138,12 @@ database NAS [
  Time Series Data, etc
 ]
 
+cloud Cloud_Internet [
+ Internet
+ Cloud Storage
+ Cloud Services
+]
+
 RPI -u- GPS
 RPI -l- IMU
 RPI -- NMEA_2000
@@ -169,5 +175,8 @@ Other_Sensors -- Lights
 
 NMEA_Mux -- NMEA_0183
 NMEA_Mux -- AP
+
+Cloud_Internet -- Dish_Router
+Cloud_Internet -- Router
 
 @enduml
