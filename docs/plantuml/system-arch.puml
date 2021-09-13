@@ -1,0 +1,134 @@
+@startuml
+
+rectangle RPI [
+ Rpi4, BBN OS
+ ----
+ Sound Card
+]
+
+rectangle GPS [
+ GPS
+]
+
+rectangle IMU [
+ IMU
+ ----
+ compass, gyro, accel
+]
+
+rectangle NMEA_2000 [
+ NMEA2000 Bus
+ ----
+ engine sensors,
+ fishfinder
+]
+
+rectangle NMEA_Mux [
+ NMEA Multiplexer
+ ----
+ bidirectional Seatalk1
+]
+
+rectangle NMEA_0183 [
+ NMEA 0183 Devices
+ ----
+ AIS, GPS, VHF
+ Wind, Depth, Speed
+]
+
+rectangle AP [
+ Autopilot
+]
+
+rectangle Eth_Hub [
+ Ethernet Hub
+]
+
+rectangle USB_Hub [
+ USB Hub
+]
+
+rectangle Router [
+ LTE/WiFi Router
+]
+
+rectangle Dish_Router [
+ StarLink Router,
+ Dish
+]
+
+rectangle Radar [
+ Radar
+]
+
+rectangle Touchscreen [
+ HDMI Touchscreen
+]
+
+rectangle Speakers [
+ Speakers
+]
+
+rectangle Cameras [
+ Cameras
+]
+
+rectangle SDR [
+ SDR Radio
+]
+
+rectangle SSB [
+ SSB Radio
+]
+
+rectangle Iridium [
+ Iridium Phone
+]
+
+rectangle Other_Sensors [
+ Other_Sensors
+ ----
+ IoT, 1w, i2c, etc
+ battery monitoring
+ fluid levels
+]
+
+rectangle Weather [
+ NavTex
+ WeatherFax
+ Barograph
+]
+
+rectangle NAS [
+ NAS
+ ----
+ Audio/Video Lib
+ Charts, Backups, Tracks,
+ Time Series Data, etc
+]
+
+RPI -- GPS
+RPI -- IMU
+RPI -- NMEA_2000
+RPI -- NMEA_Mux
+RPI -- Eth_Hub
+RPI -- USB_Hub
+RPI -- Touchscreen
+RPI -- Cameras
+RPI --> Speakers
+RPI -- SSB
+RPI -- Iridium
+RPI -- Other_Sensors
+
+Eth_Hub -- Router
+Eth_Hub -- Radar
+Eth_Hub -- NAS
+Eth_Hub -- Dish_Router
+
+USB_Hub -- SDR
+USB_Hub -- Weather
+
+NMEA_Mux -- NMEA_0183
+NMEA_Mux -- AP
+
+@enduml
