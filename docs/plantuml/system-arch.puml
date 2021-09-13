@@ -4,7 +4,7 @@ actor Skipper [
  Skipper
 ]
 
-node RPI [
+node RPI #palegreen [
  <b>Rpi4, BBN OS
  ----
  Local WiFi
