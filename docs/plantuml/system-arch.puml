@@ -130,6 +130,10 @@ rectangle Weather [
  Barograph
 ]
 
+rectangle SiriusXM [
+ SiriusXM Marine
+]
+
 rectangle SmartPhone [
  SmartPhones
  Tablets
@@ -149,6 +153,15 @@ cloud Cloud_Internet [
  Cloud Services
 ]
 
+cloud Lora [
+ LoraWAN
+]
+
+rectangle Esp32 [
+ m5stack/
+ arduino
+]
+
 RPI -- GPS
 RPI -l- IMU
 RPI -- NMEA_2000
@@ -161,10 +174,13 @@ RPI -u-> Speakers
 RPI -u- SSB
 RPI -u- Iridium
 RPI -- Other_Sensors
+RPI -d- Esp32
 RPI -u- WiFi_Local
 RPI -u- Keyboard_Mouse
 
 SmartPhone -- WiFi_Local
+
+SiriusXM -- NMEA_2000
 
 Eth_Hub -r- Router
 Eth_Hub -- Radar
@@ -180,6 +196,8 @@ Other_Sensors -- Lights
 
 NMEA_Mux -- NMEA_0183
 NMEA_Mux -- AP
+
+Lora -l- Esp32
 
 Cloud_Internet -- Dish_Router
 Cloud_Internet -- Router
