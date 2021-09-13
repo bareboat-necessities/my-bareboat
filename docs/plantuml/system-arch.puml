@@ -1,7 +1,11 @@
 @startuml
 
+actor Skipper [
+ Skipper
+]
+
 node RPI [
- Rpi4, BBN OS
+ <b>Rpi4, BBN OS
  ----
  Local WiFi
  CanBus Interface
@@ -144,7 +148,7 @@ cloud Cloud_Internet [
  Cloud Services
 ]
 
-RPI -u- GPS
+RPI -- GPS
 RPI -l- IMU
 RPI -- NMEA_2000
 RPI -- NMEA_Mux
@@ -157,6 +161,7 @@ RPI -- SSB
 RPI -- Iridium
 RPI -- Other_Sensors
 RPI -u- WiFi_Local
+RPI -u- Keyboard_Mouse
 
 SmartPhone -- WiFi_Local
 
@@ -167,7 +172,6 @@ Eth_Hub -u- Dish_Router
 
 USB_Hub -- SDR
 USB_Hub -- Weather
-USB_Hub -- Keyboard_Mouse
 
 Other_Sensors -- AC
 Other_Sensors -- Fridge
@@ -178,5 +182,11 @@ NMEA_Mux -- AP
 
 Cloud_Internet -- Dish_Router
 Cloud_Internet -- Router
+
+Skipper -- Touchscreen
+Skipper -- Speakers
+Skipper -- Cameras
+Skipper -- SmartPhone
+Skipper -- Keyboard_Mouse
 
 @enduml
