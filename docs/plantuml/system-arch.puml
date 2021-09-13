@@ -85,6 +85,10 @@ node SSB [
  SSB Radio
 ]
 
+cloud WiFi_Local [
+ Local WiFi
+]
+
 rectangle Iridium [
  Iridium Phone
 ]
@@ -121,6 +125,11 @@ rectangle Weather [
  Barograph
 ]
 
+rectangle SmartPhone [
+ SmartPhones
+ Tablets
+]
+
 database NAS [
  NAS
  ----
@@ -141,6 +150,9 @@ RPI --> Speakers
 RPI -- SSB
 RPI -- Iridium
 RPI -- Other_Sensors
+RPI -- WiFi_Local
+
+SmartPhone - WiFi_Local
 
 Eth_Hub -- Router
 Eth_Hub -- Radar
