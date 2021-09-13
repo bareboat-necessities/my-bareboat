@@ -102,7 +102,8 @@ rectangle Other_Sensors [
  Other_Sensors
  ----
  IoT, 1w, i2c, etc
- battery/chargers monitoring
+ batteries monitoring
+ chargers (wind, solar, diesel gen)
  fluid levels
  env temp/pressure/humid
  dangerous gases sensors
@@ -165,6 +166,9 @@ database NAS [
  ----
  Audio/Video Lib
  Charts, Backups, Tracks,
+ Docs, Logs,
+ Crew Docs, Float Plans,
+ Inventory, Provisioning,
  Time Series Data, etc
 ]
 
