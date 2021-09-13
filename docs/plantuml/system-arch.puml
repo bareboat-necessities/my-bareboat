@@ -78,6 +78,10 @@ rectangle Speakers [
  Speakers
 ]
 
+rectangle Mic [
+ Microphone
+]
+
 rectangle Cameras [
  Cameras
 ]
@@ -195,7 +199,6 @@ rectangle Esp32 [
  arduino
 ]
 
-RPI -- GPS
 RPI -l- IMU
 RPI -- NMEA_2000
 RPI -- NMEA_Mux
@@ -204,6 +207,7 @@ RPI -- USB_Hub
 RPI -u- Touchscreen
 RPI -u- Cameras
 RPI -u-> Speakers
+RPI -u- Mic
 RPI -u- SSB
 RPI -u- Iridium
 RPI -- Other_Sensors
@@ -222,8 +226,9 @@ Eth_Hub -u- Dish_Router
 
 USB_Hub -- SDR
 USB_Hub -- Weather
+USB_Hub -r- GPS
 
-Other_Sensors -- AC
+Other_Sensors -r- AC
 Other_Sensors -- Fridge
 Other_Sensors -- Lights_Fans
 Other_Sensors -- Pumps
@@ -241,6 +246,7 @@ Cloud_Internet -- Remote_Desktop
 
 Skipper -- Touchscreen
 Skipper -- Speakers
+Skipper -- Mic
 Skipper -- Cameras
 Skipper -- Iridium
 Skipper -- SSB
