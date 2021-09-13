@@ -20,7 +20,7 @@ rectangle NMEA_2000 [
  NMEA2000 Bus
  ----
  engine sensors,
- fishfinder
+ fishfinder, sonar
 ]
 
 rectangle NMEA_Mux [
@@ -32,7 +32,8 @@ rectangle NMEA_Mux [
 rectangle NMEA_0183 [
  NMEA 0183 Devices
  ----
- AIS, GPS, VHF
+ AIS transducer/receiver
+ GPS, VHF, compass
  Wind, Depth, Speed
 ]
 
