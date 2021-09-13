@@ -2,16 +2,16 @@
 actor Helmsman [
  Helmsman
 ]
-node OpenCPN [
+rectangle OpenCPN [
  OpenCPN
 ]
-node AvNav [
+rectangle AvNav [
  AvNav
 ]
-node PyPilot_Web [
+rectangle PyPilot_Web [
  PyPilot_Web
 ]
-node KIP_Dashboard [
+rectangle KIP_Dashboard [
  KIP_Dashboard
 ]
 rectangle gpsd [
@@ -44,12 +44,17 @@ node SerialDevices [
  /dev/ttyLYS*, etc
 ]
 node OtherSensors [
- Other Sensors (Barometer, Temp, Humidity, etc)
+ Other Sensors
+ Barometer,
+ Temp,
+ Humidity, etc
  ----
  I2C, 1W, etc
 ]
 node IMU [
- IMU Sensors (Compass, Gyro, Accelerometer)
+ IMU Sensors
+ Compass, Gyro,
+ Accelerometer
  ----
  I2C
 ]
@@ -79,9 +84,9 @@ SignalK --> KIP_Dashboard
 PyPilot <-- PyPilot_Web
 PyPilot --> PyPilot_Web
 
-Helmsman -- PyPilot_Web
-Helmsman -- OpenCPN
-Helmsman -- AvNav
-Helmsman -- KIP_Dashboard
+Helmsman -u- PyPilot_Web
+Helmsman -u- OpenCPN
+Helmsman -u- AvNav
+Helmsman -u- KIP_Dashboard
 
 @enduml
