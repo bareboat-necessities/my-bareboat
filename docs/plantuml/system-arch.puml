@@ -1,6 +1,6 @@
 @startuml
 
-rectangle RPI [
+node RPI [
  Rpi4, BBN OS
  ----
  Local WiFi
@@ -26,7 +26,7 @@ rectangle NMEA_2000 [
  fishfinder, sonar
 ]
 
-rectangle NMEA_Mux [
+node NMEA_Mux [
  NMEA Multiplexer
  ----
  bidirectional Seatalk1
@@ -44,15 +44,15 @@ rectangle AP [
  Autopilot
 ]
 
-rectangle Eth_Hub [
+node Eth_Hub [
  Ethernet Hub
 ]
 
-rectangle USB_Hub [
+node USB_Hub [
  USB Hub
 ]
 
-rectangle Router [
+node Router [
  LTE/WiFi Router
 ]
 
@@ -61,11 +61,11 @@ rectangle Dish_Router [
  Dish
 ]
 
-rectangle Radar [
+node Radar [
  Radar
 ]
 
-rectangle Touchscreen [
+node Touchscreen [
  HDMI Touchscreen
 ]
 
@@ -77,11 +77,11 @@ rectangle Cameras [
  Cameras
 ]
 
-rectangle SDR [
+node SDR [
  SDR Radio
 ]
 
-rectangle SSB [
+node SSB [
  SSB Radio
 ]
 
@@ -98,11 +98,11 @@ rectangle Other_Sensors [
  env temp/pressure/humid
 ]
 
-rectangle AC [
+node AC [
  A/C
 ]
 
-rectangle Fridge [
+node Fridge [
  Fridge
 ]
 
@@ -121,7 +121,7 @@ rectangle Weather [
  Barograph
 ]
 
-rectangle NAS [
+database NAS [
  NAS
  ----
  Audio/Video Lib
