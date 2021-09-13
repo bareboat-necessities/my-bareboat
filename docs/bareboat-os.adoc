@@ -93,6 +93,22 @@ of the OS from chartplotting, dashboards, weather information, to media player, 
 * Boat Dashboards
 * File Server
 
+==== Smart Boat
+
+.Smart Boat
+ifdef::env-github[image::system-arch.svg[Smart Boat]]
+ifndef::env-github[]
+
+[plantuml,system-arch,svg]
+....
+!include plantuml/system-arch.puml
+....
+
+endif::[]
+
+{zwsp} +
+{zwsp} +
+
 === Download Image
 
 Download SD card image (~2.5 Gb file):
