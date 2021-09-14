@@ -1062,7 +1062,7 @@ PyPilot supports these via RTIMULib2. Here is a list of supported units by RTIMU
 
 ==== Barometer, Temperature, Humidity
 
-These are handled by Signal-K plugins supporting:
+These are handled by Signal-K plugins. Supported ones are:
 
 - Bosch BME280
 - Bosch BME680
