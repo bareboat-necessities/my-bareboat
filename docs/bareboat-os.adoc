@@ -1142,7 +1142,6 @@ In SD card you will be looking at speed (i/o reads, i/o writes), durability, siz
 
 === SSD
 
-
 === NavTex
 
 === Servos
@@ -1157,7 +1156,7 @@ In SD card you will be looking at speed (i/o reads, i/o writes), durability, siz
 
 === 12v -> 5v Converters
 
-
+=== Antennas
 
 == How you can help
 
