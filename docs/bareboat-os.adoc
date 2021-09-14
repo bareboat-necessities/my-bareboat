@@ -1095,6 +1095,9 @@ and encountered issues are welcome.
 
 === USB Hubs
 
+Choose powered USB hub which doesn't backfeed power into pi4, to avoid issue of pi4 not being able to reboot
+when USB hub is still 'on'.
+
 === LTE Routers
 
 === SD Cards
