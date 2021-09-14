@@ -143,7 +143,8 @@ So as of time of writing this the best performance/compatibility is the 32-bit i
 
 === Prepare SD Card
 
-Write the downloaded image to SD card. You can use Raspberry Pi Imager for that:
+Write the downloaded image to SD card. Minimum 32Gb SD card recommended.
+You can use Raspberry Pi Imager for that:
 
 https://www.raspberrypi.org/software/
 
