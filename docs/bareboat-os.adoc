@@ -1122,7 +1122,11 @@ when USB hub is still 'on'.
 
 === SD Cards
 
+In SD card you will be looking at speed (i/o reads, i/o writes), durability, size.
+>32Gb is recommended.
+
 === SSD
+
 
 === NavTex
 
