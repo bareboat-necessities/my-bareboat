@@ -1123,7 +1123,17 @@ and encountered issues are welcome.
 Choose powered USB hub which doesn't backfeed power into pi4, to avoid issue of pi4 not being able to reboot
 when USB hub is still 'on'.
 
-=== LTE Routers
+=== LTE/Wi-Fi Routers
+
+Wi-Fi router you need is somewhat different from your home router. Your home router connects
+wired to Internet WAN and it gives you local Wi-Fi. On a boat situation reverses. Your WAN is
+marina's Wi-Fi and your Pi should (preferably) be wired into the router. These
+Wi-Fi routers are being sold as Travel Wi-Fi routers.
+Not all cheap Wi-Fi routers will give you ability to connect to marina Wi-Fi and share it on a boat.
+It's better to choose the ones running OpenWrt operating system, which is Unix based and open-source.
+LTE is a very valuable feature.
+
+Few recommended would be: GL.iNet (GL-X750 V2) Spitz router, Teltonika RUTX12 (dual SIM).
 
 === SD Cards
 
