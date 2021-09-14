@@ -1043,20 +1043,20 @@ endif::[]
 
 PyPilot supports these via RTIMULib2. Here is a list of supported units by RTIMULib2:
 
-- MPU-9150
-- MPU-9250
-- MPU-9255
-- LSM6DS33/LIS3MDL
-- L3GD20H/LSM303D
-- L3GD20/LSM303DLHC
-- LSM9DS0
-- LSM9DS1
-- LSM6DSL
-- ICM-20948
-- HMC5883L with ADXL345 and L3G4200D
-- ISM330DHCX
-- BMX055
-- BNO055
+- InvenSense MPU-9150
+- InvenSense MPU-9250
+- InvenSense MPU-9255
+- STM LSM6DS33/LIS3MDL
+- STM L3GD20H/LSM303D
+- STM L3GD20/LSM303DLHC
+- STM LSM9DS0
+- STM LSM9DS1
+- STM LSM6DSL
+- InvenSense ICM-20948
+- Honeywell HMC5883L with ADXL345 and L3G4200D
+- STM ISM330DHCX
+- Bosch BMX055 (experimental magnetometer support)
+- Bosch BNO055 (doesn't work reliably on Pi, clock issues)
 
 === Environmental Sensors
 
