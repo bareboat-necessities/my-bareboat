@@ -1097,7 +1097,7 @@ These are handled by Signal-K plugins. Supported ones are:
 There are several options:
 
 - If you have AIS transducer you just use it via NMEA bus.
-- AIS built in into NMEA multiplexer
+- AIS built in into NMEA multiplexer used via NMEA network
 - dAISy USB AIS or Raspberry Pi dAISy AIS Hat. USB one is easier to set up.
 - Decode AIS radio signals using SDR. Probably the worst option as SDR is quite
 energy consuming for that task to be run constantly.
