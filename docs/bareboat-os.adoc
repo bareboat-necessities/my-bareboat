@@ -1084,14 +1084,6 @@ These are handled by Signal-K plugins. Supported ones are:
 - Bosch BME280
 - Bosch BME680
 
-=== SeaTalk1
-
-=== NMEA 0183
-
-=== NMEA 2000
-
-=== GPS
-
 === AIS
 
 There are several options:
@@ -1116,8 +1108,6 @@ nor are the Garmin Fantom radars, or Furuno units.
 We didn't have hardware to all these. So reports of successful installations
 and encountered issues are welcome.
 
-=== SDR
-
 === USB Hubs
 
 Choose powered USB hub which doesn't backfeed power into pi4, to avoid issue of pi4 not being able to reboot
@@ -1139,6 +1129,16 @@ Few recommended would be: GL.iNet (GL-X750 V2) Spitz router, Teltonika RUTX12 (d
 
 In SD card you will be looking at speed (i/o reads, i/o writes), durability, size.
 >32Gb is recommended.
+
+=== SeaTalk1
+
+=== NMEA 0183
+
+=== NMEA 2000
+
+=== GPS
+
+=== SDR
 
 === SSD
 
