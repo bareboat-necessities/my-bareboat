@@ -410,6 +410,9 @@ sudo systemctl enable pypilot@pypilot
 sudo systemctl start pypilot@pypilot
 ----
 
+Apart from the official PyPilot documentation you will find this WiKi
+https://github.com/pypilot/workbook/wiki very useful as well.
+
 === Weather
 
 You can add weather budgie desktop applet. Unfortunately it is linked to a fixed location which is
@@ -1069,6 +1072,8 @@ PyPilot supports these via RTIMULib2. Here is a list of supported units by RTIMU
 - STM ISM330DHCX
 - Bosch BMX055 (experimental magnetometer support)
 - Bosch BNO055 (doesn't work reliably on Pi, clock issues)
+
+PyPilot Documentation recommends using 9 Dof (9 Degrees of freedom) IMU with mpu9255
 
 === Environmental Sensors
 
