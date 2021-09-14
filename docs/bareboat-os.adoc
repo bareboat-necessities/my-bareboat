@@ -1047,7 +1047,8 @@ For a cockpit display you need >1000 nit brightness for sunlight readability,
 waterproof, touchscreen, with backlight (brightness) control buttons for
 night sailing. You would need long HDMI and USB (for touch) cables to
 connect to raspberry pi below deck. Bonus, if your touchscreen display comes
-with built in speakers for alarms.
+with built in speakers for alarms. Check Sihovision product line, if one of
+their products will suit you.
 
 
 === IMU, compass, accelerometer, gyroscope
@@ -1071,7 +1072,7 @@ PyPilot supports these via RTIMULib2. Here is a list of supported units by RTIMU
 
 === Environmental Sensors
 
-==== Barometer, Temperature, Humidity
+==== Barometer, Temperature, Humidity I2C Sensors
 
 These are handled by Signal-K plugins. Supported ones are:
 
@@ -1087,6 +1088,14 @@ These are handled by Signal-K plugins. Supported ones are:
 === GPS
 
 === AIS
+
+There are several options:
+
+- If you have AIS transducer you just use it via NMEA bus.
+- AIS built in into NMEA multiplexer
+- dAISy USB AIS or Raspberry Pi dAISy AIS Hat. USB one is easier to set up.
+- Decode AIS radio signals using SDR. Probably the worst option as SDR is quite
+energy consuming for that task to be run constantly.
 
 === Radars
 
