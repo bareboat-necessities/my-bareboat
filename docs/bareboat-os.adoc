@@ -1035,6 +1035,65 @@ endif::[]
 {zwsp} +
 {zwsp} +
 
+== Supported Hardware
+
+=== Monitors
+
+=== IMU
+
+=== Environmental Sensors
+
+Barometer, Temperature, Humidity
+
+=== SeaTalk1
+
+=== NMEA 0183
+
+=== NMEA 2000
+
+=== GPS
+
+=== AIS
+
+=== Radars
+
+OpenCPN Radar plugin reports support of the following radars:
+
+- Navico/B&G/Lowrance/Simrad: BR24, 3G, 4G, and HALO20, 20+, 24, 4, 6, and 8
+- Garmin: HD and xHD
+- Raymarine: Ethernet-Analog: RD218, RD418 / Ethernet-Digital: RD418D, RD424D
+
+Quantum/Quantum2 Radars from Raymarine seems are not supported by OpenCPN,
+nor are the Garmin Fantom radars, or Furuno units.
+
+We didn't have hardware to all these. So reports of successful installations
+and encountered issues are welcome.
+
+=== SDR
+
+=== USB Hubs
+
+=== LTE Routers
+
+=== SD Cards
+
+=== SSD
+
+=== NavTex
+
+=== Servos
+
+=== RTC
+
+=== Sound Cards
+
+=== Cameras
+
+=== 1-Wire
+
+=== 12v -> 5v Converters
+
+
 
 == How you can help
 
