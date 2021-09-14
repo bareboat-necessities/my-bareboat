@@ -1060,7 +1060,13 @@ PyPilot supports these via RTIMULib2. Here is a list of supported units by RTIMU
 
 === Environmental Sensors
 
-Barometer, Temperature, Humidity
+==== Barometer, Temperature, Humidity
+
+These art handled by Signal-K plugins supporting:
+
+- Bosch BMP180
+- Bosch BME280
+- Bosch BME680
 
 === SeaTalk1
 
