@@ -1061,7 +1061,7 @@ OpenCPN Radar plugin reports support of the following radars:
 
 - Navico/B&G/Lowrance/Simrad: BR24, 3G, 4G, and HALO20, 20+, 24, 4, 6, and 8
 - Garmin: HD and xHD
-- Raymarine: Ethernet-Analog: RD218, RD418 / Ethernet-Digital: RD418D, RD424D
+- Raymarine: E120, Ethernet-Analog: RD218, RD418 / Ethernet-Digital: RD418D, RD424D
 
 Quantum/Quantum2 Radars from Raymarine seems are not supported by OpenCPN,
 nor are the Garmin Fantom radars, or Furuno units.
