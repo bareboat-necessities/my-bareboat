@@ -430,7 +430,7 @@ Start MusicBox web UI. Try pre-configured playlist, or you can search Tune-In or
 
 ==== Iris
 
-Iris is an alernative player to MusicBox. Iris is also included in the BBN OS image.
+Iris is an alternative player to MusicBox. Iris is also included in the BBN OS image.
 
 ==== Playing from your iPhone (Spotify, etc)
 
