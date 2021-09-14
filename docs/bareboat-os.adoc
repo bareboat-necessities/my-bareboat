@@ -1039,6 +1039,17 @@ endif::[]
 
 === Monitors
 
+For a cabin monitor many people do not use special marine grade ones.
+If you have enough space on your nav station desk for a keyboard and a mouse,
+you might consider getting a screen without touch functionality.
+
+For a cockpit display you need >1000 nit brightness for sunlight readability,
+waterproof, touchscreen, with backlight (brightness) control buttons for
+night sailing. You would need long HDMI and USB (for touch) cables to
+connect to raspberry pi below deck. Bonus, if your touchscreen display comes
+with built in speakers for alarms.
+
+
 === IMU, compass, accelerometer, gyroscope
 
 PyPilot supports these via RTIMULib2. Here is a list of supported units by RTIMULib2:
