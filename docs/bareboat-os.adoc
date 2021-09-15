@@ -1213,6 +1213,9 @@ https://github.com/Thomas-GeDaD/Seatalk1-Raspi-reader
 
 === NavTex
 
+- NASA Marine PC Navtex USB with antenna. ~$220
+- USB Devices from wetterinfobox.com (WIB2 - NAVTEX for PC) http://www.wetterinfobox.com
+
 === Servos
 
 === RTC (Real Time Clock)
