@@ -1225,6 +1225,28 @@ https://github.com/Thomas-GeDaD/Seatalk1-Raspi-reader
 
 === 12v -> 5v Converters
 
+This converter was used with no issues:
+
+TOBSUN EA50-5V DC 12V 24V to DC 5V 10A 50W Converter Regulator 5V 50W Power Supply Step Down Module Transformer
+
+    Over-voltage, over-current, over-temperature, short-circuit auto protection
+
+    Input voltage: 12/24V, Output: 5V/10A
+
+https://www.amazon.com/dp/B01M03288J
+
+{zwsp} +
+
+As well as this UBEC:
+
+US Ship Hobbywing 5V/6V 3A Switch-mode UBEC, Max 5A Lowest RF
+
+https://www.amazon.com/dp/B008ZNWOYY
+
+
+Avoid powering Pi4 via GPIO pins directly as it bypassed overvoltage self healing fuse
+built-in into pi.
+
 === Antennas
 
 There is a great variety of antennas of a boat. Directional vs omnidirectional,
