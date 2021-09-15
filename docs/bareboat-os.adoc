@@ -1215,13 +1215,24 @@ https://github.com/Thomas-GeDaD/Seatalk1-Raspi-reader
 
 === Servos
 
-=== RTC
+=== RTC (Real Time Clock)
+
+Raspberry pi doesn't have clock module to keep the time when it's off, so you might
+consider adding one.
+
+There are vew common i2c RTC modules:
+
+- DS3231 RTC
+- DS1307 RTC
+
+Make sure there are no conflicts in addresses with your other i2c devices. Other
+devices usually have at least one option for switching to another address to avoid conflicts.
 
 === Sound Cards
 
 As Raspberry Pi doesn't have audio input, for use with SSB radio you might want to have an additional
 sound card which has both audio in and out. There is good selection of options, but check reviews
-and compatibilty with raspberry pi4.
+and compatibility with raspberry pi4.
 
 === Cameras
 
