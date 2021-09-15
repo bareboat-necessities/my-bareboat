@@ -422,6 +422,18 @@ Off-shore sailors or even coastal cruisers should focus on using XyGrib and GRIB
 
 For real blue water sailors OpenCPN Climatology and OpenCPN weather routing plugins are essential.
 
+==== GRIB
+
+Launch xyGrib. Select an area on the map. Click to download Grib file.
+Choose Atmospheric Model and Wave Model. Pick Wind, Wind Gust options in Surface Data
+and Wave Height in Wave Data. Click Download.
+Save Grib data file somewhere under user home.
+(Do not put it into .xygrib hidden directory as OpenCPN GRIB plugin can't look there).
+
+Now you can overlay this GRIB data on OpenCPN chart.
+Enable GRIB plugin in OpenCPN. Click on GRIB plugin in OpenCPN plugin toolbar.
+Load GRIB file into OpenCPN. See weather data overlayed over your chart.
+
 === Music Players
 
 The OS image comes with Mopidy, MPD server, MusicBox, Shairport-Sync (AirPlay) server.
