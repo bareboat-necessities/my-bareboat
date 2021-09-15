@@ -468,7 +468,7 @@ cd ~/add-ons
 ./sailmail-pat-install.sh
 ----
 
-Documentaiton on setting it up and using it:
+Documentation on setting it up and using it:
 
 https://github.com/la5nta/pat/wiki
 https://getpat.io/
@@ -682,7 +682,7 @@ It's possible to disable booting into GUI by running:
 sudo raspi-config
 ----
 
-and selecting booting into console under System Options / Boot - Auto Login.
+and selecting booting into the console under System Options / Boot - Auto Login.
 
 
 === Marine Radio
