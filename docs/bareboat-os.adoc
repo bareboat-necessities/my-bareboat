@@ -434,6 +434,14 @@ Now you can overlay this GRIB data on OpenCPN chart.
 Enable GRIB plugin in OpenCPN. Click on GRIB plugin in OpenCPN plugin toolbar.
 Load GRIB file into OpenCPN. See weather data overlayed over your chart.
 
+==== Weather routing
+
+Weather routing OpenCPN plugin is able to plan your trip route. It uses your boat polar diagram, so
+make sure you have built it in advance using Polar plugin.
+
+You also need to download climatology data using OpenCPN climatology plugin, and
+download a grib file. They are also needed and used in weather routing.
+
 === Music Players
 
 The OS image comes with Mopidy, MPD server, MusicBox, Shairport-Sync (AirPlay) server.
