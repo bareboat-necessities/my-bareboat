@@ -1160,6 +1160,45 @@ In SD card you will be looking at speed (i/o reads, i/o writes), durability, siz
 
 === Antennas
 
+There is a great variety of antennas of a boat. Directional vs omnidirectional,
+active vs passive, internal (some are just a part of a circuit on a PCB) vs external,
+grounded vs ungrounded, receiving-only vs receiving/transmitting, and a wide variety of shapes.
+
+==== VHF, AIS
+
+VHF and AIS use similar frequencies, need be in direct sight of view, so the higher they are the better range.
+They are limited by Earth curvature. Range is around 30 miles. They can use the same antenna with a proper splitter.
+Transmitter on AIS has to be licensed.
+
+==== Wi-Fi, LTE/4G
+
+Similar but distinct separate antennas. Can work even if inside cabin of a fiberglass boat. Range varies on antenna
+gain. Wi-Fi usually in hundreds of feet. LTE/4G in/under few miles. LTE/4G uses cellular network of antennas
+of network providers which covers most populated areas.
+
+==== GPS
+
+Receive-only. Doesn't need to be high. Needs a clear sky view of multiple satellites. External ones are usually
+active and placed inside of a mushroom-looking plastic.
+
+==== Iridium, StarLink
+
+Both are satellite communications. Iridium designed for a hand held phone with a small antenna.
+StarLink is communicating with more satellites on much lower orbits, and it is designed for a directional
+pizza-sized dish antenna, automatically orienting itself using a motor.
+
+==== FM
+
+==== Bluetooth, 433
+
+==== NavTex, WeatherFax
+
+==== SSB
+
+Transmitting on SSB requires license.
+
+====
+
 == How you can help
 
 . Add a star on our github project page https://github.com/bareboat-necessities/lysmarine_gen
