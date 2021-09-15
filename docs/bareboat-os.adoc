@@ -1245,6 +1245,18 @@ and compatibility with raspberry pi4.
 
 === Cameras
 
+=== IP Cameras
+
+IP Cameras should work with MotionEye using their rtsp:// URLs.
+
+=== CSI connected cameras
+
+We need your help with testing it.
+
+=== USB connected cameras
+
+We need your help with testing it.
+
 === 1-Wire
 
 SignalK Raspberry Pi 1wire plugin supports connecting multiple DS18B20
