@@ -1045,7 +1045,7 @@ Chronograf and Kapasitor also come pre-installed.
 
 With Raspberry Pi4 power consumption of your system should be around under 4.5 watts without a monitor.
 A monitor depending on it's size and backlight brightness (needed for sunlight readability) can add
-another 5 watts or even more.
+another 5 watts or even more. Human brain runs on about 12-25 watts for comparison.
 
 === Upgrading your System
 
