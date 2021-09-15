@@ -1219,6 +1219,10 @@ https://github.com/Thomas-GeDaD/Seatalk1-Raspi-reader
 
 === Sound Cards
 
+As Raspberry Pi doesn't have audio input, for use with SSB radio you might want to have an additional
+sound card which has both audio in and out. There is good selection of options, but check reviews
+and compatibilty with raspberry pi4.
+
 === Cameras
 
 === 1-Wire
