@@ -1208,7 +1208,11 @@ Both NavTex and WeatherFax designed for almost world-wide coverage and offshore 
 
 ==== SSB, HAM
 
-Transmitting on SSB requires license.
+Transmitting on SSB (Single Side Band) radio requires a license for an operator.
+Designed for long range communications at sea and for offshore vessels. An insulated backstay of a mast can
+serve as SSB antenna.Propagation of SSB radio waves work on reflected or
+refracted back toward Earth from the ionosphere. Performance ranges in excess of 4000 miles.
+Some parts of SSB frequency spectrum work better at night, others during daytime.
 
 ==== Lora
 
