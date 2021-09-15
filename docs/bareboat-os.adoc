@@ -1196,7 +1196,12 @@ Designed to have almost world-wide coverage (except of extreme North/South poles
 Short piece of wire, small telescoping antenna. Receive only. 30-40 miles range.
 Transmitted from ground stations.
 
-==== Bluetooth, 433
+==== Bluetooth, 433MHz FM RF
+
+Bluetooth antennas are small and often just a part of a PCB circuit.
+Bluetooth range is really short and it is about 10 meters.
+
+433MHz FM RF range is about 300 meters. Often used for remote controls. Wireless masthead wind transducers, etc.
 
 ==== NavTex, WeatherFax
 
@@ -1211,7 +1216,7 @@ Both NavTex and WeatherFax designed for almost world-wide coverage and offshore 
 
 Transmitting on SSB (Single Side Band) radio requires a license for an operator except of in an emergency.
 Designed for long range communications at sea and for offshore vessels. An insulated backstay of a mast can
-serve as SSB antenna.Propagation of SSB radio waves work on reflected or
+serve as SSB antenna. Propagation of SSB radio waves work on reflected or
 refracted back toward Earth from the ionosphere. Performance ranges in excess of 4000 miles.
 Some parts of SSB frequency spectrum work better at night, others during daytime.
 
@@ -1220,7 +1225,8 @@ HAM (aka amateur) radio also requires a license for an operator to transmit.
 ==== LoRa
 
 LoRa (Long Range) radio is license-free for both transmitting and receiving.
-Range 2-5 km in open. Used as a low power wireless platform for Internet of Things (IoT).
+Range 2-5 km in open. Used as a low power (and low traffic bandwidth) wireless platform for Internet of Things (IoT).
+LoRa antennas are small and usually attached to its devices.
 
 == How you can help
 
