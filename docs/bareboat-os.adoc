@@ -434,6 +434,12 @@ Now you can overlay this GRIB data on OpenCPN chart.
 Enable GRIB plugin in OpenCPN. Click on GRIB plugin in OpenCPN plugin toolbar.
 Load GRIB file into OpenCPN. See weather data overlayed over your chart.
 
+==== WeatherFax
+
+WeatherFax OpenCPN plugin is capable of downloading weather faxes from Internet as well as capturing
+them from SSB radio via audio input. (Pi needs a sound card with audio input because it is sold without
+audio input card). Just as GRIB files they can be overlaid over charts.
+
 ==== Weather routing
 
 Weather routing OpenCPN plugin is able to plan your trip route. It uses your boat polar diagram, so
