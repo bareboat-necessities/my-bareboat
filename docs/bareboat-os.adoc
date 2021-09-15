@@ -1125,7 +1125,9 @@ PyPilot supports these via RTIMULib2. Here is a list of supported units by RTIMU
 - Bosch BMX055 (experimental magnetometer support)
 - Bosch BNO055 (doesn't work reliably on Pi, clock issues)
 
-PyPilot Documentation recommends using 9 Dof (9 Degrees of freedom) IMU with mpu9255
+PyPilot Documentation recommends using 9 Dof (9 Degrees of freedom) IMU with mpu9255.
+
+Even without autopilot servo these sensors allow displaying; roll, pitch, and yaw.
 
 === Environmental Sensors
 
@@ -1135,6 +1137,8 @@ These are handled by Signal-K plugins. Supported ones are:
 
 - Bosch BME280
 - Bosch BME680
+
+There is also barograph plugin in SignalK.
 
 === AIS
 
