@@ -1213,6 +1213,9 @@ for different areas.
 NavTex frequency is 518 kHz in the medium frequency band. 490 kHz in addition in some countries.
 Both NavTex and WeatherFax designed for almost world-wide coverage and offshore sailing.
 
+PA0RDT active mini-whip antenna is good for NavTex and WeatherFax frequencies
+http://dl1dbc.net/SAQ/miniwhip.html
+
 ==== SSB, HAM
 
 Transmitting on SSB (Single Side Band) radio requires a license for an operator except of in an emergency.
