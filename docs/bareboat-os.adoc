@@ -796,8 +796,7 @@ The full source code to create the image is available at: <https://github.com/ba
 
 === Shutting Down / Rebooting
 
-On the desktop click arrow to get to the second set of desktop icons.
-Click on the 'Commands' icon. You will see a menu from where
+On the desktop click on the 'Commands' icon. You will see a menu from where
 you can perform restart/shutdown, and more.
 
 ==== Safe Power-Down
