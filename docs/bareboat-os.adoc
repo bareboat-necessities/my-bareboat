@@ -1166,7 +1166,7 @@ grounded vs ungrounded, receiving-only vs receiving/transmitting, and a wide var
 
 ==== VHF, AIS
 
-VHF and AIS use similar frequencies, need be in direct sight of view, so the higher they are the better range.
+VHF and AIS use similar frequencies, need be in direct line of sight, so the higher they are the better range.
 They are limited by Earth curvature. Range is around 30 miles. They can use the same antenna with a proper splitter.
 Transmitter device on AIS has to be licensed and registered.
 
@@ -1191,10 +1191,11 @@ StarLink is communicating with more satellites on much lower orbits, and it is d
 pizza-sized dish antenna, automatically orienting itself using a motor.
 Designed to have almost world-wide coverage (except of extreme North/South poles areas).
 
-==== FM
+==== FM (Frequency Modulation)
 
 Short piece of wire, small telescoping antenna. Receive only. 30-40 miles range.
-Transmitted from ground stations.
+Transmitted from ground stations. VHF is FM too, but FM is loosely used term for music and local news broadcast
+channels.
 
 ==== Bluetooth, 433MHz FM RF
 
