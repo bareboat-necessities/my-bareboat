@@ -1224,7 +1224,7 @@ PCB boards/hats:
 - Sailor Hat for Raspberry Pi by https://hatlabs.fi
 - GeDaD MCS, Marine Control Server Board by https://www.gedad.de/
 
-USB:
+USB/Serial:
 
 - Actisense NGT-1 NMEA 2000® to PC https://actisense.com/products/ngt-1-nmea-2000-to-pc-interface/
 - CANable and CANable Pro by https://canable.io/
