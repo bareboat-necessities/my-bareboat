@@ -1168,7 +1168,7 @@ grounded vs ungrounded, receiving-only vs receiving/transmitting, and a wide var
 
 VHF and AIS use similar frequencies, need be in direct sight of view, so the higher they are the better range.
 They are limited by Earth curvature. Range is around 30 miles. They can use the same antenna with a proper splitter.
-Transmitter on AIS has to be licensed.
+Transmitter device on AIS has to be licensed and registered.
 
 ==== Wi-Fi, LTE/4G
 
@@ -1194,6 +1194,7 @@ Designed to have almost world-wide coverage (except of extreme North/South poles
 ==== FM
 
 Short piece of wire, small telescoping antenna. Receive only. 30-40 miles range.
+Transmitted from ground stations.
 
 ==== Bluetooth, 433
 
@@ -1208,13 +1209,18 @@ Both NavTex and WeatherFax designed for almost world-wide coverage and offshore 
 
 ==== SSB, HAM
 
-Transmitting on SSB (Single Side Band) radio requires a license for an operator.
+Transmitting on SSB (Single Side Band) radio requires a license for an operator except of in an emergency.
 Designed for long range communications at sea and for offshore vessels. An insulated backstay of a mast can
 serve as SSB antenna.Propagation of SSB radio waves work on reflected or
 refracted back toward Earth from the ionosphere. Performance ranges in excess of 4000 miles.
 Some parts of SSB frequency spectrum work better at night, others during daytime.
 
-==== Lora
+HAM (aka amateur) radio also requires a license for an operator to transmit.
+
+==== LoRa
+
+LoRa (Long Range) radio is license-free for both transmitting and receiving.
+Range 2-5 km in open. Used as a low power wireless platform for Internet of Things (IoT).
 
 == How you can help
 
