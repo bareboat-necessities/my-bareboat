@@ -1134,6 +1134,23 @@ In SD card you will be looking at speed (i/o reads, i/o writes), durability, siz
 
 === SeaTalk1
 
+SeaTalk1 is Raymarine proprietary protocol. Many popular Autohelm Raymarine autopilots use it.
+To integrate it into your system you have a number of choices:
+
+- Use bi-directional NMEA 0183 multiplexer which supports one SeaTalk1 port. First
+vendors to check are YakBitz and Quark-elec Marine. There are others as well. You want
+bi-directional multiplexer to be able to control autopilot from your pi via NMEA.
+There is a dedicated Autohelm autopilot plugin in SignalK.
+
+- Buy a dedicated Seatalk1 to NMEA converter.
+
+- For read/only Seatalk1 connection you can use this solution:
+https://github.com/SignalK/signalk-server/blob/master/Seatalk(GPIO).md
+
+SeaTalk1 was reverse engineered and converter into NMEA is available:
+https://github.com/MatsA/seatalk1-to-NMEA0183
+https://github.com/Thomas-GeDaD/Seatalk1-Raspi-reader
+
 === NMEA 0183
 
 === NMEA 2000
