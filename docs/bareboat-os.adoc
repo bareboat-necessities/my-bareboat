@@ -1180,24 +1180,37 @@ of network providers which covers most populated areas.
 
 Receive-only. Doesn't need to be high. Needs a clear sky view of multiple satellites. External ones are usually
 active and placed inside of a mushroom-looking plastic.
+Designed to have almost world-wide coverage (except of extreme North/South poles areas).
+There are several GNSS systems with different satellite constellations.
+GPS (US), BEIDOU (China), GALILEO (EU), GLONASS (Russia), and QZSS (Japan)
 
 ==== Iridium, StarLink
 
 Both are satellite communications. Iridium designed for a hand held phone with a small antenna.
 StarLink is communicating with more satellites on much lower orbits, and it is designed for a directional
 pizza-sized dish antenna, automatically orienting itself using a motor.
+Designed to have almost world-wide coverage (except of extreme North/South poles areas).
 
 ==== FM
+
+Short piece of wire, small telescoping antenna. Receive only. 30-40 miles range.
 
 ==== Bluetooth, 433
 
 ==== NavTex, WeatherFax
 
-==== SSB
+Receive only. Transmitted from ground stations with predefined intervals of time.
+WeatherFax frequency depends on the region. You need to know a schedule of WeatherFax transmitting stations
+for different areas.
+
+NavTex frequency is 518 kHz in the medium frequency band. 490 kHz in addition in some countries.
+Both NavTex and WeatherFax designed for almost world-wide coverage and offshore sailing.
+
+==== SSB, HAM
 
 Transmitting on SSB requires license.
 
-====
+==== Lora
 
 == How you can help
 
