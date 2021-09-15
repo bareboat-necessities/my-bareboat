@@ -436,7 +436,7 @@ Load GRIB file into OpenCPN. See weather data overlayed over your chart.
 
 OpenCPN GRIB plugin can also prepare SailMail email requests for Grib files.
 You can store them and email via Internet (if you have connection) or use
-WinLink Pat (SailMail client: https://github.com/la5nta/pat/wiki).
+WinLink Pat (WinLink client: https://github.com/la5nta/pat/wiki).
 
 ==== WeatherFax
 
@@ -453,7 +453,7 @@ You also need to download climatology data using OpenCPN climatology plugin, and
 download a grib file. They are also needed and used in weather routing.
 
 
-=== SailMail for Raspberry Pi
+=== WinLink (SailMail analogue) for Raspberry Pi
 
 To install:
 
