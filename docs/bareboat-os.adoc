@@ -438,6 +438,11 @@ OpenCPN GRIB plugin can also prepare SailMail email requests for Grib files.
 You can store them and email via Internet (if you have connection) or use
 WinLink Pat (WinLink client: https://github.com/la5nta/pat/wiki).
 
+==== NOAA weather in SignalK
+
+SignalK comes with NOAA weather plugin. After you configure it, weather alerts will
+show up in KIP dashboard.
+
 ==== WeatherFax
 
 WeatherFax OpenCPN plugin is capable of downloading weather faxes from Internet as well as capturing
