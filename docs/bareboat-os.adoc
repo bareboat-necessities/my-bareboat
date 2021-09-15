@@ -1215,20 +1215,33 @@ https://github.com/Thomas-GeDaD/Seatalk1-Raspi-reader
 
 NMEA 2000 protocol was reverse engineered as a part of this project: https://github.com/canboat/canboat
 
-Options to connect pi with NMEA 2000 bus:
+Options to connect Pi to NMEA 2000 bus:
 
 PCB boards/hats:
 
 - PiCAN-M Raspberry Pi Hat by https://www.skpang.co.uk
 - Sailor Hat for Raspberry Pi by https://hatlabs.fi
+- GeDaD MCS, Marine Control Server Board by https://www.gedad.de/
 
 USB:
 
 - Actisense NGT-1 NMEA 2000® to PC https://actisense.com/products/ngt-1-nmea-2000-to-pc-interface/
 - CANable and CANable Pro by https://canable.io/
-- GeDaD MCS, Marine Control Server Board by https://www.gedad.de/
+- iKonvert NMEA 2000-USB Converter
+- ShipModul MiniPlex-3USB-N2K
+- Yacht Devices NMEA 2000 USB Gateway YDNU-02
 
-- TCP/IP gateways:
+TCP/IP gateways:
+
+- Bi-directional NMEA 2000 Multiplexer WiFi (Quark-elec, etc)
+- ShipModul MiniPlex-3E-N2K
+- Yacht Devices NMEA 2000 Ethernet Gateway YDWG-02
+- Yacht Devices NMEA 2000 USB Gateway YDEN-02
+
+OpenCPN TwoCan plugin has a list of compatible with it devices too.
+
+Stay away from devices which just convert NMEA 2000 into NMEA 0183.
+You need to feed NMEA 2000 into SignalK and be able to receive it too.
 
 === GPS
 
