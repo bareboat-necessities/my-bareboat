@@ -1224,8 +1224,6 @@ https://github.com/Thomas-GeDaD/Seatalk1-Raspi-reader
 - NASA Marine PC Navtex USB with an antenna (BBN OS comes with a program called PC-NavTex for it). ~$220
 - USB Devices from wetterinfobox.com (WIB2 - NAVTEX for PC) http://www.wetterinfobox.com
 
-=== Servos
-
 === RTC (Real Time Clock)
 
 Raspberry pi doesn't have clock module to keep the time when it's off, so you might
