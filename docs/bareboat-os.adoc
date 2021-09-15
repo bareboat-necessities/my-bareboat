@@ -1248,7 +1248,7 @@ and compatibility with raspberry pi4.
 SignalK Raspberry Pi 1wire plugin supports connecting multiple DS18B20
 1-wire temperature sensors.
 
-=== 12v -> 5v Converters
+=== Power, 12v -> 5v Converters
 
 This converter was used with no issues:
 
@@ -1268,9 +1268,17 @@ US Ship Hobbywing 5V/6V 3A Switch-mode UBEC, Max 5A Lowest RF
 
 https://www.amazon.com/dp/B008ZNWOYY
 
-
 Avoid powering Pi4 via GPIO pins directly as it bypassed overvoltage self healing fuse
 built-in into pi.
+
+==== Power Management, Victron, Venus OS
+
+SignalK has good support for interfacing with Victron Energy products and their Venus OS.
+
+SignalK comes with:
+
+- Victron Venus OS Plugin
+- ModBus Client Plugin
 
 === Antennas
 
