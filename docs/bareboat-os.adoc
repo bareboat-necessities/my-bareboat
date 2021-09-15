@@ -1127,7 +1127,7 @@ PyPilot supports these via RTIMULib2. Here is a list of supported units by RTIMU
 
 PyPilot Documentation recommends using 9 Dof (9 Degrees of freedom) IMU with mpu9255.
 
-Even without autopilot servo these sensors allow displaying; roll, pitch, and yaw.
+Even without autopilot motor controller these sensors allow displaying roll, pitch, and yaw.
 
 === Environmental Sensors
 
@@ -1244,6 +1244,9 @@ and compatibility with raspberry pi4.
 === Cameras
 
 === 1-Wire
+
+SignalK Raspberry Pi 1wire plugin supports connecting multiple DS18B20
+1-wire temperature sensors.
 
 === 12v -> 5v Converters
 
