@@ -365,11 +365,6 @@ with extensive set of plugins as well as weather GRIB file viewers
 
 * XyGrib
 
-=== Set up your Ship Parameters
-
-Do not forget to set up your ship parameters in SignalK and Vessel applications.
-They can come handy.
-
 ==== OpenCPN
 
 * Start OpenCPN. Go into Tools/Options/Charts/Chart Downloader tab.
@@ -396,6 +391,11 @@ with O-Charts USB dongle or key.
 ==== SignalK, FreeBoard-SK, TukTuk
 
 Follow SignalK documentation to install offline charts for these.
+
+=== Set up your Ship Parameters
+
+Do not forget to set up your ship parameters in SignalK and Vessel applications.
+They can come handy.
 
 === SignalK
 
