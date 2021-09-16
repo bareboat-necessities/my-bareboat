@@ -1273,6 +1273,30 @@ You need to feed NMEA 2000 into SignalK and be able to receive it too.
 
 === GPS
 
+Several options to connect:
+
+USB:
+
+- Many USB "mouse" GPS should work on BBN OS after plugging-in and giving them some time
+to acquire satellites outside of the house. Cold start can take half an hour or so with some GPS models.
+
+Re-use GPS built-in into LTE router:
+
+- LTE modems on LTE routers have built-in GPS. If you followed our advice on using a router with
+OpenWrt OS then you will be able to install KPlex (or gpsd) on it and set up a connection to it
+from SignalK (or/and OpenCPN, AvNav) running on your raspberry pi.
+
+NMEA:
+
+- Use GPS from your NMEA network. VHF have GPS and NMEA interfaces. Some NMEA multiplexers come with GPS built-in
+as well as most chartplotters.
+
+PCB Boards connected to Pi:
+
+- Example BerryGPS. Disadvantage of those is that they use your Pi's built-in UART and you might have other
+devices that you want to use it instead.
+
+
 === SDR
 
 RTL-SDR, SDRPlay SDR, HackRF SDR, LimeSDR, and likely others
