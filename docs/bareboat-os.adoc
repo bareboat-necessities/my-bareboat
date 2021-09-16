@@ -704,6 +704,7 @@ These applications will allow you (with some skill and set up):
 - Receive and decode WeatherFax, NavTex, NOAA and satellite weather images, Inmarsat Fleet messages
 - Send and receive emails via WinLink (requires you to have a HAM amateur radio license)
 - SDR can help you to decode AIS, and ADS-B (aviation analogue of AIS)
+- Control your rig (SSB/SDR) with raspberry pi and monitor
 - and more
 
 
