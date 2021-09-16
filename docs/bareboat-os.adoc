@@ -713,6 +713,7 @@ These applications will allow you (with some skill and set up):
 BBN OS will help you to use Iridium Phone as a modem for low bandwidth Internet access, or
 to send periodic short burst data with use of a specially written SignalK plugin.
 
+
 === Cameras
 
 ==== IP Cameras
@@ -1406,15 +1407,15 @@ and compatibility with raspberry pi4.
 
 === Cameras
 
-=== IP Cameras
+==== IP Cameras
 
 IP Cameras should work with MotionEye using their rtsp:// URLs.
 
-=== CSI connected cameras
+==== CSI connected cameras
 
 We need your help with testing it.
 
-=== USB connected cameras
+==== USB connected cameras
 
 We need your help with testing it.
 
