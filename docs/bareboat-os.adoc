@@ -1239,6 +1239,7 @@ TCP/IP:
 === NMEA 2000
 
 NMEA 2000 protocol was reverse engineered as a part of this project: https://github.com/canboat/canboat
+
 Since then NMEA 2000 had been natively incorporated into SignalK as well.
 
 Options to connect Pi to NMEA 2000 bus:
