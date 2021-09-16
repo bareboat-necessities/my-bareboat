@@ -1303,6 +1303,8 @@ RTL-SDR, SDRPlay SDR, HackRF SDR, LimeSDR, and likely others
 
 Interfaces USB, Ethernet
 
+SDRs consume quite some power. So it's better to connect them to pi via a powered USB Hub (in case of USB interface).
+
 === SSD
 
 Raspberry Pi OS supports NVMe and SATA SSDs with an appropriate extension board, or a Pi case, and
