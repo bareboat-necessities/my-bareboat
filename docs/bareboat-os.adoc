@@ -1322,8 +1322,8 @@ TCP/IP gateways:
 
 - Bi-directional NMEA 2000 Multiplexer WiFi (Quark-elec, etc)
 - ShipModul MiniPlex-3E-N2K
-- Yacht Devices NMEA 2000 Ethernet Gateway YDWG-02
-- Yacht Devices NMEA 2000 USB Gateway YDEN-02
+- Yacht Devices NMEA 2000 Wi-Fi Gateway YDWG-02
+- Yacht Devices NMEA 2000 Ethernet Gateway YDEN-02
 - NavLink2 digitalyachtamerica.com
 
 OpenCPN TwoCan plugin has a list of compatible with it devices too.
