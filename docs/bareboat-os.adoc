@@ -723,27 +723,9 @@ to send periodic short burst data with use of a specially written SignalK plugin
 ==== IP Cameras
 
 Should be easy to integrate using pre-installed VLC.
-See URL in /var/www/bbn-launcher/bbn-launcher.js
+See URL in /var/www/bbn-launcher/constants.js
 
 IP cameras usually have some delay in video display.
-
-==== Connecting cameras to CSI on raspberry pi
-
-Geekworm Raspberry Pi Hdmi-in Module, Hdmi to CSI-2 could be used to solve distance issue with CSI cameras.
-
-https://geekworm.com/products/raspberry-pi-hdmi-to-csi-2-adapter-board-with-15-pin-ffc-cable
-
-Another trick with Arducam CSI to HDMI Cable extension is for CSI cameras to connect to raspberry pi over
-longer HDMI. You can't use HDMI camera, HDMI is used merely as wire signal extension for CSI.
-
-https://www.arducam.com/product/arducam-csi-hdmi-cable-extension-module-15pin-60mm-fpc-cable-raspberry-pi-camera-specific-pack-2-1-set/
-
-==== Low light vision
-
-Sionyx has some boating oriented solutions:
-https://www.sionyx.com/pages/boating
-
-Image stabilization for boat movements is an important factor too.
 
 ==== MotionEye
 
@@ -1415,13 +1397,29 @@ and the compatibility with Raspberry Pi4.
 
 IP Cameras should work with MotionEye using their rtsp:// URLs.
 
-==== CSI connected cameras
+==== Connecting cameras to CSI on raspberry pi
 
-We need your help with testing it. It's believed to be working on our side.
+Geekworm Raspberry Pi Hdmi-in Module, Hdmi to CSI-2 could be used to solve distance issue with CSI cameras.
+
+https://geekworm.com/products/raspberry-pi-hdmi-to-csi-2-adapter-board-with-15-pin-ffc-cable
+
+Another trick with Arducam CSI to HDMI Cable extension is for CSI cameras to connect to raspberry pi over
+longer HDMI. You can't use HDMI camera, HDMI is used merely as wire signal extension for CSI.
+
+https://www.arducam.com/product/arducam-csi-hdmi-cable-extension-module-15pin-60mm-fpc-cable-raspberry-pi-camera-specific-pack-2-1-set/
+
+==== Low light vision
+
+Sionyx has some boating oriented solutions:
+https://www.sionyx.com/pages/boating
+
+Image stabilization for boat movements is an important factor too.
 
 ==== USB connected cameras
 
-We need your help with testing it. It's believed to be working on our side.
+Supported with USB 3.0
+
+We need your help with testing it and building some recommendations on models, etc.
 
 === 1-Wire
 
