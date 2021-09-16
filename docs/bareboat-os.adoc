@@ -365,6 +365,10 @@ with extensive set of plugins as well as weather GRIB file viewers
 
 * XyGrib
 
+=== Set up your Ship Parameters
+
+Do not forget to set up your ship parameters in SignalK and Vessel applications.
+They can come handy.
 
 ==== OpenCPN
 
