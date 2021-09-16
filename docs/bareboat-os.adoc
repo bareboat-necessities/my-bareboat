@@ -956,6 +956,15 @@ scroll down and choose 'More Settings' and select 'Print Using System Dialog' wh
 will let you to choose a printer.
 
 
+=== Social Networks and Messaging
+
+BBN OS has several programs to help you stay connected with friends
+via social networks and messaging applications via Internet.
+
+=== Location Reporting
+
+SignalK comes with preinstalled plugin for saillogger.com
+
 === Most useful features for average short cruises
 
 * GPS, OpenCPN off-line charts for your sailing area
