@@ -778,7 +778,7 @@ For offshore sailors there are number of features pre-loaded into the OS image
 * Using Iridium as modem
 * WeatherFax
 * GRIB (could be over SSB)
-* AirMail / WinLink
+* WinLink
 * SDR / HAM Radio Apps
 * AIS
 * Weather Routing / Climatology
