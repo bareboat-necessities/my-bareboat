@@ -1391,7 +1391,7 @@ USB stick drives (flash drives) performance is not as high as NVMe and SATA SSDs
 Raspberry pi doesn't have clock module to keep the time when it's off, so you might
 consider adding one.
 
-There are vew common i2c RTC modules:
+There are a few common i2c RTC modules:
 
 - DS3231 RTC
 - DS1307 RTC
