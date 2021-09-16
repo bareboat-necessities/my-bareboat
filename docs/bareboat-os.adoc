@@ -456,7 +456,11 @@ audio input card). Just as GRIB files they can be overlaid over charts.
 ==== Weather routing
 
 Weather routing OpenCPN plugin is able to plan your trip route. It uses your boat polar diagram, so
-make sure you have built it in advance using Polar plugin.
+make sure you have built it in advance using Polar plugin, or download it for your boat.
+Few places to check:
+
+- SeaPilot https://www.seapilot.com/
+- ORC-data https://github.com/jieter/orc-data
 
 You also need to download climatology data using OpenCPN climatology plugin, and
 download a grib file. They are also needed and used in weather routing.
