@@ -1444,7 +1444,7 @@ US Ship Hobbywing 5V/6V 3A Switch-mode UBEC, Max 5A Lowest RF
 
 https://www.amazon.com/dp/B008ZNWOYY
 
-Avoid powering Pi4 via GPIO pins directly as it bypassed overvoltage self healing fuse
+Avoid powering Pi4 via GPIO pins directly as it bypasses an overvoltage self healing fuse
 built-in into pi.
 
 ==== Power Management, Victron, Venus OS
