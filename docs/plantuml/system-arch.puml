@@ -37,6 +37,10 @@ node NMEA_Mux [
  bidirectional Seatalk1
 ]
 
+node NMEA_Eth_Mux [
+ NMEA Ethernet Multiplexer
+]
+
 rectangle NMEA_0183 [
  <b>NMEA 0183 Devices
  ----
@@ -223,10 +227,12 @@ RPI -u- Keyboard_Mouse
 SmartPhone -- WiFi_Local
 
 SiriusXM -- NMEA_2000
+NMEA_2000 -- NMEA_2000
 
 Eth_Hub -r- Router
 Eth_Hub -- Radar
 Eth_Hub -- NAS
+Eth_Hub -- NMEA_Eth_Mux
 Eth_Hub -u- Dish_Router
 
 USB_Hub -- SDR
@@ -238,7 +244,8 @@ Other_Sensors -- Fridge
 Other_Sensors -- Lights_Fans
 Other_Sensors -- Pumps
 
-NMEA_Mux -- NMEA_0183
+NMEA_Mux -l- NMEA_0183
+NMEA_Eth_Mux -- NMEA_0183
 NMEA_Mux -- AP
 
 Esp32 -- Lora
