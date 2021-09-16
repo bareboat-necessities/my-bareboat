@@ -1211,6 +1211,28 @@ https://github.com/Thomas-GeDaD/Seatalk1-Raspi-reader
 
 === NMEA 0183
 
+Widely supported. Many options to connect to pi.
+
+USB
+- with FTDI FT232 chipset https://www.amazon.com/dp/B07B416CPK
+- with CP210x chipset RS-485 to USB converter
+- with CH340 chipset RS-485 to USB converter
+- with Prolific PL2303 chipset RS-485 to USB converter
+- NMEA 0183 Multiplexers working over USB (YakBitz, Quark-elec, etc)
+
+NOTE: FTDI is preferable choice between FTDI, CP210x, CH340, or PL2303.
+FTDI seems always have unique serial ID which might be missing on others, and
+it will make harder to write udev rules to uniquely name the device on USB bus.
+
+Board
+- PiCAN-M Raspberry Pi Hat by https://www.skpang.co.uk
+- Sailor Hat for Raspberry Pi by https://hatlabs.fi
+- GeDaD MCS, Marine Control Server Board by https://www.gedad.de/
+
+TCP/IP
+- NMEA 0183 Multiplexers working over WiFi or Ethernet
+
+
 === NMEA 2000
 
 NMEA 2000 protocol was reverse engineered as a part of this project: https://github.com/canboat/canboat
