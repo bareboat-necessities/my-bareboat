@@ -525,6 +525,18 @@ If you use FTDI USB serial to USB sticks the OS should recognize them right away
 and if they are wired correctly to NMEA devices (ex: wind/depth/speed/GPS) their reading
 should automatically show up in instrument dashboards.
 
+When wiring NMEA 0183 devices:
+
+ Transmit (Tx) (+) should connect to a receive (Rx) (+)
+ Tx (-) should connect to a Rx (-)
+ Rx (+) should connect to a Tx (+)
+ Rx (-) should connect to a Tx (-)
+
+- In the event the sending device has a Tx (-), but there is not a corresponding Rx (-) on the receiving device, leave the sending device’s Tx (-) disconnected. Failure to follow this guideline can damage the sending device.
+
+- In the event that the receiving device has a Rx (-), but there is no corresponding Tx (-) on the sending device, bring the Rx (-) to ground.
+
+
 ==== NMEA 2000
 
 Check SignalK plugin settings and SignalK documentation.
@@ -1296,6 +1308,7 @@ Vendors:
 - Maretron https://www.maretron.com/
 - Encoded Solutions https://www.encodedsolutions.com/
 - Comar Systems https://comarsystems.com/
+- gadgetpool.de https://www.gadgetpool.eu/
 
 
 === NMEA 2000
