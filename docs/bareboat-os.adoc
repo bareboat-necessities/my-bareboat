@@ -1293,6 +1293,8 @@ Booting from NVMe drives got supported by linux kernel on pi4 just recently (som
 Perform a benchmark of your SSD after installation with correct drivers. Make sure it falls
 into expected range.
 
+USB stick drives (flash drives) do not perform as well as NVMe and SATA SSDs.
+
 === NavTex
 
 - NASA Marine PC Navtex USB with an antenna (BBN OS comes with a program called PC-NavTex for it). ~$220
