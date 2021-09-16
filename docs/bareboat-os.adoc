@@ -67,7 +67,7 @@ toc::[]
 
 Why use BBN OS? Some people use just commercial marine electronics on board, some ones use smart tablets and marine
 Wi-Fi multiplexers. All these solutions lack one important component - an onboard computer capable of monitoring
-and controlling all aspects of the boat systems, and capable of storing data. Some people put Intel-based computer for that.
+and controlling all aspects of the boat systems, and capable of storing data. Some people put an Intel-based computer for it.
 Intel-based solutions are more power consuming. With BBN OS you can build a central boat computer meeting your needs.
 All on low power consuming raspberry pi with flexibility of adding countless choices of sensors to talk to
 all boat systems, Internet, local Wi-Fi, cameras, NMEA network, and a system able to decode marine radio protocols.
@@ -192,7 +192,7 @@ REGDOMAIN=US
 When raspberry pi Wi-Fi card discovers your Wi-Fi router network click to connect to Wi-Fi
 and enter the correct Wi-Fi password.
 
-When password storage manager pops up to enter the password for your password storage I just normally leave it blank, so
+When the password storage manager pops up to enter the password for your password storage I just normally leave it blank, so
 I'm not prompted again.
 
 ==== Wi-Fi Access Point
@@ -1196,7 +1196,7 @@ OpenCPN Radar plugin reports support of the following radars:
 Quantum/Quantum2 Radars from Raymarine seems are not supported by OpenCPN,
 nor are the Garmin Fantom radars, or Furuno units.
 
-We didn't have hardware to all these. So reports of successful installations
+We didn't have hardware to all these, so reports of successful installations
 and encountered issues are welcome.
 
 === USB Hubs
@@ -1235,11 +1235,11 @@ USB ports follow color convention:
 |===
 === LTE/Wi-Fi Routers
 
-Wi-Fi router you need is somewhat different from your home router. Your home router connects
-wired to Internet WAN and it gives you local Wi-Fi. On a boat situation reverses. Your WAN is
-marina's Wi-Fi and your Pi should (preferably) be wired into the router. These
+The Wi-Fi router you need is somewhat different from your home router. Your home router connects
+wired to Internet WAN and it gives you local Wi-Fi. On a boat the situation reverses. Your WAN is
+the marina's Wi-Fi and your Pi should (preferably) be wired into the router. These
 Wi-Fi routers are being sold as Travel Wi-Fi routers.
-Not all cheap Wi-Fi routers will give you ability to connect to marina Wi-Fi and share it on a boat.
+Not all cheap Wi-Fi routers will give you the ability to connect to the marina Wi-Fi and share it on a boat.
 It's better to choose the ones running OpenWrt operating system, which is Unix based and open-source.
 LTE is a very valuable feature.
 
@@ -1353,7 +1353,7 @@ as well as most chartplotters.
 
 PCB Boards connected to Pi:
 
-- Example BerryGPS. Disadvantage of those is that they use your Pi's built-in UART and you might have other
+- Example: BerryGPS. The disadvantage of those is that they use your Pi's built-in UART and you might have other
 devices that you want to use it instead.
 
 
@@ -1363,7 +1363,7 @@ RTL-SDR, SDRPlay SDR, HackRF SDR, LimeSDR, and likely others
 
 Interfaces USB, Ethernet
 
-SDRs consume quite some power. So it's better to connect them to pi via a powered USB Hub (in case of USB interface).
+SDRs consume quite some power, so it's better to connect them to pi via a powered USB Hub (in case of USB interface).
 
 === SSD
 
@@ -1511,7 +1511,7 @@ for different areas.
 NavTex frequency is 518 kHz in the medium frequency band. 490 kHz in addition in some countries.
 Both NavTex and WeatherFax designed for almost world-wide coverage and offshore sailing.
 
-PA0RDT active mini-whip antenna is good for NavTex and WeatherFax frequencies
+PA0RDT active mini-whip antenna is good for NavTex and WeatherFax frequencies:
 http://dl1dbc.net/SAQ/miniwhip.html
 
 ==== SSB, HAM
