@@ -1262,9 +1262,9 @@ Widely supported. Many options to connect to pi.
 USB/Serial:
 
 - with FTDI FT232 chipset https://www.amazon.com/dp/B07B416CPK
-- with CP210x chipset RS-485 to USB converter
-- with CH340 chipset RS-485 to USB converter
-- with Prolific PL2303 chipset RS-485 to USB converter
+- with CP210x chipset RS422 to USB converter
+- with CH340 chipset RS422 to USB converter
+- with Prolific PL2303 chipset RS422 to USB converter
 - NMEA 0183 Multiplexers working over USB (YakBitz, Quark-elec, etc)
 
 NOTE: FTDI is preferable choice between FTDI, CP210x, CH340, or PL2303.
@@ -1279,7 +1279,23 @@ Board:
 
 TCP/IP:
 
-- NMEA 0183 Multiplexers working over WiFi or Ethernet
+NMEA 0183 Multiplexers working over WiFi or Ethernet
+
+Vendors:
+
+- YakBitz http://www.yakbitz.com/
+- Quark-elec https://www.quark-elec.com/
+- OceNav https://ocenav.com/
+- ShipModul http://www.shipmodul.com/
+- Yacht Devices https://www.yachtd.com/
+- DigitalYacht https://digitalyachtamerica.com/
+- Actisense https://actisense.com/
+- NoLand Engineering https://nolandeng.com/
+- Veinland https://veinland.net/
+- Zinnos http://zinnos.com/
+- Maretron https://www.maretron.com/
+- Encoded Solutions https://www.encodedsolutions.com/
+- Comar Systems https://comarsystems.com/
 
 
 === NMEA 2000
