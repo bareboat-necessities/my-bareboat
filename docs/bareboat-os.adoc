@@ -1176,6 +1176,32 @@ when USB hub is still 'on'.
 If you do not plan to connect to your USB hub storage devices, cameras, network cards (high speed devices),
 then USB 2.0 hub will do the job. No need for USB 3.0 hub.
 
+USB ports follow color convention:
+
+[cols="1,1"]
+|===
+|Type |Color
+
+|USB 1.0
+|[white black-background]#*White*#
+
+|USB 2.0
+|[black]#*Black*#
+
+|USB 3.0
+|[blue]#*Blue*#
+
+|USB 3.1
+|[teal]#*Teal*#
+
+.3+|Charge & Sleep or High Current
+|[yellow]#*Yellow*#
+
+|[maroon]#*Red*#
+
+|[red]#*Orange*#
+
+|===
 === LTE/Wi-Fi Routers
 
 Wi-Fi router you need is somewhat different from your home router. Your home router connects
