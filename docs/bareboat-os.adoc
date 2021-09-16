@@ -692,6 +692,22 @@ signals and protocols. Many SDR products should work. Decoding is also possible 
 external HAM receivers connected via sound input port (USB sound card required as raspberry pi
 doesn't have built-in sound input). Proper antennas required for correct reception.
 
+HAM Radio menu contains a few applications useful especially for offshore sailors.
+If you do not have a cellular or a satellite connection, you still have SSB (and if you installed it SDR) radio.
+These applications will allow you (with some skill and set up):
+
+- Receive weather GRIBs via WinLink
+- Receive and decode WeatherFax, NavTex, NOAA and satellite weather images, Inmarsat Fleet messages
+- Send and receive emails via WinLink (requires you to have a HAM amateur radio license)
+- SDR can help you to decode AIS, and ADS-B (aviation analogue of AIS)
+- and more
+
+
+=== Iridium Phone
+
+BBN OS will help you to use Iridium Phone as a modem for low bandwidth Internet access, or
+to send periodic short burst data with use of a specially written SignalK plugin.
+
 === Cameras
 
 ==== IP Cameras
