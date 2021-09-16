@@ -1281,11 +1281,11 @@ Interfaces USB, Ethernet
 
 === SSD
 
-BBN OS supports NVMe and SATA with an appropriate extension board, or a Pi case, and
+Raspberry Pi OS supports NVMe and SATA SSDs with an appropriate extension board, or a Pi case, and
 their vendor's driver.
 
 NVMe apparently doesn't give much performance boost over SATA for pi4 with
-exception of CM4 (Pi4 Compute Module) performing better on writes with NVMe drives.
+an exception to CM4 (Pi4 Compute Module) performing better on writes with NVMe drives.
 pi4 internal interface is the bottleneck for transfer rate speed.
 
 Booting from NVMe drives got supported by linux kernel on pi4 just recently (some bugs might remain).
