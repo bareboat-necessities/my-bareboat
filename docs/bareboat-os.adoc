@@ -1455,6 +1455,11 @@ We need your help with testing it and building some recommendations on models, e
 SignalK Raspberry Pi 1wire plugin supports connecting multiple DS18B20
 1-wire temperature sensors.
 
+=== IoT
+
+Sonoff Switches - Supported by SignalK plugin.
+Ecowitt weather sensors - Supported via SignalK plugin
+
 === Power, 12v -> 5v Converters
 
 This converter was used with no issues:
