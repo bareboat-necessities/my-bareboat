@@ -1173,6 +1173,9 @@ and encountered issues are welcome.
 Choose powered USB hub which doesn't backfeed power into pi4, to avoid issue of pi4 not being able to reboot
 when USB hub is still 'on'.
 
+If you do not plan to connect to your USB hub storage devices, cameras, network cards (high speed devices),
+then USB 2.0 hub will do the job. No need for USB 3.0 hub.
+
 === LTE/Wi-Fi Routers
 
 Wi-Fi router you need is somewhat different from your home router. Your home router connects
