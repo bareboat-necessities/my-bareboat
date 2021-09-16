@@ -1401,9 +1401,9 @@ devices usually have at least one option for switching to another address to avo
 
 === Sound Cards
 
-As Raspberry Pi doesn't have audio input, for use with SSB radio you might want to have an additional
-sound card which has both audio in and out. There is good selection of options, but check reviews
-and compatibility with raspberry pi4.
+As Raspberry Pi doesn't have an audio input, for use with SSB radio you might want to have an additional
+sound card which has both audio in and out. There is a good selection of options, but check reviews
+and the compatibility with Raspberry Pi4.
 
 === Cameras
 
@@ -1413,11 +1413,11 @@ IP Cameras should work with MotionEye using their rtsp:// URLs.
 
 ==== CSI connected cameras
 
-We need your help with testing it.
+We need your help with testing it. It's believed to be working on our side.
 
 ==== USB connected cameras
 
-We need your help with testing it.
+We need your help with testing it. It's believed to be working on our side.
 
 === 1-Wire
 
