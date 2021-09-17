@@ -1461,6 +1461,10 @@ Sonoff Switches - Supported by SignalK plugin.
 
 Ecowitt weather sensors - Supported via SignalK plugin.
 
+Selly https://shelly.cloud/ - Supported via SignalK plugin.
+
+EmpirBus NXT https://www.empirbus.com/ - Supported via SignalK plugin.
+
 === Power, 12v -> 5v Converters
 
 This converter was used with no issues:
