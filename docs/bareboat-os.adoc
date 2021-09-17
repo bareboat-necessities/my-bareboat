@@ -199,7 +199,7 @@ I'm not prompted again.
 
 Wi-Fi connections are managed by widely used Gnome NetworkManager. Look for 'nmcli' documentation
 (command line interface to NetworkManager). Or you can figure it out from Administration/Advanced Network Settings
-app menu. By default, OS image is set up to provide you an access point.
+app menu. By default, OS image is set up to provide you with an access point.
 
 [#tether]
 ==== Using iPhone as Internet gateway
@@ -431,15 +431,14 @@ For real blue water sailors OpenCPN Climatology and OpenCPN weather routing plug
 Launch xyGrib. Select an area on the map. Click to download Grib file.
 Choose Atmospheric Model and Wave Model. Pick Wind, Wind Gust options in Surface Data
 and Wave Height in Wave Data. Click Download.
-Save Grib data file somewhere under user home.
 
-Now you can overlay this GRIB data on OpenCPN chart.
+Now you can overlay this GRIB data on OpenCPN chart. You can play Grib file forecast forward.
 Enable GRIB plugin in OpenCPN. Click on GRIB plugin in OpenCPN plugin toolbar.
-Load GRIB file into OpenCPN. See weather data overlayed over your chart.
+Load GRIB file into OpenCPN. See weather data overlaid over your chart.
 
 OpenCPN GRIB plugin can also prepare SailMail email requests for Grib files.
 You can store them and email via Internet (if you have connection) or use
-WinLink Pat (WinLink client: https://github.com/la5nta/pat/wiki).
+WinLink Pat (WinLink client: https://github.com/la5nta/pat/wiki) via SSB radio.
 
 ==== NOAA weather in SignalK
 
@@ -509,8 +508,8 @@ control playing your Mopidy library on your raspberry pi.
 
 ==== Playing Spotify
 
-Start yoour Spotify app on your mobile device which is connected to boat WiFi.
-Select 'Lysmarine' device as target to play on pi via raspotify. You need to have a premium Spotify account.
+Start your Spotify app on your mobile device which is connected to boat WiFi.
+Select 'Lysmarine' device as target to play on your pi via raspotify. You need to have a premium Spotify account.
 
 === Interfacing with ship systems
 
@@ -844,7 +843,7 @@ executes only once on the first boot.
 
 See: https://github.com/bareboat-necessities/lysmarine_gen/issues
 
-If GPS is lost in OpenCPN the first thing to try is to restart SignalK. You can do it from touchscreen
+If GPS fix is lost in OpenCPN the first thing to try is to restart SignalK. You can do it from the touchscreen
 via desktop 'Commands' icon.
 
 Do not create data loops with your data flows between OpenCPN, AvNav, SignalK, GPSd, Kplex, PyPilot.
@@ -854,7 +853,7 @@ Do not create data loops with your data flows between OpenCPN, AvNav, SignalK, G
 NOTE: The touchscreen issues mentioned below fixed since 2021-09-10 release.
 
 * Some applications (namely OpenCPN and gtk2 based as well as some Qt) sometimes stop responding to touch events.
-There is a workaround. With your finger you can toggle maximized mode via window frame icon then you
+There is a workaround. With your finger you can toggle a maximized mode via window frame icon, then you
 MOVE the window frame by dragging window header few pixels, and switch back to maximized mode if needed.
 This should restore touch events in that app.
 
