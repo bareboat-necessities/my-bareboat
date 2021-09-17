@@ -1,8 +1,12 @@
 @startuml
+
 skinparam BackgroundColor transparent
 skinparam componentStyle rectangle
+skinparam defaultTextAlignment center
 
-component "Chartplotting" {
+left to right direction
+
+card "Chartplotting" {
   component "Charts: "
   component "Weather: GRIB, WeatherFax, Satellite, Climatology"
   component "Routes: Tracking, Weather Routing, MOB Marking, Waypoints"
@@ -12,7 +16,7 @@ component "Chartplotting" {
   component "Alarms: Anchor, Deadman, Collision Course, Landfall, Depth, Off-Course, Autopilot, Gybing"
 }
 
-component "Internet" {
+card "Internet" {
   component "On-line Charts, Tiling Servers"
   component "On-line Weather (Winds, Waves, Lightnings, Warnings, Forecasts, etc)"
   component "Location Reporting, Track Recording"
@@ -23,17 +27,17 @@ component "Internet" {
   component "Remote Desktop"
 }
 
-component "Multimedia" {
+card "Multimedia" {
   component "Audio: Spotify, Local, Radio"
   component "Video: VLC, Movies via Chromium"
 }
 
-component "Marine Data Server" {
+card "Marine Data Server" as MDS {
   component "Dashboards"
   component "Alerts"
 }
 
-component "Interfaces" {
+card "Interfaces" {
   component "NMEA 0183"
   component "NMEA 2000"
   component "ModBus"
@@ -43,10 +47,20 @@ component "Interfaces" {
   component "mqtt"
 }
 
-component "Radio" {
+card "Radio" {
   component "SSB"
   component "SDR"
   component "LoRa"
 }
+
+Chartplotting -l-- Interfaces
+Chartplotting -u-- Internet
+
+MDS -u-- Internet
+MDS -l-- Chartplotting
+MDS -l-- Radio
+
+Internet -d- Multimedia
+
 
 @enduml

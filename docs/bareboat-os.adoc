@@ -432,7 +432,6 @@ Launch xyGrib. Select an area on the map. Click to download Grib file.
 Choose Atmospheric Model and Wave Model. Pick Wind, Wind Gust options in Surface Data
 and Wave Height in Wave Data. Click Download.
 Save Grib data file somewhere under user home.
-(Do not put it into .xygrib hidden directory as OpenCPN GRIB plugin can't look there).
 
 Now you can overlay this GRIB data on OpenCPN chart.
 Enable GRIB plugin in OpenCPN. Click on GRIB plugin in OpenCPN plugin toolbar.
@@ -1446,7 +1445,7 @@ Image stabilization for boat movements is an important factor too.
 
 ==== USB connected cameras
 
-Supported with USB 3.0
+Supported with USB 3.0f
 
 We need your help with testing it and building some recommendations on models, etc.
 
