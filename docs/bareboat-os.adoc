@@ -96,10 +96,10 @@ of the OS from chartplotting, dashboards, weather information, to media player, 
 ==== Smart Boat
 
 .Smart Boat Diagram
-ifdef::env-github[image::system-arch.svg[Smart Boat]]
+ifdef::env-github[image::system-arch.svg[Smart Boat,width=100%,pdfwidth=100%]]
 ifndef::env-github[]
 
-[plantuml,system-arch,svg]
+[plantuml,system-arch,svg,width=100%,pdfwidth=100%]
 ....
 !include plantuml/system-arch.puml
 ....
