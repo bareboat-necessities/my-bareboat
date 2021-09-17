@@ -1,0 +1,52 @@
+@startuml
+skinparam BackgroundColor transparent
+skinparam componentStyle rectangle
+
+component "Chartplotting" {
+  component "Charts: "
+  component "Weather: GRIB, WeatherFax, Satellite, Climatology"
+  component "Routes: Tracking, Weather Routing, MOB Marking, Waypoints"
+  component "Sailing Performance: Polars, Laylines"
+  component "Tides, Currents"
+  component "AIS, Radar"
+  component "Alarms: Anchor, Deadman, Collision Course, Landfall, Depth, Off-Course, Autopilot, Gybing"
+}
+
+component "Internet" {
+  component "On-line Charts, Tiling Servers"
+  component "On-line Weather (Winds, Waves, Lightnings, Warnings, Forecasts, etc)"
+  component "Location Reporting, Track Recording"
+  component "Browser"
+  component "Email"
+  component "Messaging"
+  component "Social Networks"
+  component "Remote Desktop"
+}
+
+component "Multimedia" {
+  component "Audio: Spotify, Local, Radio"
+  component "Video: VLC, Movies via Chromium"
+}
+
+component "Marine Data Server" {
+  component "Dashboards"
+  component "Alerts"
+}
+
+component "Interfaces" {
+  component "NMEA 0183"
+  component "NMEA 2000"
+  component "ModBus"
+  component "i2c"
+  component "gpsd"
+  component "SignalK"
+  component "mqtt"
+}
+
+component "Radio" {
+  component "SSB"
+  component "SDR"
+  component "LoRa"
+}
+
+@enduml

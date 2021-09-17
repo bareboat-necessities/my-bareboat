@@ -1674,6 +1674,16 @@ for all your boat devices connected to your boat computer.
 
 * Follow steps <<phone_gps>> to use your phone GPS as NMEA 0183 source of GPS data.
 
+=== Dual monitor setup
+
+Raspberry Pi comes with two HDMI outputs. However, its software is still not able to handle two
+heterogeneous displays properly. The hardest case is when one is a touchscreen and another is not,
+and they have different screen resolutions, and a mouse attached which needs to flow
+from one screen workspace to another workspace of a secondary screen.
+Another challenge is at boot time. What if one screen is powered and another is not, but a user
+decides to turn power on the secondary one later. Raspberry Pi OS seems unable to cover all these
+scenarios (nor other linux distributions at the current state).
+
 === Autostart programs on desktop startup
 
 You can set up which programs you want to autostart when desktop comes up in
