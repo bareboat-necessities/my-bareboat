@@ -92,6 +92,7 @@ of the OS from chartplotting, dashboards, weather information, to media player, 
 * Weather Station
 * Boat Dashboards
 * File Server
+* Off-the-grid living
 
 ==== Smart Boat
 
