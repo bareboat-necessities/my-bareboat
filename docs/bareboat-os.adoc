@@ -1108,10 +1108,10 @@ https://github.com/bareboat-necessities/lysmarine_gen/discussions
 === Data Flow
 
 .Data Flow
-ifdef::env-github[image::bbn-os-data-flow.svg[Data Flow]]
+ifdef::env-github[image::bbn-os-data-flow.svg[{full-width}Data Flow]]
 ifndef::env-github[]
 
-[plantuml,bbn-os-data-flow,svg]
+[plantuml,bbn-os-data-flow,svg,width=100%,pdfwidth=100%]
 ....
 !include plantuml/bbn-os-data-flow.puml
 ....
