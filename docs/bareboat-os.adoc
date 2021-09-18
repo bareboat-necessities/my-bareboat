@@ -484,6 +484,8 @@ Video Series:
 Winlink on a Raspberry Pi
 https://www.youtube.com/playlist?list=PL1QTYT4Qo9cY98NFmxrTvtGyWI9pgxtFq
 
+ARDOP for pi: https://www.cantab.net/users/john.wiseman/Documents/ARDOPC.html
+
 === Music Players
 
 The OS image comes with Mopidy, MPD server, MusicBox, Shairport-Sync (AirPlay) server.
