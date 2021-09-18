@@ -437,7 +437,7 @@ Now you can overlay this GRIB data on OpenCPN chart. You can play Grib file fore
 Enable GRIB plugin in OpenCPN. Click on GRIB plugin in OpenCPN plugin toolbar.
 Load GRIB file into OpenCPN. See weather data overlaid over your chart.
 
-OpenCPN GRIB plugin can also prepare SailMail email requests for Grib files.
+OpenCPN GRIB plugin can also prepare SailDoc email requests for Grib files.
 You can store them and email via Internet (if you have connection) or use
 WinLink Pat (WinLink client: https://github.com/la5nta/pat/wiki) via SSB radio.
 
@@ -472,7 +472,7 @@ To install:
 [source, shell]
 ----
 cd ~/add-ons
-./sailmail-pat-install.sh
+./winlink-pat-install.sh
 ----
 
 Documentation on setting it up and using it:
