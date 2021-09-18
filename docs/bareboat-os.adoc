@@ -1255,6 +1255,7 @@ In SD card you will be looking at speed (i/o reads, i/o writes), durability, siz
 === SeaTalk1
 
 SeaTalk1 is Raymarine proprietary protocol. Many popular Autohelm Raymarine autopilots use it.
+SeaTalk1 unlike NMEA 0183 is a bus allowing multiple talkers and multiple listeners of the same bus.
 To integrate it into your system you have a number of choices:
 
 - Use bi-directional NMEA 0183 multiplexer which supports one SeaTalk1 port. First
