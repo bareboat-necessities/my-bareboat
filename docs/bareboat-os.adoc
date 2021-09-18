@@ -1396,6 +1396,8 @@ Booting from NVMe drives got supported by linux kernel on pi4 just recently (som
 Perform a benchmark of your SSD after installation with correct drivers. Make sure it falls
 into expected range.
 
+SSD is also less prone to data corruption on sudden power cut-offs than SD cards.
+
 USB stick drives (flash drives) performance is not as high as NVMe and SATA SSDs.
 
 === NavTex
