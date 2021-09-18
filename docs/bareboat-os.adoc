@@ -1375,7 +1375,7 @@ devices that you want to use it instead.
 
 RTL-SDR, SDRPlay SDR, HackRF SDR, LimeSDR, and likely others. Interfaces USB, Ethernet.
 
-Yaesu is the popular vendor within HAM community.
+Yaesu, Icom are the popular vendors within HAM community.
 
 SDRs consume quite some power, so it's better to connect them to pi via a powered USB Hub (in case of USB interface).
 
