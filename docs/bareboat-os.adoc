@@ -398,6 +398,9 @@ Follow SignalK documentation to install offline charts for these.
 Do not forget to set up your ship parameters in SignalK and Vessel applications.
 They can come handy.
 
+Also in OpenCPN Polar plugin pick a polar file for your boat from ~/Polars
+or build it from your past voyages data recordings. It will be needed for weather routing, etc.
+
 === SignalK
 
 SignalK manages its own updates. Login into SignalK Marine Data Server web UI application
