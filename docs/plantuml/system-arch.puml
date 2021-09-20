@@ -4,6 +4,53 @@ actor Skipper [
  Skipper
 ]
 
+node Panel [
+ <b>Nav Station Panel
+ ----
+ Switches
+ Fuses
+ USB Data Ports
+ HDMI Ports
+ Audio Ports (In/Out)
+ SIM Card Port: [[https://www.data-alliance.net/cable-gland-for-fiber-usb-sim-terminal-block-waterproof-ip67-feed-thru/ Buy Here]]
+ SD Card Port (?)
+ Status Lights
+ Volt/Amm Meters
+ 12v Socket
+]
+
+node Batteries #moccasin [
+ <b>Batteries
+]
+
+node Chargers #moccasin [
+ Chargers
+]
+
+node Engines #moccasin [
+ <b>Engines
+]
+
+node Antenna_VHF #moccasin [
+  VHF Antenna
+]
+
+node AIS [
+  AIS
+]
+
+node Antenna_AIS [
+  AIS Antenna
+]
+
+node Solar_Pan #moccasin [
+  Solar Panels
+]
+
+node Wind_Gen #moccasin [
+  Wind Generator
+]
+
 node RPI #palegreen [
  <b>Rpi4, BBN OS
  ----
@@ -54,7 +101,7 @@ rectangle AP #moccasin [
 ]
 
 node Eth_Hub [
- Ethernet Hub
+ Ethernet Switch
 ]
 
 node USB_Hub [
@@ -127,6 +174,10 @@ rectangle Remote_Desktop [
  Remote Desktop (VNC)
 ]
 
+node VHF #moccasin [
+ VHF
+]
+
 node AC #moccasin [
  A/C
  Heater
@@ -193,8 +244,22 @@ node Winches #moccasin [
 
 cloud Cloud_Internet [
  <b>Internet
- Cloud Storage
- Cloud Services
+ ----
+ Cloud Storage: Rclone supported
+ Cloud Services: Marina Booking, Marine Traffic
+ Location Reporting: saillogger.com
+ Social: FB, FindACrew, BoatSetter
+ Messengers: FB, WA
+ WWW browser: Chromium
+ Music: Spotify
+ Movies: via Browser
+ Weather: Grib, Windy, WeatherFax, NOAA,
+    Lightnings Map
+ Charts: MbTiles, NOAA, Navionics, etc
+ Email: any
+ Remote Desktop Access: Cloud VNC
+ Software updates: apt, SignalK, OpenCPN, AvNav, etc
+ WebCam
 ]
 
 cloud Lora [
@@ -208,7 +273,20 @@ rectangle Esp32 [
  arduino
 ]
 
-RPI -l- IMU
+node AP_2 [
+ TinyPilot
+ ---
+ Software: PyPilot
+ Hardware: TinyPilot
+ [[https://pypilot.org/store Buy Here]]
+]
+
+node Rudder #moccasin [
+ <b>Rudder
+ ----
+ Rudder Drive Motor
+]
+
 RPI -- NMEA_2000
 RPI -- NMEA_Mux
 RPI -u- Eth_Hub
@@ -223,10 +301,18 @@ RPI -- Other_Sensors
 RPI -d- Esp32
 RPI -u- WiFi_Local
 RPI -u- Keyboard_Mouse
+RPI -l- Panel
+
+Panel -- Touchscreen
+Panel -- USB_Hub
+Panel -- Batteries
 
 SmartPhone -- WiFi_Local
+AP_2 -u- WiFi_Local
 
 SiriusXM -- NMEA_2000
+VHF -u- NMEA_Mux
+AIS -u- NMEA_Mux
 
 Eth_Hub -r- Router
 Eth_Hub -- Radar
@@ -247,6 +333,10 @@ NMEA_Mux -l- NMEA_0183
 NMEA_Eth_Mux -- NMEA_0183
 NMEA_Mux -- AP
 
+AP -- Rudder
+AP_2 -- Rudder
+AP_2 -- IMU
+
 Esp32 -- Lora
 Esp32 -- Winches
 
@@ -264,5 +354,17 @@ Skipper -- SSB
 Skipper -- SmartPhone
 Skipper -- Keyboard_Mouse
 Skipper -- Remote_Desktop
+Skipper -- Panel
+
+Chargers -- Solar_Pan
+Chargers -- Batteries
+Chargers -- Wind_Gen
+Engines -- Batteries
+
+VHF -- Antenna_VHF
+AIS -- Antenna_AIS
+
+Other_Sensors -- Engines
+Other_Sensors -- Batteries
 
 @enduml
