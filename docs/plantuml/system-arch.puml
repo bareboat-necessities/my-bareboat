@@ -23,7 +23,7 @@ rectangle IMU [
  compass, gyro, accel
 ]
 
-rectangle NMEA_2000 [
+cloud NMEA_2000 #moccasin [
  <b>NMEA2000 Bus
  ----
  engine sensors,
@@ -41,7 +41,7 @@ node NMEA_Eth_Mux [
  NMEA Ethernet Multiplexer
 ]
 
-rectangle NMEA_0183 [
+cloud NMEA_0183 #moccasin [
  <b>NMEA 0183 Devices
  ----
  AIS transducer/receiver
@@ -49,7 +49,7 @@ rectangle NMEA_0183 [
  Wind, Depth, Speed
 ]
 
-rectangle AP [
+rectangle AP #moccasin [
  Autopilot
 ]
 
@@ -70,7 +70,7 @@ rectangle Dish_Router [
  Dish
 ]
 
-node Radar [
+node Radar #moccasin [
  Radar
 ]
 
@@ -99,7 +99,7 @@ node SDR [
  SDR Radio
 ]
 
-node SSB [
+node SSB #moccasin [
  SSB Radio
 ]
 
@@ -107,7 +107,7 @@ cloud WiFi_Local [
  Local WiFi
 ]
 
-rectangle Iridium [
+rectangle Iridium #moccasin [
  Iridium Phone
 ]
 
@@ -127,12 +127,12 @@ rectangle Remote_Desktop [
  Remote Desktop (VNC)
 ]
 
-node AC [
+node AC #moccasin [
  A/C
  Heater
 ]
 
-node Pumps [
+node Pumps #moccasin [
  Pumps
  ----
  Bilge
@@ -140,13 +140,13 @@ node Pumps [
  Black Water
 ]
 
-node Fridge [
+node Fridge #moccasin [
  Fridge
  Watermaker
  Live well
 ]
 
-rectangle Lights_Fans [
+rectangle Lights_Fans #moccasin [
  Lights: (Nav, Anchor,
  Running, Mast, Cabin,
  Underwater, Search, etc)
@@ -165,7 +165,7 @@ rectangle Weather [
  Barograph
 ]
 
-rectangle SiriusXM [
+rectangle SiriusXM #moccasin [
  SiriusXM Marine
 ]
 
@@ -185,7 +185,7 @@ database NAS [
  Time Series Data, etc
 ]
 
-node Winches [
+node Winches #moccasin [
  Anchor Windlass
  Power Winches
  Bow Thruster
@@ -215,7 +215,7 @@ RPI -u- Eth_Hub
 RPI -- USB_Hub
 RPI -u- Touchscreen
 RPI -u- Cameras
-RPI -u-> Speakers
+RPI -u- Speakers
 RPI -u- Mic
 RPI -u- SSB
 RPI -u- Iridium
@@ -227,7 +227,6 @@ RPI -u- Keyboard_Mouse
 SmartPhone -- WiFi_Local
 
 SiriusXM -- NMEA_2000
-NMEA_2000 -- NMEA_2000
 
 Eth_Hub -r- Router
 Eth_Hub -- Radar
