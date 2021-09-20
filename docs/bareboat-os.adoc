@@ -1142,6 +1142,40 @@ Bonus, if your touchscreen display comes
 with built in speakers for alarms. Check Sihovision product line, if one of
 their products will suit you.
 
+=== CM4 Based Solutions
+
+One of the promising CM4 boards and computers is Waveshare Industrial IoT Mini-Computer
+Based on Raspberry Pi Compute Module 4:
+
+https://www.waveshare.com/product/raspberry-pi/boards-kits/compute-module-4-cat/cm4-io-poe-4g-box.htm
+
+Looks like can be a much better base for a boat computer than just regular Raspberry Pi4.
+
+It comes with (and more):
+
+- 12v power input (7v-36v)
+- PCIe slot
+- External antennas connectable to CM4 wifi antenna port, and to GPS or LTE antenna port on LTE modem
+- CanBus (for NMEA 2000)
+- RS-485 (for NMEA 0183)
+- GPIO exposed via header with screws
+- ADC interface
+- I2C interface
+- RTC clock with a place for a battery
+- SIM card slot on a panel
+- Full size double HDMI ports and two DSI ports
+- Screw mountable case
+- Dual camera inputs (CSI)
+- USB ports
+- USB TO UART, for serial debugging
+- One Ethernet port with PoE enabled
+- More status lights
+- Panel SD card slot
+- RS-232 port
+- Slot for LTE Modem
+- Programming Slot
+
+
 
 === IMU, compass, accelerometer, gyroscope
 
@@ -1451,6 +1485,11 @@ Sionyx has some boating oriented solutions:
 https://www.sionyx.com/pages/boating
 
 Image stabilization for boat movements is an important factor too.
+
+===== Night vision FLIR
+
+While FLIR cameras (from the company which bought major manufacturer Raymarine) are great,
+they are prohibitively expensive for most recreational boaters.
 
 ==== USB connected cameras
 
