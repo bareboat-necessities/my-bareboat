@@ -1142,6 +1142,13 @@ Bonus, if your touchscreen display comes
 with built in speakers for alarms. Check Sihovision product line, if one of
 their products will suit you.
 
+=== Rpi4 Case
+
+DeskPi Pro v2 is a nice enclosure for your below deck Raspberry Pi4 with fast SSD interface and
+12v input.
+
+https://github.com/DeskPi-Team/deskpi
+
 === CM4 Based Solutions
 
 One of the promising CM4 boards and computers is Waveshare Industrial IoT Mini-Computer
