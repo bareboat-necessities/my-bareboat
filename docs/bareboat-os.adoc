@@ -1134,7 +1134,7 @@ If you have enough space on your nav station desk for a keyboard and a mouse,
 you might consider getting a screen without touch functionality.
 
 For a cockpit display you need >1000 nit brightness for sunlight readability,
-waterproof, touchscreen, with backlight (brightness) control buttons for
+waterproof, touchscreen, with accessible backlight (brightness) control buttons for
 night sailing. You would need long HDMI and USB (for touch) cables to
 connect to raspberry pi below deck. There are even fiberoptic solutions for that. They
 allow thinner cables.
@@ -1175,12 +1175,13 @@ It comes with (and more):
 - Dual camera inputs (CSI)
 - USB ports
 - USB TO UART, for serial debugging
-- One Ethernet port with PoE enabled
+- One Gigabit Ethernet port with PoE enabled
 - More status lights
 - Panel SD card slot
 - RS-232 port
 - Slot for LTE Modem
 - Programming Slot
+- Buzzer
 
 
 
