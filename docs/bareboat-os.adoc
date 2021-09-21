@@ -1310,8 +1310,9 @@ There is a dedicated Autohelm autopilot plugin in SignalK.
 - For read/only Seatalk1 connection you can use this solution:
 https://github.com/SignalK/signalk-server/blob/master/Seatalk(GPIO).md
 
-SeaTalk1 was reverse engineered and converter into NMEA is available:
+SeaTalk1 had been reverse engineered and a converter into NMEA is available at:
 https://github.com/MatsA/seatalk1-to-NMEA0183
+
 https://github.com/Thomas-GeDaD/Seatalk1-Raspi-reader
 
 === NMEA 0183
