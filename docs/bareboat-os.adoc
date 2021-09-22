@@ -743,6 +743,17 @@ See URL in /var/www/bbn-launcher/constants.js
 
 IP cameras usually have some delay in video display.
 
+==== RPI Cameras Interface
+
+To enable cameras interface on raspberry pi4 run:
+
+[source, shell]
+----
+sudo raspi-config
+----
+
+and enable camera interface in there.
+
 ==== MotionEye
 
 By default, motioneye service installed and enabled. To disable:
