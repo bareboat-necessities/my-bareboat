@@ -110,6 +110,7 @@ endif::[]
 {zwsp} +
 {zwsp} +
 
+[#download]
 === Download Image
 
 Download SD card image (~2.5 Gb file):
