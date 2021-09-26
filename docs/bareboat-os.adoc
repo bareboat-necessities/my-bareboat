@@ -1195,6 +1195,11 @@ It comes with (and more):
 - Programming Slot
 - Buzzer
 
+Or Waveshare Mini-Computer Based on Raspberry Pi Compute Module 4, Mini IO Board Version B
+
+https://www.waveshare.com/product/raspberry-pi/boards-kits/compute-module-4-cat/cm4-io-base-box-b.htm
+
+with a space for SSD.
 
 
 === IMU, compass, accelerometer, gyroscope
