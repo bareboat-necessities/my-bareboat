@@ -1306,6 +1306,10 @@ LTE is a very valuable feature.
 
 Few recommended would be: GL.iNet (GL-X750 V2) Spitz router, Teltonika RUTX12 (dual SIM).
 
+Others to consider: InHand Networks IR300 Compact Industrial Router, YeaComm Industrial or YeaComm Outdoor
+LTE Routers.
+
+
 === SD Cards
 
 In SD card you will be looking at speed (i/o reads, i/o writes), durability, size.
