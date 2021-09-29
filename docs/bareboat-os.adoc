@@ -1201,6 +1201,8 @@ https://www.waveshare.com/product/raspberry-pi/boards-kits/compute-module-4-cat/
 
 with a space for SSD.
 
+Another option is the board and a case from McuZone. The advantage is that it has no moving
+parts (just a cooling radiator).
 
 === IMU, compass, accelerometer, gyroscope
 
