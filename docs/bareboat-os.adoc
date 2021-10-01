@@ -1210,7 +1210,9 @@ You would need to switch jumpers (switches) on your board to use OTG USB slave c
 Moreover, stock Raspberry Pi OS image wouldn't have Waveshare USB ports enabled. So before burning an image into eMMC
 you would need to modify it and add
  dtoverlay=dwc2,dr_mode=host
-line into /boot/config.txt on the image.
+line into /boot/config.txt on the image. For that (and other) reasons, BBN OS has a separate image
+for Waveshare board support. The image is based on the base BBN OS image with additional tweaks to support the Waveshare
+board.
 
 === IMU, compass, accelerometer, gyroscope
 
