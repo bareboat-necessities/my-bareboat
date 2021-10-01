@@ -1209,6 +1209,7 @@ parts (just a cooling radiator).
 NOTE: If you use a Waveshare board, and your CM4 module comes with eMMC then you can't boot your from SD card, and you have
 to burn eMMC. To burn eMMC on Windows you have to install latest rpiboot_setup.exe from usbboot project on github.
 You would need to switch jumpers (switches) on your board to use OTG USB slave cable to be able to burn eMMC.
+It's a slow process as it is done via USB 2.0 interface.
 Moreover, stock Raspberry Pi OS image wouldn't have Waveshare USB ports enabled. So before burning an image into eMMC
 you would need to modify it and add
  dtoverlay=dwc2,dr_mode=host
