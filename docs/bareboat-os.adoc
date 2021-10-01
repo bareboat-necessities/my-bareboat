@@ -1529,6 +1529,11 @@ Supported with USB 3.0f
 
 We need your help with testing it and building some recommendations on models, etc.
 
+=== ESP32 / Arduino
+
+Using ESP32 controllers and a bit of micro python programming you can connect all kind
+of sensors to your system. One of product lines we like is from m5stack.com.
+
 === 1-Wire
 
 SignalK Raspberry Pi 1wire plugin supports connecting multiple DS18B20
