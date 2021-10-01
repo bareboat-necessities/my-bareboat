@@ -1204,6 +1204,14 @@ with a space for SSD.
 Another option is the board and a case from McuZone. The advantage is that it has no moving
 parts (just a cooling radiator).
 
+NOTE: If you use Waveshare board and your CM4 module comes with eMMC then you can't boot from SD card and you have
+to burn eMMC. To burn eMMC on Windows you have to install latest rpiboot_setup.exe from usbboot project on github.
+You would need to switch jumpers (switches) on your board to use OTG USB slave cable to be able to burn eMMC.
+Moreover stock Raspberry Pi OS image wouldn't have Waveshare USB ports enabled. So before burning an image into eMMC
+you would need to modify it and add
+ dtoverlay=dwc2,dr_mode=host
+line into /boot/config.txt on the image.
+
 === IMU, compass, accelerometer, gyroscope
 
 PyPilot supports these via RTIMULib2. Here is a list of supported units by RTIMULib2:
