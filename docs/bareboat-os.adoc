@@ -1614,6 +1614,16 @@ StarLink is communicating with more satellites on much lower orbits, and it is d
 pizza-sized dish antenna, automatically orienting itself using a motor.
 Designed to have almost world-wide coverage (except of extreme North/South poles areas).
 
+Satellites data providers:
+
+- Iridium
+- Orbcomm
+- Inmarsat
+- Globalstar
+- StarLink
+- Swarm
+- Others as well
+
 ==== FM (Frequency Modulation)
 
 Short piece of wire, small telescoping antenna. Receive only. 30-40 miles range.
