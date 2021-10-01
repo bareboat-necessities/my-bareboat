@@ -164,6 +164,8 @@ SSD drives would show much better results: 178 MB/sec read and 147 MB/sec write 
 Insert SD card into raspberry pi SD card slot and power on.
 Wait for boot process to run GUI (about 2 mins).
 
+NOTE: Your touchscreen should be connected (HDMI and USB) and powered on during the first boot to be properly recognized.
+
 === Setting up Network
 
 ==== Wired Ethernet
