@@ -1309,6 +1309,11 @@ USB ports follow color convention:
 |[red]#*Orange*#
 
 |===
+
+
+The hub we like: https://www.amazon.com/dp/B07BBLL3MJ/
+Aiibe 6 Ports Super High Speed USB 3.0 Hub Splitter
+
 === LTE/Wi-Fi Routers
 
 The Wi-Fi router you need is somewhat different from your home router. Your home router connects
