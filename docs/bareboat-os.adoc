@@ -1218,6 +1218,8 @@ DeskPi Pro v2 is a nice enclosure for your below deck Raspberry Pi4 with fast SS
 
 https://github.com/DeskPi-Team/deskpi
 
+Advantech Uno 220 for Raspberry Pi4 looks good, however doesn't come with SSD support.
+
 === CM4 Based Solutions
 
 One of the promising CM4 boards and computers is Waveshare Industrial IoT Mini-Computer
