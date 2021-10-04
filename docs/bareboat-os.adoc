@@ -978,6 +978,16 @@ Anywhere (v6) on can0      ALLOW       Anywhere (v6)
 As of 2021-10-04 Bluetooth seems good only for low speed devices.
 You likely to experience skipping playing music via on-board pi bluetooth.
 
+=== Maritime Library
+
+You can install your Maritime Publications On-Board Library via add-ons:
+
+[source,shell]
+----
+cd /home/user/add-ons
+./maritime-lib-install.sh
+----
+
 
 === Suggestions
 
