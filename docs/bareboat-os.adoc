@@ -973,6 +973,12 @@ Anywhere (v6) on can0      ALLOW       Anywhere (v6)
 ----
 
 
+=== Bluetooth
+
+As of 2021-10-04 Bluetooth seems good only for low speed devices.
+You likely to experience skipping playing music via on-board pi bluetooth.
+
+
 === Suggestions
 
 The beauty of Linux is that you can customize it for your needs in infinite ways.
