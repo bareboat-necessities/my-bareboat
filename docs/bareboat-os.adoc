@@ -945,6 +945,33 @@ udp    10116      NMEA 0183            AvNav, KPlex
 
 ----
 
+=== Firewall
+
+Starting with BBN OS version 2021-10-02 you will have a firewall running on your system and it's enabled by default.
+The default firewall rules are:
+
+[source]
+----
+sudo ufw status
+
+Status: active
+
+To                         Action      From
+--                         ------      ----
+Anywhere                   ALLOW       192.168.0.0/16
+Anywhere                   ALLOW       169.254.0.0/16
+Anywhere                   ALLOW       10.0.0.0/8
+Anywhere                   ALLOW       100.64.0.0/10
+Anywhere                   ALLOW       172.16.0.0/12
+Anywhere                   ALLOW       224.0.0.0/4/udp
+Anywhere on can0           ALLOW       Anywhere
+Anywhere (v6)              ALLOW       fd00::/8
+Anywhere (v6)              ALLOW       fe80::/10
+Anywhere (v6)              ALLOW       ff00::/8/udp
+Anywhere (v6) on can0      ALLOW       Anywhere (v6)
+
+----
+
 
 === Suggestions
 
