@@ -445,7 +445,8 @@ Load GRIB file into OpenCPN. See weather data overlaid over your chart.
 
 OpenCPN GRIB plugin can also prepare SailDoc email requests for Grib files.
 You can store them and email via Internet (if you have connection) or use
-WinLink Pat (WinLink client: https://github.com/la5nta/pat/wiki) via SSB radio.
+WinLink Pat (WinLink client: https://github.com/la5nta/pat/wiki) via SSB radio,
+or using JPSKMail.
 
 ==== NOAA weather in SignalK
 
