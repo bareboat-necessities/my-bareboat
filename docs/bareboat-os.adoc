@@ -1248,7 +1248,7 @@ It comes with (and more):
 - USB TO UART, for serial debugging
 - One Gigabit Ethernet port with PoE enabled
 - More status lights
-- Panel SD card slot
+- Panel SD card slot (for CM4 without eMMC)
 - RS-232 port
 - Slot for LTE Modem
 - Programming Slot
