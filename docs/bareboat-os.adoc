@@ -1607,7 +1607,8 @@ We need your help with testing it and building some recommendations on models, e
 === ESP32 / Arduino
 
 Using ESP32 controllers and a bit of micro python programming you can connect all kind
-of sensors to your system. One of product lines we like is from m5stack.com.
+of sensors to your system. One of product lines we like is from m5stack.com,
+and another is Wio Terminal by seeedstudio.com.
 
 === 1-Wire
 
