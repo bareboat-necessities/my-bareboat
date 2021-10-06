@@ -1492,6 +1492,13 @@ OpenCPN TwoCan plugin has a list of compatible with it devices as well.
 Stay away from devices which just convert NMEA 2000 into NMEA 0183.
 You need to feed NMEA 2000 into SignalK and be able to receive it too.
 
+=== NMEA OneNet, PoE
+
+NMEA OneNet is Ethernet based with RJ-45 or X-Coded M12 8-pin (to pass smaller openings) connectors.
+
+PoE (Power over Ethernet) allows powering devices with same data cables. It is a nice way
+for reducing the number of cables in your system.
+
 === GPS
 
 Several options to connect:
