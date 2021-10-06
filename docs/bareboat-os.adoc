@@ -1617,6 +1617,11 @@ Using ESP32 controllers and a bit of micro python programming you can connect al
 of sensors to your system. One of product lines we like is from m5stack.com,
 and another is Wio Terminal by seeedstudio.com.
 
+Here is a dinghy location tracker idea.
+https://www.seeedstudio.com/LoRa-GPS-Tracker-with-Wio-Terminal.html
+(Needs some work on a waterproof enclosure for a transmitter, and reporting
+the dinghy location via AIS NMEA data stream to the mother ship chartplotter).
+
 === 1-Wire
 
 SignalK Raspberry Pi 1wire plugin supports connecting multiple DS18B20
