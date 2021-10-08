@@ -1607,7 +1607,7 @@ they are prohibitively expensive for most recreational boaters.
 
 ==== USB connected cameras
 
-Supported with USB 3.0f
+Supported with USB 3.0
 
 We need your help with testing it and building some recommendations on models, etc.
 
