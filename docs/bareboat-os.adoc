@@ -1725,7 +1725,7 @@ channels.
 ==== Bluetooth, 433MHz FM RF
 
 Bluetooth antennas are small and often just a part of a PCB circuit.
-Bluetooth range is really short and it is about 10 meters.
+Bluetooth range is really short, and it is about 10 meters.
 
 433MHz FM RF range is about 300 meters. Often used for remote controls. Wireless masthead wind transducers, etc.
 
