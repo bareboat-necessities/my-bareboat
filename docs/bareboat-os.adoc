@@ -1263,6 +1263,8 @@ with a space for SSD.
 Another option is the board and a case from McuZone. The advantage is that it has no moving
 parts (just a cooling radiator).
 
+List of the boards: https://pipci.jeffgeerling.com/boards_cm.html
+
 NOTE: If you use a Waveshare board, and your CM4 module comes with eMMC then you can't boot your from SD card, and you have
 to burn eMMC. To burn eMMC on Windows you have to install latest rpiboot_setup.exe from usbboot project on github.
 You would need to switch jumpers (switches) on your board to use OTG USB slave cable to be able to burn eMMC.
