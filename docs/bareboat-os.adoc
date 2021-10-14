@@ -1620,7 +1620,7 @@ and another is Wio Terminal by seeedstudio.com.
 M5Tough: https://shop.m5stack.com/products/m5stack-tough-esp32-iot-development-board-kit
 
 Here is a dinghy location tracker idea.
-https://www.seeedstudio.com/LoRa-GPS-Tracker-with-Wio-Terminal.html
+https://www.seeedstudio.com/LoRa-GPS-Tracker-with-Wio-Terminal-p-5182.html
 (Needs some work on a waterproof enclosure for a transmitter, and reporting
 the dinghy location via AIS NMEA data stream to the mother ship chartplotter).
 
