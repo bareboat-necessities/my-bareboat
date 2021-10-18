@@ -659,17 +659,18 @@ realVNC viewer (can be for PC, Linux, Mac, etc) and follow the instructions from
 
 OS image comes with ssh enabled. You can log in using ssh user: 'user'.
 
+=====  RaspController
+
+RaspController is available in Google Play for your Android phone or tablet, and in
+AppStore for Apple mobile devices. It allows remotely control your raspberry pi.
+
+
 ==== Android Devices
 
 OS image comes with scrcpy pre-installed and pre-configured. You can view and control your Android devices.
 You need to enable USB debugging on your Android device or follow the instructions
 to enable controlling it via WiFi. See: https://github.com/Genymobile/scrcpy
 In most cases you just need to enable USB debugging on your Android device and plug it in (thanks to autoadb).
-
-===== Android RaspController
-
-RaspController available on Google Play for your Android phone or tablet, and it allows
-remotely control your raspberry pi.
 
 
 ==== Browsers
