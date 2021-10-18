@@ -1468,6 +1468,7 @@ Vendors:
 - Encoded Solutions https://www.encodedsolutions.com/
 - Comar Systems https://comarsystems.com/
 - gadgetpool.de https://www.gadgetpool.eu/
+- Star Tracking https://www.star-tracking.com/
 
 
 === NMEA 2000
