@@ -1329,7 +1329,7 @@ There are several options:
 - dAISy USB AIS or Raspberry Pi dAISy AIS Hat. USB one is easier to set up.
 - Decode AIS radio signals using SDR. Probably the worst option as SDR is quite
 energy consuming for that task to be run constantly.
-- Open Source (receiver and transducer) https://github.com/peterantypas/maiana
+- Open Source (receiver/transducer): https://github.com/peterantypas/maiana
 
 === Radars
 
