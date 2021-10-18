@@ -1265,6 +1265,16 @@ parts (just a cooling radiator).
 
 List of the boards: https://pipci.jeffgeerling.com/boards_cm.html
 
+Several of these products could be interesting for boating applications:
+
+- Waveshare Mini IO Board Computer (ver B):  https://www.waveshare.com/product/cm4-io-base-box-b.htm
+
+- Waveshare IoT CM4 Computer https://www.waveshare.com/product/raspberry-pi/boards-kits/compute-module-4-cat/cm4-io-poe-4g-box.htm
+
+- MCUzone Carrier Grade CM4 Computers (fanless)  https://www.aliexpress.com/item/1005001972265702.html
+
+- EDATEC CM4 Industrial Computer https://www.edatec.cn/en/Product/Camera_Modules/2019/0826/76.html
+
 NOTE: If you use a Waveshare board, and your CM4 module comes with eMMC then you can't boot your from SD card, and you have
 to burn eMMC. To burn eMMC on Windows you have to install latest rpiboot_setup.exe from usbboot project on github.
 You would need to switch jumpers (switches) on your board to use OTG USB slave cable to be able to burn eMMC.
