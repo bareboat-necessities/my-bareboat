@@ -666,6 +666,12 @@ You need to enable USB debugging on your Android device or follow the instructio
 to enable controlling it via WiFi. See: https://github.com/Genymobile/scrcpy
 In most cases you just need to enable USB debugging on your Android device and plug it in (thanks to autoadb).
 
+===== Android RaspController
+
+RaspController available on Google Play for your Android phone or tablet, and it allows
+remotely control your raspberry pi.
+
+
 ==== Browsers
 
 The URLs of the applications on your boat computer:
