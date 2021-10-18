@@ -1686,6 +1686,10 @@ SignalK comes with:
 - Victron Venus OS Plugin
 - ModBus Client Plugin
 
+=== Open Boat Projects
+
+Open Boat Projects: https://open-boat-projects.org/en/
+
 === Antennas
 
 There is a great variety of antennas of a boat. Directional vs omnidirectional,
