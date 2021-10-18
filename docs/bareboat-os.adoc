@@ -1216,7 +1216,19 @@ connect to raspberry pi below deck. There are even fiberoptic solutions for that
 allow thinner cables.
 Bonus, if your touchscreen display comes
 with built in speakers for alarms. Check Sihovision product line, if one of
-their products will suit you.
+their products will suit you. Some examples:
+
+
+SL7W     7"    https://www.alibaba.com/product-detail/sunlight-readable-7-inch-touchscreen-waterproof_60543830769.html
+
+SL10W   10"   https://www.alibaba.com/product-detail/Outdoor-display-9-7-inch-IPS_1600251157854.html
+
+SL12W   12"   https://www.alibaba.com/product-detail/daylight-viewable-monitor-ip67-touch-marine_60718449450.html
+
+SL113    13"   https://www.alibaba.com/product-detail/Marine-displays-IP67-waterproof-13-3_62066633231.html
+
+SL100W   10"   https://www.sihovision.com/full-ip65-high-brightness-touch-monitor/waterproof-monitor-sl100w.html
+
 
 === Rpi4 Case
 
