@@ -1918,3 +1918,18 @@ scenarios (nor other linux distributions at the current state).
 You can set up which programs you want to autostart when desktop comes up in
 Administration->Budgie Desktop Settings. Many users would probably want OpenCPN and KIP Dashboard
 right away.
+
+=== Running with Higher Resolution Monitors
+
+With higher resolution monitors you might want to adjust font size and UI elements to be them bigger on your screen.
+
+- Go into Administration/Settings/Universal Access
+
+- Turn on 'Large Text', set 'Cursor Size' to 'Medium'
+
+- In OpenCPN go to Tools/Options/User Interface
+
+- Set 'User Intrface Scale Factor' slider (and all other sliders) to 1
+
+- Press 'OK' to apply settings
+
