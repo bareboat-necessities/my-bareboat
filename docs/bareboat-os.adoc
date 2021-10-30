@@ -470,6 +470,8 @@ Few places to check:
 
 You also need to download climatology data using OpenCPN climatology plugin, and
 download a grib file. They are also needed and used in weather routing.
+Your request for a grib file should also ask for tide and currents data in order
+for them to be taken into the account by routing algorithms.
 
 
 === WinLink (SailMail analogue) for Raspberry Pi
