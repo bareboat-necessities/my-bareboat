@@ -10,7 +10,7 @@ sudo chown homeassistant:homeassistant /srv/homeassistant
 
 sudo -u homeassistant -H -s
 cd /srv/homeassistant
-python3.8 -m venv .
+python3 -m venv .
 source bin/activate
 
 python3 -m pip install wheel
