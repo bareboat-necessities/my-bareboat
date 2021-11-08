@@ -425,6 +425,19 @@ sudo systemctl start pypilot@pypilot
 Apart from the official PyPilot documentation you will find this WiKi
 https://github.com/pypilot/workbook/wiki very useful as well.
 
+=== UI for controlling autopilots
+
+There are three options:
+
+- NMEA 2000 autopilots can be controlled by adding autopilot page in SignalK KIP dashboard or
+(experimental) in SignalK autopilot plugin.
+
+- Raymarine Autohelm SeaTalk autopilots can be controlled by SignalK plugin.
+
+- DIY PyPilot plugins can be controlled 3 ways: by OpenCPN plugin, standalone PyPilot UI application, or
+PyPilot Web application.
+
+
 === Weather
 
 You can add weather budgie desktop applet. Unfortunately it is linked to a fixed location which is

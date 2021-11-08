@@ -19,3 +19,6 @@ pip3 install homeassistant
 
 hass
 
+# After 15 mins
+# Visit http://localhost:8123/
+# to continue set up
