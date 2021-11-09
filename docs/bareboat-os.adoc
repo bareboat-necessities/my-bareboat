@@ -119,7 +119,7 @@ https://github.com/bareboat-necessities/lysmarine_gen#download
 
 Alternative place to download if the previous link doesn't work for you:
 
-https://archive.org/details/lysmarine-bbn-linux-LTS2
+https://archive.org/details/lysmarine-bbn-linux-LTS3
 
 
 ==== 32-bit vs 64-bit images
