@@ -357,6 +357,10 @@ Updating plugins on a system booted with arm64 kernel doesn't work even if users
 As a workaround: boot with armhf kernel, update all plugins
 and only then switch to arm64 kernel.
 
+OpenCPN Plugins Documentation:
+https://rasbats.github.io/opencpn-plugins-manual/
+
+
 === Set up Charts
 
 OS image comes with several chartplotters:
