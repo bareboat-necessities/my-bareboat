@@ -1,3 +1,11 @@
 #!/bin/bash -e
 
-echo "No hot fixes available for your system"
+echo "Installing DRM"
+
+# DRM management
+# https://www.widevine.com/
+
+# DRM
+sudo apt-get install -y -q libwidevinecdm0
+
+
