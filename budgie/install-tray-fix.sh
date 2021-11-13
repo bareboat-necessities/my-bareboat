@@ -20,4 +20,4 @@ curl -1sLf \
   | sudo -E distro=debian codename=buster bash
 
 sudo apt update
-sudo apt install budgie-desktop
+sudo apt install budgie-core libbudgie-private0
