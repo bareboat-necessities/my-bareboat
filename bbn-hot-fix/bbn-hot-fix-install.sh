@@ -25,4 +25,6 @@ EndSection
 EOF'
 fi
 
+/home/user/add-ons/scytalec-inmarsat-install.sh
+
 echo "Reboot for changes to take effect"
