@@ -1,14 +1,14 @@
 #!/bin/bash
 
 packages="
-  libbudgietheme0_10.5-2_armhf.deb
-  budgie-core-dev_10.5-2_armhf.deb
-  budgie-desktop-doc_10.5-2_all.deb
-  libbudgie-private0_10.5-2_armhf.deb
-  budgie-desktop_10.5-2_all.deb
-  gir1.2-budgie-1.0_10.5-2_armhf.deb
-  budgie-core_10.5-2_armhf.deb
-  libraven0_10.5-2_armhf.deb"
+  libbudgietheme0
+  budgie-core-dev
+  budgie-desktop-doc
+  libbudgie-private0
+  budgie-desktop
+  gir1.2-budgie-1.0
+  budgie-core
+  libraven0"
 
 for value in $packages
 do
