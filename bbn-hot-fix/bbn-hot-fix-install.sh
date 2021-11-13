@@ -9,7 +9,7 @@ echo "Installing DRM"
 sudo apt-get install -y -q libwidevinecdm0
 
 echo "Checking touchscreen fixes"
-if [ -L /dev/twofingtouch ] && [ ! -f /usr/share/X11/xorg.conf.d/90-touchinput.conf ]
+if [ -L /dev/twofingtouch ] 
 then
   MATCH_PRODUCT=$(udevadm info -a -n /dev/twofingtouch | grep "ATTRS{name}" | sed -e 's#.*=="##' -e 's#"$##')
   sudo bash -c 'cat << EOF > /usr/share/X11/xorg.conf.d/90-touchinput.conf
