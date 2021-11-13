@@ -410,6 +410,8 @@ Also in OpenCPN Polar plugin pick a polar file for your boat from ~/Polars,
 /usr/share/opencpn/plugins/weather_routing_pi/data/polars/
 or build it from your past voyages data recordings. It will be needed for weather routing, etc.
 
+Polars are important for Weather Routing and Dashboard Tactics plugins.
+
 === SignalK
 
 SignalK manages its own updates. Login into SignalK Marine Data Server web UI application
