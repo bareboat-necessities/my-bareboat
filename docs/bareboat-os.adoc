@@ -1298,7 +1298,7 @@ SL113    13"   https://www.alibaba.com/product-detail/Marine-displays-IP67-water
 
 SL100W   10"   https://www.sihovision.com/full-ip65-high-brightness-touch-monitor/waterproof-monitor-sl100w.html
 
-Pick HDMI screen over CSI as they do not take extra GPIO pins which you might have other plans for.
+Pick HDMI screen over DSI as they do not take extra GPIO pins which you might have other plans for.
 
 === Rpi4 Case
 
