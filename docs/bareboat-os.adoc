@@ -1057,6 +1057,25 @@ cd /home/user/add-ons
 ./maritime-lib-install.sh
 ----
 
+=== Media Library
+
+You can install JellyFin via add-ons:
+
+[source,shell]
+----
+cd /home/user/add-ons
+./jellyfin-install.sh
+----
+
+=== HomeAssistant
+
+You can install HomeAssistant (for many BBN users their boat is their home) via add-ons:
+
+[source,shell]
+----
+cd /home/user/add-ons
+./homeassistant-install.sh
+----
 
 === Suggestions
 
