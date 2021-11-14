@@ -926,7 +926,7 @@ cd /home/user/add-ons
 ./hot-fixes-install.sh
 ----
 
-Use the same procesure if you change your touchscreen to another.
+Use the same procedure if you change your touchscreen to another one.
 
 NOTE: The touchscreen issues mentioned below fixed since 2021-09-10 release.
 
