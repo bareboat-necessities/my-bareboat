@@ -141,6 +141,14 @@ Your preferred download image of BBN OS would be armhf.
 
 - Install armhf image
 - Switch to 64-bit kernel in /boot/config.txt is already done for you in recent versions of BBN OS
+- Install official hot fixes.
++
+[source]
+----
+cd /home/user/add-ons
+./hot-fixes-install.sh
+----
+
 - Proceed with all other configuration steps.
 
 === Prepare SD Card
