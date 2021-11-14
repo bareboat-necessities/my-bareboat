@@ -139,7 +139,7 @@ See (workaround): https://github.com/bareboat-necessities/lysmarine_gen/issues/4
 So as of time of writing this the best performance/compatibility is the 32-bit image with the kernel switched to 64-bit.
 Your preferred download image of BBN OS would be armhf.
 
-- Install 32-bit image
+- Install armhf image
 - Switch to 64-bit kernel in /boot/config.txt is already done for you in recent versions of BBN OS
 - Proceed with all other configuration steps.
 
