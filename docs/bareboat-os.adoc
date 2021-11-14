@@ -144,7 +144,7 @@ Your preferred download image of BBN OS would be armhf.
 - Proceed with all other configuration steps.
 - After establishing Internet connectivity install official hot fixes:
 +
-[source]
+[source, shell]
 ----
 cd /home/user/add-ons
 ./hot-fixes-install.sh
@@ -909,6 +909,23 @@ via desktop 'Commands' icon.
 Do not create data loops with your data flows between OpenCPN, AvNav, SignalK, GPSd, Kplex, PyPilot.
 
 ==== Touchscreen
+
+BBN Open Source Marine Linux OS for Raspberry Pi by Bareboat Necessities
+is customized for best touchscreen support (due to need to support cockpit touchscreen chartplotter).
+
+On screen keyboard, Two finger zoom, Long touch, Double finger tap, Three finger scroll are supported.
+No finger rotate (so far), Copy/paste is via on-screen keyboard.
+
+There are sometimes timing issues with USB ports during first boot. If you see touchscreen not being calibrated
+then try (fter establishing Internet connectivity and with touchscreen properly connected):
+
+[source, shell]
+----
+cd /home/user/add-ons
+./hot-fixes-install.sh
+----
+
+
 
 NOTE: The touchscreen issues mentioned below fixed since 2021-09-10 release.
 
