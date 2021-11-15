@@ -401,6 +401,10 @@ with extensive set of plugins as well as weather GRIB file viewers
 O-Charts can be registered using preinstalled OpenCPN plugins (on arm32 user space make sure to update plugins on-line
 from OpenCPN catalog) with O-Charts USB dongle or key.
 
+===== O-Charts
+
+O-Charts are commercial charts compatible with OpenCPN. See: https://www.o-charts.org/
+
 ==== AvNav
 
 When you are online NOAA raster MB tiles should work out of the box. O-Charts can be registered using AvNav plugin
