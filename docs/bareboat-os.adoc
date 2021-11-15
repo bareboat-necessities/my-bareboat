@@ -405,6 +405,12 @@ from OpenCPN catalog) with O-Charts USB dongle or key.
 
 O-Charts are commercial charts compatible with OpenCPN. See: https://www.o-charts.org/
 
+===== Making own MbTiles charts
+
+
+Making own MbTiles charts with SASPlanet:
+http://svocelot.com/Cruise_Info/Equipment/mbTiles.htm
+
 ==== AvNav
 
 When you are online NOAA raster MB tiles should work out of the box. O-Charts can be registered using AvNav plugin
