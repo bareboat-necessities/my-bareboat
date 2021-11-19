@@ -2032,7 +2032,7 @@ To enable this functionality you would need to add:
 [source]
 ----
 RuntimeWatchdogSec=10
-ShutdownWatchdogSec=2min
+ShutdownWatchdogSec=5min
 ----
 
 into /etc/systemd/system.conf, reboot, then check watchdog:
@@ -2045,8 +2045,8 @@ dmesg | grep watchdog
 
 [source, shell]
 ----
-RuntimeWatchdogUSec=2s
-ShutdownWatchdogUSec=10min
+RuntimeWatchdogUSec=10s
+ShutdownWatchdogUSec=5min
 ServiceWatchdogs=yes
 [ 3.125165] bcm2835-wdt bcm2835-wdt: Broadcom BCM2835 watchdog timer
 [ 5.200029] systemd[1]: Hardware watchdog 'Broadcom BCM2835 Watchdog timer', version 0
