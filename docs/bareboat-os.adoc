@@ -1317,6 +1317,8 @@ could use HDMI USB over Cat6 Ethernet extender. Given the high cost of longer US
 this solution can be even cheaper overall. Plus instead of two thick cables, you would need to lay
 only one and thinner Cat6 Ethernet cable.
 
+This might also work for setting dual (mirrored) monitors.
+
 === Rpi4 Case
 
 DeskPi Pro v2 is a nice enclosure for your below deck Raspberry Pi4 with fast SSD interface and
