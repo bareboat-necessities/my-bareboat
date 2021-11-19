@@ -2022,3 +2022,44 @@ With higher resolution monitors you might want to adjust font size and UI elemen
 
 - Press 'OK' to apply settings
 
+=== Watchdog
+
+Raspberry Pi has built in hardware which allows automatic restarts in case
+it freezes.
+
+To enable this functionality you would need to add:
+
+[source]
+----
+RuntimeWatchdogSec=10
+ShutdownWatchdogSec=2min
+----
+
+into /etc/systemd/system.conf, reboot, then check watchdog:
+
+[source, shell]
+----
+systemctl show | grep -i watchdog
+dmesg | grep watchdog
+----
+
+[source, shell]
+----
+RuntimeWatchdogUSec=2s
+ShutdownWatchdogUSec=10min
+ServiceWatchdogs=yes
+[ 3.125165] bcm2835-wdt bcm2835-wdt: Broadcom BCM2835 watchdog timer
+[ 5.200029] systemd[1]: Hardware watchdog 'Broadcom BCM2835 Watchdog timer', version 0
+[ 5.206438] systemd[1]: Set hardware watchdog to 10s.
+----
+
+To test:
+[source, shell]
+----
+sudo su
+echo 1 > /proc/sys/kernel/sysrq
+echo "c" > /proc/sysrq-trigger
+----
+
+More details here:
+https://pysselilivet.blogspot.com/2021/10/raspberry-pi-watchdog-made-simple.html
