@@ -1310,6 +1310,13 @@ SL100W   10"   https://www.sihovision.com/full-ip65-high-brightness-touch-monito
 
 Pick HDMI screen over DSI as they do not take extra GPIO pins which you might have other plans for.
 
+==== Connecting monitors
+
+Instead of laying long USB and HDMI cables from a cockpit to the boat computer below deck, you
+could use HDMI USB over Cat6 Ethernet extender. Given the high cost of longer USB and HDMI cables,
+this solution can be even cheaper overall. Plus instead of two thick cables, you would need to lay
+only one and thinner Cat6 Ethernet cable.
+
 === Rpi4 Case
 
 DeskPi Pro v2 is a nice enclosure for your below deck Raspberry Pi4 with fast SSD interface and
