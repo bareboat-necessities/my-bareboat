@@ -1746,6 +1746,11 @@ https://www.seeedstudio.com/LoRa-GPS-Tracker-with-Wio-Terminal-p-5182.html
 (Needs some work on a waterproof enclosure for a transmitter, and reporting
 the dinghy location via AIS NMEA data stream to the mother ship chartplotter).
 
+=== ESP32 with SignalK
+
+To program ESP32 for communicating with SignalK you can use SignalK SensESP library:
+https://github.com/SignalK/SensESP
+
 === 1-Wire
 
 SignalK Raspberry Pi 1wire plugin supports connecting multiple DS18B20
