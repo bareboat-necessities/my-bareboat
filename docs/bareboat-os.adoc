@@ -1315,8 +1315,8 @@ Pick HDMI screen over DSI as they do not take extra GPIO pins which you might ha
 Instead of laying long USB and HDMI cables from a cockpit to the boat computer below deck, you
 could use HDMI USB over Cat6 Ethernet extender. Given the high cost of longer USB and HDMI cables,
 this solution can be even cheaper overall. Plus instead of two thick cables, you would need to lay
-only one and thinner Cat6 Ethernet cable. However double check with the vendor that USB touchscreen
-functionality is supported.
+only one and thinner Cat6 Ethernet cable. However, double check with the vendor that the extender
+supports touchscreen functionality over USB.
 
 This might also work for setting dual (mirrored) monitors.
 
