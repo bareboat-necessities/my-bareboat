@@ -2069,3 +2069,14 @@ echo "c" > /proc/sysrq-trigger
 
 More details here:
 https://pysselilivet.blogspot.com/2021/10/raspberry-pi-watchdog-made-simple.html
+
+=== Troubleshooting /dev/ttyXXXX device or resource busy
+
+If you get this message likely there is another process which opened /dev/ttyXXXX.
+To find out the source of the conflict you can use:
+
+[source, shell]
+----
+sudo lsof /dev/ttyXXXX
+----
+
