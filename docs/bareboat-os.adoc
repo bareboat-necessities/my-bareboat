@@ -113,13 +113,13 @@ endif::[]
 [#download]
 === Download Image
 
-Download SD card image (~2.5 Gb file):
+Download SD card image (~3Gb file):
 
 https://github.com/bareboat-necessities/lysmarine_gen#download
 
 Alternative place to download if the previous link doesn't work for you:
 
-https://archive.org/details/lysmarine-bbn-linux-LTS3
+https://archive.org/details/lysmarine-bbn-linux-LTS4
 
 
 ==== 32-bit vs 64-bit images
