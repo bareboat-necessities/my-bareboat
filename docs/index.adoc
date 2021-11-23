@@ -839,6 +839,9 @@ a| USBGear 7-Port USB 3.0 Charging and SuperSpeed Mountable Data Hub
 
 https://www.amazon.com/dp/B012DZ4RJY
 
+IMPORTANT: Do not use that hub due to power backfeeding issues. A good hub is https://www.amazon.com/dp/B07BBLL3MJ/
+Aiibe 6 Ports Super High Speed USB 3.0 Hub Splitter
+
 | $35 | Amazon
 
 
@@ -1323,6 +1326,10 @@ a|
 * Power Adapter: 5V 2A output, 100-240V, 50/60Hz 0.40A
 
 https://www.amazon.com/dp/B012DZ4NJ8
+
+IMPORTANT: Do not use that hub due to power backfeeding issues. A good hub is https://www.amazon.com/dp/B07BBLL3MJ/
+Aiibe 6 Ports Super High Speed USB 3.0 Hub Splitter
+
 
 | $29 | Amazon
 
