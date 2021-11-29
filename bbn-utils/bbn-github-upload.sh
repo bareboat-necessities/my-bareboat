@@ -1,7 +1,6 @@
 #!/bin/bash -e
 
 FILE=$1
-GITHUB_TOKEN=
 
 curl -X POST \
     -H "Content-Length: $(stat --format=%s $FILE)" \
