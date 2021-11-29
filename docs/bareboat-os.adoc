@@ -150,7 +150,7 @@ cd /home/user/add-ons
 ./hot-fixes-install.sh
 ----
 
-
+- Reboot (One reboot after installation required to pick up all settings)
 
 === Prepare SD Card
 
