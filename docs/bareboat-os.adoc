@@ -142,7 +142,7 @@ Your preferred download image of BBN OS would be armhf.
 - Install armhf image
 - Switch to 64-bit kernel in /boot/config.txt is already done for you in recent versions of BBN OS
 - Proceed with all other configuration steps.
-- After establishing Internet connectivity install official hot fixes:
+- After establishing Internet connectivity install official hot fixes (also needed for touchscreen setup):
 +
 [source, shell]
 ----
