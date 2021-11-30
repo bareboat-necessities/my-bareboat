@@ -154,6 +154,10 @@ cloud WiFi_Local [
  Local WiFi
 ]
 
+cloud Bluetooth [
+ Bluetooth
+]
+
 rectangle Iridium #moccasin [
  Iridium Phone
 ]
@@ -302,6 +306,12 @@ RPI -d- Esp32
 RPI -u- WiFi_Local
 RPI -u- Keyboard_Mouse
 RPI -l- Panel
+
+Bluetooth -u- Speakers
+Bluetooth -u- Keyboard_Mouse
+Bluetooth -u- Mic
+Bluetooth -u- SmartPhone
+Bluetooth -u- RPI
 
 Panel -- Touchscreen
 Panel -- USB_Hub
