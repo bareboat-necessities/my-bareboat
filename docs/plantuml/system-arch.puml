@@ -147,7 +147,7 @@ node SDR [
 ]
 
 node SSB #moccasin [
- SSB/SDR Radio
+ SSB/HAM Radio
 ]
 
 cloud WiFi_Local [
@@ -316,7 +316,7 @@ RPI -u- Keyboard_Mouse
 RPI -l- Panel
 
 Radio_Data -u- RPI
-Radio_Data -- SSB
+Radio_Data -u- SSB
 
 Bluetooth -u- Speakers
 Bluetooth -u- Keyboard_Mouse
