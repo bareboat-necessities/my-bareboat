@@ -273,8 +273,17 @@ cloud Lora [
 ]
 
 rectangle Esp32 [
- m5stack,
- arduino
+ m5stack, seeeduino
+ arduino/ESP32
+]
+
+node Radio_Data [
+ WeatherFax
+ NOAA Weather
+ Inmarsat
+ AIS
+ NavTex
+ WinLink email, etc
 ]
 
 node AP_2 [
@@ -306,6 +315,9 @@ RPI -d- Esp32
 RPI -u- WiFi_Local
 RPI -u- Keyboard_Mouse
 RPI -l- Panel
+
+Radio_Data -u- RPI
+Radio_Data -u- Skipper
 
 Bluetooth -u- Speakers
 Bluetooth -u- Keyboard_Mouse
