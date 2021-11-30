@@ -147,7 +147,7 @@ node SDR [
 ]
 
 node SSB #moccasin [
- SSB Radio
+ SSB/SDR Radio
 ]
 
 cloud WiFi_Local [
@@ -277,7 +277,7 @@ rectangle Esp32 [
  arduino/ESP32
 ]
 
-node Radio_Data [
+rectangle Radio_Data [
  WeatherFax
  NOAA Weather
  Inmarsat
@@ -308,7 +308,6 @@ RPI -u- Touchscreen
 RPI -u- Cameras
 RPI -u- Speakers
 RPI -u- Mic
-RPI -u- SSB
 RPI -u- Iridium
 RPI -- Other_Sensors
 RPI -d- Esp32
@@ -317,13 +316,13 @@ RPI -u- Keyboard_Mouse
 RPI -l- Panel
 
 Radio_Data -u- RPI
-Radio_Data -u- Skipper
+Radio_Data -- SSB
 
 Bluetooth -u- Speakers
 Bluetooth -u- Keyboard_Mouse
 Bluetooth -u- Mic
 Bluetooth -u- SmartPhone
-Bluetooth -u- RPI
+Bluetooth -r- RPI
 
 Panel -- Touchscreen
 Panel -- USB_Hub
