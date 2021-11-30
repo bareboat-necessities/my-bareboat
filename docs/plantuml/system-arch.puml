@@ -331,7 +331,10 @@ Panel -- Batteries
 SmartPhone -- WiFi_Local
 AP_2 -u- WiFi_Local
 
-SiriusXM -- NMEA_2000
+NMEA_2000 -- SiriusXM
+NMEA_2000 -- NMEA_Mux
+NMEA_2000 -- NMEA_Eth_Mux
+
 VHF -u- NMEA_Mux
 AIS -u- NMEA_Mux
 
