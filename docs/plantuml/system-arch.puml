@@ -300,7 +300,7 @@ node Rudder #moccasin [
  Rudder Drive Motor
 ]
 
-RPI -- NMEA_2000
+RPI -r- NMEA_2000
 RPI -- NMEA_Mux
 RPI -u- Eth_Hub
 RPI -- USB_Hub
@@ -381,7 +381,7 @@ Skipper -- Remote_Desktop
 Skipper -- Panel
 
 Chargers -- Solar_Pan
-Chargers -- Batteries
+Chargers -u- Batteries
 Chargers -- Wind_Gen
 Engines -- Batteries
 
