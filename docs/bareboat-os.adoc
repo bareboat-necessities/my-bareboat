@@ -455,7 +455,10 @@ There are three options:
 - NMEA 2000 autopilots can be controlled by adding autopilot page in SignalK KIP dashboard or
 (experimental) in SignalK autopilot plugin.
 
-- Raymarine Autohelm SeaTalk autopilots can be controlled by SignalK plugin.
+- Raymarine Autohelm SeaTalk autopilots can be controlled by SignalK plugin. This UI works as a web application and uses
+authentication cookie from SignalK nativefier application, so make sure you login (with 'remember me' option) to SignalK
+UI application and set SignalK session timeout (in SignalK security settings) to a large value. Otherwise you will
+get authentications errors trying to control your autopilot during your cruise.
 
 - DIY PyPilot plugins can be controlled 3 ways: by OpenCPN plugin, standalone PyPilot UI application, or
 PyPilot Web application.
