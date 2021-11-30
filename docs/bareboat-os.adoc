@@ -108,6 +108,9 @@ ifndef::env-github[]
 endif::[]
 
 {zwsp} +
+The diagram is color coded. Orange indicates what you (might) already have on your boat. Yellow are additions.
+Green is Pi (the central element).
+
 {zwsp} +
 
 [#download]
