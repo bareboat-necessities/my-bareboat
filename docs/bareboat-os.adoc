@@ -122,6 +122,10 @@ https://github.com/bareboat-necessities/lysmarine_gen#download
 
 Alternative place to download if the previous link doesn't work for you:
 
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2021-12-01
+
+Past LTS release:
+
 https://archive.org/details/lysmarine-bbn-linux-LTS4
 
 
