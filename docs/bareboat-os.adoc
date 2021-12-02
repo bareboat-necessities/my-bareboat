@@ -971,6 +971,31 @@ to be able to choose multiple Wi-Fi networks to connect to.
 Check /home/user/add-ons directory. It contains number of scripts for installing many additional programs
 which for one or another reason couldn't be a part of the distribution image.
 
+Few notable add-ons:
+
+==== Text-to-speech
+
+[source, shell]
+----
+cd /home/user/add-ons
+./text-to-speech-install.sh
+----
+
+==== Navionics
+
+[source, shell]
+----
+cd /home/user/add-ons
+./navionics-demo-install.sh
+----
+
+==== QtVlm
+
+[source, shell]
+----
+cd /home/user/add-ons
+./qtvlm-install.sh
+----
 
 === Default Ports
 
@@ -1054,6 +1079,12 @@ As of 2021-10-04 Bluetooth seems good only for low speed devices.
 You likely to experience skipping playing music via on-board pi bluetooth.
 
 NOTE: Versions 2021-11-29 and after have this issue fixed.
+
+=== Amazon Alexa, etc
+
+Set it up to be on your boat Wi-Fi. You can also pair it with your pi via Bluetooth and play music via Amazon
+EchoDot, etc. Mopidy seems needs a restart to switch to Bluetooth playing.
+
 
 === QtVlm Chartplotter
 
