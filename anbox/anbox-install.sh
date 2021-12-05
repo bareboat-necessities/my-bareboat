@@ -8,7 +8,7 @@ sudo apt install build-essential cmake cmake-data debhelper dbus google-mock \
     libboost-thread-dev libcap-dev libexpat1-dev libsystemd-dev libegl1-mesa-dev \
     libgles2-mesa-dev libglm-dev libgtest-dev liblxc1 \
     libproperties-cpp-dev libprotobuf-dev libsdl2-dev libsdl2-image-dev lxc-dev \
-    libdw-dev libdwarf-dev binutils-dev \
+    libdw-dev libdwarf-dev libbfd-devbinutils-dev \
     pkg-config protobuf-compiler python3-minimal
     
 #git clone --recurse-submodules -j8  https://github.com/anbox/anbox.git
