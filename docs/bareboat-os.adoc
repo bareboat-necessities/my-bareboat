@@ -1812,7 +1812,7 @@ SensESP allows connecting many sensors:
 - Color detection
 - 433MHz RF receivers
 - LoRa receivers/transmitters
-- Interfaces (USB, Ethernet, CAN Bus, Rs-485, RS-232)
+- Interfaces (USB, Ethernet, CAN Bus, Rs-485, RS-232, 4G/LTE, GPS/GNSS, ModBus, etc)
 - IMU (gyroscope, magnetometer, accelerometer)
 - Hall effect
 - Actuators, servo, motor controls
