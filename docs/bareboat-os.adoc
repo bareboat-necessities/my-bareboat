@@ -1791,6 +1791,43 @@ the dinghy location via AIS NMEA data stream to the mother ship chartplotter).
 To program ESP32 for communicating with SignalK you can use SignalK SensESP library:
 https://github.com/SignalK/SensESP
 
+SensESP allows connecting many sensors:
+
+- Engine RPM
+- Engine Temperature, Oil Pressure
+- Liquid levels (Fuel, fresh water, black water, septic tank)
+- Environment (Temperature, pressure, humidity, air quality)
+- Dangerous gases
+- Lightning strikes
+- Voltage, amps
+- Relays for control (lights, devices)
+- Power utilization (batteries monitoring)
+- Motion sensors
+- Human heartbeat detection
+- Anchor windlass chain counters
+- Bilge pump
+- Proximity
+- Fingerprint recognition
+- Light
+- Color detection
+- 433MHz RF receivers
+- LoRa receivers/transmitters
+- Interfaces (USB, Ethernet, CAN Bus, Rs-485, RS-232)
+- IMU (gyroscope, magnetometer, accelerometer)
+- Hall effect
+- Actuators, servo, motor controls
+- Audio (speaker, microphone), buzzers
+- Barcode readers
+- External memory readers (TF card, etc)
+- Laser emitters / receivers
+- NCIR/IR receivers/transmitters
+- Thermal cameras
+- Joystick
+- DAC/ADC
+- Potentiometers
+- and more
+
+
 === 1-Wire
 
 SignalK Raspberry Pi 1wire plugin supports connecting multiple DS18B20
