@@ -1826,6 +1826,7 @@ SensESP allows connecting many sensors:
 - DAC/ADC
 - Potentiometers
 - Blood alcohol concentration
+- Blood oxygen, oximeter
 - and more
 
 
