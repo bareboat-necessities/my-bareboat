@@ -1825,6 +1825,7 @@ SensESP allows connecting many sensors:
 - Joystick
 - DAC/ADC
 - Potentiometers
+- Blood alcohol concentration
 - and more
 
 
