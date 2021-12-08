@@ -1359,6 +1359,20 @@ supports touchscreen functionality over USB.
 
 This might also work for setting dual (mirrored) monitors.
 
+==== Brightness
+
+LED is LCD with LED backlight.
+OLED doesn't have backlight.
+
+Sunlight readability is >= 1000 nits.
+
+Software brightness control is possible on monitors which support DDC/CI (Display Data Channel) with raspberry pi
+via ddcutil program. It works as an i2c channel over HDMI.
+
+Software brightness control is also possible with monitors which create entry in /sys/class/backlight/<entry>
+on raspberry pi. xbacklight utility can be used to control backlight brightness in such cases.
+
+
 === Rpi4 Case
 
 DeskPi Pro v2 is a nice enclosure for your below deck Raspberry Pi4 with fast SSD interface and
