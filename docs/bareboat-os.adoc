@@ -1373,6 +1373,7 @@ via ddcutil program. It works as an i2c channel over HDMI.
 Software brightness control is also possible with monitors which create entry in /sys/class/backlight/<entry>
 on raspberry pi. xbacklight utility can be used to control backlight brightness in such cases.
 
+Choose monitors with less than 1 watt usage per one diagonal inch.
 
 === Rpi4 Case
 
