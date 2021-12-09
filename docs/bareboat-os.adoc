@@ -1362,6 +1362,7 @@ This might also work for setting dual (mirrored) monitors.
 ==== Brightness
 
 LED is LCD with LED backlight.
+IPS (In-plane-switching) is a type of LED with better picture quality and more power consumption.
 OLED doesn't have backlight.
 
 Sunlight readability is >= 1000 nits.
