@@ -61,40 +61,43 @@ https://bareboat-necessities.github.io/my-bareboat/bareboat-os.pdf
 toc::[]
 
 
-== Getting Started
+== Primeiros passos
 
-=== Why use BBN OS?
+===  Por que usar o BBN-OS?
 
-Why use BBN OS? Some people use just commercial marine electronics on board, some ones use smart tablets and marine
-Wi-Fi multiplexers. All these solutions lack one important component - an onboard computer capable of monitoring
-and controlling all aspects of the boat systems, and capable of storing data. Some people put an Intel-based computer for it.
-Intel-based solutions are more power consuming. With BBN OS you can build a central boat computer meeting your needs.
-All on low power consuming raspberry pi with flexibility of adding countless choices of sensors to talk to
-all boat systems, Internet, local Wi-Fi, cameras, NMEA network, and a system able to decode marine radio protocols.
-BBN OS is free and open source. It is based on commonly used community supported open source projects such as SignalK,
-PyPilot, OpenCPN, and others. BBN OS graphical user interface will let you build a cockpit front-end to all functionality
-of the OS from chartplotting, dashboards, weather information, to media player, etc.
+Eletrônicos náuticos comerciais, tablets inteligentes e multiplexadores Wi-Fi não substituem um computador de bordo,
+componente importante capaz de monitorar, armazenar dados e controlar todos os sistemas de uma embarcação.
+Com o BBN-OS instalado em um computador de bordo baseado em Raspberry Pi (Pi) de baixo consumo de energia, ao contrário
+de computadores ou notebooks, atende suas necessidades com flexibilidade para adicionar inúmeras opções de sensores
+e se comunicar com todos os sistemas da embarcação tais como: Internet, Wi-Fi local, câmeras, rede NMEA e um sistema
+capaz de decodificar protocolos de rádio marítimos.
+O BBN-OS é gratuito baseado em projetos de código aberto suportados pela comunidade e comumente usados, como SignalK,
+PyPilot, OpenCPN e outros. A interface gráfica do usuário do BBN-OS permitirá que você crie uma estação no cockpit
+para todas as funcionalidades do sistema operacional, desde gráficos, painéis, informações meteorológicas, reprodutor
+de mídia, etc.
 
-==== Use Cases
 
-* Cockpit Touchscreen Chartplotter
+==== Utilizações:
+
+* Chartplotter em monitor Touchscreen no Cockpit
 * Nav Station Computer
-* Desktop Computer
-* Pi Based Laptop
-* Headless Server
-* Media Player
-* Autopilot
-* SSB Radio Decoder
-* Marine Data Server, Multiplexer
-* Wi-Fi Access Point
-* Cameras Monitoring
-* Data Analytics Server
-* Weather Station
-* Boat Dashboards
-* File Server
-* Off-the-grid living
+* Computador desktop
+* Laptop baseado em Pi
+* Servidor com inicialização automática
+* Reprodutor de mídia
+* Piloto automático
+* Decodificador de rádio SSB
+* Servidor de dados náuticos, multiplexador
+* Ponto de Acesso Wi-Fi
+* Monitoramento de câmeras
+* Servidor de análise de dados
+* Estação meteorológica
+* Painéis de instrumentos da embarcação
+* Servidor de arquivos
+* Autonomia
 
-==== Smart Boat
+
+==== Barco Inteligente
 
 .Smart Boat Diagram
 ifdef::env-github[image::system-arch.svg[Smart Boat,width=100%,pdfwidth=100%]]
@@ -114,42 +117,51 @@ Green is Pi (the central element).
 {zwsp} +
 
 [#download]
-=== Download Image
+=== Baixar imagem
 
-Download SD card image (~3Gb file):
+
+Baixe a imagem do cartão SD (arquivo ~ 3Gb):
+
 
 https://github.com/bareboat-necessities/lysmarine_gen#download
 
-Alternative place to download if the previous link doesn't work for you:
+
+Endereço alternativo de download se o link anterior não funcionar.
+
 
 https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2021-12-01
 
-Past LTS release:
+
+Versão anterior do LTS:
+
 
 https://archive.org/details/lysmarine-bbn-linux-LTS4
 
 
-==== 32-bit vs 64-bit images
+==== imagens de 32 bits vs 64 bits
 
-- There are pros and cons to each
-- 32-bit takes less memory but runs slower
-- 32-bit is more supported at the moment (Some cameras not supported on 64-bit yet at the time of writing this)
-- QtVlm, wx2img, many OpenCPN plugins are 32-bit only (at the time of writing this)
-- You still can run 64-bit kernel with 32-bit image, user space programs will be 32-bit. (Add arm_64bit=1 into /boot/config.txt)
-- 32-bit is available on more hardware
-- 64-bit OS and OpenCPN are working fine but technically still called 'beta'
-- Most of the open (minor) issues are present in both 32 and 64-bit images
 
-NOTE: Switch from 32-bit kernel to 64-bit kernel has an impact on java installation.
-See (workaround): https://github.com/bareboat-necessities/lysmarine_gen/issues/44
+- Prós e contras
+- 32 bits consomem menos memória e são mais lentos
+- 32 bits é mais compatível no momento (algumas câmeras não eram compatíveis com 64 bits no momento em que este artigo foi escrito)
+- QtVlm, wx2img, muitos plug-ins OpenCPN são apenas de 32 bits (no momento em que este artigo foi escrito)
+- Você ainda pode executar o kernel de 64 bits na imagem de 32 bits, os programas de espaço do usuário serão de 32 bits. (Adicione arm_64bit = 1 em /boot/config.txt)
+- 32 bits está disponível em mais hardwares
+- OS de 64 bits e OpenCPN funcionam bem mas tecnicamente ainda são chamados de 'beta'
+- A maioria dos problemas menores estão presentes em imagens de 32 e 64 bits
 
-So as of time of writing this the best performance/compatibility is the 32-bit image with the kernel switched to 64-bit.
-Your preferred download image of BBN OS would be armhf.
+NOTA: A mudança do kernel de 32 bits para o kernel de 64 bits tem um impacto na instalação do java.
+Consulte (solução alternativa): https://github.com/bareboat-necessities/lysmarine_gen/issues/44
 
-- Install armhf image
-- Switch to 64-bit kernel in /boot/config.txt is already done for you in recent versions of BBN OS
-- Proceed with all other configuration steps.
-- After establishing Internet connectivity install official hot fixes (also needed for touchscreen setup):
+
+Portanto, no momento em que este artigo foi escrito, o melhor desempenho / compatibilidade é a imagem de 32 bits com o kernel alterado para 64 bits.
+A imagem preferida de download do BBN-OS é armhf.
+
+
+- Instale a imagem armhf
+- A mudança  para kernel de 64 bits em /boot/config.txt já foi feito nas versões recentes do sistema operacional BBN
+- Continue com todas as outras etapas de configuração.
+- Depois de estabelecer a conectividade com a Internet, instale os hot fixes oficiais (também necessários para a configuração do touch screen):
 +
 [source, shell]
 ----
@@ -157,86 +169,99 @@ cd /home/user/add-ons
 ./hot-fixes-install.sh
 ----
 
-- Reboot (One reboot after installation required to pick up all settings)
+- Reinicializar (uma reinicialização após a instalação é necessária para recuperar todas as configurações)
 
-=== Prepare SD Card
+=== Prepare o cartão SD
 
-Write the downloaded image to SD card. Minimum 32Gb SD card recommended.
-You can use Raspberry Pi Imager for that:
+
+Grave a imagem baixada no cartão SD. Recomenda-se um cartão SD mínimo de 32 Gb.
+Você pode usar o Raspberry Pi Imager para isso:
+
 
 https://www.raspberrypi.org/software/
 
-If your screen resolution is lower than 1024x600 you would need to manually
-set it in /boot/config.txt file, by mounting /boot partition of your SD card
-(on windows its done just by inserting it into SD card slot and editing in a plain text
+
+Se a resolução da tela for inferior a 1024x600, você precisará manualmente
+configurar no arquivo /boot/config.txt, montando a partição / boot do seu cartão SD
+(no Windows é feito apenas inserindo-o no slot de cartão SD e editando em um texto simples
 editor).
 
-Quality of SD card is essential for performance of your system. BBN OS comes
-with disk benchmarking tool. Good SD card would show about 45 MB/sec (or higher) read i/o speed in it.
-SSD drives would show much better results: 178 MB/sec read and 147 MB/sec write i/o speed or higher.
 
-=== First Boot from SD Card
+A qualidade do cartão SD é essencial para o desempenho do seu sistema. BBN-OS vem
+com ferramenta de benchmarking de disco. Um bom cartão SD mostraria cerca de 45 MB / seg (ou mais) de velocidade de leitura e / ou de saída nele.
+As unidades SSD mostram resultados muito melhores: 178 MB / seg de leitura e 147 MB ​​/ seg de velocidade de E / S de gravação ou superior.
 
-Insert SD card into raspberry pi SD card slot, plug-in a mouse and a keyboard, and power on.
-Wait for boot process to run GUI (about 2 mins).
 
-NOTE: Your touchscreen should be connected (HDMI and USB) and powered on during the first boot to be properly recognized
-and touchscreen calibrated.
+=== Primeira inicialização do cartão SD
 
-=== Setting up Network
 
-==== Wired Ethernet
+Insira o cartão SD no slot de cartão SD do Raspberry Pi, conecte um mouse e um teclado e ligue-o.
+Aguarde até que o processo de inicialização execute a GUI (cerca de 2 minutos).
 
-If you have wired ethernet router you can just plug-in your raspberry pi ethernet port into the
-router
 
-==== Wi-Fi Client
+NOTA: Sua tela touch screen deve estar conectada (HDMI e USB) e ligada durante a primeira inicialização para ser devidamente reconhecida
+e touchscreen calibrados.
 
-Go into network settings menu and delete Wi-Fi wireless access point.
 
-NOTE: You need to set up Wi-Fi country.
+=== Configurando a rede
 
-Change /etc/wpa_supplicant/wpa_supplicant.conf to add line for your country (example):
+
+==== Ethernet com fio
+
+
+Se você tiver um roteador Ethernet com fio, pode simplesmente conectar sua porta ethernet Raspberry Pi no
+roteador
+
+
+==== Cliente Wi-Fi
+
+
+Acesse o menu de configurações de rede e exclua o ponto de acesso sem fio Wi-Fi.
+
+
+NOTA: Você precisa configurar o país do Wi-Fi.
+
+
+Troque /etc/wpa_supplicant/wpa_supplicant.conf to add line for your country (examplo):
 
 [source]
 ----
-country=US
+country=BR
 ----
 
-Change /etc/default/crda to set your country (example):
+Troque /etc/default/crda to set your country (examplo):
 
 [source]
 ----
-REGDOMAIN=US
+REGDOMAIN=BR
 ----
 
-When raspberry pi Wi-Fi card discovers your Wi-Fi router network click to connect to Wi-Fi
-and enter the correct Wi-Fi password.
+Quando o cartão Wi-Fi Raspberry Pi descobrir a rede do roteador Wi-Fi, clique para se conectar ao Wi-Fi e insira a senha de Wi-Fi.
 
-When the password storage manager pops up to enter the password for your password storage I just normally leave it blank, so
-I'm not prompted again.
+Quando o gerenciador de armazenamento de senhas aparecer para inserir a senha deixe em branco para não ser solicitado novamente.
 
-==== Wi-Fi Access Point
+==== Ponto de acesso Wi-Fi
 
-Wi-Fi connections are managed by widely used Gnome NetworkManager. Look for 'nmcli' documentation
-(command line interface to NetworkManager). Or you can figure it out from Administration/Advanced Network Settings
-app menu. By default, OS image is set up to provide you with an access point.
+As conexões Wi-Fi são gerenciadas pelo Gnome NetworkManager amplamente utilizado. Procure a documentação 'nmcli'
+(interface de linha de comando para NetworkManager). Ou você pode descobrir em Administração / Configurações avançadas de rede
+menu de aplicativos. Por padrão, a imagem do sistema operacional é configurada para fornecer a você um ponto de acesso.
+
 
 [#tether]
-==== Using iPhone as Internet gateway
+==== Usando o iPhone como gateway de Internet
 
-Enable Personal Hotspot on iphone. Plug it in into pi with BBN OS via USB and tell iPhone to trust the connected computer.
-You will have a tethered Internet connection from your pi via iPhone (using usbmuxd).
+Habilite o ponto de acesso pessoal no iphone. Conecte-o ao Pi com BBN-OS via USB e diga ao iPhone para confiar autorizando a conexão no computador.
+Você terá uma conexão de Internet tethered do seu Pi via iPhone (usando usbmuxd).
 
-You do not have to be plugged in into USB if your phone, and a boat computer are on the same local
-Wi-Fi network.
+Você não precisa estar conectado a um USB se o seu telefone e o computador de bordo estiverem na mesma rede
+Rede Wi-Fi.
 
 [#tether_android]
-==== Using Android phone as Internet gateway
+==== Usando o telefone Android como gateway de Internet
 
-Enable USB tethering in network settings on your Android phone. Plug it into your boat computer via USB.
+Ative o tethering USB nas configurações de rede do seu telefone Android. Ligue-o ao computador do barco através de USB.
 
-The output of the command below should show a new route via usb0 interface:
+A saída do comando abaixo deve mostrar uma nova rota via interface usb0:
 [source, shell]
 ----
 netstat -nr
@@ -1447,7 +1472,7 @@ You would need to switch jumpers (switches) on your board to use OTG USB slave c
 It's a slow process as it is done via USB 2.0 interface.
 Moreover, stock Raspberry Pi OS image wouldn't have Waveshare USB ports enabled. So before burning an image into eMMC
 you would need to modify it and add
- dtoverlay=dwc2,dr_mode=host
+dtoverlay=dwc2,dr_mode=host
 line into /boot/config.txt on the image. For that (and other) reasons, BBN OS has a separate image
 for Waveshare board support. The image is based on the base BBN OS image with additional tweaks to support the Waveshare
 board.
@@ -2080,7 +2105,7 @@ More: https://github.com/rclone/rclone
 
 Install GPS2IP application on your smartphone. Start it and enable GPS2IP in it.
 Your phone should be on the same local network as your boat computer.
-In SignalK add gps2ip_on_smartphone NMEA TCP connection to the IP address 
+In SignalK add gps2ip_on_smartphone NMEA TCP connection to the IP address
 shown in GPS2IP app and the port specified there (usually 11123). Your phone ip address
 should be a static address. So make sure it's mapped to a static address on your WiFi networks with a MAC address
 of your phone.
@@ -2175,4 +2200,3 @@ To find out the source of the conflict you can use:
 ----
 sudo lsof /dev/ttyXXXX
 ----
-
