@@ -1,6 +1,6 @@
-= Bareboat Necessities OS Documentation
+= Documentação do Sistema Operacional do Bareboat Necessities.
 mgrouch <mgrouch@users.noreply.github.com>
-{docdate}, Bareboat Necessities OS Documentation
+{docdate}, Documentação do Sistema Operacional do Bareboat Necessities
 :imagesdir: images
 :doctype: book
 :organization: Bareboat Necessities
@@ -414,51 +414,50 @@ with extensive set of plugins as well as weather GRIB file viewers
 
 ==== OpenCPN
 
-* Start OpenCPN. Go into Tools/Options/Charts/Chart Downloader tab.
-* Click 'Add Catalog'. For USA: click USA NOAA & Inland Charts / ENC / By Region.
-* Pick your region, click (or touch) 'OK'
-* Click 'Update' (to update the catalog)
-* Click 'Download Charts...' tab
-* Right-click (or long touch) in the charts list
-* Click 'Select all' from the pop-up menu
-* Press 'Download selected charts' button, and wait for it to finish
-* Press 'Apply' button
-* Click 'Chart Files' tab
-* Press 'Prepare all ENC Charts' button
-* Press 'OK' button when done.
+* Inicie o OpenCPN. Vá em Ferramentas / Opções / Gráficos / guia Downloader de gráficos.
+* Clique em 'Adicionar Catálogo'. Para os EUA: clique em USA NOAA & Inland Charts / ENC / By Region.
+* Escolha sua região, clique (ou toque) em 'OK'
+* Clique em 'Atualizar' (para atualizar o catálogo)
+* Clique na guia 'Baixar gráficos ...'
+* Clique com o botão direito (ou toque longo) na lista de gráficos
+* Clique em 'Selecionar tudo' no menu pop-up
+* Pressione o botão 'Baixar gráficos selecionados' e aguarde a conclusão
+* Pressione o botão 'Aplicar'
+* Clique na guia 'Arquivos de gráfico'
+* Pressione o botão 'Prepare all ENC Charts'
+* Pressione o botão 'OK' quando terminar.
 
-O-Charts can be registered using preinstalled OpenCPN plugins (on arm32 user space make sure to update plugins on-line
-from OpenCPN catalog) with O-Charts USB dongle or key.
+O-Charts podem ser registrados usando plug-ins OpenCPN pré-instalados (no espaço do usuário arm32, certifique-se de atualizar os plug-ins on-line
+do catálogo OpenCPN) com chave ou dongle USB O-Charts.
 
 ===== O-Charts
 
-O-Charts are commercial charts compatible with OpenCPN. See: https://www.o-charts.org/
+O-Charts são gráficos comerciais compatíveis com OpenCPN. Veja: https://www.o-charts.org/
 
-===== Making own MbTiles charts
+===== Fazendo seus próprios gráficos MbTiles
 
-
-Making own MbTiles charts with SASPlanet:
+Fazendo seus próprios gráficos MbTiles com SASPlanet:
 http://svocelot.com/Cruise_Info/Equipment/mbTiles.htm
 
 ==== AvNav
 
-When you are online NOAA raster MB tiles should work out of the box. O-Charts can be registered using AvNav plugin
-with O-Charts USB dongle or key.
+Quando você está online, os blocos de MB raster NOAA devem funcionar imediatamente. O-Charts podem ser registrados usando o plugin AvNav
+com chave ou dongle USB O-Charts.
 
 ==== SignalK, FreeBoard-SK, TukTuk
 
-Follow SignalK documentation to install offline charts for these.
+Siga a documentação do SignalK para instalar gráficos offline para eles.
 
-=== Set up your Ship Parameters
+=== Configure seus parâmetros da embarcação
 
-Do not forget to set up your ship parameters in SignalK and Vessel applications.
-They can come handy.
+Configure os parâmetros do seu navio nas aplicações SignalK e Vessel.
+Eles podem ser úteis.
 
-Also in OpenCPN Polar plugin pick a polar file for your boat from ~/Polars,
+No plugin OpenCPN Polar, escolha um arquivo polar para a sua embarcação em ~/Polars,
 /usr/share/opencpn/plugins/weather_routing_pi/data/polars/
-or build it from your past voyages data recordings. It will be needed for weather routing, etc.
+ou construa a partir de suas gravações de dados de viagens anteriores. Será necessário para a rota do tempo, etc.
 
-Polars are important for Weather Routing and Dashboard Tactics plugins.
+Os polares são importantes para os plug-ins Weather Routing e Dashboard Tactics.
 
 === SignalK
 
