@@ -1867,6 +1867,7 @@ SensESP allows connecting many sensors:
 - Joystick
 - DAC/ADC
 - Potentiometers
+- Rudder position
 - Blood alcohol concentration
 - Blood oxygen, oximeter
 - and more
