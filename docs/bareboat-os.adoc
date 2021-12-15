@@ -1435,6 +1435,13 @@ with a space for SSD.
 Another option is the board and a case from McuZone. The advantage is that it has no moving
 parts (just a cooling radiator).
 
+For McuZone board you will need to add:
+
+ dtoverlay=dwc2,dr_mode=host
+
+into /boot/config.txt before first boot to enable USB ports.
+
+
 List of the boards: https://pipci.jeffgeerling.com/boards_cm.html
 
 Several of these products could be interesting for boating applications:
