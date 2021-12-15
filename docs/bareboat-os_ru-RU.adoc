@@ -1,4 +1,4 @@
-= Bareboat Necessities OS Documentation
+= Документация по операционной системе Bareboat Necessities
 mgrouch <mgrouch@users.noreply.github.com>
 {docdate}, Bareboat Necessities OS Documentation
 :imagesdir: images

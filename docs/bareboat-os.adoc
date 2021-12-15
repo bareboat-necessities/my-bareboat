@@ -968,7 +968,7 @@ to be able to choose multiple Wi-Fi networks to connect to.
 
 ==== Under-Voltage Detected
 
-If you see this message it means you have a poor power supply for your Pi.
+If you see this message it means you have a poor power supply for your Pi and some of your connected devices will not work.
 In that case you need higher amps power supply and raspberry Pi with many devices connected needs 5.2 volts
 power input.
 
