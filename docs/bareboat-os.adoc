@@ -1828,6 +1828,7 @@ SensESP allows connecting many sensors:
 - Engine Temperature, Oil Pressure
 - Liquid levels (Fuel, fresh water, black water, septic tank)
 - Environment (Temperature, pressure, humidity, air quality)
+- Rudder position
 - Dangerous gases
 - Lightning strikes
 - Voltage, amps
