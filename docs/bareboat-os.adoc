@@ -966,6 +966,12 @@ consistent IP addresses (by MAC address for example) to all your devices.
 Another situation which can cause name resolution issues in DNS is when one device configured
 to be able to choose multiple Wi-Fi networks to connect to.
 
+==== Under-Voltage Detected
+
+If you see this message it means you have a poor power supply for your Pi.
+In that case you need higher amps power supply and raspberry Pi with many devices connected needs 5.2 volts
+power input.
+
 === Add-ons
 
 Check /home/user/add-ons directory. It contains number of scripts for installing many additional programs
