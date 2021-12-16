@@ -1918,6 +1918,21 @@ SignalK comes with:
 - Victron Venus OS Plugin
 - ModBus Client Plugin
 
+=== IR (Infrared)
+
+The Raspberry Pi can receive and send IR signals using its GPIO pins.
+
+You configure which pins your IR diode is connected to in /boot/config.txt like this:
+
+[source]
+----
+dtoverlay=gpio-ir,gpio_pin=19
+dtoverlay=gpio-ir-tx,gpio_pin=26
+----
+
+LIRC (https://lirc.org/) software is a part of BBN OS. You need to configure it for your IR remote.
+
+
 === Open Boat Projects
 
 Open Boat Projects: https://open-boat-projects.org/en/
