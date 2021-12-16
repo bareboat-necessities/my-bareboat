@@ -793,6 +793,7 @@ These applications will allow you (with some skill and set up):
 BBN OS will help you to use Iridium Phone as a modem for low bandwidth Internet access, or
 to send periodic short burst data with use of a specially written SignalK plugin.
 
+More on using Iridium as modem: https://agile4life.blog/2018/07/16/sailing-with-linux-nmea-gpsd-iridium/
 
 === Cameras
 
