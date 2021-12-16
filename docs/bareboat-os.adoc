@@ -1459,9 +1459,9 @@ Several of these products could be interesting for boating applications:
 
 - EDATEC CM4 Industrial Computer https://www.edatec.cn/en/Product/Camera_Modules/2019/0826/76.html
 
-NOTE: Check internal SSD drive size and compatibility with your CM4 board before purchasing. If m.2 slot on
-your board is NVME you need NVME SSD (SATA will not work). Some boards m.2 slot designed to work only with 4G/LTE modems
-with PCIE M.2 KEY-M interface (will not work with SSDs).
+NOTE: Check internal SSD drive size (2242, 2260 usually are ok, 2280 is usually too long) and compatibility
+with your CM4 board before purchasing. If m.2 slot on your board is NVME you need NVME SSD (SATA will not work).
+Some boards m.2 slot designed to work only with 4G/LTE modems with PCIE M.2 KEY-M interface (will not work with SSDs).
 
 
 NOTE: If you use a Waveshare board, and your CM4 module comes with eMMC then you can't boot your from SD card, and you have
