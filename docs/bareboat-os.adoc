@@ -1757,6 +1757,9 @@ USB stick drives (flash drives) performance is not as high as NVMe and SATA SSDs
 - NASA Marine PC Navtex USB with an antenna (BBN OS comes with a program called PC-NavTex for it). ~$220
 - USB Devices from wetterinfobox.com (WIB2 - NAVTEX for PC) http://www.wetterinfobox.com
 
+There are reports that PC Windows software for WIB2/3 can be run on Raspberry Pi with with Box86 and Wine:
+https://www.cruisersforum.com/forums/f134/navtex-plugin-251561-3.html#post3533558
+
 === RTC (Real Time Clock)
 
 Raspberry pi doesn't have clock module to keep the time when it's off, so you might
