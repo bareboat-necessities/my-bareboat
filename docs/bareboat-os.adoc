@@ -1438,7 +1438,11 @@ parts (just a cooling radiator).
 
 For McuZone board you will need to add:
 
- dtoverlay=dwc2,dr_mode=host
+[source]
+----
+dtoverlay=dwc2,dr_mode=host
+----
+
 
 into /boot/config.txt before first boot to enable USB ports.
 
