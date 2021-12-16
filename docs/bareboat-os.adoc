@@ -1454,6 +1454,8 @@ Several of these products could be interesting for boating applications:
 
 - EDATEC CM4 Industrial Computer https://www.edatec.cn/en/Product/Camera_Modules/2019/0826/76.html
 
+NOTE: Check internal SSD drive size and compatibility with your CM4 board before purchasing.
+
 NOTE: If you use a Waveshare board, and your CM4 module comes with eMMC then you can't boot your from SD card, and you have
 to burn eMMC. To burn eMMC on Windows you have to install latest rpiboot_setup.exe from usbboot project on github.
 You would need to switch jumpers (switches) on your board to use OTG USB slave cable to be able to burn eMMC.
