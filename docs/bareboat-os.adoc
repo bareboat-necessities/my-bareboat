@@ -1874,6 +1874,20 @@ SensESP allows connecting many sensors:
 - Blood oxygen, oximeter
 - and more
 
+==== PlatformIO IDE
+
+SensESP requires using PlatformIO IDE, which you can install using these steps:
+
+Install Visual Studio Code
+[source, bash]
+----
+sudo apt update
+sudo apt install code
+code
+----
+
+Install PlatformIO IDE by clicking 'Extensions' icon in Visual Studio Code and typing 'PlatformIO' in the search field.
+
 
 === 1-Wire
 
