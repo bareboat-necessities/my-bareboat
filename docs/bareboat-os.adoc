@@ -1843,7 +1843,7 @@ SensESP allows connecting many sensors:
 - Environment (Temperature, pressure, humidity, air quality)
 - Rudder position
 - Dangerous gases
-- Lightning strikes
+- Lightning strikes detectors
 - Voltage, amps
 - Relays for control (lights, devices)
 - Power utilization (batteries monitoring)
@@ -1851,18 +1851,20 @@ SensESP allows connecting many sensors:
 - Human heartbeat detection
 - Anchor windlass chain counters
 - Bilge pump
-- Proximity
+- Proximity, distance sensors
+- LiDAR
 - Fingerprint recognition
-- Light
+- Light sensors
 - Color detection
+- pH alkalinity and acidity sensor
 - 433MHz RF receivers
 - LoRa receivers/transmitters
-- Interfaces (USB, Ethernet, CAN Bus, Rs-485, RS-232, 4G/LTE, GPS/GNSS, ModBus, etc)
+- Interfaces (USB, Ethernet, CAN Bus, Rs-485, RS-232, WiFi, 4G/LTE, GPS/GNSS, ModBus, etc)
 - IMU (gyroscope, magnetometer, accelerometer)
 - Hall effect
 - Actuators, servo, motor controls
 - Audio (speaker, microphone), buzzers
-- Barcode readers
+- Barcode/QR code readers
 - External memory readers (TF card, etc)
 - Laser emitters / receivers
 - NCIR/IR receivers/transmitters
@@ -1873,6 +1875,7 @@ SensESP allows connecting many sensors:
 - Blood alcohol concentration
 - Blood oxygen, oximeter
 - and more
+
 
 ==== PlatformIO IDE
 
