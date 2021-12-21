@@ -338,6 +338,8 @@ set up):
 sudo rpi-clone sda
 ----
 
+If you have NVMe disk, then instead of sda it will be named as nvme0n1 (or something like that, check /dev/ directory)
+
 Follow the prompts.
 
 === Set up GPS
