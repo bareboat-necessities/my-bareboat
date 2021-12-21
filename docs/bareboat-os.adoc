@@ -338,9 +338,11 @@ set up):
 sudo rpi-clone sda
 ----
 
-If you have NVMe disk, then instead of sda it will be named as nvme0n1 (or something like that, check /dev/ directory)
+If you have NVMe disk, then instead of sda it will be named as nvme0n1 (or something like that, check /dev/ directory).
 
 Follow the prompts.
+
+NOTE: As of Dec 21, 2021 booting from NVMe drive still considered to be a 'beta' feature.
 
 === Set up GPS
 
