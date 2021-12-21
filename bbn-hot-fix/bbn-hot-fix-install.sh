@@ -25,6 +25,14 @@ EndSection
 EOF'
 fi
 
+# rpi-clone
+git clone https://github.com/bareboat-necessities/rpi-clone.git
+cd rpi-clone
+cp rpi-clone rpi-clone-setup /usr/local/sbin
+cd ..
+chmod +x /usr/local/sbin/rpi-clone*
+rm -rf rpi-clone
+
 /home/user/add-ons/scytalec-inmarsat-install.sh
 
 echo "Reboot for changes to take effect"
