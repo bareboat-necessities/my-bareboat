@@ -1437,7 +1437,16 @@ https://www.waveshare.com/product/raspberry-pi/boards-kits/compute-module-4-cat/
 
 with a space for SSD.
 
-Another option is the board and a case from McuZone. The advantage is that it has no moving
+To enable RTC clock if your Waveshare board has it you need to add into /boot/config.txt something like:
+
+[source]
+----
+# Enable RTC
+dtparam=i2c_vc=on
+dtoverlay=i2c-rtc,pcf85063a,i2c_csi_dsi
+----
+
+Another option is the board and a case from McuZone. The advantage of it is that it has no moving
 parts (just a cooling radiator).
 
 For McuZone board you will need to add:
@@ -1447,9 +1456,7 @@ For McuZone board you will need to add:
 dtoverlay=dwc2,dr_mode=host
 ----
 
-
 into /boot/config.txt before first boot to enable USB ports.
-
 
 List of the boards: https://pipci.jeffgeerling.com/boards_cm.html
 
