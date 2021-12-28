@@ -2250,3 +2250,11 @@ To find out the source of the conflict you can use:
 sudo lsof /dev/ttyXXXX
 ----
 
+=== Display what serial devices you have
+
+[source, shell]
+----
+sudo python3 -m serial.tools.list_ports -v -s
+----
+
+
