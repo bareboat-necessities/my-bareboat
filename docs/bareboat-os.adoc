@@ -2269,9 +2269,10 @@ See: https://github.com/Botspot/pi-apps
 
 === Good IDEs for programmers
 
-- IntelliJ Idea (Community Edition) for Java
-- PyCharm (Community Edition) for Python
+- IntelliJ Idea (Community Edition) for Java https://www.jetbrains.com/idea/download/#section=linux
+- PyCharm (Community Edition) for Python https://www.jetbrains.com/pycharm/download/#section=linux
 - WxFormBuilder for UI App Design for Python https://github.com/wxFormBuilder/wxFormBuilder
-
+- Visual Studio Code for C/C++
+- Arduino IDE for micro-controllers C/C++
 
 
