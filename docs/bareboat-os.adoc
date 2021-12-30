@@ -1358,6 +1358,10 @@ SL113    13"   https://www.alibaba.com/product-detail/Marine-displays-IP67-water
 
 SL100W   10"   https://www.sihovision.com/full-ip65-high-brightness-touch-monitor/waterproof-monitor-sl100w.html
 
+
+More ideas from TouchThink: https://www.touchtecs.com/marine-monitor/ip65-sunlight-readable-marine-display-15-inch.html
+
+
 Pick HDMI screen over DSI as they do not take extra GPIO pins which you might have other plans for.
 Most touchscreens nowadays will be capacitive multi-touch due to better durability and clearness.
 
