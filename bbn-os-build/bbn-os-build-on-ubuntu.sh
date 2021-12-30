@@ -7,7 +7,7 @@ export PKG_DISTRO=buster
 export PKG_ARCH=armhf
 export EMU=on
 
-WORK_DIR=$(pwd):/ci-source
+WORK_DIR=$(pwd)/ci-source
 
 rm -rf $WORK_DIR
 mkdir $WORK_DIR && cd $WORK_DIR
