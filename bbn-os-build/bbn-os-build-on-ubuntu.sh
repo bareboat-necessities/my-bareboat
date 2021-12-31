@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+# For Ubuntu 16.07
+
 export DOCKER_IMAGE=arm32v7/debian:buster
 export CONTAINER_DISTRO=debian:buster
 export PKG_RELEASE=raspbian
@@ -8,6 +10,8 @@ export PKG_ARCH=armhf
 export EMU=on
 
 WORK_DIR=$(pwd)/ci-source
+
+apt-get install curl git docker.io
 
 rm -rf $WORK_DIR
 mkdir $WORK_DIR && cd $WORK_DIR
