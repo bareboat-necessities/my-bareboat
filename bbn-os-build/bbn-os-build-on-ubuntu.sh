@@ -16,8 +16,8 @@ apt-get install curl git docker.io
 rm -rf $WORK_DIR
 mkdir $WORK_DIR && cd $WORK_DIR
 
-#git clone --branch buster https://github.com/bareboat-necessities/lysmarine_gen .
-git clone --branch incremental https://github.com/bareboat-necessities/lysmarine_gen .
+git clone --branch buster https://github.com/bareboat-necessities/lysmarine_gen .
+#git clone --branch incremental https://github.com/bareboat-necessities/lysmarine_gen .
 
 mv *install-scripts* cross-build-release/
 chmod a+x .circleci/*.sh
