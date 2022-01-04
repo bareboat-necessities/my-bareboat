@@ -24,5 +24,5 @@ chmod a+x .circleci/*.sh
 
 .circleci/build-ci.sh 2>&1 | tee build.log
 
-IMG=$(ls cross-build-release/release/*.img)
+IMG=$(ls cross-build-release/release/*/*.img)
 xz -z -c -v -5 --threads=4 $IMG > $IMG.xz
