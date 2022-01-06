@@ -1096,6 +1096,8 @@ NOTE: Versions 2021-11-29 and after have this issue fixed.
 Set it up to be on your boat Wi-Fi. You can also pair it with your pi via Bluetooth and play music via Amazon
 EchoDot, etc. Mopidy seems needs a restart to switch to Bluetooth playing.
 
+Say "Alexa, pair a device". Proceed to device pairing. Make sure you close bluetooth settings window
+in BBN OS before playing music to avoid skipping.
 
 === QtVlm Chartplotter
 
