@@ -1139,6 +1139,8 @@ cd /home/user/add-ons
 ./homeassistant-install.sh
 ----
 
+Example of use case: https://boathackers.com/boat-energy-management-using-victron-and-home-assistant/
+
 === Suggestions
 
 The beauty of Linux is that you can customize it for your needs in infinite ways.
