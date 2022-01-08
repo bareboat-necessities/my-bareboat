@@ -1139,7 +1139,11 @@ cd /home/user/add-ons
 ./homeassistant-install.sh
 ----
 
-Example of use case: https://boathackers.com/boat-energy-management-using-victron-and-home-assistant/
+Examples of use cases:
+
+https://boathackers.com/boat-energy-management-using-victron-and-home-assistant/
+
+https://boathackers.com/dynamically-set-location-in-home-assistant-for-boats/
 
 === Suggestions
 
