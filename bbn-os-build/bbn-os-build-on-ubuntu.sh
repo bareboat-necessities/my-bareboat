@@ -52,7 +52,6 @@ else
 fi
 
 zerofree $rootfs/
-zerofree $rootfs/boot
 
 umount $rootfs/boot
 umount $rootfs
