@@ -25,38 +25,4 @@ chmod a+x .circleci/*.sh
 .circleci/build-ci.sh 2>&1 | tee build.log
 
 IMG=$(ls cross-build-release/release/*/*.img)
-
-# Mount the image and make the binds required to chroot.
-losetup -f
-partitions=$(kpartx -sav $IMG | cut -d' ' -f3)
-partQty=$(echo $partitions | wc -w)
-echo $partQty partitions detected.
-
-# mount partition table in /dev/loop
-loopId=$(echo $partitions | grep -oh '[0-9]*' | head -n 1)
-
-rootfs=./rootfs
-mkdir -p $rootfs/boot
-
-mountOpt="-o ro"
-
-if [ $partQty == 2 ]; then
-  mount $mountOpt -v /dev/mapper/loop${loopId}p2 $rootfs/
-  if [ ! -d $rootfs/boot ]; then mkdir $rootfs/boot; fi
-  mount $mountOpt -v /dev/mapper/loop${loopId}p1 $rootfs/boot/
-elif [ $partQty == 1 ]; then
-  mount $mountOpt -v /dev/mapper/loop${loopId}p1 $rootfs/
-else
-  echo "ERROR: unsuported amount of partitions."
-  exit 1
-fi
-
-zerofree $rootfs/
-
-umount $rootfs/boot
-umount $rootfs
-
-kpartx -d $IMG
-losetup -d $IMG
-
 xz -z -c -v -6 --threads=8 $IMG > $IMG.xz
