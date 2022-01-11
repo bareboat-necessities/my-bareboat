@@ -122,11 +122,11 @@ https://github.com/bareboat-necessities/lysmarine_gen#download
 
 Alternative place to download if the previous link doesn't work for you:
 
-https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-01-04
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-01-10
 
 Past LTS release:
 
-https://archive.org/details/lysmarine-bbn-linux-LTS4
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-01-04
 
 
 ==== 32-bit vs 64-bit images
@@ -1131,7 +1131,8 @@ cd /home/user/add-ons
 
 === HomeAssistant
 
-You can install HomeAssistant (for many BBN users their boat is their home) via add-ons:
+You can install HomeAssistant (for many BBN users their boat is their home) via add-ons.
+You need to be connected to Internet, and give 15 mins or so after the below commands finish:
 
 [source,shell]
 ----
