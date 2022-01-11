@@ -11,7 +11,7 @@ export EMU=on
 
 WORK_DIR=$(pwd)/ci-source
 
-apt-get install curl git docker.io zerofree
+apt-get install curl git docker.io zerofree kpartx
 
 rm -rf $WORK_DIR
 mkdir $WORK_DIR && cd $WORK_DIR
@@ -47,7 +47,7 @@ if [ $partQty == 2 ]; then
 elif [ $partQty == 1 ]; then
   mount $mountOpt -v /dev/mapper/loop${loopId}p1 $rootfs/
 else
-  log "ERROR: unsuported amount of partitions."
+  echo "ERROR: unsuported amount of partitions."
   exit 1
 fi
 
