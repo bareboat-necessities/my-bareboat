@@ -2286,6 +2286,7 @@ sudo python3 -m serial.tools.list_ports -v -s
 
 See: https://github.com/Botspot/pi-apps
 
+
 === Good IDEs for programmers
 
 - IntelliJ Idea (Community Edition) for Java https://www.jetbrains.com/idea/download/#section=linux
@@ -2295,3 +2296,9 @@ See: https://github.com/Botspot/pi-apps
 - Arduino IDE for micro-controllers C/C++
 
 
+=== Video Editing
+
+[source, shell]
+----
+sudo apt install openshot
+----
