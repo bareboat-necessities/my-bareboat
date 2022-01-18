@@ -2062,6 +2062,11 @@ Z Wave is similar to Zigbee but uses different RF spectrum which doesn't clash w
 
 NFC (Near field communication) is for wireless communication for two devices over distance up to 4 cm.
 
+==== RFID
+
+Radio frequency identification. Passive and active tags to carry an identifier information which can be read
+over some distance avd not necessarily withing light on sight (not like barcodes).
+
 
 ==== NavTex, WeatherFax
 
