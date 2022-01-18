@@ -2050,10 +2050,18 @@ Bluetooth range is really short, and it is about 10 meters.
 
 433MHz FM RF range is about 300 meters. Often used for remote controls. Wireless masthead wind transducers, etc.
 
-==== Zigbee
+==== Zigbee, Z Wave
 
 Zigbee operates on short distances 10-100m in about same spectrum range as WiFi with lower
 bandwidth but higher reliability. There are some products for boats such as from https://www.zigboat.com/
+Zigbee is for LAN (comparing with Bluetooth being point-to-point).
+
+Z Wave is similar to Zigbee but uses different RF spectrum which doesn't clash with WiFi.
+
+==== NFC
+
+NFC (Near field communication) is for wireless communication for two devices over distance up to 4 cm.
+
 
 ==== NavTex, WeatherFax
 
