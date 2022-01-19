@@ -1146,6 +1146,8 @@ https://boathackers.com/boat-energy-management-using-victron-and-home-assistant/
 
 https://boathackers.com/dynamically-set-location-in-home-assistant-for-boats/
 
+ESP32 devices can be managed using https://esphome.io
+
 === Suggestions
 
 The beauty of Linux is that you can customize it for your needs in infinite ways.
