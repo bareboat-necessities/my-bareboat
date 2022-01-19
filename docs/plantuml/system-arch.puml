@@ -24,7 +24,7 @@ node Batteries #moccasin [
 ]
 
 node Chargers #moccasin [
- Chargers
+ Chargers (Victron, etc)
 ]
 
 node Engines #moccasin [
@@ -32,7 +32,7 @@ node Engines #moccasin [
 ]
 
 node Antenna_VHF #moccasin [
-  VHF Antenna
+  <b>VHF Antenna
 ]
 
 node AIS [
@@ -158,6 +158,11 @@ cloud Bluetooth [
  Bluetooth
 ]
 
+cloud ZigBee [
+ ZigBee
+ Z Wave
+]
+
 rectangle Iridium #moccasin [
  Iridium Phone
 ]
@@ -263,11 +268,12 @@ cloud Cloud_Internet [
  Email: any
  Remote Desktop Access: Cloud VNC
  Software updates: apt, SignalK, OpenCPN, AvNav, etc
+ HomeAssistant, ESPHome.io
  WebCam
 ]
 
 cloud Lora [
- LoraWAN
+ LoRa
  Asset Tracking
  Dinghy Locator
 ]
@@ -314,6 +320,7 @@ RPI -d- Esp32
 RPI -u- WiFi_Local
 RPI -u- Keyboard_Mouse
 RPI -l- Panel
+RPI - ZigBee
 
 Radio_Data -u- RPI
 Radio_Data -u- SSB
@@ -390,5 +397,6 @@ AIS -- Antenna_AIS
 
 Other_Sensors -- Engines
 Other_Sensors -- Batteries
+Other_Sensors -- ZigBee
 
 @enduml
