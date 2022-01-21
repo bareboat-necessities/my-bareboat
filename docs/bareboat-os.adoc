@@ -894,6 +894,17 @@ For those who are comfortable writing software the scripts to create this image
 stored on the image itself (for the reference) in /install_scripts.
 The full source code to create the image is available at: <https://github.com/bareboat-necessities/lysmarine_gen>
 
+==== Building without CircleCi
+
+Install Ubuntu 16.04.7 64-bit on PC. Run from shell:
+
+[source, shell]
+----
+curl -L \
+ https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/bbn-os-build/bbn-os-build-on-ubuntu.sh \
+ | sudo bash
+----
+
 === Shutting Down / Rebooting
 
 On the desktop click on the 'Commands' icon. You will see a menu from where
