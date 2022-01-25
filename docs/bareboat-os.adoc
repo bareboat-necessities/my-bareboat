@@ -985,6 +985,15 @@ sudo nano /usr/share/X11/xorg.conf.d/90-touchinput.conf
 
 and save the file.
 
+Calibration issues can be resolved by running:
+
+[source, shell]
+----
+xinput_calibrator
+----
+
+and following on-screen instructions.
+
 NOTE: The touchscreen issues mentioned below fixed since 2021-09-10 release.
 
 * Some applications (namely OpenCPN and gtk2 based as well as some Qt) sometimes stop responding to touch events.
