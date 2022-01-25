@@ -961,6 +961,30 @@ cd /home/user/add-ons
 
 Use the same procedure if you change your touchscreen to another one.
 
+Check your /usr/share/X11/xorg.conf.d/90-touchinput.conf file:
+
+[source, shell]
+----
+cat /usr/share/X11/xorg.conf.d/90-touchinput.conf
+----
+
+If MatchProduct string in it is empty you will need to put it in manually.
+First find the product:
+
+[source, shell]
+----
+cat /var/log/Xorg.0.log | grep TOUCH
+----
+
+Then copy and paste product name into MatchProduct section
+
+[source, shell]
+----
+sudo nano /usr/share/X11/xorg.conf.d/90-touchinput.conf
+----
+
+and save the file.
+
 NOTE: The touchscreen issues mentioned below fixed since 2021-09-10 release.
 
 * Some applications (namely OpenCPN and gtk2 based as well as some Qt) sometimes stop responding to touch events.
