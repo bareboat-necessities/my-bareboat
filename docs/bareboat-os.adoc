@@ -2375,7 +2375,7 @@ sudo apt install openshot
 IMU PCBs are marked with X-Y-Z labels. There are two conventions:
 
 * ENU (X-East, Y-North, Z-Up)
-* NED (X-North, E-East, Z-Down)
+* NED (X-North, Y-East, Z-Down)
 
 Check what your IMU shows according to the diagram on its board.
 
