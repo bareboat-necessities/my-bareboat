@@ -2369,3 +2369,14 @@ See: https://github.com/Botspot/pi-apps
 ----
 sudo apt install openshot
 ----
+
+=== How to mount IMU
+
+IMU PCBs are marked with X-Y-Z labels. There are two conventions:
+
+* ENU (X-East, Y-North, Z-Up)
+* NED (X-North, E-East, Z-Down)
+
+Check what your IMU shows according to the diagram on its board.
+
+
