@@ -2379,4 +2379,9 @@ IMU PCBs are marked with X-Y-Z labels. There are two conventions:
 
 Check what your IMU shows according to the diagram on its board.
 
+=== Sound via HDMI
+
+To make sure that sound works via HDMI (when you enable so in other programs)
+edit the /boot/config.txt and set hdmi_drive=2 in it.
+
 
