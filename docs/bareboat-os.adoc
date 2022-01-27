@@ -1736,6 +1736,7 @@ Vendors:
 - Comar Systems https://comarsystems.com/
 - gadgetpool.de https://www.gadgetpool.eu/
 - Star Tracking https://www.star-tracking.com/
+- Vela-Navega https://vela-navega.com/
 
 
 === NMEA 2000
