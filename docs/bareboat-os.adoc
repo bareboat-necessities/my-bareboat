@@ -2406,6 +2406,7 @@ open source systems
 - If you want a boat computer below deck (non-waterproof screen and computer) even if you are just a day sailor
 then you can build much cheaper system with open source like BBN OS combined with sensors you have onboard
 - Consider other features costs like onboard entertainment (music, videos watching) and cameras
+- Internet connectivity on your boat via WiFi at marinas or via LTE is an important feature to have
 - For off-shore sailors with SSB radio experience consider what you can have with open source solutions on Pi
 - DIY solutions for autopilot can be quite cost effective (You don't need whole BBN OS for it)
 
