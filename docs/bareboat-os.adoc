@@ -2388,3 +2388,23 @@ To make sure that sound works via HDMI (when you enable so in other programs)
 edit the /boot/config.txt and set hdmi_drive=2 in it.
 
 
+== Cost of Open Source System vs Commercial Marine Electronics
+
+How much does it cost to build my system? Does it cost less than commercial marine products?
+The answer is really depends on what you are trying to achieve.
+
+- Open source like BBN OS have features simply not available in traditional marine electronics
+- Your cost effective solution for your boat is going to be a mix of commercial and open products
+- If you just need a chart plotter in a cockpit then a commercial product will do
+- If you want a smart boat with a lot of sensors then you need to get smart about open source options
+- If you live aboard and need a board computer then look at BBN OS and lower power consuming Pi
+- With commercial products you end up with lots of black boxes with expensive proprietary connectors and plugs
+- With open source you have modular system in which components are easier replaceable and way cheaper
+- Day cruiser within cellphone receptions will be fine with a smart tablet or phone
+- Live aboard person or someone who cruises for weeks and offshore sailors can benefit greatly from BBN OS and other
+open source systems
+- If you want a boat computer below deck (non-waterproof screen and computer) even if you are just a day sailor
+then you can build much cheaper system with open source like BBN OS
+
+
+
