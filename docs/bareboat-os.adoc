@@ -2404,7 +2404,7 @@ The answer is really depends on what you are trying to achieve.
 - Live aboard person or someone who cruises for weeks and offshore sailors can benefit greatly from BBN OS and other
 open source systems
 - If you want a boat computer below deck (non-waterproof screen and computer) even if you are just a day sailor
-then you can build much cheaper system with open source like BBN OS
+then you can build much cheaper system with open source like BBN OS combined with sensors you have onboard
 
 
 
