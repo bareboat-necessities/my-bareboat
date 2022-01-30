@@ -2433,6 +2433,15 @@ Example: The following command will play FM 104.3 MHz Station on your speaker:
 rtl_fm -M wbfm -f 104.3M | play -r 32k -t raw -e s -b 16 -c 1 -V1 -
 ----
 
+=== Profiling OpenCPN
+
+[source, shell]
+----
+sudo apt install linux-perf-5.10
+opencpn
+perf top -p $(pidof opencpn)
+----
+
 == Cost of Open Source System vs Commercial Marine Electronics
 
 How much does it cost to build my system? Does it cost less than commercial marine products?
