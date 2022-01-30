@@ -2400,6 +2400,16 @@ To make sure that sound works via HDMI (when you enable so in other programs)
 edit the /boot/config.txt and set hdmi_drive=2 in it.
 
 
+=== OpenCPN upgrade
+
+[source, shell]
+----
+sudo apt update
+sudo apt install opencpn
+----
+
+Start OpenCPN and update catalog in Plugin Download Manager. Then update plugins one by one.
+
 == Cost of Open Source System vs Commercial Marine Electronics
 
 How much does it cost to build my system? Does it cost less than commercial marine products?
