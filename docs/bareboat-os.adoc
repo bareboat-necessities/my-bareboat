@@ -2382,6 +2382,18 @@ IMU PCBs are marked with X-Y-Z labels. There are two conventions:
 
 Check what your IMU shows according to the diagram on its board.
 
+=== WaveShare 10 dof install
+
+This is what I had to do to set up WaveShare 10 dof v2 (C) IMU and baro/temp sensors.
+
+After connecting 4 wires to Pi GPIO pins (as per vendor instructions) for IMU
+to work I just needed to restart pypilot.
+
+For baro/temp sensors (which are part of Waveshare 10 dof) I had to activate
+BMP280/BME280 plugin in SignalK. I put 'outside' into SignalK path.
+And set polling period to 20 seconds. After that I restarted SignalK and got the values
+in SignalK data feed.
+
 === Sound via HDMI
 
 To make sure that sound works via HDMI (when you enable so in other programs)
