@@ -25,6 +25,11 @@ EndSection
 EOF'
 fi
 
+if [ -f /usr/lib/opencpn/liblogbookkonni_pi.so ]
+then
+  sudo rm -f /usr/lib/opencpn/libLogbookKonni_pi.so
+fi
+
 # rpi-clone
 git clone https://github.com/bareboat-necessities/rpi-clone.git
 cd rpi-clone
