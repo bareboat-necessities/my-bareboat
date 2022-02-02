@@ -1021,6 +1021,15 @@ If you see this message it means you have a poor power supply for your Pi and so
 In that case you need higher amps power supply and raspberry Pi with many devices connected needs 5.2 volts
 power input.
 
+==== Issues during first boot
+
+- Did you wait long enough for desktop to boot?
+- Are you having too many devices plugged in? You just need a keyboard, mouse, touchscreen (video and USB), and
+possibly ethernet.
+- Do you see under-voltage message when you run 'dmesg' from command line?
+- Was SD card burned and verified successfully?
+
+
 === Add-ons
 
 Check /home/user/add-ons directory. It contains number of scripts for installing many additional programs
