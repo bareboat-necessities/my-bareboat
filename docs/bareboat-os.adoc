@@ -1028,7 +1028,7 @@ power input.
 possibly ethernet.
 - Do you see under-voltage message when you run 'dmesg' from command line?
 - Was SD card burned and verified successfully?
-
+- Are you using pi4, CM4 (with wifi), or pi400?
 
 === Add-ons
 
