@@ -2411,6 +2411,8 @@ edit the /boot/config.txt and set hdmi_drive=2 in it.
 
 === OpenCPN upgrade
 
+Making a backup copy of your disk is recommended before doing big changes to your system.
+
 [source, shell]
 ----
 sudo apt update
