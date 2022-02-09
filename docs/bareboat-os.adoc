@@ -894,6 +894,9 @@ For those who are comfortable writing software the scripts to create this image
 stored on the image itself (for the reference) in /install_scripts.
 The full source code to create the image is available at: <https://github.com/bareboat-necessities/lysmarine_gen>
 
+The code should be much easier to understand than openplotter. The code is really just a script of commands
+you run to get things installed.
+
 ==== Building without CircleCi
 
 Install Ubuntu 16.04.7 64-bit on PC. Run from shell:
