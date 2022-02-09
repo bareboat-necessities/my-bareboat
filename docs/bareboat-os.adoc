@@ -1207,6 +1207,32 @@ ESP32 devices can be managed using https://esphome.io
 
 Yor system includes installed SolarThing. See more at https://github.com/wildmountainfarms/solarthing
 
+=== Maiana AIS
+
+Maiana AIS supported via add-ons
+
+[source,shell]
+----
+cd /home/user/add-ons
+./maiana-ais-install.sh
+----
+
+=== Marine Species Identification
+
+When Internet is available you can use Menu link in App Menus->Utilities->Marine Life
+
+=== Knots
+
+There is an application to display basic knots. App Menus->Utilities->Knots
+
+=== ColReg Regulations
+
+English version of ColReg is available under: App Menus->Utilities->ColReg
+
+=== Sailing Education and Certifications
+
+Sailing education links available under: App Menus->Internet->NauticEd Sailing Training
+
 === Suggestions
 
 The beauty of Linux is that you can customize it for your needs in infinite ways.
