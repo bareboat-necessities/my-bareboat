@@ -874,6 +874,11 @@ For offshore sailors there are number of features pre-loaded into the OS image
 
 They do require additional hardware, set up and dedication.
 
+PyPilot based autopilots:
+
+* https://pypilot.org/store/
+* https://pcnautic.nl/nl/autopilot
+
 === Watching Movies
 
 Watching on-line (or listening) prepaid copyrighted content (Netflix, Amazon PrimeVideo, Google, Spotify, etc) in
