@@ -1193,6 +1193,8 @@ cd /home/user/add-ons
 ./homeassistant-install.sh
 ----
 
+It will also install EspHome.
+
 Examples of use cases:
 
 https://boathackers.com/boat-energy-management-using-victron-and-home-assistant/
@@ -1200,6 +1202,10 @@ https://boathackers.com/boat-energy-management-using-victron-and-home-assistant/
 https://boathackers.com/dynamically-set-location-in-home-assistant-for-boats/
 
 ESP32 devices can be managed using https://esphome.io
+
+=== SolarThing (Solar Power Monitoring)
+
+Yor system includes installed SolarThing. See more at https://github.com/wildmountainfarms/solarthing
 
 === Suggestions
 
