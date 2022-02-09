@@ -2507,9 +2507,32 @@ opencpn
 perf top -p $(pidof opencpn)
 ----
 
+=== TouchThink Marine HDMI Touchscreen
+
+https://www.touchtecs.com/ produces reasonably priced touchscreen, which can be used in a cockpit.
+
+The product is coded as TouchThink TPC-CD-M101, but you have to spec out your order precisely:
+
+* 10.1 inch, 1280*800 16:10
+* 10 points capacitive touch screen monitor,
+* 1000nit high brightness, -20 to 70 degree wide use temperature.
+* industrial front IP65 waterproof dust-proof vehicle use aluminum alloy bezel style.
+* 7H hardness tempered glass grade A
+* with 12-36V DC.
+* waterproof aviation ports: HDMI+touch+DC
+* build-in HDMI speakers (on sides under bezel)
+* front light sensor
+* VESA mountable
+* 5 waterproof control buttons on front bezel
+* front status light indicator
+* with Aviation port to standard port cables: HDMI cable, with touch cable, DC pigtail power cable, with AC/DC power adapter.
+The EXW price is ~us$222/unit for 1-50 units.
+
+udevadm info reports this device name as "WingCool Inc. TouchScreen"
+
 == Cost of Open Source System vs Commercial Marine Electronics
 
-How much does it cost to build my system? Does it cost less than commercial marine products?
+How much* does it cost to build my system? Does it cost less than commercial marine products?
 The answer is really depends on what you are trying to achieve.
 
 - Open source like BBN OS have features simply not available in traditional marine electronics
