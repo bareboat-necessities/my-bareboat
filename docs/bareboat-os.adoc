@@ -2498,6 +2498,19 @@ sudo ./stdc-install.sh
 
 Check how to use combo of stdc_demod, stdc_decoder, stdc_parser (https://github.com/cropinghigh/stdcdec)
 
+=== Tripwire
+
+Open Source Tripwire® is a security and data integrity tool for monitoring and alerting on file & directory changes.
+See: https://github.com/Tripwire/tripwire-open-source
+
+Install:
+
+[source, shell]
+----
+cd ~/add-ons
+./tripwire-install.sh
+----
+
 === Profiling OpenCPN
 
 [source, shell]
