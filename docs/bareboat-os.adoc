@@ -1231,7 +1231,11 @@ English version of ColReg is available under: App Menus->Utilities->ColReg
 
 === Sailing Education and Certifications
 
-Sailing education links available under: App Menus->Internet->NauticEd Sailing Training
+Sailing education links available under: App Menus->Internet->Nauticed Sailing Training
+
+=== Find a Crew
+
+'Find a Crew' link available under: App Menus->Internet->Find a Crew
 
 === Suggestions
 
