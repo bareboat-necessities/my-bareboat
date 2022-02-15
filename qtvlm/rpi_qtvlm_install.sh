@@ -2,9 +2,9 @@
 
 myArch=$(dpkg --print-architecture)
 
-FID=407
+FID=406
 if [ "armhf" != "$myArch" ] ; then
-    FID=406
+    FID=407
 fi
 
 # See: https://www.meltemus.com
