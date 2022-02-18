@@ -459,6 +459,8 @@ sudo systemctl start pypilot@pypilot
 Apart from the official PyPilot documentation you will find this WiKi
 https://github.com/pypilot/workbook/wiki very useful as well.
 
+Commercial PyPilot hardware https://pcnautic.gitbook.io/autopilot/inhoud-autopilot-set
+
 === UI for controlling autopilots
 
 There are three options:
