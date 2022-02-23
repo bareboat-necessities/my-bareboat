@@ -2536,14 +2536,13 @@ The product is coded as TouchThink TPC-CD-M101, but you have to spec out your or
 * with 12-36V DC.
 * waterproof aviation ports: HDMI+touch+DC
 * build-in HDMI speakers (on sides under bezel)
-* front light sensor
+* front light sensor, photo sensitive head. change brightness with ambient light
 * VESA mountable
 * 5 waterproof control buttons on front bezel
 * front status light indicator
 * with Aviation port to standard port cables: HDMI cable, with touch cable, DC pigtail power cable, with AC/DC power adapter.
 The EXW price is ~us$222/unit for 1-50 units.
-
-Ask for a gasket with a panel flush mount kit too.
+* Ask for a gasket with a panel flush mount kit too.
 
 udevadm info reports this device name as "WingCool Inc. TouchScreen"
 
