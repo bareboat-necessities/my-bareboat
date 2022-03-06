@@ -2513,6 +2513,13 @@ cd ~/add-ons
 ./tripwire-install.sh
 ----
 
+=== Renaming host
+
+[source, shell]
+----
+sudo /usr/local/sbin/bbn-rename-host my-new-host-name
+----
+
 === Profiling OpenCPN
 
 [source, shell]
