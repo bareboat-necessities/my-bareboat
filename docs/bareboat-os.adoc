@@ -116,17 +116,17 @@ Green is Pi (the central element).
 [#download]
 === Download Image
 
-Download SD card image (~3Gb file):
+Download SD card image (~2.8Gb file):
 
 https://github.com/bareboat-necessities/lysmarine_gen#download
 
 Alternative place to download if the previous link doesn't work for you:
 
-https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-03-06
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-03-13
 
 Past LTS release:
 
-https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-02-10
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-03-06
 
 
 ==== 32-bit vs 64-bit images
