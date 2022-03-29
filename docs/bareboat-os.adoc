@@ -2284,11 +2284,9 @@ disabling echo on serial port might be required, as well as enabling ZDA NMEA ti
 
 ublox GPS receivers have extensive configuration. Check: https://gpsd.io/ubxtool-examples.html
 
-=== RTL8812AU drivers
+=== Other WiFi drivers
 
-Following these steps it compiled fine from the first attempt https://github.com/aircrack-ng/rtl8812au
-
-There is also a script to install various additional WiFi cards drivers
+There is a script to install various additional WiFi cards drivers
 
 [source, shell]
 ----
