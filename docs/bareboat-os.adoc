@@ -2350,6 +2350,11 @@ With higher resolution monitors you might want to adjust font size and UI elemen
 
 - Press 'OK' to apply settings
 
+=== Setting up multiple WiFi access points
+
+For seamless switching for WiFi client from one access point to another you can set up all access points
+with the same SSID and credentials on different radio frequiency channels.
+
 === Watchdog
 
 Raspberry Pi has built in hardware which allows automatic restarts in case
