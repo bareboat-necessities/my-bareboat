@@ -6,11 +6,11 @@ services:
 before_install:
   - mkdir -p output
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker pull asciidoctor/docker-asciidoctor:1.7
+  - docker pull asciidoctor/docker-asciidoctor:1.17.1
 
 script:
-  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-html asciidoctor/docker-asciidoctor:1.7 asciidoctor -b html5 -d book -a icons=font -a toc=left -D /documents/output docs/*.adoc
-  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-pdf asciidoctor/docker-asciidoctor:1.7 asciidoctor-pdf -D /documents/output docs/*.adoc
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-html asciidoctor/docker-asciidoctor:1.17.1 asciidoctor -b html5 -d book -a icons=font -a toc=left -D /documents/output docs/*.adoc
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-pdf asciidoctor/docker-asciidoctor:1.17.1 asciidoctor-pdf -D /documents/output docs/*.adoc
 
 after_error:
   - docker logs asciidoc-to-html
