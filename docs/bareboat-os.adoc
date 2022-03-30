@@ -2562,6 +2562,12 @@ The EXW price is ~us$222/unit for 1-50 units.
 
 udevadm info reports this device name as "WingCool Inc. TouchScreen"
 
+You can also request an embedded version with EDATech CM4 module built-in:
+
+https://www.edatec.cn/en/Product/Camera_Modules/2019/0826/76.html
+
+and customize interfaces.
+
 == Cost of Open Source System vs Commercial Marine Electronics
 
 How much* does it cost to build my system? Does it cost less than commercial marine products?
