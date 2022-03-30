@@ -340,7 +340,8 @@ set up):
 sudo rpi-clone sda
 ----
 
-NOTE: Before doing it, go into Disks tool from App Menu/Utilities/Disks and remove all partitions from your SSD drive.
+NOTE: Before doing it (if you had aprevious installation), go into Disks tool from App Menu/Utilities/Disks
+and remove all partitions from your SSD drive.
 
 
 If you have NVMe disk, then instead of sda it will be named as nvme0n1 (or something like that, check /dev/ directory).
