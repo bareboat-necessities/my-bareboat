@@ -122,11 +122,11 @@ https://github.com/bareboat-necessities/lysmarine_gen#download
 
 Alternative place to download if the previous link doesn't work for you:
 
-https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-03-13
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-03-30
 
 Past LTS release:
 
-https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-03-06
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-03-13
 
 
 ==== 32-bit vs 64-bit images
