@@ -2566,7 +2566,7 @@ You can also request an embedded version with EDATech CM4 module built-in:
 
 https://www.edatec.cn/en/Product/Camera_Modules/2019/0826/76.html
 
-and customize interfaces.
+and customize interfaces. For example, you can have Ethernet, USB, I2C on the back.
 
 == Cost of Open Source System vs Commercial Marine Electronics
 
