@@ -2088,6 +2088,14 @@ SignalK comes with:
 - Victron Venus OS Plugin
 - ModBus Client Plugin
 
+=== Sonars
+
+==== EchoZilla Open Source Sonar
+
+EchoZilla Open Source Sonar: https://echozilla.co.uk/
+
+Source code: https://echozilla.co.uk/pages/developers
+
 === IR (Infrared)
 
 The Raspberry Pi can receive and send IR signals using its GPIO pins.
