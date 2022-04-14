@@ -1,13 +1,8 @@
 .radial-gauge {
-	background-color: #fff;
-	text-align: center;
-	padding: 20px 0;
-	margin: 20px 0;
 }
+
 .radial-progress {
-    transform: rotate(-90deg);
     font-family: Verdana, Sans-Serif;
-    margin: 0 20px;
 }
 
 .radial-progress .tick {
@@ -18,7 +13,6 @@
 .radial-progress .tick.quarterTick {
     stroke: white;
     stroke-width: 4;
-    opacity: 1;
 }
 .radial-progress .tick-labels {
     font-size: .6rem;
@@ -34,15 +28,7 @@
     stroke-width: 5;
 }
 
-.radial-progress-bar.up {
-    stroke: #43A047;
-}
-
-.radial-progress-bar.down {
-    stroke: #e53935;
-}
-
 .needle .point,
 .needle .center {
-    fill: red;
+    fill: orange;
 }
