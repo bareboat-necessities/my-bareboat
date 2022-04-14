@@ -28,6 +28,16 @@
     stroke-width: 5;
 }
 
+.value-type {
+    fill: white;
+}
+
+.value-label {
+    fill: orange;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
 .needle .point,
 .needle .center {
     fill: orange;

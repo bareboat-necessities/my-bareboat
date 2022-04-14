@@ -54,16 +54,18 @@ function initArcs() {
                 <text x="100" y="100" text-anchor="end" dominant-baseline="middle" transform="translate(68,0)">90</text>
                 <text x="100" y="100" text-anchor="middle" dominant-baseline="text-after-edge" transform="translate(0,68)">180</text>
                 <text x="100" y="100" text-anchor="start" dominant-baseline="middle" transform="translate(-68,0)">90</text>
+                <text x="100" y="130" class="value-type" text-anchor="middle" dominant-baseline="middle">AWS</text>
+                <text x="100" y="115" class="value-label" text-anchor="middle" dominant-baseline="middle">15.1 kt</text>
             </g>
             <circle class="radial-track" cx="100" cy="100" r="74" fill="none"/>
             <path id="arc1" fill="none" stroke="green" stroke-width="5"/>
             <path id="arc2" fill="none" stroke="red" stroke-width="5"/>
             <g id="needle" class="needle">
-                <polygon class="point" points="100,95 100,105 150,100">
+                <polygon class="point" points="100,97 100,103 150,100">
                     <animateTransform attributeName="transform" type="rotate" from="-80.5 100 100" to="-16.2 100 100" dur=".5s"
                                       fill="freeze"/>
                 </polygon>
-                <circle class="center" cx="100" cy="100" r="8"/>
+                <circle class="center" cx="100" cy="100" r="3"/>
             </g>
         </svg>
     </div>
