@@ -21,48 +21,49 @@ function describeArc(x, y, radius, startAngle, endAngle) {
     return d;
 }
 function initArcs() {
-    document.getElementById('arc1').setAttribute('d', describeArc(60, 60, 54, 0, 45));
-    document.getElementById('arc2').setAttribute('d', describeArc(60, 60, 54, -45, 0));
+    document.getElementById('arc1').setAttribute('d', describeArc(100, 100, 54, 0, 45));
+    document.getElementById('arc2').setAttribute('d', describeArc(100, 100, 54, -45, 0));
 }
     </script>
 </head>0
 <body onload="initArcs();">
 <div>
     <div style="height: 500px; width: 500px; padding: 30px; background: black;">
-        <svg class="radial-progress" width="120" height="120">
+        <svg class="radial-progress" width="220" height="220">
             <defs>
-                <line id="tick" x1="104" y1="60" x2="108" y2="60" stroke-linecap="round"/>
+                <line id="tick" x1="144" y1="100" x2="148" y2="100" stroke-linecap="round"/>
+                <line id="tickQ" x1="140" y1="100" x2="148" y2="100" stroke-linecap="round"/>
             </defs>
             <g id="ticks">
-                <use class="tick quarterTick" href="#tick" transform="rotate(0 60 60)"/>
-                <use class="tick" href="#tick" transform="rotate(30 60 60)"/>
-                <use class="tick" href="#tick" transform="rotate(60 60 60)"/>
-                <use class="tick quarterTick" href="#tick" transform="rotate(90 60 60)"/>
-                <use class="tick" href="#tick" transform="rotate(120 60 60)"/>
-                <use class="tick" href="#tick" transform="rotate(150 60 60)"/>
-                <use class="tick quarterTick" href="#tick" transform="rotate(180 60 60)"/>
-                <use class="tick" href="#tick" transform="rotate(210 60 60)"/>
-                <use class="tick" href="#tick" transform="rotate(240 60 60)"/>
-                <use class="tick quarterTick" href="#tick" transform="rotate(270 60 60)"/>
-                <use class="tick" href="#tick" transform="rotate(300 60 60)"/>
-                <use class="tick" href="#tick" transform="rotate(330 60 60)"/>
-                <use class="tick quarterTick" href="#tick" transform="rotate(360 60 60)"/>
+                <use class="tick quarterTick" href="#tickQ" transform="rotate(0 100 100)"/>
+                <use class="tick" href="#tick" transform="rotate(30 100 100)"/>
+                <use class="tick" href="#tick" transform="rotate(60 100 100)"/>
+                <use class="tick quarterTick" href="#tickQ" transform="rotate(90 100 100)"/>
+                <use class="tick" href="#tick" transform="rotate(120 100 100)"/>
+                <use class="tick" href="#tick" transform="rotate(150 100 100)"/>
+                <use class="tick quarterTick" href="#tickQ" transform="rotate(180 100 100)"/>
+                <use class="tick" href="#tick" transform="rotate(210 100 100)"/>
+                <use class="tick" href="#tick" transform="rotate(240 100 100)"/>
+                <use class="tick quarterTick" href="#tickQ" transform="rotate(270 100 100)"/>
+                <use class="tick" href="#tick" transform="rotate(300 100 100)"/>
+                <use class="tick" href="#tick" transform="rotate(330 100 100)"/>
+                <use class="tick quarterTick" href="#tickQ" transform="rotate(360 100 100)"/>
             </g>
             <g id="tickLabels" class="tick-labels">
-                <text x="60" y="60" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,-38)">0</text>0
-                <text x="60" y="60" text-anchor="end" dominant-baseline="middle" transform="translate(38,0)">90</text>
-                <text x="60" y="60" text-anchor="middle" dominant-baseline="text-after-edge" transform="translate(0,38)">180</text>
-                <text x="60" y="60" text-anchor="start" dominant-baseline="middle" transform="translate(-38,0)">270</text>
+                <text x="100" y="100" text-anchor="middle" dominant-baseline="text-before-edge" transform="translate(0,-68)">0</text>0
+                <text x="100" y="100" text-anchor="end" dominant-baseline="middle" transform="translate(68,0)">90</text>
+                <text x="100" y="100" text-anchor="middle" dominant-baseline="text-after-edge" transform="translate(0,68)">180</text>
+                <text x="100" y="100" text-anchor="start" dominant-baseline="middle" transform="translate(-68,0)">90</text>
             </g>
-            <circle class="radial-track" cx="60" cy="60" r="54" fill="none"/>
+            <circle class="radial-track" cx="100" cy="100" r="74" fill="none"/>
             <path id="arc1" fill="none" stroke="green" stroke-width="5"/>
             <path id="arc2" fill="none" stroke="red" stroke-width="5"/>
             <g id="needle" class="needle">
-                <polygon class="point" points="60,55 60,65 114,60">
-                    <animateTransform attributeName="transform" type="rotate" from="-80.5 60 60" to="-16.2 60 60" dur=".5s"
+                <polygon class="point" points="100,95 100,105 150,100">
+                    <animateTransform attributeName="transform" type="rotate" from="-80.5 100 100" to="-16.2 100 100" dur=".5s"
                                       fill="freeze"/>
                 </polygon>
-                <circle class="center" cx="60" cy="60" r="8"/>
+                <circle class="center" cx="100" cy="100" r="8"/>
             </g>
         </svg>
     </div>
