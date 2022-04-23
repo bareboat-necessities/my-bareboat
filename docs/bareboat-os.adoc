@@ -2312,6 +2312,17 @@ cd /home/user/add-ons
 Using rclone you can store and sync your files on many cloud vendors storage.
 More: https://github.com/rclone/rclone
 
+=== Backup
+
+There are few programs (installed) you can use for backups:
+
+- Restic https://github.com/restic/restic
+- Timeshift https://github.com/teejee2008/timeshift
+- rclone https://github.com/rclone/rclone
+- rsync https://rsync.samba.org/
+- rpi-clone https://github.com/billw2/rpi-clone
+- and other scriptable solutions
+
 [#phone_gps]
 === Using your smartphone as NMEA GPS receiver
 
