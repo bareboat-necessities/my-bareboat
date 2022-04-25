@@ -2582,7 +2582,7 @@ Common issues:
 also require changes in their own settings)
 
 - Maximized windows appears cut from the screen. Check aspect ratio and HDMI mode related settings for
-your monitor in /boot/config.txt
+your monitor in /boot/config.txt (read about hdmi_cvt options)
 
 - I have high resolution monitor and all icons and fonts are too small. See <<running_with_higher_resolution_monitors>>
 
