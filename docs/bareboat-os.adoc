@@ -2586,6 +2586,9 @@ your monitor in /boot/config.txt (read about hdmi_cvt options)
 
 - I have high resolution monitor and all icons and fonts are too small. See <<running_with_higher_resolution_monitors>>
 
+- Common parameters to look for are: hdmi_cvt, hdmi_drive, hdmi_group, hdmi_mode, disable_fw_kms_setup,
+disable_overscan, overscan_*
+
 
 === TouchThink Marine HDMI Touchscreen
 
