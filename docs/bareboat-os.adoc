@@ -170,7 +170,7 @@ https://www.raspberrypi.org/software/
 
 If your screen resolution is lower than 1024x600 you would need to manually
 set it in /boot/config.txt file, by mounting /boot partition of your SD card
-(on windows its done just by inserting it into SD card slot and editing in a plain text
+(on Windows its done just by inserting it into SD card slot and editing in a plain text
 editor).
 
 Quality of SD card is essential for performance of your system. BBN OS comes
@@ -2358,6 +2358,7 @@ You can set up which programs you want to autostart when desktop comes up in
 Administration->Budgie Desktop Settings. Many users would probably want OpenCPN and KIP Dashboard
 right away.
 
+[#running_with_higher_resolution_monitors]
 === Running with Higher Resolution Monitors
 
 With higher resolution monitors you might want to adjust font size and UI elements to be them bigger on your screen.
@@ -2368,7 +2369,7 @@ With higher resolution monitors you might want to adjust font size and UI elemen
 
 - In OpenCPN go to Tools/Options/User Interface
 
-- Set 'User Intrface Scale Factor' slider (and all other sliders) to 1
+- Set 'User Interface Scale Factor' slider (and all other sliders) to 1
 
 - Press 'OK' to apply settings
 
@@ -2558,6 +2559,33 @@ sudo apt install linux-perf-5.10
 opencpn
 perf top -p $(pidof opencpn)
 ----
+
+=== Setting up monitor
+
+/boot/config.txt contains most important settings for your monitor. You might need to adjust them manually.
+
+See:
+
+https://www.raspberrypi.com/documentation/computers/config_txt.html#video-options
+
+https://www.raspberrypi.com/documentation/computers/config_txt.html#common-display-options
+
+Here are few tip to resolve most common issues. (For touch related issues see different parts of this document)
+
+Common issues:
+
+- Borders on monitor. Check overscan related settings.
+
+- Icons on desktop do not appear square. Not optimal resolution is set in config.txt resulting in wrong aspect ratio.
+
+- I need sound to come out of monitor via HDMI. Set hdmi_drive=2 in /boot/config.txt. (Some individual programs might
+also require changes in their own settings)
+
+- Maximized windows appears cut from the screen. Check aspect ratio and HDMI mode related settings for
+your monitor in /boot/config.txt
+
+- I have high resolution monitor and all icons and fonts are too small. See <<running_with_higher_resolution_monitors>>
+
 
 === TouchThink Marine HDMI Touchscreen
 
