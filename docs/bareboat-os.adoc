@@ -168,6 +168,8 @@ You can use Raspberry Pi Imager for that:
 
 https://www.raspberrypi.org/software/
 
+You do not need to explode .xz image file for it. You can load .xz file into RPI imager as is.
+
 If your screen resolution is lower than 1024x600 you would need to manually
 set it in /boot/config.txt file, by mounting /boot partition of your SD card
 (on Windows its done just by inserting it into SD card slot and editing in a plain text
