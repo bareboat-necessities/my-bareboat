@@ -1,0 +1,90 @@
+= Bareboat Necessities vs OpenPlotter
+mgrouch <mgrouch@users.noreply.github.com>
+{docdate}, Bareboat Necessities vs OpenPlotter
+:imagesdir: images
+:doctype: book
+:organization: Bareboat Necessities
+:title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+ifdef::backend-pdf[]
+:source-highlighter: rouge
+:toc-placement!: manual
+:pdf-page-size: Letter
+:plantumlconfig: plantuml.cfg
+endif::[]
+ifndef::backend-pdf[]
+:toc-placement: manual
+endif::[]
+:experimental:
+:reproducible:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 3
+:encoding: utf-8
+:lang: en
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:env-github:
+
+{zwsp} +
+
+ifndef::backend-pdf[]
+
+image::bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+
+{zwsp} +
+
+endif::[]
+
+[options="header"]
+|===
+|Feature|BBN|OpenPlotter
+|Open Source|yes|yes
+|Free|yes|yes
+|Touchscreen Support|advanced (OpenCPN, zoom, right click)|basic
+|On-screen keyboard|advanced|basic
+|On-screen App Launcher|yes|-
+|SignalK|yes|yes (plugins are not pre-installed)
+|PyPilot|yes|yes (not pre-configured)
+|AvNav|yes|adhoc install
+|QtVlm|adhoc install|-
+|GPSd|yes, pre-configured|-
+|KPlex|yes, bundled, disabled on start|adhoc install
+|OpenCPN|yes|yes (plugins are not pre-installed)
+|O-Charts Plugins|yes, bundled|adhoc install
+|OpenCPN Weather Routing Plugin|yes, bundled|adhoc install
+|OpenCPN Polar Plugin|yes, bundled|adhoc install
+|OpenCPN Tides/Currents|yes|yes
+|Weather GRIB|yes|yes
+|WiFi hotspot|yes, pre-configured|needs setup
+|Firewall|yes|-
+|NMEA 0183|yes, mostly preconfigured|yes, requires configuration
+|NMEA 2000|bundled, requires configuration|adhoc install, requires configuration
+|SeaTalk1|bundled, requires configuration|adhoc install, requires configuration
+|NavTex|yes|-
+|Autopilots Control|AutoHelm(?), pyPilot, NMEA 2000|NMEA 2000 (adhoc), pyPilot
+|i2c|on, IMUs are auto-detected|needs configuration
+|Serial Ports|mostly autoconfigured via udev rules|manual config via utility
+|Backup Tools|plenty (timeshift, restic, rsync, rclone, rpi-clone, etc) |some
+|SSD Imaging|yes, rpi-clone|- DIY
+|Android Mirroring|yes, scrcpy|-
+|Remote Desktop|yes, VNC client and server|VNC adhoc install
+|Web Browser|yes|yes
+|FB, FB Messenger|yes|-
+|WhatsApp|yes|-
+|Text-to-speech|adhoc|-
+|YouTube|yes|via browser
+|Cameras|yes, MotionEye, Cam|- DIY
+|Playing Music|yes, Mopidy, AirPlay (Shairplay), Spotify (raspotify), Bluetooth|Bluetooth?
+|Radio Decoders|Inmarsat STD-C, NavTex, WeatherFax, WinLink, NOAA Satellite Weather, AIS - bundled|WeatherFax, NOAA Satellite Weather, AIS via adhoc install
+|Windy, Lightning Map, Dock Finder, BoatSetter, CrewFinder, Sailing Education, Marine Traffic, Marine Life Identification|on-line|- DIY
+|Release Frequency|about monthly|1-2 yearly
+|GitHub feedback: (stars, watchers, forks)|more|less
+|Distro Image Size|2.8 Gb|1.4 Gb
+|Documentation|less pictures, more complete|more pictures, more gaps
+|===
