@@ -86,6 +86,7 @@ endif::[]
 |Playing Music|yes, Mopidy, AirPlay (Shairplay), Spotify (raspotify), Bluetooth|Bluetooth?
 |Windy, Lightning Map, Dock Finder, BoatSetter, CrewFinder, Sailing Education, Marine Traffic, Marine Life Identification|on-line|- DIY
 |Power Monitoring|yes (SolarThing, HomeAssistant, etc)|DIY
+|Marine Publications|ColReg, Check lists, Knots, Sailing Directions Enroute (adhoc)|-
 |Automation|NodeRed built-in, Mosquitto MQTT built-in, HomeAssistant/EspHome (adhoc)|Mosquitto MQTT, NodeRed adhoc
 |Data Analytics|Grafana, Kapacitor, InfluxDB (built-in, disabled on start)|Grafana, InfluxDB adhoc
 |Release Frequency|about monthly|1-2 yearly
