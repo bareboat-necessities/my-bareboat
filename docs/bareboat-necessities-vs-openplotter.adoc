@@ -54,6 +54,7 @@ endif::[]
 |PyPilot|yes|yes (not pre-configured)
 |AvNav|yes|adhoc install
 |QtVlm|adhoc install|-
+|Chart Formats|All available opensource plugins pre-installed|adhoc install
 |GPSd|yes, pre-configured|-
 |KPlex|yes, bundled, disabled on start|adhoc install
 |OpenCPN|yes|yes (plugins are not pre-installed)
