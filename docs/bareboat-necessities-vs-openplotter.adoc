@@ -64,9 +64,11 @@ endif::[]
 |WiFi hotspot|yes, pre-configured|needs setup
 |Firewall|yes|-
 |NMEA 0183|yes, mostly preconfigured|yes, requires configuration
-|NMEA 2000|bundled, requires configuration|adhoc install, requires configuration
+|NMEA 2000, Can|bundled, requires configuration|adhoc install, requires configuration
 |SeaTalk1|bundled, requires configuration|adhoc install, requires configuration
 |NavTex|yes|-
+|Radio Decoders|Inmarsat STD-C, NavTex, WeatherFax, WinLink, NOAA Satellite Weather, AIS - bundled|WeatherFax, NOAA Satellite Weather, AIS via adhoc install
+|SDR/Ham support|extensive|basic
 |Autopilots Control|AutoHelm(?), pyPilot, NMEA 2000|NMEA 2000 (adhoc), pyPilot
 |i2c|on, IMUs are auto-detected|needs configuration
 |Serial Ports|mostly autoconfigured via udev rules|manual config via utility
@@ -79,12 +81,14 @@ endif::[]
 |WhatsApp|yes|-
 |Text-to-speech|adhoc|-
 |YouTube|yes|via browser
-|Cameras|yes, MotionEye, Cam|- DIY
+|Cameras|yes, MotionEye, Cam|-
+|Media Library|Jellyfin (adhoc), SAMBA share, Mopidy|-
 |Playing Music|yes, Mopidy, AirPlay (Shairplay), Spotify (raspotify), Bluetooth|Bluetooth?
-|Radio Decoders|Inmarsat STD-C, NavTex, WeatherFax, WinLink, NOAA Satellite Weather, AIS - bundled|WeatherFax, NOAA Satellite Weather, AIS via adhoc install
 |Windy, Lightning Map, Dock Finder, BoatSetter, CrewFinder, Sailing Education, Marine Traffic, Marine Life Identification|on-line|- DIY
+|Automation|NodeRed built-in, Mosquitto MQTT built-in, HomeAssistant/EspHome (adhoc)|Mosquitto MQTT, NodeRed adhoc
+|Data Analytics|Grafana, Kapacitor, InfluxDB (built-in, disabled on start)|Grafana, InfluxDB adhoc
 |Release Frequency|about monthly|1-2 yearly
 |GitHub feedback: (stars, watchers, forks)|more|less
 |Distro Image Size|2.8 Gb|1.4 Gb
-|Documentation|less pictures, more complete|more pictures, more gaps
+|Documentation|less pictures, more complete, more complete supported hardware list|more pictures, more gaps
 |===
