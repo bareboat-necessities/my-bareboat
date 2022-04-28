@@ -49,6 +49,7 @@ endif::[]
 |Touchscreen Support|advanced (OpenCPN, zoom, right click)|basic
 |On-screen keyboard|advanced|basic
 |On-screen App Launcher|yes|-
+|Touchscreen usability|higher|lower
 |SignalK|yes|yes (plugins are not pre-installed)
 |PyPilot|yes|yes (not pre-configured)
 |AvNav|yes|adhoc install
