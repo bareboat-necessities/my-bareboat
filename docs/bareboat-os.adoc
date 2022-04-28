@@ -1213,7 +1213,7 @@ cd /home/user/add-ons
 ./homeassistant-install.sh
 ----
 
-It will also install EspHome.
+It will also install EspHome. Url to access: http://localhost:6052
 
 Examples of use cases:
 
