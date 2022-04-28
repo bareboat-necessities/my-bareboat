@@ -63,6 +63,7 @@ endif::[]
 |OpenCPN Polar Plugin|yes, bundled|adhoc install
 |OpenCPN Tides/Currents|yes|yes
 |Weather GRIB|yes|yes
+|Radar Support|yes, pre-installed OpenCPN plugin|adhoc
 |WiFi hotspot|yes, pre-configured|needs setup
 |Firewall|yes|-
 |NMEA 0183|yes, mostly preconfigured|yes, requires configuration
