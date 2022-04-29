@@ -2548,6 +2548,23 @@ cd ~/add-ons
 ./tripwire-install.sh
 ----
 
+=== Setting up your system as NTP (time) server
+
+Your NTP server is chrony. Edit /etc/chrony/chrony.conf and add a line with 'allow' directive
+
+[source]
+----
+allow
+----
+
+(or better allow followed by your subnet address). Save the file and restart chronyd
+
+[source, shell]
+----
+sudo systemctl restart chrony
+----
+
+
 === Renaming host
 
 [source, shell]
