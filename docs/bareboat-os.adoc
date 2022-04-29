@@ -1827,6 +1827,8 @@ USB/Serial:
 - iKonvert NMEA 2000-USB Converter
 - ShipModul MiniPlex-3USB-N2K
 - Yacht Devices NMEA 2000 USB Gateway YDNU-02
+- CSS Electronics https://www.csselectronics.com/pages/can-bus-hardware-products
+- TouCAN Marine https://www.rusoku.com/products/toucan-marine
 
 TCP/IP gateways:
 
