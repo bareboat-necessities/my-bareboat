@@ -73,8 +73,10 @@ endif::[]
 |Radio Decoders|Inmarsat STD-C, NavTex, WeatherFax, WinLink, NOAA Satellite Weather, AIS - bundled|WeatherFax, NOAA Satellite Weather, AIS via adhoc install
 |SDR/Ham support|extensive|basic
 |Autopilots Control|AutoHelm(?), pyPilot, NMEA 2000|NMEA 2000 (adhoc), pyPilot
-|i2c|on, IMUs are auto-detected|needs configuration
+|i2c|on by default, IMUs are auto-detected|needs configuration
 |Serial Ports|mostly autoconfigured via udev rules|manual config via utility
+|Hardware OpenGL acceleration|on by default|needs setup
+|Kernel|64-bit by default|32 or 64-bit
 |Backup Tools|plenty (timeshift, restic, rsync, rclone, rpi-clone, etc) |some
 |SSD Imaging|yes, rpi-clone|- DIY
 |Android Mirroring|yes, scrcpy|-
