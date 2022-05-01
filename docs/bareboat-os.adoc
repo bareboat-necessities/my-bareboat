@@ -651,7 +651,7 @@ it by filling magnetic heading adjustment field.
 - IMU data should start flowing into SignalK
 
 NOTE: What is considered as a pitch and what is a roll would depend on heading calibration offset. With 90 degrees
-offset pitch and roll swap and so on.
+heading offset pitch and roll swap and so on.
 
 ==== Barometer / Temperature / Humidity
 
