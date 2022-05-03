@@ -1282,9 +1282,8 @@ install and set it up for their boats.
 This is not my first build of the boat computer with raspberry pi. A lot of ideas can be taken from my
 older (2020 build which was based on OpenPlotter). For up-to-date build I would change few things:
 
-* Instead of expensive Argonaut M7 I would have used
-(Model: SL07W, Brand Sihovision, Capacitive Touch Screen 7-inch, (1000 nits), IP65, 1024x600, Cost under $300):
-https://www.sihovision.com/industrial-touch-monitor/7-inch-industrial-wide-temperaturer-lcd-monitor-with-remote-control-1.html
+* Instead of expensive Argonaut M7 I would have used TouchThink TPC-CD-M101, Cost under $300:
+https://www.touchtecs.com/
 
 * My waterproofing technique would be cheaper and better. Instead of costly connectors at the back of the computer (even if it is below deck)
 I would use waterproof glands for exits from the enclosure and pigtail connectors. I would cover the point of connection with heat shrink tubing.
@@ -1296,6 +1295,8 @@ I would use waterproof glands for exits from the enclosure and pigtail connector
 * dAISy AIS is better solution than SDR
 
 * Use USB 2.0 hub where USB 3.0 not required
+
+* SD card should be easily replaceable for boot. There shouldn't be many screws to get access to it.
 
 For older hardware solutions (lot of it is still valid) see:
 
