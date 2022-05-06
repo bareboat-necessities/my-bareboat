@@ -191,7 +191,7 @@ and touchscreen calibrated.
 
 ==== Wired Ethernet
 
-If you have wired ethernet router you can just plug-in your raspberry pi ethernet port into the
+If you have wired ethernet router you can just plug in your raspberry pi ethernet port into the
 router
 
 ==== Wi-Fi Client
@@ -255,14 +255,14 @@ Power usage might be relatively high for small boats.
 
 ==== Typical Setup on a Boat
 
-* Raspberry Pi wired to OpenWrt LTE/4G/WiFi router via ethernet port
-* Raspberry Pi provides 5GHz WiFi 802.11ac local access point for boat local WiFi network
-* OpenWrt LTE/4G/WiFi router provides WiFi connection to marinas
-* OpenWrt LTE/4G/WiFi router provides access to the Internet via LTE/4G cellular data network
-* OpenWrt LTE/4G/WiFi router provides 2.4GHz (WiFi 802.11n) local access point for boat IoT devices
-* OpenWrt LTE/4G/WiFi router serves as firewall
+* Raspberry Pi wired to OpenWrt LTE/4G/Wi-Fi router via ethernet port
+* Raspberry Pi provides 5GHz Wi-Fi 802.11ac local access point for boat local Wi-Fi network
+* OpenWrt LTE/4G/Wi-Fi router provides Wi-Fi connection to marinas
+* OpenWrt LTE/4G/Wi-Fi router provides access to the Internet via LTE/4G cellular data network
+* OpenWrt LTE/4G/Wi-Fi router provides 2.4GHz (Wi-Fi 802.11n) local access point for boat IoT devices
+* OpenWrt LTE/4G/Wi-Fi router serves as firewall
 
-If you use raspberry pi WiFi it is better to disable WiFi power management:
+If you use raspberry pi Wi-Fi it is better to disable Wi-Fi power management:
 
 [source, shell]
 ----
@@ -479,8 +479,8 @@ There are three options:
 (experimental) in SignalK autopilot plugin.
 
 - Raymarine Autohelm SeaTalk autopilots can be controlled by SignalK plugin. This UI works as a web application and uses
-authentication cookie from SignalK nativefier application, so make sure you login (with 'remember me' option) to SignalK
-UI application and set SignalK session timeout (in SignalK security settings) to a large value. Otherwise you will
+authentication cookie from SignalK nativefier application, so make sure you log in (with 'remember me' option) to SignalK
+UI application and set SignalK session timeout (in SignalK security settings) to a large value. Otherwise, you will
 get authentications errors trying to control your autopilot during your cruise.
 
 - DIY PyPilot plugins can be controlled 3 ways: by OpenCPN plugin, standalone PyPilot UI application, or
@@ -492,7 +492,7 @@ PyPilot Web application.
 You can add weather budgie desktop applet. Unfortunately it is linked to a fixed location which is
 fine for a day-sailor but doesn't work for others.
 
-Off-shore sailors or even coastal cruisers should focus on using XyGrib and GRIB plugin for OpenCPN.
+Offshore sailors or even coastal cruisers should focus on using XyGrib and GRIB plugin for OpenCPN.
 
 For real blue water sailors OpenCPN Climatology and OpenCPN weather routing plugins are essential.
 
@@ -574,16 +574,16 @@ Iris is an alternative player to MusicBox. Iris is also included in the BBN OS i
 ==== Playing from your iPhone (Spotify, etc)
 
 Play music on iPhone. Select AirPlay on your iPhone and cast to 'lysmarine' airplay target (your phone must be
-on lysmarine-hotspot WiFi).
+on lysmarine-hotspot Wi-Fi).
 
 ==== Playing from mobile phones with MPD applications
 
-Install MPD compatible media player on your mobile device and from it you can
+Install MPD compatible media player on your mobile device, and from it, you can
 control playing your Mopidy library on your raspberry pi.
 
 ==== Playing Spotify
 
-Start your Spotify app on your mobile device which is connected to boat WiFi.
+Start your Spotify app on your mobile device which is connected to boat Wi-Fi.
 Select 'Lysmarine' device as target to play on your pi via raspotify. You need to have a premium Spotify account.
 
 === Interfacing with ship systems
@@ -636,7 +636,7 @@ sudo systemctl enable pypilot@pypilot
 sudo systemctl start pypilot@pypilot
 ----
 
-- At this point you should be able to see reading of pitch/roll, etc, and magnetic heading in pypilot control.
+- At this point you should be able to see reading of pitch/roll, etc. and magnetic heading in pypilot control.
 Which you would need to calibrate.
 
 - Start pypilot calibration. Press 'Boat Level' when the boat leveled. (Your IMU must be obviously
@@ -718,11 +718,11 @@ OS image also provides VNC client app.
 ===== RealVNC with cloud connectivity
 
 Create an account on realvnc.com website. Login from your pi's RealVNC server into
-realvnc.com cloud using the account you set up. Set-up a password on your pi's VNC server for
+realvnc.com cloud using the account you set up. Set up a password on your pi's VNC server for
 users to connect. While being logged in into realvnc.com website create a team and invite
 people you want to have remote desktop access to your pi. When they accept your invite
 let them know the password to connect to your local VNC server. They would need to download
-realVNC viewer (can be for PC, Linux, Mac, etc) and follow the instructions from the invite.
+realVNC viewer (can be for PC, Linux, Mac, etc.) and follow the instructions from the invite.
 
 ==== ssh
 
@@ -731,14 +731,14 @@ OS image comes with ssh enabled. You can log in using ssh user: 'user'.
 =====  RaspController
 
 RaspController is available in Google Play for your Android phone or tablet, and in
-AppStore for Apple mobile devices. It allows remotely control your raspberry pi.
+App Store for Apple mobile devices. It allows remotely control your raspberry pi.
 
 
 ==== Android Devices
 
 OS image comes with scrcpy pre-installed and pre-configured. You can view and control your Android devices.
 You need to enable USB debugging on your Android device or follow the instructions
-to enable controlling it via WiFi. See: https://github.com/Genymobile/scrcpy
+to enable controlling it via Wi-Fi. See: https://github.com/Genymobile/scrcpy
 In most cases you just need to enable USB debugging on your Android device and plug it in (thanks to autoadb).
 
 
@@ -871,7 +871,7 @@ The OS image gives you internet applications for:
 
 === Offshore Features
 
-For offshore sailors there are number of features pre-loaded into the OS image
+For offshore sailors there are number of features preloaded into the OS image
 
 * NavTex
 * Inmarsat Fleet (receiving messages)
@@ -897,7 +897,7 @@ PyPilot based autopilots:
 
 === Watching Movies
 
-Watching on-line (or listening) prepaid copyrighted content (Netflix, Amazon PrimeVideo, Google, Spotify, etc) in
+Watching on-line (or listening) prepaid copyrighted content (Netflix, Amazon PrimeVideo, Google, Spotify, etc.) in
 a web browser as Chromium requires closed-source DRM libraries. On arm32 version of the OS you can install it
 from add-ons folder ~/add-ons/ by running:
 
@@ -1026,12 +1026,12 @@ MOVE the window frame by dragging window header few pixels, and switch back to m
 This should restore touch events in that app.
 
 * Some gtk3 applications menus (ex: terminal) have issues handling touch events. You can select a menu item
-with touch but to perform a click on it you would actually need to perform simulated right click
+with touch but to perform a click on it, you would actually need to perform simulated right click
 by holding finger a bit longer and letting it go.
 
 ==== Wi-Fi DNS
 
-If you use your devices on LAN or WiFi networks they might get assigned different IP addresses from DHCP servers.
+If you use your devices on LAN or Wi-Fi networks they might get assigned different IP addresses from DHCP servers.
 However, DNS servers tend to cache (remember) name to IP address mappings for quite some time.
 Thus, you can run into DNS name resolution issues if you do not configure DHCP servers to assign
 consistent IP addresses (by MAC address for example) to all your devices.
@@ -1052,7 +1052,7 @@ power input.
 possibly ethernet.
 - Do you see under-voltage message when you run 'dmesg' from command line?
 - Was SD card burned and verified successfully?
-- Are you using pi4, CM4 (with wifi), or pi400?
+- Are you using pi4, CM4 (with Wi-Fi), or pi400?
 
 === Add-ons
 
@@ -1135,7 +1135,7 @@ udp    10116      NMEA 0183            AvNav, KPlex
 
 === Firewall
 
-Starting with BBN OS version 2021-10-02 you will have a firewall running on your system and it's enabled by default.
+Starting with BBN OS version 2021-10-02 you will have a firewall running on your system, and it's enabled by default.
 The default firewall rules are:
 
 [source]
@@ -1266,7 +1266,7 @@ Sailing education links available under: App Menus->Internet->Nauticed Sailing T
 The beauty of Linux is that you can customize it for your needs in infinite ways.
 While this distro aimed to strike common need, you will find that number of post-install
 customization steps would be required. The key is to script those steps, make them non-interactive,
-make the steps requite NO GUI. In that case your set up becomes REPRODUCIBLE in case of new
+make the steps requite NO GUI. In that case your set-up becomes REPRODUCIBLE in case of new
 OS image releases. You can share your post-install scripts, so the system can be improved and even more fine-tuned.
 
 While the system supports touchscreens during set-up phase you would still want to have a regular wired keyboard
@@ -1307,7 +1307,7 @@ https://bareboat-necessities.github.io/my-bareboat/
 
 Printing from Chromium is a bit inconvenient. You need to choose 'Print' menu, then
 scroll down and choose 'More Settings' and select 'Print Using System Dialog' which
-will let you to choose a printer.
+will let you choose a printer.
 
 
 === Social Networks and Messaging
@@ -1326,13 +1326,13 @@ SignalK comes with preinstalled plugin for saillogger.com
 * Tides / Currents in OpenCPN
 * Waypoints, routes in OpenCPN, tracking
 * AIS in OpenCPN
-* Weather Windy, etc if using LTE internet
+* Weather Windy, etc. (if using LTE internet)
 * Music players
 * Dashboards Wind, Speed, Depth, GPS, Local Sunset, etc
 * Barograph
 * Autopilot (if equipped)
 * Cameras for docking and night light
-* Local boat WiFi hotspot and LTE gateway
+* Local boat Wi-Fi hotspot and LTE gateway
 
 === IoT
 
@@ -1469,7 +1469,7 @@ night sailing. You would need long HDMI and USB (for touch) cables to
 connect to raspberry pi below deck. There are even fiber optic solutions for that. They
 allow thinner cables (at additional cost).
 Bonus, if your touchscreen display comes
-with built in speakers for alarms. Check Sihovision product line, if one of
+with built-in speakers for alarms. Check Sihovision product line, if one of
 their products will suit you. Some examples:
 
 
@@ -1488,7 +1488,7 @@ More ideas from TouchThink: https://www.touchtecs.com/marine-monitor/ip65-sunlig
 
 
 Pick HDMI screen over DSI as they do not take extra GPIO pins which you might have other plans for.
-Most touchscreens nowadays will be capacitive multi-touch due to better durability and clearness.
+Most touchscreens nowadays will be capacitive multitouch due to better durability and clearness.
 
 ==== Connecting monitors
 
@@ -1539,7 +1539,7 @@ It comes with (and more):
 
 - 12v power input (7v-36v)
 - PCIe slot
-- External antennas connectable to CM4 wifi antenna port, and to GPS or LTE antenna port on LTE modem
+- External antennas connectable to CM4 Wi-Fi antenna port, and to GPS or LTE antenna port on LTE modem
 - CanBus (for NMEA 2000)
 - RS-485 (for NMEA 0183)
 - GPIO exposed via header with screws
@@ -1607,7 +1607,7 @@ Some boards m.2 slot designed to work only with 4G/LTE modems with PCIE M.2 KEY-
 
 
 NOTE: If you use a Waveshare board, and your CM4 module comes with eMMC then you can't boot your from SD card, and you have
-to burn eMMC. To burn eMMC on Windows you have to install latest rpiboot_setup.exe from usbboot project on github.
+to burn eMMC. To burn eMMC on Windows you have to install latest rpiboot_setup.exe from usbboot project on GitHub.
 You would need to switch jumpers (switches) on your board to use OTG USB slave cable to be able to burn eMMC.
 It's a slow process as it is done via USB 2.0 interface.
 Moreover, stock Raspberry Pi OS image wouldn't have Waveshare USB ports enabled. So before burning an image into eMMC
@@ -1726,7 +1726,7 @@ Aiibe 6 Ports Super High Speed USB 3.0 Hub Splitter
 === LTE/Wi-Fi Routers
 
 The Wi-Fi router you need is somewhat different from your home router. Your home router connects
-wired to Internet WAN and it gives you local Wi-Fi. On a boat the situation reverses. Your WAN is
+wired to Internet WAN, and it gives you local Wi-Fi. On a boat the situation reverses. Your WAN is
 the marina's Wi-Fi and your Pi should (preferably) be wired into the router. These
 Wi-Fi routers are being sold as Travel Wi-Fi routers.
 Not all cheap Wi-Fi routers will give you the ability to connect to the marina Wi-Fi and share it on a boat.
@@ -1750,9 +1750,9 @@ SeaTalk1 is Raymarine proprietary protocol. Many popular Autohelm Raymarine auto
 SeaTalk1 unlike NMEA 0183 is a bus allowing multiple talkers and multiple listeners of the same bus.
 To integrate it into your system you have a number of choices:
 
-- Use bi-directional NMEA 0183 multiplexer which supports one SeaTalk1 port. First
+- Use bidirectional NMEA 0183 multiplexer which supports one SeaTalk1 port. First
 vendors to check are YakBitz and Quark-elec Marine. There are others as well. You want
-bi-directional multiplexer to be able to control autopilot from your pi via NMEA.
+bidirectional multiplexer to be able to control autopilot from your pi via NMEA.
 There is a dedicated Autohelm autopilot plugin in SignalK.
 
 - Buy a dedicated Seatalk1 to NMEA converter.
@@ -1789,7 +1789,7 @@ Board:
 
 TCP/IP:
 
-NMEA 0183 Multiplexers working over WiFi or Ethernet
+NMEA 0183 Multiplexers working over Wi-Fi or Ethernet
 
 Vendors:
 
@@ -1837,7 +1837,7 @@ USB/Serial:
 
 TCP/IP gateways:
 
-- Bi-directional NMEA 2000 Multiplexer WiFi (Quark-elec, etc)
+- Bi-directional NMEA 2000 Multiplexer Wi-Fi (Quark-elec, etc)
 - ShipModul MiniPlex-3E-N2K
 - Yacht Devices NMEA 2000 Wi-Fi Gateway YDWG-02
 - Yacht Devices NMEA 2000 Ethernet Gateway YDEN-02
@@ -1862,7 +1862,7 @@ Several options to connect:
 USB:
 
 - Many USB "mouse" GPS should work on BBN OS after plugging-in and giving them some time
-to acquire satellites outside of the house. Cold start can take half an hour or so with some GPS models.
+to acquire satellites outside the house. Cold start can take half an hour or so with some GPS models.
 
 Re-use GPS built-in into LTE router:
 
@@ -1914,7 +1914,7 @@ USB stick drives (flash drives) performance is not as high as NVMe and SATA SSDs
 - NASA Marine PC Navtex USB with an antenna (BBN OS comes with a program called PC-NavTex for it). ~$220
 - USB Devices from wetterinfobox.com (WIB2 - NAVTEX for PC) http://www.wetterinfobox.com
 
-There are reports that PC Windows software for WIB2/3 can be run on Raspberry Pi with with Box86 and Wine:
+There are reports that PC Windows software for WIB2/3 can be run on Raspberry Pi with Box86 and Wine:
 https://www.cruisersforum.com/forums/f134/navtex-plugin-251561-3.html#post3533558
 
 === RTC (Real Time Clock)
@@ -1985,7 +1985,7 @@ https://github.com/bareboat-necessities/my-bareboat/tree/master/m5-boat-display
 Here is a dinghy location tracker idea.
 https://www.seeedstudio.com/LoRa-GPS-Tracker-with-Wio-Terminal-p-5182.html
 (Needs some work on a waterproof enclosure for a transmitter, and reporting
-the dinghy location via AIS NMEA data stream to the mother ship chartplotter).
+the dinghy location via AIS NMEA data stream to the mother ship's chartplotter).
 WIO terminal is not esp32 though.
 
 === ESP32 with SignalK
@@ -2017,7 +2017,7 @@ SensESP allows connecting many sensors:
 - pH alkalinity and acidity sensor
 - 433MHz RF receivers
 - LoRa receivers/transmitters
-- Interfaces (USB, Ethernet, CAN Bus, Rs-485, RS-232, WiFi, 4G/LTE, GPS/GNSS, ModBus, etc)
+- Interfaces (USB, Ethernet, CAN Bus, Rs-485, RS-232, Wi-Fi, 4G/LTE, GPS/GNSS, ModBus, etc)
 - IMU (gyroscope, magnetometer, accelerometer)
 - Hall effect
 - Actuators, servo, motor controls
@@ -2061,9 +2061,11 @@ Sonoff Switches - Supported by SignalK plugin.
 
 Ecowitt weather sensors - Supported via SignalK plugin.
 
-Selly https://shelly.cloud/ - Supported via SignalK plugin.
+Shelly https://shelly.cloud/ - Supported via SignalK plugin.
 
 EmpirBus NXT https://www.empirbus.com/ - Supported via SignalK plugin.
+
+ZigBoat https://www.zigboat.com/
 
 === Power, 12v -> 5v Converters
 
@@ -2083,11 +2085,11 @@ https://www.amazon.com/dp/B01M03288J
 
 As well as this UBEC:
 
-US Ship Hobbywing 5V/6V 3A Switch-mode UBEC, Max 5A Lowest RF
+US Ship Hobbywing 5V/6V 3A Switch-mode UBEC, Max 5A lowest RF
 
 https://www.amazon.com/dp/B008ZNWOYY
 
-Avoid powering Pi4 via GPIO pins directly as it bypasses an overvoltage self healing fuse
+Avoid powering Pi4 via GPIO pins directly as it bypasses an overvoltage self-healing fuse
 built-in into pi.
 
 ==== Power Management, Victron, Venus OS
@@ -2152,7 +2154,7 @@ of network providers which covers most populated areas.
 ==== GPS
 
 Receive-only. Doesn't need to be high. Needs a clear sky view of multiple satellites. External ones are usually
-active and placed inside of a mushroom-looking plastic.
+active and placed inside a mushroom-looking plastic.
 Designed to have almost world-wide coverage (except of extreme North/South poles areas).
 There are several GNSS systems with different satellite constellations.
 GPS (US), BEIDOU (China), GALILEO (EU), GLONASS (Russia), and QZSS (Japan)
@@ -2189,11 +2191,11 @@ Bluetooth range is really short, and it is about 10 meters.
 
 ==== Zigbee, Z Wave
 
-Zigbee operates on short distances 10-100m in about same spectrum range as WiFi with lower
+Zigbee operates on short distances 10-100m in about same spectrum range as Wi-Fi with lower
 bandwidth but higher reliability. There are some products for boats such as from https://www.zigboat.com/
 Zigbee is for LAN (comparing with Bluetooth being point-to-point).
 
-Z Wave is similar to Zigbee but uses different RF spectrum which doesn't clash with WiFi.
+Z-Wave is similar to Zigbee but uses different RF spectrum which doesn't clash with Wi-Fi.
 
 ==== NFC
 
@@ -2235,12 +2237,12 @@ LoRa antennas are small and usually attached to its devices.
 
 == How you can help
 
-. Add a star on our github project page https://github.com/bareboat-necessities/lysmarine_gen
+. Add a star on our GitHub project page https://github.com/bareboat-necessities/lysmarine_gen
 . Report a bug (or contribute to resolving an existing issue) https://github.com/bareboat-necessities/lysmarine_gen/issues
 . Spread the word. There are many sailing forums on Internet and Facebook. Let other people know what BBN OS could do for you.
 . Respond to a question in our discussion forums: https://github.com/bareboat-necessities/lysmarine_gen/discussions
 . Post a video on YouTube explaining how you use BBN OS on your boat
-. Submit a github pull request with code changes to improve BBN OS
+. Submit a GitHub pull request with code changes to improve BBN OS
 . Post a blog article or contribute to HOWTOs section of this document.
 . Of course, the BBN OS is completely open-source and free to use.
 
@@ -2257,7 +2259,7 @@ Please send us your HowTo, and we can add it here for everyone to find. Thanks
 - sudo i2cdetect -y 1 (should show you addresses)
 - Create pypilot connection to signalK (see https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html#_imu )
 - Set up barometer feed from SignalK ( https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html#_barometer_temperature_humidity )
-- IMU data heading etc should come from pypilot NMEA
+- IMU data heading, etc. should come from pypilot NMEA
 - check it with telnet localhost 20220
 
 Brief explanation:
@@ -2269,14 +2271,15 @@ Brief explanation:
 - IMU is read by pypilot, which feeds it via 20220 tcp port using NMEA 0183 format
 - pypilot also needs to have connection via SignalK web socket to port 3000 of signalK
 - That connection needs to be authorized made READ/WRITE in signalK using their token exchange procedure
-- GPS is read by signalK by creating NMEA connection to /dev/serial0 port (set correct baud rate)
+- GPS is read by signalK by creating NMEA connection to /dev/serial0 port (set correct baud rate), or add it as a device
+ for GPSd into /etc/default/gpsd
 - Barometric/temp data is read by SignalK using signalK BME280 plugin. Make sure setting polling interval below 30 seconds (because OpenCPN expires non-navigational data every 30 seconds)
 - Calibrate level IMU on water. Calibrate your IMU compass, using pyPilot calibration utility.
 - I use external GPS antenna with it. (It needs to be an active antenna). There is a jumper/or switch on the Berry board to choose external antenna
 
-NOTE: Cellular, GPS, WiFi Antenna (3 in one), Model AFCJF3, Price $80
+NOTE: Cellular, GPS, Wi-Fi Antenna (3 in one), Model AFCJF3, Price $80
 Designed for marine and recreational vehicles (RV), this multi-band
-Cellular, GPS, WiFi Antenna (696 MHz - 5900 MHz / 5.9 GHz) is a 3-way omni-directional,
+Cellular, GPS, Wi-Fi Antenna (696 MHz - 5900 MHz / 5.9 GHz) is a 3-way omnidirectional,
 IP67 waterproof antenna for harsh environment communication applications.
 https://www.signalbooster.com/products/cellular-gps-wifi-antenna
 
@@ -2304,11 +2307,11 @@ https://ozzmaker.com/berrygps_imu-faq/
 
 disabling echo on serial port might be required, as well as enabling ZDA NMEA time sentence.
 
-ublox GPS receivers have extensive configuration. Check: https://gpsd.io/ubxtool-examples.html
+u-blox GPS receivers have extensive configuration. Check: https://gpsd.io/ubxtool-examples.html
 
-=== Other WiFi drivers
+=== Other Wi-Fi drivers
 
-There is a script to install various additional WiFi cards drivers
+There is a script to install various additional Wi-Fi cards drivers
 
 [source, shell]
 ----
@@ -2339,7 +2342,7 @@ Install GPS2IP application on your smartphone. Start it and enable GPS2IP in it.
 Your phone should be on the same local network as your boat computer.
 In SignalK add gps2ip_on_smartphone NMEA TCP connection to the IP address 
 shown in GPS2IP app and the port specified there (usually 11123). Your phone ip address
-should be a static address. So make sure it's mapped to a static address on your WiFi networks with a MAC address
+should be a static address. So make sure it's mapped to a static address on your Wi-Fi networks with a MAC address
 of your phone.
 
 === How to navigate with your smartphone as GPS receiver and have an Internet access on a boat within cellular reception
@@ -2382,9 +2385,9 @@ With higher resolution monitors you might want to adjust font size and UI elemen
 
 - Press 'OK' to apply settings
 
-=== Setting up multiple WiFi access points
+=== Setting up multiple Wi-Fi access points
 
-For seamless switching for WiFi client from one access point to another you can set up all access points
+For seamless switching for Wi-Fi client from one access point to another you can set up all access points
 with the same SSID and credentials on different radio frequency channels.
 
 === Watchdog
@@ -2657,7 +2660,7 @@ How much* does it cost to build my system? Does it cost less than commercial mar
 The answer is really depends on what you are trying to achieve.
 
 - Open source like BBN OS have features simply not available in traditional marine electronics
-- Your cost effective solution for your boat is going to be a mix of commercial and open products
+- Your cost-effective solution for your boat is going to be a mix of commercial and open products
 - If you just need a chart plotter in a cockpit then a commercial product will do
 - If you want a smart boat with a lot of sensors then you need to get smart about open source options
 - If you live aboard and need a board computer then look at BBN OS and lower power consuming Pi
@@ -2669,9 +2672,9 @@ open source systems
 - If you want a boat computer below deck (non-waterproof screen and computer) even if you are just a day sailor
 then you can build much cheaper system with open source like BBN OS combined with sensors you have onboard
 - Consider other features costs like onboard entertainment (music, videos watching) and cameras
-- Internet connectivity on your boat via WiFi at marinas or via LTE and a local boat WiFi hotspot is an important feature to have
-- For off-shore sailors with SSB radio experience consider what you can have with open source solutions on Pi
-- DIY solutions for autopilot can be quite cost effective (You don't need whole BBN OS for it)
+- Internet connectivity on your boat via Wi-Fi at marinas or via LTE and a local boat Wi-Fi hotspot is an important feature to have
+- For offshore sailors with SSB radio experience consider what you can have with open source solutions on Pi
+- DIY solutions for autopilot can be quite cost-effective (You don't need whole BBN OS for it)
 - Knowledge costs money. With commercial electronics your knowledge is dialing service support line. With
 open source you will learn how things work
 
