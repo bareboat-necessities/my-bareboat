@@ -423,6 +423,8 @@ O-Charts are commercial charts compatible with OpenCPN. See: https://www.o-chart
 
 O-Charts can be shared between OpenCPN and AvNav via AvNav o-charts plugin.
 
+Use of USD Key Dongle is recommended over key file, so you do not lose your charts access after upgrades.
+
 ===== Making own MbTiles charts
 
 
