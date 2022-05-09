@@ -1372,11 +1372,13 @@ http://localhost:3000 clicking 'login', choosing 'remember me' session and stori
 
 BBN OS image comes with grafana preinstalled but disabled. To enable and start it:
 
-. Edit the /etc/grafana/grafana.ini file and change line ';http_port = 3000' to 'http_port = 3080' (to avoid conflict with SignalK)
+. Edit the /etc/grafana/grafana.ini  and /usr/share/grafana/conf/defaults.ini files and
+change line ';http_port = 3000' to 'http_port = 3080' (to avoid conflict with SignalK)
 +
 [source]
 ----
 sudo nano /etc/grafana/grafana.ini
+sudo nano /usr/share/grafana/conf/defaults.ini
 ----
 
 . Enable and start Grafana server
