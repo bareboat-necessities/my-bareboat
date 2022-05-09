@@ -2593,6 +2593,17 @@ opencpn
 perf top -p $(pidof opencpn)
 ----
 
+=== How to use VNC without monitor attached to pi
+
+You need to set up fixed resolution using
+
+[source, shell]
+----
+sudo raspi-config
+----
+
+Without it VNC would show message that it couldn't show desktop. 
+
 === Setting up monitor
 
 /boot/config.txt contains most important settings for your monitor. You might need to adjust them manually.
