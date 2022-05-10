@@ -122,7 +122,7 @@ https://github.com/bareboat-necessities/lysmarine_gen#download
 
 Alternative place to download if the previous link doesn't work for you:
 
-https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-04-27
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-05-09
 
 Past LTS release:
 
@@ -2602,7 +2602,7 @@ You need to set up fixed resolution using
 sudo raspi-config
 ----
 
-Without it VNC would show message that it couldn't show desktop. 
+Without it VNC would show message that it couldn't show desktop.
 
 === Setting up monitor
 
