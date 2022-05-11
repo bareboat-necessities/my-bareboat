@@ -2071,6 +2071,8 @@ EmpirBus NXT https://www.empirbus.com/ - Supported via SignalK plugin.
 
 ZigBoat https://www.zigboat.com/
 
+Keep in mind that most Wi-Fi IoT devices will not work on 5GHz Wi-Fi. They usually require 2.4GHz Wi-Fi bands.
+
 === Power, 12v -> 5v Converters
 
 ==== DC Voltage Converters
