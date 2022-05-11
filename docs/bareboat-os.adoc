@@ -2379,7 +2379,7 @@ right away.
 [#running_with_higher_resolution_monitors]
 === Running with Higher Resolution Monitors
 
-With higher resolution monitors you might want to adjust font size and UI elements to be them bigger on your screen.
+With higher resolution monitors you might want to adjust font size and UI elements to be bigger on your screen.
 
 - Go into Administration/Settings/Universal Access
 
@@ -2390,6 +2390,8 @@ With higher resolution monitors you might want to adjust font size and UI elemen
 - Set 'User Interface Scale Factor' slider (and all other sliders) to 1
 
 - Press 'OK' to apply settings
+
+- Icon sizes of desktop toolbar are controlled by toolbar size in Budgie Desktop Preferences
 
 === Setting up multiple Wi-Fi access points
 
