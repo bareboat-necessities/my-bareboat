@@ -51,6 +51,7 @@ endif::[]
 |On-screen App Launcher|yes|-
 |Touchscreen usability|higher|lower
 |Headless mode|available with same OS image with simple config changes|available by downloading separate image
+|Touchscreen UI|requires keyboard and mouse during set up|requires keyboard and mouse during regular operation
 |SignalK|yes|yes (plugins are not pre-installed)
 |PyPilot|yes|yes (not pre-configured)
 |AvNav|yes|adhoc install
