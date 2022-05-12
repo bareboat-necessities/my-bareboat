@@ -69,6 +69,9 @@ toc::[]
 
 == Boat Electronics Project
 
+IMPORTANT: This is the documentation for our older hardware project. If you are looking for Bareboat OS Documentation
+you should use this document: https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html
+
 This document describes a DIY project of building a marine computer, a boat LTE/WiFi gateway, and
 a cockpit chartplotter display from easily obtainable and affordable components.
 This boat electronics project includes:
