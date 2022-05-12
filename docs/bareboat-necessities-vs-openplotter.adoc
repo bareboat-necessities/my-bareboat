@@ -78,6 +78,7 @@ endif::[]
 |i2c|on by default, IMUs are auto-detected|needs configuration
 |Serial Ports|mostly autoconfigured via udev rules|manual config via utility
 |Hardware OpenGL acceleration|on by default|needs setup
+|Support of opensource hardware|MCS marine server, SailorHat, Maiana AIS (most pre-installed and some adhoc)|require adhoc install
 |Kernel|64-bit by default|32 or 64-bit
 |Backup Tools|plenty (timeshift, restic, rsync, rclone, rpi-clone, etc) |some
 |SSD Imaging|yes, rpi-clone|- DIY
