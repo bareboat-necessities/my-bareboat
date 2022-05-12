@@ -80,6 +80,7 @@ endif::[]
 |Hardware OpenGL acceleration|on by default|needs setup
 |Support of opensource hardware|MCS marine server, SailorHat, Maiana AIS (most pre-installed and some adhoc)|require adhoc install
 |Kernel|64-bit by default|32 or 64-bit
+|Hardware|Raspberry Pi4, Pi400, and CM4 and Pi3B+ (last two require /boot/config.txt changes before  first boot)|More wide hardware support with additional DIY config changes
 |Backup Tools|plenty (timeshift, restic, rsync, rclone, rpi-clone, etc) |some
 |SSD Imaging|yes, rpi-clone|- DIY
 |Android Mirroring|yes, scrcpy|-
