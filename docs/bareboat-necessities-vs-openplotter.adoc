@@ -46,7 +46,7 @@ endif::[]
 |Feature|BBN|OpenPlotter
 |Open Source|yes|yes
 |Free|yes|yes
-|Touchscreen Support|advanced (OpenCPN, zoom, right click, three finger scroll)|basic
+|Touchscreen Support|advanced (OpenCPN, two finger zoom, long touch right click, three finger scroll)|basic
 |On-screen keyboard|advanced|basic
 |On-screen App Launcher|yes|-
 |Touchscreen usability|higher|lower
