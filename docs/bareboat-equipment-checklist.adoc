@@ -188,13 +188,13 @@ no hanging open wires, etc)
 . Signalling mirror
 . Boom stop with proper rope (Ex: Capt Dan's boom brake)
 . Dinghy with oars, PFDs for the dinghy, dinghy bailer / scoop, dinghy foot pump, dock line / painter,
-floating flash light. Make sure the dinghy doesn't obstruct the stern light
+floating flashlight. Make sure the dinghy doesn't obstruct the stern light
 . Dinghy davits (dinghy rings - in my case)
 . Fire blankets
 . Covid-19 masks
 . Lightning strike detector
 . Sailing gloves
-. Sun glasses with lanyard
+. Sunglasses with lanyard
 . Sunhat with lanyard
 . Rain ponchos
 . Two winch handles
@@ -205,7 +205,7 @@ floating flash light. Make sure the dinghy doesn't obstruct the stern light
 . Depth sounder
 . Funnel, fuel strainer
 . Spare engine oil (know how to check oil level)
-. 4G/LTE internet router with on-board WiFi and SIM card for the sailing area
+. 4G/LTE internet router with on-board Wi-Fi and SIM card for the sailing area
 . Anemometer / wind speed, direction sensors
 . Barometer
 . Boom tent
@@ -215,7 +215,7 @@ floating flash light. Make sure the dinghy doesn't obstruct the stern light
 . Walkie-talkie for a dinghy-to-boat communication, anchoring communication
 . Dinghy bailer
 . Lifelines
-. Hand rails
+. Handrails
 . Loose nuts / bolts tightened
 . Sharp rigging elements covered with rigging tape
 . Spare halyards (installed and ready)
@@ -261,7 +261,7 @@ floating flash light. Make sure the dinghy doesn't obstruct the stern light
 . NavTex receiver
 . Means to receive weather fax
 . Weather routing software
-. PACTOR modem for messaging off-shore
+. PACTOR modem for messaging offshore
 . Sea anchor, slowing drogue
 . Dodger
 . Wind generator
@@ -321,13 +321,13 @@ storm / squall procedures, grounding
 . Dodger
 . Cockpit table
 . Cabin table
-. Swim suits
+. Swimsuits
 . Towels
 . Beach towels
-. Bed sheets
+. Bedsheets
 . Pillows (comfortable)
 . Snorkeling mask, tube, fins, mesh bag
-. Rain coat/jacket/ponchos
+. Raincoat/jacket/ponchos
 . Windproof jackets
 . Blue tooth speakers
 . Folding electric bicycle
@@ -401,7 +401,7 @@ Do not use carton boxes.
 . Shower pump
 . Liquid transfer pump
 . Waterproof computer keyboard, mouse
-. Smart phone mount
+. Smartphone mount
 . Engine key attached to a float
 . Companion way lock with a float
 . Drill
@@ -469,12 +469,12 @@ Do not use carton boxes.
 
 == Hygiene / Health
 
-. Tooth paste / brush / toothpicks / mouth wash / dental floss
+. Toothpaste / brush / toothpicks / mouth wash / dental floss
 . Eye drops
 . Eye contact lenses / liquid / prescription eye glasses with neck chord
 . Prescription medicines (labeled with name, patient name and instructions)
 . Hand sanitizer
-. Sun glasses, neck chord
+. Sunglasses, neck chord
 . Sun hat with lanyard
 . Long sleeve collared UV protective shirts
 . Sunscreen, lip balm
@@ -497,16 +497,16 @@ Do not use carton boxes.
 . Hydrogen peroxide
 . Anti-fungal creme
 . Antibiotic creme, neosporin
-. Skin rash, anti itch creme
+. Skin rash, anti itch cream
 . Allergy medications
 . Shampoo
 . Body wash
 . Bath sponges
 . Deodorant
-. Shaving razor, shaving creme
+. Shaving razor, shaving cream
 . Burn creme
 . Scissors
-. Bandana
+. Bandanna
 . Ear plugs
 . Sea sickness medications, bracelet, ginger gum / candies, ear plugs
 . Sleep mask
@@ -525,7 +525,7 @@ Do not use carton boxes.
 . Forks
 . Knives with covers
 . Ceramic knives with covers
-. Spoons, tea spoons
+. Spoons, teaspoons
 . Chopsticks
 . Plates / bowls
 . Cups / glasses
@@ -541,7 +541,7 @@ Do not use carton boxes.
 . Double gimbaled mug holder (Ex: Osculati)
 . Matches, lighters
 . Gas for the stove
-. Utencils holder
+. Utensils holder
 . Spice rack
 . Zip-lock bags
 . Coffee maker
@@ -618,7 +618,7 @@ NOTE: Even if the risk is low but consequences are catastrophic you still need t
 . Bouillon cubes, dry soup mix
 . Dry ramen noodles
 . Canned tomato paste
-. Sea food sauce
+. Seafood sauce
 . Avocados
 . Raisins
 . Cacao mix
@@ -713,7 +713,7 @@ NOTE: Even if the risk is low but consequences are catastrophic you still need t
 
 . Observation of hazards
 . Landmarks
-. Person on a watch out
+. Person on a watch-out
 . Anchor watch
 
 === Pilot
@@ -753,7 +753,7 @@ NOTE: Even if the risk is low but consequences are catastrophic you still need t
 . Boogie board
 
 
-== Applications for smart phones / tablets
+== Applications for smartphones / tablets
 
 . iNavX
 . Navionics

@@ -102,5 +102,5 @@ endif::[]
 |GitHub feedback: (stars, watchers, forks)|more|less
 |Distro Image Size|2.8 Gb|1.4 Gb
 |Download locations|2 Cloudsmith and GitHub|1 Private Cloud
-|Documentation|less pictures, more complete, more complete supported hardware list|more pictures, more gaps
+|Documentation|fewer pictures, more complete, more complete supported hardware list|more pictures, more gaps
 |===
