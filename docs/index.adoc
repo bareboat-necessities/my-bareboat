@@ -73,7 +73,7 @@ IMPORTANT: This is the documentation for our older hardware project. If you are 
 you should use this document: https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html
 
 
-This document describes a DIY project of building a marine computer, a boat LTE/WiFi gateway, and
+This document describes a DIY project of building a marine computer, a boat LTE/Wi-Fi gateway, and
 a cockpit chartplotter display from easily obtainable and affordable components.
 This boat electronics project includes:
 
@@ -84,7 +84,7 @@ This boat electronics project includes:
 * Environment temperature, barometric pressure, humidity sensors
 * Connections to the boat instruments such as wind, depth, speed, AIS via NMEA 0183 serial ports
 * Boat LTE / 4G Gateway, network storage
-* Boat WiFi hotspot and a router with WiFi extender and a long range waterproof WiFi antenna
+* Boat Wi-Fi hotspot and a router with Wi-Fi extender and a long range waterproof Wi-Fi antenna
 * Optional autopilot integration, rudder angle sensor
 * Other NMEA devices, engine/battery status, bilge pump monitoring, etc
 * Optional air mouse with a wireless keyboard, and a touchpad
@@ -94,9 +94,9 @@ This boat electronics project includes:
 * Music Player
 * Can be used with Iridium Satellite Modems
 * Can be used for processing transmissions received from SSB radio via audio interface
-* Variety of options of using wireless handheld devices such as smart phones and tablets
-to connect to boat systems via WiFi and bluetooth. There are many marine applications available for
-smart phones and tablets.
+* Variety of options of using wireless handheld devices such as smartphones and tablets
+to connect to boat systems via Wi-Fi and bluetooth. There are many marine applications available for
+smartphones and tablets.
 * Marine OS Linux Distribution https://github.com/bareboat-necessities/lysmarine_gen
 
 The boat computer is connected to the waterproof HDMI touchscreen in the cockpit.
@@ -129,7 +129,7 @@ https://github.com/bareboat-necessities/my-bareboat/issues
 
 NOTE: Although this document describes mostly instructions on building hardware components, it is designed in
 the spirit of open source development. We hope this design is going to evolve and have numerous releases and corrections
-if it gains some community. Some software components might become part of this project too. Cost cutting is another sport and
+if it gains some community. Some software components might become part of this project too. Cost-cutting is another sport and
 sub-hobby in recreational sailing and boating. So if same functionality can be built cheaper it probably should be, and
 here is the reason to change this document.
 
@@ -139,7 +139,7 @@ NOTE: As of March 2021 our preferred software for OS: https://bareboat-necessiti
 === Boat Computer
 
 The boat computer runs on Raspberry Pi (Raspbian Linux) with OpenPlotter 2.0 installed. The boat computer will reside
-below deck so it's not going to be waterproof. The touchscreen display runs OpenPlotter UI with OpenCPN chartplotter
+below deck, so it's not going to be waterproof. The touchscreen display runs OpenPlotter UI with OpenCPN chartplotter
 and dashboards as well as general Linux UI.
 
 *The boat computer front panel interfaces:*
@@ -164,7 +164,7 @@ image::front-panel-intf.jpg[alt="Boat Computer, Front Panel", width="75%",  pdfw
 
 *The boat computer back panel interfaces:*
 
-* 1 Ethernet port 1Gbit (for the WiFi router)
+* 1 Ethernet port 1Gbit (for the Wi-Fi router)
 * 1 USB 2.0 port for GPS (or something else)
 * 1 NMEA-0183 port (More can be added in the same DIY fashion)
 * DC power 2-wire input cord mounted inside a waterproof gland for 12v boat connection. SAE-type connector
@@ -184,9 +184,9 @@ image::back-panel-intf.jpg[alt="Boat Computer, Back Panel", width="75%",  pdfwid
 
 *Boat Computer Inside*
 
-NOTE: Raspberry Pi lays on top of the middle divider made out of plastic sheet. The power supply (12v to 5v step-down
+NOTE: Raspberry Pi lies on top of the middle divider made out of plastic sheet. The power supply (12v to 5v step-down
 converter) is mounted from the other side under the middle divider. The USB hub doesn't fit by height to simply lay
-on the divider, so there is a little shelf made out of the same plastic sheet and it is attached by 4 shortest
+on the divider, so there is a little shelf made out of the same plastic sheet, and it is attached by 4 shortest
 standoffs. USB hub is mounted under a slight angle to give space to a screw which closes the enclosure.
 
 
@@ -209,12 +209,12 @@ image::boat-computer.svg[alt="Boat Computer Basic Schematics Diagram"]
 
 {zwsp} +
 
-Raspberry Pi 4 has also WiFi and BlueTooth interfaces:
+Raspberry Pi 4 has also Wi-Fi and BlueTooth interfaces:
 
 * 802.11ac/n
 * Bluetooth 5.0
 
-WiFi can be used to set up access to the boat computer from smart phones and tablets
+Wi-Fi can be used to set up access to the boat computer from smartphones and tablets
 with additional software.
 
 ==== Tools and Supplies
@@ -245,7 +245,7 @@ https://www.amazon.com/dp/B012G6E62I
 
 | Screws, Nuts
 
-a| Screws, nuts, etc for electronics
+a| Screws, nuts, etc. for electronics
 
 | $4.5 | Microcenter
 
@@ -705,7 +705,7 @@ https://www.amazon.com/dp/B07ZBVG1PK
 
 | GPS Antenna Cable
 
-a| SMA Male to SMA Female Wifi Antenna Connector Extension RG174 Cable
+a| SMA Male to SMA Female Wi-Fi Antenna Connector Extension RG174 Cable
 
 * 8 meter
 
@@ -1076,7 +1076,7 @@ My wishlist for the perfect board https://bareboat-necessities.github.io/my-bare
 .Amp Meter Wiring Diagram
 image::amp-meter-wiring.jpg[alt="Amp Meter Wiring Diagram", width="75%",  pdfwidth="75vw", align="center"]
 
-====== Real blue water (off-shore) boat features (just brain storming)
+====== Real blue water (offshore) boat features (just brainstorming)
 
 * GPS and chartplotter
 * AutoPilot (PyPilot)
@@ -1134,7 +1134,7 @@ I had to press Ctrl-Tab twice followed by Enter, doing it basically blindly.
 Argonaut M7 gen2 7-inch touch display stays under 10 watts.
 If I turn off the display then wattage drops to 4-4.5 watts. If I reduce the brightness on the display backlight
 it drops dramatically as well. So both display and Pi contribute about the same share in power consumption.
-On average I see their combined draw of 0.75 amps at 12v (about 9 watts). This is with 2 chained USB hubs
+On average, I see their combined draw of 0.75 amps at 12v (about 9 watts). This is with 2 chained USB hubs
 and long wires (HDMI/USB/power) between a computer and cockpit display and hub, AIS (dAISy), RTL-SDR (plugged in but
 idling), Flashdrive SSD, FTDI (connected only into USB).
 * 10 watts on 80 amp-hours 12v battery (in my understanding they are rated for that before drop below 10v,
@@ -1146,17 +1146,17 @@ Even its own power on/off button didn't work. I had to perform a factory reset o
 * The reset procedure as per manufacturer requires to hold power button on Argonaut M7 display immediately after
 full power off/on cycle. On my boat it's really a two-man job then. There is no power switch in cockpit because
 the M7 display has its own and the other switch to power it on is below deck. It seems they didn't think about
-single handed sailors when they came up with this reset procedure design.
-* Turns out if I turn off 12v supply into cockpit it does turn-off the display but it's LED status light still stays on.
+single-handed sailors when they came up with this reset procedure design.
+* Turns out if I turn off 12v supply into cockpit it does turn-off the display, but it's LED status light still stays on.
 So it still gets some power via USB (not much per amp meter). Apparently this is the default behavior of most self powered
 USB hubs to draw from the host when they lose own power supply. There are some hubs which have this behavior configured
 by a jumper on their PCB, but the default is to power itself from the host.
 * I did test fiber-optic USB data cable leading to the cockpit as well. It does have regular wires for power as well, so
-it behaves exactly the same. The cable is much thinner so you can have a smaller hole is your boat in a cockpit deck.
+it behaves exactly the same. The cable is much thinner, so you can have a smaller hole is your boat in a cockpit deck.
 * Reboot doesn't work. It just shuts down Pi. There are many reports that pi4 doesn't reboot with USB self powered hubs
 if they are not powered off before the reboot and backfeed power into Pi.
 So currently the reboot procedures are shutdown and then power cycle the boat computer.
-* I've tried installing rpi-backlight but it seems Argonaut M7 monitor doesn't support software backlight control
+* I've tried installing rpi-backlight, but it seems Argonaut M7 monitor doesn't support software backlight control
 (at least it doesn't work under Linux) So the only way to control backlight is via Argonaut's own control on
 the side of the monitor.
 
@@ -1447,15 +1447,15 @@ https://www.sihovision.com/industrial-touch-monitor/7-inch-industrial-wide-tempe
 
 === Boat Gateway Box
 
-The second box is a boat LTE/WiFi/IoT gateway device and it is an extension to the boat computer.
+The second box is a boat LTE/Wi-Fi/IoT gateway device, and it is an extension to the boat computer.
 In case if you do not need HDMI display you might need only the boat gateway because the boat gateway runs its own KPlex
-server under OpenWrt Linux. The boat gateway has M5Stack ESP32 micro-controller and is capable to connect to NMEA
+server under OpenWrt Linux. The boat gateway has M5Stack ESP32 microcontroller and is capable to connect to NMEA
 (if you customize if a bit further). The boat gateway is connected to the boat computer via Ethernet.
-The boat gateway uses the same type of an enclosure as the boat computer.
+The boat gateway uses the same type of enclosure as the boat computer.
 
 Features of the boat gateway box:
 
-* WiFi Gateway (connecting to marina's WiFi and on-shore WiFi hot-spots via a long range WiFi antenna)
+* Wi-Fi Gateway (connecting to marina's Wi-Fi and on-shore Wi-Fi hot-spots via a long range Wi-Fi antenna)
 
 * LTE / 4G Gateway (providing a boat with Internet and voice access within the zone of reception
 of a cellular network)
@@ -1466,7 +1466,7 @@ of a cellular network)
 
 * Network Access Storage, Network back-up
 
-* M5Stack ESP32 Controller and 3-Buttons LCD display (panel mounted, numerous optional M2Stack add-ons)
+* M5Stack ESP32 Controller and 3-Buttons LCD (panel mounted, numerous optional M2Stack add-ons)
 
 * KPlex server running on router's OpenWrt Linux
 
@@ -1476,7 +1476,7 @@ of a cellular network)
 
 * Voltage and Amperage Display to monitor power consumption
 
-* Any other additional sensors and devices can be added via M5Stack. M5Stack is programmable micro-controller without
+* Any other additional sensors and devices can be added via M5Stack. M5Stack is programmable microcontroller without
 an operating system but very capable of running complex programs
 
 ==== Boat Gateway Front Panel
@@ -1487,7 +1487,7 @@ an operating system but very capable of running complex programs
 
 * Panel Mounted Fuse Box
 
-* Panel Mounted M5Stack LCD Display with 3 Buttons
+* Panel Mounted M5Stack LCD with 3 Buttons
 
 * USB 2.0 Port connected to M5Stack
 
@@ -1511,7 +1511,7 @@ image::boat-router/router-front-panel-2.jpg[alt="Boat Router Front Panel Wiring"
 
 * Two SMA coax connectors to external cellular LTE antennas
 
-* SMA RP coax connector for external long range WiFi antenna
+* SMA RP coax connector for external long range Wi-Fi antenna
 
 * SMA coax connector to external active GPS antenna
 
@@ -1566,7 +1566,7 @@ to have SD and SIM card extension cords and panel mounted slots.
 
 
 
-| GL-X750 LTE 4G/3G and Wifi Router (It's the best choice, GL-AR750 is not needed if you pick this)
+| GL-X750 LTE 4G/3G and Wi-Fi Router (It's the best choice, GL-AR750 is not needed if you pick this)
 a| GL.iNet Spitz (GL-X750) 4G Router & 4G Modem (with Sim card slot) for your area and cellular provider
 
 * Transfer 4G LTE signal to Wi-Fi, 5G (433Mbps), 2.4G(300Mbps) Wi-Fi, 4G (EC25, EP06) PCIe modules
@@ -1583,7 +1583,7 @@ bluetooth module and wall mount: $16) | gl-inet.com
 
 
 
-| WiFi Router (not needed if you go with GL-X750 option)
+| Wi-Fi Router (not needed if you go with GL-X750 option)
 a|
 GL.iNet GL-AR750 Travel AC Router, 300Mbps(2.4G)+433Mbps(5G) Wi-Fi, 128MB RAM, MicroSD Storage Support, OpenWrt/LEDE
 
@@ -1597,8 +1597,8 @@ https://www.amazon.com/dp/B07712LKJM
 
 
 
-| WiFi RF Connector Cable (*RP*)
-a| U.FL Mini PCI to *Reverse Polarity* SMA Pigtail Antenna WiFi Cable Pack of 2
+| Wi-Fi RF Connector Cable (*RP*)
+a| U.FL Mini PCI to *Reverse Polarity* SMA Pigtail Antenna Wi-Fi Cable Pack of 2
 
 * Reverse Polarity SMA Female ( *Pin in center* ) to IPX ufl Female Coaxial Connector
 
@@ -1618,7 +1618,7 @@ https://www.amazon.com/dp/B06Y6CB2SX
 
 
 | LTE RF Connectors
-a| SMA Extension Cable Pigtail Male to Female WiFi Antenna Cable RF RG316 Coaxial
+a| SMA Extension Cable Pigtail Male to Female Wi-Fi Antenna Cable RF RG316 Coaxial
 Coax Jumper FPV SMA Antenna Wire (4 inch (4 Pcs))
 
 https://www.amazon.com/dp/B0813RPPTX
@@ -1687,7 +1687,7 @@ https://www.data-alliance.net/cable-gland-for-fiber-usb-sim-terminal-block-water
 
 
 | WiFi Antenna Cable
-a| Low Loss RG58 WiFi Cable N Male to RP SMA Male Connector Hole in Center Pigtail SMA Cable 10M for
+a| Low Loss RG58 Wi-Fi Cable N Male to RP SMA Male Connector Hole in Center Pigtail SMA Cable 10M for
 3G/4G/LTE/Ham/GPS/RF Radio to Antenna or Surge Arrester Use
 
 * Connector Gender 	N male , RP SMA Male
@@ -1705,7 +1705,7 @@ Lysignal Outdoor Omni Directional Antenna Fiberglass 2.4GHz 8dBi N Female Connec
 Phone Signal Booster, WiFi Router
 
 * Complies with all 802.11n/b/g (2.4GHz) products
-* High power, high gain outdoor wifi antenna. Extend coverage of a wireless network in all directions
+* High power, high gain outdoor Wi-Fi antenna. Extend coverage of a wireless network in all directions
 * Waterproof, striking resistant, anti-corrosion
 * RP (reverse polarity) SMA connector
 
@@ -1759,7 +1759,7 @@ https://m5stack.com/collections/m5-core/products/basic-core-iot-development-kit
 a|LAN is a M5 Base that having a W5500 chip, which is a Hardwired TCP/IP embedded
 Ethernet controller that provides easier Internet connection to embedded systems.
 This Base is specifically
-designed for industrial application scenarios, comes with couple of HT3.96 connectors
+designed for industrial application scenarios, comes with a couple of HT3.96 connectors
 
 * Input Supply Voltage: 9-24V
 * HT3.96 port for supporting RS485
@@ -1770,7 +1770,7 @@ https://m5stack.com/products/lan-module
 https://m5stack.com/collections/m5-base/products/lan-module
 
 NOTE: You can use Base26 module instead https://m5stack.com/collections/m5-base/products/base-26proto-industrial-board-module
-you will have only WiFi connectivity
+you will have only Wi-Fi connectivity
 
 | $14 | m5stack.com
 
@@ -1832,7 +1832,7 @@ image::gl-x750-antenna-mod.jpg[alt="GL-X750 Screws", width="75%",  pdfwidth="75v
 
 The modem is controlled via 'AT' commands.
 
-Make sure you connect antennas first before activating SIM card in the network or you might get error like:
+Make sure you connect antennas first before activating SIM card in the network, or you might get error like:
 
  SIM card not registered
 
@@ -1854,7 +1854,7 @@ The command to reset the modem to factory defaults is
 
  AT+QPRTPARA=3
 
-The router is running linux. While setting it up you can login into it like this:
+The router is running linux. While setting it up you can log in into it like this:
 
  ssh root@192.168.8.1
 
@@ -1875,7 +1875,7 @@ image::KPlex-OpenWrt-Router.png[alt="KPlex on OpenWrt Router"]
 {zwsp} +
 
 AT command for the GPS needs to be run every time on boot. This needs to be scripted.
-Install the program called 'socat'. With it you can send commands to the modem from command line.
+Install the program called 'socat'. With it, you can send commands to the modem from command line.
 
 [source]
 ----
@@ -1932,15 +1932,15 @@ chmod 755 /etc/init.d/modem-gps-init
 Another modification: By default in GL-X750 one Ethernet port is set up as WAN and another is LAN.
 You can reassign them both as LAN. It is done in web UI of the router.
 One LAN port will go to main boat computer and another lan port you can connect to M5Stack LAN base module.
-Or even have a ethernet hub inside if you plan bigger boat LAN (in that case you can leave one port as WAN and
+Or even have an ethernet hub inside if you plan bigger boat LAN (in that case you can leave one port as WAN and
 connect the router via hub).
 
 GL-X750 aka Spitz router power supply is 12v (No need for buying step-down converter).
 
 NOTE: If you just need chart plotter capabilities it seems you do not even need raspberry pi. You could just install
 KPlex on GL-X750 router make sure the modem you picked when you buy the router has GPS. And then you use
-OpenCPN installed on an android tablet connected via WiFi to KPLex. And with this you have LTE internet on your boat
-and local private WiFi.
+OpenCPN installed on an android tablet connected via Wi-Fi to KPLex. And with this you have LTE internet on your boat
+and local private Wi-Fi.
 
 NOTE: FlashDrive Stick inserted into the router USB port is automatically shared on network via samba. You should
 mount it using this command from Raspberry Pi:
@@ -1955,7 +1955,7 @@ sudo mount -t cifs //gl-x750/SamsungUSB /media/Share -o user=guest,vers=1.0
 Raspberry Pi4 supports only one band in access point (AP) mode. So it is either 2.4GHz or 5GHz but not both.
 I've set it up to be on 5G for faster speed. For IoT devices I've enabled 2G band on the router.
 
-On the screen shots below their SSIDs are "boatWiFi-5g" and "boatWiFi-IoT".
+On the screenshots below their SSIDs are "boatWiFi-5g" and "boatWiFi-IoT".
 
 .Boat Network Settings
 image::boat-network/boat-access-point.png[alt="Boat Network Settings", width="75%",  pdfwidth="75vw", align="center"]
@@ -1971,7 +1971,7 @@ image::boat-network/boat-access-point-status.png[alt="Boat Access Point Status",
 
 https://www.realvnc.com/raspberrypi/
 
-===== WiFi Gateway
+===== Wi-Fi Gateway
 
 https://www.gl-inet.com/products/gl-ar750/
 
@@ -1979,18 +1979,18 @@ In web UI of your OpenWrt router:
 
 . Click internet.
 . Add repeater.
-. Connect to marina WiFi
+. Connect to marina Wi-Fi
 
-The UI should look like this when you set up LTE and port WiFi connections:
+The UI should look like this when you set up LTE and port Wi-Fi connections:
 
 .OpenWrt WAN Settings
 image::boat-network/openwrt-wan-settings.png[alt="OpenWrt WAN Settings", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
 
-On the screenshot above UniFiNet would be marina's WiFi SSID.
+On the screenshot above UniFiNet would be marina's Wi-Fi SSID.
 
-.OpenWrt Local WiFi Settings
+.OpenWrt Local Wi-Fi Settings
 image::boat-network/openwrt-settings.png[alt="OpenWrt Local WiFi Settings", width="75%",  pdfwidth="75vw", align="center"]
 
 {zwsp} +
@@ -2030,7 +2030,7 @@ The code for the sketch is located here:
 
 https://github.com/bareboat-necessities/my-bareboat/tree/master/m5-boat-display
 
-Currently it supports GPS and Wind displays. I have an idea how to display more from AIS in future.
+Currently, it supports GPS and Wind displays. I have an idea how to display more from AIS in the future.
 
 {zwsp} +
 
@@ -2039,7 +2039,7 @@ image::boat-router/m5stack-boat-display.jpg[alt="M5Stack Boat Display", width="7
 
 {zwsp} +
 
-====== NMEA to WiFi on ESP32
+====== NMEA to Wi-Fi on ESP32
 
 Couple projects
 
@@ -2079,15 +2079,15 @@ image::boat-router/boat-router-lte-speed.jpg[alt="Boat Router LTE Speed", width=
 ===== Good
 
 * LTE speed is good even with two little antennas it came with.
-* Time to acquire a GPS location fix is very short with external antenna. I do not have exact time but it's under
+* Time to acquire a GPS location fix is very short with external antenna. I do not have exact time, but it's under
 few minutes even inside the house. Having external GPS antenna made a huge improvement.
 * Power usage of the whole gateway box in well under 2 watts. 2 watts is under speed stress test with uploads over LTE.
 
 ===== Not so good
 
-* External WiFi antenna (the one from the bill of material) did very little to improve the range. (Again I've tested
+* External Wi-Fi antenna (the one from the bill of material) did very little to improve the range. (Again I've tested
 it inside the house, without placing the antenna outside). My modification of the connector inside the router and soldering
-it might have been not good so you might have better results.
+it might have been not good, so you might have better results.
 * Bigger LTE antenna (again from the bill of material) didn't give better signal quality (even a bit lower) than
 original antennas supplied with Spritz router. (Could be different picture on other bands though). With either of
 antennas LTE performed well.
@@ -2118,9 +2118,9 @@ image::cockpit-home-page.png[Cockpit Home Page, align="center"]
 === Key Open Source Software Components / Players
 
 * Charting Software, OpenCPN (by David Register and others)
-* Off-shore features, Climatology/Weather Routing/Weather Fax/GRIB/Celestial Navigation/DIY Autopilots/PyPilot (by Sean D'Pagnier)
+* Offshore features, Climatology/Weather Routing/Weather Fax/GRIB/Celestial Navigation/DIY Autopilots/PyPilot (by Sean D'Pagnier)
 * Sensors and Marine Data Protocols, SignalK (Scott Bender and others)
-* User friendly raspberry pi server configuration, OpenPlotter and some hardware, sensors (by sailoog and other)
+* User-friendly raspberry pi server configuration, OpenPlotter and some hardware, sensors (by sailoog and other)
 * Web based tiling charting, AvNav (by Andreas Vogel)
 * Decoding radio signal protocols, HamRadio and SDR community
 * Many others who build core protocol/sensor/data formats/controller code libraries
@@ -2677,7 +2677,7 @@ You download charts via OpenCPN chart downloader plugin.
 |02 | Block Island, RI to the Canadian Border
 |03 | New York to Nantucket and Cape May, New Jersey
 |04 | Chesapeake and Delaware Bays
-|06 | Norfolk, VA to Florida - The Intracoastal Waterway
+|06 | Norfolk, VA to Florida - The Intra-coastal Waterway
 |07 | Florida East Coast and the Keys
 |08 | Florida West Coast and the Keys
 |10 | Puerto Rico and US Virgin Islands
@@ -2754,7 +2754,7 @@ https://openmaptiles.org/
 
 ==== Touch Screen
 
-===== Multi-touch emulation with twofing
+===== Multitouch emulation with twofing
 
 One of the issues that kept bugging me was the lack of multitouch support on a touchscreen
 in OpenCPN and Raspbian UI in general. Well there is a fix! The solution requires the program called 'twofing'.
@@ -2779,7 +2779,7 @@ For Argonaut M7 gen1 I've seen in posts VendorID: 04d8, ProductId: f724
 and reported device name as 'Microchip Technology, Inc.'.
 For VendorID:ProductId 04D8:F724 these instructions might work: https://chalk-elec.com/?p=2028
 
-Another issue with twofing and Chromium browser is that latest Chromium browser does handle multi touch
+Another issue with twofing and Chromium browser is that latest Chromium browser does handle multitouch
 fine by itself and twofing interferes with that. To fix that you need to add "chrome" into 'profiles.h'
 'blacklist' variable in twofing code. Edit 'profiles.h', recompile it and copy into /usr/bin/ :
 
@@ -2822,7 +2822,7 @@ sudo apt-get -y install dbus-x11 onboard
 With 'twofing' fix and an on-screen 'onboard' keyboard OpenCPN is much more usable on my touch screen display.
 Smooth Panning/Zooming, OpenGL, and Touchscreen should be all enabled in OpenCPN settings.
 
-The sound didn't work out of aux port. By default Raspberry Buster uses HDMI audio output and Argonaut M7 doesn't
+The sound didn't work out of aux port. By default, Raspberry Buster uses HDMI audio output and Argonaut M7 doesn't
 have a speaker. This command switches it to aux (You will need to add it into linux startup scripts if you
 want it on every boot):
 
@@ -2903,7 +2903,7 @@ image::config/openplotter-pypilot-connections.png[Openplotter PyPilot Connection
 
 {zwsp} +
 
-Check your set up
+Check your set-up
 
 [source, shell]
 -----
@@ -2912,7 +2912,7 @@ openplotter-startup check
 
 ==== SignalK Connections
 
-. Set up SignalK to Sync up time with GPS.
+. Set up SignalK to Sync uptime with GPS.
 . Set up SignalK to translate data into NMEA0183
 . The created connections should look like this:
 
@@ -3080,7 +3080,7 @@ Easiest way to try your RTL-SDR dongle is via tuning to FM station.
 
 . Launch GQRX
 . Set up input SDR dongle and audio output
-. Tune to a FM station (Example 104.3 MHz in my area) (see screen shot)
+. Tune to an FM station (Example 104.3 MHz in my area) (see screenshot)
 . Adjust gain in audio control. You should hear clear radio.
 
 .Receiving FM radio with RTL-SDR
@@ -3449,7 +3449,7 @@ https://www.meltemus.com/
 
 which is available for Raspberry Pi.
 
-I've installed and played with it and I have found it it too difficult to use on a small cockpit touchscreen with
+I've installed and played with it, and I have found it is too difficult to use on a small cockpit touchscreen with
 default settings, but they can be adjusted. It can also use the charts you would download for OpenCPN.
 So it even can be used as your main chart plotter.
 
@@ -3695,7 +3695,7 @@ You can check for charts by accessing this URL:
 
 http://localhost:3000/signalk/v1/api/resources/charts
 
-The following plugins should be installed installed on the Signal K node server to enable full functionality:
+The following plugins should be installed on the Signal K node server to enable full functionality:
 
 * freeeboard-sk-helper (Course information)
 * sk-resources-fs (Routes, Waypoints, Notes & Regions provider)
@@ -3968,7 +3968,7 @@ https://docs.mopidy.com/en/latest/installation/debian/#debian-install
 
 
 For Raspberry PI you should first try installing via apt. If pre-build package
-doesn't exists then you use python3 pip.
+doesn't exist then you use python3 pip.
 
 [source, shell]
 ----
@@ -4101,7 +4101,7 @@ EOF'
 
 ----
 
-You can use your smart phone to control the player with one of the MPD client applications.
+You can use your smartphone to control the player with one of the MPD client applications.
 I used 'MPDPlayer' on iphone and MPDroid on android. You create connection:
 
  openplotter:6600
@@ -4115,7 +4115,7 @@ or
 
 === USB Audio Dongle with audio input/output
 
-Raspberry Pi doesn't have audio input. For it you can use external USB audio dongle card.
+Raspberry Pi doesn't have audio input. For it, you can use external USB audio dongle card.
 
 Example: Adafruit https://www.adafruit.com/product/1475
 
@@ -4236,7 +4236,7 @@ Worth alternative to raspberry pi product line.
 
 https://usa.banggood.com/LILYGO-TTGO-T-Watch-2020-ESP32-Main-Chip-1_54-Inch-Touch-Display-Programmable-Wearable-Environmental-Interaction-Watch-p-1671427.html
 
-esp32 programmable water resistant low cost watch
+esp32 programmable water-resistant low cost watch
 
 === Car Android Systems
 
@@ -4262,7 +4262,7 @@ There is also a closed body turnbuckle in the design. It needs a securing wire t
 unscrewing.
 
 NOTE: I had to add one more turnbuckle to form a stiff triangle to better hold the mast vertically. Two
-turnbuckles mounts to the same bolt on the pole and attach to two different points on the vertical stancion.
+turnbuckles mounts to the same bolt on the pole and attach to two different points on the vertical stanchion.
 
 The pipe cutter which worked perfectly easy for me on stainless steel is this one:
 
@@ -4341,7 +4341,7 @@ Look also at past commercial solutions:
 
 {zwsp} +
 
-== Mobile Applications (Smart Phones and Tablets)
+== Mobile Applications (Smartphones and Tablets)
 
 . iNavX
 . Navionics
