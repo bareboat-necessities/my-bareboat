@@ -433,7 +433,12 @@ http://svocelot.com/Cruise_Info/Equipment/mbTiles.htm
 
 ==== AvNav
 
-When you are online NOAA raster MB tiles should work out of the box. O-Charts can be registered using AvNav plugin
+When you are online NOAA raster MB tiles should work out of the box. You can install offline charts
+by following AvNav documentation.
+
+NOTE: NOAA is phasing out RNC charts in favor of ENC.
+
+O-Charts can be registered using AvNav plugin
 with O-Charts USB dongle or key.
 
 ==== SignalK, FreeBoard-SK, TukTuk
