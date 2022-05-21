@@ -1036,6 +1036,11 @@ This should restore touch events in that app.
 with touch but to perform a click on it, you would actually need to perform simulated right click
 by holding finger a bit longer and letting it go.
 
+==== OpenCPN
+
+OpenCPN feature to auto hide toolbar on timer seems causing OpenCPN to hang under some conditions. Avoid it and
+keep it turned off.
+
 ==== Wi-Fi DNS
 
 If you use your devices on LAN or Wi-Fi networks they might get assigned different IP addresses from DHCP servers.
