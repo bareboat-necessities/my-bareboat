@@ -2656,10 +2656,10 @@ https://www.touchtecs.com/ produces reasonably priced touchscreen, which can be 
 
 The product is coded as TouchThink TPC-CD-M101, but you have to spec out your order precisely:
 
-* 10.1 inch, 1280*800 16:10, waterproof IP67
-* 10 points capacitive touch screen monitor,
+* 10.1 inch, 1280*800 16:10
+* 10 points capacitive touch screen monitor, optically bonded
 * 1000nit high brightness, -20 to 70 degree wide use temperature.
-* industrial front IP65 waterproof dust-proof vehicle use aluminum alloy bezel style.
+* industrial front IP67 waterproof dust-proof vehicle use aluminum alloy bezel style.
 * 7H hardness tempered glass grade A
 * with 12-36V DC.
 * waterproof aviation ports: HDMI+touch+DC
