@@ -1386,6 +1386,10 @@ SenseHat into SignalK: https://forum.openmarine.net/showthread.php?tid=3899&pid=
 
 Solar Controller: https://forum.openmarine.net/showthread.php?tid=3397
 
+You can search for ready flows and additional nodes on https://flows.nodered.org/
+
+To install additional nodes using npm, make sure you run npm under 'signalk' user and
+from /home/signalk/.signalk directory.
 
 
 === Data Analytics
