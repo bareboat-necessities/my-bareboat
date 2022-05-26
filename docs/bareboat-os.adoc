@@ -1382,6 +1382,12 @@ https://github.com/SignalK/node-red-embedded
 Example flows:
 https://flows.nodered.org/node/@signalk/node-red-embedded
 
+SenseHat into SignalK: https://forum.openmarine.net/showthread.php?tid=3899&pid=21758#pid21758
+
+Solar Controller: https://forum.openmarine.net/showthread.php?tid=3397
+
+
+
 === Data Analytics
 
 ==== Grafana
