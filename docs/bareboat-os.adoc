@@ -1376,6 +1376,11 @@ Add topic (Ex: navigation.headingMagnetic). Restart SignalK and observe the data
 NodeRed is installed into SignalK. To use NodeRed login into SignalK by visiting
 http://localhost:3000 clicking 'login', choosing 'remember me' session and storing the password in a browser.
 
+More:
+https://github.com/SignalK/node-red-embedded
+
+Example flows:
+https://flows.nodered.org/node/@signalk/node-red-embedded
 
 === Data Analytics
 
