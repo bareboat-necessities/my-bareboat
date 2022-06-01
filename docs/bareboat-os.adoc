@@ -2135,6 +2135,8 @@ SignalK comes with:
 
 NodeRed comes with nodes supporting Victron too.
 
+HomeAssistant power monitoring has good support of Victron devices as well.
+
 === Sonars
 
 ==== EchoZilla Open Source Sonar
