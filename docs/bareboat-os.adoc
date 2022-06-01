@@ -2133,6 +2133,8 @@ SignalK comes with:
 - Victron Venus OS Plugin
 - ModBus Client Plugin
 
+NodeRed comes with nodes supporting Victron too.
+
 === Sonars
 
 ==== EchoZilla Open Source Sonar
