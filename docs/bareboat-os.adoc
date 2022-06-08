@@ -438,6 +438,9 @@ by following AvNav documentation.
 
 NOTE: NOAA is phasing out RNC charts in favor of ENC.
 
+You can download NOAA MB Tiles from offline use here:
+https://distribution.charts.noaa.gov/ncds/index.html
+
 O-Charts can be registered using AvNav plugin
 with O-Charts USB dongle or key.
 
