@@ -526,6 +526,10 @@ or using JPSKMail.
 SignalK comes with NOAA weather plugin. After you configure it, weather alerts will
 show up in KIP dashboard.
 
+==== NOAA weather in browser
+
+https://www.nhc.noaa.gov/marine/
+
 ==== WeatherFax
 
 WeatherFax OpenCPN plugin is capable of downloading weather faxes from Internet as well as capturing
