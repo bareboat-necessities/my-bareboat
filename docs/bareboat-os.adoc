@@ -835,10 +835,29 @@ noaa-apt  https://github.com/martinber/noaa-apt
 
 stdcdec https://github.com/cropinghigh/stdcdec
 
+===== AIS
+
+aisdecoder  https://www.aishub.net/ais-decoder
+
+rtl_ais  https://github.com/dgiardini/rtl-ais
+
 ===== Other Decoders
 
 Explore HAM Radio menu for more software.
 
+
+==== WinLink
+
+===== jpskmail
+
+https://www.pskmail.org/
+
+===== WinLink Pat
+
+https://github.com/la5nta/pat
+
+
+===== Other Decoders
 
 === Iridium Phone
 
