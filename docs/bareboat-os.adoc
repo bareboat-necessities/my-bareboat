@@ -799,7 +799,7 @@ sudo raspi-config
 and selecting booting into the console under System Options / Boot - Auto Login.
 
 
-=== Marine Radio
+=== Marine Radio, SSB, SDR, HAM
 
 OS image comes with many HAM radio applications, decoders for many marine specific
 signals and protocols. Many SDR products should work. Decoding is also possible using
@@ -816,6 +816,28 @@ These applications will allow you (with some skill and set up):
 - SDR can help you to decode AIS, and ADS-B (aviation analogue of AIS)
 - Control your rig (SSB/SDR) with raspberry pi and monitor
 - and more
+
+==== Included Decoders
+
+===== NavTex
+
+JNX https://arachnoid.com/JNX/
+
+===== WeatherFax
+
+JWX https://arachnoid.com/JWX/
+
+===== Satellite Weather
+
+noaa-apt  https://github.com/martinber/noaa-apt
+
+===== Inmarsat STD-C
+
+stdcdec https://github.com/cropinghigh/stdcdec
+
+===== Other Decoders
+
+Explore HAM Radio menu for more software.
 
 
 === Iridium Phone
