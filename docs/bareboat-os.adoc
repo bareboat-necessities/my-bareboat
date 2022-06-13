@@ -2686,6 +2686,23 @@ sudo raspi-config
 
 Without it VNC would show message that it couldn't show desktop.
 
+=== Remote Desktop with NoMachine
+
+NoMachine might ba a better alternative to VNC.
+
+Download and install NoMachine for Raspberry ARMv7 DEB (Buster) from
+https://www.nomachine.com/download/download&id=102&s=Raspberry&hw=Pi4
+
+Install command:
+
+[source, shell]
+----
+sudo dpkg -i nomachine_<version>_armhf.deb
+----
+
+Install NoMachine on the connecting client.
+For cloud version configuration see: https://www.nomachine.com/all-documents
+
 === Setting up monitor
 
 /boot/config.txt contains most important settings for your monitor. You might need to adjust them manually.
