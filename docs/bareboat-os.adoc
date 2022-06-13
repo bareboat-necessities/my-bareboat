@@ -857,8 +857,6 @@ https://www.pskmail.org/
 https://github.com/la5nta/pat
 
 
-===== Other Decoders
-
 === Iridium Phone
 
 BBN OS will help you to use Iridium Phone as a modem for low bandwidth Internet access, or
