@@ -481,6 +481,37 @@ https://github.com/pypilot/workbook/wiki very useful as well.
 
 Commercial PyPilot hardware: https://pcnautic.gitbook.io/autopilot/inhoud-autopilot-set
 
+If you have pypilot arduino motor controller connected via GPIO pins you need to add
+
+[source]
+----
+dtoverlay=disable-bt
+----
+
+in your /boot/config.txt to disable conflicting bluetooth UART.
+Your motor controller will use that on-board UART.
+
+You will need to remove /dev/ttyAMA0 from /home/pypilot/.pypilot/blacklist_serial_ports
+to let pypilot probe that port. (otherwise, pypilot port-probing breaks bluetooth even if bluetooth is enabled)
+
+If you have pypilot hardware hat attached, then you will need to enable the following settings in /boot/config.txt
+
+[source]
+----
+dtparam=i2c_arm=on
+dtparam=i2s=on
+dtparam=spi=on
+----
+
+and enable pypilot hat service to start at boot time:
+
+[source, shell]
+----
+sudo systemctl enable pypilot_hat
+----
+
+
+
 === UI for controlling autopilots
 
 There are three options:
