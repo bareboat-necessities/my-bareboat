@@ -499,8 +499,8 @@ If you have pypilot hardware hat attached, then you will need to enable the foll
 [source]
 ----
 dtparam=i2c_arm=on
-dtparam=i2s=on
 dtparam=spi=on
+#dtparam=i2s=on
 ----
 
 and enable pypilot hat service to start at boot time:
