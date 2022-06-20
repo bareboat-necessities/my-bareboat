@@ -499,6 +499,8 @@ ls -l /dev/serial0
 
 /dev/serial0 must point to /dev/ttyAMA0
 
+Serial console must be disabled too. Check /boot/cmdline.txt
+
 You will need to remove /dev/ttyAMA0 from /home/pypilot/.pypilot/blacklist_serial_ports
 to let pypilot probe that port. (otherwise, pypilot port-probing breaks bluetooth even if bluetooth is enabled)
 
