@@ -491,6 +491,14 @@ dtoverlay=disable-bt
 in your /boot/config.txt to disable conflicting bluetooth UART.
 Your motor controller will use that on-board UART.
 
+Check:
+[source]
+----
+ls -l /dev/serial0
+----
+
+/dev/serial0 must point to /dev/ttyAMA0
+
 You will need to remove /dev/ttyAMA0 from /home/pypilot/.pypilot/blacklist_serial_ports
 to let pypilot probe that port. (otherwise, pypilot port-probing breaks bluetooth even if bluetooth is enabled)
 
