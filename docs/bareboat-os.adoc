@@ -518,6 +518,7 @@ and enable pypilot hat service to start at boot time:
 sudo systemctl enable pypilot_hat
 ----
 
+For hat display to work you need to specify correct driver (ex: nokia5110) in /home/pypilot/.pypilot/hat.conf
 
 
 === UI for controlling autopilots
