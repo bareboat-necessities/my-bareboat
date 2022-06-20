@@ -492,7 +492,7 @@ in your /boot/config.txt to disable conflicting bluetooth UART.
 Your motor controller will use that on-board UART.
 
 Check:
-[source]
+[source, shell]
 ----
 ls -l /dev/serial0
 ----
@@ -1281,7 +1281,7 @@ in BBN OS before playing music to avoid skipping.
 
 QtVlm can be installed via add-ons:
 
-[source,shell]
+[source, shell]
 ----
 cd /home/user/add-ons
 ./qtvlm-install.sh
@@ -1291,7 +1291,7 @@ cd /home/user/add-ons
 
 You can install your Maritime Publications On-Board Library via add-ons:
 
-[source,shell]
+[source, shell]
 ----
 cd /home/user/add-ons
 ./maritime-lib-install.sh
@@ -1301,7 +1301,7 @@ cd /home/user/add-ons
 
 You can install JellyFin via add-ons:
 
-[source,shell]
+[source, shell]
 ----
 cd /home/user/add-ons
 ./jellyfin-install.sh
@@ -1312,7 +1312,7 @@ cd /home/user/add-ons
 You can install HomeAssistant (for many BBN users their boat is their home) via add-ons.
 You need to be connected to Internet, and give 15 mins or so after the below commands finish:
 
-[source,shell]
+[source, shell]
 ----
 cd /home/user/add-ons
 ./homeassistant-install.sh
@@ -1336,7 +1336,7 @@ Yor system includes installed SolarThing. See more at https://github.com/wildmou
 
 Maiana AIS supported via add-ons
 
-[source,shell]
+[source, shell]
 ----
 cd /home/user/add-ons
 ./maiana-ais-install.sh
@@ -1443,7 +1443,7 @@ BBN OS image comes with Mosquitto clients and server preinstalled but disabled. 
 
 . Enable and start Mosquitto server (on default port 1883)
 +
-[source]
+[source, shell]
 ----
 sudo systemctl enable mosquitto
 sudo systemctl start mosquitto
@@ -1451,7 +1451,7 @@ sudo systemctl start mosquitto
 
 . Subscribe to topics
 +
-[source]
+[source, shell]
 ----
 mosquitto_sub -t '#'
 ----
@@ -1489,7 +1489,7 @@ BBN OS image comes with grafana preinstalled but disabled. To enable and start i
 . Edit the /etc/grafana/grafana.ini  and /usr/share/grafana/conf/defaults.ini files and
 change line ';http_port = 3000' to 'http_port = 3080' (to avoid conflict with SignalK)
 +
-[source]
+[source, shell]
 ----
 sudo nano /etc/grafana/grafana.ini
 sudo nano /usr/share/grafana/conf/defaults.ini
@@ -1497,7 +1497,7 @@ sudo nano /usr/share/grafana/conf/defaults.ini
 
 . Enable and start Grafana server
 +
-[source]
+[source, shell]
 ----
 sudo systemctl enable grafana-server
 sudo systemctl start grafana-server
@@ -1510,7 +1510,7 @@ sudo systemctl start grafana-server
 
 . Enable and start InfluxDB server (on default ports 8086 (client-server), 8088 (RPC))
 +
-[source]
+[source, shell]
 ----
 sudo systemctl unmask influxdb.service
 sudo systemctl enable influxdb
@@ -1533,7 +1533,7 @@ another 5 watts or even more. Human brain runs on about 12-25 watts for comparis
 
 Fixes verified by the development team can be installed by running:
 
-[source]
+[source, shell]
 ----
 cd /home/user/add-ons
 ./hot-fixes-install.sh
@@ -1543,7 +1543,7 @@ cd /home/user/add-ons
 
 Your system packages can be upgraded following standard Debian packaging system procedure:
 
-[source]
+[source, shell]
 ----
 sudo apt update
 sudo apt upgrade
@@ -2158,7 +2158,7 @@ SensESP allows connecting many sensors:
 SensESP requires using PlatformIO IDE, which you can install using these steps:
 
 Install Visual Studio Code
-[source, bash]
+[source, shell]
 ----
 sudo apt update
 sudo apt install code
