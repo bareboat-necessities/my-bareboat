@@ -2728,6 +2728,12 @@ sudo raspi-config
 
 Without it VNC would show message that it couldn't show desktop.
 
+=== USB over IP
+
+https://developer.ridgerun.com/wiki/index.php?title=How_to_setup_and_use_USB/IP
+
+https://derushadigital.com/other%20projects/2019/02/19/RPi-USBIP-ZWave.html
+
 === Remote Desktop with NoMachine
 
 NoMachine might ba a better alternative to VNC.
