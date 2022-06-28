@@ -2751,6 +2751,11 @@ sudo dpkg -i nomachine_<version>_armhf.deb
 Install NoMachine on the connecting client.
 For cloud version configuration see: https://www.nomachine.com/all-documents
 
+=== Free Cloudflare Tunnel To HomeAssistant
+
+https://peyanski.com/connecting-cloudflare-tunnel-to-home-assistant/
+
+
 === Setting up monitor
 
 /boot/config.txt contains most important settings for your monitor. You might need to adjust them manually.
