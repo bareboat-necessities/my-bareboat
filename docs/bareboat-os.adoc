@@ -2570,6 +2570,33 @@ To find out the source of the conflict you can use:
 sudo lsof /dev/ttyXXXX
 ----
 
+Once you disable a process from using a serial port you are troubleshooting,
+you should be able to just
+
+[source, shell]
+----
+cat /dev/ttyXXXX
+----
+
+and see the data flow.
+
+If it shows some unexpected binary data for a text protocol you can (and should) experiment with baud rate.
+
+[source, shell]
+----
+stty -F /dev/ttyXXXX 4800
+cat /dev/ttyXXXX
+----
+
+or
+
+[source, shell]
+----
+stty -F /dev/ttyXXXX 38400
+cat /dev/ttyXXXX
+----
+
+
 === Display what serial devices you have
 
 [source, shell]
