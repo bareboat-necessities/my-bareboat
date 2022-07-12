@@ -2733,7 +2733,7 @@ sudo systemctl restart chrony
 
 [source, shell]
 ----
-sudo /usr/local/sbin/bbn-rename-host my-new-host-name
+sudo /usr/local/sbin/bbn-rename-host <my-new-host-name>
 ----
 
 === Profiling OpenCPN
