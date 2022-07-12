@@ -82,7 +82,7 @@ endif::[]
 |Kernel|64-bit by default|32 or 64-bit
 |Hardware|Raspberry Pi4, Pi400, and CM4 and Pi3B+ (last two require /boot/config.txt changes before  first boot)|More wide hardware support with additional DIY config changes
 |Backup Tools|plenty (timeshift, restic, rsync, rclone, rpi-clone, etc) |some
-|SSD Imaging|yes, rpi-clone|- DIY
+|SSD Imaging|yes, rpi-clone|DIY
 |Android Mirroring|yes, scrcpy|-
 |Remote Desktop|yes, VNC client and server|VNC adhoc install
 |Web Browser|yes|yes
@@ -93,7 +93,7 @@ endif::[]
 |Cameras|yes, MotionEye, Cam|-
 |Media Library|Jellyfin (adhoc), SAMBA share, Mopidy|-
 |Playing Music|yes, Mopidy, AirPlay (Shairplay), Spotify (raspotify), Bluetooth|Bluetooth?
-|Windy, Lightning Map, Dock Finder, BoatSetter, CrewFinder, Sailing Education, Marine Traffic, Marine Life Identification|on-line|- DIY
+|Windy, Lightning Map, Dock Finder, BoatSetter, CrewFinder, Sailing Education, Marine Traffic, Marine Life Identification|on-line|DIY
 |Power Monitoring|yes (SolarThing, HomeAssistant, etc)|DIY
 |Victron support|yes (via SignalK, HomeAssistant, NodeRed)|DIY
 |Marine Publications|ColReg, Check lists, Knots, Sailing Directions Enroute (adhoc)|-
