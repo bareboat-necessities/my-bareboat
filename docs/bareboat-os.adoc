@@ -2787,6 +2787,10 @@ https://peyanski.com/connecting-cloudflare-tunnel-to-home-assistant/
 
 https://www.linuxuprising.com/2021/04/how-to-enable-hardware-acceleration-in.html
 
+=== Sailing Performance Dashboard
+
+See Capolavoro Sailing PD at: https://www.capolavoro.nl/
+
 === Setting up monitor
 
 /boot/config.txt contains most important settings for your monitor. You might need to adjust them manually.
