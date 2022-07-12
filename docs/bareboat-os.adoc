@@ -2783,6 +2783,9 @@ For cloud version configuration see: https://www.nomachine.com/all-documents
 
 https://peyanski.com/connecting-cloudflare-tunnel-to-home-assistant/
 
+=== How To Enable Hardware Acceleration In Chromium On Raspberry Pi OS (RPi 4)
+
+https://www.linuxuprising.com/2021/04/how-to-enable-hardware-acceleration-in.html
 
 === Setting up monitor
 
