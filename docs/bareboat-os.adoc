@@ -1005,6 +1005,31 @@ from add-ons folder ~/add-ons/ by running:
 NOTE: As of moment of writing this procedure doesn't work on arm64. It does work on arm32, and even on
 arm32 with 64-bit kernel.
 
+=== Drones
+
+Late versions of BBN OS include software for controlling drones. So if you have a drone (or a fleet of drones)
+you might be able to control them from the same BBN display.
+
+The software included is APM Planner 2.0. See:
+
+- https://github.com/ArduPilot/apm_planner
+- https://ardupilot.org/planner2/
+
+It supports MAVlink based autopilots including APM and PX4/Pixhawk:
+
+- Copters
+- Helicopters
+- Planes
+- VTOL/QuadPlanes
+- Rovers
+- Subs
+- Vehicles
+
+List of supported drones:
+
+https://ardupilot.org/planner2/docs/common-rtf.html
+
+
 === How it is Made
 
 For those who are comfortable writing software the scripts to create this image
