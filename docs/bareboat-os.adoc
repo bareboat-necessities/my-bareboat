@@ -2260,6 +2260,12 @@ EchoZilla Open Source Sonar: https://echozilla.co.uk/
 
 Source code: https://echozilla.co.uk/pages/developers
 
+=== Drones
+
+List of supported drones:
+
+https://ardupilot.org/planner2/docs/common-rtf.html
+
 === IR (Infrared)
 
 The Raspberry Pi can receive and send IR signals using its GPIO pins.
