@@ -2776,6 +2776,14 @@ opencpn
 perf top -p $(pidof opencpn)
 ----
 
+=== List dependencies of a package
+
+[source, shell]
+----
+apt-cache depends --recurse --no-recommends --no-suggests --no-conflicts --no-breaks --no-replaces --no-enhances <your-package-here> | grep "^\w" | sort -u
+----
+
+
 === How to use VNC without monitor attached to pi
 
 You need to set up fixed resolution using
