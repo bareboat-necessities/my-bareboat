@@ -91,6 +91,7 @@ endif::[]
 |Text-to-speech|adhoc|-
 |YouTube|yes|via browser
 |Cameras|yes, MotionEye, Cam|-
+|Drones support|yes, APM Planner 2|-
 |Media Library|Jellyfin (adhoc), SAMBA share, Mopidy|-
 |Playing Music|yes, Mopidy, AirPlay (Shairplay), Spotify (raspotify), Bluetooth|Bluetooth?
 |Windy, Lightning Map, Dock Finder, BoatSetter, CrewFinder, Sailing Education, Marine Traffic, Marine Life Identification|on-line|DIY
