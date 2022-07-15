@@ -1,0 +1,17 @@
+{
+  "os_list": [
+    {
+      "name": "Bareboat Necessities Marine Linux OS for Raspberry Pi 4/400 (armhf)",
+      "description": "Image for Bareboat Necessities Marine Linux OS for Raspberry Pi 4/400 (armhf).",
+      "url": "https://dl.cloudsmith.io/public/bbn-projects/bbn-repo/raw/files/lysmarine-bbn_2022-07-13-raspios-armhf.img.xz",
+      "icon": "https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/bareboat-necessities-logo.svg",
+      "release_date": "2022-07-13",
+      "extract_size": 11811160064,
+      "extract_sha256": "e99c2b4abd73961364571f01305ed18fee0041635bee258e91380a39cbd9b47a",
+      "image_download_size": 2993669244,
+      "image_download_sha256": "5351e2b485a47d1d76a414c80e99c812e3e14584083bf23bc9e496302e7a31f7",
+      "website": "https://bareboat-necessities.github.io/",
+      "init_format": "systemd"
+    }
+  ]
+}
