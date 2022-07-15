@@ -1,0 +1,9 @@
+// Snippet to include Bareboat Necessities OS Image in Raspberry Pi Imager under
+// "Other specific-purpose OS"
+
+{
+  "name": "Bareboat Necessities Open-Source Marine Linux OS",
+  "description": "Official Raspberry Pi4/400 Image for Bareboat Necessities Open-Source Marine Linux OS.",
+  "icon": "https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/bareboat-necessities-logo.svg",
+  "subitems_url": "https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/rpi-imager/rpi-imager-bbn.json"
+},
