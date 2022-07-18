@@ -2818,6 +2818,12 @@ sudo dpkg -i nomachine_<version>_armhf.deb
 Install NoMachine on the connecting client.
 For cloud version configuration see: https://www.nomachine.com/all-documents
 
+=== VR Remote Controller for Raspberry Pi
+
+Those can be used with one hand. They have number of buttons and a joystick.
+Can be a good input device for controlling chartplotter, autopilot, bow thruster, anchor windlass, etc
+
+
 === Free Cloudflare Tunnel To HomeAssistant
 
 https://peyanski.com/connecting-cloudflare-tunnel-to-home-assistant/
