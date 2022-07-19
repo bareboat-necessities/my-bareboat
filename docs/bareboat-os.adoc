@@ -2924,4 +2924,4 @@ then you can build much cheaper system with open source like BBN OS combined wit
 - DIY solutions for autopilot can be quite cost-effective (You don't need whole BBN OS for it)
 - Knowledge costs money. With commercial electronics your knowledge is dialing service support line. With
 open source you will learn how things work
-
+- Commercial sailing software is just as expensive as the hardware. Ex: https://www.expeditionmarine.com/
