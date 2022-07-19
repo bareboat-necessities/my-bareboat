@@ -1909,6 +1909,14 @@ https://github.com/MatsA/seatalk1-to-NMEA0183
 
 https://github.com/Thomas-GeDaD/Seatalk1-Raspi-reader
 
+
+=== B&G Fastnet
+
+https://github.com/trlafleur/Fastnet
+
+https://www.oppedijk.com/bandg.html
+
+
 === NMEA 0183
 
 Widely supported. Many options to connect to pi.
