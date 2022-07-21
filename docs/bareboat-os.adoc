@@ -2,6 +2,7 @@
 mgrouch <mgrouch@users.noreply.github.com>
 {docdate}, Bareboat Necessities OS Documentation
 :imagesdir: images
+:keywords: openplotter, opencpn, nmea, marine, free
 :doctype: book
 :organization: Bareboat Necessities
 :title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
