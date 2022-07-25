@@ -687,7 +687,7 @@ Putting the line into /boot/config.txt:
 dtoverlay=mcp2515-can0,oscillator=16000000,interrupt=25
 ----
 
-That should create a CAN Bus network interface after reboot. It's same type of interface you would see with ifconfig command.
+That should create a CAN Bus network interface (socketcan) after reboot. It's same type of interface you would see with ifconfig command.
 
 Then you would need to enable the service which starts can0 network interface on boot:
 
