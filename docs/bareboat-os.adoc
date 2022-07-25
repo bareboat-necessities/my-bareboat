@@ -2740,6 +2740,16 @@ sudo ./stdc-install.sh
 
 Check how to use combo of stdc_demod, stdc_decoder, stdc_parser (https://github.com/cropinghigh/stdcdec)
 
+==== RTL AIS
+
+- Connect your RTL SDR to USB of your Pi and to VHF (AIS) antenna.
+- From menu Administration/Service Management enable rtl-ais service.
+- Login into SignalK web UI with administrator privileges.
+- Enable rtl_ais_tcp data connection under Server/Data Connections menu.
+
+Depending on your RTL model you might need to blacklist native drivers, see above:
+"Blacklist interfering Linux RTL drivers"
+
 === Tripwire
 
 Open Source Tripwire® is a security and data integrity tool for monitoring and alerting on file & directory changes.
