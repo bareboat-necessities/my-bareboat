@@ -12,7 +12,7 @@ Do not forget to check our [ ⛵⛵⛵ ](https://github.com/bareboat-necessities
 
 [Trip Checklists](https://bareboat-necessities.github.io/my-bareboat/bareboat-equipment-checklist)
 
-[BBN Edition of LysMarine OS for Raspberry Pi](https://github.com/bareboat-necessities/lysmarine_gen)
+[BBN Marine OS for Raspberry Pi](https://github.com/bareboat-necessities/lysmarine_gen)
 
 [Contacts Page](https://bareboat-necessities.wixsite.com/my-bareboat)
 
