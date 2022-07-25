@@ -2120,6 +2120,7 @@ There are a few common i2c RTC modules:
 
 - DS3231 RTC
 - DS1307 RTC
+- PCF85063A RTC
 
 Make sure there are no conflicts in addresses with your other i2c devices. Other
 devices usually have at least one option for switching to another address to avoid conflicts.
