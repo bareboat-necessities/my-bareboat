@@ -675,6 +675,44 @@ When wiring NMEA 0183 devices:
 
 Check SignalK plugin settings and SignalK documentation.
 
+===== MCP2515 (Pican-M, etc)
+
+For board with MCP2515 (Standalone Controller Area Network (CAN) controller) such as Pican-M, number of CM4 boards
+equipped with CAN Bus module, the setup procedure is usually:
+
+Putting the line into /boot/config.txt:
+
+[source]
+----
+dtoverlay=mcp2515-can0,oscillator=16000000,interrupt=25
+----
+
+That should create a CAN Bus network interface after reboot. It's same type of interface you would see with ifconfig command.
+
+Then you would need to enable the service which starts can0 network interface on boot:
+
+[source, shell]
+----
+sudo systemctl enable socketcan-interface
+sudo systemctl start socketcan-interface
+----
+
+After that you should be able too some data from CAN Bus using:
+
+[source, shell]
+----
+candump can0
+----
+
+Use Ctrl-C to interrupt it.
+
+Then you can create a data connection in SignalK:
+
+- Data type: NMEA 2000
+- NMEA 2000 Source: Canbus (canboatjs)
+- Interface: can0
+
+
 ==== IMU
 
 Check PyPilot settings and PyPilot documentation.
