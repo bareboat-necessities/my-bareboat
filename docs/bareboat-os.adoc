@@ -2746,6 +2746,15 @@ Check how to use combo of stdc_demod, stdc_decoder, stdc_parser (https://github.
 
 - Connect your RTL SDR to USB of your Pi and to VHF (AIS) antenna.
 - From menu Administration/Service Management enable rtl-ais service.
++
+or
++
+[source, shell]
+----
+sudo systemctl enable rtl-ais
+sudo systemctl start rtl-ais
+----
+
 - Login into SignalK web UI with administrator privileges.
 - Enable rtl_ais_tcp data connection under Server/Data Connections menu.
 
