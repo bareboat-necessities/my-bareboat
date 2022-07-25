@@ -51,9 +51,7 @@ https://bareboat-necessities.wixsite.com/my-bareboat[Bareboat Necessities on Wix
 
 https://bareboat-necessities.github.io/my-bareboat/bareboat-equipment-checklist[Equipment Checklists]
 
-https://github.com/bareboat-necessities/lysmarine_gen[BBN Edition of LysMarine OS for Raspberry Pi]
-
-https://github.com/bareboat-necessities/lysmarine_gen[Bareboat Necessities Marine Linux OS for Raspberry Pi]
+https://github.com/bareboat-necessities/lysmarine_gen[BBN Marine OS for Raspberry Pi]
 
 https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html[Bareboat Necessities OS Getting Started]
 
@@ -4412,7 +4410,7 @@ http://lysmarineos.com
 
 LysMarine
 
-Bareboat Necessities build of LysMarine:
+Bareboat Necessities Marine OS:
 
 https://github.com/bareboat-necessities/lysmarine_gen
 
