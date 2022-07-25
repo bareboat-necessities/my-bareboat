@@ -697,7 +697,7 @@ sudo systemctl enable socketcan-interface
 sudo systemctl start socketcan-interface
 ----
 
-After that you should be able too some data from CAN Bus using:
+After that you should be able to see some data from CAN Bus using:
 
 [source, shell]
 ----
