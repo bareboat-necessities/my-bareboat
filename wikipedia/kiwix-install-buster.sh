@@ -1,6 +1,6 @@
 
-sudo apt-get -y install kiwix-tools/buster-backports
-
+#sudo apt-get -y install kiwix-tools/buster-backports
+wget https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-armhf.tar.gz
 
 # See https://archive.org/details/@wikipediaarchives
 
