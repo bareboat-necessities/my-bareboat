@@ -840,6 +840,7 @@ You need to enable USB debugging on your Android device or follow the instructio
 to enable controlling it via Wi-Fi. See: https://github.com/Genymobile/scrcpy
 In most cases you just need to enable USB debugging on your Android device and plug it in (thanks to autoadb).
 
+Using this feature you can see your Android Navionics applications on BBN OS screen (as example).
 
 ==== Browsers
 
