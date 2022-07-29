@@ -553,6 +553,8 @@ Offshore sailors or even coastal cruisers should focus on using XyGrib and GRIB 
 
 For real blue water sailors OpenCPN Climatology and OpenCPN weather routing plugins are essential.
 
+Mediterranean GRIB files: https://openskiron.org/en/
+
 ==== GRIB
 
 Launch xyGrib. Select an area on the map. Click to download Grib file.
