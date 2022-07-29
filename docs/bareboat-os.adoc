@@ -2111,6 +2111,11 @@ USB stick drives (flash drives) performance is not as high as NVMe and SATA SSDs
 There are reports that PC Windows software for WIB2/3 can be run on Raspberry Pi with Box86 and Wine:
 https://www.cruisersforum.com/forums/f134/navtex-plugin-251561-3.html#post3533558
 
+=== Moitessier HAT
+
+Moitessier HAT has a closed source kernel driver. Contact Moitessier HAT vendor for a driver for your kernel version
+and with it the HAT will work.
+
 === RTC (Real Time Clock)
 
 Raspberry pi doesn't have clock module to keep the time when it's off, so you might
