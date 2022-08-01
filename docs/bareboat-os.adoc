@@ -173,6 +173,7 @@ You can use Raspberry Pi Imager for that:
 https://www.raspberrypi.org/software/
 
 You do not need to explode .xz image file for it. You can load .xz file into RPI imager as is.
+Burn the image to SD card as-is.
 
 If your screen resolution is lower than 1024x600 you would need to manually
 set it in /boot/config.txt file, by mounting /boot partition of your SD card
@@ -1607,6 +1608,9 @@ OpenCPN charts can be updated using OpenCPN chart downloader plugin.
 NOTE: As result of software upgrades you might end up with a configuration which wasn't previously tested.
 Though you might be able to get some support via community forums at:
 https://github.com/bareboat-necessities/lysmarine_gen/discussions
+
+WARNING: Any attempts to upgrade underlying OS (Buster) to Bullseye will lead to a broken system.
+Until Bullseye based version is available you can't have this system running on bullseye.
 
 === Data Flow
 
