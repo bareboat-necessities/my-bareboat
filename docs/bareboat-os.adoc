@@ -256,6 +256,7 @@ You can also do tethering via Wi-Fi instead of USB.
 ==== SpaceX Starlink
 
 SpaceX Starlink Dishy is coming to boats soon and is easy to support.
+Plenty of boaters are already using RV version.
 Power usage might be relatively high for small boats.
 
 ==== Typical Setup on a Boat
