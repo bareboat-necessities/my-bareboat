@@ -2957,6 +2957,17 @@ your monitor in /boot/config.txt (read about hdmi_cvt options)
 - Common parameters to look for are: hdmi_cvt, hdmi_drive, hdmi_group, hdmi_mode, disable_fw_kms_setup,
 disable_overscan, overscan_*
 
+=== Rotate Screen
+
+There are reports that putting
+
+[source]
+----
+lcd_rotate=2
+----
+
+into /boot/config.txt works. However it might be specific to a monitor model.
+
 
 === TouchThink Marine HDMI Touchscreen
 
