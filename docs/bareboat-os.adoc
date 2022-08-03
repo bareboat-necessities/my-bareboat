@@ -492,6 +492,8 @@ If you have pypilot arduino motor controller connected via GPIO pins you need to
 [source]
 ----
 dtoverlay=disable-bt
+
+enable_uart=1
 ----
 
 in your /boot/config.txt to disable conflicting bluetooth UART.
