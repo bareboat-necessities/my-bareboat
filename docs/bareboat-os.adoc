@@ -2966,7 +2966,7 @@ There are reports that putting
 lcd_rotate=2
 ----
 
-into /boot/config.txt works. However it might be specific to a monitor model.
+into /boot/config.txt works. However, it might be specific to a monitor model.
 
 
 === TouchThink Marine HDMI Touchscreen
