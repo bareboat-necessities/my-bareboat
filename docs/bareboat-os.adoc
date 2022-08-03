@@ -515,6 +515,8 @@ If you have pypilot hardware hat attached, then you will need to enable the foll
 
 [source]
 ----
+dtoverlay=gpio-ir,gpio_pin=4
+
 dtparam=i2c_arm=on
 dtparam=spi=on
 #dtparam=i2s=on
@@ -525,10 +527,23 @@ and enable pypilot hat service to start at boot time:
 [source, shell]
 ----
 sudo systemctl enable pypilot_hat
+
+sudo systemctl enable lircd
 ----
 
 For hat display to work you need to specify correct driver (ex: nokia5110) in /home/pypilot/.pypilot/hat.conf
 Edit this file when pypilot_hat service is not running.
+
+Later hardware of pypilot hat creates /proc/device-tree/hat/custom_0 file.
+You can do
+
+[source, shell]
+----
+cat /proc/device-tree/hat/custom_0
+----
+
+To see hat configuration and its GPIO pins required to be set up and so on.
+
 
 === UI for controlling autopilots
 
