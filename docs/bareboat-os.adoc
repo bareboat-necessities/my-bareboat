@@ -1708,6 +1708,11 @@ on raspberry pi. xbacklight utility can be used to control backlight brightness 
 
 Choose monitors with less than 1 watt usage per one diagonal inch.
 
+==== Round touchscreens for gauges
+
+Pimoroni HyperPixel 2.1 Round
+
+
 === Rpi4 Case
 
 DeskPi Pro v2 is a nice enclosure for your below deck Raspberry Pi4 with fast SSD interface and
