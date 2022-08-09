@@ -4,15 +4,18 @@ myArch=$(dpkg --print-architecture)
 
 FID=495
 if [ "armhf" != "$myArch" ] ; then
-    FID=496
+    FID=497
+    sudo apt-get -y install libsystemd0
+else
+    sudo apt-get -y install libsystemd0:armhf
 fi
 
 # See: https://www.meltemus.com
 
-sudo apt-get -y install libsystemd0:armhf
 
 cd /home/user
 echo "Downloading..."
+
 wget -q -O - "https://www.meltemus.com/index.php/en/download?task=download.send&id=${FID}&catid=9&m=0" > qtVlm-5.10.16-rpi.tar.gz
 gzip -cd < qtVlm-5.10.16-rpi.tar.gz | tar xvf -
 mkdir /home/user/.qtVlm 
