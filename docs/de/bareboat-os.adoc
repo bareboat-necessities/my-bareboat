@@ -79,29 +79,29 @@ Alle dies kann mit einem stromsparenden Raspberry Pi realisiert werden. Er biete
 allen Bootssystemen zu kommunizieren, eine Internetverbindung und lokales WLAN bereit zu stellen, Kameras einzubinden, mit einem NMEA-Netzwerk zu kommunizieren und ein System zu erstellen welches Meeresfunkprotokolle dekodieren kann.
 Anfangs begann dieses Projekt als Verbesserung des Benutzererlebnisses von OpenPlotter aus den Erfahrungen der Nutzung.
 BBN OS ist kostenlos und Open Source. Es basiert auf häufig genutzten Open-Source-Projekten wie SignalK,
-PyPilot, OpenCPN und anderen. BBN OS graphical user interface will let you build a cockpit front-end to all functionality
-of the OS from chartplotting, dashboards, weather information, to media player, etc.
+PyPilot, OpenCPN und anderen. Die grafische Benutzeroberfläche von BBN OS ermöglicht das Erstellen einer Cockpit-Oberfläche für alle Funktionen
+des Betriebs von Kartenplotting, Dashboards und Wetterinformationen bis Media-Player etc.
 
-==== Use Cases
+==== Anwendungsfälle
 
-* Cockpit Touchscreen Chartplotter
-* Nav Station Computer
+* Cockpit Touchscreen Kartenplotter
+* Navstation-Computer
 * Desktop Computer
-* Pi Based Laptop
+* Pi basierter Laptop
 * Headless Server
 * Media Player
 * Autopilot
-* SSB Radio Decoder
-* Marine Data Server, Multiplexer
-* Wi-Fi Access Point
-* Cameras Monitoring
-* Data Analytics Server
-* Weather Station
-* Boat Dashboards
-* File Server
-* Off-the-grid living
+* SSB Funkempfänger
+* Marine Daten-Server, Multiplexer
+* Wi-Fi-Access Point
+* Kamera-Überwachung
+* Datenanalyse-Server
+* Wetterstation
+* Boots-Dashboards
+* Datei-Server
+* Off-the-grid Leben
 
-==== Smart Boat
+==== Smart Boot
 
 ifdef::env-github[image::system-arch.svg[Smart Boat,width=100%,pdfwidth=100%]]
 
@@ -113,36 +113,36 @@ ifndef::env-github[]
 endif::[]
 
 {zwsp} +
-The diagram is color coded. Orange indicates what you (might) already have on your boat. Yellow are additions.
-Green is Pi (the central element).
+Die verschiedenen Aspekte sind im Diagramm farblich hervorgehoben. Orange zeigt an, was du (möglicher Weise) bereits auf deinem Boot hast. Gelb sind Ergänzungen.
+Grün ist der Raspberry Pi (das zentrale Element).
 
 {zwsp} +
 
 [#download]
-=== Download Image
+=== Bild herunterladen
 
-Download SD card image (~2.8Gb file):
+SD-Kartenbild herunterladen (~2.8Gb Datei):
 
 https://github.com/bareboat-necessities/lysmarine_gen#download
 
-Alternative place to download if the previous link doesn't work for you:
+Alternativer Download Link, wenn der vorherige Link nicht für Sie funktioniert:
 
 https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-07-13
 
-Past major LTS release:
+Letzte Hauptversion der LTS-Version:
 
 https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-05-27
 
-==== 32-bit vs 64-bit images
+==== 32-bit vs 64-bit Images
 
-NOTE: Default image of BBN OS is 64-bit arm kernel with 32-bit armhf user space programs.
+NOTE: Das Standard Image von BBN OS hat einen 64-bit ARM Kernel mit 32-bit ARMhf Benutzer Programmen.
 
-- There are pros and cons to each
-- 32-bit takes less memory but runs slower
-- 32-bit is more supported at the moment (Some cameras not supported on 64-bit yet at the time of writing this)
-- QtVlm, wx2img, many OpenCPN plugins are 32-bit only (at the time of writing this)
-- You still can run 64-bit kernel with 32-bit image, user space programs will be 32-bit. (Add arm_64bit=1 into /boot/config.txt)
-- 32-bit is available on more hardware
+- Es gibt Vor- und Nachteile jeder Version
+- 32-Bit benötigt weniger Speicher, läuft aber langsamer
+- 32-Bit wird derzeit besser unterstützt (einige Kameras haben noch keine Unterstützung für 64-Bit, zum Zeitpunkt des Schreibens)
+- QtVlm, wx2img, viele OpenCPN Plugins werden nur in 32-Bit unterstützt (zum Zeitpunkt des Schreibens)
+- Du kannst problemlos einen 64-Bit-Kernel in einem 32-Bit-Image ausführen, die User Space Programme laufen dann mit 32-Bit. (füge einfach die Zeile arm_64bit=1 der Datei /boot/config.txt hinzu)
+- 32-Bit ist kompatibler zu mehr Hardware
 - 64-bit OS and OpenCPN are working fine but technically still called 'beta'
 - Most of the open (minor) issues are present in both 32 and 64-bit images
 
