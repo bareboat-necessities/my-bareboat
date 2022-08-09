@@ -59,7 +59,7 @@ https://bareboat-necessities.wixsite.com/my-bareboat
 
 {zwsp} +
 
-PDF version:
+PDF Version:
 
 https://bareboat-necessities.github.io/my-bareboat/bareboat-os.pdf
 
@@ -143,11 +143,11 @@ NOTE: Das Standard Image von BBN OS hat einen 64-bit ARM Kernel mit 32-bit ARMhf
 - QtVlm, wx2img, viele OpenCPN Plugins werden nur in 32-Bit unterstützt (zum Zeitpunkt des Schreibens)
 - Du kannst problemlos einen 64-Bit-Kernel in einem 32-Bit-Image ausführen, die User Space Programme laufen dann mit 32-Bit. (füge einfach die Zeile arm_64bit=1 der Datei /boot/config.txt hinzu)
 - 32-Bit ist kompatibler zu mehr Hardware
-- 64-bit OS and OpenCPN are working fine but technically still called 'beta'
-- Most of the open (minor) issues are present in both 32 and 64-bit images
+- 64-Bit-Betriebssystem und OpenCPN funktionieren gut, sind aber praktisch immer noch "Beta" Zustand
+- Die meisten offenen (kleinen) Probleme sind sowohl in den 32 als auch in 64-Bit-Images vorhanden
 
-NOTE: Switch from 32-bit kernel to 64-bit kernel has an impact on java installation.
-See (workaround): https://github.com/bareboat-necessities/lysmarine_gen/issues/44
+NOTE: Der Wechsel vom 32-Bit-Kernel zum 64-Bit-Kernel hat Auswirkungen auf die Java-Installation.
+Siehe (workaround): https://github.com/bareboat-necessities/lysmarine_gen/issues/44
 
 So as of time of writing this the best performance/compatibility is the 32-bit image with the kernel switched to 64-bit.
 Your preferred download image of BBN OS would be armhf.
