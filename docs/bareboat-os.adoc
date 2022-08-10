@@ -645,6 +645,9 @@ ARDOP for pi: https://www.cantab.net/users/john.wiseman/Documents/ARDOPC.html
 The OS image comes with Mopidy, MPD server, MusicBox, Shairport-Sync (AirPlay) server.
 The default audio output set up to audio jack port.
 
+NOTE: With Bullseye based versions it's possible to switch audio sources without modifying /boot/config.txt and
+without rebooting.
+
 ==== MusicBox
 
 Start MusicBox web UI. Try pre-configured playlist, or you can search Tune-In or YouTube.
