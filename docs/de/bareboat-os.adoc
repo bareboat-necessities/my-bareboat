@@ -174,12 +174,12 @@ https://www.raspberrypi.org/software/
 Die .xz Image-Datei muss dafür nicht entpackt werden. Die .xz Datei kann in RPI imager laden werden wie sie ist.
 Schreibe das Image wie es ist auf die SD-Karte.
 
-If your screen resolution is lower than 1024x600 you would need to manually
-set it in /boot/config.txt file, by mounting /boot partition of your SD card
-(on Windows its done just by inserting it into SD card slot and editing in a plain text
-editor).
+Bei einer Bildschirmauflösung niedriger als 1024x600, muss diese manuell
+durch Einhängen der /boot Partition Ihrer SD-Karte und Bearbeitung der Datei /boot/config.txt gesetzt werden.
+(unter Windows kann dies durch einstecken der SD-Karte und Bearbeitung mit einen Text
+Editor erledigt werden).
 
-Quality of SD card is essential for performance of your system. BBN OS comes
+Die Qualität der SD-Karte ist für die Leistung des Systems von entscheidender Bedeutung. BBN OS comes
 with disk benchmarking tool. Good SD card would show about 45 MB/sec (or higher) read i/o speed in it.
 SSD drives would show much better results: 178 MB/sec read and 147 MB/sec write i/o speed or higher.
 
