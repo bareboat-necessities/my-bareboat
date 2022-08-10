@@ -179,17 +179,17 @@ durch Einhängen der /boot Partition Ihrer SD-Karte und Bearbeitung der Datei /b
 (unter Windows kann dies durch einstecken der SD-Karte und Bearbeitung mit einen Text
 Editor erledigt werden).
 
-Die Qualität der SD-Karte ist für die Leistung des Systems von entscheidender Bedeutung. BBN OS comes
-with disk benchmarking tool. Good SD card would show about 45 MB/sec (or higher) read i/o speed in it.
-SSD drives would show much better results: 178 MB/sec read and 147 MB/sec write i/o speed or higher.
+Die Qualität der SD-Karte ist für die Leistung des Systems von entscheidender Bedeutung. BBN OS verfügt über
+über ein Werkzeug zur Leistungsmessung von Speichermedien. Eine gute SD-Karte sollte etwa 45 MB/Sek. (oder höher) Lese-/Schreib-Geschwindigkeit leisten.
+SSD-Laufwerke leisten viel höhere Geschwindigkeiten von: 178 MB/sek lesen und 147 MB/sek schreiben oder mehr.
 
-=== First Boot from SD Card
+=== Erster Start von SD-Karte
 
-Insert SD card into raspberry pi SD card slot, plug-in a mouse and a keyboard, and power on.
-Wait for boot process to run GUI (about 2 mins).
+Stecke eine Maus, eine Tastatur und die SD-Karte in den Raspberry Pi ein und schalten ihn ein.
+Warte den Boot-Prozess ab, bis die grafische Benutzeroberfläche erscheint (ca. 2 Minuten).
 
-NOTE: Your touchscreen should be connected (HDMI and USB) and powered on during the first boot to be properly recognized
-and touchscreen calibrated.
+NOTE: Der Touchscreen sollte während des ersten Boots eingeschaltet und angeschlossen sein (HDMI und USB), um
+korrekte erkannt und kalibriert zu werden.
 
 === Setting up Network
 
