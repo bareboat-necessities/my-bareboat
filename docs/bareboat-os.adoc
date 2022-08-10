@@ -2962,6 +2962,11 @@ your monitor in /boot/config.txt (read about hdmi_cvt options)
 - Common parameters to look for are: hdmi_cvt, hdmi_drive, hdmi_group, hdmi_mode, disable_fw_kms_setup,
 disable_overscan, overscan_*
 
+
+NOTE: Bullseye based versions with KMS driver ignore screen resolution settings in /boot/config.txt. Use
+xrandr (or arandr) to set your monitor resolution, rate, etc.
+
+
 === Rotate Screen
 
 There are reports that putting
