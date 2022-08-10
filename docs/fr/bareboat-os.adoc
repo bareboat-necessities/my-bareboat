@@ -127,11 +127,11 @@ https://github.com/bareboat-necessities/lysmarine_gen#download
 
 Alternative place to download if the previous link doesn't work for you:
 
-https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-07-13
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-08-03
 
 Past major LTS release:
 
-https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-05-27
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-07-13
 
 ==== 32-bit vs 64-bit images
 
@@ -2874,6 +2874,9 @@ your monitor in /boot/config.txt (read about hdmi_cvt options)
 - I have high resolution monitor and all icons and fonts are too small. See <<running_with_higher_resolution_monitors>>
 - Common parameters to look for are: hdmi_cvt, hdmi_drive, hdmi_group, hdmi_mode, disable_fw_kms_setup,
 disable_overscan, overscan_*
+
+NOTE: Bullseye based versions with KMS driver ignore screen resolution settings in /boot/config.txt. Use
+xrandr (or arandr) to set your monitor resolution, rate, etc.
 
 === Rotate Screen
 
