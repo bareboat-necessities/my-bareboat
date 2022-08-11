@@ -172,7 +172,7 @@ Du kannst Raspberry Pi Imager dafür verwenden:
 https://www.raspberrypi.org/software/
 
 Die .xz Image-Datei muss dafür nicht entpackt werden. Die .xz Datei kann in RPI imager laden werden wie sie ist.
-Schreibe das Image wie es ist auf die SD-Karte.
+Schreibe das Image wie es ist auf die SD-Karte. Do not change default user on the image by RPI imager advanced settings.
 
 Bei einer Bildschirmauflösung niedriger als 1024x600, muss diese manuell
 durch Einhängen der /boot Partition Ihrer SD-Karte und Bearbeitung der Datei /boot/config.txt gesetzt werden.
