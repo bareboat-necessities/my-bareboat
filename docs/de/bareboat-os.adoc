@@ -183,9 +183,9 @@ Die Qualität der SD-Karte ist für die Leistung des Systems von entscheidender 
 über ein Werkzeug zur Leistungsmessung von Speichermedien. Eine gute SD-Karte sollte etwa 45 MB/Sek. (oder höher) Lese-/Schreib-Geschwindigkeit leisten.
 SSD-Laufwerke leisten viel höhere Geschwindigkeiten von: 178 MB/sek lesen und 147 MB/sek schreiben oder mehr.
 
-NOTE: There were some case of people just formatting SD card as fat32 file system and copying image file on it as is. In form
-of .xz file or in some cases going extra length unpacking it into .img file and copying. Do not be like those guys.
-It can't possibly work for any OS image for Raspberry Pi. Read the docs.
+NOTE: There were some cases of people just formatting SD card as fat32 file system and copying image file on it as-is,
+in form of .xz file or in some cases going extra length unpacking it into .img file and copying.
+Do not be like those guys. It can't possibly work for any OS image for Raspberry Pi. Read the docs.
 
 === Erster Start von SD-Karte
 
