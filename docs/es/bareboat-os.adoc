@@ -183,6 +183,10 @@ Quality of SD card is essential for performance of your system. BBN OS comes
 with disk benchmarking tool. Good SD card would show about 45 MB/sec (or higher) read i/o speed in it.
 SSD drives would show much better results: 178 MB/sec read and 147 MB/sec write i/o speed or higher.
 
+NOTE: There were some case of people just formatting SD card as fat32 file system and copying image file on it as is. In form
+of .xz file or in some cases going extra length unpacking it into .img file and copying. Do not be like those guys.
+It can't possibly work for any OS image for Raspberry Pi. Read the docs.
+
 === First Boot from SD Card
 
 Insert SD card into raspberry pi SD card slot, plug-in a mouse and a keyboard, and power on.
