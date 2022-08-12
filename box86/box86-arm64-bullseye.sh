@@ -53,3 +53,8 @@ wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetric
 sudo mv winetricks /usr/local/bin/
 sudo chmod +x /usr/local/bin/winetricks
 
+wget http://siriuscyber.net/sailmail/amsm35054b.exe
+WINEPREFIX=${HOME}/wine-air wine/bin/wine amsm35054b.exe
+
+
+
