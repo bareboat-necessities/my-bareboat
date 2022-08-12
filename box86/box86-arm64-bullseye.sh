@@ -7,7 +7,7 @@ sudo apt-get -y install build-essential mono-runtime git cmake cabextract gcc-ar
 sudo dpkg --add-architecture armhf
 sudo apt-get -y install gcc-arm-linux-gnueabihf
 
-sudo apt update & sudo apt upgrade
+sudo apt update & sudo apt -y upgrade
 
 sudo apt-get -y install libegl-mesa0:armhf libgdm1:armhf libgl1-mesa-dri:armhf libglapi-mesa:armhf \
   libgles2-mesa:armhf libglu1-mesa:armhf libglx-mesa0:armhf mesa-va-drivers:armhf mesa-vdpau-drivers:armhf \
@@ -60,6 +60,8 @@ sudo apt-get -y install winbind
 wget http://siriuscyber.net/sailmail/amsm35054b.exe
 WINEPREFIX=${HOME}/wine-air wine/bin/wine amsm35054b.exe
 
-WINEPREFIX=${HOME}/wine-air wine/bin/wine wine-air/drive_c/Program\ Files/Airmail/Airmail3.exe
+# To run
+
+#WINEPREFIX=${HOME}/wine-air wine/bin/wine wine-air/drive_c/Program\ Files/Airmail/Airmail3.exe
 
 
