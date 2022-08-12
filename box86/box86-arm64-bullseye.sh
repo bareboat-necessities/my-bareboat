@@ -20,14 +20,12 @@ directory=/srv/chroot/debian-armhf
 profile=desktop
 personality=linux
 preserve-environment=true
-root-groups=root
+root-users=root
 users=user
 EOF'
 
 sudo bash -c 'cat << EOF > /etc/schroot/desktop/nssdatabases
-passwd
 shadow
-group
 gshadow
 services
 protocols
@@ -38,14 +36,40 @@ root root 2755 /usr/bin/crontab
 EOF'
 
 {
-sudo apt-get update
-sudo apt-get upgrade
 cat << EOF >> ~/.bashrc
 export LANGUAGE="C"
 export LC_ALL="C"
 export DISPLAY=:0
 EOF
+} | sudo schroot -c arm32 -u root
+
+
+sudo schroot -c arm32 -u root -- bash -c "apt-get -y install git wget cmake build-essential python3 gcc-arm-linux-gnueabihf"
+
+sudo schroot -c arm32 -u root -- bash -c "git clone https://github.com/ptitSeb/box86 && cd box86 && mkdir build; cd build; cmake .. -DARM_DYNAREC=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo; make"
+
+
+exit 0
+
+
+sudo schroot -c arm32 -u root -- bash -c "ls"
+sudo schroot -c arm32 -u root -- bash -c "ls"
+
+
+
+{
+ apt-get install sudo
+ sudo apt-get update
+ sudo apt-get upgrade
 } | sudo schroot -c arm32
+
+{
+cat << EOF >> ~/.bashrc
+export LANGUAGE="C"
+export LC_ALL="C"
+export DISPLAY=:0
+EOF
+} | sudo schroot -c arm32 -u root
 
 
 {
