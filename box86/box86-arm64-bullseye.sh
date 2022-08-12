@@ -20,7 +20,7 @@ directory=/srv/chroot/debian-armhf
 profile=desktop
 personality=linux
 preserve-environment=true
-root-users=user
+root-groups=root
 users=user
 EOF'
 
