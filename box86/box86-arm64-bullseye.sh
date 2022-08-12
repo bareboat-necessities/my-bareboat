@@ -53,8 +53,13 @@ wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetric
 sudo mv winetricks /usr/local/bin/
 sudo chmod +x /usr/local/bin/winetricks
 
+
+sudo apt-get -y install winbind
+
+
 wget http://siriuscyber.net/sailmail/amsm35054b.exe
 WINEPREFIX=${HOME}/wine-air wine/bin/wine amsm35054b.exe
 
+WINEPREFIX=${HOME}/wine-air wine/bin/wine wine-air/drive_c/Program\ Files/Airmail/Airmail3.exe
 
 
