@@ -1,5 +1,7 @@
 #!/usr/bin/bash -e
 
+# See: https://forum.armbian.com/topic/16584-install-box86-on-arm64/
+
 sudo apt-get -y install schroot debootstrap
 
 sudo mkdir /srv/chroot
@@ -32,4 +34,22 @@ EOF'
 sudo bash -c 'cat << EOF > /srv/chroot/debian-armhf/var/lib/dpkg/statoverride
 root root 2755 /usr/bin/crontab
 EOF'
+
+{
+cat << EOF >> ~/.bashrc
+export LANGUAGE="C"
+export LC_ALL="C"
+export DISPLAY=:0
+EOF
+} | sudo schroot -c debian-armhf
+
+
+{
+adduser user
+echo user:changeme | chpasswd
+} | sudo schroot -c debian-armhf
+
+
+
+
 
