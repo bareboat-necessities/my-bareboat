@@ -4,10 +4,10 @@
 
 sudo apt-get -y install schroot debootstrap
 
-sudo mkdir /srv/chroot
-sudo mkdir /srv/chroot/debian-armhf
+sudo mkdir -p /srv/chroot
+sudo mkdir -p /srv/chroot/debian-armhf
 
-sudo debootstrap --arch armhf --foreign bullseye /srv/chroot/debian-armhf http://debian.xtdv.net/debian
+sudo debootstrap --arch armhf --foreign bullseye /srv/chroot/debian-armhf 
 
 sudo chroot "/srv/chroot/debian-armhf" /debootstrap/debootstrap --second-stage
 
