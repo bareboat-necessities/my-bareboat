@@ -11,8 +11,8 @@ sudo debootstrap --arch armhf --foreign bullseye /srv/chroot/debian-armhf
 
 sudo chroot "/srv/chroot/debian-armhf" /debootstrap/debootstrap --second-stage
 
-sudo bash -c 'cat << EOF > /etc/schroot/chroot.d/debian-armhf
-[debian-armhf]
+sudo bash -c 'cat << EOF > /etc/schroot/chroot.d/debian-armhf-on-arm64
+[debian-armhf-on-arm64]
 description=Debian Armhf chroot
 aliases=arm32
 type=directory
@@ -31,7 +31,6 @@ group
 gshadow
 services
 protocols
-user
 EOF'
 
 sudo bash -c 'cat << EOF > /srv/chroot/debian-armhf/var/lib/dpkg/statoverride
