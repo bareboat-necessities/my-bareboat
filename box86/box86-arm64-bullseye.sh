@@ -39,6 +39,8 @@ root root 2755 /usr/bin/crontab
 EOF'
 
 {
+sudo apt-get update
+sudo apt-get upgrade
 cat << EOF >> ~/.bashrc
 export LANGUAGE="C"
 export LC_ALL="C"
