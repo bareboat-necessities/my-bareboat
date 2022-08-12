@@ -44,15 +44,16 @@ EOF
 } | sudo schroot -c arm32 -u root
 
 
-sudo schroot -c arm32 -u root -- bash -c "apt-get -y install git wget cmake build-essential python3 gcc-arm-linux-gnueabihf"
+sudo schroot -c arm32 -u root -- bash -c "apt-get -y install git wget cmake build-essential python3 gcc-arm-linux-gnueabihf zenity"
 
 sudo schroot -c arm32 -u root -- bash -c "git clone https://github.com/ptitSeb/box86 && cd box86 && mkdir build; cd build; cmake .. -DARM_DYNAREC=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo; make"
+
+sudo schroot -c arm32 -u root -- bash -c "wget https://twisteros.com/wine.tgz && tar zxvf wine.tgz"
 
 
 exit 0
 
 
-sudo schroot -c arm32 -u root -- bash -c "ls"
 sudo schroot -c arm32 -u root -- bash -c "ls"
 
 
