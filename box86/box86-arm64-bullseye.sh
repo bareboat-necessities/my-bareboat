@@ -29,10 +29,10 @@ sudo apt-get -y install libasound2 libc6 libglib2.0-0 libgphoto2-6 libgphoto2-po
 
 cd
 cd ~/Downloads
-wget https://dl.winehq.org/wine-builds/debian/dists/bullseye/main/binary-i386/wine-devel-i386_7.14~bullseye-1_i386.deb
-wget https://dl.winehq.org/wine-builds/debian/dists/bullseye/main/binary-i386/wine-devel_7.14~bullseye-1_i386.deb
-dpkg-deb -xv wine-devel-i386_7.14~bullseye-1_i386.deb wine-installer
-dpkg-deb -xv wine-devel_7.14~bullseye-1_i386.deb wine-installer
+wget https://dl.winehq.org/wine-builds/debian/dists/bullseye/main/binary-i386/wine-devel-i386_5.13~bullseye_i386.deb
+wget https://dl.winehq.org/wine-builds/debian/dists/bullseye/main/binary-i386/wine-devel_5.13~bullseye_i386.deb
+dpkg-deb -xv wine-devel-i386_5.13~bullseye_i386.deb wine-installer
+dpkg-deb -xv wine-devel_5.13~bullseye_i386.deb wine-installer
 mv ~/Downloads/wine-installer/opt/wine* ~/wine
 rm -rf wine-installer
 cd
