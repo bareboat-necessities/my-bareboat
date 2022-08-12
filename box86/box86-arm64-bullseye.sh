@@ -7,9 +7,18 @@ sudo apt-get -y install build-essential mono-runtime git cmake cabextract gcc-ar
 sudo dpkg --add-architecture armhf
 sudo apt-get -y install gcc-arm-linux-gnueabihf
 
+sudo apt update & sudo apt upgrade
+
 sudo apt-get -y install libegl-mesa0:armhf libgdm1:armhf libgl1-mesa-dri:armhf libglapi-mesa:armhf \
   libgles2-mesa:armhf libglu1-mesa:armhf libglx-mesa0:armhf mesa-va-drivers:armhf mesa-vdpau-drivers:armhf \
-  mesa-vulkan-drivers:armhf libsdl1.2debian:armhf libsdl2-2.0-0:armhf libudev1:armhf
+  mesa-vulkan-drivers:armhf libsdl1.2debian:armhf libsdl2-2.0-0:armhf libudev1:armhf libllvm11:armhf \
+  linux-libc-dev:armhf libncurses6:armhf libc6:armhf  libx11-6:armhf libgdk-pixbuf2.0-0:armhf libgtk2.0-0:armhf \
+  libstdc++6:armhf libsdl2-2.0-0:armhf mesa-va-drivers:armhf libsdl1.2-dev:armhf libsdl-mixer1.2:armhf \
+  libpng16-16:armhf libcal3d12v5:armhf libsdl2-net-2.0-0:armhf libopenal1:armhf libsdl2-image-2.0-0:armhf \
+  libvorbis-dev:armhf libcurl4:armhf libjpeg62:armhf  libudev1:armhf libgl1-mesa-dev:armhf  libx11-dev:armhf \
+  libsmpeg0:armhf libavcodec58:armhf libavformat58:armhf libswscale5:armhf libsdl2-image-2.0-0:armhf \
+  libsdl2-mixer-2.0-0:armhf gcc-arm-linux-gnueabihf
+
   
 cd ~
 git clone https://github.com/ptitSeb/box86 && cd box86
