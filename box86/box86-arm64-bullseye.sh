@@ -18,14 +18,14 @@ sudo apt-get -y install libegl-mesa0:armhf libgdm1:armhf libgl1-mesa-dri:armhf l
   mesa-vulkan-drivers:armhf libsdl1.2debian:armhf libsdl2-2.0-0:armhf libudev1:armhf
 
 # Wine
-sudo apt-get -y install libasound2 libc6 libglib2.0-0 libgphoto2-6 libgphoto2-port12 libgstreamer-plugins-base1.0-0 \
- libgstreamer1.0-0 libldap-2.4-2 libopenal1 libpcap0.8 libpulse0 libsane1 libudev1 libunwind8 libusb-1.0-0 \
- libvkd3d1 libx11-6 libxext6 ocl-icd-libopencl1 libasound2-plugins libncurses6 libtinfo5 libasound2:armhf \
+sudo apt-get -y install libasound2:armhf libc6:armhf libglib2.0-0:armhf libgphoto2-6:armhf libgphoto2-port12:armhf libgstreamer-plugins-base1.0-0:armhf \
+ libgstreamer1.0-0:armhf libldap-2.4-2:armhf libopenal1:armhf libpcap0.8:armhf libpulse0:armhf libsane1:armhf libudev1:armhf libunwind8:armhf libusb-1.0-0:armhf \
+ libvkd3d1:armhf libx11-6:armhf libxext6:armhf ocl-icd-libopencl1:armhf libasound2-plugins:armhf libncurses6:armhf libtinfo5:armhf libasound2:armhf \
  libc6:armhf libglib2.0-0:armhf libgphoto2-6:armhf libgphoto2-port12:armhf libgstreamer-plugins-base1.0-0:armhf \
  libgstreamer1.0-0:armhf libldap-2.4-2:armhf libopenal1:armhf libpcap0.8:armhf libpulse0:armhf libsane1:armhf \
  libudev1:armhf libunwind8:armhf libusb-1.0-0:armhf libvkd3d1:armhf libx11-6:armhf libxext6:armhf ocl-icd-libopencl1:armhf \
  libasound2-plugins:armhf libncurses6:armhf libmpeg2-4:armhf libmpeg2encpp-2.1-0:armhf libtinfo6:armhf \
- libmpg123-0:armhf libtinfo5:armhf cabextract libxslt1.1:armhf zenity
+ libmpg123-0:armhf libtinfo5:armhf cabextract:armhf libxslt1.1:armhf zenity:armhf
 
 cd
 cd ~/Downloads
