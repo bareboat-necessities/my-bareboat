@@ -11,10 +11,10 @@ sudo debootstrap --arch armhf --foreign bullseye /srv/chroot/debian-armhf http:/
 
 sudo chroot "/srv/chroot/debian-armhf" /debootstrap/debootstrap --second-stage
 
-sudo bash -c 'cat << EOF > /etc/schroot/chroot.d/debian-armhf.conf
+sudo bash -c 'cat << EOF > /etc/schroot/chroot.d/debian-armhf
 [debian-armhf]
 description=Debian Armhf chroot
-aliases=debian-armhf
+aliases=arm32
 type=directory
 directory=/srv/chroot/debian-armhf
 profile=desktop
@@ -25,10 +25,13 @@ users=user
 EOF'
 
 sudo bash -c 'cat << EOF > /etc/schroot/desktop/nssdatabases
+passwd
 shadow
+group
 gshadow
 services
 protocols
+user
 EOF'
 
 sudo bash -c 'cat << EOF > /srv/chroot/debian-armhf/var/lib/dpkg/statoverride
@@ -41,15 +44,21 @@ export LANGUAGE="C"
 export LC_ALL="C"
 export DISPLAY=:0
 EOF
-} | sudo schroot -c debian-armhf
+} | sudo schroot -c arm32
 
 
 {
 adduser user
 echo user:changeme | chpasswd
-} | sudo schroot -c debian-armhf
+} | sudo schroot -c arm32
 
-
+{
+sudo -u user bash -c 'cat << EOF >> ~/.bashrc
+export LANGUAGE="C"
+export LC_ALL="C"
+export DISPLAY=:0
+EOF'  
+} | sudo schroot -c arm32
 
 
 
