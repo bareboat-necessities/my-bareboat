@@ -20,11 +20,9 @@ sudo apt-get -y install libegl-mesa0:armhf libgdm1:armhf libgl1-mesa-dri:armhf l
   libsdl2-mixer-2.0-0:armhf gcc-arm-linux-gnueabihf
 
   
-cd ~
-git clone https://github.com/ptitSeb/box86 && cd box86
-mkdir build; cd build; cmake .. -DRPI4ARM64=1 -DCMAKE_BUILD_TYPE=RelWithDebInfo; make -j4
-sudo make install
-sudo systemctl restart systemd-binfmt
+sudo wget https://itai-nelken.github.io/weekly-box86-debs/debian/box86.list -O /etc/apt/sources.list.d/box86.list
+wget -qO- https://itai-nelken.github.io/weekly-box86-debs/debian/KEY.gpg | sudo apt-key add -
+sudo apt update && sudo apt-get -y install box86
 
 # Wine
 sudo apt-get -y install libasound2:armhf libc6:armhf libglib2.0-0:armhf libgphoto2-6:armhf libgphoto2-port12:armhf libgstreamer-plugins-base1.0-0:armhf \
