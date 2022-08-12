@@ -48,7 +48,7 @@ EOF
 
 
 {
-adduser user
+adduser user --quiet --disabled-password 
 echo user:changeme | chpasswd
 } | sudo schroot -c arm32
 
