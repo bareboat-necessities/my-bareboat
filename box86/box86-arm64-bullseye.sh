@@ -22,7 +22,7 @@ sudo apt-get -y install libegl-mesa0:armhf libgdm1:armhf libgl1-mesa-dri:armhf l
   
 sudo wget https://itai-nelken.github.io/weekly-box86-debs/debian/box86.list -O /etc/apt/sources.list.d/box86.list
 wget -qO- https://itai-nelken.github.io/weekly-box86-debs/debian/KEY.gpg | sudo apt-key add -
-sudo apt update && sudo apt-get -y install box86
+sudo apt update && sudo apt-get -y install box86=0.2.3+20210709.3a7cc57f-1
 
 # Wine
 sudo apt-get -y install libasound2:armhf libc6:armhf libglib2.0-0:armhf libgphoto2-6:armhf libgphoto2-port12:armhf libgstreamer-plugins-base1.0-0:armhf \
