@@ -44,6 +44,21 @@ cd
 
 cd
 cd ~/Downloads
+wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-i386/wine-devel-i386_5.21~buster_i386.deb
+wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-i386/wine-devel_5.21~buster_i386.deb
+#wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-amd64/wine-devel-amd64_5.21~buster_amd64.deb
+#wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-amd64/wine-devel_5.21~buster_amd64.deb
+dpkg-deb -xv wine-devel-i386_5.21~buster_i386.deb wine-installer
+dpkg-deb -xv wine-devel_5.21~buster_i386.deb wine-installer
+#dpkg-deb -xv wine-devel-amd64_5.21~buster_amd64.deb wine-installer
+#dpkg-deb -xv wine-devel_5.21~buster_amd64.deb wine-installer
+mv ~/Downloads/wine-installer/opt/wine* ~/wine
+rm -rf wine-installer
+cd
+
+
+cd
+cd ~/Downloads
 wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-i386/wine-stable-i386_6.0.2~buster-1_i386.deb
 wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-i386/wine-stable_6.0.2~buster-1_i386.deb
 #wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-amd64/wine-stable-amd64_6.0.2~buster-1_amd64.deb
