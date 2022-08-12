@@ -27,9 +27,16 @@ sudo apt-get -y install libasound2 libc6 libglib2.0-0 libgphoto2-6 libgphoto2-po
  libasound2-plugins:armhf libncurses6:armhf libmpeg2-4:armhf libmpeg2encpp-2.1-0:armhf libtinfo6:armhf \
  libmpg123-0:armhf libtinfo5:armhf cabextract libxslt1.1:armhf zenity
 
-cd ~
-wget https://twisteros.com/wine.tgz -O ~/wine.tgz
-tar -xzvf ~/wine.tgz
+cd
+cd ~/Downloads
+wget https://dl.winehq.org/wine-builds/debian/dists/bullseye/main/binary-i386/wine-devel-i386_7.14~bullseye-1_i386.deb
+wget https://dl.winehq.org/wine-builds/debian/dists/bullseye/main/binary-i386/wine-devel_7.14~bullseye-1_i386.deb
+dpkg-deb -xv wine-devel-i386_7.14~bullseye-1_i386.deb wine-installer
+dpkg-deb -xv wine-devel_7.14~bullseye-1_i386.deb wine-installer
+mv ~/Downloads/wine-installer/opt/wine* ~/wine
+rm -rf wine-installer
+cd
+
 
 sudo ln -s ~/wine/bin/wine /usr/local/bin/wine
 sudo ln -s ~/wine/bin/wineboot /usr/local/bin/wineboot
