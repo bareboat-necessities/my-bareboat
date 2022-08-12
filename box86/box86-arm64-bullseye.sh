@@ -1,84 +1,42 @@
 #!/usr/bin/bash -e
 
-# See: https://forum.armbian.com/topic/19526-how-to-install-box86-box64-wine32-wine64-winetricks-on-arm64/
+# See: https://medium.com/@safiuddinkhan/how-to-install-box86-box64-and-wine-on-raspberry-pi-os-bullseye-64-bit-c88028052f8c
+
+sudo apt-get -y install build-essential mono-runtime git cmake
 
 sudo dpkg --add-architecture armhf
-sudo apt-get update
-sudo apt-get install -y git cmake cabextract gcc-arm-linux-gnueabihf libc6-dev-armhf-cross
+sudo apt-get -y install gcc-arm-linux-gnueabihf
 
-{
-  wget -O - "https://forum.armbian.com/applications/core/interface/file/attachment.php?id=8580&key=61d35a8d10b75dcd080f73ff061a9d2a" 
-  wget -O - "https://forum.armbian.com/applications/core/interface/file/attachment.php?id=8581&key=03b1d32e8620bbe0620cb99cb547746f" 
-  wget -O - "https://forum.armbian.com/applications/core/interface/file/attachment.php?id=8582&key=dca9fbfc0a49a7e31d09783902e20204" 
-  wget -O - "https://forum.armbian.com/applications/core/interface/file/attachment.php?id=8583&key=f61a84ed20203e142f5a63667c7625a5" 
-} > arm-linux-gnueabihf.7z
-
-sudo 7z x arm-linux-gnueabihf.7z
-
-sudo mv arm-linux-gnueabihf/* /lib/arm-linux-gnueabihf/
-
-cd
-git clone https://github.com/ptitSeb/box86
-cd box86
-mkdir build
-cd build
-cmake .. -DARM_DYNAREC=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo
-make -j4
+cd ~
+git clone https://github.com/ptitSeb/box86 && cd box86
+mkdir build; cd build; cmake .. -DRPI4ARM64=1 -DCMAKE_BUILD_TYPE=RelWithDebInfo; make -j4
 sudo make install
 sudo systemctl restart systemd-binfmt
-cd
 
+sudo apt-get -y install libegl-mesa0:armhf libgdm1:armhf libgl1-mesa-dri:armhf libglapi-mesa:armhf \
+  libgles2-mesa:armhf libglu1-mesa:armhf libglx-mesa0:armhf mesa-va-drivers:armhf mesa-vdpau-drivers:armhf \
+  mesa-vulkan-drivers:armhf libsdl1.2debian:armhf libsdl2-2.0-0:armhf libudev1:armhf
 
-#cd
-#git clone https://github.com/ptitSeb/box64
-#cd box64
-#mkdir build
-#cd build 
-#cmake .. -DARM_DYNAREC=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo
-#make -j4
-#sudo make install
-#sudo systemctl restart systemd-binfmt
-#cd
+# Wine
+sudo apt-get -y install libasound2 libc6 libglib2.0-0 libgphoto2-6 libgphoto2-port12 libgstreamer-plugins-base1.0-0 \
+ libgstreamer1.0-0 libldap-2.4-2 libopenal1 libpcap0.8 libpulse0 libsane1 libudev1 libunwind8 libusb-1.0-0 \
+ libvkd3d1 libx11-6 libxext6 ocl-icd-libopencl1 libasound2-plugins libncurses6 libtinfo5 libasound2:armhf \
+ libc6:armhf libglib2.0–0:armhf libgphoto2-6:armhf libgphoto2-port12:armhf libgstreamer-plugins-base1.0-0:armhf \
+ libgstreamer1.0-0:armhf libldap-2.4–2:armhf libopenal1:armhf libpcap0.8:armhf libpulse0:armhf libsane1:armhf \
+ libudev1:armhf libunwind8:armhf libusb-1.0-0:armhf libvkd3d1:armhf libx11-6:armhf libxext6:armhf ocl-icd-libopencl1:armhf \
+ libasound2-plugins:armhf libncurses6:armhf libmpeg2-4:armhf libmpeg2encpp-2.1-0:armhf libtinfo6:armhf \
+ libmpg123-0:armhf libtinfo5:armhf cabextract libxslt1.1:armhf zenity
 
+cd ~
+wget https://twisteros.com/wine.tgz -O ~/wine.tgz
+tar -xzvf ~/wine.tgz
 
-
-cd
-cd ~/Downloads
-wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-i386/wine-devel-i386_5.21~buster_i386.deb
-wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-i386/wine-devel_5.21~buster_i386.deb
-#wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-amd64/wine-devel-amd64_5.21~buster_amd64.deb
-#wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-amd64/wine-devel_5.21~buster_amd64.deb
-dpkg-deb -xv wine-devel-i386_5.21~buster_i386.deb wine-installer
-dpkg-deb -xv wine-devel_5.21~buster_i386.deb wine-installer
-#dpkg-deb -xv wine-devel-amd64_5.21~buster_amd64.deb wine-installer
-#dpkg-deb -xv wine-devel_5.21~buster_amd64.deb wine-installer
-mv ~/Downloads/wine-installer/opt/wine* ~/wine
-rm -rf wine-installer
-cd
-
-
-cd
-cd ~/Downloads
-wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-i386/wine-stable-i386_6.0.2~buster-1_i386.deb
-wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-i386/wine-stable_6.0.2~buster-1_i386.deb
-#wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-amd64/wine-stable-amd64_6.0.2~buster-1_amd64.deb
-#wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-amd64/wine-stable_6.0.2~buster-1_amd64.deb
-dpkg-deb -xv wine-stable-i386_6.0.2~buster-1_i386.deb wine-installer
-dpkg-deb -xv wine-stable_6.0.2~buster-1_i386.deb wine-installer
-#dpkg-deb -xv wine-stable-amd64_6.0.2~buster-1_amd64.deb wine-installer
-#dpkg-deb -xv wine-stable_6.0.2~buster-1_amd64.deb wine-installer
-mv ~/Downloads/wine-installer/opt/wine* ~/wine
-rm -rf wine-installer
-cd
-
-
-sudo ln -s ~/wine/bin/wine /usr/local/bin/wine
 sudo ln -s ~/wine/bin/wineboot /usr/local/bin/wineboot
 sudo ln -s ~/wine/bin/winecfg /usr/local/bin/winecfg
 sudo ln -s ~/wine/bin/wineserver /usr/local/bin/wineserver
 sudo chmod +x /usr/local/bin/wine /usr/local/bin/wineboot /usr/local/bin/winecfg /usr/local/bin/wineserver
 
-
-WINEPREFIX=~/.wine WINEARCH=win32 wine winecfg
-WINEPREFIX=~/.wine64 WINEARCH=win64 wine winecfg
+wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+sudo mv winetricks /usr/local/bin/
+sudo chmod +x /usr/local/bin/winetricks
 
