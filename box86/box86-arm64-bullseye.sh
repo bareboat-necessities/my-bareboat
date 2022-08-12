@@ -50,8 +50,11 @@ sudo schroot -c arm32 -u root -- bash -c "git clone https://github.com/ptitSeb/b
 
 sudo schroot -c arm32 -u root -- bash -c "wget https://twisteros.com/wine.tgz && tar zxvf wine.tgz"
 
+sudo schroot -c arm32 -u root -- bash -c "wget  http://siriuscyber.net/sailmail/amsm35054b.exe"
 
 exit 0
+
+sudo schroot -c arm32 -u root -- bash -c "~/box86/build/box86 ~/wine/bin/wine amsm35054b.exe"
 
 
 sudo schroot -c arm32 -u root -- bash -c "ls"
