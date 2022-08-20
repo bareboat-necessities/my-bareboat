@@ -2005,6 +2005,17 @@ NMEA OneNet is Ethernet based with RJ-45 or X-Coded M12 8-pin (to pass smaller o
 PoE (Power over Ethernet) allows powering devices with same data cables. It is a nice way
 for reducing the number of cables in your system.
 
+=== SAE J1939
+
+J1939 is a CAN-BUS protocol for monitoring automotive engines, but it's also being used on boats.
+Usually it requires J1939 to NMEA 2000 gateways.
+
+Vendors of such gateways:
+
+- Maretron
+- Yacht Devices
+- Oceanic Systems
+
 === GPS
 
 Several options to connect:
