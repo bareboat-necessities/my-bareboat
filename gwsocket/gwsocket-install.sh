@@ -15,9 +15,5 @@ sudo make install
 
 gwsocket -p 7474 --pipein=out  &
 socat - TCP4:localhost:10110 >> out  &
-wsdump ws://localhost:7474/
-
-
-
-
+wsdump -r ws://localhost:7474/
 
