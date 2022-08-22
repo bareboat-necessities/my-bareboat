@@ -551,6 +551,9 @@ cat /proc/device-tree/hat/custom_0
 
 to see hat configuration and its GPIO pins required to be set up and so on.
 
+For steering by the wind set wind.sensors_height to your wind sensor height as pypilot tries to compensate
+for apparent wind created by boat motion.
+
 
 === UI for controlling autopilots
 
