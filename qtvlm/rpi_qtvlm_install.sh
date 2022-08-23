@@ -34,5 +34,7 @@ Categories=Navigation;ChartPlotter
 Keywords=Navigation;ChartPlotter
 EOF'
 
+wget -q -O - http://download.meltemus.com/qtvlm/qtVlm_documentation_en.pdf > /home/user/Documents/qtVlm_documentation_en.pdf
+
 # cd qtVlm
 # ./qtVlm -platform xcb
