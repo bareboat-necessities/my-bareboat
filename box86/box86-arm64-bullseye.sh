@@ -20,9 +20,15 @@ sudo apt-get -y install libegl-mesa0:armhf libgdm1:armhf libgl1-mesa-dri:armhf l
   libsdl2-mixer-2.0-0:armhf gcc-arm-linux-gnueabihf
 
   
-sudo wget https://itai-nelken.github.io/weekly-box86-debs/debian/box86.list -O /etc/apt/sources.list.d/box86.list
-wget -qO- https://itai-nelken.github.io/weekly-box86-debs/debian/KEY.gpg | sudo apt-key add -
-sudo apt update && sudo apt-get -y install box86=0.2.3+20210709.3a7cc57f-1
+#sudo wget https://itai-nelken.github.io/weekly-box86-debs/debian/box86.list -O /etc/apt/sources.list.d/box86.list
+#wget -qO- https://itai-nelken.github.io/weekly-box86-debs/debian/KEY.gpg | sudo apt-key add -
+#sudo apt update && sudo apt-get -y install box86=0.2.3+20210709.3a7cc57f-1
+
+sudo wget https://ryanfortner.github.io/box86-debs/box86.list -O /etc/apt/sources.list.d/box86.list
+wget -qO- https://ryanfortner.github.io/box86-debs/KEY.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/box86-debs-archive-keyring.gpg
+sudo apt update && sudo apt-get -y install box86=0.2.7+20220816.e9fcef3-1
+
+#https://github.com/ryanfortner/box86-debs/blob/master/debian/box86_0.2.7%2B20220816.e9fcef3-1_armhf.deb
 
 # Wine
 sudo apt-get -y install libasound2:armhf libc6:armhf libglib2.0-0:armhf libgphoto2-6:armhf libgphoto2-port12:armhf libgstreamer-plugins-base1.0-0:armhf \
