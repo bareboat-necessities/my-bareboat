@@ -2025,6 +2025,7 @@ Vendors:
 - Star Tracking https://www.star-tracking.com/
 - Vela-Navega https://vela-navega.com/
 
+Yacht Devices multiplexers stand out from others by also providing a web UI with a dashboard with gauges.
 
 === NMEA 2000
 
