@@ -829,11 +829,13 @@ Many other devices are supported (usually via SignalK)
 
 Enable OpenCPN 'Dashboard' plugin, add instruments. Dashboards are dockable to the right on bottom of OpenCPN canvas.
 
-==== KIP
+==== KIP / SignalK
 
 * Load KIP demo. In setting of KIP dashboard change the URL to http://localhost:3000
 * You should request KIP token to be registered in SignalK, then go into SignalK app and
 authorize it. After that edit instruments and layout in KIP dashboard settings.
+
+https://48north.com/boats-and-gear/gear-reviews/supercharge-your-boats-information-gathering-with-signal-k/
 
 === Remote Access
 
