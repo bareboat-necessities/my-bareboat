@@ -2868,6 +2868,14 @@ Can be a good input device for controlling chartplotter, autopilot, bow thruster
 
 https://peyanski.com/connecting-cloudflare-tunnel-to-home-assistant/
 
+=== Install AirMail on Raspberry Pi
+
+AirMail is a radio mail program for sending and receiving messages via Pactor over HF radio,
+either via the ham radio system or participating marine and commercial services.
+
+To install AirMail on Raspberry Pi follow this guide:
+https://bareboat-necessities.github.io/my-bareboat/airmail-install.html
+
 === How To Enable Hardware Acceleration In Chromium On Raspberry Pi OS (RPi 4)
 
 https://www.linuxuprising.com/2021/04/how-to-enable-hardware-acceleration-in.html
