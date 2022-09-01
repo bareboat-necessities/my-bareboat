@@ -19,11 +19,6 @@ sudo apt-get -y install libegl-mesa0:armhf libgdm1:armhf libgl1-mesa-dri:armhf l
   libsmpeg0:armhf libavcodec58:armhf libavformat58:armhf libswscale5:armhf libsdl2-image-2.0-0:armhf \
   libsdl2-mixer-2.0-0:armhf gcc-arm-linux-gnueabihf
 
-  
-#sudo wget https://itai-nelken.github.io/weekly-box86-debs/debian/box86.list -O /etc/apt/sources.list.d/box86.list
-#wget -qO- https://itai-nelken.github.io/weekly-box86-debs/debian/KEY.gpg | sudo apt-key add -
-#sudo apt update && sudo apt-get -y install box86=0.2.3+20210709.3a7cc57f-1
-
 sudo wget https://ryanfortner.github.io/box86-debs/box86.list -O /etc/apt/sources.list.d/box86.list
 wget -qO- https://ryanfortner.github.io/box86-debs/KEY.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/box86-debs-archive-keyring.gpg
 sudo apt update && sudo apt-get -y install box86:armhf=0.2.7+20220831.a25c32a-1
