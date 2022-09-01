@@ -76,7 +76,7 @@ wget http://siriuscyber.net/sailmail/amsm35054b.exe
 wine amsm35054b.exe                                 
 
 # To run AirMail
-cd .wine/drive_c/Program\ Files/Airmail
+cd ~/.wine/drive_c/Program\ Files/Airmail
 wine Airmail3.exe
 
 
