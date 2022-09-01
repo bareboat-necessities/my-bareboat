@@ -70,6 +70,7 @@ sudo chmod +x /usr/local/bin/winetricks
 sudo apt-get -y install winbind
 
 # Run Wine Config
+wineboot --init
 winecfg
 
 ########################################   AirMail   ########################################
