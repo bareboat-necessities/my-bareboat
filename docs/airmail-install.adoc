@@ -110,6 +110,7 @@ sudo ln -s ~/wine/bin/winecfg /usr/local/bin/winecfg
 sudo ln -s ~/wine/bin/wineserver /usr/local/bin/wineserver
 sudo chmod +x /usr/local/bin/wine /usr/local/bin/wineboot /usr/local/bin/winecfg /usr/local/bin/wineserver
 
+# Wine tricks are optional
 wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
 sudo mv winetricks /usr/local/bin/
 sudo chmod +x /usr/local/bin/winetricks
@@ -126,7 +127,7 @@ sudo apt-get -y install winbind
 # wait for it to complete. It takes a while and opens and closes some windows
 wineboot --init
 
-# Optional step. Where you can choose windows version, etc in GUI window
+# Optional step. Where you can choose windows version, font sizes, etc in GUI window
 winecfg
 ----
 
