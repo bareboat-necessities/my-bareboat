@@ -26,9 +26,8 @@ sudo apt-get -y install libegl-mesa0:armhf libgdm1:armhf libgl1-mesa-dri:armhf l
 
 sudo wget https://ryanfortner.github.io/box86-debs/box86.list -O /etc/apt/sources.list.d/box86.list
 wget -qO- https://ryanfortner.github.io/box86-debs/KEY.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/box86-debs-archive-keyring.gpg
-sudo apt update && sudo apt-get -y install box86:armhf=0.2.7+20220816.e9fcef3-1
+sudo apt update && sudo apt-get -y install box86:armhf=0.2.7+20220831.a25c32a-1
 
-#https://github.com/ryanfortner/box86-debs/blob/master/debian/box86_0.2.7%2B20220816.e9fcef3-1_armhf.deb
 
 # Wine
 sudo apt-get -y install libasound2:armhf libc6:armhf libglib2.0-0:armhf libgphoto2-6:armhf libgphoto2-port12:armhf libgstreamer-plugins-base1.0-0:armhf \
