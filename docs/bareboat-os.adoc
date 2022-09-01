@@ -2956,6 +2956,7 @@ https://peyanski.com/connecting-cloudflare-tunnel-to-home-assistant/
 AirMail is a radio mail program for sending and receiving messages via Pactor over HF radio,
 either via the ham radio system or participating marine and commercial services.
 
+To install AirMail on Raspberry Pi follow this guide:
 https://bareboat-necessities.github.io/my-bareboat/airmail-install.html
 
 === How To Enable Hardware Acceleration In Chromium On Raspberry Pi OS (RPi 4)
