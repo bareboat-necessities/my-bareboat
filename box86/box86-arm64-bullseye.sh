@@ -41,10 +41,17 @@ sudo apt-get -y install libasound2:armhf libc6:armhf libglib2.0-0:armhf libgphot
  libmpg123-0:armhf libtinfo5:armhf libxslt1.1:armhf
 
 cd ~/Downloads
-wget https://dl.winehq.org/wine-builds/debian/dists/bullseye/main/binary-i386/wine-staging-i386_7.15~bullseye-1_i386.deb
-wget https://dl.winehq.org/wine-builds/debian/dists/bullseye/main/binary-i386/wine-staging_7.15~bullseye-1_i386.deb
-dpkg-deb -xv wine-staging-i386_7.15~bullseye-1_i386.deb wine-installer
-dpkg-deb -xv wine-staging_7.15~bullseye-1_i386.deb wine-installer
+
+wget https://dl.winehq.org/wine-builds/debian/dists/bullseye/main/binary-i386/wine-stable-i386_5.0.4~bullseye-1_i386.deb
+wget https://dl.winehq.org/wine-builds/debian/dists/bullseye/main/binary-i386/wine-stable_5.0.4~bullseye-1_i386.deb
+dpkg-deb -xv wine-stable-i386_5.0.4~bullseye-1_i386.deb wine-installer
+dpkg-deb -xv wine-stable_5.0.4~bullseye-1_i386.deb wine-installer
+
+#wget https://dl.winehq.org/wine-builds/debian/dists/bullseye/main/binary-i386/wine-staging-i386_7.15~bullseye-1_i386.deb
+#wget https://dl.winehq.org/wine-builds/debian/dists/bullseye/main/binary-i386/wine-staging_7.15~bullseye-1_i386.deb
+#dpkg-deb -xv wine-staging-i386_7.15~bullseye-1_i386.deb wine-installer
+#dpkg-deb -xv wine-staging_7.15~bullseye-1_i386.deb wine-installer
+
 rm -rf ~/wine
 mv ~/Downloads/wine-installer/opt/wine* ~/wine
 rm -rf wine-installer
@@ -63,11 +70,19 @@ sudo chmod +x /usr/local/bin/winetricks
 
 sudo apt-get -y install winbind
 
+# Run Wine Config
+winecfg
+
 
 wget http://siriuscyber.net/sailmail/amsm35054b.exe
-WINEPREFIX=${HOME}/wine-air wine/bin/wine amsm35054b.exe
 
-# To run
+# Install AirMail
+wine amsm35054b.exe                                 #WINEPREFIX=${HOME}/wine-air wine/bin/wine amsm35054b.exe
+
+# To run AirMail
+
+cd wine-air/drive_c/Program\ Files/Airmail
+wine Airmail3.exe
 
 #WINEPREFIX=${HOME}/wine-air wine/bin/wine wine-air/drive_c/Program\ Files/Airmail/Airmail3.exe
 
