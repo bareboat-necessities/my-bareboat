@@ -73,17 +73,16 @@ sudo apt-get -y install winbind
 # Run Wine Config
 winecfg
 
+########################################   AirMail   ########################################
 
 wget http://siriuscyber.net/sailmail/amsm35054b.exe
 
 # Install AirMail
-wine amsm35054b.exe                                 #WINEPREFIX=${HOME}/wine-air wine/bin/wine amsm35054b.exe
+wine amsm35054b.exe                                 
 
 # To run AirMail
-
-cd wine-air/drive_c/Program\ Files/Airmail
+cd .wine/drive_c/Program\ Files/Airmail
 wine Airmail3.exe
 
-#WINEPREFIX=${HOME}/wine-air wine/bin/wine wine-air/drive_c/Program\ Files/Airmail/Airmail3.exe
 
 
