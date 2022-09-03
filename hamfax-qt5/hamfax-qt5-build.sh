@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-sudo apt-get -y install qtbase5-dev qtbase5-dev-tools
+sudo apt-get -y install qtbase5-dev qtbase5-dev-tools qttools5-dev-tools
 
 sudo cp /usr/bin/lrelease /usr/lib/qt5/bin/
 
