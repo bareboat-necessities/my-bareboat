@@ -576,6 +576,8 @@ For real blue water sailors OpenCPN Climatology and OpenCPN weather routing plug
 
 Mediterranean GRIB files: https://openskiron.org/en/
 
+Marine Weather Center: https://mwxc.com/
+
 ==== GRIB
 
 Launch xyGrib. Select an area on the map. Click to download Grib file.
