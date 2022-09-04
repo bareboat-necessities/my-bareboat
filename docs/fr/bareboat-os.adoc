@@ -1402,6 +1402,14 @@ cd /home/user/add-ons
 ./maiana-ais-install.sh
 ----
 
+=== Victron
+
+To monitor your Victron devices you can access
+
+http://localhost:8000/app?host=venus.local&port=9001
+
+Change the host and port in that URL to your Victron Venus OS device name and port.
+
 === Marine Species Identification
 
 When Internet is available you can use Menu link in App Menus->Utilities->Marine Life
