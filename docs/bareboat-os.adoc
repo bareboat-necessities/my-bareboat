@@ -772,10 +772,10 @@ sudo systemctl start pypilot@pypilot
 - At this point you should be able to see reading of pitch/roll, etc. and magnetic heading in pypilot control.
 Which you would need to calibrate.
 
-- Start pypilot calibration. Press 'Boat Level' when the boat leveled. (Your IMU must be obviously
+- Shutdown SignalK. Start pypilot calibration. Press 'Boat Level' when the boat leveled. (Your IMU must be obviously
 mounted hard to the boat, can't be just hanging).
 For magnetic heading: IMU doesn't know how you oriented it inside (where bow is pointing), so you need to adjust
-it by filling magnetic heading adjustment field.
+it by filling magnetic heading adjustment field. Start SignalK.
 
 - Establish connection from PyPilot to SignalK (restart PyPilot just before doing it to get a fresh valid request)
 
@@ -2534,7 +2534,7 @@ Brief explanation:
 - GPS is read by signalK by creating NMEA connection to /dev/serial0 port (set correct baud rate), or add it as a device
  for GPSd into /etc/default/gpsd
 - Barometric/temp data is read by SignalK using signalK BME280 plugin. Make sure setting polling interval below 30 seconds (because OpenCPN expires non-navigational data every 30 seconds)
-- Calibrate level IMU on water. Calibrate your IMU compass, using pyPilot calibration utility.
+- Calibrate level IMU on water. Calibrate your IMU compass, using pyPilot calibration utility. Shutdown SignalK during calibration.
 - I use external GPS antenna with it. (It needs to be an active antenna). There is a jumper/or switch on the Berry board to choose external antenna
 
 NOTE: Cellular, GPS, Wi-Fi Antenna (3 in one), Model AFCJF3, Price $80
