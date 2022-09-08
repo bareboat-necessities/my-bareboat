@@ -16,6 +16,7 @@ Do not forget to check our [ ⛵⛵⛵ ](https://github.com/bareboat-necessities
 
 [Contacts Page](https://bareboat-necessities.wixsite.com/my-bareboat)
 
+
 ------
 
 [Logo vector created by freepik - www.freepik.com](https://www.freepik.com/)
