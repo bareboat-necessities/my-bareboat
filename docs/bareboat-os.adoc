@@ -1868,6 +1868,12 @@ PyPilot Documentation recommends using 9 Dof (9 Degrees of freedom) IMU with mpu
 
 Even without autopilot motor controller these sensors allow displaying roll, pitch, and yaw.
 
+SignalK plugin for electronic compass WitMotion:
+https://github.com/W-Geronius/signalk-hwt901b-imu
+
+See also: https://open-boat-projects.org/en/magne
+
+
 === Environmental Sensors
 
 ==== Barometer, Temperature, Humidity I2C Sensors
