@@ -1,6 +1,6 @@
 = Bareboat Necessities OS Dokumentation
 
-:imagesdir: ../images
+:imagesdir: images
 :keywords: openplotter, opencpn, signalK, nmea, marine
 :description: BBN Marine OS is a free open source Linux for Raspberry Pi on boats. \
 Mit BBN OS kannst du einen Chartplotter, einen Marine Data Computer einschließlich OpenCPN, SignalK, NMEA ähnlich wie Openplotter erstellen
@@ -127,11 +127,11 @@ https://github.com/bareboat-necessities/lysmarine_gen#download
 
 Alternativer Download Link, wenn der vorherige Link nicht für Sie funktioniert:
 
-https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-08-03
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-09-09
 
 Letzte Hauptversion der LTS-Version:
 
-https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-07-13
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-08-03
 
 ==== 32-bit vs 64-bit Images
 
