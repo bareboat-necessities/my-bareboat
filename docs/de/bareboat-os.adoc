@@ -59,7 +59,7 @@ https://bareboat-necessities.wixsite.com/my-bareboat
 
 {zwsp} +
 
-PDF version:
+PDF Version:
 
 https://bareboat-necessities.github.io/my-bareboat/bareboat-os.pdf
 
@@ -127,11 +127,11 @@ https://github.com/bareboat-necessities/lysmarine_gen#download
 
 Alternativer Download Link, wenn der vorherige Link nicht für Sie funktioniert:
 
-https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-07-13
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-08-03
 
 Letzte Hauptversion der LTS-Version:
 
-https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-05-27
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-07-13
 
 ==== 32-bit vs 64-bit Images
 
@@ -143,53 +143,57 @@ NOTE: Das Standard Image von BBN OS hat einen 64-bit ARM Kernel mit 32-bit ARMhf
 - QtVlm, wx2img, viele OpenCPN Plugins werden nur in 32-Bit unterstützt (zum Zeitpunkt des Schreibens)
 - Du kannst problemlos einen 64-Bit-Kernel in einem 32-Bit-Image ausführen, die User Space Programme laufen dann mit 32-Bit. (füge einfach die Zeile arm_64bit=1 der Datei /boot/config.txt hinzu)
 - 32-Bit ist kompatibler zu mehr Hardware
-- 64-bit OS and OpenCPN are working fine but technically still called 'beta'
-- Most of the open (minor) issues are present in both 32 and 64-bit images
+- 64-Bit-Betriebssystem und OpenCPN funktionieren gut, sind aber praktisch immer noch "Beta" Zustand
+- Die meisten offenen (kleinen) Probleme sind sowohl in den 32 als auch in 64-Bit-Images vorhanden
 
-NOTE: Switch from 32-bit kernel to 64-bit kernel has an impact on java installation.
-See (workaround): https://github.com/bareboat-necessities/lysmarine_gen/issues/44
+NOTE: Der Wechsel vom 32-Bit-Kernel zum 64-Bit-Kernel hat Auswirkungen auf die Java-Installation.
+Siehe (workaround): https://github.com/bareboat-necessities/lysmarine_gen/issues/44
 
-So as of time of writing this the best performance/compatibility is the 32-bit image with the kernel switched to 64-bit.
-Your preferred download image of BBN OS would be armhf.
+Zum Zeitpunkt des Schreibens ist also das 32-Bit-Image mit dem auf 64-Bit gewechselten Kernel am besten.
+Das bevorzugtes Download-Bild von BBN OS wäre also armhf.
 
-- Install armhf image
-- Switch to 64-bit kernel in /boot/config.txt is already done for you in recent versions of BBN OS
-- Proceed with all other configuration steps.
-- After establishing Internet connectivity install official hot fixes (also needed for touchscreen setup):
+- armhf Image installieren
+- Wechsel zum 64-Bit-Kernel in /boot/config.txt ist bereits in den letzten Versionen von BBN OS erledigt
+- Mit allen anderen Konfigurationsschritten fortfahren.
+- Nach der Einrichtung einer Internetverbindung die offizielle Hotfixes installieren (auch für das Touchscreen-Setup benötigt):
 +
 [source, shell]
 ----
 cd /home/user/add-ons
 ./hot-fixes-install.sh
 ----
-- Reboot (One reboot after installation required to pick up all settings)
+- Neustart (Ein Neustart nach der Installation erforderlich, um alle Einstellungen aufzunehmen)
 
-=== Prepare SD Card
+=== SD-Karte vorbereiten
 
-Write the downloaded image to SD card. Minimum 32Gb SD card recommended.
-You can use Raspberry Pi Imager for that:
+Das heruntergeladene Bild auf die SD-Karte schreiben. Mindestens 32 GB SD-Karte empfohlen.
+Du kannst Raspberry Pi Imager dafür verwenden:
 
 https://www.raspberrypi.org/software/
 
-You do not need to explode .xz image file for it. You can load .xz file into RPI imager as is.
-Burn the image to SD card as-is.
+Die .xz Image-Datei muss dafür nicht entpackt werden. Die .xz Datei kann in RPI imager laden werden wie sie ist.
+Schreibe das Image wie es ist auf die SD-Karte. Do not change default user on the image by RPI imager advanced settings.
 
-If your screen resolution is lower than 1024x600 you would need to manually
-set it in /boot/config.txt file, by mounting /boot partition of your SD card
-(on Windows its done just by inserting it into SD card slot and editing in a plain text
-editor).
+Bei einer Bildschirmauflösung niedriger als 1024x600, muss diese manuell
+durch Einhängen der /boot Partition Ihrer SD-Karte und Bearbeitung der Datei /boot/config.txt gesetzt werden.
+(unter Windows kann dies durch einstecken der SD-Karte und Bearbeitung mit einen Text
+Editor erledigt werden).
 
-Quality of SD card is essential for performance of your system. BBN OS comes
-with disk benchmarking tool. Good SD card would show about 45 MB/sec (or higher) read i/o speed in it.
-SSD drives would show much better results: 178 MB/sec read and 147 MB/sec write i/o speed or higher.
+Die Qualität der SD-Karte ist für die Leistung des Systems von entscheidender Bedeutung. BBN OS verfügt über
+über ein Werkzeug zur Leistungsmessung von Speichermedien. Eine gute SD-Karte sollte etwa 45 MB/Sek. (oder höher) Lese-/Schreib-Geschwindigkeit leisten.
+SSD-Laufwerke leisten viel höhere Geschwindigkeiten von: 178 MB/sek lesen und 147 MB/sek schreiben oder mehr.
 
-=== First Boot from SD Card
+NOTE: There were some cases of people just formatting SD card as fat32 file system and copying image file on it as-is,
+in form of .xz file or in some cases going extra length unpacking it into .img file and copying.
+Do not be like those guys. It can't possibly work for any OS image for Raspberry Pi. Read the docs.
 
-Insert SD card into raspberry pi SD card slot, plug-in a mouse and a keyboard, and power on.
-Wait for boot process to run GUI (about 2 mins).
+=== Erster Start von SD-Karte
 
-NOTE: Your touchscreen should be connected (HDMI and USB) and powered on during the first boot to be properly recognized
-and touchscreen calibrated.
+Stecke eine Maus, eine Tastatur und die SD-Karte in den Raspberry Pi ein und schalten ihn ein.
+Warte den Boot-Prozess ab, bis die grafische Benutzeroberfläche erscheint (ca. 2 Minuten).
+
+NOTE: Der Touchscreen sollte während des ersten Boots eingeschaltet und angeschlossen sein (HDMI und USB), um
+korrekte erkannt und kalibriert zu werden.
 
 === Setting up Network
 
@@ -545,6 +549,9 @@ cat /proc/device-tree/hat/custom_0
 
 to see hat configuration and its GPIO pins required to be set up and so on.
 
+For steering by the wind set wind.sensors_height to your wind sensor height as pypilot tries to compensate
+for apparent wind created by boat motion.
+
 === UI for controlling autopilots
 
 There are three options:
@@ -568,6 +575,8 @@ Offshore sailors or even coastal cruisers should focus on using XyGrib and GRIB 
 For real blue water sailors OpenCPN Climatology and OpenCPN weather routing plugins are essential.
 
 Mediterranean GRIB files: https://openskiron.org/en/
+
+Marine Weather Center: https://mwxc.com/
 
 ==== GRIB
 
@@ -638,6 +647,9 @@ ARDOP for pi: https://www.cantab.net/users/john.wiseman/Documents/ARDOPC.html
 
 The OS image comes with Mopidy, MPD server, MusicBox, Shairport-Sync (AirPlay) server.
 The default audio output set up to audio jack port.
+
+NOTE: With Bullseye based versions it's possible to switch audio sources without modifying /boot/config.txt and
+without rebooting.
 
 ==== MusicBox
 
@@ -749,10 +761,10 @@ sudo systemctl start pypilot@pypilot
 
 - At this point you should be able to see reading of pitch/roll, etc. and magnetic heading in pypilot control.
 Which you would need to calibrate.
-- Start pypilot calibration. Press 'Boat Level' when the boat leveled. (Your IMU must be obviously
+- Shutdown SignalK. Start pypilot calibration. Press 'Boat Level' when the boat leveled. (Your IMU must be obviously
 mounted hard to the boat, can't be just hanging).
 For magnetic heading: IMU doesn't know how you oriented it inside (where bow is pointing), so you need to adjust
-it by filling magnetic heading adjustment field.
+it by filling magnetic heading adjustment field. Start SignalK.
 - Establish connection from PyPilot to SignalK (restart PyPilot just before doing it to get a fresh valid request)
 - Go to SignalK web UI as admin and approve the access request from PyPilot for READ/WRITE access.
 - IMU data should start flowing into SignalK
@@ -801,11 +813,13 @@ Many other devices are supported (usually via SignalK)
 
 Enable OpenCPN 'Dashboard' plugin, add instruments. Dashboards are dockable to the right on bottom of OpenCPN canvas.
 
-==== KIP
+==== KIP / SignalK
 
 * Load KIP demo. In setting of KIP dashboard change the URL to http://localhost:3000
 * You should request KIP token to be registered in SignalK, then go into SignalK app and
 authorize it. After that edit instruments and layout in KIP dashboard settings.
+
+https://48north.com/boats-and-gear/gear-reviews/supercharge-your-boats-information-gathering-with-signal-k/
 
 === Remote Access
 
@@ -1388,6 +1402,14 @@ cd /home/user/add-ons
 ./maiana-ais-install.sh
 ----
 
+=== Victron
+
+To monitor your Victron devices you can access
+
+http://localhost:8000/app?host=venus.local&port=9001
+
+Change the host and port in that URL to your Victron Venus OS device name and port.
+
 === Marine Species Identification
 
 When Internet is available you can use Menu link in App Menus->Utilities->Marine Life
@@ -1791,6 +1813,11 @@ PyPilot Documentation recommends using 9 Dof (9 Degrees of freedom) IMU with mpu
 
 Even without autopilot motor controller these sensors allow displaying roll, pitch, and yaw.
 
+SignalK plugin for electronic compass WitMotion:
+https://github.com/W-Geronius/signalk-hwt901b-imu
+
+See also: https://open-boat-projects.org/en/magne
+
 === Environmental Sensors
 
 ==== Barometer, Temperature, Humidity I2C Sensors
@@ -1954,6 +1981,8 @@ Vendors:
 - Star Tracking https://www.star-tracking.com/
 - Vela-Navega https://vela-navega.com/
 
+Yacht Devices multiplexers stand out from others by also providing a web UI with a dashboard with gauges.
+
 === NMEA 2000
 
 NMEA 2000 protocol was reverse engineered as a part of this project: https://github.com/canboat/canboat
@@ -1997,6 +2026,17 @@ NMEA OneNet is Ethernet based with RJ-45 or X-Coded M12 8-pin (to pass smaller o
 
 PoE (Power over Ethernet) allows powering devices with same data cables. It is a nice way
 for reducing the number of cables in your system.
+
+=== SAE J1939
+
+J1939 is a CAN-BUS protocol for monitoring automotive engines, but it's also being used on boats.
+Usually it requires J1939 to NMEA 2000 gateways.
+
+Vendors of such gateways:
+
+- Maretron
+- Yacht Devices
+- Oceanic Systems
 
 === GPS
 
@@ -2430,7 +2470,7 @@ Brief explanation:
 - GPS is read by signalK by creating NMEA connection to /dev/serial0 port (set correct baud rate), or add it as a device
 for GPSd into /etc/default/gpsd
 - Barometric/temp data is read by SignalK using signalK BME280 plugin. Make sure setting polling interval below 30 seconds (because OpenCPN expires non-navigational data every 30 seconds)
-- Calibrate level IMU on water. Calibrate your IMU compass, using pyPilot calibration utility.
+- Calibrate level IMU on water. Calibrate your IMU compass, using pyPilot calibration utility. Shutdown SignalK during calibration.
 - I use external GPS antenna with it. (It needs to be an active antenna). There is a jumper/or switch on the Berry board to choose external antenna
 
 NOTE: Cellular, GPS, Wi-Fi Antenna (3 in one), Model AFCJF3, Price $80
@@ -2843,6 +2883,14 @@ Can be a good input device for controlling chartplotter, autopilot, bow thruster
 
 https://peyanski.com/connecting-cloudflare-tunnel-to-home-assistant/
 
+=== Install AirMail on Raspberry Pi
+
+AirMail is a radio mail program for sending and receiving messages via Pactor over HF radio,
+either via the ham radio system or participating marine and commercial services.
+
+To install AirMail on Raspberry Pi follow this guide:
+https://bareboat-necessities.github.io/my-bareboat/airmail-install.html
+
 === How To Enable Hardware Acceleration In Chromium On Raspberry Pi OS (RPi 4)
 
 https://www.linuxuprising.com/2021/04/how-to-enable-hardware-acceleration-in.html
@@ -2874,6 +2922,9 @@ your monitor in /boot/config.txt (read about hdmi_cvt options)
 - I have high resolution monitor and all icons and fonts are too small. See <<running_with_higher_resolution_monitors>>
 - Common parameters to look for are: hdmi_cvt, hdmi_drive, hdmi_group, hdmi_mode, disable_fw_kms_setup,
 disable_overscan, overscan_*
+
+NOTE: Bullseye based versions with KMS driver ignore screen resolution settings in /boot/config.txt. Use
+xrandr (or arandr) to set your monitor resolution, rate, etc.
 
 === Rotate Screen
 
