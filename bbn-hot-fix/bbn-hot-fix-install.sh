@@ -38,6 +38,6 @@ cd ..
 sudo chmod +x /usr/local/sbin/rpi-clone*
 rm -rf rpi-clone
 
-/home/user/add-ons/scytalec-inmarsat-install.sh
+#/home/user/add-ons/scytalec-inmarsat-install.sh
 
 echo "Reboot for changes to take effect"
