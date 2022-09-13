@@ -172,7 +172,9 @@ You can use Raspberry Pi Imager for that:
 https://www.raspberrypi.org/software/
 
 You do not need to explode .xz image file for it. You can load .xz file into RPI imager as is.
-Burn the image to SD card as-is. Do not change default user on the image by RPI imager advanced settings.
+
+NOTE: Do not change default user on the image by RPI imager advanced settings.
+Do not use rpi-imager advanced tab at all. Burn the image to SD card as-is.
 
 If your screen resolution is lower than 1024x600 you would need to manually
 set it in /boot/config.txt file, by mounting /boot partition of your SD card
