@@ -1,0 +1,72 @@
+= Install SASPlanet
+mgrouch <mgrouch@users.noreply.github.com>
+{docdate}, Install SASPlanet
+:imagesdir: images
+:doctype: book
+:description: Install SAS.Planet on arm64
+:organization: Bareboat Necessities
+:description: Install SASPlanet with wine on arm64 Bullseye Raspberry Pi BBN OS
+:title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+ifdef::backend-pdf[]
+:source-highlighter: rouge
+:toc-placement!: manual
+:pdf-page-size: Letter
+:plantumlconfig: plantuml.cfg
+endif::[]
+ifndef::backend-pdf[]
+:toc-placement: left
+endif::[]
+:experimental:
+:reproducible:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 3
+:encoding: utf-8
+:lang: en
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:env-github:
+
+{zwsp} +
+
+== Install SASPlanet on Raspberry Pi Bullseye arm64
+
+SASPlanet is 32-bit Windows application. So we need to install box86 to emulate 32-bit Intel processor,
+and we would need to install wine86 to emulate Windows. box86 being 32-bit would need armhf (32-bit)
+runtime libraries.
+
+=== Step 1. Wine/Box86
+
+Perform all steps to install wine and box86 from this Guide (if you haven't installed it previously):
+https://bareboat-necessities.github.io/my-bareboat/airmail-install.html
+
+=== Step 2. Download and install SAS.Planet
+
+[source, shell]
+----
+cd ~
+wget https://bitbucket.org/sas_team/sas.planet.bin/downloads/SAS.Planet.Release.220707.zip
+wget -O sas-planet-patch.zip 'https://drive.google.com/uc?export=download&id=1xapw4gVa8d2rugKfq15yyGuY6gAfsR4L'
+mkdir SASPlanet-2022/
+cd SASPlanet-2022/
+unzip ../SAS.Planet.Release.220707.zip
+cd Maps
+unzip -u ../../sas-planet-patch.zip
+cd ../..
+rm -rf SAS.Planet.Release.220707.zip sas-planet-patch.zip
+----
+
+=== Step 3. Run SAS.Planet
+
+[source, shell]
+----
+cd ~/SASPlanet-2022/
+wine SASPlanet.exe
+----
+
