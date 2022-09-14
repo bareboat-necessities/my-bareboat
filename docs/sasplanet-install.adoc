@@ -35,6 +35,17 @@ endif::[]
 
 {zwsp} +
 
+== Intro
+
+SAS.Planet is a popular in offshore sailing community free and opensource program to prepare free raster charts
+for OpenCPN from GoogleEarth and others satellite images. More on the subject:
+
+http://svocelot.com/Cruise_Info/Equipment/mbTiles.htm
+
+And some prepared charts:
+http://svocelot.com/Cruise_Info/Equipment/KAP_Downloads.htm
+
+
 == Install SASPlanet on Raspberry Pi Bullseye arm64
 
 SASPlanet is 32-bit Windows application. So we need to install box86 to emulate 32-bit Intel processor,
