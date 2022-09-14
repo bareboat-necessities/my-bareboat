@@ -2980,6 +2980,19 @@ either via the ham radio system or participating marine and commercial services.
 To install AirMail on Raspberry Pi follow this guide:
 https://bareboat-necessities.github.io/my-bareboat/airmail-install.html
 
+=== Install SAS.Planet on Raspberry Pi
+
+SAS.Planet is a popular in offshore sailing community free and opensource program to prepare free raster charts
+for OpenCPN from GoogleEarth and others satellite images. More on the subject:
+
+http://svocelot.com/Cruise_Info/Equipment/mbTiles.htm
+
+And some prepared charts:
+http://svocelot.com/Cruise_Info/Equipment/KAP_Downloads.htm
+
+To install SAS.Planet on Raspberry Pi follow this guide:
+https://bareboat-necessities.github.io/my-bareboat/sasplanet-install.html
+
 === How To Enable Hardware Acceleration In Chromium On Raspberry Pi OS (RPi 4)
 
 https://www.linuxuprising.com/2021/04/how-to-enable-hardware-acceleration-in.html
