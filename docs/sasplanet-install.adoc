@@ -5,7 +5,7 @@ mgrouch <mgrouch@users.noreply.github.com>
 :doctype: book
 :description: Install SAS.Planet on arm64
 :organization: Bareboat Necessities
-:description: Install SASPlanet with wine on arm64 Bullseye Raspberry Pi BBN OS, OpenCPN free KAP charts
+:description: Install SASPlanet with wine on arm64 Bullseye Raspberry Pi BBN OS, OpenCPN free KAP charts, Openplotter
 :title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 ifdef::backend-pdf[]
 :source-highlighter: rouge
