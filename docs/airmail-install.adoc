@@ -123,6 +123,7 @@ sudo apt-get -y install winbind
 
 == Step 3. Wine86 config
 
+
 [source, shell]
 ----
 # wait for it to complete. It takes a while and opens and closes some windows
@@ -132,6 +133,7 @@ wineboot --init
 winecfg
 ----
 
+You can increase your font size if it is too small under 'Graphics' menu.
 
 == Step 4. Download AirMail
 
