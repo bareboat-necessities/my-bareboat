@@ -4,6 +4,7 @@ mgrouch <mgrouch@users.noreply.github.com>
 :imagesdir: images
 :doctype: book
 :organization: Bareboat Necessities
+:description: Bareboat Necessities, BBN Marine OS checklist, Openplotter
 :title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 ifdef::backend-pdf[]
 :source-highlighter: rouge
