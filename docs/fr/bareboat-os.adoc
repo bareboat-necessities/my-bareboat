@@ -1052,6 +1052,11 @@ PyPilot based autopilots:
 * https://pypilot.org/store/
 * https://pcnautic.nl/nl/autopilot
 
+These features would be particularly interesting for offshore sailors:
+
+* AirMail <<airmail>>
+* SASPlanet <<sasplanet>>
+
 === Watching Movies
 
 Watching on-line (or listening) prepaid copyrighted content (Netflix, Amazon PrimeVideo, Google, Spotify, etc.) in
@@ -2887,6 +2892,7 @@ Can be a good input device for controlling chartplotter, autopilot, bow thruster
 
 https://peyanski.com/connecting-cloudflare-tunnel-to-home-assistant/
 
+[#airmail]
 === Install AirMail on Raspberry Pi
 
 AirMail is a radio mail program for sending and receiving messages via Pactor over HF radio,
@@ -2896,6 +2902,7 @@ It can communicate with PACTOR modem and other HF radio devices.
 To install AirMail on Raspberry Pi follow this guide:
 https://bareboat-necessities.github.io/my-bareboat/airmail-install.html
 
+[#sasplanet]
 === Install SAS.Planet on Raspberry Pi
 
 SAS.Planet is a popular in offshore sailing community free and opensource program to prepare free off-line raster charts
