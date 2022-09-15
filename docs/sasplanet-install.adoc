@@ -73,7 +73,26 @@ cd ../..
 rm -rf SAS.Planet.Release.220707.zip sas-planet-patch.zip
 ----
 
-== Step 3. Run SAS.Planet
+== Step 3. Create desktop shortcut
+
+[source, shell]
+----
+
+sudo bash -c 'cat << EOF > /usr/local/share/applications/sasplanet.desktop
+[Desktop Entry]
+Type=Application
+Name=SAS.Planet
+GenericName=SASPlanet
+Comment=SASPlanet GIS
+Exec=bash -c "cd ~/SASPlanet-2022/; wine SASPlanet.exe"
+Terminal=false
+Icon=gnome-globe
+Categories=WWW;Internet
+EOF'
+
+----
+
+== Step 4. Run SAS.Planet
 
 [source, shell]
 ----
