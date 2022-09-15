@@ -52,12 +52,12 @@ SASPlanet is 32-bit Windows application. So we need to install box86 to emulate 
 and we would need to install wine86 to emulate Windows. box86 being 32-bit would need armhf (32-bit)
 runtime libraries.
 
-=== Step 1. Wine/Box86
+== Step 1. Wine/Box86
 
 Perform all steps to install wine and box86 from this Guide (if you haven't installed it previously):
 https://bareboat-necessities.github.io/my-bareboat/airmail-install.html
 
-=== Step 2. Download and install SAS.Planet
+== Step 2. Download and install SAS.Planet
 
 [source, shell]
 ----
@@ -73,7 +73,7 @@ cd ../..
 rm -rf SAS.Planet.Release.220707.zip sas-planet-patch.zip
 ----
 
-=== Step 3. Run SAS.Planet
+== Step 3. Run SAS.Planet
 
 [source, shell]
 ----

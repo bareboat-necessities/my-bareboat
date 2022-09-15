@@ -41,7 +41,7 @@ AirMail is 32-bit Windows application. So we need to install box86 to emulate 32
 and we would need to install wine86 to emulate Windows. box86 being 32-bit would need armhf (32-bit)
 runtime libraries.
 
-=== Step 1. Box86
+== Step 1. Box86
 
 [source, shell]
 ----
@@ -75,7 +75,7 @@ sudo apt update && sudo apt-get -y install box86:armhf=0.2.7+20220831.a25c32a-1
 ----
 
 
-=== Step 2. Wine86
+== Step 2. Wine86
 
 [source, shell]
 ----
@@ -121,7 +121,7 @@ sudo apt-get -y install winbind
 ----
 
 
-=== Step 3. Wine86 config
+== Step 3. Wine86 config
 
 [source, shell]
 ----
@@ -133,7 +133,7 @@ winecfg
 ----
 
 
-=== Step 4. Download AirMail
+== Step 4. Download AirMail
 
 
 [source, shell]
@@ -143,7 +143,7 @@ wget http://siriuscyber.net/sailmail/amsm35054b.exe
 ----
 
 
-=== Step 5. Install AirMail
+== Step 5. Install AirMail
 
 [source, shell]
 ----
@@ -152,7 +152,7 @@ wine amsm35054b.exe
 ----
 
 
-=== Step 6. Run AirMail
+== Step 6. Run AirMail
 
 [source, shell]
 ----
