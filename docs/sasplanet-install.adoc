@@ -102,12 +102,3 @@ wine SASPlanet.exe
 ----
 
 
-== Step 5. (Optional) Sat2Chart Download and Install
-
-[source, shell]
-----
-wget https://gdayii.ca/Downloads/Sat2Chart_Install.exe
-wine Sat2Chart_Install.exe
-----
-
-
