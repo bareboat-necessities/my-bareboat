@@ -2678,6 +2678,13 @@ cat /dev/ttyXXXX
 sudo python3 -m serial.tools.list_ports -v -s
 ----
 
+=== Display what USB devices you have
+
+[source, shell]
+----
+sudo usb-devices
+----
+
 === Additional software via pi-apps
 
 See: https://github.com/Botspot/pi-apps
