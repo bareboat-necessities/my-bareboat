@@ -4,6 +4,8 @@ mgrouch <mgrouch@users.noreply.github.com>
 :imagesdir: images
 :doctype: book
 :organization: Bareboat Necessities
+:keywords: openplotter, opencpn, signalK, nmea, marine
+:description: BBN Marine OS free open source Linux for boats vs OpenPlotter.
 :title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 ifdef::backend-pdf[]
 :source-highlighter: rouge
@@ -74,6 +76,8 @@ endif::[]
 |NavTex|yes|-
 |Radio Decoders|Inmarsat STD-C, NavTex, WeatherFax, WinLink, NOAA Satellite Weather, AIS - bundled|WeatherFax, NOAA Satellite Weather, AIS via adhoc install
 |SDR/Ham support|extensive|basic
+|AirMail|via wine|-
+|GIS|SAS.Planet via wine, imgkap|-
 |Autopilots Control|AutoHelm(?), pyPilot, NMEA 2000|NMEA 2000 (adhoc), pyPilot
 |i2c|on by default, IMUs are auto-detected|needs configuration
 |Serial Ports|mostly autoconfigured via udev rules|manual config via utility
@@ -91,12 +95,13 @@ endif::[]
 |Text-to-speech|adhoc|-
 |YouTube|yes|via browser
 |Cameras|yes, MotionEye, Cam|-
+|Augmented Reality|Stellarium|-
 |Drones support|yes, APM Planner 2|-
 |Media Library|Jellyfin (adhoc), SAMBA share, Mopidy|-
 |Playing Music|yes, Mopidy, AirPlay (Shairplay), Spotify (raspotify), Bluetooth|Bluetooth?
 |Windy, Lightning Map, Dock Finder, BoatSetter, CrewFinder, Sailing Education, Marine Traffic, Marine Life Identification|on-line|DIY
 |Power Monitoring|yes (SolarThing, HomeAssistant, etc)|DIY
-|Victron support|yes (via SignalK, HomeAssistant, NodeRed)|DIY
+|Victron support|yes (via SignalK, HomeAssistant, NodeRed, Venus Web UI)|DIY
 |Marine Publications|ColReg, Check lists, Knots, Sailing Directions Enroute (adhoc)|-
 |Automation|NodeRed built-in, Mosquitto MQTT built-in, HomeAssistant/EspHome (adhoc)|Mosquitto MQTT, NodeRed adhoc
 |Data Analytics|Grafana, Kapacitor, InfluxDB (built-in, disabled on start)|Grafana, InfluxDB adhoc

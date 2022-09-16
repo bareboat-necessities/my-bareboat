@@ -3,6 +3,7 @@ mgrouch <mgrouch@users.noreply.github.com>
 {docdate}, Install SASPlanet
 :imagesdir: images
 :doctype: book
+:keywords: openplotter, SASPlanet, arm64, rpi4
 :description: Install SAS.Planet on arm64
 :organization: Bareboat Necessities
 :description: Install SASPlanet with wine on arm64 Bullseye Raspberry Pi BBN OS, OpenCPN free KAP charts, Openplotter

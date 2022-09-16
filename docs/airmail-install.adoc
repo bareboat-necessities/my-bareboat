@@ -5,6 +5,7 @@ mgrouch <mgrouch@users.noreply.github.com>
 :doctype: book
 :description: Install AirMail on arm64
 :organization: Bareboat Necessities
+:keywords: openplotter, AirMail, PACTOR modem, arm64, rpi4, BBN OS
 :description: Install AirMail with wine on arm64 Bullseye Raspberry Pi BBN OS, PACTOR modem support, Openplotter
 :title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
 ifdef::backend-pdf[]
