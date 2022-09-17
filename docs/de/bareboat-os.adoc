@@ -1366,7 +1366,7 @@ cd /home/user/add-ons
 ./maritime-lib-install.sh
 ----
 
-=== Maritime Library
+=== Offline Wikipedia
 
 Using preinstalled Kiwix application you can store offline Wikipedia and more on your boat computer.
 
