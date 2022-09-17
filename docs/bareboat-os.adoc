@@ -2786,6 +2786,13 @@ See: https://github.com/Botspot/pi-apps
 sudo apt install openshot
 ----
 
+or another program
+
+[source, shell]
+----
+sudo apt install shotcut
+----
+
 === How to mount IMU
 
 IMU PCBs are marked with X-Y-Z labels. There are two conventions:
