@@ -3023,6 +3023,15 @@ curl -L \
  | sudo bash
 ----
 
+=== Screen Recording
+
+https://github.com/vkohaupt/vokoscreenNG
+
+[source, shell]
+----
+sudo apt-get -y install vokoscreen
+----
+
 == Comparison vs OpenPlotter
 
 See:
