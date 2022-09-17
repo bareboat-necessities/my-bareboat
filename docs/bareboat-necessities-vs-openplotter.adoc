@@ -93,6 +93,7 @@ endif::[]
 |FB, FB Messenger|yes|-
 |WhatsApp|yes|-
 |Text-to-speech|adhoc|-
+|Offline Wikipedia|kiwix|-
 |YouTube|yes|via browser
 |Cameras|yes, MotionEye, Cam|-
 |Augmented Reality|Stellarium|-
