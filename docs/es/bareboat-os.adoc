@@ -1366,6 +1366,10 @@ cd /home/user/add-ons
 ./maritime-lib-install.sh
 ----
 
+=== Maritime Library
+
+Using preinstalled Kiwix application you can store offline Wikipedia and more on your boat computer.
+
 === Media Library
 
 You can install JellyFin via add-ons:
