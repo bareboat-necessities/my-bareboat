@@ -3019,6 +3019,24 @@ https://www.linuxuprising.com/2021/04/how-to-enable-hardware-acceleration-in.htm
 
 See Capolavoro Sailing PD at: https://www.capolavoro.nl/
 
+=== Screen Recording
+
+https://github.com/vkohaupt/vokoscreenNG
+
+[source, shell]
+----
+sudo apt-get -y install vokoscreen
+----
+
+=== Finances and Accounting
+
+http://homebank.free.fr/en/
+
+[source, shell]
+----
+sudo apt-get -y install homebank
+----
+
 === Setting up monitor
 
 /boot/config.txt contains most important settings for your monitor. You might need to adjust them manually.
@@ -3115,23 +3133,6 @@ curl -L \
  | sudo bash
 ----
 
-=== Screen Recording
-
-https://github.com/vkohaupt/vokoscreenNG
-
-[source, shell]
-----
-sudo apt-get -y install vokoscreen
-----
-
-=== Finances and Accounting
-
-http://homebank.free.fr/en/
-
-[source, shell]
-----
-sudo apt-get -y install homebank
-----
 
 
 == Comparison vs OpenPlotter
