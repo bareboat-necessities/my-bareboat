@@ -3124,6 +3124,15 @@ https://github.com/vkohaupt/vokoscreenNG
 sudo apt-get -y install vokoscreen
 ----
 
+=== Finances and Accounting
+
+http://homebank.free.fr/en/
+
+[source, shell]
+----
+sudo apt-get -y install homebank
+----
+
 
 == Comparison vs OpenPlotter
 
