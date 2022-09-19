@@ -3019,6 +3019,18 @@ http://svocelot.com/Cruise_Info/Equipment/KAP_Downloads.htm
 To install SAS.Planet on Raspberry Pi follow this guide:
 https://bareboat-necessities.github.io/my-bareboat/sasplanet-install.html
 
+=== Install QGIS GIS
+
+Another program used for creating DIY charts and mbtiles is QGIS.
+To install:
+
+[source, shell]
+----
+sudo apt-get -y install qgis
+reboot
+----
+
+
 === How To Enable Hardware Acceleration In Chromium On Raspberry Pi OS (RPi 4)
 
 https://www.linuxuprising.com/2021/04/how-to-enable-hardware-acceleration-in.html
