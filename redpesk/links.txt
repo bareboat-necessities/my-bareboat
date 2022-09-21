@@ -1,3 +1,6 @@
 https://docs.redpesk.bzh/docs/en/master/redpesk-os/boards/docs/boards/raspi.html
 
 https://download.redpesk.bzh/redpesk-lts/arz-1.0-update/images/smack/minimal/aarch64/rpi/latest/
+
+sudo apt install bmap-tools
+sudo bmaptool copy "https://download.redpesk.bzh/redpesk-lts/arz-1.0-update/images/smack/minimal/aarch64/rpi/latest/image.raw.tar.xz" /dev/mmcblk0
