@@ -2948,9 +2948,13 @@ reboot
 
 === Protecting Electronics from Environment
 
-Conformal Coating:
-
-https://www.techspray.com/the-essential-guide-to-conformal-coating
+* Search for "Conformal Coating".
+* Waterproof IP67 boxes and cable glands
+* Search for "Drip loop"
+* Waterproof hot clue
+* Waterproof heat shrink tubing
+* Epoxy potting for electronics
+* Dielectric grease for electrical connectors
 
 === How To Enable Hardware Acceleration In Chromium On Raspberry Pi OS (RPi 4)
 
