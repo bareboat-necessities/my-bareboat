@@ -3038,6 +3038,7 @@ reboot
 * Waterproof hot clue
 * Waterproof heat shrink tubing
 * Epoxy potting for electronics
+* Dielectric grease for electrical connectors
 
 === How To Enable Hardware Acceleration In Chromium On Raspberry Pi OS (RPi 4)
 
