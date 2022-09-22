@@ -2946,6 +2946,12 @@ sudo apt-get -y install qgis
 reboot
 ----
 
+=== Protecting Electronics from Environment
+
+Conformal Coating:
+
+https://www.techspray.com/the-essential-guide-to-conformal-coating
+
 === How To Enable Hardware Acceleration In Chromium On Raspberry Pi OS (RPi 4)
 
 https://www.linuxuprising.com/2021/04/how-to-enable-hardware-acceleration-in.html
