@@ -2946,6 +2946,16 @@ sudo apt-get -y install qgis
 reboot
 ----
 
+=== Protecting Electronics from Environment
+
+* Search for "Conformal Coating".
+* Waterproof IP67 boxes and cable glands
+* Search for "Drip loop"
+* Waterproof hot clue
+* Waterproof heat shrink tubing
+* Epoxy potting for electronics
+* Dielectric grease for electrical connectors
+
 === How To Enable Hardware Acceleration In Chromium On Raspberry Pi OS (RPi 4)
 
 https://www.linuxuprising.com/2021/04/how-to-enable-hardware-acceleration-in.html
