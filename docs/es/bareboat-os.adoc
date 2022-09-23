@@ -776,7 +776,8 @@ it by filling magnetic heading adjustment field. Start SignalK.
 NOTE: What is considered as a pitch and what is a roll would depend on heading calibration offset. With 90 degrees
 heading offset pitch and roll swap and so on. So before hitting 'Boat is level' button in calibration screen
 make sure you put correct heading offset on same screen (your bow heading on the 3D screen needs to match heading
-from the other compass you are using for calibration)
+from the other compass you are using for calibration). PyPilot allows offsets in range -180, 180. Other values are
+ignored.
 
 ==== Barometer / Temperature / Humidity
 
