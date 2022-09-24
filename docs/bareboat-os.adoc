@@ -793,7 +793,7 @@ make sure you put correct heading offset on same screen (your bow heading on the
 from the other compass you are using for calibration). PyPilot allows offsets in range -180, 180. Other values are
 ignored.
 
-Additional IMU and seinsors settings adjustments are stored in /RTIMULib.ini file.
+Additional IMU and sensors settings adjustments are stored in /RTIMULib.ini file.
 See more: https://github.com/seandepagnier/RTIMULib2/tree/master/Linux
 and https://github.com/seandepagnier/RTIMULib2
 
