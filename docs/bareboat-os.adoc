@@ -781,7 +781,10 @@ mounted hard to the boat, can't be just hanging).
 For magnetic heading: IMU doesn't know how you oriented it inside (where bow is pointing), so you need to adjust
 it by filling magnetic heading adjustment field. Start SignalK.
 
-NOTE: After calibration give pypilot 2-3 mins to run without restart to store settings.
+NOTE: After calibration give pypilot 2-3 mins to run without restart to store settings. It is recommended to set
+heading offset to non-zero value (between -180 and 180). Setting it to zero will make pypilot to use
+GPS COG, POS, and magnetic variation to calculate heading offset dynamically (assuming no current or leeway)
+when boat is moving (i.e. assuming COG is true heading).
 
 - Establish connection from PyPilot to SignalK (restart PyPilot just before doing it to get a fresh valid request)
 
