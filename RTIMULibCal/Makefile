@@ -61,6 +61,8 @@ DEPS    = $(RTIMULIBPATH)/RTMath.h \
     $(RTIMULIBPATH)/RTFusion.h \
     $(RTIMULIBPATH)/RTFusionKalman4.h \
     $(RTIMULIBPATH)/RTFusionRTQF.h \
+    $(RTIMULIBPATH)/FusionMadgwick.h \
+    $(RTIMULIBPATH)/FusionMahony.h \
     $(RTIMULIBPATH)/RTIMUSettings.h \
     $(RTIMULIBPATH)/RTIMUAccelCal.h \
     $(RTIMULIBPATH)/RTIMUMagCal.h \
@@ -72,10 +74,13 @@ DEPS    = $(RTIMULIBPATH)/RTMath.h \
     $(RTIMULIBPATH)/IMUDrivers/RTIMUGD20HM303D.h \
     $(RTIMULIBPATH)/IMUDrivers/RTIMUGD20M303DLHC.h \
     $(RTIMULIBPATH)/IMUDrivers/RTIMUGD20HM303DLHC.h \
+    $(RTIMULIBPATH)/IMUDrivers/RTIMUICM20948.h \
     $(RTIMULIBPATH)/IMUDrivers/RTIMULSM9DS0.h \
     $(RTIMULIBPATH)/IMUDrivers/RTIMULSM9DS1.h \
     $(RTIMULIBPATH)/IMUDrivers/RTIMUBMX055.h \
     $(RTIMULIBPATH)/IMUDrivers/RTIMUBNO055.h \
+    $(RTIMULIBPATH)/IMUDrivers/RTIMULSM6DS33LIS3MDL.h \
+    $(RTIMULIBPATH)/IMUDrivers/RTIMUHMC5883LADXL345.h \
     $(RTIMULIBPATH)/IMUDrivers/RTPressure.h \
     $(RTIMULIBPATH)/IMUDrivers/RTPressureBMP180.h \
     $(RTIMULIBPATH)/IMUDrivers/RTPressureLPS25H.h \
@@ -88,17 +93,21 @@ OBJECTS = objects/RTIMULibCal.o \
     objects/RTFusion.o \
     objects/RTFusionKalman4.o \
     objects/RTFusionRTQF.o \
+    objects/FusionMahony.o \
+    objects/FusionMadgwick.o \
     objects/RTIMUSettings.o \
     objects/RTIMUAccelCal.o \
     objects/RTIMUMagCal.o \
     objects/RTIMU.o \
     objects/RTIMUNull.o \
     objects/RTIMUMPU9150.o \
-    objects/RTIMUMPU9250.o \
-    objects/RTIMUMPU9255.o \
+    objects/RTIMUMPU925x.o \
     objects/RTIMUGD20HM303D.o \
     objects/RTIMUGD20M303DLHC.o \
     objects/RTIMUGD20HM303DLHC.o \
+    objects/RTIMULSM6DS33LIS3MDL.o \
+    objects/RTIMUHMC5883LADXL345.o \
+    objects/RTIMUICM20948.o \
     objects/RTIMULSM9DS0.o \
     objects/RTIMULSM9DS1.o \
     objects/RTIMUBMX055.o \
@@ -153,4 +162,3 @@ install:  install_target  FORCE
 uninstall: uninstall_target   FORCE
 
 FORCE:
-
