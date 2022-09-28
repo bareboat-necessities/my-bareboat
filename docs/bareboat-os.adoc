@@ -542,7 +542,7 @@ sudo systemctl enable pypilot_hat
 sudo systemctl enable lircd
 ----
 
-For hat display to work you need to specify correct driver (ex: nokia5110) in /home/pypilot/.pypilot/hat.conf
+For hat display to work you need to specify correct driver (ex: nokia5110) in /home/pypilot/.pypilot/hat.conf.
 Edit this file when pypilot_hat service is not running.
 
 Later hardware of pypilot hat creates /proc/device-tree/hat/custom_0 file from its firmware.
