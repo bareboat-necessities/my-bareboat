@@ -15,8 +15,8 @@ fi
 cd /home/user
 echo "Downloading..."
 
-wget -q -O - "https://www.meltemus.com/index.php/en/download?task=download.send&id=${FID}&catid=9&m=0" > qtVlm-5.10.18-rpi.tar.gz
-gzip -cd < qtVlm-5.10.18-rpi.tar.gz | tar xvf -
+wget -q -O - "https://www.meltemus.com/index.php/en/download?task=download.send&id=${FID}&catid=9&m=0" > qtVlm-rpi.tar.gz
+gzip -cd < qtVlm-rpi.tar.gz | tar xvf -
 mkdir /home/user/.qtVlm 
 wget -q -O - https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/qtvlm-conf/qtVlm.ini > /home/user/.qtVlm/qtVlm.ini
 
