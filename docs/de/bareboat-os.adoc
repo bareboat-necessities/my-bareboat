@@ -127,7 +127,7 @@ https://github.com/bareboat-necessities/lysmarine_gen#download
 
 Alternativer Download Link, wenn der vorherige Link nicht für Sie funktioniert:
 
-https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-09-26
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-10-01
 
 Letzte Hauptversion der LTS-Version:
 
