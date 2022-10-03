@@ -135,16 +135,16 @@ https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-08-03
 
 ==== 32-bit vs 64-bit Images
 
-NOTE: Das Standard Image von BBN OS hat einen 64-bit ARM Kernel mit 32-bit ARMhf Benutzer Programmen.
+NOTE: Default Bullseye image of BBN OS is fully arm64.
+Default Buster image of BBN OS is 64-bit arm kernel with 32-bit armhf user space programs.
 
 - Es gibt Vor- und Nachteile jeder Version
 - 32-Bit benötigt weniger Speicher, läuft aber langsamer
 - 32-Bit wird derzeit besser unterstützt (einige Kameras haben noch keine Unterstützung für 64-Bit, zum Zeitpunkt des Schreibens)
-- QtVlm, wx2img, viele OpenCPN Plugins werden nur in 32-Bit unterstützt (zum Zeitpunkt des Schreibens)
-- Du kannst problemlos einen 64-Bit-Kernel in einem 32-Bit-Image ausführen, die User Space Programme laufen dann mit 32-Bit. (füge einfach die Zeile arm_64bit=1 der Datei /boot/config.txt hinzu)
-- 32-Bit ist kompatibler zu mehr Hardware
-- 64-Bit-Betriebssystem und OpenCPN funktionieren gut, sind aber praktisch immer noch "Beta" Zustand
-- Die meisten offenen (kleinen) Probleme sind sowohl in den 32 als auch in 64-Bit-Images vorhanden
+- You still can run 64-bit kernel with 32-bit image, user space programs will be 32-bit. (Add arm_64bit=1 into /boot/config.txt)
+- 32-bit is available on more hardware
+- 64-bit OS and OpenCPN are working fine but technically still called 'beta'
+- Most of the open (minor) issues are present in both 32 and 64-bit images
 
 NOTE: Der Wechsel vom 32-Bit-Kernel zum 64-Bit-Kernel hat Auswirkungen auf die Java-Installation.
 Siehe (workaround): https://github.com/bareboat-necessities/lysmarine_gen/issues/44
