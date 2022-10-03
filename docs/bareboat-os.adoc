@@ -558,6 +558,19 @@ to see hat configuration and its GPIO pins required to be set up and so on.
 For steering by the wind set wind.sensors_height to your wind sensor height as pypilot tries to compensate
 for apparent wind created by boat motion.
 
+==== PyPilot Motor Controller Wiring to Pi GPIO
+
+For brushed DC motors:
+https://pypilot.org/schematics/hbridge_datasheet.htm
+
+Hydraulic motor controller:
+https://pypilot.org/schematics/highpower_datasheet.htm
+
+https://pypilot.org/wiki/doku.php?id=tinypilot
+
+==== PyPilot Motor Controller Loading Firmware into ESP32
+
+https://github.com/pypilot/pypilot/tree/master/arduino/motor
 
 === UI for controlling autopilots
 
