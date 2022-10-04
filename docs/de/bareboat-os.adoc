@@ -570,6 +570,17 @@ https://pypilot.org/wiki/doku.php?id=tinypilot
 
 https://github.com/pypilot/pypilot/tree/master/arduino/motor
 
+==== Typical Components of PyPilot Motor Controller
+
+* IBT_2 H-bridge module
+* Arduino nano with ATmega328P chipset
+* 10k NTC (2 wires) temperature sensor for the motor
+* Rudder feedback potentiometer
+
+For compass IMU connected to Pi (that's not really a part of motor controller)
+
+* mpu9255 IMU
+
 === UI for controlling autopilots
 
 There are three options:
