@@ -25,19 +25,19 @@ LDFLAGS = -Os -Wl,--gc-sections -lm
 ARDUINO_SRCS = \
 $(ARDUINO_PATH)/hardware/arduino/cores/arduino/avr-libc/realloc.c \
 $(ARDUINO_PATH)/hardware/arduino/cores/arduino/avr-libc/malloc.c \
-$(ARDUINO_PATH)/hardware/arduino/cores/arduino/wiring_digital.c \
-$(ARDUINO_PATH)/hardware/arduino/cores/arduino/wiring.c \
-$(ARDUINO_PATH)/hardware/arduino/cores/arduino/wiring_analog.c \
-$(ARDUINO_PATH)/hardware/arduino/cores/arduino/wiring_shift.c \
-$(ARDUINO_PATH)/hardware/arduino/cores/arduino/wiring_pulse.c \
-$(ARDUINO_PATH)/hardware/arduino/cores/arduino/WInterrupts.c \
-$(ARDUINO_PATH)/hardware/arduino/cores/arduino/new.cpp \
-$(ARDUINO_PATH)/hardware/arduino/cores/arduino/WString.cpp \
-$(ARDUINO_PATH)/hardware/arduino/cores/arduino/Stream.cpp \
-$(ARDUINO_PATH)/hardware/arduino/cores/arduino/Print.cpp \
-$(ARDUINO_PATH)/hardware/arduino/cores/arduino/HardwareSerial.cpp \
-$(ARDUINO_PATH)/hardware/arduino/cores/arduino/WMath.cpp \
-$(ARDUINO_PATH)/hardware/arduino/cores/arduino/main.cpp \
+$(ARDUINO_PATH)/hardware/arduino/cores/avr/arduino/wiring_digital.c \
+$(ARDUINO_PATH)/hardware/arduino/cores/avr/arduino/wiring.c \
+$(ARDUINO_PATH)/hardware/arduino/cores/avr/arduino/wiring_analog.c \
+$(ARDUINO_PATH)/hardware/arduino/cores/avr/arduino/wiring_shift.c \
+$(ARDUINO_PATH)/hardware/arduino/cores/avr/arduino/wiring_pulse.c \
+$(ARDUINO_PATH)/hardware/arduino/cores/avr/arduino/WInterrupts.c \
+$(ARDUINO_PATH)/hardware/arduino/cores/avr/arduino/new.cpp \
+$(ARDUINO_PATH)/hardware/arduino/cores/avr/arduino/WString.cpp \
+$(ARDUINO_PATH)/hardware/arduino/cores/avr/arduino/Stream.cpp \
+$(ARDUINO_PATH)/hardware/arduino/cores/avr/arduino/Print.cpp \
+$(ARDUINO_PATH)/hardware/arduino/cores/avr/arduino/HardwareSerial.cpp \
+$(ARDUINO_PATH)/hardware/arduino/cores/avr/arduino/WMath.cpp \
+$(ARDUINO_PATH)/hardware/arduino/cores/avr/arduino/main.cpp \
 $(ARDUINO_PATH)/libraries/EEPROM/EEPROM.cpp
 
 SRCS = $(ARDUINO_SRCS)
