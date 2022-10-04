@@ -34,6 +34,7 @@ $(ARDUINO_PATH)/hardware/arduino/avr/cores/arduino/WString.cpp \
 $(ARDUINO_PATH)/hardware/arduino/avr/cores/arduino/Stream.cpp \
 $(ARDUINO_PATH)/hardware/arduino/avr/cores/arduino/Print.cpp \
 $(ARDUINO_PATH)/hardware/arduino/avr/cores/arduino/HardwareSerial.cpp \
+$(ARDUINO_PATH)/hardware/arduino/avr/cores/arduino/HardwareSerial0.cpp \
 $(ARDUINO_PATH)/hardware/arduino/avr/cores/arduino/WMath.cpp \
 $(ARDUINO_PATH)/hardware/arduino/avr/cores/arduino/main.cpp
 
