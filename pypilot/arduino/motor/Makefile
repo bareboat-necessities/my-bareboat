@@ -23,8 +23,6 @@ LDFLAGS = -Os -Wl,--gc-sections -lm
 
 
 ARDUINO_SRCS = \
-$(ARDUINO_PATH)/hardware/arduino/avr/cores/arduino/avr-libc/realloc.c \
-$(ARDUINO_PATH)/hardware/arduino/avr/cores/arduino/avr-libc/malloc.c \
 $(ARDUINO_PATH)/hardware/arduino/avr/cores/arduino/wiring_digital.c \
 $(ARDUINO_PATH)/hardware/arduino/avr/cores/arduino/wiring.c \
 $(ARDUINO_PATH)/hardware/arduino/avr/cores/arduino/wiring_analog.c \
