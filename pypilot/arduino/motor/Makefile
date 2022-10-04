@@ -18,7 +18,7 @@ CXX = $(ARDUINO_PATH)/hardware/tools/avr/bin/avr-g++
 OBJCOPY = $(ARDUINO_PATH)/hardware/tools/avr/bin/avr-objcopy
 
 
-CXXFLAGS = -g -Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=$(MCU) -DF_CPU=16000000L -DUSB_VID=null -DUSB_PID=null -DARDUINO=105 -D__PROG_TYPES_COMPAT__ -I$(ARDUINO_PATH)/hardware/arduino/cores/arduino -I$(ARDUINO_PATH)/hardware/arduino/variants/standard -I$(ARDUINO_PATH)/libraries/EEPROM
+CXXFLAGS = -g -Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=$(MCU) -DF_CPU=16000000L -DUSB_VID=null -DUSB_PID=null -DARDUINO=105 -D__PROG_TYPES_COMPAT__ -I$(ARDUINO_PATH)/hardware/arduino/avr/cores/arduino -I$(ARDUINO_PATH)/hardware/arduino/avr/variants/standard -I$(ARDUINO_PATH)/libraries/EEPROM
 LDFLAGS = -Os -Wl,--gc-sections -lm
 
 
@@ -87,10 +87,10 @@ bootloader:
 	#sleep 3
 	-$(AVRDUDE) -C/usr/share/arduino/hardware/tools/avrdude.conf -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -e
 	$(AVRDUDE) -C/usr/share/arduino/hardware/tools/avrdude.conf -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -e -Ulock:w:0xff:m -Uefuse:w:0xfd:m -Uhfuse:w:0xDA:m -Ulfuse:w:0xFF:m
-	$(AVRDUDE) -C/usr/share/arduino/hardware/tools/avrdude.conf -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -Uflash:w:/usr/share/arduino/hardware/arduino/bootloaders/atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex:i -Ulock:w:0xcf:m
+	$(AVRDUDE) -C/usr/share/arduino/hardware/tools/avrdude.conf -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -Uflash:w:/usr/share/arduino/hardware/arduino/avr/bootloaders/atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex:i -Ulock:w:0xcf:m
 
 $(SKETCHNAME)_bootloader.hex: $(SKETCHNAME).cpp.hex
-	#cat $(SKETCHNAME).cpp.hex /usr/share/arduino/hardware/arduino/bootloaders/atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex > $(SKETCHNAME)_bootloader.hex
+	#cat $(SKETCHNAME).cpp.hex /usr/share/arduino/hardware/arduino/avr/bootloaders/atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex > $(SKETCHNAME)_bootloader.hex
 
 
 program: #$(SKETCHNAME)_bootloader.hex # put both bootloader and program at same time
