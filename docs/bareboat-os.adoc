@@ -568,7 +568,7 @@ https://pypilot.org/schematics/highpower_datasheet.htm
 
 https://pypilot.org/wiki/doku.php?id=tinypilot
 
-==== PyPilot Motor Controller Loading Firmware into ESP32
+==== PyPilot Motor Controller Loading Firmware into MCU
 
 https://github.com/pypilot/pypilot/tree/master/arduino/motor
 
