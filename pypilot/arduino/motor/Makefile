@@ -15,8 +15,8 @@ MCU = atmega328p
 #ARDUINO_PATH = /usr/share/arduino
 ARDUINO_PATH = /opt/arduino-1.8.19
 
-AVR_TOOLS = $(ARDUINO_PATH)/hardware/tools/avr/bin
 #AVR_TOOLS = /usr/bin
+AVR_TOOLS = $(ARDUINO_PATH)/hardware/tools/avr/bin
 
 CC = $(AVR_TOOLS)/avr-gcc
 CXX = $(AVR_TOOLS)/avr-g++
