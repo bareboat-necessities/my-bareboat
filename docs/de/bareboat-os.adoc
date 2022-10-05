@@ -140,29 +140,23 @@ Default Buster image of BBN OS is 64-bit arm kernel with 32-bit armhf user space
 
 - Es gibt Vor- und Nachteile jeder Version
 - 32-Bit benötigt weniger Speicher, läuft aber langsamer
-- 32-Bit wird derzeit besser unterstützt (einige Kameras haben noch keine Unterstützung für 64-Bit, zum Zeitpunkt des Schreibens)
 - You still can run 64-bit kernel with 32-bit image, user space programs will be 32-bit. (Add arm_64bit=1 into /boot/config.txt)
 - 32-bit is available on more hardware
-- 64-bit OS and OpenCPN are working fine but technically still called 'beta'
 - Most of the open (minor) issues are present in both 32 and 64-bit images
 
-NOTE: Der Wechsel vom 32-Bit-Kernel zum 64-Bit-Kernel hat Auswirkungen auf die Java-Installation.
-Siehe (workaround): https://github.com/bareboat-necessities/lysmarine_gen/issues/44
+As of time of writing this the best performance/compatibility is the 64-bit image.
+Your preferred download image of BBN OS would be arm64 Bullseye.
 
-Zum Zeitpunkt des Schreibens ist also das 32-Bit-Image mit dem auf 64-Bit gewechselten Kernel am besten.
-Das bevorzugtes Download-Bild von BBN OS wäre also armhf.
-
-- armhf Image installieren
-- Wechsel zum 64-Bit-Kernel in /boot/config.txt ist bereits in den letzten Versionen von BBN OS erledigt
-- Mit allen anderen Konfigurationsschritten fortfahren.
-- Nach der Einrichtung einer Internetverbindung die offizielle Hotfixes installieren (auch für das Touchscreen-Setup benötigt):
+- Install arm64 Bullseye image
+- Proceed with all other configuration steps.
+- After establishing Internet connectivity install official hot fixes:
 +
 [source, shell]
 ----
 cd /home/user/add-ons
 ./hot-fixes-install.sh
 ----
-- Neustart (Ein Neustart nach der Installation erforderlich, um alle Einstellungen aufzunehmen)
+- Reboot (One reboot after installation required to pick up all settings)
 
 === SD-Karte vorbereiten
 
@@ -390,11 +384,6 @@ ls -l /dev/ttyLYS*
 * Go to Tools/Options/Plugins
 * Update Plugin Catalog
 * Browse plugins list and update plugins when an update available (one by one)
-
-NOTE: Due to a bug in OpenCPN https://github.com/bareboat-necessities/lysmarine_gen/issues/53
-Updating plugins on a system booted with arm64 kernel doesn't work even if userspace is armhf.
-As a workaround: boot with armhf kernel, update all plugins
-and only then switch to arm64 kernel. This bug has been fixed in OpenCPN version 5.6.0.
 
 OpenCPN Plugins Documentation:
 https://rasbats.github.io/opencpn-plugins-manual/
