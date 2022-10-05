@@ -14,10 +14,13 @@ MCU = atmega328p
 
 #ARDUINO_PATH = /usr/share/arduino
 ARDUINO_PATH = /opt/arduino-1.8.19
-CC = $(ARDUINO_PATH)/hardware/tools/avr/bin/avr-gcc
-CXX = $(ARDUINO_PATH)/hardware/tools/avr/bin/avr-g++
-OBJCOPY = $(ARDUINO_PATH)/hardware/tools/avr/bin/avr-objcopy
 
+AVR_TOOLS = $(ARDUINO_PATH)/hardware/tools/avr/bin
+#AVR_TOOLS = /usr/bin
+
+CC = $(AVR_TOOLS)/avr-gcc
+CXX = $(AVR_TOOLS)/avr-g++
+OBJCOPY = $(AVR_TOOLS)/avr-objcopy
 
 CXXFLAGS = -g -Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=$(MCU) -DF_CPU=16000000L -DUSB_VID=null -DUSB_PID=null -DARDUINO=105 -D__PROG_TYPES_COMPAT__ -I$(ARDUINO_PATH)/hardware/arduino/avr/cores/arduino -I$(ARDUINO_PATH)/hardware/arduino/avr/variants/standard -I$(ARDUINO_PATH)/hardware/arduino/avr/libraries/EEPROM/src
 LDFLAGS = -Os -Wl,--gc-sections -lm
