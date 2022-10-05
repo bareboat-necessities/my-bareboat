@@ -387,11 +387,6 @@ ls -l /dev/ttyLYS*
 * Update Plugin Catalog
 * Browse plugins list and update plugins when an update available (one by one)
 
-NOTE: Due to a bug in OpenCPN https://github.com/bareboat-necessities/lysmarine_gen/issues/53
-Updating plugins on a system booted with arm64 kernel doesn't work even if userspace is armhf.
-As a workaround: boot with armhf kernel, update all plugins
-and only then switch to arm64 kernel. This bug has been fixed in OpenCPN version 5.6.0.
-
 OpenCPN Plugins Documentation:
 https://rasbats.github.io/opencpn-plugins-manual/
 
