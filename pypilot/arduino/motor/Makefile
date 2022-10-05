@@ -67,6 +67,7 @@ obj/$(SKETCHNAME).o : $(SKETCHNAME).ino
 	$(CXX) $(CXXFLAGS) -c obj/$<.cpp -o $@ -I.
 
 AVRDUDE = avrdude
+#AVRDUDE = $(ARDUINO_PATH)/hardware/tools/avr/bin/avrdude
 AVRDUDE_CONF = $(ARDUINO_PATH)/hardware/tools/avrdude.conf
 #AVRDUDE_CONF = /etc/avrdude.conf
 BOOTLOADER = arduino
