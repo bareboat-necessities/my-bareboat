@@ -12,7 +12,8 @@ DEVICE = /dev/ttyUSB0
 #MCU = atmega328pb
 MCU = atmega328p
 
-ARDUINO_PATH = /usr/share/arduino
+#ARDUINO_PATH = /usr/share/arduino
+ARDUINO_PATH = /opt/arduino-1.8.19
 CC = $(ARDUINO_PATH)/hardware/tools/avr/bin/avr-gcc
 CXX = $(ARDUINO_PATH)/hardware/tools/avr/bin/avr-g++
 OBJCOPY = $(ARDUINO_PATH)/hardware/tools/avr/bin/avr-objcopy
