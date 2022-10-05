@@ -142,7 +142,6 @@ Default Buster image of BBN OS is 64-bit arm kernel with 32-bit armhf user space
 - 32-bit takes less memory but runs slower
 - You still can run 64-bit kernel with 32-bit image, user space programs will be 32-bit. (Add arm_64bit=1 into /boot/config.txt)
 - 32-bit is available on more hardware
-- 64-bit OS and OpenCPN are working fine but technically still called 'beta'
 - Most of the open (minor) issues are present in both 32 and 64-bit images
 
 As of time of writing this the best performance/compatibility is the 64-bit image.
