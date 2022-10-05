@@ -68,8 +68,8 @@ obj/$(SKETCHNAME).o : $(SKETCHNAME).ino
 
 AVRDUDE = avrdude
 #AVRDUDE = $(ARDUINO_PATH)/hardware/tools/avr/bin/avrdude
-AVRDUDE_CONF = $(ARDUINO_PATH)/hardware/tools/avrdude.conf
-#AVRDUDE_CONF = /etc/avrdude.conf
+#AVRDUDE_CONF = $(ARDUINO_PATH)/hardware/tools/avrdude.conf
+AVRDUDE_CONF = /etc/avrdude.conf
 BOOTLOADER = arduino
 BAUDRATE = 57600
 BOOTLOADER_HEX = $(ARDUINO_PATH)/hardware/arduino/avr/bootloaders/atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex
