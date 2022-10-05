@@ -64,10 +64,11 @@ obj/$(SKETCHNAME).o : $(SKETCHNAME).ino
 	$(CXX) $(CXXFLAGS) -c obj/$<.cpp -o $@ -I.
 
 AVRDUDE = avrdude
-AVRDUDE_CONF=$(ARDUINO_PATH)/hardware/tools/avrdude.conf
-#AVRDUDE_CONF=/etc/avrdude.conf
+AVRDUDE_CONF = $(ARDUINO_PATH)/hardware/tools/avrdude.conf
+#AVRDUDE_CONF = /etc/avrdude.conf
 BOOTLOADER = arduino
 BAUDRATE = 57600
+BOOTLOADER_HEX = $(ARDUINO_PATH)/hardware/arduino/avr/bootloaders/atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex
 
 #BOOTLOADER = stk500v1
 #BAUDRATE = 19200
@@ -90,10 +91,10 @@ bootloader:
 	#sleep 3
 	-$(AVRDUDE) -C$(AVRDUDE_CONF) -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -e
 	$(AVRDUDE) -C$(AVRDUDE_CONF) -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -e -Ulock:w:0xff:m -Uefuse:w:0xfd:m -Uhfuse:w:0xDA:m -Ulfuse:w:0xFF:m
-	$(AVRDUDE) -C$(AVRDUDE_CONF) -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -Uflash:w:$(ARDUINO_PATH)/hardware/arduino/avr/bootloaders/atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex:i -Ulock:w:0xcf:m
+	$(AVRDUDE) -C$(AVRDUDE_CONF) -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -Uflash:w:$(BOOTLOADER_HEX):i -Ulock:w:0xcf:m
 
 $(SKETCHNAME)_bootloader.hex: $(SKETCHNAME).cpp.hex
-	#cat $(SKETCHNAME).cpp.hex $(ARDUINO_PATH)/hardware/arduino/avr/bootloaders/atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex > $(SKETCHNAME)_bootloader.hex
+	#cat $(SKETCHNAME).cpp.hex $(BOOTLOADER_HEX) > $(SKETCHNAME)_bootloader.hex
 
 
 program: #$(SKETCHNAME)_bootloader.hex # put both bootloader and program at same time
