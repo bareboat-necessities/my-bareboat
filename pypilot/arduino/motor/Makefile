@@ -64,6 +64,8 @@ obj/$(SKETCHNAME).o : $(SKETCHNAME).ino
 	$(CXX) $(CXXFLAGS) -c obj/$<.cpp -o $@ -I.
 
 AVRDUDE = avrdude
+AVRDUDE_CONF=$(ARDUINO_PATH)/hardware/tools/avrdude.conf
+#AVRDUDE_CONF=/etc/avrdude.conf
 BOOTLOADER = arduino
 BAUDRATE = 57600
 
@@ -86,12 +88,12 @@ bootloader:
 	stty -F $(DEVICE) -icrnl -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke min 0 time 0
 	stty -F $(DEVICE) crtscts
 	#sleep 3
-	-$(AVRDUDE) -C/usr/share/arduino/hardware/tools/avrdude.conf -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -e
-	$(AVRDUDE) -C/usr/share/arduino/hardware/tools/avrdude.conf -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -e -Ulock:w:0xff:m -Uefuse:w:0xfd:m -Uhfuse:w:0xDA:m -Ulfuse:w:0xFF:m
-	$(AVRDUDE) -C/usr/share/arduino/hardware/tools/avrdude.conf -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -Uflash:w:/usr/share/arduino/hardware/arduino/avr/bootloaders/atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex:i -Ulock:w:0xcf:m
+	-$(AVRDUDE) -C$(AVRDUDE_CONF) -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -e
+	$(AVRDUDE) -C$(AVRDUDE_CONF) -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -e -Ulock:w:0xff:m -Uefuse:w:0xfd:m -Uhfuse:w:0xDA:m -Ulfuse:w:0xFF:m
+	$(AVRDUDE) -C$(AVRDUDE_CONF) -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -Uflash:w:$(ARDUINO_PATH)/hardware/arduino/avr/bootloaders/atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex:i -Ulock:w:0xcf:m
 
 $(SKETCHNAME)_bootloader.hex: $(SKETCHNAME).cpp.hex
-	#cat $(SKETCHNAME).cpp.hex /usr/share/arduino/hardware/arduino/avr/bootloaders/atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex > $(SKETCHNAME)_bootloader.hex
+	#cat $(SKETCHNAME).cpp.hex $(ARDUINO_PATH)/hardware/arduino/avr/bootloaders/atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex > $(SKETCHNAME)_bootloader.hex
 
 
 program: #$(SKETCHNAME)_bootloader.hex # put both bootloader and program at same time
@@ -99,14 +101,14 @@ program: #$(SKETCHNAME)_bootloader.hex # put both bootloader and program at same
 	stty -F $(DEVICE) -brkint -icrnl -imaxbel min 0 time 0
 	stty -F $(DEVICE) -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke
 	#	./serial
-	-$(AVRDUDE) -C/usr/share/arduino/hardware/tools/avrdude.conf -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -e
-	#$(AVRDUDE) -C/usr/share/arduino/hardware/tools/avrdude.conf -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -e -Ulock:w:0xff:m -Uefuse:w:0xfd:m -Uhfuse:w:0xDA:m -Ulfuse:w:0xFF:m
-	$(AVRDUDE) -C/usr/share/arduino/hardware/tools/avrdude.conf -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -e -Ulock:w:0xff:m -Uefuse:w:0xfd:m -Uhfuse:w:0xDA:m
-	$(AVRDUDE) -C/usr/share/arduino/hardware/tools/avrdude.conf -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -Uflash:w:$(SKETCHNAME)_bootloader.hex:i -Ulock:w:0xcf:m -Ulfuse:w:0xFF:m
+	-$(AVRDUDE) -C$(AVRDUDE_CONF) -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -e
+	#$(AVRDUDE) -C$(AVRDUDE_CONF) -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -e -Ulock:w:0xff:m -Uefuse:w:0xfd:m -Uhfuse:w:0xDA:m -Ulfuse:w:0xFF:m
+	$(AVRDUDE) -C$(AVRDUDE_CONF) -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -e -Ulock:w:0xff:m -Uefuse:w:0xfd:m -Uhfuse:w:0xDA:m
+	$(AVRDUDE) -C$(AVRDUDE_CONF) -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -Uflash:w:$(SKETCHNAME)_bootloader.hex:i -Ulock:w:0xcf:m -Ulfuse:w:0xFF:m
 
 download:
-	-$(AVRDUDE) -C/usr/share/arduino/hardware/tools/avrdude.conf -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -e
-	$(AVRDUDE) -C/usr/share/arduino/hardware/tools/avrdude.conf -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -Uflash:r:downloaded.hex:i
+	-$(AVRDUDE) -C$(AVRDUDE_CONF) -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -e
+	$(AVRDUDE) -C$(AVRDUDE_CONF) -v -p$(MCU) -cstk500v1 -P$(DEVICE) -b19200 -Uflash:r:downloaded.hex:i
 
 
 serial:
