@@ -570,13 +570,14 @@ https://pypilot.org/wiki/doku.php?id=tinypilot
 
 ==== PyPilot Motor Controller Loading Firmware into MCU
 
-Install avrdude using this script:
-
-https://github.com/bareboat-necessities/my-bareboat/blob/master/avrdude/avrdude-install.sh
+NOTE: Building your own firmware should be considered experimental. It's always better to load
+tested firmware for a tested controller model/make.
 
 Follow instructions:
-
 https://github.com/pypilot/pypilot/tree/master/arduino/motor
+
+You might need to use updated Makefile from:
+https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/pypilot/arduino/motor/Makefile
 
 ==== Typical Components of PyPilot Motor Controller
 
