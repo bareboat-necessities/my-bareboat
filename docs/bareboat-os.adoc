@@ -140,22 +140,17 @@ Default Buster image of BBN OS is 64-bit arm kernel with 32-bit armhf user space
 
 - There are pros and cons to each
 - 32-bit takes less memory but runs slower
-- 32-bit is more supported at the moment (Some cameras not supported on 64-bit yet at the time of writing this)
 - You still can run 64-bit kernel with 32-bit image, user space programs will be 32-bit. (Add arm_64bit=1 into /boot/config.txt)
 - 32-bit is available on more hardware
 - 64-bit OS and OpenCPN are working fine but technically still called 'beta'
 - Most of the open (minor) issues are present in both 32 and 64-bit images
 
-NOTE: Switch from 32-bit kernel to 64-bit kernel has an impact on java installation.
-See (workaround): https://github.com/bareboat-necessities/lysmarine_gen/issues/44
+As of time of writing this the best performance/compatibility is the 64-bit image.
+Your preferred download image of BBN OS would be arm64 Bullseye.
 
-So as of time of writing this the best performance/compatibility is the 32-bit image with the kernel switched to 64-bit.
-Your preferred download image of BBN OS would be armhf.
-
-- Install armhf image
-- Switch to 64-bit kernel in /boot/config.txt is already done for you in recent versions of BBN OS
+- Install arm64 Bullseye image
 - Proceed with all other configuration steps.
-- After establishing Internet connectivity install official hot fixes (also needed for touchscreen setup):
+- After establishing Internet connectivity install official hot fixes:
 +
 [source, shell]
 ----
