@@ -2835,7 +2835,7 @@ IMU PCBs are marked with X-Y-Z labels. There are two conventions:
 * NED (X-North, Y-East, Z-Down)
 
 Check what your IMU shows according to the diagram on its board. Mount your IMU in a waterproof
-box outside your Pi away from magnetic fields.
+box outside your Pi away from magnetic fields, and close to midline of the vessel.
 
 === WaveShare 10 dof install
 
