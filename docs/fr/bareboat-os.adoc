@@ -1,9 +1,8 @@
-= Bareboat Necessities OS Documentation
+= Documentation pour BBN OS (Bareboat Necessities)
 
 :imagesdir: images
 :keywords: openplotter, opencpn, signalK, nmea, marine
-:description: BBN Marine OS is a free open source Linux for Raspberry Pi on boats. \
-With BBN OS you can build a chartplotter, marine data computer including OpenCPN, SignalK, NMEA similar to openplotter
+:description: BBN Marine OS is a free open source Linux for Raspberry Pi on boats. BBN OS permet de construire un traceur, soit un ordinateur de bateau basé sur OpenCPN, SignalK et NMEA, similaire à OpenPlotter
 :doctype: book
 :organization: Bareboat Necessities
 :title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
@@ -59,7 +58,7 @@ https://bareboat-necessities.wixsite.com/my-bareboat
 
 {zwsp} +
 
-PDF version:
+Version PDF :
 
 https://bareboat-necessities.github.io/my-bareboat/bareboat-os.pdf
 
@@ -67,11 +66,11 @@ https://bareboat-necessities.github.io/my-bareboat/bareboat-os.pdf
 
 toc::[]
 
-== Getting Started
+== Premiers pas
 
-=== Why use BBN OS?
+=== Pourquoi utiliser BBN OS ?
 
-Why use BBN OS? Some people use just commercial marine electronics on board, some ones use smart tablets and marine
+Pourquoi utiliser BBN OS ? Some people use just commercial marine electronics on board, some ones use smart tablets and marine
 Wi-Fi multiplexers. All these solutions lack one important component - an onboard computer capable of monitoring
 and controlling all aspects of the boat systems, and capable of storing data. Some people put an Intel-based computer for it.
 Intel-based solutions are more power consuming. With BBN OS you can build a central boat computer meeting your needs.
