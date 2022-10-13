@@ -1651,7 +1651,16 @@ sudo apt update
 sudo apt upgrade
 ----
 
-SignalK server and modules can be upgraded using SignalK App Store.
+SignalK server and modules can be upgraded using command line:
+Example for signalk-hwt901b-imu:
+
+[source, shell]
+----
+cd /home/signalk/.signalk
+sudo su signalk -c "rm ../.signalk/pnpm-lock.yaml; pnpm config set auto-install-peers true"
+
+sudo su signalk -c "pnpm install signalk-hwt901b-imu --unsafe-perm --save-peer"
+----
 
 OpenCPN charts can be updated using OpenCPN chart downloader plugin.
 
