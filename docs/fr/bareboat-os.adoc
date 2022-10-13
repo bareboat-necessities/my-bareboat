@@ -1,9 +1,8 @@
-= Bareboat Necessities OS Documentation
+= Documentation pour BBN OS (Bareboat Necessities)
 
 :imagesdir: images
 :keywords: openplotter, opencpn, signalK, nmea, marine
-:description: BBN Marine OS is a free open source Linux for Raspberry Pi on boats. \
-With BBN OS you can build a chartplotter, marine data computer including OpenCPN, SignalK, NMEA similar to openplotter
+:description: BBN Marine OS is a free open source Linux for Raspberry Pi on boats. BBN OS permet de construire un traceur, soit un ordinateur de bateau basé sur OpenCPN, SignalK et NMEA, similaire à OpenPlotter
 :doctype: book
 :organization: Bareboat Necessities
 :title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
@@ -59,7 +58,7 @@ https://bareboat-necessities.wixsite.com/my-bareboat
 
 {zwsp} +
 
-PDF version:
+Version PDF :
 
 https://bareboat-necessities.github.io/my-bareboat/bareboat-os.pdf
 
@@ -67,22 +66,18 @@ https://bareboat-necessities.github.io/my-bareboat/bareboat-os.pdf
 
 toc::[]
 
-== Getting Started
+== Premiers pas
 
-=== Why use BBN OS?
+=== Pourquoi utiliser BBN OS ?
 
-Why use BBN OS? Some people use just commercial marine electronics on board, some ones use smart tablets and marine
-Wi-Fi multiplexers. All these solutions lack one important component - an onboard computer capable of monitoring
-and controlling all aspects of the boat systems, and capable of storing data. Some people put an Intel-based computer for it.
-Intel-based solutions are more power consuming. With BBN OS you can build a central boat computer meeting your needs.
-All on low power consuming raspberry pi with flexibility of adding countless choices of sensors to talk to
-all boat systems, Internet, local Wi-Fi, cameras, NMEA network, and a system able to decode marine radio protocols.
-Initially this project started from experiences of using OpenPlotter to improve user experience.
-BBN OS is free and open source. It is based on commonly used community supported open source projects such as SignalK,
-PyPilot, OpenCPN, and others. BBN OS graphical user interface will let you build a cockpit front-end to all functionality
-of the OS from chartplotting, dashboards, weather information, to media player, etc.
+Pourquoi utiliser BBN OS ? Certaines personnes n'utilisent que de l'électronique marine commerciale à bord, d'autres utilisent des tablettes intelligentes et des multiplexeurs Wi-Fi marins. Toutes ces solutions manquent d'un composant important - un ordinateur embarqué capable de surveiller et de contrôler tous les aspects des systèmes de bateau, tout en étant capable de stocker des données. Certaines personnes utilisent un ordinateur basé sur les processeurs Intel.
+Ces solutions basées consomment cependant plus d'énergie. Avec BBN OS, vous pouvez construire un ordinateur de bateau central répondant à tous vos besoins.
+Entièrement basé sur Raspberry Pi, ce qui implique une faible consommation d'énergie, tout en ayant la souplesse pour ajouter d'innombrables choix de capteurs et de communiquer avec tous les systèmes de bateaux, Internet, Wi-Fi local, caméras, réseau NMEA et tout autre système capable de décoder les protocoles radio maritimes.
+Initialement, ce projet a commencé à partir d'expérimentations visant à améliorer l'exprience untilisateur d'OpenPlotter.
+BBN OS est gratuit et open source. Il est basé sur des projets open source généralement supportés par la communauté tels que SignalK,
+PyPilot, OpenCPN et autres. L'interface utilisateur graphique de BBN OS vous permettra de construire un front-end dans le cockpit pour toutes les fonctionnalités de l'OS allant du traceur aux tableaux de bord, en passant par les informations météo, les lecteurs multimédias et bien d'autres.
 
-==== Use Cases
+==== Cas d’utilisation
 
 * Cockpit Touchscreen Chartplotter
 * Nav Station Computer
@@ -2760,7 +2755,7 @@ IMU PCBs are marked with X-Y-Z labels. There are two conventions:
 * NED (X-North, Y-East, Z-Down)
 
 Check what your IMU shows according to the diagram on its board. Mount your IMU in a waterproof
-box outside your Pi away from magnetic fields.
+box outside your Pi away from magnetic fields, and close to midline of the vessel.
 
 === WaveShare 10 dof install
 
