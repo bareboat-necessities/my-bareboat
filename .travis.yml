@@ -7,6 +7,10 @@ before_install:
   - mkdir -p output
   - mkdir -p output/de
   - mkdir -p output/fr
+  - mkdir -p output/nl
+  - mkdir -p output/es
+  - mkdir -p output/it
+  - mkdir -p output/fi
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker pull asciidoctor/docker-asciidoctor:1.17.1
 
