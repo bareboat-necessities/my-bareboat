@@ -1,6 +1,6 @@
 = Bareboat Necessities OS Documentation
 
-:imagesdir: ../images
+:imagesdir: images
 :keywords: openplotter, opencpn, signalK, nmea, marine
 :description: BBN Marine OS is a free open source Linux for Raspberry Pi on boats. \
 With BBN OS you can build a chartplotter, marine data computer including OpenCPN, SignalK, NMEA similar to openplotter
@@ -26,7 +26,7 @@ endif::[]
 :sectnums:
 :sectnumlevels: 3
 :encoding: utf-8
-:lang: es
+:lang: en
 :icons: font
 
 ifdef::env-github[]
@@ -2938,14 +2938,14 @@ https://derushadigital.com/other%20projects/2019/02/19/RPi-USBIP-ZWave.html
 
 NoMachine might ba a better alternative to VNC.
 
-Download and install NoMachine for Raspberry ARMv7 DEB (Buster) from
-https://www.nomachine.com/download/download&id=102&s=Raspberry&hw=Pi4
+Download and install NoMachine for Raspberry arm64 DEB (Bullseye) from
+https://download.nomachine.com/download/8.1/Raspberry/nomachine_8.1.2_1_arm64.deb
 
 Install command:
 
 [source, shell]
 ----
-sudo dpkg -i nomachine_<version>_armhf.deb
+sudo dpkg -i nomachine_<version>_arm64.deb
 ----
 
 Install NoMachine on the connecting client.
