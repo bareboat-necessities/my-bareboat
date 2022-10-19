@@ -2432,6 +2432,9 @@ Satellites data providers:
 - Swarm
 - Others as well
 
+Garmin Inreach provides reasonably priced
+satellite data plans via Iridium.
+
 ==== FM (Frequency Modulation)
 
 Short piece of wire, small telescoping antenna. Receive only. 30-40 miles range.
