@@ -11,6 +11,8 @@ before_install:
 script:
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-html asciidoctor/docker-asciidoctor:1.17.1 asciidoctor -b html5 -d book -a icons=font -a toc=left -D /documents/output docs/*.adoc
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-pdf asciidoctor/docker-asciidoctor:1.17.1 asciidoctor-pdf -D /documents/output docs/*.adoc
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-html asciidoctor/docker-asciidoctor:1.17.1 asciidoctor -b html5 -d book -a icons=font -a toc=left -D /documents/output/de docs/de/*.adoc
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-pdf asciidoctor/docker-asciidoctor:1.17.1 asciidoctor-pdf -D /documents/output/de docs/de/*.adoc
 
 after_error:
   - docker logs asciidoc-to-html
