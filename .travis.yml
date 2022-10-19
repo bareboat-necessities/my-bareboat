@@ -7,10 +7,8 @@ before_install:
   - mkdir -p output
   - mkdir -p output/de
   - mkdir -p output/fr
-  - mkdir -p output/nl
   - mkdir -p output/es
-  - mkdir -p output/it
-  - mkdir -p output/fi
+  - mkdir -p output/pt
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker pull asciidoctor/docker-asciidoctor:1.17.1
 
@@ -21,6 +19,10 @@ script:
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-pdf-de asciidoctor/docker-asciidoctor:1.17.1 asciidoctor-pdf -D /documents/output/de docs/de/*.adoc
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-html-fr asciidoctor/docker-asciidoctor:1.17.1 asciidoctor -b html5 -d book -a icons=font -a toc=left -D /documents/output/fr docs/fr/*.adoc
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-pdf-fr asciidoctor/docker-asciidoctor:1.17.1 asciidoctor-pdf -D /documents/output/fr docs/fr/*.adoc
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-html-es asciidoctor/docker-asciidoctor:1.17.1 asciidoctor -b html5 -d book -a icons=font -a toc=left -D /documents/output/es docs/es/*.adoc
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-pdf-es asciidoctor/docker-asciidoctor:1.17.1 asciidoctor-pdf -D /documents/output/es docs/es/*.adoc
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-html-pt asciidoctor/docker-asciidoctor:1.17.1 asciidoctor -b html5 -d book -a icons=font -a toc=left -D /documents/output/pt docs/pt/*.adoc
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-pdf-pt asciidoctor/docker-asciidoctor:1.17.1 asciidoctor-pdf -D /documents/output/pt docs/pt/*.adoc
 
 after_error:
   - docker logs asciidoc-to-html
