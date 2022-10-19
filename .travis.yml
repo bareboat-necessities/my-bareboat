@@ -5,6 +5,8 @@ services:
 
 before_install:
   - mkdir -p output
+  - mkdir -p output/de
+  - mkdir -p output/fr
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker pull asciidoctor/docker-asciidoctor:1.17.1
 
