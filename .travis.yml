@@ -9,6 +9,7 @@ before_install:
   - mkdir -p output/fr
   - mkdir -p output/es
   - mkdir -p output/pt
+  - cd output ; cp -R ../docs/images de/ fr/ es/ pt/ ; cd ..
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker pull asciidoctor/docker-asciidoctor:1.17.1
 
@@ -33,7 +34,7 @@ after_failure:
   - docker logs asciidoc-to-pdf
 
 after_success:
-  - cd output ; cp -R ../docs/images images de/ fr/ es/ pt/; cp -R ../docs/cockpit-ui cockpit-ui
+  - cd output ; cp -R ../docs/images images; cp -R ../docs/cockpit-ui cockpit-ui
   - git init
   - git config user.name "${GH_USER_NAME}"
   - git config user.email "{GH_USER_EMAIL}"
