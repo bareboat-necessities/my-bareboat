@@ -9,10 +9,10 @@ before_install:
   - mkdir -p output/fr
   - mkdir -p output/es
   - mkdir -p output/pt
-  - cd output ; cp -R ../docs/images de/ ; cd ..
-  - cd output ; cp -R ../docs/images fr/ ; cd ..
-  - cd output ; cp -R ../docs/images es/ ; cd ..
-  - cd output ; cp -R ../docs/images pt/ ; cd ..
+  - cp -R docs/images docs/de/
+  - cp -R docs/images docs/fr/
+  - cp -R docs/images docs/es/
+  - cp -R docs/images docs/pt/
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker pull asciidoctor/docker-asciidoctor:1.17.1
 
