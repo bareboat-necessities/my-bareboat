@@ -13,6 +13,6 @@ make -j 4
 sudo make install
 
 # For runtime
-sudo apt-get install -y librtlsdr libairspy libairspyhf \
-  libhackrf libsoapysdr libzmq3 libcurl4-openssl zlib1g
+sudo apt-get install -y librtlsdr0 libairspy0 libairspyhf1 \
+  libhackrf0 libsoapysdr0.7 libzmq3-dev libcurl4-openssl-dev zlib1g
 
