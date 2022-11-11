@@ -737,7 +737,8 @@ When wiring NMEA 0183 devices:
 Sentence messages (max 82 characters in length) started with "$" or "!" and ending with "*" then two-characters checksum and
 a carriage return and line feed(<CR><LF>). Checksum can be optional.
 
-* Regular NMEA 0183
+* Regular NMEA 0183 (GNSS, Autopilot, Compass, Wind/Speed/Depth/Temperature/Pressure, Engine, Rudder,
+Chartplotter waypoints, routes, tracking)
 +
 Example:
 +
