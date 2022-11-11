@@ -574,6 +574,7 @@ https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/pypilo
 
 For compass IMU connected to Pi (that's not really a part of motor controller)
 
+* icm20948 IMU
 * mpu9255 IMU
 
 === UI for controlling autopilots
@@ -1863,7 +1864,7 @@ PyPilot supports these via RTIMULib2. Here is a list of supported units by RTIMU
 - Bosch BMX055 (experimental magnetometer support)
 - Bosch BNO055 (doesn't work reliably on Pi, clock issues)
 
-PyPilot Documentation recommends using 9 Dof (9 Degrees of freedom) IMU with mpu9255.
+PyPilot Documentation recommends using 9 Dof (9 Degrees of freedom) IMU with icm20948.
 
 Even without autopilot motor controller these sensors allow displaying roll, pitch, and yaw.
 
