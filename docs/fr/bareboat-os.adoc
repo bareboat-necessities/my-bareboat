@@ -721,6 +721,115 @@ Rx (-) should connect to a Tx (-)
 - In the event the sending device has a Tx (-), but there is not a corresponding Rx (-) on the receiving device, leave the sending device’s Tx (-) disconnected. Failure to follow this guideline can damage the sending device.
 - In the event that the receiving device has a Rx (-), but there is no corresponding Tx (-) on the sending device, bring the Rx (-) to ground.
 
+===== What kind of messages travel via NMEA 0183
+
+Sentence messages (max 82 characters in length) started with "$" or "!" and ending with "*" then two-characters checksum and
+a carriage return and line feed(<CR><LF>). Checksum can be optional.
+
+* Regular NMEA 0183 (GNSS, Autopilot, Compass, Wind/Speed/Depth/Temperature/Pressure, Engine, Rudder,
+Chartplotter waypoints, routes, tracking)
++
+Example:
++
+[source, nmea]
+----
+$GPAAM,A,A,0.10,N,WPTNME*32
+$APHDM,256.740,M*31
+$APROT,0.004,A*33
+----
+* XDR Transducer Sentences NMEA 0183
++
+Example:
++
+[source, nmea]
+----
+$APXDR,A,30.900,D,PTCH*41
+$APXDR,A,9.239,D,ROLL*68
+----
+* Vendor extensions NMEA 0183
++
+Sentences start with "$P" followed by 3-letter manufacturer code.
++
+Example:
++
+[source, nmea]
+----
+$PASHR,085335.000,224.19,T,-01.26,+00.83,+00.00,0.101,0.113,0.267,1,0*06
+----
+* AIS
++
+Sentences start with "!"
++
+Example:
++
+[source, nmea]
+----
+!AIVDM,1,1,,A,14eG;o@034o8sd<L9i:a;WF>062D,0*7D
+----
+* DSC - Digital Selective Calling
++
+Example:
++
+[source, nmea]
+----
+$CDDSC,12,3380400790,12,06,00,1423108312,2019,,,S,E*6A
+$CDDSC,12,3381581370,12,06,00,1423108312,0236,3381581370,,S,*20
+$CDDSC,20,3381581370,00,21,26,1423108312,1902,,,B,E*7B
+$CDDSE,1,1,A,3380400790,00,45894494*1B
+----
+* STALK (SeaTalk1 over NMEA 0183)
++
+Example:
++
+[source, nmea]
+----
+$STALK,84,56,e,0,0,0,0,0,8*0F
+----
+* NavTex
++
+Example:
++
+[source, nmea]
+----
+$CRNRX,007,001,00,TD02,1,135600,27,06,2001,241,3,A,==========================*09
+$CRNRX,007,002,00,,,,,,,,,,========^0D^0AISSUED ON SATURDAY 06 JANUARY 2001.*29
+$CRNRX,007,003,00,,,,,,,,,,^0D^0AINSHORE WATERS FORECAST TO 12 MILES^0D^0AOFF*0D
+$CRNRX,007,004,00,,,,,,,,,,SHORE FROM 1700 UTC TO 0500 UTC.^0D^0A^0D^0ANORT*70
+$CRNRX,007,005,00,,,,,,,,,,H FORELAND TO SELSEY BILL.^0D^0A12 HOURS FOREC*16
+$CRNRX,007,006,00,,,,,,,,,,AST:^0D^0A^0ASHOWERY WINDS, STRONGEST IN NORTH.^0D*15
+$CRNRX,007,007,00,,,,,,,,,,^0A^0A*79
+----
+* Radar NMEA Sentences
++
+Example:
++
+[source, nmea]
+----
+$RARSD,,,,,,,,,0.000,000.2,0.125,N,N*50
+$RARSD,,,,,,,,,0.145,244.5,0.125,N,N*55
+$RARSD,0.883,099.3,0.200,047.6,,,,,0.145,245.2,0.1 25,N,N*54
+$RARSD,0.150,233.5,0.177,086.4,,,,,0.150,233.5,0.1 25,N,N*59
+$RARSD,0.251,243.9,0.177,087.5,0.376,131.3,0.167,0 11.5,0.376,131.3,0.25 ,N,N*5,N,N*5
+$RATTM,01,0.438,018.6,T,0.00,180.0,T,0.438,0.0,N,T GT 01,Q,,180540.43,M*50
+$RATTM,01,0.438,018.9,T,0.99,103.5,T,0.438,0.0,N,T GT 01,T,,180600.47,M*57
+----
+* Safety Messages (Inmarsat-C)
++
+Example:
++
+[source, nmea]
+----
+/g:1-9-1234,s:egcterm1,n:213,c:1333636200*hh/$CSSM3,123456,005213,798,0,3,14,00,2012,04,05,14,30,3400,N,076,W,300*hh
+/g:2-9-1234,n:214*hh/$CSSMB,008,001,0,123456,FROM:Maritime Rescue Coordination Centre xxx^0D^0ATO:*hh
+/g:3-9-1234,n:215*hh/$CSSMB,008,002,0,123456, ALL SHIPS IN xxxxxxx^0D^0ASAR SITREP NO: 02^0D^0AFIS*hh
+/g:4-9-1234,n:216*hh/$CSSMB,008,003,0,123456,HING BOAT 'xxx' WITH THREE PERSONS ON BOARD DEPARRTED*hh
+/g:5-9-1234,n:217*hh/$CSSMB,008,004,0,123456, FROM xxx ISLAND ON^0D^0Axxx AT NOONTIME AND SINCE TH*hh
+/g:6-9-1234,n:218*hh/$CSSMB,008,005,0,123456,EN NO INFORMATION ABOUT HER. PARTICULARS ...^0D^0ASHI*hh
+/g:7-9-1234,n:219*hh/$CSSMB,008,006,0,123456,PS SAILING IN VICINITY ARE KINDLY REQUESTED TO KEEP A*hh
+/g:8-9-1234,n:220*hh/$CSSMB,008,007,0,123456, SHARP LOOK OUT^0D^0AINFORMING MRCC^0D^0AREGARDS^0D*hh
+/g:9-9-1234,n:221*hh/$CSSMB,008,008,0,123456,^0A DUTY OFFICER*hh
+----
+
 ==== NMEA 2000
 
 Check SignalK plugin settings and SignalK documentation.
