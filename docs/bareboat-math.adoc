@@ -105,6 +105,9 @@ Vertical velocity (m/s):
 
 stem:[v(t) = c (dZ / dx) =  c (dZ/dt) / (dX/dt) = c (Hk sin(ckt)) / ( Hk cos(ckt) + 1)]
 
+Vertical position (m):
+
+stem:[h(t) = int v(t) dt = - ln (H k cos(c k t) + 1) / k + const]
 
 Vertical acceleration (m/s^2):
 
