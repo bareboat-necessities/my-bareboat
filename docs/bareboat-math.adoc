@@ -122,6 +122,11 @@ stem:[a_max = (Hc^2k^2) / ( 1 + Hk) = (g L) / (2 pi)  (e^((2pib)/L)) / (1 + e^((
 
 stem:[a_min = (Hc^2k^2) / ( 1 - Hk) = g / (e^(-(2pib)/L) - 1) ]
 
+stem:[b(a_min) = - L / (2 pi) ln( g / (a_min) + 1)]
+
+stem:[b(a_max) = - L / (2 pi) ln( g / (a_max) - 1)]
+
+
 Doppler effect:
 
 stem:[f_o] observed frequency (Hz=1/s)
@@ -129,10 +134,6 @@ stem:[f_o] observed frequency (Hz=1/s)
 stem:[L_s] source wavelength (m)
 
 stem:[L_s = (sign(Delta v) sqrt(8 pi f_o g  Delta v + g ^ 2) + 4 pi f_o  Delta v + g) / (4 pi f_o ^ 2)]
-
-stem:[b(a_min) = - L / (2 pi) ln( g / (a_min) + 1)]
-
-stem:[b(a_max) = - L / (2 pi) ln( g / (a_max) - 1)]
 
 == Measuring wave height from a moving boat
 
