@@ -1,0 +1,117 @@
+= Estimating wave height from IMU accelerometer on a moving boat (Early Draft)
+mgrouch <mgrouch@users.noreply.github.com>
+{docdate}, Wave Height from IMU accelerometer
+:imagesdir: images
+:doctype: book
+:organization: Bareboat Necessities
+:description: Bareboat Necessities, Wave Height from IMU accelerometer
+:title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+ifdef::backend-pdf[]
+:source-highlighter: rouge
+:toc-placement!: manual
+:pdf-page-size: Letter
+:plantumlconfig: plantuml.cfg
+endif::[]
+ifndef::backend-pdf[]
+:toc-placement: manual
+endif::[]
+:experimental:
+:reproducible:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 3
+:encoding: utf-8
+:lang: en
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:env-github:
+
+{zwsp} +
+
+ifndef::backend-pdf[]
+
+image::bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+
+{zwsp} +
+
+== Abstract
+
+Usual methods for measuring elevation built-in into modern smartwatches and smart devices are based on fusion of data
+(using Kalman filters, etc) from IMU (accelerometer) and barometer sensors. These methods are designed to measure steps up and down stairs,
+hiking activities, and so on. However, using pressure as a useful source of elevation data is not suitable to measure
+the wave height from a boat. The surface of the wave itself (at least in trochoidal wave model) is the surface of
+equal pressure. Real waves are more complicated but nevertheless measuring air pressure on their surface
+to estimate amplitude of the wave would lead to measuring mostly noise.
+
+Calculating elevation (displacement) using double integration of the acceleration leads
+to huge result drift due to not knowing initial displacement, initial vertical velocity
+and due to signal noise and accelerometer bias.
+
+This article describes two different methods to estimate wave height, frequency, period
+from a moving boat using IMU (accelerometer) and other common boat sensors such as anemometer (wind), GPS, and compass.
+One method is based on Kalman method which calculates second integral of acceleration with a drift correction
+based on the fact that in wave average displacement equals to zero. Another method doesn't use
+integration at all. Instead, it measures max/min acceleration and assumes wave shape to be trochoidal.
+Based on max/min acceleration and observed wave frequency (later adjusted using Doppler effect formulas)
+the method recreates parameters of the trochoid wave allowing it to estimate the wave height.
+
+== Trochoidal Waves
+
+Gravitational g stem:[(m/s^2)]: {nbsp}{nbsp}{nbsp}
+stem:[g = 9.81]
+
+Rotation center of trochoidal wave particle in Z axis (always negative) stem:[(m)]: {nbsp}{nbsp}{nbsp}
+stem:[b]
+
+Wavelength stem:[(m)]: {nbsp}{nbsp}{nbsp}
+stem:[L]
+
+Depth stem:[(m)]: {nbsp}{nbsp}{nbsp}
+stem:[d]
+
+Wavenumber stem:[(1/m)]: {nbsp}{nbsp}{nbsp}
+stem:[k = (2 * pi) / L]
+
+Wave speed stem:[(m/s)]: {nbsp}{nbsp}{nbsp}
+stem:[c = sqrt(g / k * tanh(d * k))]
+
+Wave amplitude stem:[(m)]:  {nbsp}{nbsp}{nbsp}
+stem:[H = exp(k * b) / k]
+
+Wave period stem:[s]:   {nbsp}{nbsp}{nbsp}
+stem:[T = L / c]
+
+Approximation formula for vertical acceleration on top of wave:    {nbsp}{nbsp}{nbsp}
+
+stem:[a_min = - g * exp((2 * b * pi) / L) / (1 - 1.6 * exp((2 * b * pi) / L))]
+
+bottom of wave:    {nbsp}{nbsp}{nbsp}
+
+stem:[a_max = g * exp((2 * b * pi) / L) / (1 + 2.1 * exp((2 * b * pi) / L))]
+
+or (approximation reverse):
+
+stem:[b_1 = L / (2 * pi) * log(a_min / (1.6 * a_min - g))]
+
+stem:[b_2 = L / (2 * pi) * log(a_max / (g - 2.1 * a_max))]
+
+Also {nbsp}{nbsp} stem:[L = (g * T ^ 2) / (2 * pi)] {nbsp}{nbsp} if depth is infinite
+
+Doppler effect:
+
+stem:[f_o] observed frequency stem:[(1/s)]
+
+stem:[L_s] source wavelength stem:[(m)]
+
+stem:[L_s = (sign(Delta v) * sqrt(8 * f_o * g * pi * Delta v + g ^ 2) + 4 * f_o * pi * Delta v + g) / (4 * pi * f_o ^ 2)]
+
+
+== Measuring wave height from a moving boat
+
+endif::[]
