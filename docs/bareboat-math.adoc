@@ -75,25 +75,25 @@ stem:[L]
 
 Wave equation:
 
-stem:[X(t) = H * sin(k * c * t) + c * t]
+stem:[X(t) = H sin(k c t) + c t]
 
-stem:[Z(t) = - H * cos(k * c * t)]
+stem:[Z(t) = - H cos(k c t)]
 
 Wavenumber (1/m): {nbsp}{nbsp}{nbsp}
-stem:[k = (2 * pi) / L]
+stem:[k = (2 pi) / L]
 
 Wave amplitude (m):  {nbsp}{nbsp}{nbsp}
-stem:[H = e ^(k * b) / k = L / (2 * pi) * e ^ ((2 * pi * b) / L)  ] {nbsp}{nbsp}{nbsp} => {nbsp}{nbsp}{nbsp}
-stem:[b = L / (2 * pi) * ln ((2 * pi * H) / L)  ]
+stem:[H = e ^(k b) / k = L / (2 pi) e ^ ((2 pi b) / L)  ] {nbsp}{nbsp}{nbsp} => {nbsp}{nbsp}{nbsp}
+stem:[b = L / (2 pi) ln ((2 pi H) / L)  ]
 
-max(H) amplitude (m):   {nbsp}{nbsp}{nbsp}  stem:[H_max = L / (2 * pi)] {nbsp}{nbsp}{nbsp} when {nbsp} b = 0
+max(H) amplitude (m):   {nbsp}{nbsp}{nbsp}  stem:[H_max = L / (2 pi)] {nbsp}{nbsp}{nbsp} when {nbsp} b = 0
 
 Depth (m): {nbsp}{nbsp}{nbsp}
 stem:[d]
 
 Wave speed (m/s): {nbsp}{nbsp}{nbsp}
-stem:[c = sqrt(g / k * tanh(k * d))] {nbsp},{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}
-for deep water waves: stem:[c = sqrt(g / k)],  {nbsp}{nbsp} stem:[L = (g * T ^ 2) / (2 * pi)]
+stem:[c = sqrt(g / k tanh(k d))] {nbsp},{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}
+for deep water waves: stem:[c = sqrt(g / k)],  {nbsp}{nbsp} stem:[L = (g T ^ 2) / (2 pi)]
 
 Wave period (s):   {nbsp}{nbsp}{nbsp}
 stem:[T = L / c]
@@ -118,13 +118,15 @@ stem:[t] where stem:[a^'(t) = 0]
 
 stem:[t = pi (2 N + 1) / (ck), t = pi (2 N) / (ck)]
 
+
+
 Doppler effect:
 
 stem:[f_o] observed frequency (Hz=1/s)
 
 stem:[L_s] source wavelength (m)
 
-stem:[L_s = (sign(Delta v) * sqrt(8 * pi * f_o * g  * Delta v + g ^ 2) + 4 * pi * f_o  * Delta v + g) / (4 * pi * f_o ^ 2)]
+stem:[L_s = (sign(Delta v) sqrt(8 pi f_o g  Delta v + g ^ 2) + 4 pi f_o  Delta v + g) / (4 pi f_o ^ 2)]
 
 
 
