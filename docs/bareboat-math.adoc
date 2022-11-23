@@ -111,7 +111,7 @@ stem:[L_s = (sign(Delta v) * sqrt(8 * pi * f_o * g  * Delta v + g ^ 2) + 4 * pi 
 
 Approximation formula for vertical acceleration on top of wave:    {nbsp}{nbsp}{nbsp}
 
-stem:[a_min = - 2.6 * g / (e ^ (- (2 * pi * b) / L) - 1)]
+stem:[a_min = - 4.7 * g / (e ^ (- (2 * pi * b) / (0.597 * L)) - 1)]
 
 bottom of wave:    {nbsp}{nbsp}{nbsp}
 
@@ -119,7 +119,7 @@ stem:[a_max = 0.8 * g / (e ^ (- (2 * pi * b) / L) + 1)]
 
 or (approximation reverse):
 
-stem:[b(a_min, L) = - L / (2 * pi) * ln(1  - 2.6 * g / a_min)]
+stem:[b(a_min, L) = - (0.597 * L) / (2 * pi) * ln(1  - 4.7 * g / a_min)]
 
 stem:[b(a_max, L) = - L / (2 * pi) * ln(0.8 * g / a_max - 1)]
 
