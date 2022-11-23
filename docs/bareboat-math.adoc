@@ -87,6 +87,12 @@ stem:[H = exp(k * b) / k]
 Wave period stem:[s]:   {nbsp}{nbsp}{nbsp}
 stem:[T = L / c]
 
+Wave equation:
+
+stem:[X(t) = H * sin(k * c * t) + c * t]
+
+stem:[Z(t) = - H * cos(k * c * t)]
+
 Approximation formula for vertical acceleration on top of wave:    {nbsp}{nbsp}{nbsp}
 
 stem:[a_min = - g * exp((2 * b * pi) / L) / (1 - 1.6 * exp((2 * b * pi) / L))]
