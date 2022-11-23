@@ -116,7 +116,7 @@ stem:[a^'(t) = d^3 Z / x^3 = da / dx =  (da/dt) / (dX/dt) = - (Hc^2k^3 sin(ckt))
 
 stem:[t] where stem:[a^'(t) = 0]
 
-
+stem:[t = pi (2 N + 1) / (ck), t = pi (2 N) / (ck)]
 
 Doppler effect:
 
