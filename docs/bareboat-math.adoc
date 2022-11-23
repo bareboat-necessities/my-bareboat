@@ -101,6 +101,23 @@ stem:[T = L / c]
 Wave frequency (Hz=1/s):   {nbsp}{nbsp}{nbsp}
 stem:[f = 1 / T = c / L]
 
+Vertical velocity (m/s):
+
+stem:[v(t) = dZ / dx =  (dZ/dt) / (dX/dt) = (Hk sin(ckt)) / ( Hk cos(ckt) + 1)]
+
+
+Vertical acceleration (m/s^2):
+
+stem:[a(t) = v^'(t) = d^2 Z / x^2 = dv / dx =  (dv/dt) / (dX/dt) = (Hck^2 cos(ckt)) / ( Hk cos(ckt) + 1) ]
+
+Third derivative (m/s^3):
+
+stem:[a^'(t) = d^3 Z / x^3 = da / dx =  (da/dt) / (dX/dt) = - (Hc^2k^3 sin(ckt)) / ( Hk cos(ckt) + 1) ]
+
+stem:[t] where stem:[a^'(t) = 0]
+
+
+
 Doppler effect:
 
 stem:[f_o] observed frequency (Hz=1/s)
@@ -109,19 +126,6 @@ stem:[L_s] source wavelength (m)
 
 stem:[L_s = (sign(Delta v) * sqrt(8 * pi * f_o * g  * Delta v + g ^ 2) + 4 * pi * f_o  * Delta v + g) / (4 * pi * f_o ^ 2)]
 
-Approximation formula for vertical acceleration on top of wave:    {nbsp}{nbsp}{nbsp}
-
-stem:[a_min = - 4.0 * g / (e ^ (- (2 * pi * b) / (0.7 * L)) - 1)]
-
-bottom of wave:    {nbsp}{nbsp}{nbsp}
-
-stem:[a_max = 0.8 * g / (e ^ (- (2 * pi * b) / L) + 1)]
-
-or (approximation reverse):
-
-stem:[b(a_min, L) = - (0.7 * L) / (2 * pi) * ln(1  - 4.0 * g / a_min)]
-
-stem:[b(a_max, L) = - L / (2 * pi) * ln(0.8 * g / a_max - 1)]
 
 
 == Measuring wave height from a moving boat
