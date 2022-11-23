@@ -109,7 +109,7 @@ stem:[f_o] observed frequency stem:[(1/s)]
 
 stem:[L_s] source wavelength stem:[(m)]
 
-stem:[L_s = (sign(Delta v) * sqrt(8 * f_o * g * pi * Delta v + g ^ 2) + 4 * f_o * pi * Delta v + g) / (4 * pi * f_o ^ 2)]
+stem:[L_s = (sign(Delta v) * sqrt(8 * pi * f_o * g  * Delta v + g ^ 2) + 4 * pi * f_o  * Delta v + g) / (4 * pi * f_o ^ 2)]
 
 
 == Measuring wave height from a moving boat
