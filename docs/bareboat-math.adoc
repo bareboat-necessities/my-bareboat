@@ -118,9 +118,9 @@ stem:[t] where stem:[a^'(t) = 0]
 
 stem:[t = pi (2 N + 1) / (ck), t = pi (2 N) / (ck)]
 
-stem:[a_max = (Hck^2) / ( 1 + Hk) = sqrt((g L) / (2 pi) ) (e^((2pib)/L)) / (1 + e^((2pib)/L)) (2 pi) / L = sqrt((2 pi g) / L ) (e^((2pib)/L)) / (1 + e^((2pib)/L)) ]
+stem:[a_max = (Hck^2) / ( 1 + Hk) = sqrt((g L) / (2 pi) ) (e^((2pib)/L)) / (1 + e^((2pib)/L)) (2 pi) / L = sqrt((2 pi g) / L ) / (1 + e^(-(2pib)/L)) ]
 
-stem:[a_min = (Hck^2) / ( 1 - Hk) = sqrt((2 pi g) / L ) (e^((2pib)/L)) / (1 - e^((2pib)/L)) ]
+stem:[a_min = (Hck^2) / ( 1 - Hk) = sqrt((2 pi g) / L ) / (e^(-(2pib)/L) - 1) ]
 
 Doppler effect:
 
@@ -130,7 +130,7 @@ stem:[L_s] source wavelength (m)
 
 stem:[L_s = (sign(Delta v) sqrt(8 pi f_o g  Delta v + g ^ 2) + 4 pi f_o  Delta v + g) / (4 pi f_o ^ 2)]
 
-
+stem:[b = L *
 
 == Measuring wave height from a moving boat
 
