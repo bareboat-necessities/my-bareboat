@@ -83,14 +83,14 @@ Wavenumber stem:[(1/m)]: {nbsp}{nbsp}{nbsp}
 stem:[k = (2 * pi) / L]
 
 Wave amplitude stem:[(m)]:  {nbsp}{nbsp}{nbsp}
-stem:[H = e ^(k * b) / k]
+stem:[H = e ^(k * b) / k = L / (2 * pi) * e ^ ((2 * pi * b) / L)  ]
 
 Depth stem:[(m)]: {nbsp}{nbsp}{nbsp}
 stem:[d]
 
 Wave speed stem:[(m/s)]: {nbsp}{nbsp}{nbsp}
-stem:[c = sqrt(g / k * tanh(k * d))] {nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}
-for deep water waves: stem:[c = sqrt(g / k)]
+stem:[c = sqrt(g / k * tanh(k * d))] {nbsp},{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}
+for deep water waves: stem:[c = sqrt(g / k)],  {nbsp}{nbsp} stem:[L = (g * T ^ 2) / (2 * pi)]
 
 Wave period stem:[s]:   {nbsp}{nbsp}{nbsp}
 stem:[T = L / c]
@@ -106,19 +106,17 @@ stem:[L_s = (sign(Delta v) * sqrt(8 * pi * f_o * g  * Delta v + g ^ 2) + 4 * pi 
 
 Approximation formula for vertical acceleration on top of wave:    {nbsp}{nbsp}{nbsp}
 
-stem:[a_min = - g * e ^ ((2 * b * pi) / L) / (1 - 1.6 * e ^ ((2 * b * pi) / L))]
+stem:[a_min = - g * e ^ ((2 * b * pi) / L) / (1 - 1.6 * e ^ ((2 * pi * b) / L))]
 
 bottom of wave:    {nbsp}{nbsp}{nbsp}
 
-stem:[a_max = g * e ^ ((2 * b * pi) / L) / (1 + 2.1 * e ^ ((2 * b * pi) / L))]
+stem:[a_max = g * e ^ ((2 * b * pi) / L) / (1 + 2.1 * e ^ ((2 * pi * b) / L))]
 
 or (approximation reverse):
 
 stem:[b(a_min, L) = - L / (2 * pi) * ln(1.6  - g/a_min)]
 
 stem:[b(a_max, L) = - L / (2 * pi) * ln(g / a_max - 2.1)]
-
-Also {nbsp}{nbsp} stem:[L = (g * T ^ 2) / (2 * pi)] {nbsp}{nbsp} if depth is infinite
 
 
 == Measuring wave height from a moving boat
