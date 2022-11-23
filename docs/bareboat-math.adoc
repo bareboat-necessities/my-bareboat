@@ -15,6 +15,7 @@ endif::[]
 ifndef::backend-pdf[]
 :toc-placement: manual
 endif::[]
+:stem:
 :experimental:
 :reproducible:
 :toclevels: 4
