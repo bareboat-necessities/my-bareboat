@@ -118,7 +118,9 @@ stem:[t] where stem:[a^'(t) = 0]
 
 stem:[t = pi (2 N + 1) / (ck), t = pi (2 N) / (ck)]
 
+stem:[a_max = (Hck^2) / ( 1 + Hk) ]
 
+stem:[a_min = (Hck^2) / ( 1 - Hk) ]
 
 Doppler effect:
 
