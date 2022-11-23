@@ -97,9 +97,9 @@ stem:[a_max = g * exp((2 * b * pi) / L) / (1 + 2.1 * exp((2 * b * pi) / L))]
 
 or (approximation reverse):
 
-stem:[b_1 = L / (2 * pi) * log(a_min / (1.6 * a_min - g))]
+stem:[b_1 = L / (2 * pi) * log(1 / (1.6  - g/a_min))]
 
-stem:[b_2 = L / (2 * pi) * log(a_max / (g - 2.1 * a_max))]
+stem:[b_2 = L / (2 * pi) * log(1 / (g / a_max - 2.1))]
 
 Also {nbsp}{nbsp} stem:[L = (g * T ^ 2) / (2 * pi)] {nbsp}{nbsp} if depth is infinite
 
