@@ -64,13 +64,13 @@ the method recreates parameters of the trochoid wave allowing it to estimate the
 
 == Trochoidal Waves
 
-Gravitational g stem:[(m/s^2)]: {nbsp}{nbsp}{nbsp}
+Gravitational {nbsp} stem:[g] {nbsp} (m/s^2): {nbsp}{nbsp}{nbsp}
 stem:[g = 9.81]
 
-Rotation center of trochoidal wave particle in Z axis (always negative) stem:[(m)]: {nbsp}{nbsp}{nbsp}
+Rotation center of trochoidal wave particle in Z axis (always negative) (m): {nbsp}{nbsp}{nbsp}
 stem:[b]
 
-Wavelength stem:[(m)]: {nbsp}{nbsp}{nbsp}
+Wavelength (m): {nbsp}{nbsp}{nbsp}
 stem:[L]
 
 Wave equation:
@@ -79,22 +79,25 @@ stem:[X(t) = H * sin(k * c * t) + c * t]
 
 stem:[Z(t) = - H * cos(k * c * t)]
 
-Wavenumber stem:[(1/m)]: {nbsp}{nbsp}{nbsp}
+Wavenumber (1/m): {nbsp}{nbsp}{nbsp}
 stem:[k = (2 * pi) / L]
 
-Wave amplitude stem:[(m)]:  {nbsp}{nbsp}{nbsp}
-stem:[H = e ^(k * b) / k = L / (2 * pi) * e ^ ((2 * pi * b) / L)  ]
+Wave amplitude (m):  {nbsp}{nbsp}{nbsp}
+stem:[H = e ^(k * b) / k = L / (2 * pi) * e ^ ((2 * pi * b) / L)  ] {nbsp}{nbsp}{nbsp} => {nbsp}{nbsp}{nbsp}
+stem:[b = L / (2 * pi) * ln ((2 * pi * H) / L)  ]
 
-Depth stem:[(m)]: {nbsp}{nbsp}{nbsp}
+Depth (m): {nbsp}{nbsp}{nbsp}
 stem:[d]
 
-Wave speed stem:[(m/s)]: {nbsp}{nbsp}{nbsp}
+Wave speed (m/s): {nbsp}{nbsp}{nbsp}
 stem:[c = sqrt(g / k * tanh(k * d))] {nbsp},{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}
 for deep water waves: stem:[c = sqrt(g / k)],  {nbsp}{nbsp} stem:[L = (g * T ^ 2) / (2 * pi)]
 
-Wave period stem:[s]:   {nbsp}{nbsp}{nbsp}
+Wave period (s):   {nbsp}{nbsp}{nbsp}
 stem:[T = L / c]
 
+Wave frequency (Hz):   {nbsp}{nbsp}{nbsp}
+stem:[f = 1 / T = c / L]
 
 Doppler effect:
 
@@ -106,11 +109,11 @@ stem:[L_s = (sign(Delta v) * sqrt(8 * pi * f_o * g  * Delta v + g ^ 2) + 4 * pi 
 
 Approximation formula for vertical acceleration on top of wave:    {nbsp}{nbsp}{nbsp}
 
-stem:[a_min = - g * e ^ ((2 * b * pi) / L) / (1 - 1.6 * e ^ ((2 * pi * b) / L))]
+stem:[a_min = - g / (e ^ (- (2 * pi * b) / L) - 1.6)]
 
 bottom of wave:    {nbsp}{nbsp}{nbsp}
 
-stem:[a_max = g * e ^ ((2 * b * pi) / L) / (1 + 2.1 * e ^ ((2 * pi * b) / L))]
+stem:[a_max = g / (e ^ (- (2 * pi * b) / L) + 2.1)]
 
 or (approximation reverse):
 
