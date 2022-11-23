@@ -130,7 +130,9 @@ stem:[L_s] source wavelength (m)
 
 stem:[L_s = (sign(Delta v) sqrt(8 pi f_o g  Delta v + g ^ 2) + 4 pi f_o  Delta v + g) / (4 pi f_o ^ 2)]
 
-stem:[b = L *
+stem:[b(a_min) = - L / (2 pi) ln( g / (a_min) + 1)]
+
+stem:[b(a_max) = - L / (2 pi) ln( g / (a_max) - 1)]
 
 == Measuring wave height from a moving boat
 
