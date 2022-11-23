@@ -103,24 +103,24 @@ stem:[f = 1 / T = c / L]
 
 Vertical velocity (m/s):
 
-stem:[v(t) = dZ / dx =  (dZ/dt) / (dX/dt) = (Hk sin(ckt)) / ( Hk cos(ckt) + 1)]
+stem:[v(t) = c (dZ / dx) =  c (dZ/dt) / (dX/dt) = c (Hk sin(ckt)) / ( Hk cos(ckt) + 1)]
 
 
 Vertical acceleration (m/s^2):
 
-stem:[a(t) = v^'(t) = d^2 Z / x^2 = dv / dx =  (dv/dt) / (dX/dt) = (Hck^2 cos(ckt)) / ( Hk cos(ckt) + 1) ]
+stem:[a(t) = v^'(t) = d^2 Z / x^2 = dv / dx =  (dv/dt) / (dX/dt) = (Hc^2k^2 cos(ckt)) / ( Hk cos(ckt) + 1) ]
 
 Third derivative (m/s^3):
 
-stem:[a^'(t) = d^3 Z / x^3 = da / dx =  (da/dt) / (dX/dt) = - (Hc^2k^3 sin(ckt)) / ( Hk cos(ckt) + 1) ]
+stem:[a^'(t) = d^3 Z / x^3 = da / dx =  (da/dt) / (dX/dt) = - (Hc^3k^3 sin(ckt)) / ( Hk cos(ckt) + 1) ]
 
 stem:[t] where stem:[a^'(t) = 0]
 
 stem:[t = pi (2 N + 1) / (ck), t = pi (2 N) / (ck)]
 
-stem:[a_max = (Hck^2) / ( 1 + Hk) = sqrt((g L) / (2 pi) ) (e^((2pib)/L)) / (1 + e^((2pib)/L)) (2 pi) / L = sqrt((2 pi g) / L ) / (e^(-(2pib)/L) + 1) ]
+stem:[a_max = (Hc^2k^2) / ( 1 + Hk) = (g L) / (2 pi)  (e^((2pib)/L)) / (1 + e^((2pib)/L)) (2 pi) / L = g / (e^(-(2pib)/L) + 1) ]
 
-stem:[a_min = (Hck^2) / ( 1 - Hk) = sqrt((2 pi g) / L ) / (e^(-(2pib)/L) - 1) ]
+stem:[a_min = (Hc^2k^2) / ( 1 - Hk) = g / (e^(-(2pib)/L) - 1) ]
 
 Doppler effect:
 
