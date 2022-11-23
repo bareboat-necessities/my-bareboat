@@ -96,14 +96,14 @@ for deep water waves: stem:[c = sqrt(g / k)],  {nbsp}{nbsp} stem:[L = (g * T ^ 2
 Wave period (s):   {nbsp}{nbsp}{nbsp}
 stem:[T = L / c]
 
-Wave frequency (Hz):   {nbsp}{nbsp}{nbsp}
+Wave frequency (Hz=1/s):   {nbsp}{nbsp}{nbsp}
 stem:[f = 1 / T = c / L]
 
 Doppler effect:
 
-stem:[f_o] observed frequency stem:[(1/s)]
+stem:[f_o] observed frequency (Hz=1/s)
 
-stem:[L_s] source wavelength stem:[(m)]
+stem:[L_s] source wavelength (m)
 
 stem:[L_s = (sign(Delta v) * sqrt(8 * pi * f_o * g  * Delta v + g ^ 2) + 4 * pi * f_o  * Delta v + g) / (4 * pi * f_o ^ 2)]
 
