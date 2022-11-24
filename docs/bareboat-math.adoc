@@ -138,7 +138,7 @@ stem:[f_o] {nbsp} is observed frequency (Hz=1/s):
 
 stem:[c] {nbsp} is the propagation speed of waves in the medium
 
-stem:[Delta v=v_{\text{s})] {nbsp} is the opposite of the velocity of the receiver
+stem:[Delta v=v_\text{s}] {nbsp} is the opposite of the velocity of the receiver
 relative to the source: it is positive when the source and the receiver are moving towards each other.
 
 stem:[f_o = (c +- Delta v) / c f]
@@ -198,6 +198,22 @@ _TWD_ {nbsp} is True Wind Direction (relative to true north)
 _POS_ {nbsp} is position LAT, LON (latitude, longitude)
 
 _TB(POS1, POS2)_ {nbsp} is Bearing true (true north angle to maintain in course to reach from POS1 to POS2)
+
+==== Calculating true wind and speed through water based on difference in heading and course over ground
+
+Having both true heading and true course over the ground allows calculating true wind vector parameters and
+speed through the water (SPD):
+
+stem:[SPD = ((dist(POS2, POS1)) / (t_\text{end} - t_\text{start}) + DFT * cos(COGT - SET)) * cos(COGT - avg(HDT))]
+
+stem:[TWS = sqrt((avg(AWS)) ^ 2 + SPD ^ 2 - 2 * avg(AWS) * SPD * cos(avg(AWA)))]
+
+stem:[TWA = +- arccos((avg(AWS) * cos(avg(AWA)) - SPD) / (TWS))]
+
+For Doppler effect formulas:
+
+stem:[Delta_v = SPD * cos(TWA)]
+
 
 == Measuring wave height from a moving boat
 
