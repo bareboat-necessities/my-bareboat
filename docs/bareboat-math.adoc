@@ -153,6 +153,12 @@ stem:[c = sqrt((g L) / (2 pi))] {nbsp} => {nbsp} stem:[f_0 = (sqrt((g L) / (2 pi
 
 stem:[L = (sign(Delta v) sqrt(8 pi f_o g  Delta v + g ^ 2) + 4 pi f_o  Delta v + g) / (4 pi f_o ^ 2)]
 
+image::trochoidal-wave.png[alt="Trochoidal wave", align="center"]
+
+Trochoidal wave vertical displacement/velocity/acceleration and spectrum.
+
+stem:[b = -1, L = 15, d = 30]
+
 === Trigonometry of a boat movement
 
 ==== Terminology
