@@ -130,9 +130,19 @@ stem:[b(a_max) = - L / (2 pi) ln( g / (a_max) - 1)]
 stem:[b(a_min) = - L / (2 pi) ln( 1 - g / (a_min))]
 
 
-Doppler effect:
+=== Doppler effect:
 
-stem:[f_o] observed frequency (Hz=1/s)
+stem:[f] {nbsp} is emitted frequency (Hz=1/s),
+
+stem:[f_o] {nbsp} is observed frequency (Hz=1/s):
+
+stem:[c] {nbsp} is the propagation speed of waves in the medium
+
+stem:[Delta v=v_{\text{s})] {nbsp}  is the opposite of the velocity of the receiver
+relative to the source: it is positive when the source and the receiver are moving towards each other.
+
+stem:[f_o = (c +- Delta v) / c f]
+
 
 stem:[L_s] source wavelength (m)
 
