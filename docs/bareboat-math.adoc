@@ -238,7 +238,6 @@ should be in minutes to capture several waves.
 
 * No tacks, jibes during sample
 * Heading is mostly steady
-* Check validity of accel (against g)
 * Trochoidal wave model
 * Approx formula for b (in trochoidal wave model)
 
@@ -266,7 +265,17 @@ Calculation steps:
 * Calculate wave height from b and L_source
 
 
+=== Input validation
 
+* Validate heading and COG for steadiness
+* Validate that magnetic variation is known for the position
+* Check validity of accel (against g)
+* TODO: more
 
+=== Result validation
+
+* Validate wave amplitude max {nbsp} stem:[H_max = L / (2 pi)]
+* Validate accel
+* TODO: more
 
 endif::[]
