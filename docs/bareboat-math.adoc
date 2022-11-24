@@ -93,7 +93,7 @@ stem:[d]
 
 Wave speed (m/s): {nbsp}{nbsp}{nbsp}
 stem:[c = sqrt(g / k tanh(k d))] {nbsp},{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}
-for deep water waves: stem:[c = sqrt(g / k) = sqrt((g L) / (2 pi) )],  {nbsp}{nbsp} stem:[L = (g T ^ 2) / (2 pi)]
+for deep water waves: stem:[c = sqrt(g / k) = sqrt((g L) / (2 pi))],  {nbsp}{nbsp} stem:[L = (g T ^ 2) / (2 pi)]
 
 Wave period (s):   {nbsp}{nbsp}{nbsp}
 stem:[T = L / c]
@@ -138,15 +138,20 @@ stem:[f_o] {nbsp} is observed frequency (Hz=1/s):
 
 stem:[c] {nbsp} is the propagation speed of waves in the medium
 
-stem:[Delta v=v_{\text{s})] {nbsp}  is the opposite of the velocity of the receiver
+stem:[Delta v=v_{\text{s})] {nbsp} is the opposite of the velocity of the receiver
 relative to the source: it is positive when the source and the receiver are moving towards each other.
 
 stem:[f_o = (c +- Delta v) / c f]
 
+stem:[L] {nbsp} is source wavelength (m) for trochoidal wave.
 
-stem:[L_s] {nbsp} is source wavelength (m) for trochoidal wave:
+For trochoidal wave:
 
-stem:[L_s = (sign(Delta v) sqrt(8 pi f_o g  Delta v + g ^ 2) + 4 pi f_o  Delta v + g) / (4 pi f_o ^ 2)]
+stem:[f = c / L] {nbsp} => {nbsp} stem:[f_o = (c +- Delta v) / L ],
+
+stem:[c = sqrt((g L) / (2 pi))] {nbsp} => {nbsp} stem:[f_0 = (sqrt((g L) / (2 pi)) +- Delta v) / L]
+
+stem:[L = (sign(Delta v) sqrt(8 pi f_o g  Delta v + g ^ 2) + 4 pi f_o  Delta v + g) / (4 pi f_o ^ 2)]
 
 === Trigonometry of a boat movement
 
