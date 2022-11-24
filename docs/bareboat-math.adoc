@@ -144,7 +144,7 @@ relative to the source: it is positive when the source and the receiver are movi
 stem:[f_o = (c +- Delta v) / c f]
 
 
-stem:[L_s] source wavelength (m)
+stem:[L_s] {nbsp} is source wavelength (m) for trochoidal wave:
 
 stem:[L_s = (sign(Delta v) sqrt(8 pi f_o g  Delta v + g ^ 2) + 4 pi f_o  Delta v + g) / (4 pi f_o ^ 2)]
 
