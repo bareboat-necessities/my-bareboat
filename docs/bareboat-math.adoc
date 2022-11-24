@@ -212,7 +212,7 @@ stem:[TWA = +- arccos((avg(AWS) * cos(avg(AWA)) - SPD) / (TWS))]
 
 For Doppler effect formulas:
 
-stem:[Delta_v = SPD * cos(TWA)]
+stem:[Delta v = SPD * cos(TWA)]
 
 
 == Measuring wave height from a moving boat
