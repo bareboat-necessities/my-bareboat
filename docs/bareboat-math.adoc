@@ -138,7 +138,7 @@ stem:[f_o] {nbsp} is observed frequency (Hz=1/s):
 
 stem:[c] {nbsp} is the propagation speed of waves in the medium
 
-stem:[Delta v=v_\text{s}] {nbsp} is the opposite of the velocity of the receiver
+stem:[Delta v] {nbsp} is the opposite of the velocity of the receiver
 relative to the source: it is positive when the source and the receiver are moving towards each other.
 
 stem:[f_o = (c +- Delta v) / c f]
@@ -216,5 +216,57 @@ stem:[Delta v = SPD * cos(TWA)]
 
 
 == Measuring wave height from a moving boat
+
+
+=== Measurable input parameters
+
+Open sea waves have periods 20 sec or even longer. So sample duration time
+should be in minutes to capture several waves.
+
+* t_start, t_end - time interval of measurements (about 5 mins)
+* POS(t) as LAT(t), LON(t)
+* AWA(t) AWS(t)
+* COG(t) SOG(t)
+* HDM(t) + mag_variation -> HDT(t)
+* DFT(t) SET(t) - (possibly from current/tide stations harmonics data)
+* heel(t), pitch(t)
+* SPD(t) - possibly (might be missing) => leeway(heel(t), SPD(t))
+* accel(t, x, y, z), vertical_accel(t) via pitch,roll,heel
+* ROT(t) - rate of turn
+
+=== Assumptions
+
+* No tacks, jibes during sample
+* Heading is mostly steady
+* Check validity of accel (against g)
+* Trochoidal wave model
+* Approx formula for b (in trochoidal wave model)
+
+
+=== Algorithm steps
+
+Calculation steps:
+
+* FFT to get observed wave frequency from acceleration (f_observed)
+* Speed toward wave fronts (delta_v for Doppler frequency) from wind and speed data
++
+**  COGT as true bearing from POS1 to POS2
+**  Convert HDM to HDT using position and local mag declination, Use avg(HDT) vs COG and coordinates to calculate SPD
+**  SPD = (DIST(POS1, POS2)/(t_end - t_start) + (DFT * cos(COGT - SET))) * cos(COGT - avg(HDT))
+**  avg(leeway(heel(t), SPD))
+**  use avg(AWA), AVG(AWS) and SPD to calculate TWS/TWA
+**  TWS = sqrt(AVG(AWS) ** 2 + SPD ** 2 - 2 * AVG(AWS) * SPD * cos(avg(AWA)))
+**  TWA = +- arccos((AVG(AWS) * cos(avg(AWA)) - SPD) / TWS)
+**  calculate delta_v as SPD * cos(TWA)
++
+* Calculate L_source (source wave length) for trochoidal wave model from f_observed and delta_v using Doppler formulas
+* Low pass filter for accel data
+* min/max accel after low pass
+* Calculate b value for trochoidal wave model from known L_source and min/max accel after low pass
+* Calculate wave height from b and L_source
+
+
+
+
 
 endif::[]
