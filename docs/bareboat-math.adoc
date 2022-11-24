@@ -148,6 +148,52 @@ stem:[L_s] {nbsp} is source wavelength (m) for trochoidal wave:
 
 stem:[L_s = (sign(Delta v) sqrt(8 pi f_o g  Delta v + g ^ 2) + 4 pi f_o  Delta v + g) / (4 pi f_o ^ 2)]
 
+=== Trigonometry of a boat movement
+
+==== Terminology
+
+_AWS_ {nbsp} is Apparent Wind Speed (relative to the boat heading)
+
+_AWA_ {nbsp} is Apparent Wind Angle (relative to the bow heading, 0 to 180, starboard plus, port minus)
+
+_AWD_ {nbsp} is Apparent Wind Direction (relative to true north)
+
+_AGWS_ {nbsp} is Apparent Ground Wind Speed (relative to the boat course over the ground)
+
+_AGWA_ {nbsp} is Apparent Ground Wind Angle (relative to the boat course over the ground, 0 to 180, starboard plus, port minus)
+
+_AGWD_ {nbsp} is Apparent Ground Wind Direction (relative to true north)
+
+_SPD_ {nbsp} is Knotmeter speed (relative to the water)
+
+_HDT_ {nbsp} is Heading true (relative to true north)
+
+_HDM_ {nbsp} is  Heading magnetic (relative to magnetic north)
+
+_DFT_ {nbsp} is  Current Drift (speed of current, relative to fixed earth)
+
+_SET_ {nbsp} is  Current Set (direction current flows toward relative to fixed earth true north)
+
+_SOG_ {nbsp} is  Speed Over Ground (relative to the fixed earth)
+
+_COGT_ {nbsp} is Course Over Ground true (relative to the fixed earth true north)
+
+_COGM_ {nbsp} is Course Over Ground magnetic (relative to the fixed earth magnetic north)
+
+_GWS_ {nbsp} is Ground Wind Speed (relative to the fixed earth)
+
+_GWD_ {nbsp} is Ground Wind Direction (relative to true north)
+
+_TWA_ {nbsp} is True Wind Angle (relative to the heading, 0 = upwind, 180deg = downwind, (+ starboard, - port))
+
+_TWS_ {nbsp} is True Wind Speed (relative to the water)
+
+_TWD_ {nbsp} is True Wind Direction (relative to true north)
+
+_POS_ {nbsp} is position LAT, LON (latitude, longitude)
+
+_TB(POS1, POS2)_ {nbsp} is Bearing true (true north angle to maintain in course to reach from POS1 to POS2)
+
 == Measuring wave height from a moving boat
 
 endif::[]
