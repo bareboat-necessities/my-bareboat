@@ -210,7 +210,7 @@ _TB(POS1, POS2)_ {nbsp} is Bearing true (true north angle to maintain in course 
 Having both true heading and true course over the ground allows calculating true wind vector parameters and
 speed through the water (SPD):
 
-stem:[SPD = ((dist(POS2, POS1)) / (t_\text{end} - t_\text{start}) + DFT * cos(COGT - SET)) * cos(COGT - avg(HDT))]
+stem:[SPD = ((dist(POS2, POS1)) / (t_\text{end} - t_\text{start}) - DFT * cos(COGT - SET)) * cos(COGT - avg(HDT))]
 
 stem:[TWS = sqrt((avg(AWS)) ^ 2 + SPD ^ 2 - 2 * avg(AWS) * SPD * cos(avg(AWA)))]
 
@@ -257,7 +257,7 @@ Calculation steps:
 +
 **  COGT as true bearing from POS1 to POS2
 **  Convert HDM to HDT using position and local mag declination, Use avg(HDT) vs COG and coordinates to calculate SPD
-**  SPD = (DIST(POS1, POS2)/(t_end - t_start) + (DFT * cos(COGT - SET))) * cos(COGT - avg(HDT))
+**  SPD = (DIST(POS1, POS2)/(t_end - t_start) - (DFT * cos(COGT - SET))) * cos(COGT - avg(HDT))
 **  avg(leeway(heel(t), SPD))
 **  use avg(AWA), AVG(AWS) and SPD to calculate TWS/TWA
 **  TWS = sqrt(AVG(AWS) ** 2 + SPD ** 2 - 2 * AVG(AWS) * SPD * cos(avg(AWA)))
