@@ -75,7 +75,7 @@ stem:[L]
 
 Wave equation:
 
-stem:[X(t) = H sin(k c t) + c t]
+stem:[X(t) = H sin(k c t)]
 
 stem:[Z(t) = - H cos(k c t)]
 
@@ -101,16 +101,20 @@ stem:[T = L / c]
 Wave frequency (Hz=1/s):   {nbsp}{nbsp}{nbsp}
 stem:[f = 1 / T = c / L]
 
-Approximation formulas for:
+Vertical motion is harmonic.
 
-stem:[a_max = g / (1 + e^(-(2pib)/L)) ]
+Vertical displacement:
+stem:[Z(t) = - H cos(k c t)]
 
-stem:[a_min = g / (1 - e^(-(2pib)/L)) ]
+Vertical velocity:
+stem:[u(t) = Z^'(t) = k c H sin(k c t)]
 
-stem:[b(a_max) = - L / (2 pi) ln( g / (a_max) - 1)]
+Vertical acceleration:
+stem:[a(t) = u^'(t) = k^2 c^2 H cos(k c t)]
 
-stem:[b(a_min) = - L / (2 pi) ln( 1 - g / (a_min))]
+stem:[a_max = -a_min = k^2 c^2 H =  ((2 pi) / L) ^ 2 ((g L) / (2 pi)) L / (2 pi) e^((2 pi b)/L) = g e^((2 pi b)/L)  ]
 
+stem:[b = L / (2 pi) ln(a_max / g)]
 
 === Doppler effect:
 
@@ -134,6 +138,8 @@ stem:[f = c / L] {nbsp} => {nbsp} stem:[f_o = (c +- Delta v) / L ],
 stem:[c = sqrt((g L) / (2 pi))] {nbsp} => {nbsp} stem:[f_0 = (sqrt((g L) / (2 pi)) +- Delta v) / L]
 
 stem:[L = (sign(Delta v) sqrt(8 pi f_o g  Delta v + g ^ 2) + 4 pi f_o  Delta v + g) / (4 pi f_o ^ 2)]
+
+stem:[a_(observed)(t) = ?]
 
 === Trigonometry of a boat movement
 
