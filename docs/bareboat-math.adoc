@@ -101,25 +101,7 @@ stem:[T = L / c]
 Wave frequency (Hz=1/s):   {nbsp}{nbsp}{nbsp}
 stem:[f = 1 / T = c / L]
 
-Vertical velocity (m/s):
-
-stem:[v(t) = c (dZ / dx) =  c (dZ/dt) / (dX/dt) = c (Hk sin(ckt)) / ( Hk cos(ckt) + 1)]
-
-Vertical position (m):
-
-stem:[h(t) = int v(t) dt = - ln (H k cos(c k t) + 1) / k + const]
-
-Vertical acceleration (m/s^2):
-
-stem:[a(t) = v^'(t) = d^2 Z / x^2 = dv / dx =  (dv/dt) / (dX/dt) = (Hc^2k^2 cos(ckt)) / ( Hk cos(ckt) + 1) ]
-
-Third derivative (m/s^3):
-
-stem:[a^'(t) = d^3 Z / x^3 = da / dx =  (da/dt) / (dX/dt) = - (Hc^3k^3 sin(ckt)) / ( Hk cos(ckt) + 1) ]
-
-stem:[t] where stem:[a^'(t) = 0]
-
-stem:[t = pi (2 N + 1) / (ck), t = pi (2 N) / (ck)]
+Approximation formulas for:
 
 stem:[a_max = g / (1 + e^(-(2pib)/L)) ]
 
@@ -152,12 +134,6 @@ stem:[f = c / L] {nbsp} => {nbsp} stem:[f_o = (c +- Delta v) / L ],
 stem:[c = sqrt((g L) / (2 pi))] {nbsp} => {nbsp} stem:[f_0 = (sqrt((g L) / (2 pi)) +- Delta v) / L]
 
 stem:[L = (sign(Delta v) sqrt(8 pi f_o g  Delta v + g ^ 2) + 4 pi f_o  Delta v + g) / (4 pi f_o ^ 2)]
-
-image::trochoidal-wave.png[alt="Trochoidal wave", align="center"]
-
-Trochoidal wave vertical displacement/velocity/acceleration and spectrum.
-
-stem:[b = -1, L = 15, d = 30]
 
 === Trigonometry of a boat movement
 
