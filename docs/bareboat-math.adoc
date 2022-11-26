@@ -84,7 +84,7 @@ stem:[k = (2 pi) / L]
 
 Wave amplitude (m):  {nbsp}{nbsp}{nbsp}
 stem:[H = e ^(k b) / k = L / (2 pi) e ^ ((2 pi b) / L)  ] {nbsp}{nbsp}{nbsp} => {nbsp}{nbsp}{nbsp}
-stem:[b = L / (2 pi) ln ((2 pi H) / L)  ]
+stem:[b = ln(H k) / k = L / (2 pi) ln ((2 pi H) / L)  ]
 
 max(H) amplitude (m):   {nbsp}{nbsp}{nbsp}  stem:[H_max = L / (2 pi)] {nbsp}{nbsp}{nbsp} when {nbsp} b = 0
 
