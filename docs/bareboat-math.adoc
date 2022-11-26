@@ -139,6 +139,15 @@ stem:[c = sqrt((g L) / (2 pi))] {nbsp} => {nbsp} stem:[f_0 = (sqrt((g L) / (2 pi
 
 stem:[L = (sign(Delta v) sqrt(8 pi f_o g  Delta v + g ^ 2) + 4 pi f_o  Delta v + g) / (4 pi f_o ^ 2)]
 
+
+stem:[a_(observed)(Delta v, t) = d^2/dt^2 (- H cos(k (c + Delta v) t)) = H k^2 (c^2 + 2 c Delta v + (Delta v)^2) cos(k (c + Delta v) t)]
+
+stem:[a_(observed_max) = H k^2 (c^2 + 2 c Delta v + (Delta v)^2)] =>
+
+stem:[H = H(L, Delta v) = a_(observed_max) / (k^2 (c^2 + 2 c Delta v + (Delta v)^2)) ]
+
+
+
 === Trigonometry of a boat movement
 
 ==== Terminology
