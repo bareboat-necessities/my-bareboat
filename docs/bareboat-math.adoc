@@ -358,6 +358,12 @@ for t in range(n_timesteps):
         )
 ----
 
+The wave height needs to be evaluated based on the results on the end side of the sampling interval.
+The results in the beginning of the sample interval will have extra spikes due to Kalman
+filter taking time to converge (without knowing initial velocity and position and adjusting
+covariances).
+
+
 === FFT to calculate observed frequency of waves
 
 Fast (discrete) Fourier Transform (FFT) is used to find main frequency (the one which carries most energy) of the waves.
