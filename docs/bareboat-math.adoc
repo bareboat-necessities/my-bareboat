@@ -226,11 +226,14 @@ Yaw would correspond to the magnetic heading.
 
 == Kalman filter to double integrate vertical acceleration into displacement without integration drift
 
-Ref: S. M. Sharkh*1, M. Hendijanizadeh2, M. Moshrefi-Torbati3, M. A. Abusara:
+Ref:
+
+Sharkh S. M., Hendijanizadeh2 M., Moshrefi-Torbati3 M., Abusara M. A.:
 A Novel Kalman Filter Based Technique for
 Calculating the Time History of Vertical
 Displacement of a Boat from Measured
-Acceleration, Marine Engineering Frontiers (MEF) Volume 2, 2014
+Acceleration,
+Marine Engineering Frontiers (MEF) Volume 2, 2014
 
 
 Kalman method parameters.
