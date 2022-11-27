@@ -280,6 +280,18 @@ Displacement of a Boat from Measured
 Acceleration,
 Marine Engineering Frontiers (MEF) Volume 2, 2014
 
+The method uses assumption that average vertical displacement is zero. So it takes third integral of acceleration
+as input measurement with zero value. Vertical acceleration on each step is the value used in transition offset.
+
+So only input observation value is 0 (third integral of acceleration).
+Acceleration used in transition offset needs to exclude Earth gravitational g and accelerometer bias.
+So avg(acceleration) is subtracted from it.
+
+Accelerometer noise will make the filter to converge slower.
+Accelerometer bias will skew the displacement on one side.
+Giving too low covariances will flatten the result too much. Too high covariances will make it jump too much.
+
+Low pass filter is needed to get rid of high frequency noise before running this filter to get better results.
 
 Kalman method parameters.
 
