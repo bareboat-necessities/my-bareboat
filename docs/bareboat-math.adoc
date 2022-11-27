@@ -219,7 +219,9 @@ Most IMU libraries provide a way to get the attitude quaternion stem:[q].
 Using this quaternion to get acceleration in Earth XYZ from IMU frame xyz: stem:[\text{accel} = (a_x, a_y, a_z)] vector,
 the quaternion stem:[q] is used to rotate vector stem:[\text{accel}]
 
-stem:[\text{accel}_\text{earthXYZ} = q * \text{accel} * q'], where stem:[q'] is inverted quaternion stem:[q]
+stem:[\text{accel}_\text{earthXYZ} = q * \text{accel} * q'], where stem:[q'] is inverted quaternion stem:[q].
+
+The same quaternion can be used to get Euler angles of pitch, roll and yaw.
 
 == Measuring wave height from a moving boat
 
