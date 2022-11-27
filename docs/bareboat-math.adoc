@@ -260,6 +260,15 @@ where stem:[q'] is inverted quaternion stem:[q].
 The same quaternion can be used to get Euler angles of pitch, roll and yaw.
 Yaw would correspond to the magnetic heading.
 
+==== AHRS (attitude and heading reference system) fusion algorithms
+
+If quaternion from IMU is not available, then it can be calculated using AHRS fusion algorithms:
+
+* Madgwick algorithm
+* Mahony algorithm
+* RTQF quaternion fusion for lower power processors
+* Extended Kalman Filter (EKF)
+
 == Kalman filter to double integrate vertical acceleration into displacement without integration drift
 
 Ref:
