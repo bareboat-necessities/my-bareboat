@@ -228,7 +228,7 @@ declination = wmm2020.wmm(glat, glon, alt_km, yeardec).decl
 === Leeway
 
 Although leeway calculation is not required for the algorithm (it gets taken into account with using
-heading to course over ground difference), for completeness, here is a popular empirical formula:
+heading to course over ground difference), for completeness, here is the popular empirical formula:
 
 Leeway (deg) is angle to adjust heading to maintain constant COG (assuming no current)
 
@@ -260,7 +260,7 @@ where stem:[q'] is inverted quaternion stem:[q].
 The same quaternion can be used to get Euler angles of pitch, roll and yaw.
 Yaw would correspond to the magnetic heading.
 
-==== AHRS (attitude and heading reference system) fusion algorithms
+=== AHRS (attitude and heading reference system) fusion algorithms
 
 If quaternion from IMU is not available, then it can be calculated using AHRS fusion algorithms:
 
@@ -344,7 +344,7 @@ for t in range(n_timesteps):
         filtered_state_covariances[t] = P0
     else:
         observation = 0
-        transition_offset = B * (AccX_Value[t] - Acc_Mean)
+        transition_offset = B * (accZ_val[t] - acc_avg)
         filtered_state_means[t], filtered_state_covariances[t] = (
             kf.filter_update(
                 filtered_state_mean = filtered_state_means[t-1],
@@ -367,7 +367,7 @@ from scipy import fft
 SAMPLE_RATE = 1.0 / dt
 N_SAMP = n_timesteps
 
-w = fft.rfft(accY_val)
+w = fft.rfft(accZ_val)
 freqs = fft.rfftfreq(N_SAMP, 1 / SAMPLE_RATE)
 
 # Find the peak in the coefficients
@@ -389,7 +389,7 @@ import numpy as np
 from scipy import signal
 
 sos = signal.butter(2, freq_in_hertz * 8, 'low', fs=SAMPLE_RATE, output='sos')
-low_pass_filtered = signal.sosfilt(sos, accY_val)
+low_pass_filtered = signal.sosfilt(sos, accZ_val)
 ----
 
 == Measuring wave height from a moving boat
