@@ -116,7 +116,7 @@ stem:[a_max = -a_min = k^2 c^2 H =  ((2 pi) / L) ^ 2 ((g L) / (2 pi)) L / (2 pi)
 
 stem:[b = L / (2 pi) ln(a_max / g)]
 
-=== Doppler effect:
+=== Doppler effect
 
 stem:[f] {nbsp} is emitted frequency (Hz=1/s),
 
@@ -223,6 +223,77 @@ stem:[\text{accel}_\text{earthXYZ} = q * \text{accel} * q'], where stem:[q'] is 
 
 The same quaternion can be used to get Euler angles of pitch, roll and yaw.
 Yaw would correspond to the magnetic heading.
+
+== Kalman filter to double integrate vertical acceleration into displacement without integration drift
+
+Ref: S. M. Sharkh*1, M. Hendijanizadeh2, M. Moshrefi-Torbati3, M. A. Abusara:
+A Novel Kalman Filter Based Technique for
+Calculating the Time History of Vertical
+Displacement of a Boat from Measured
+Acceleration, Marine Engineering Frontiers (MEF) Volume 2, 2014
+
+
+Kalman method parameters.
+
+
+Transition matrix:
+
+stem:[ F = [[1, dt, 1/2 dt ^ 2 \], [0,  1,       dt\], [0,  0,        1\]\]  ]
+
+
+Transition offset:
+
+stem:[ B = ( (1/6 dt^3), (1/2 dt^2), (dt) ) ]
+
+
+Observation matrix:
+
+stem:[ H = (1, 0, 0) ]
+
+
+Transition covariance:
+
+stem:[ Q = [[ \text{PosIntegral_Trans_Variance}, 0, 0 \], [0, 0.2, 0 \], [0, 0, 0.1 \]\] ]
+
+
+Observation covariance:
+
+stem:[ R = [[ \text{PosIntegral_Variance} \]\] ]
+
+
+Initial state mean (height integral, height, velocity):
+
+stem:[ X0 = ((0), (0), (0)) ]
+
+Initial state covariance:
+
+stem:[ P0 = [[ \text{PosIntegral_Variance}, 0, 0\], [0, 1, 0\], [0, 0, 1\]\] ]
+
+[source, python]
+----
+kf = KalmanFilter(transition_matrices=F,
+                  observation_matrices=H,
+                  transition_covariance=Q,
+                  observation_covariance=R,
+                  initial_state_mean=X0,
+                  initial_state_covariance=P0)
+
+for t in range(n_timesteps):
+    if t == 0:
+        filtered_state_means[t] = X0
+        filtered_state_covariances[t] = P0
+    else:
+        observation = 0
+        transition_offset = B * (AccX_Value[t] - Acc_Mean)
+        filtered_state_means[t], filtered_state_covariances[t] = (
+            kf.filter_update(
+                filtered_state_mean = filtered_state_means[t-1],
+                filtered_state_covariance = filtered_state_covariances[t-1],
+                transition_offset = transition_offset,
+                observation = observation
+            )
+        )
+----
 
 == Measuring wave height from a moving boat
 
