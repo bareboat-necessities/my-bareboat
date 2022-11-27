@@ -149,9 +149,9 @@ stem:[H = H(L, Delta v) = a_(observed_max) / (k^2 (c^2 + 2 c Delta v + (Delta v)
 
 
 
-=== Trigonometry of a boat movement
+== Trigonometry of a boat movement
 
-==== Terminology
+=== Terminology
 
 _AWS_ {nbsp} is Apparent Wind Speed (relative to the boat heading)
 
@@ -195,7 +195,7 @@ _POS_ {nbsp} is position LAT, LON (latitude, longitude)
 
 _TB(POS1, POS2)_ {nbsp} is Bearing true (true north angle to maintain in course to reach from POS1 to POS2)
 
-==== Calculating true wind and speed through water based on difference in heading and course over ground
+=== Calculating true wind and speed through water based on difference in heading and course over ground
 
 Having both true heading and true course over the ground allows calculating true wind vector parameters and
 speed through the water (SPD):
