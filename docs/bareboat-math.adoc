@@ -355,6 +355,43 @@ for t in range(n_timesteps):
         )
 ----
 
+=== FFT to calculate observed frequency of waves
+
+Fast (discrete) Fourier Transform (FFT) is used to find main frequency (the one which carries most energy) of the waves.
+
+[source, python]
+----
+import numpy as np
+from scipy import fft
+
+SAMPLE_RATE = 1.0 / dt
+N_SAMP = n_timesteps
+
+w = fft.rfft(accY_val)
+freqs = fft.rfftfreq(N_SAMP, 1 / SAMPLE_RATE)
+
+# Find the peak in the coefficients
+idx = np.argmax(np.abs(w))
+freq = freqs[idx]
+freq_in_hertz = abs(freq)
+period = 1 / freq_in_hertz
+----
+
+
+=== Butterworth Low Pass filter
+
+Butterworth Low pass filter is used to filter out high frequencies noise in input
+to Kalman filter
+
+[source, python]
+----
+import numpy as np
+from scipy import signal
+
+sos = signal.butter(2, freq_in_hertz * 8, 'low', fs=SAMPLE_RATE, output='sos')
+low_pass_filtered = signal.sosfilt(sos, accY_val)
+----
+
 == Measuring wave height from a moving boat
 
 
@@ -413,12 +450,16 @@ Calculation steps:
 * Validate heading and COG for steadiness
 * Validate that magnetic variation is known for the position
 * Check validity of accel (against g)
+* Validate input data against assumptions
 * Discard the sample if it is not good and start collecting a new one.
+
 
 === Result validation
 
 * Validate wave amplitude max {nbsp} stem:[H < H_max = L / (2 pi)]
 * Validate accel (Ratio to stem:[g] can't be unreasonably high)
 * Discard the sample if the result is not good and start collecting a new one.
+* Validate height calculated by Kalman filter against height calculated from max acceleration
+and wavelength with trochoidal model.
 
 endif::[]
