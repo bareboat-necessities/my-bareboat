@@ -251,7 +251,7 @@ Calculation steps:
 **  avg(leeway(heel(t), SPD))
 **  use avg(AWA), AVG(AWS) and SPD to calculate TWS/TWA
 **  TWS = sqrt(AVG(AWS) ^ 2 + SPD ^ 2 - 2 * AVG(AWS) * SPD * cos(avg(AWA)))
-**  TWA = +- arccos((AVG(AWS) * cos(avg(AWA)) - SPD) / TWS)
+**  TWA = +- arccos( ( AVG(AWS) * cos(avg(AWA)) - SPD ) / TWS)
 **  calculate delta_v as SPD * cos(TWA)
 +
 * Calculate L_source (source wave length) for trochoidal wave model from f_observed and delta_v using Doppler formulas
