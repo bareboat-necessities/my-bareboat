@@ -213,7 +213,7 @@ stem:[Delta v = SPD * cos(TWA)]
 === Leeway
 
 Although leeway calculation is not required for the algorithm (it gets taken into account with using
-heading to course over ground difference), for completeness here is a popular empirical formula:
+heading to course over ground difference), for completeness, here is a popular empirical formula:
 
 Leeway (deg) is angle to adjust heading to maintain constant COG (assuming no current)
 
