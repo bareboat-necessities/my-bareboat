@@ -331,6 +331,9 @@ stem:[ P0 = [[ \text{PosIntegral_Variance}, 0, 0\], [0, 1, 0\], [0, 0, 1\]\] ]
 
 [source, python]
 ----
+from pykalman import KalmanFilter
+import numpy as np
+
 kf = KalmanFilter(transition_matrices=F,
                   observation_matrices=H,
                   transition_covariance=Q,
