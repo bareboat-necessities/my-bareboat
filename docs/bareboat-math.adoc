@@ -210,6 +210,21 @@ For Doppler effect formulas:
 
 stem:[Delta v = SPD * cos(TWA)]
 
+=== Heading True from Magnetic
+
+IMU helps measuring magnetic heading HDM. To calculate true heading, it is required to have
+Earth magnetic model and using location and time it gives you magnetic variation.
+
+[source, python]
+----
+import wmm2020
+
+yeardec = datetime.date.today().year
+alt_km = 0
+declination = wmm2020.wmm(glat, glon, alt_km, yeardec).decl
+
+----
+
 === Leeway
 
 Although leeway calculation is not required for the algorithm (it gets taken into account with using
@@ -238,7 +253,9 @@ Most IMU libraries provide a way to get the attitude quaternion stem:[q].
 Using this quaternion to get acceleration in Earth XYZ from IMU frame xyz: stem:[\text{accel} = (a_x, a_y, a_z)] vector,
 the quaternion stem:[q] is used to rotate vector stem:[\text{accel}]
 
-stem:[\text{accel}_\text{earthXYZ} = q * \text{accel} * q'], where stem:[q'] is inverted quaternion stem:[q].
+stem:[\text{accel}_\text{earthXYZ} = q * \text{accel} * q']
+
+where stem:[q'] is inverted quaternion stem:[q].
 
 The same quaternion can be used to get Euler angles of pitch, roll and yaw.
 Yaw would correspond to the magnetic heading.
@@ -275,7 +292,7 @@ stem:[ H = (1, 0, 0) ]
 
 Transition covariance:
 
-stem:[ Q = [[ \text{PosIntegral_Trans_Variance}, 0, 0 \], [0, 0.2, 0 \], [0, 0, 0.1 \]\] ]
+stem:[ Q = [[ \text{PosIntegral_Trans_Variance}, 0, 0 \], [0, \text{Pos_Trans_Variance}, 0 \], [0, 0, \text{Vel_Trans_Variance} \]\] ]
 
 
 Observation covariance:
@@ -333,15 +350,18 @@ should be in minutes to capture several waves.
 * DFT(t) SET(t) - (possibly from current/tide stations harmonics data)
 * heel(t), pitch(t)
 * SPD(t) - possibly (might be missing) => leeway(heel(t), SPD(t))
-* accel(t, x, y, z), vertical_accel(t) via pitch,roll,heel
+* accel(t, x, y, z), vertical_accel(t) via pitch,roll,yaw
 * ROT(t) - rate of turn
 
 === Assumptions
 
 * No tacks, jibes during sample
-* Heading is mostly steady
+* Heading and course over ground are mostly steady
+* Wind is not changing drastically
+* Depth is deep, i.e. depth > 1/2 wavelength
+* Water current is not changing much (or zero i.e. negligible relative to boat speed)
 * Trochoidal wave model
-* Approx formula for b (in trochoidal wave model)
+* Approx formula for b, H (in trochoidal wave model)
 
 
 === Algorithm steps
