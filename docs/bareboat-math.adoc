@@ -210,6 +210,25 @@ For Doppler effect formulas:
 
 stem:[Delta v = SPD * cos(TWA)]
 
+=== Leeway
+
+Although leeway calculation is not required for the algorithm (it gets taked into account with using
+heading to course over ground difference), for completeness here is a popular empirical formula:
+
+Leeway (deg) is angle to adjust heading to maintain constant COG (assuming no current)
+
+stem:[\l\eeway = heel  K / (SPD ^ 2)]
+
+stem:[heel] {nbsp}{nbsp} is boat heel and needs to be in (degrees) for the formula above
+
+stem:[SPD]  {nbsp}is speed through water  and needs to be in (kt)
+
+stem:[K] {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} is boat and boat load specific constant (kt^2), about 10.0
+
+
+
+
+
 
 == IMU
 
