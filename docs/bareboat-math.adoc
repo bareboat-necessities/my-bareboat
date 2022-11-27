@@ -279,12 +279,12 @@ Calculation steps:
 * Validate heading and COG for steadiness
 * Validate that magnetic variation is known for the position
 * Check validity of accel (against g)
-* TODO: more
+* Discard the sample if it is not good and start collecting a new one.
 
 === Result validation
 
 * Validate wave amplitude max {nbsp} stem:[H < H_max = L / (2 pi)]
 * Validate accel (Ratio to stem:[g] can't be unreasonably high)
-* TODO: more
+* Discard the sample if the result is not good and start collecting a new one.
 
 endif::[]
