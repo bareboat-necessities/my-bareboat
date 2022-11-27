@@ -116,6 +116,16 @@ stem:[a_max = -a_min = k^2 c^2 H =  ((2 pi) / L) ^ 2 ((g L) / (2 pi)) L / (2 pi)
 
 stem:[b = L / (2 pi) ln(a_max / g)]
 
+Slope stem:[s(t)]:
+
+stem:[x_b(t) = X(t) - t Delta v]
+
+stem:[s(t) = d/ (dx_b) ((Z(t)) / (x_b(t))) =  (d/dt(Z)) / (d/dt(x_b)) = (d/dt(- H cos(k c t))) / (d/dt(H sin(ckt) - t Delta v)) = (cHk sin(ckt)) / (cHk cos(ckt) - Delta v)]
+
+The plot stem:[s(t)] would look similar to stem:[\text{vertical_velocity}(t)] of a moving boat.
+
+
+
 === Doppler effect
 
 stem:[f] {nbsp} is emitted frequency (Hz=1/s),
