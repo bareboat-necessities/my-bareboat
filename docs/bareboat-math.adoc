@@ -122,9 +122,6 @@ stem:[x_b(t) = X(t) - t Delta v]
 
 stem:[s(t) = d/ (dx_b) ((Z(t)) / (x_b(t))) =  (d/dt(Z)) / (d/dt(x_b)) = (d/dt(- H cos(k c t))) / (d/dt(H sin(ckt) - t Delta v)) = (cHk sin(ckt)) / (cHk cos(ckt) - Delta v)]
 
-The plot stem:[s(t)] would look similar to stem:[\text{vertical_velocity}(t)] of a moving boat.
-
-
 
 === Doppler effect
 
