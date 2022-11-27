@@ -283,8 +283,8 @@ Calculation steps:
 
 === Result validation
 
-* Validate wave amplitude max {nbsp} stem:[H_max = L / (2 pi)]
-* Validate accel
+* Validate wave amplitude max {nbsp} stem:[H < H_max = L / (2 pi)]
+* Validate accel (Ratio to stem:[g] can't be unreasonably high)
 * TODO: more
 
 endif::[]
