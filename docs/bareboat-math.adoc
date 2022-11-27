@@ -486,6 +486,7 @@ and wavelength with trochoidal model.
 . https://en.wikipedia.org/wiki/Wind_wave[Wind Wave Wikipedia]
 . https://github.com/seandepagnier/RTIMULib2[RTIMULib2 IMU library]
 . https://github.com/pypilot/pypilot[PyPilot Free Autopilot]
+. https://github.com/space-physics/wmm2020[World Magnetic Model on GitHub]
 
 
 endif::[]
