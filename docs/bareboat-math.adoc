@@ -109,6 +109,10 @@ stem:[Z(t) = - H cos(k c t) = - L / (2 pi) (a(t))/g ]
 Vertical velocity:
 stem:[u(t) = Z^'(t) = k c H sin(k c t)]
 
+stem:[u_max = c e ^ ((2 pi b) / L]
+
+stem:[u_max(b=0) = c]
+
 Vertical acceleration:
 stem:[a(t) = u^'(t) = k^2 c^2 H cos(k c t)]
 
