@@ -434,7 +434,7 @@ stem:[pos_\text{init} = - a_\text{init} / (k^2 c^2) = - a_\text{init} / (g k) = 
 
 stem:[tan(\p\i\tch_\text{init}) = const_1 * s_\text{init}(Delta v = 0)] {nbsp}{nbsp} tangent of pitch is proportional to wave slope
 
-stem:[vel_\text{init} =  kcH cos(kct) * s_\text{init}(Delta v = 0) = (kcH) / (const_1) sin(\p\itch_\text{init}) = const_2 * g T * sin(\p\itch_\text{init}) ],
+stem:[vel_\text{init} =  kcH cos(kct) * s_\text{init}(Delta v = 0) = (kcH) / (const_1) sin(\p\itch_\text{init}) = const_2 * c * sin(\p\itch_\text{init}) ],
 
 stem:[const_2] to be found empirically (it's vessel specific too).
 
