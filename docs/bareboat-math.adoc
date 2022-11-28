@@ -248,10 +248,6 @@ stem:[SPD]  {nbsp}is speed through water  and needs to be in (kt)
 stem:[K] {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} is boat and boat load specific constant (kt^2), about 10.0
 
 
-
-
-
-
 == IMU
 
 === Getting vertical acceleration from IMU
@@ -266,6 +262,9 @@ where stem:[q'] is inverted quaternion stem:[q].
 
 The same quaternion can be used to get Euler angles of pitch, roll and yaw.
 Yaw would correspond to the magnetic heading.
+
+NOTE: To estimate max/min acceleration it's not needed to extract vertical part of acceleration.
+Just magnitude of acceleration stem:[a=sqrt(a_x^2 + a_y^2 + a_z^2)] should be sufficient.
 
 === AHRS (attitude and heading reference system) fusion algorithms
 
