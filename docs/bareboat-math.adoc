@@ -104,7 +104,7 @@ stem:[f = 1 / T = c / L]
 Vertical motion is harmonic.
 
 Vertical displacement:
-stem:[Z(t) = - H cos(k c t)]
+stem:[Z(t) = - H cos(k c t) = - L / (2 pi) (a(t))/g ]
 
 Vertical velocity:
 stem:[u(t) = Z^'(t) = k c H sin(k c t)]
