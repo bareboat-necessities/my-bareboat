@@ -413,7 +413,9 @@ low_pass_filtered = signal.sosfilt(sos, accZ_val)
 === Measurable input parameters
 
 Open sea waves have periods 20 sec or even longer. So sample duration time
-should be in minutes to capture several waves.
+should be in minutes to capture several waves. Playing with reference data without noise
+shows described Kalman algorithm needs about 10 wavelength to converge accurately.
+So with longer way samples needs to be longer. 5-15 mins.
 
 * t_start, t_end - time interval of measurements (about 5 mins)
 * POS(t) as LAT(t), LON(t)
