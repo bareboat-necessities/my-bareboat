@@ -420,6 +420,10 @@ So with longer way samples needs to be longer. 5-15 mins.
 NOTE: Open Questions: Could difference in phase between acceleration and pitch give more hints to set initial
 speed so the algorithm can converge faster? Does pitch(t) and slope s(t) follow same phase?
 
+Acceleration positive => position negative. They are in counter phase. This could allow setting initial position for Kalman filter better.
+
+Pitch negative => speed vector is pointing down. This could also allow setting initial velocity for Kalman filter better.
+
 * t_start, t_end - time interval of measurements (about 5 mins)
 * POS(t) as LAT(t), LON(t)
 * AWA(t) AWS(t)
