@@ -62,6 +62,9 @@ integration at all. Instead, it measures max/min acceleration and assumes wave s
 Based on max/min acceleration and observed wave frequency (later adjusted using Doppler effect formulas)
 the method recreates parameters of the trochoid wave allowing it to estimate the wave height.
 
+Initial velocity and position for Kalman filter are taken as estimates from trochoidal model to
+allow Kalman filter to converge faster.
+
 == Trochoidal Waves
 
 Gravitational {nbsp} stem:[g] {nbsp} (m/s^2): {nbsp}{nbsp}{nbsp}
@@ -104,17 +107,17 @@ stem:[f = 1 / T = c / L]
 Vertical motion is harmonic.
 
 Vertical displacement:
-stem:[Z(t) = - H cos(k c t) = - L / (2 pi) (a(t))/g ]
+stem:[Z(t) = - H cos(k c t) = - L / (2 pi) (a(t))/g]
 
 Vertical velocity:
-stem:[u(t) = Z^'(t) = k c H sin(k c t)]
+stem:[u(t) = Z^'(t) = k c H sin(k c t) = c e ^ ((2 pi b) / L) sin(k c t)]
 
-stem:[u_max = c e ^ ((2 pi b) / L]
+stem:[u_max = c e ^ ((2 pi b) / L)]
 
 stem:[u_max(b=0) = c]
 
 Vertical acceleration:
-stem:[a(t) = u^'(t) = k^2 c^2 H cos(k c t)]
+stem:[a(t) = u^'(t) = k^2 c^2 H cos(k c t) = g e ^ ((2 pi b) / L) cos(k c t)]
 
 stem:[a_max = -a_min = k^2 c^2 H =  ((2 pi) / L) ^ 2 ((g L) / (2 pi)) L / (2 pi) e^((2 pi b)/L) = g e^((2 pi b)/L)  ]
 
@@ -124,7 +127,7 @@ Slope stem:[s(t)]:
 
 stem:[x_b(t) = X(t) - t Delta v]
 
-stem:[s(t) = d/ (dx_b) ((Z(t)) / (x_b(t))) =  (d/dt(Z)) / (d/dt(x_b)) = (d/dt(- H cos(k c t))) / (d/dt(H sin(ckt) - t Delta v)) = (cHk sin(ckt)) / (cHk cos(ckt) - Delta v)]
+stem:[s(t) = d/ (dx_b) ((Z(t)) / (x_b(t))) =  (d/dt(Z)) / (d/dt(x_b)) = (d/dt(- H cos(kct))) / (d/dt(H sin(kct) - t Delta v)) = (cHk sin(kct)) / (cHk cos(kct) - Delta v)]
 
 
 === Doppler effect
@@ -158,7 +161,7 @@ stem:[a_(observed_max) = H k^2 (c^2 + 2 c Delta v + (Delta v)^2)] =>
 
 stem:[H = H(L, Delta v) = a_(observed_max) / (k^2 (c^2 + 2 c Delta v + (Delta v)^2)) ]
 
-
+stem:[a_max = a_(observed_max) c^2 / (c^2 + 2 c Delta v + (Delta v)^2)]
 
 == Trigonometry of a boat movement
 
