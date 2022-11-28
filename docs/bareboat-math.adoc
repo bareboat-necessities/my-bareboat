@@ -441,6 +441,11 @@ stem:[vel_\text{init} =  kcH cos(kct) * s_\text{init}(Delta v = 0) = (kcH) / (co
 
 stem:[const_2] to be found empirically (it's vessel specific too).
 
+Or
+
+stem:[vel_\text{init} = c e^((2 pi b)/L) sin (arccos (a_\text{init} / g e^(-(2 pi b)/ L))) * sign(\p\itch_\text{init}) ]
+
+
 * t_start, t_end - time interval of measurements (about 5 mins)
 * POS(t) as LAT(t), LON(t)
 * AWA(t) AWS(t)
