@@ -428,8 +428,11 @@ So for initial position and speed in Kalman filter:
 
 stem:[pos_\text{init} = - a_\text{init} / (k^2 c^2) = - a_\text{init} / (g k) = - L a_\text{init} / (2 pi g) ]
 
-stem:[vel_\text{init} = k_2 * tan(\p\itch_\text{init}), k_2 > 0 ]
+stem:[tan(\p\i\tch_\text{init}) = const_1 * s_\text{init}(Delta v = 0)] {nbsp}{nbsp} tangent of pitch is proportional to wave slope
 
+stem:[vel_\text{init} =  kcH cos(kct) * s_\text{init}(Delta v = 0) = (kcH) / (const_1) sin(\p\itch_\text{init}) = const_2 * sin(\p\itch_\text{init}) sqrt(L) ],
+
+stem:[const_2] to be found empirically (it's vessel specific too).
 
 * t_start, t_end - time interval of measurements (about 5 mins)
 * POS(t) as LAT(t), LON(t)
