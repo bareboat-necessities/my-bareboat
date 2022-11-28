@@ -417,6 +417,11 @@ should be in minutes to capture several waves. Playing with reference data witho
 shows described Kalman algorithm needs about 10 wavelength to converge accurately.
 So with longer way samples needs to be longer. 5-15 mins.
 
+Could difference in phase between acceleration and pitch give more hit to set initial
+speed so the algorithm can converge faster?
+
+Does pitch(t) and slope s(t) follow same phase?
+
 * t_start, t_end - time interval of measurements (about 5 mins)
 * POS(t) as LAT(t), LON(t)
 * AWA(t) AWS(t)
