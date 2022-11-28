@@ -424,6 +424,14 @@ Acceleration positive => position negative. They are in counter phase. This coul
 
 Pitch negative => speed vector is pointing down. This could also allow setting initial velocity for Kalman filter better.
 
+So for initial position and speed in Kalman filter:
+
+stem:[pos_\text{init} = - k_1 * a_\text{init}, k_1 > 0 ]
+
+stem:[vel_\text{init} = k_2 * \p\itch_\text{init}, k_2 > 0 ]
+
+Values of stem:[k_1] and stem:[k_2] to be found empirically.
+
 * t_start, t_end - time interval of measurements (about 5 mins)
 * POS(t) as LAT(t), LON(t)
 * AWA(t) AWS(t)
