@@ -426,11 +426,10 @@ Pitch negative => speed vector is pointing down. This could also allow setting i
 
 So for initial position and speed in Kalman filter:
 
-stem:[pos_\text{init} = - k_1 * a_\text{init}, k_1 > 0 ]
+stem:[pos_\text{init} = - a_\text{init} / (k^2 c^2) = - a_\text{init} / (g k) = - L a_\text{init} / (2 pi g) ]
 
-stem:[vel_\text{init} = k_2 * \p\itch_\text{init}, k_2 > 0 ]
+stem:[vel_\text{init} = k_2 * tan(\p\itch_\text{init}), k_2 > 0 ]
 
-Values of stem:[k_1] and stem:[k_2] to be found empirically.
 
 * t_start, t_end - time interval of measurements (about 5 mins)
 * POS(t) as LAT(t), LON(t)
