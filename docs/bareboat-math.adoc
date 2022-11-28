@@ -457,6 +457,7 @@ stem:[const_2] to be found empirically (it's vessel specific too).
 * Depth is deep, i.e. depth > 1/2 wavelength
 * Water current is not changing much (or zero i.e. negligible relative to boat speed)
 * Trochoidal wave model
+* Wave length is twice longer than boat length
 * Approx formula for b, H (in trochoidal wave model)
 
 
