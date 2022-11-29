@@ -336,7 +336,7 @@ stem:[ R = [[ \text{PosIntegral_Variance} \]\] ]
 
 Initial state mean (height integral, height, velocity):
 
-stem:[ X0 = ((0), (0), (0)) ]
+stem:[ X0 = ((0), (\text{height_from_trochoid_model}), (\text{velocity_from_trochoid_model})) ]
 
 Initial state covariance:
 
