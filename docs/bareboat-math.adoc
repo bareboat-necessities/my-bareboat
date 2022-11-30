@@ -462,7 +462,7 @@ stem:[vel_\text{init} = c e^((2 pi b)/L) sin (arccos (a_\text{init} / g e^(-(2 p
 * Depth is deep, i.e. depth > 1/2 wavelength
 * Water current is not changing much (or zero i.e. negligible relative to boat speed)
 * Trochoidal wave model
-* Wave length is twice longer than boat length
+* Wave length is longer than boat length
 * Approx formula for b, H (in trochoidal wave model)
 
 
