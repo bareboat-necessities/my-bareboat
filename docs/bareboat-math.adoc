@@ -508,6 +508,13 @@ Calculation steps:
 * Validate height calculated by Kalman filter against height calculated from max acceleration
 and wavelength with trochoidal model.
 
+== Further ideas
+
+Trochoidal model gives a good reference point. It's easy to go from acceleration to vertical displacement
+in trochoidal model knowing the wavelength. So (I think) it could be a good idea to use trochoidal model estimations
+as input to Kalman filter fusion (instead of zero third integral assumption), as another way to prevent
+displacement integral of acceleration from drift.
+
 
 == References
 
