@@ -464,7 +464,7 @@ stem:[vel_\text{init} = c e^((2 pi b)/L) sin (arccos (a_\text{init} / g e^(-(2 p
 * Trochoidal wave model
 * Wave length is longer than boat length
 * Approx formula for b, H (in trochoidal wave model)
-* Accelerometer installed near vessel's center of mass
+* Accelerometer installed near vessel's center of mass (center of buoyancy)
 * Vessel's geometry and RAO (Response amplitude operator) is not taken into account
 
 
