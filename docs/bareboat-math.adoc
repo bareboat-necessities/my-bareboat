@@ -515,6 +515,8 @@ in trochoidal model knowing the wavelength. So (I think) it could be a good idea
 as input to Kalman filter fusion (instead of zero third integral assumption), as another way to prevent
 displacement integral of acceleration from drift.
 
+Vertical velocity and heel are correlated. It would be interesting to study their interdependencies.
+
 
 == References
 
