@@ -2154,6 +2154,7 @@ Vendors:
 - gadgetpool.de https://www.gadgetpool.eu/
 - Star Tracking https://www.star-tracking.com/
 - Vela-Navega https://vela-navega.com/
+- Pitufino https://www.pitufa.at/pitufino/
 
 Yacht Devices multiplexers stand out from others by also providing a web UI with a dashboard with gauges.
 
@@ -2188,6 +2189,7 @@ TCP/IP gateways:
 - Yacht Devices NMEA 2000 Wi-Fi Gateway YDWG-02
 - Yacht Devices NMEA 2000 Ethernet Gateway YDEN-02
 - NavLink2 digitalyachtamerica.com
+- Pitufino https://www.pitufa.at/pitufino/
 
 OpenCPN TwoCan plugin has a list of compatible with it devices as well.
 
