@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+/*
+html {
+    -moz-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter: gray; /* IE6-9 */
+    filter: grayscale(100%);
+}
+*/
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color:orange;
+    text-decoration:none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover, a:focus {
+    text-decoration:underline;
+}
+
+.desktop {
+    width: 960px;
+    height: 340px;
+    background: #101010;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+.tile {
+    border-radius: 10px;
+    width: 160px;
+    height: 138px;
+    margin: 0px 10px 10px 0px;
+    padding: 8px;
+    color: White;
+    display: inline-block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+}
+
+.toolbar {
+    margin: 0px 6px 2px 0px;
+    color: white;
+    height: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-bar {
+    margin: 0px 10px 10px 0px;
+    color: white;
+    height: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-panel {
+    margin: auto;
+    width: 758px;
+}
+
+.main-icon {
+    width: 100px;
+    height: 110px;
+}
+
+.credits {
+    position: absolute;
+    bottom: 2px;
+}
+
+.button-bar span {
+    border-radius: 4px;
+}
+
+    </style>
+    <script>
+function showPanel(prefix, id) {
+  var x = document.getElementById(prefix + id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function show(id) {
+  showPanel('panel', id);
+  showPanel('next-btn', id);
+}
+    </script>
+</head>
+<body style="background: black;">
+<div style="width: 800px; height: 480px;" class="desktop">
+    <div class="toolbar">
+        <span>41°04'.194N</span>
+        <span style="padding-left:4px;">073°02'.097W</span>
+        <span style="padding-left:12px;">COG: 210°T</span>
+        <span style="padding-left:12px;">SOG: &uarr;3.6 kt</span>
+        <span style="padding-left:12px;">BAT: &darr;12.6v</span>
+        <span style="padding-left:12px;">Bilge: Ok</span>
+        <span style="padding-left:12px;">Fuel: 50%</span>
+        <span style="float:right;">12:45pm</span>
+    </div>
+    <div>
+        <div id="next-btn2" style="color: white; padding: 142px 0; display: none; float: left;"
+             onclick="show(2); show(1);">
+            <div style="font-family: Arial, Helvetica, sans-serif; font-size: 24pt;">&nbsp;&lt;&nbsp;</div>
+        </div>
+        <div id="panel1" class="main-panel" style="float: left;">
+            <div class="tile" style="background: Peru;">
+                <div>Chart</div>
+                <div><img src="img/chart2.svg" alt="Chart" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: ForestGreen;">
+                <div>Dashboard</div>
+                <div><img src="img/dashboard2.svg" alt="Dashboard" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: Olive;">
+                <div>Radar</div>
+                <div><img src="img/radar2.svg" alt="Radar" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: RoyalBlue;">
+                <div>Weather</div>
+                <div><img src="img/weather2.svg" alt="Weather" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: SeaGreen;">
+                <div>Camera</div>
+                <div><img src="img/camera2.svg" alt="Camera" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: IndianRed;">
+                <div>Multimedia</div>
+                <div><img src="img/multimedia2.svg" alt="Multimedia" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: SteelBlue;">
+                <div>Internet</div>
+                <div><img src="img/internet2.svg" alt="Internet" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: SaddleBrown;">
+                <div>Settings</div>
+                <div><img src="img/settings2.svg" alt="Settings" class="main-icon"/></div>
+            </div>
+        </div>
+        <div id="panel2" class="main-panel" style="display: none; float: left;">
+            <div class="tile" style="background: Peru;">
+                <div>Power</div>
+                <div><img src="img/power2.svg" alt="Power" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: ForestGreen;">
+                <div>Engine</div>
+                <div><img src="img/engine2.svg" alt="Engine" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: Olive;">
+                <div>Plumbing</div>
+                <div><img src="img/plumbing2.svg" alt="Plumbing" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: RoyalBlue;">
+                <div>Maintenance</div>
+                <div><img src="img/maintenance2.svg" alt="Maintenance" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: SeaGreen;">
+                <div>Apps</div>
+                <div><img src="img/apps2.svg" alt="Apps" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: IndianRed;">
+                <div>Travel</div>
+                <div><img src="img/travel2.svg" alt="Travel" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: SteelBlue;">
+                <div>Paperwork</div>
+                <div><img src="img/paperwork2.svg" alt="Paperwork" class="main-icon"/></div>
+            </div>
+            <div class="tile" style="background: SaddleBrown;">
+                <div>Provisioning</div>
+                <div><img src="img/provisioning2.svg" alt="Provisioning" class="main-icon"/></div>
+            </div>
+        </div>
+        <div id="next-btn1" style="color: white; padding: 142px 0; float: right;">
+            <div style="font-family: Arial, Helvetica, sans-serif; font-size: 24pt;"
+                 onclick="show(1); show(2);">&nbsp;&gt;&nbsp;</div>
+        </div>
+    </div>
+    <div class="toolbar" style="clear: both;">
+        <span>Depth: &uarr;50 ft</span>
+        <span style="padding-left:16px;">AppWind: &uarr;15.2 kt</span>
+        <span style="padding-left:16px;">AtmPress: &uarr;1013.25 mb</span>
+        <span style="padding-left:16px;">RPM: &darr;2000</span>
+        <span style="padding-left:16px;">Tide: &uarr;30%</span>
+        <span style="padding-left:6px; float:right;">Sun&uarr;: 6:60am</span>
+    </div>
+    <div class="toolbar">
+        <span>Near Land: &uarr;10.3nm</span>
+        <span style="padding-left:16px;">Near Vessel: Patagonia &uarr;1.2nm</span>
+        <span style="padding-left:10px;">Class: TugBoat</span>
+        <span style="padding-left:6px; float:right;">Sun&darr;: 7:10pm</span>
+    </div>
+    <div class="button-bar">
+        <span style="padding: 4px; background: red;">Distress: Off</span>
+        <span style="padding: 4px; background: red; margin-left:14px;">MOB: Off</span>
+        <span style="padding: 4px; margin-left:14px;">AnchorWatch: Off</span>
+        <span style="padding: 4px; margin-left:14px; background: white; color: green;">AutoPilot: On</span>
+        <span style="padding: 4px; margin-left:14px; background: white; color: green;">NavLt: On</span>
+        <span style="padding: 4px; margin-left:14px; background: white; color: green;">RunLt: On</span>
+        <span style="padding: 4px; margin-left:14px;">MastHdLt: Off</span>
+    </div>
+    <div class="credits">
+        <div style="color: white;">Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+</div>
+</body>
+</html>
