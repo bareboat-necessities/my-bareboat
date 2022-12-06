@@ -3227,6 +3227,14 @@ https://github.com/vkohaupt/vokoscreenNG
 sudo apt-get -y install vokoscreen
 ----
 
+=== Calculating wave height/period from a moving boat using IMU accelerometer
+
+Also, the link provides a method to estimate true wind from course over ground and actual true heading
+based on apparent wind measurements.
+
+https://bareboat-necessities.github.io/my-bareboat/bareboat-math.html
+
+
 === Finances and Accounting
 
 http://homebank.free.fr/en/
