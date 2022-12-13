@@ -1108,6 +1108,9 @@ aisdecoder  https://www.aishub.net/ais-decoder
 
 rtl_ais  https://github.com/dgiardini/rtl-ais
 
+Starting with BBN Marine OS version 2022-11-10 AIS-Catcher https://github.com/jvde-github/AIS-catcher is included too.
+AIS-Catcher can use many other SDRs apart from RTL to decode AIS.
+
 ===== Other Decoders
 
 Explore HAM Radio menu for more software.
