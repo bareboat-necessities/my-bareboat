@@ -72,7 +72,7 @@ toc::[]
 === Warum BBN OS?
 
 Warum sollte ich BBN OS verwenden? Viele Anwender verwenden ausschliesslich kommerzielle Marine Systeme an Bord, andere verwenden Tablets mit
-Wi-Fi-Multiplexern. All diesen Lösungen fehlt eine wichtige Komponente - ein Bord-Computer, welcher alle Aspekte der Bootssysteme steuern und 
+Wi-Fi-Multiplexern. All diesen Lösungen fehlt eine wichtige Komponente - ein Bord-Computer, welcher alle Aspekte der Bootssysteme steuern und
 überwachen kann und in der Lage ist, Daten zu speichern. Manche Anwender verwenden dafür einen Intel-basierten Computer.
 Intel-basierte Lösungen verbrauchen mehr Energie. Mit BBN OS kannst du dir einen zentralen Bootscomputer bauen, der deinen Anforderungen entspricht.
 Alle dies kann mit einem stromsparenden Raspberry Pi realisiert werden. Er bietet die Möglichkeit unzählige Sensoren hinzuzufügen, mit
@@ -1107,6 +1107,9 @@ stdcdec https://github.com/cropinghigh/stdcdec
 aisdecoder  https://www.aishub.net/ais-decoder
 
 rtl_ais  https://github.com/dgiardini/rtl-ais
+
+Starting with BBN Marine OS version 2022-11-10 AIS-Catcher https://github.com/jvde-github/AIS-catcher is included too.
+AIS-Catcher can use many other SDRs apart from RTL to decode AIS.
 
 ===== Other Decoders
 
