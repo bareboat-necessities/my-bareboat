@@ -126,7 +126,7 @@ https://github.com/bareboat-necessities/lysmarine_gen#download
 
 Alternative place to download if the previous link doesn't work for you:
 
-https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-12-20
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-12-21
 
 Past major LTS release:
 
@@ -2260,6 +2260,8 @@ TCP/IP gateways:
 - NavLink2 digitalyachtamerica.com
 - Pitufino https://www.pitufa.at/pitufino/
 
+Monitoring devices:
+- https://simarine.net/
 
 OpenCPN TwoCan plugin has a list of compatible with it devices as well.
 
