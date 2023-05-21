@@ -1590,7 +1590,12 @@ ESP32 devices can be managed using https://esphome.io
 * In Home assistant add MQTT integration
   Broker: lysmarine
   Port: 2883
-  Subscribe Topic: +/+/#
+  Subscribe Topic: 
+  
+[source]
+----
++/+/#
+----
 
 * Edit /home/homeassistant/.homeassistant/configuration.yaml
 
