@@ -1607,14 +1607,16 @@ mqtt: # SignalK MQTT HA Bridge
   sensor:
     - name: "Wind App Speed"
       unique_id: "speedApparent"
-      device_class: "wind_speed"
+      #device_class: "wind_speed"
       state_topic: "vessels/self/environment/wind/speedApparent"
-      unit_of_measurement: "m/s"
+      unit_of_measurement: "kn"
+      value_template: "{{ value_json * 1.9438452 }}"
  
     - name: "Wind App Angle"    
       unique_id: "angleApparent"
       state_topic: "vessels/self/environment/wind/angleApparent"
-      unit_of_measurement: "rad"
+      unit_of_measurement: "deg"
+      value_template: "{{ value_json * 180 / 3.14159265359 }}"
 ----
 
 
