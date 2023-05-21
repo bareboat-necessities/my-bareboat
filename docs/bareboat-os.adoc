@@ -1591,14 +1591,14 @@ ESP32 devices can be managed using https://esphome.io
   Broker: lysmarine
   Port: 2883
   Subscribe Topic: 
-  
++  
 [source]
 ----
 +/+/#
 ----
 
 * Edit /home/homeassistant/.homeassistant/configuration.yaml
-
++
 [source, yaml]
 ----
 
