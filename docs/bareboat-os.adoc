@@ -1619,6 +1619,7 @@ mqtt: # SignalK MQTT HA Bridge
       value_template: "{{ value_json * 180 / 3.14159265359 }}"
 ----
 
+* Edit Dashboard, Click "Add Card" and you can select to draw gauges, meters, chart, etc views for your sensors 
 
 === SolarThing (Solar Power Monitoring)
 
