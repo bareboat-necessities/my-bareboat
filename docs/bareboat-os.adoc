@@ -1582,6 +1582,37 @@ https://boathackers.com/dynamically-set-location-in-home-assistant-for-boats/
 
 ESP32 devices can be managed using https://esphome.io
 
+==== HomeAssistant with SignalK
+
+* Enable "Signal K - MQTT Home Assistant Bridge" plugin in SignalK
+  (with run local server option, port 2883)
+  
+* In Home assistant add MQTT integration
+  Broker: lysmarine
+  Port: 2883
+  Subscribe Topic: +/+/#
+
+* Edit /home/homeassistant/.homeassistant/configuration.yaml
+
+[source, yaml]
+----
+
+mqtt: # SignalK MQTT HA Bridge
+  # https://developers.home-assistant.io/docs/core/entity/sensor/
+  sensor:
+    - name: "Wind App Speed"
+      unique_id: "speedApparent"
+      device_class: "wind_speed"
+      state_topic: "vessels/self/environment/wind/speedApparent"
+      unit_of_measurement: "m/s"
+ 
+    - name: "Wind App Angle"    
+      unique_id: "angleApparent"
+      state_topic: "vessels/self/environment/wind/angleApparent"
+      unit_of_measurement: "rad"
+----
+
+
 === SolarThing (Solar Power Monitoring)
 
 Yor system includes installed SolarThing. See more at https://github.com/wildmountainfarms/solarthing
