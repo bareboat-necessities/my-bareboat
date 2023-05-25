@@ -1,0 +1,9 @@
+title: My Boat
+views:
+    # View tab title.
+  - title: Boat
+    theme: dark-mode
+    cards:
+      - type: gauge
+        entity: sensor.wind_app_speed
+        needle: true
