@@ -6,11 +6,11 @@ mqtt: # SignalK MQTT HA Bridge
       #device_class: "wind_speed"
       state_topic: "vessels/self/environment/wind/speedApparent"
       unit_of_measurement: "kn"
-      value_template: "{{ value_json * 1.9438452 }}"
+      value_template: "{{ (value_json * 1.9438452) | round(1) }}"
  
     - name: "Wind App Angle"    
       unique_id: "angleApparent"
       state_topic: "vessels/self/environment/wind/angleApparent"
       unit_of_measurement: "deg"
-      value_template: "{{ value_json * 180 / 3.14159265359 }}"
+      value_template: "{{ (value_json * 180 / 3.14159265359) | round(1) }}"
  
