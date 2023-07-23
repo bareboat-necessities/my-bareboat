@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 # SignalK fix for pnpm
-sed -i -e s/--save"'",/"--save-prod'",/g /usr/lib/node_modules/signalk-server/lib/modules.js
+sudo sed -i -e s/--save"'",/"--save-prod'",/g /usr/lib/node_modules/signalk-server/lib/modules.js
 
 echo "Installing DRM"
 
