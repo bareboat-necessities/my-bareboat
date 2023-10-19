@@ -3,13 +3,14 @@
 # SignalK fix for pnpm
 sudo sed -i -e s/--save"'",/"--save-prod'",/g /usr/lib/node_modules/signalk-server/lib/modules.js
 
-echo "Installing DRM"
+#echo "Installing DRM"
 
 # DRM management
 # https://www.widevine.com/
 
 # DRM
-sudo apt-get install -y -q libwidevinecdm0
+# Commented out due to https://github.com/bareboat-necessities/lysmarine_gen/discussions/355
+#sudo apt-get install -y -q libwidevinecdm0
 
 echo "Checking touchscreen fixes"
 if [ -L /dev/twofingtouch ]
