@@ -500,14 +500,6 @@ enable_uart=1
 in your /boot/config.txt to disable conflicting bluetooth UART.
 Your motor controller will use that on-board UART.
 
-Check:
-[source, shell]
-----
-ls -l /dev/serial0
-----
-
-/dev/serial0 must point to /dev/ttyAMA0
-
 On bookworm version you also need to disable the hciuart service, which initialises the Bluetooth modem:
 [source]
 ----
