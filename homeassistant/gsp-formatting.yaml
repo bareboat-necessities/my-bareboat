@@ -1,0 +1,12 @@
+sensor:
+  - platform: template
+    sensors:
+      # Clean formatting for GPS values
+      gps_latitude_clean:
+        friendly_name: "GPS Latitude"
+        value_template: >
+          {{ (states("sensor.gps_latitude") | float * 0.0000001) | round(3) }}
+      gps_longitude_clean:
+        friendly_name: "GPS Longitude"
+        value_template: >
+          {{ (states("sensor.gps_longitude") | float * 0.0000001) | round(3) }}

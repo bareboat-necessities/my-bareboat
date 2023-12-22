@@ -2,9 +2,9 @@
 
 myArch=$(dpkg --print-architecture)
 
-FID=528
+FID=558
 if [ "armhf" != "$myArch" ] ; then
-    FID=529
+    FID=556
     sudo apt-get -y install libsystemd0
 else
     sudo apt-get -y install libsystemd0:armhf

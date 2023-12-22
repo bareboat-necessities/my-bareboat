@@ -1,0 +1,14 @@
+alias: Set Location
+description: ''
+trigger:
+  - platform: time_pattern
+    minutes: /15
+condition: []
+action:
+  - service: homeassistant.set_location
+    data_template:
+      latitude: |
+        {{ states("sensor.gps_latitude_clean") }}
+      longitude: |
+        {{ states("sensor.gps_longitude_clean") }}
+mode: single

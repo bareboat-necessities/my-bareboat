@@ -1,0 +1,229 @@
+# Victron
+modbus:
+  - name: cerbo
+    host: 192.168.1.100
+    type: tcp
+    port: 502
+    switches:
+      - name: Inverter
+        slave: 227
+        address: 33
+        command_on: 3
+        command_off: 4
+        verify:
+          input_type: holding
+          address: 33
+          state_on: 3
+          state_off: 4
+    sensors:
+      # SYSTEM
+      - name: Inverter State
+        slave: 227
+        address: 33
+        data_type: uint16
+        scale: 1
+      - name: "Victron Power Source"
+        data_type: int16
+        slave: 100
+        address: 826
+        scale: 1
+      - name: "Victron Genset Load"
+        data_type: int16
+        unit_of_measurement: "W"
+        slave: 100
+        address: 823
+        scale: 1
+        device_class: power
+        state_class: measurement
+      - name: "Victron AC Consumption"
+        data_type: uint16
+        unit_of_measurement: "W"
+        slave: 100
+        address: 817
+        scale: 1
+        device_class: power
+        state_class: measurement
+      - name: "Victron DC Consumption"
+        data_type: int16
+        unit_of_measurement: "W"
+        slave: 100
+        address: 860
+        scale: 1
+        device_class: power
+        state_class: measurement
+      - name: "Victron Shore Power"
+        data_type: int16
+        unit_of_measurement: "W"
+        slave: 100
+        address: 820
+        scale: 1
+        device_class: power
+        state_class: measurement
+      - name: "Victron Home Battery voltage"
+        data_type: uint16
+        unit_of_measurement: "V"
+        slave: 100
+        address: 840
+        scale: 0.1
+        device_class: voltage
+      - name: "Victron Home Battery Current"
+        data_type: int16
+        unit_of_measurement: "A"
+        slave: 100
+        address: 841
+        scale: 0.1
+        device_class: current
+      - name: "Victron Home Battery Power"
+        data_type: int16
+        unit_of_measurement: "W"
+        slave: 100
+        address: 842
+        scale: 1
+        device_class: power
+      - name: "Victron Home PV Power"
+        data_type: uint16
+        unit_of_measurement: "W"
+        slave: 100
+        address: 850
+        scale: 1
+        device_class: power
+
+        # BMV
+      - name: "Victron Home Battery SOC"
+        data_type: uint16
+        unit_of_measurement: "%"
+        slave: 223
+        address: 266
+        scale: 0.1
+        device_class: battery
+        state_class: measurement
+      - name: "Victron Home Time to go"
+        data_type: uint16
+        unit_of_measurement: "seconds"
+        slave: 223
+        address: 303
+        scale: 100
+      - name: "Victron Time since last full charge"
+        data_type: uint16
+        unit_of_measurement: "seconds"
+        slave: 223
+        address: 289
+        scale: 0
+        # MPPT Solar Arch
+      - name: "Solar Voltage"
+        data_type: uint16
+        unit_of_measurement: "V"
+        slave: 100
+        address: 776
+        scale: 0.01
+        device_class: voltage
+      - name: "Solar Current"
+        data_type: int16
+        unit_of_measurement: "A"
+        slave: 100
+        address: 777
+        scale: 0.1
+        device_class: current
+      - name: "Solar Power"
+        data_type: uint16
+        unit_of_measurement: W
+        slave: 100
+        address: 789
+        scale: 0.1
+        device_class: power
+        state_class: measurement
+      - name: "Solar Operation mode"
+        data_type: uint16
+        slave: 100
+        address: 791
+        scale: 1
+      - name: "Solar Yield today"
+        data_type: uint16
+        unit_of_measurement: "kW"
+        slave: 100
+        address: 784
+        scale: 0.1
+        precision: 3
+        device_class: power
+      - name: "Solar Max power today"
+        data_type: uint16
+        unit_of_measurement: "W"
+        slave: 100
+        address: 785
+        scale: 1
+        device_class: power
+      - name: "Solar Yield yesterday"
+        data_type: uint16
+        unit_of_measurement: "W"
+        slave: 100
+        address: 786
+        scale: 0.1
+        precision: 3
+        device_class: power
+      - name: "Solar Max power yesterday"
+        data_type: uint16
+        unit_of_measurement: "W"
+        slave: 100
+        address: 787
+        scale: 1
+        device_class: power
+        # Tanks
+      - name: "Fuel Tank Port"
+        data_type: uint16
+        unit_of_measurement: "%"
+        slave: 23
+        address: 3004
+        scale: 0.1
+        device_class: humidity
+      - name: "Fuel Tank Starboard"
+        data_type: uint16
+        unit_of_measurement: "%"
+        slave: 22
+        address: 3004
+        scale: 0.1
+        device_class: humidity
+      - name: "Water Tank Aft"
+        data_type: uint16
+        unit_of_measurement: "%"
+        slave: 20
+        address: 3004
+        scale: 0.1
+        device_class: humidity
+      - name: "Water Tank Fwd"
+        data_type: uint16
+        unit_of_measurement: "%"
+        slave: 21
+        address: 3004
+        scale: 0.1
+        device_class: humidity
+        # GPS
+      - name: "GPS Latitude"
+        data_type: int32
+        unit_of_measurement: "deg"
+        slave: 100
+        address: 2800
+      - name: "GPS Longitude"
+        data_type: int32
+        unit_of_measurement: "deg"
+        slave: 100
+        address: 2802
+      - name: "GPS Course"
+        data_type: uint16
+        unit_of_measurement: "deg"
+        slave: 100
+        address: 2804
+        scale: 0.01
+      - name: "GPS Speed"
+        data_type: uint16
+        unit_of_measurement: "m/s"
+        slave: 100
+        address: 2805
+        scale: 0.01
+      - name: "GPS Fix"
+        data_type: uint16
+        slave: 100
+        address: 2806
+      - name: "GPS Satellites"
+        data_type: uint16
+        slave: 100
+        address: 2807

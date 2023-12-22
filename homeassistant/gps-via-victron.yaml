@@ -1,0 +1,39 @@
+# Victron
+modbus:
+  - name: cerbo
+    host: 192.168.13.221
+    type: tcp
+    port: 502
+    
+    sensors:
+        # GPS
+      - name: "GPS Latitude"
+        data_type: int32
+        unit_of_measurement: "deg"
+        slave: 100
+        address: 2800
+      - name: "GPS Longitude"
+        data_type: int32
+        unit_of_measurement: "deg"
+        slave: 100
+        address: 2802
+      - name: "GPS Course"
+        data_type: uint
+        unit_of_measurement: "deg"
+        slave: 100
+        address: 2804
+        scale: 0.01
+      - name: "GPS Speed"
+        data_type: uint
+        unit_of_measurement: "m/s"
+        slave: 100
+        address: 2805
+        scale: 0.01
+      - name: "GPS Fix"
+        data_type: uint
+        slave: 100
+        address: 2806
+      - name: "GPS Satellites"
+        data_type: uint
+        slave: 100
+        address: 2807
