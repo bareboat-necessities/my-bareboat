@@ -508,6 +508,12 @@ ls -l /dev/serial0
 
 /dev/serial0 must point to /dev/ttyAMA0
 
+On bookworm version you also need to disable the hciuart service, which initialises the Bluetooth modem:
+[source]
+----
+sudo systemctl disable hciuart
+----
+
 Serial console must be disabled too. Check /boot/cmdline.txt
 
 You will need to remove /dev/ttyAMA0 from /home/pypilot/.pypilot/blacklist_serial_ports
