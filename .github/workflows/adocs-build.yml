@@ -29,7 +29,7 @@ jobs:
             asciidoctor -b html5 -d book -a icons=font -a toc=left -D /documents/output docs/*.adoc
             asciidoctor-pdf -D /documents/output docs/*.adoc
             cd output ; cp -R ../docs/images images; cp -R ../docs/cockpit-ui cockpit-ui
-            ls -ltr output
+            ls -ltr .
             echo "Done with AsciiDocs"
       - name: Deploy to GH Pages
         uses: peaceiris/actions-gh-pages@v3
