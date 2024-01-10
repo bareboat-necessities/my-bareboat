@@ -5286,7 +5286,7 @@ LoRa antennas are small and usually attached to its devices.</p>
 <p>sudo i2cdetect -y 1 (should show you addresses)</p>
 </li>
 <li>
-<p>Create pypilot connection to signalK (see <a href="https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html#_imu" class="bare">https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html#_imu</a> )</p>
+<p>Do not create pypilot connection to signalK as it creates a data loop (see <a href="https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html#_imu" class="bare">https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html#_imu</a> )</p>
 </li>
 <li>
 <p>Set up barometer feed from SignalK ( <a href="https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html#_barometer_temperature_humidity" class="bare">https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html#_barometer_temperature_humidity</a> )</p>
@@ -5320,10 +5320,8 @@ LoRa antennas are small and usually attached to its devices.</p>
 <p>IMU is read by pypilot, which feeds it via 20220 tcp port using NMEA 0183 format</p>
 </li>
 <li>
-<p>pypilot also needs to have connection via SignalK web socket to port 3000 of signalK</p>
-</li>
-<li>
-<p>That connection needs to be authorized made READ/WRITE in signalK using their token exchange procedure</p>
+<p>Do not create authorized READ/WRITE pypilot connection via SignalK web socket to port 3000 of signalK in signalK
+using their token exchange procedure. (Causes a data loop)</p>
 </li>
 <li>
 <p>GPS is read by signalK by creating NMEA connection to /dev/serial0 port (set correct baud rate), or add it as a device
