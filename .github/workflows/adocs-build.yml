@@ -27,4 +27,4 @@ jobs:
             git config user.name "${{ secrets.GH_USER_NAME }}"
             git config user.email "${{ secrets.GH_USER_EMAIL }}"
             git add . ; git commit -m "Deploy to GitHub Pages"
-            git push --force "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}/${{ github.ref }}" master:gh-pages
+            git push --force "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" master:gh-pages
