@@ -207,7 +207,7 @@ router
 
 Go into network settings menu and delete Wi-Fi wireless access point.
 
-NOTE: You need to set up Wi-Fi country. In Bullseye version Wi-Fi is disabled till you set Wi-Fi country.
+NOTE: You need to set up Wi-Fi country. In Bullseye version Wi-Fi may be disabled till you set Wi-Fi country.
 
 Change /etc/wpa_supplicant/wpa_supplicant.conf to add line for your country (example):
 
@@ -235,7 +235,7 @@ Wi-Fi connections are managed by widely used Gnome NetworkManager. Look for 'nmc
 (command line interface to NetworkManager). Or you can figure it out from Administration/Advanced Network Settings
 app menu. By default, OS image is set up to provide you with an access point.
 
-NOTE: In Bullseye version Wi-Fi is disabled till you set Wi-Fi country.
+NOTE: In Bullseye version Wi-Fi may be disabled till you set Wi-Fi country.
 
 [#tether]
 ==== Using iPhone as Internet gateway
@@ -361,8 +361,6 @@ and remove all partitions from your SSD drive.
 If you have NVMe disk, then instead of sda it will be named as nvme0n1 (or something like that, check /dev/ directory).
 
 Follow the prompts.
-
-NOTE: As of Dec 21, 2021 booting from NVMe drive still considered to be a 'beta' feature.
 
 === Set up GPS
 
