@@ -25,6 +25,11 @@ jobs:
             mkdir -p output
             asciidoctor -b html5 -d book -a icons=font -a toc=left -D /documents/output docs/*.adoc
             asciidoctor-pdf -D /documents/output docs/*.adoc
+            cd output ; cp -R ../docs/images images; cp -R ../docs/cockpit-ui cockpit-ui
             ls -ltr output
             echo "Done with AsciiDocs"
-            cd output ; cp -R ../docs/images images; cp -R ../docs/cockpit-ui cockpit-ui
+      - name: Deploy to GH Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: /documents/output
