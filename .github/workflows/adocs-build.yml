@@ -13,6 +13,7 @@ jobs:
         uses: addnab/docker-run-action@v3
         with:
           image: asciidoctor/docker-asciidoctor:1.17.1
-          options: -v ${{ github.workspace }}:/var/www
+          options: -v ${{ github.workspace }}:/documents/
           run: |
             echo "Publishing AsciiDocs"
+            asciidoctor -b html5 -d book -a icons=font -a toc=left -D /documents/output docs/*.adoc
