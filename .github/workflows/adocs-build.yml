@@ -23,6 +23,7 @@ jobs:
             echo "Done with AsciiDocs"
             cd output ; cp -R ../docs/images images; cp -R ../docs/cockpit-ui cockpit-ui
             git init
+            echo "user ${{ secrets.GH_USER_NAME }}"
             git config user.name "${{ secrets.GH_USER_NAME }}"
             git config user.email "${{ secrets.GH_USER_EMAIL }}"
             git add . ; git commit -m "Deploy to GitHub Pages"
