@@ -16,4 +16,5 @@ jobs:
           options: -v ${{ github.workspace }}:/documents/
           run: |
             echo "Publishing AsciiDocs"
+            mkdir -p output
             asciidoctor -b html5 -d book -a icons=font -a toc=left -D /documents/output docs/*.adoc
