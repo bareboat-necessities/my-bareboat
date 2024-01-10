@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg class="diagram" xmlns="http://www.w3.org/2000/svg" version="1.1" height="944" width="920"
+     style="margin:0 auto 0 auto;">
+    <style>
+        svg.diagram {
+        display:block;
+        font-family:Menlo,Consolas,monospace;
+        font-size:13.08692265257565px;
+        text-align:center;
+        stroke-linecap:round;
+        stroke-width:2px;
+        page-break-inside:avoid;
+        stroke:#000;
+        fill:#000
+        }
+        svg.diagram .opendot {
+        fill:#fff
+        }
+        svg.diagram .shadeddot {
+        fill:#CCC
+        }
+        svg.diagram .dotteddot {
+        stroke:#000;
+        stroke-dasharray:4;
+        fill:none
+        }
+        svg.diagram text {
+        stroke:none
+        }
+    </style>
+    <g transform="translate(8,16 )">
+        <path d="M 8,32 L 8,672 " style="fill:none;"/>
+        <path d="M 8,736 L 8,752 " style="fill:none;"/>
+        <path d="M 24,96 L 24,672 " style="fill:none;"/>
+        <path d="M 24,704 L 24,728 " style="fill:none;"/>
+        <path d="M 40,32 L 40,88 " style="fill:none;"/>
+        <path d="M 40,104 L 40,528 " style="fill:none;"/>
+        <path d="M 56,128 L 56,512 " style="fill:none;"/>
+        <path d="M 64,640 L 64,664 " style="fill:none;"/>
+        <path d="M 64,680 L 64,720 " style="fill:none;"/>
+        <path d="M 72,112 L 72,160 " style="fill:none;"/>
+        <path d="M 96,64 L 96,88 " style="fill:none;"/>
+        <path d="M 96,104 L 96,112 " style="fill:none;"/>
+        <path d="M 112,592 L 112,664 " style="fill:none;"/>
+        <path d="M 112,680 L 112,736 " style="fill:none;"/>
+        <path d="M 120,112 L 120,160 " style="fill:none;"/>
+        <path d="M 136,528 L 136,584 " style="fill:none;"/>
+        <path d="M 136,600 L 136,656 " style="fill:none;"/>
+        <path d="M 144,672 L 144,720 " style="fill:none;"/>
+        <path d="M 160,112 L 160,160 " style="fill:none;"/>
+        <path d="M 160,320 L 160,464 " style="fill:none;"/>
+        <path d="M 168,560 L 168,624 " style="fill:none;"/>
+        <path d="M 184,80 L 184,88 " style="fill:none;"/>
+        <path d="M 184,104 L 184,112 " style="fill:none;"/>
+        <path d="M 192,720 L 192,736 " style="fill:none;"/>
+        <path d="M 208,112 L 208,160 " style="fill:none;"/>
+        <path d="M 216,640 L 216,648 " style="fill:none;"/>
+        <path d="M 216,664 L 216,704 " style="fill:none;"/>
+        <path d="M 232,112 L 232,160 " style="fill:none;"/>
+        <path d="M 240,720 L 240,736 " style="fill:none;"/>
+        <path d="M 256,32 L 256,56 " style="fill:none;"/>
+        <path d="M 256,72 L 256,88 " style="fill:none;"/>
+        <path d="M 256,104 L 256,112 " style="fill:none;"/>
+        <path d="M 272,656 L 272,672 " style="fill:none;"/>
+        <path d="M 272,720 L 272,736 " style="fill:none;"/>
+        <path d="M 280,112 L 280,160 " style="fill:none;"/>
+        <path d="M 280,192 L 280,224 " style="fill:none;"/>
+        <path d="M 280,560 L 280,624 " style="fill:none;"/>
+        <path d="M 288,304 L 288,336 " style="fill:none;"/>
+        <path d="M 288,368 L 288,400 " style="fill:none;"/>
+        <path d="M 288,448 L 288,480 " style="fill:none;"/>
+        <path d="M 304,576 L 304,640 " style="fill:none;"/>
+        <path d="M 312,128 L 312,192 " style="fill:none;"/>
+        <path d="M 312,224 L 312,304 " style="fill:none;"/>
+        <path d="M 312,336 L 312,368 " style="fill:none;"/>
+        <path d="M 312,400 L 312,448 " style="fill:none;"/>
+        <path d="M 312,480 L 312,512 " style="fill:none;"/>
+        <path d="M 320,544 L 320,568 " style="fill:none;"/>
+        <path d="M 320,584 L 320,600 " style="fill:none;"/>
+        <path d="M 320,616 L 320,672 " style="fill:none;"/>
+        <path d="M 320,720 L 320,736 " style="fill:none;"/>
+        <path d="M 336,208 L 336,312 " style="fill:none;"/>
+        <path d="M 336,328 L 336,376 " style="fill:none;"/>
+        <path d="M 336,392 L 336,456 " style="fill:none;"/>
+        <path d="M 336,472 L 336,536 " style="fill:none;"/>
+        <path d="M 336,552 L 336,568 " style="fill:none;"/>
+        <path d="M 336,584 L 336,600 " style="fill:none;"/>
+        <path d="M 336,616 L 336,672 " style="fill:none;"/>
+        <path d="M 336,720 L 336,736 " style="fill:none;"/>
+        <path d="M 344,96 L 344,128 " style="fill:none;"/>
+        <path d="M 352,464 L 352,536 " style="fill:none;"/>
+        <path d="M 352,552 L 352,576 " style="fill:none;"/>
+        <path d="M 368,64 L 368,72 " style="fill:none;"/>
+        <path d="M 368,88 L 368,120 " style="fill:none;"/>
+        <path d="M 368,136 L 368,312 " style="fill:none;"/>
+        <path d="M 368,328 L 368,376 " style="fill:none;"/>
+        <path d="M 368,392 L 368,536 " style="fill:none;"/>
+        <path d="M 368,552 L 368,600 " style="fill:none;"/>
+        <path d="M 368,616 L 368,656 " style="fill:none;"/>
+        <path d="M 384,64 L 384,72 " style="fill:none;"/>
+        <path d="M 384,88 L 384,120 " style="fill:none;"/>
+        <path d="M 384,136 L 384,312 " style="fill:none;"/>
+        <path d="M 384,328 L 384,376 " style="fill:none;"/>
+        <path d="M 384,392 L 384,536 " style="fill:none;"/>
+        <path d="M 384,552 L 384,608 " style="fill:none;"/>
+        <path d="M 384,720 L 384,736 " style="fill:none;"/>
+        <path d="M 400,384 L 400,528 " style="fill:none;"/>
+        <path d="M 400,560 L 400,640 " style="fill:none;"/>
+        <path d="M 408,96 L 408,128 " style="fill:none;"/>
+        <path d="M 416,320 L 416,520 " style="fill:none;"/>
+        <path d="M 416,536 L 416,544 " style="fill:none;"/>
+        <path d="M 416,720 L 416,736 " style="fill:none;"/>
+        <path d="M 432,240 L 432,520 " style="fill:none;"/>
+        <path d="M 432,536 L 432,544 " style="fill:none;"/>
+        <path d="M 440,656 L 440,664 " style="fill:none;"/>
+        <path d="M 440,680 L 440,704 " style="fill:none;"/>
+        <path d="M 448,320 L 448,512 " style="fill:none;"/>
+        <path d="M 464,576 L 464,608 " style="fill:none;"/>
+        <path d="M 464,720 L 464,736 " style="fill:none;"/>
+        <path d="M 472,224 L 472,256 " style="fill:none;"/>
+        <path d="M 472,304 L 472,336 " style="fill:none;"/>
+        <path d="M 480,560 L 480,576 " style="fill:none;"/>
+        <path d="M 480,608 L 480,640 " style="fill:none;"/>
+        <path d="M 496,688 L 496,720 " style="fill:none;"/>
+        <path d="M 520,640 L 520,672 " style="fill:none;"/>
+        <path d="M 536,560 L 536,592 " style="fill:none;"/>
+        <path d="M 536,624 L 536,632 " style="fill:none;"/>
+        <path d="M 536,648 L 536,688 " style="fill:none;"/>
+        <path d="M 544,48 L 544,56 " style="fill:none;"/>
+        <path d="M 544,72 L 544,88 " style="fill:none;"/>
+        <path d="M 544,104 L 544,160 " style="fill:none;"/>
+        <path d="M 552,544 L 552,552 " style="fill:none;"/>
+        <path d="M 552,568 L 552,632 " style="fill:none;"/>
+        <path d="M 552,648 L 552,720 " style="fill:none;"/>
+        <path d="M 560,464 L 560,496 " style="fill:none;"/>
+        <path d="M 576,512 L 576,520 " style="fill:none;"/>
+        <path d="M 576,536 L 576,552 " style="fill:none;"/>
+        <path d="M 576,568 L 576,632 " style="fill:none;"/>
+        <path d="M 576,648 L 576,704 " style="fill:none;"/>
+        <path d="M 584,352 L 584,400 " style="fill:none;"/>
+        <path d="M 592,528 L 592,552 " style="fill:none;"/>
+        <path d="M 592,568 L 592,632 " style="fill:none;"/>
+        <path d="M 592,648 L 592,704 " style="fill:none;"/>
+        <path d="M 608,112 L 608,144 " style="fill:none;"/>
+        <path d="M 608,176 L 608,336 " style="fill:none;"/>
+        <path d="M 608,360 L 608,384 " style="fill:none;"/>
+        <path d="M 608,416 L 608,544 " style="fill:none;"/>
+        <path d="M 608,576 L 608,624 " style="fill:none;"/>
+        <path d="M 608,656 L 608,688 " style="fill:none;"/>
+        <path d="M 624,144 L 624,176 " style="fill:none;"/>
+        <path d="M 624,224 L 624,256 " style="fill:none;"/>
+        <path d="M 624,304 L 624,336 " style="fill:none;"/>
+        <path d="M 624,384 L 624,416 " style="fill:none;"/>
+        <path d="M 624,464 L 624,496 " style="fill:none;"/>
+        <path d="M 624,544 L 624,576 " style="fill:none;"/>
+        <path d="M 624,624 L 624,656 " style="fill:none;"/>
+        <path d="M 648,112 L 648,144 " style="fill:none;"/>
+        <path d="M 672,80 L 672,88 " style="fill:none;"/>
+        <path d="M 672,104 L 672,112 " style="fill:none;"/>
+        <path d="M 696,112 L 696,144 " style="fill:none;"/>
+        <path d="M 720,112 L 720,144 " style="fill:none;"/>
+        <path d="M 736,64 L 736,88 " style="fill:none;"/>
+        <path d="M 736,104 L 736,112 " style="fill:none;"/>
+        <path d="M 752,112 L 752,144 " style="fill:none;"/>
+        <path d="M 768,112 L 768,344 " style="fill:none;"/>
+        <path d="M 768,360 L 768,688 " style="fill:none;"/>
+        <path d="M 784,160 L 784,344 " style="fill:none;"/>
+        <path d="M 784,360 L 784,704 " style="fill:none;"/>
+        <path d="M 792,288 L 792,304 " style="fill:none;"/>
+        <path d="M 800,96 L 800,128 " style="fill:none;"/>
+        <path d="M 800,496 L 800,704 " style="fill:none;"/>
+        <path d="M 816,320 L 816,352 " style="fill:none;"/>
+        <path d="M 824,48 L 824,96 " style="fill:none;"/>
+        <path d="M 840,288 L 840,304 " style="fill:none;"/>
+        <path d="M 856,32 L 856,64 " style="fill:none;"/>
+        <path d="M 856,192 L 856,280 " style="fill:none;"/>
+        <path d="M 856,296 L 856,464 " style="fill:none;"/>
+        <path d="M 856,600 L 856,752 " style="fill:none;"/>
+        <path d="M 888,240 L 888,288 " style="fill:none;"/>
+        <path d="M 24,16 L 840,16 " style="fill:none;"/>
+        <path d="M 40,32 L 256,32 " style="fill:none;"/>
+        <path d="M 544,48 L 824,48 " style="fill:none;"/>
+        <path d="M 96,64 L 368,64 " style="fill:none;"/>
+        <path d="M 384,64 L 736,64 " style="fill:none;"/>
+        <path d="M 184,80 L 248,80 " style="fill:none;"/>
+        <path d="M 264,80 L 536,80 " style="fill:none;"/>
+        <path d="M 552,80 L 672,80 " style="fill:none;"/>
+        <path d="M 24,96 L 344,96 " style="fill:none;"/>
+        <path d="M 408,96 L 800,96 " style="fill:none;"/>
+        <path d="M 824,96 L 896,96 " style="fill:none;"/>
+        <path d="M 72,112 L 88,112 " style="fill:none;"/>
+        <path d="M 104,112 L 120,112 " style="fill:none;"/>
+        <path d="M 160,112 L 176,112 " style="fill:none;"/>
+        <path d="M 192,112 L 208,112 " style="fill:none;"/>
+        <path d="M 232,112 L 248,112 " style="fill:none;"/>
+        <path d="M 264,112 L 280,112 " style="fill:none;"/>
+        <path d="M 608,112 L 664,112 " style="fill:none;"/>
+        <path d="M 680,112 L 728,112 " style="fill:none;"/>
+        <path d="M 744,112 L 768,112 " style="fill:none;"/>
+        <path d="M 56,128 L 72,128 " style="fill:none;"/>
+        <path d="M 120,128 L 160,128 " style="fill:none;"/>
+        <path d="M 208,128 L 232,128 " style="fill:none;"/>
+        <path d="M 280,128 L 312,128 " style="fill:none;"/>
+        <path d="M 344,128 L 408,128 " style="fill:none;"/>
+        <path d="M 800,128 L 896,128 " style="fill:none;"/>
+        <path d="M 608,144 L 624,144 " style="fill:none;"/>
+        <path d="M 648,144 L 696,144 " style="fill:none;"/>
+        <path d="M 720,144 L 752,144 " style="fill:none;"/>
+        <path d="M 72,160 L 120,160 " style="fill:none;"/>
+        <path d="M 160,160 L 208,160 " style="fill:none;"/>
+        <path d="M 232,160 L 280,160 " style="fill:none;"/>
+        <path d="M 544,160 L 608,160 " style="fill:none;"/>
+        <path d="M 784,160 L 896,160 " style="fill:none;"/>
+        <path d="M 608,176 L 624,176 " style="fill:none;"/>
+        <path d="M 280,192 L 320,192 " style="fill:none;"/>
+        <path d="M 320,208 L 336,208 " style="fill:none;"/>
+        <path d="M 280,224 L 320,224 " style="fill:none;"/>
+        <path d="M 472,224 L 624,224 " style="fill:none;"/>
+        <path d="M 432,240 L 464,240 " style="fill:none;"/>
+        <path d="M 472,256 L 624,256 " style="fill:none;"/>
+        <path d="M 808,272 L 824,272 " style="fill:none;"/>
+        <path d="M 848,288 L 888,288 " style="fill:none;"/>
+        <path d="M 288,304 L 320,304 " style="fill:none;"/>
+        <path d="M 472,304 L 624,304 " style="fill:none;"/>
+        <path d="M 96,320 L 160,320 " style="fill:none;"/>
+        <path d="M 320,320 L 416,320 " style="fill:none;"/>
+        <path d="M 448,320 L 464,320 " style="fill:none;"/>
+        <path d="M 288,336 L 320,336 " style="fill:none;"/>
+        <path d="M 472,336 L 624,336 " style="fill:none;"/>
+        <path d="M 584,352 L 816,352 " style="fill:none;"/>
+        <path d="M 288,368 L 320,368 " style="fill:none;"/>
+        <path d="M 320,384 L 400,384 " style="fill:none;"/>
+        <path d="M 608,384 L 624,384 " style="fill:none;"/>
+        <path d="M 288,400 L 320,400 " style="fill:none;"/>
+        <path d="M 584,400 L 608,400 " style="fill:none;"/>
+        <path d="M 608,416 L 624,416 " style="fill:none;"/>
+        <path d="M 288,448 L 320,448 " style="fill:none;"/>
+        <path d="M 320,464 L 352,464 " style="fill:none;"/>
+        <path d="M 560,464 L 624,464 " style="fill:none;"/>
+        <path d="M 288,480 L 320,480 " style="fill:none;"/>
+        <path d="M 560,496 L 624,496 " style="fill:none;"/>
+        <path d="M 800,496 L 896,496 " style="fill:none;"/>
+        <path d="M 56,512 L 160,512 " style="fill:none;"/>
+        <path d="M 176,512 L 208,512 " style="fill:none;"/>
+        <path d="M 224,512 L 312,512 " style="fill:none;"/>
+        <path d="M 448,512 L 576,512 " style="fill:none;"/>
+        <path d="M 40,528 L 136,528 " style="fill:none;"/>
+        <path d="M 400,528 L 592,528 " style="fill:none;"/>
+        <path d="M 832,528 L 896,528 " style="fill:none;"/>
+        <path d="M 320,544 L 416,544 " style="fill:none;"/>
+        <path d="M 432,544 L 552,544 " style="fill:none;"/>
+        <path d="M 608,544 L 624,544 " style="fill:none;"/>
+        <path d="M 168,560 L 280,560 " style="fill:none;"/>
+        <path d="M 400,560 L 480,560 " style="fill:none;"/>
+        <path d="M 536,560 L 608,560 " style="fill:none;"/>
+        <path d="M 832,560 L 896,560 " style="fill:none;"/>
+        <path d="M 312,576 L 352,576 " style="fill:none;"/>
+        <path d="M 464,576 L 480,576 " style="fill:none;"/>
+        <path d="M 608,576 L 624,576 " style="fill:none;"/>
+        <path d="M 112,592 L 160,592 " style="fill:none;"/>
+        <path d="M 480,592 L 536,592 " style="fill:none;"/>
+        <path d="M 832,592 L 896,592 " style="fill:none;"/>
+        <path d="M 288,608 L 296,608 " style="fill:none;"/>
+        <path d="M 312,608 L 384,608 " style="fill:none;"/>
+        <path d="M 464,608 L 480,608 " style="fill:none;"/>
+        <path d="M 168,624 L 280,624 " style="fill:none;"/>
+        <path d="M 488,624 L 536,624 " style="fill:none;"/>
+        <path d="M 608,624 L 624,624 " style="fill:none;"/>
+        <path d="M 64,640 L 80,640 " style="fill:none;"/>
+        <path d="M 96,640 L 104,640 " style="fill:none;"/>
+        <path d="M 216,640 L 296,640 " style="fill:none;"/>
+        <path d="M 400,640 L 480,640 " style="fill:none;"/>
+        <path d="M 520,640 L 608,640 " style="fill:none;"/>
+        <path d="M 136,656 L 272,656 " style="fill:none;"/>
+        <path d="M 368,656 L 440,656 " style="fill:none;"/>
+        <path d="M 608,656 L 624,656 " style="fill:none;"/>
+        <path d="M 24,672 L 144,672 " style="fill:none;"/>
+        <path d="M 384,672 L 520,672 " style="fill:none;"/>
+        <path d="M 496,688 L 536,688 " style="fill:none;"/>
+        <path d="M 608,688 L 768,688 " style="fill:none;"/>
+        <path d="M 8,704 L 24,704 " style="fill:none;"/>
+        <path d="M 208,704 L 224,704 " style="fill:none;"/>
+        <path d="M 288,704 L 304,704 " style="fill:none;"/>
+        <path d="M 352,704 L 368,704 " style="fill:none;"/>
+        <path d="M 592,704 L 784,704 " style="fill:none;"/>
+        <path d="M 592,720 L 784,720 " style="fill:none;"/>
+        <path d="M 24,736 L 48,736 " style="fill:none;"/>
+        <path d="M 112,736 L 128,736 " style="fill:none;"/>
+        <path d="M 208,752 L 224,752 " style="fill:none;"/>
+        <path d="M 288,752 L 304,752 " style="fill:none;"/>
+        <path d="M 352,752 L 368,752 " style="fill:none;"/>
+        <path d="M 432,752 L 448,752 " style="fill:none;"/>
+        <path d="M 24,768 L 840,768 " style="fill:none;"/>
+        <path d="M 272,672 L 288,704 " style="fill:none;"/>
+        <path d="M 336,672 L 352,704 " style="fill:none;"/>
+        <path d="M 304,704 L 320,672 " style="fill:none;"/>
+        <path d="M 368,704 L 384,672 " style="fill:none;"/>
+        <path d="M 24,16 C 7.199999999999999,16 8,32 8,32 " style="fill:none;"/>
+        <path d="M 840,16 C 856.8,16 856,32 856,32 " style="fill:none;"/>
+        <path d="M 888,208 C 871.2,208 872,224 872,224 " style="fill:none;"/>
+        <path d="M 888,208 C 904.8,208 904,224 904,224 " style="fill:none;"/>
+        <path d="M 888,240 C 871.2,240 872,224 872,224 " style="fill:none;"/>
+        <path d="M 888,240 C 904.8,240 904,224 904,224 " style="fill:none;"/>
+        <path d="M 808,272 C 791.2,272 792,288 792,288 " style="fill:none;"/>
+        <path d="M 824,272 C 840.8,272 840,288 840,288 " style="fill:none;"/>
+        <path d="M 808,320 C 791.2,320 792,304 792,304 " style="fill:none;"/>
+        <path d="M 824,320 C 840.8,320 840,304 840,304 " style="fill:none;"/>
+        <path d="M 208,704 C 191.2,704 192,720 192,720 " style="fill:none;"/>
+        <path d="M 224,704 C 240.8,704 240,720 240,720 " style="fill:none;"/>
+        <path d="M 288,704 C 271.2,704 272,720 272,720 " style="fill:none;"/>
+        <path d="M 304,704 C 320.8,704 320,720 320,720 " style="fill:none;"/>
+        <path d="M 352,704 C 335.2,704 336,720 336,720 " style="fill:none;"/>
+        <path d="M 368,704 C 384.8,704 384,720 384,720 " style="fill:none;"/>
+        <path d="M 432,704 C 415.2,704 416,720 416,720 " style="fill:none;"/>
+        <path d="M 448,704 C 464.8,704 464,720 464,720 " style="fill:none;"/>
+        <path d="M 592,720 C 575.2,720 576,704 576,704 " style="fill:none;"/>
+        <path d="M 784,720 C 800.8,720 800,704 800,704 " style="fill:none;"/>
+        <path d="M 64,720 C 43.2,720 43.2,752 64,752 " style="fill:none;"/>
+        <path d="M 64,720 C 84.8,720 84.8,752 64,752 " style="fill:none;"/>
+        <path d="M 144,720 C 123.2,720 123.2,752 144,752 " style="fill:none;"/>
+        <path d="M 144,720 C 164.8,720 164.8,752 144,752 " style="fill:none;"/>
+        <path d="M 496,720 C 475.2,720 475.2,752 496,752 " style="fill:none;"/>
+        <path d="M 496,720 C 516.8,720 516.8,752 496,752 " style="fill:none;"/>
+        <path d="M 552,720 C 531.2,720 531.2,752 552,752 " style="fill:none;"/>
+        <path d="M 552,720 C 572.8,720 572.8,752 552,752 " style="fill:none;"/>
+        <path d="M 208,752 C 191.2,752 192,736 192,736 " style="fill:none;"/>
+        <path d="M 224,752 C 240.8,752 240,736 240,736 " style="fill:none;"/>
+        <path d="M 288,752 C 271.2,752 272,736 272,736 " style="fill:none;"/>
+        <path d="M 304,752 C 320.8,752 320,736 320,736 " style="fill:none;"/>
+        <path d="M 352,752 C 335.2,752 336,736 336,736 " style="fill:none;"/>
+        <path d="M 368,752 C 384.8,752 384,736 384,736 " style="fill:none;"/>
+        <path d="M 432,752 C 415.2,752 416,736 416,736 " style="fill:none;"/>
+        <path d="M 448,752 C 464.8,752 464,736 464,736 " style="fill:none;"/>
+        <path d="M 24,768 C 7.199999999999999,768 8,752 8,752 " style="fill:none;"/>
+        <path d="M 840,768 C 856.8,768 856,752 856,752 " style="fill:none;"/>
+        <polygon points="904,160 892,154.4 892,165.6 " style="stroke:none" transform="rotate(0,896,160 )"/>
+        <polygon points="904,128 892,122.4 892,133.6 " style="stroke:none" transform="rotate(0,896,128 )"/>
+        <polygon points="904,96 892,90.4 892,101.6 " style="stroke:none" transform="rotate(0,896,96 )"/>
+        <polygon points="872,592 860,586.4 860,597.6 " style="stroke:none" transform="rotate(0,864,592 )"/>
+        <polygon points="856,288 844,282.4 844,293.6 " style="stroke:none" transform="rotate(180,848,288 )"/>
+        <polygon points="840,592 828,586.4 828,597.6 " style="stroke:none" transform="rotate(180,832,592 )"/>
+        <polygon points="840,560 828,554.4 828,565.6 " style="stroke:none" transform="rotate(180,832,560 )"/>
+        <polygon points="840,528 828,522.4 828,533.6 " style="stroke:none" transform="rotate(180,832,528 )"/>
+        <polygon points="840,496 828,490.4 828,501.6 " style="stroke:none" transform="rotate(180,832,496 )"/>
+        <polygon points="824,320 812,314.4 812,325.6 " style="stroke:none" transform="rotate(270,816,320 )"/>
+        <path d="M 784,360  C 790,360 790,344 784,344 " style="fill:none;"/>
+        <polygon points="744,112 732,106.4 732,117.6 " style="stroke:none" transform="rotate(90,736,112 )"/>
+        <path d="M 736,104  C 742,104 742,88 736,88 " style="fill:none;"/>
+        <polygon points="680,112 668,106.4 668,117.6 " style="stroke:none" transform="rotate(90,672,112 )"/>
+        <path d="M 672,104  C 678,104 678,88 672,88 " style="fill:none;"/>
+        <rect x="612" y="632" width="8" height="16" stroke="none" fill="rgb(0,0,0)"/>
+        <rect x="612" y="552" width="8" height="16" stroke="none" fill="rgb(0,0,0)"/>
+        <rect x="612" y="472" width="8" height="16" stroke="none" fill="rgb(0,0,0)"/>
+        <rect x="612" y="392" width="8" height="16" stroke="none" fill="rgb(0,0,0)"/>
+        <rect x="612" y="312" width="8" height="16" stroke="none" fill="rgb(0,0,0)"/>
+        <rect x="612" y="232" width="8" height="16" stroke="none" fill="rgb(0,0,0)"/>
+        <rect x="612" y="152" width="8" height="16" stroke="none" fill="rgb(0,0,0)"/>
+        <polygon points="616,640 604,634.4 604,645.6 " style="stroke:none" transform="rotate(0,608,640 )"/>
+        <polygon points="616,560 604,554.4 604,565.6 " style="stroke:none" transform="rotate(0,608,560 )"/>
+        <polygon points="616,400 604,394.4 604,405.6 " style="stroke:none" transform="rotate(0,608,400 )"/>
+        <polygon points="616,160 604,154.4 604,165.6 " style="stroke:none" transform="rotate(0,608,160 )"/>
+        <path d="M 592,648  C 598,648 598,632 592,632 " style="fill:none;"/>
+        <path d="M 592,568  C 598,568 598,552 592,552 " style="fill:none;"/>
+        <path d="M 576,648  C 582,648 582,632 576,632 " style="fill:none;"/>
+        <path d="M 576,568  C 582,568 582,552 576,552 " style="fill:none;"/>
+        <path d="M 576,536  C 582,536 582,520 576,520 " style="fill:none;"/>
+        <path d="M 552,648  C 558,648 558,632 552,632 " style="fill:none;"/>
+        <path d="M 552,568  C 558,568 558,552 552,552 " style="fill:none;"/>
+        <path d="M 544,104  C 550,104 550,88 544,88 " style="fill:none;"/>
+        <path d="M 544,72  C 550,72 550,56 544,56 " style="fill:none;"/>
+        <path d="M 536,648  C 542,648 542,632 536,632 " style="fill:none;"/>
+        <polygon points="496,624 484,618.4 484,629.6 " style="stroke:none" transform="rotate(180,488,624 )"/>
+        <polygon points="488,592 476,586.4 476,597.6 " style="stroke:none" transform="rotate(180,480,592 )"/>
+        <polygon points="472,320 460,314.4 460,325.6 " style="stroke:none" transform="rotate(0,464,320 )"/>
+        <polygon points="472,240 460,234.4 460,245.6 " style="stroke:none" transform="rotate(0,464,240 )"/>
+        <polygon points="448,704 436,698.4 436,709.6 " style="stroke:none" transform="rotate(90,440,704 )"/>
+        <path d="M 440,680  C 446,680 446,664 440,664 " style="fill:none;"/>
+        <path d="M 432,536  C 438,536 438,520 432,520 " style="fill:none;"/>
+        <path d="M 416,536  C 422,536 422,520 416,520 " style="fill:none;"/>
+        <path d="M 384,552  C 390,552 390,536 384,536 " style="fill:none;"/>
+        <path d="M 384,392  C 390,392 390,376 384,376 " style="fill:none;"/>
+        <path d="M 384,328  C 390,328 390,312 384,312 " style="fill:none;"/>
+        <path d="M 384,136  C 390,136 390,120 384,120 " style="fill:none;"/>
+        <path d="M 384,88  C 390,88 390,72 384,72 " style="fill:none;"/>
+        <path d="M 368,616  C 374,616 374,600 368,600 " style="fill:none;"/>
+        <path d="M 368,552  C 374,552 374,536 368,536 " style="fill:none;"/>
+        <path d="M 368,392  C 374,392 374,376 368,376 " style="fill:none;"/>
+        <path d="M 368,328  C 374,328 374,312 368,312 " style="fill:none;"/>
+        <path d="M 368,136  C 374,136 374,120 368,120 " style="fill:none;"/>
+        <path d="M 368,88  C 374,88 374,72 368,72 " style="fill:none;"/>
+        <path d="M 352,552  C 358,552 358,536 352,536 " style="fill:none;"/>
+        <path d="M 336,616  C 342,616 342,600 336,600 " style="fill:none;"/>
+        <path d="M 336,584  C 342,584 342,568 336,568 " style="fill:none;"/>
+        <path d="M 336,552  C 342,552 342,536 336,536 " style="fill:none;"/>
+        <path d="M 336,472  C 342,472 342,456 336,456 " style="fill:none;"/>
+        <path d="M 336,392  C 342,392 342,376 336,376 " style="fill:none;"/>
+        <path d="M 336,328  C 342,328 342,312 336,312 " style="fill:none;"/>
+        <path d="M 320,616  C 326,616 326,600 320,600 " style="fill:none;"/>
+        <path d="M 320,584  C 326,584 326,568 320,568 " style="fill:none;"/>
+        <polygon points="328,464 316,458.4 316,469.6 " style="stroke:none" transform="rotate(180,320,464 )"/>
+        <polygon points="328,384 316,378.4 316,389.6 " style="stroke:none" transform="rotate(180,320,384 )"/>
+        <polygon points="328,320 316,314.4 316,325.6 " style="stroke:none" transform="rotate(180,320,320 )"/>
+        <polygon points="328,208 316,202.4 316,213.6 " style="stroke:none" transform="rotate(180,320,208 )"/>
+        <polygon points="264,112 252,106.4 252,117.6 " style="stroke:none" transform="rotate(90,256,112 )"/>
+        <path d="M 256,104  C 262,104 262,88 256,88 " style="fill:none;"/>
+        <path d="M 256,72  C 262,72 262,56 256,56 " style="fill:none;"/>
+        <path d="M 216,664  C 222,664 222,648 216,648 " style="fill:none;"/>
+        <polygon points="192,112 180,106.4 180,117.6 " style="stroke:none" transform="rotate(90,184,112 )"/>
+        <path d="M 184,104  C 190,104 190,88 184,88 " style="fill:none;"/>
+        <path d="M 136,600  C 142,600 142,584 136,584 " style="fill:none;"/>
+        <path d="M 112,680  C 118,680 118,664 112,664 " style="fill:none;"/>
+        <polygon points="104,112 92,106.4 92,117.6 " style="stroke:none" transform="rotate(90,96,112 )"/>
+        <path d="M 96,104  C 102,104 102,88 96,88 " style="fill:none;"/>
+        <path d="M 64,680  C 70,680 70,664 64,664 " style="fill:none;"/>
+        <path d="M 40,104  C 46,104 46,88 40,88 " style="fill:none;"/>
+        <polygon points="32,728 20,722.4 20,733.6 " style="stroke:none" transform="rotate(90,24,728 )"/>
+        <circle cx="112" cy="640" r="6" class="closeddot"/>
+        <circle cx="168" cy="592" r="6" class="opendot"/>
+        <circle cx="280" cy="608" r="6" class="opendot"/>
+        <circle cx="304" cy="576" r="6" class="opendot"/>
+        <circle cx="304" cy="608" r="6" class="closeddot"/>
+        <circle cx="304" cy="640" r="6" class="opendot"/>
+        <g transform="translate(0,0)">
+            <text text-anchor="middle" x="848" y="84">U</text>
+            <text text-anchor="middle" x="856" y="84">S</text>
+            <text text-anchor="middle" x="864" y="84">B</text>
+            <text text-anchor="middle" x="880" y="84">3</text>
+            <text text-anchor="middle" x="904" y="100">&gt;</text>
+            <text text-anchor="middle" x="832" y="116">1</text>
+            <text text-anchor="middle" x="840" y="116">2</text>
+            <text text-anchor="middle" x="848" y="116">V</text>
+            <text text-anchor="middle" x="864" y="116">D</text>
+            <text text-anchor="middle" x="872" y="116">C</text>
+            <text text-anchor="middle" x="88" y="132">╭</text>
+            <text text-anchor="middle" x="96" y="132">─</text>
+            <text text-anchor="middle" x="104" y="132">╮</text>
+            <text text-anchor="middle" x="176" y="132">▃</text>
+            <text text-anchor="middle" x="184" y="132">▃</text>
+            <text text-anchor="middle" x="192" y="132">▃</text>
+            <text text-anchor="middle" x="248" y="132">▃</text>
+            <text text-anchor="middle" x="256" y="132">▃</text>
+            <text text-anchor="middle" x="264" y="132">▃</text>
+            <text text-anchor="middle" x="672" y="132">▇</text>
+            <text text-anchor="middle" x="736" y="132">◎</text>
+            <text text-anchor="middle" x="904" y="132">&gt;</text>
+            <text text-anchor="middle" x="64" y="148">▀</text>
+            <text text-anchor="middle" x="88" y="148">╰</text>
+            <text text-anchor="middle" x="96" y="148">─</text>
+            <text text-anchor="middle" x="104" y="148">╯</text>
+            <text text-anchor="middle" x="128" y="148">▀</text>
+            <text text-anchor="middle" x="176" y="148">▃</text>
+            <text text-anchor="middle" x="184" y="148">▃</text>
+            <text text-anchor="middle" x="192" y="148">▃</text>
+            <text text-anchor="middle" x="248" y="148">▃</text>
+            <text text-anchor="middle" x="256" y="148">▃</text>
+            <text text-anchor="middle" x="264" y="148">▃</text>
+            <text text-anchor="middle" x="848" y="148">H</text>
+            <text text-anchor="middle" x="856" y="148">D</text>
+            <text text-anchor="middle" x="864" y="148">M</text>
+            <text text-anchor="middle" x="872" y="148">I</text>
+            <text text-anchor="middle" x="640" y="164">▀</text>
+            <text text-anchor="middle" x="904" y="164">&gt;</text>
+            <text text-anchor="middle" x="72" y="180">e</text>
+            <text text-anchor="middle" x="80" y="180">t</text>
+            <text text-anchor="middle" x="88" y="180">h</text>
+            <text text-anchor="middle" x="96" y="180">0</text>
+            <text text-anchor="middle" x="112" y="180">:</text>
+            <text text-anchor="middle" x="120" y="180">:</text>
+            <text text-anchor="middle" x="160" y="180">2</text>
+            <text text-anchor="middle" x="168" y="180">/</text>
+            <text text-anchor="middle" x="176" y="180">U</text>
+            <text text-anchor="middle" x="184" y="180">S</text>
+            <text text-anchor="middle" x="192" y="180">B</text>
+            <text text-anchor="middle" x="208" y="180">3</text>
+            <text text-anchor="middle" x="232" y="180">2</text>
+            <text text-anchor="middle" x="240" y="180">/</text>
+            <text text-anchor="middle" x="248" y="180">U</text>
+            <text text-anchor="middle" x="256" y="180">S</text>
+            <text text-anchor="middle" x="264" y="180">B</text>
+            <text text-anchor="middle" x="280" y="180">2</text>
+            <text text-anchor="middle" x="808" y="180">t</text>
+            <text text-anchor="middle" x="816" y="180">o</text>
+            <text text-anchor="middle" x="832" y="180">c</text>
+            <text text-anchor="middle" x="840" y="180">o</text>
+            <text text-anchor="middle" x="848" y="180">c</text>
+            <text text-anchor="middle" x="856" y="180">k</text>
+            <text text-anchor="middle" x="864" y="180">p</text>
+            <text text-anchor="middle" x="872" y="180">i</text>
+            <text text-anchor="middle" x="880" y="180">t</text>
+            <text text-anchor="middle" x="72" y="196">:</text>
+            <text text-anchor="middle" x="80" y="196">:</text>
+            <text text-anchor="middle" x="664" y="196">7</text>
+            <text text-anchor="middle" x="672" y="196">-</text>
+            <text text-anchor="middle" x="680" y="196">P</text>
+            <text text-anchor="middle" x="688" y="196">o</text>
+            <text text-anchor="middle" x="696" y="196">r</text>
+            <text text-anchor="middle" x="704" y="196">t</text>
+            <text text-anchor="middle" x="72" y="212">:</text>
+            <text text-anchor="middle" x="80" y="212">:</text>
+            <text text-anchor="middle" x="304" y="212">◯</text>
+            <text text-anchor="middle" x="672" y="212">U</text>
+            <text text-anchor="middle" x="680" y="212">S</text>
+            <text text-anchor="middle" x="688" y="212">B</text>
+            <text text-anchor="middle" x="704" y="212">3</text>
+            <text text-anchor="middle" x="72" y="228">:</text>
+            <text text-anchor="middle" x="80" y="228">:</text>
+            <text text-anchor="middle" x="168" y="228">P</text>
+            <text text-anchor="middle" x="176" y="228">i</text>
+            <text text-anchor="middle" x="192" y="228">4</text>
+            <text text-anchor="middle" x="664" y="228">P</text>
+            <text text-anchor="middle" x="672" y="228">o</text>
+            <text text-anchor="middle" x="680" y="228">w</text>
+            <text text-anchor="middle" x="688" y="228">e</text>
+            <text text-anchor="middle" x="696" y="228">r</text>
+            <text text-anchor="middle" x="704" y="228">e</text>
+            <text text-anchor="middle" x="712" y="228">d</text>
+            <text text-anchor="middle" x="888" y="228">G</text>
+            <text text-anchor="middle" x="72" y="244">:</text>
+            <text text-anchor="middle" x="80" y="244">:</text>
+            <text text-anchor="middle" x="168" y="244">4</text>
+            <text text-anchor="middle" x="184" y="244">G</text>
+            <text text-anchor="middle" x="192" y="244">b</text>
+            <text text-anchor="middle" x="496" y="244">R</text>
+            <text text-anchor="middle" x="504" y="244">T</text>
+            <text text-anchor="middle" x="512" y="244">L</text>
+            <text text-anchor="middle" x="520" y="244">-</text>
+            <text text-anchor="middle" x="528" y="244">S</text>
+            <text text-anchor="middle" x="536" y="244">D</text>
+            <text text-anchor="middle" x="544" y="244">R</text>
+            <text text-anchor="middle" x="640" y="244">▀</text>
+            <text text-anchor="middle" x="680" y="244">H</text>
+            <text text-anchor="middle" x="688" y="244">u</text>
+            <text text-anchor="middle" x="696" y="244">b</text>
+            <text text-anchor="middle" x="72" y="260">:</text>
+            <text text-anchor="middle" x="80" y="260">:</text>
+            <text text-anchor="middle" x="224" y="260">▃</text>
+            <text text-anchor="middle" x="232" y="260">▃</text>
+            <text text-anchor="middle" x="240" y="260">▃</text>
+            <text text-anchor="middle" x="248" y="260">▃</text>
+            <text text-anchor="middle" x="256" y="260">▃</text>
+            <text text-anchor="middle" x="264" y="260">▃</text>
+            <text text-anchor="middle" x="272" y="260">▃</text>
+            <text text-anchor="middle" x="280" y="260">▃</text>
+            <text text-anchor="middle" x="288" y="260">▃</text>
+            <text text-anchor="middle" x="296" y="260">▃</text>
+            <text text-anchor="middle" x="672" y="260">5</text>
+            <text text-anchor="middle" x="680" y="260">V</text>
+            <text text-anchor="middle" x="696" y="260">D</text>
+            <text text-anchor="middle" x="704" y="260">C</text>
+            <text text-anchor="middle" x="72" y="276">:</text>
+            <text text-anchor="middle" x="80" y="276">:</text>
+            <text text-anchor="middle" x="72" y="292">:</text>
+            <text text-anchor="middle" x="80" y="292">:</text>
+            <text text-anchor="middle" x="144" y="292">f</text>
+            <text text-anchor="middle" x="152" y="292">a</text>
+            <text text-anchor="middle" x="160" y="292">n</text>
+            <text text-anchor="middle" x="176" y="292">t</text>
+            <text text-anchor="middle" x="184" y="292">o</text>
+            <text text-anchor="middle" x="200" y="292">3</text>
+            <text text-anchor="middle" x="208" y="292">V</text>
+            <text text-anchor="middle" x="480" y="292">3</text>
+            <text text-anchor="middle" x="496" y="292">L</text>
+            <text text-anchor="middle" x="504" y="292">E</text>
+            <text text-anchor="middle" x="512" y="292">D</text>
+            <text text-anchor="middle" x="520" y="292">s</text>
+            <text text-anchor="middle" x="808" y="292">▃</text>
+            <text text-anchor="middle" x="816" y="292">▃</text>
+            <text text-anchor="middle" x="824" y="292">▃</text>
+            <text text-anchor="middle" x="72" y="308">:</text>
+            <text text-anchor="middle" x="80" y="308">:</text>
+            <text text-anchor="middle" x="144" y="308">h</text>
+            <text text-anchor="middle" x="152" y="308">e</text>
+            <text text-anchor="middle" x="160" y="308">a</text>
+            <text text-anchor="middle" x="168" y="308">t</text>
+            <text text-anchor="middle" x="176" y="308">s</text>
+            <text text-anchor="middle" x="184" y="308">i</text>
+            <text text-anchor="middle" x="192" y="308">n</text>
+            <text text-anchor="middle" x="200" y="308">k</text>
+            <text text-anchor="middle" x="208" y="308">s</text>
+            <text text-anchor="middle" x="872" y="308">G</text>
+            <text text-anchor="middle" x="880" y="308">P</text>
+            <text text-anchor="middle" x="888" y="308">S</text>
+            <text text-anchor="middle" x="72" y="324">:</text>
+            <text text-anchor="middle" x="80" y="324">:</text>
+            <text text-anchor="middle" x="240" y="324">H</text>
+            <text text-anchor="middle" x="248" y="324">D</text>
+            <text text-anchor="middle" x="256" y="324">M</text>
+            <text text-anchor="middle" x="264" y="324">I</text>
+            <text text-anchor="middle" x="272" y="324">1</text>
+            <text text-anchor="middle" x="304" y="324">▍</text>
+            <text text-anchor="middle" x="488" y="324">▚</text>
+            <text text-anchor="middle" x="496" y="324">▘</text>
+            <text text-anchor="middle" x="512" y="324">S</text>
+            <text text-anchor="middle" x="520" y="324">e</text>
+            <text text-anchor="middle" x="528" y="324">r</text>
+            <text text-anchor="middle" x="536" y="324">i</text>
+            <text text-anchor="middle" x="544" y="324">a</text>
+            <text text-anchor="middle" x="552" y="324">l</text>
+            <text text-anchor="middle" x="568" y="324">R</text>
+            <text text-anchor="middle" x="576" y="324">S</text>
+            <text text-anchor="middle" x="584" y="324">4</text>
+            <text text-anchor="middle" x="592" y="324">2</text>
+            <text text-anchor="middle" x="600" y="324">2</text>
+            <text text-anchor="middle" x="640" y="324">▀</text>
+            <text text-anchor="middle" x="872" y="324">m</text>
+            <text text-anchor="middle" x="880" y="324">o</text>
+            <text text-anchor="middle" x="888" y="324">u</text>
+            <text text-anchor="middle" x="896" y="324">s</text>
+            <text text-anchor="middle" x="904" y="324">e</text>
+            <text text-anchor="middle" x="72" y="340">:</text>
+            <text text-anchor="middle" x="80" y="340">:</text>
+            <text text-anchor="middle" x="112" y="340">I</text>
+            <text text-anchor="middle" x="120" y="340">M</text>
+            <text text-anchor="middle" x="128" y="340">U</text>
+            <text text-anchor="middle" x="72" y="356">:</text>
+            <text text-anchor="middle" x="80" y="356">:</text>
+            <text text-anchor="middle" x="112" y="356">h</text>
+            <text text-anchor="middle" x="120" y="356">a</text>
+            <text text-anchor="middle" x="128" y="356">t</text>
+            <text text-anchor="middle" x="72" y="372">:</text>
+            <text text-anchor="middle" x="80" y="372">:</text>
+            <text text-anchor="middle" x="96" y="372">c</text>
+            <text text-anchor="middle" x="104" y="372">o</text>
+            <text text-anchor="middle" x="112" y="372">m</text>
+            <text text-anchor="middle" x="120" y="372">p</text>
+            <text text-anchor="middle" x="128" y="372">a</text>
+            <text text-anchor="middle" x="136" y="372">s</text>
+            <text text-anchor="middle" x="144" y="372">s</text>
+            <text text-anchor="middle" x="72" y="388">:</text>
+            <text text-anchor="middle" x="80" y="388">:</text>
+            <text text-anchor="middle" x="104" y="388">g</text>
+            <text text-anchor="middle" x="112" y="388">y</text>
+            <text text-anchor="middle" x="120" y="388">r</text>
+            <text text-anchor="middle" x="128" y="388">o</text>
+            <text text-anchor="middle" x="240" y="388">H</text>
+            <text text-anchor="middle" x="248" y="388">D</text>
+            <text text-anchor="middle" x="256" y="388">M</text>
+            <text text-anchor="middle" x="264" y="388">I</text>
+            <text text-anchor="middle" x="272" y="388">0</text>
+            <text text-anchor="middle" x="304" y="388">▍</text>
+            <text text-anchor="middle" x="72" y="404">:</text>
+            <text text-anchor="middle" x="80" y="404">:</text>
+            <text text-anchor="middle" x="96" y="404">a</text>
+            <text text-anchor="middle" x="104" y="404">c</text>
+            <text text-anchor="middle" x="112" y="404">c</text>
+            <text text-anchor="middle" x="120" y="404">e</text>
+            <text text-anchor="middle" x="128" y="404">l</text>
+            <text text-anchor="middle" x="640" y="404">▀</text>
+            <text text-anchor="middle" x="72" y="420">:</text>
+            <text text-anchor="middle" x="80" y="420">:</text>
+            <text text-anchor="middle" x="104" y="420">t</text>
+            <text text-anchor="middle" x="112" y="420">e</text>
+            <text text-anchor="middle" x="120" y="420">m</text>
+            <text text-anchor="middle" x="128" y="420">p</text>
+            <text text-anchor="middle" x="72" y="436">:</text>
+            <text text-anchor="middle" x="80" y="436">:</text>
+            <text text-anchor="middle" x="104" y="436">p</text>
+            <text text-anchor="middle" x="112" y="436">r</text>
+            <text text-anchor="middle" x="120" y="436">e</text>
+            <text text-anchor="middle" x="128" y="436">s</text>
+            <text text-anchor="middle" x="136" y="436">s</text>
+            <text text-anchor="middle" x="72" y="452">:</text>
+            <text text-anchor="middle" x="80" y="452">:</text>
+            <text text-anchor="middle" x="96" y="452">h</text>
+            <text text-anchor="middle" x="104" y="452">u</text>
+            <text text-anchor="middle" x="112" y="452">m</text>
+            <text text-anchor="middle" x="120" y="452">i</text>
+            <text text-anchor="middle" x="128" y="452">d</text>
+            <text text-anchor="middle" x="136" y="452">i</text>
+            <text text-anchor="middle" x="144" y="452">t</text>
+            <text text-anchor="middle" x="152" y="452">y</text>
+            <text text-anchor="middle" x="256" y="452">P</text>
+            <text text-anchor="middle" x="264" y="452">W</text>
+            <text text-anchor="middle" x="272" y="452">R</text>
+            <text text-anchor="middle" x="72" y="468">:</text>
+            <text text-anchor="middle" x="80" y="468">:</text>
+            <text text-anchor="middle" x="168" y="468">S</text>
+            <text text-anchor="middle" x="176" y="468">D</text>
+            <text text-anchor="middle" x="192" y="468">C</text>
+            <text text-anchor="middle" x="200" y="468">a</text>
+            <text text-anchor="middle" x="208" y="468">r</text>
+            <text text-anchor="middle" x="216" y="468">d</text>
+            <text text-anchor="middle" x="248" y="468">.</text>
+            <text text-anchor="middle" x="304" y="468">▏</text>
+            <text text-anchor="middle" x="72" y="484">:</text>
+            <text text-anchor="middle" x="80" y="484">:</text>
+            <text text-anchor="middle" x="168" y="484">.</text>
+            <text text-anchor="middle" x="176" y="484">┄</text>
+            <text text-anchor="middle" x="184" y="484">┄</text>
+            <text text-anchor="middle" x="192" y="484">┄</text>
+            <text text-anchor="middle" x="200" y="484">┄</text>
+            <text text-anchor="middle" x="208" y="484">┄</text>
+            <text text-anchor="middle" x="216" y="484">.</text>
+            <text text-anchor="middle" x="248" y="484">:</text>
+            <text text-anchor="middle" x="576" y="484">S</text>
+            <text text-anchor="middle" x="584" y="484">S</text>
+            <text text-anchor="middle" x="592" y="484">D</text>
+            <text text-anchor="middle" x="640" y="484">▀</text>
+            <text text-anchor="middle" x="816" y="484">N</text>
+            <text text-anchor="middle" x="824" y="484">M</text>
+            <text text-anchor="middle" x="832" y="484">E</text>
+            <text text-anchor="middle" x="840" y="484">A</text>
+            <text text-anchor="middle" x="856" y="484">w</text>
+            <text text-anchor="middle" x="864" y="484">i</text>
+            <text text-anchor="middle" x="872" y="484">n</text>
+            <text text-anchor="middle" x="880" y="484">d</text>
+            <text text-anchor="middle" x="72" y="500">:</text>
+            <text text-anchor="middle" x="80" y="500">:</text>
+            <text text-anchor="middle" x="96" y="500">G</text>
+            <text text-anchor="middle" x="104" y="500">P</text>
+            <text text-anchor="middle" x="112" y="500">I</text>
+            <text text-anchor="middle" x="120" y="500">O</text>
+            <text text-anchor="middle" x="152" y="500">▃</text>
+            <text text-anchor="middle" x="160" y="500">▃</text>
+            <text text-anchor="middle" x="168" y="500">┊</text>
+            <text text-anchor="middle" x="176" y="500">▃</text>
+            <text text-anchor="middle" x="184" y="500">▃</text>
+            <text text-anchor="middle" x="192" y="500">▃</text>
+            <text text-anchor="middle" x="200" y="500">▃</text>
+            <text text-anchor="middle" x="208" y="500">▃</text>
+            <text text-anchor="middle" x="216" y="500">┊</text>
+            <text text-anchor="middle" x="224" y="500">▃</text>
+            <text text-anchor="middle" x="232" y="500">▃</text>
+            <text text-anchor="middle" x="264" y="500">▄</text>
+            <text text-anchor="middle" x="288" y="500">▄</text>
+            <text text-anchor="middle" x="168" y="516">┊</text>
+            <text text-anchor="middle" x="216" y="516">┊</text>
+            <text text-anchor="middle" x="816" y="516">N</text>
+            <text text-anchor="middle" x="824" y="516">M</text>
+            <text text-anchor="middle" x="832" y="516">E</text>
+            <text text-anchor="middle" x="840" y="516">A</text>
+            <text text-anchor="middle" x="856" y="516">s</text>
+            <text text-anchor="middle" x="864" y="516">p</text>
+            <text text-anchor="middle" x="872" y="516">e</text>
+            <text text-anchor="middle" x="880" y="516">e</text>
+            <text text-anchor="middle" x="888" y="516">d</text>
+            <text text-anchor="middle" x="816" y="532">-</text>
+            <text text-anchor="middle" x="824" y="532">-</text>
+            <text text-anchor="middle" x="816" y="548">N</text>
+            <text text-anchor="middle" x="824" y="548">M</text>
+            <text text-anchor="middle" x="832" y="548">E</text>
+            <text text-anchor="middle" x="840" y="548">A</text>
+            <text text-anchor="middle" x="856" y="548">d</text>
+            <text text-anchor="middle" x="864" y="548">e</text>
+            <text text-anchor="middle" x="872" y="548">p</text>
+            <text text-anchor="middle" x="880" y="548">t</text>
+            <text text-anchor="middle" x="888" y="548">h</text>
+            <text text-anchor="middle" x="296" y="564">5</text>
+            <text text-anchor="middle" x="304" y="564">V</text>
+            <text text-anchor="middle" x="640" y="564">▀</text>
+            <text text-anchor="middle" x="816" y="564">-</text>
+            <text text-anchor="middle" x="824" y="564">-</text>
+            <text text-anchor="middle" x="192" y="580">1</text>
+            <text text-anchor="middle" x="200" y="580">2</text>
+            <text text-anchor="middle" x="208" y="580">V</text>
+            <text text-anchor="middle" x="224" y="580">t</text>
+            <text text-anchor="middle" x="232" y="580">o</text>
+            <text text-anchor="middle" x="248" y="580">5</text>
+            <text text-anchor="middle" x="256" y="580">V</text>
+            <text text-anchor="middle" x="816" y="580">N</text>
+            <text text-anchor="middle" x="824" y="580">M</text>
+            <text text-anchor="middle" x="832" y="580">E</text>
+            <text text-anchor="middle" x="840" y="580">A</text>
+            <text text-anchor="middle" x="856" y="580">p</text>
+            <text text-anchor="middle" x="864" y="580">i</text>
+            <text text-anchor="middle" x="872" y="580">l</text>
+            <text text-anchor="middle" x="880" y="580">o</text>
+            <text text-anchor="middle" x="888" y="580">t</text>
+            <text text-anchor="middle" x="416" y="596">d</text>
+            <text text-anchor="middle" x="424" y="596">A</text>
+            <text text-anchor="middle" x="432" y="596">I</text>
+            <text text-anchor="middle" x="440" y="596">S</text>
+            <text text-anchor="middle" x="448" y="596">y</text>
+            <text text-anchor="middle" x="472" y="596">▍</text>
+            <text text-anchor="middle" x="824" y="596">-</text>
+            <text text-anchor="middle" x="424" y="612">A</text>
+            <text text-anchor="middle" x="432" y="612">I</text>
+            <text text-anchor="middle" x="440" y="612">S</text>
+            <text text-anchor="middle" x="72" y="628">f</text>
+            <text text-anchor="middle" x="80" y="628">u</text>
+            <text text-anchor="middle" x="88" y="628">s</text>
+            <text text-anchor="middle" x="96" y="628">e</text>
+            <text text-anchor="middle" x="416" y="628">▀</text>
+            <text text-anchor="middle" x="88" y="644">⏛</text>
+            <text text-anchor="middle" x="640" y="644">▀</text>
+            <text text-anchor="middle" x="16" y="692">1</text>
+            <text text-anchor="middle" x="24" y="692">2</text>
+            <text text-anchor="middle" x="32" y="692">V</text>
+            <text text-anchor="middle" x="208" y="724">.</text>
+            <text text-anchor="middle" x="224" y="724">.</text>
+            <text text-anchor="middle" x="288" y="724">▃</text>
+            <text text-anchor="middle" x="296" y="724">▃</text>
+            <text text-anchor="middle" x="304" y="724">▃</text>
+            <text text-anchor="middle" x="352" y="724">▃</text>
+            <text text-anchor="middle" x="360" y="724">▃</text>
+            <text text-anchor="middle" x="368" y="724">▃</text>
+            <text text-anchor="middle" x="432" y="724">╭</text>
+            <text text-anchor="middle" x="440" y="724">─</text>
+            <text text-anchor="middle" x="448" y="724">╮</text>
+            <text text-anchor="middle" x="64" y="740">;</text>
+            <text text-anchor="middle" x="144" y="740">;</text>
+            <text text-anchor="middle" x="216" y="740">V</text>
+            <text text-anchor="middle" x="288" y="740">━</text>
+            <text text-anchor="middle" x="296" y="740">━</text>
+            <text text-anchor="middle" x="304" y="740">━</text>
+            <text text-anchor="middle" x="360" y="740">◯</text>
+            <text text-anchor="middle" x="432" y="740">╰</text>
+            <text text-anchor="middle" x="440" y="740">─</text>
+            <text text-anchor="middle" x="448" y="740">╯</text>
+            <text text-anchor="middle" x="496" y="740">◯</text>
+            <text text-anchor="middle" x="552" y="740">◯</text>
+            <text text-anchor="middle" x="632" y="740" style="font-size:20.5px">⬢</text>
+            <text text-anchor="middle" x="648" y="740" style="font-size:20.5px">⬢</text>
+            <text text-anchor="middle" x="664" y="740" style="font-size:20.5px">⬢</text>
+            <text text-anchor="middle" x="680" y="740" style="font-size:20.5px">⬢</text>
+            <text text-anchor="middle" x="696" y="740" style="font-size:20.5px">⬢</text>
+            <text text-anchor="middle" x="712" y="740" style="font-size:20.5px">⬢</text>
+            <text text-anchor="middle" x="728" y="740" style="font-size:20.5px">⬢</text>
+            <text text-anchor="middle" x="744" y="740" style="font-size:20.5px">⬢</text>
+            <text text-anchor="middle" x="760" y="740" style="font-size:20.5px">⬢</text>
+            <text text-anchor="middle" x="64" y="756">-</text>
+            <text text-anchor="middle" x="144" y="756">-</text>
+            <text text-anchor="middle" x="496" y="756">-</text>
+            <text text-anchor="middle" x="552" y="756">-</text>
+            <text text-anchor="middle" x="592" y="756">F</text>
+            <text text-anchor="middle" x="600" y="756">i</text>
+            <text text-anchor="middle" x="608" y="756">b</text>
+            <text text-anchor="middle" x="616" y="756">e</text>
+            <text text-anchor="middle" x="624" y="756">r</text>
+            <text text-anchor="middle" x="632" y="756">-</text>
+            <text text-anchor="middle" x="640" y="756">o</text>
+            <text text-anchor="middle" x="648" y="756">p</text>
+            <text text-anchor="middle" x="656" y="756">t</text>
+            <text text-anchor="middle" x="664" y="756">i</text>
+            <text text-anchor="middle" x="672" y="756">c</text>
+            <text text-anchor="middle" x="688" y="756">i</text>
+            <text text-anchor="middle" x="696" y="756">n</text>
+            <text text-anchor="middle" x="704" y="756">d</text>
+            <text text-anchor="middle" x="712" y="756">i</text>
+            <text text-anchor="middle" x="720" y="756">c</text>
+            <text text-anchor="middle" x="728" y="756">a</text>
+            <text text-anchor="middle" x="736" y="756">t</text>
+            <text text-anchor="middle" x="744" y="756">o</text>
+            <text text-anchor="middle" x="752" y="756">r</text>
+            <text text-anchor="middle" x="760" y="756">s</text>
+            <text text-anchor="middle" x="776" y="756">t</text>
+            <text text-anchor="middle" x="784" y="756">o</text>
+            <text text-anchor="middle" x="800" y="756">L</text>
+            <text text-anchor="middle" x="808" y="756">E</text>
+            <text text-anchor="middle" x="816" y="756">D</text>
+            <text text-anchor="middle" x="824" y="756">s</text>
+            <text text-anchor="middle" x="48" y="788">O</text>
+            <text text-anchor="middle" x="56" y="788">n</text>
+            <text text-anchor="middle" x="64" y="788">/</text>
+            <text text-anchor="middle" x="72" y="788">O</text>
+            <text text-anchor="middle" x="80" y="788">f</text>
+            <text text-anchor="middle" x="88" y="788">f</text>
+            <text text-anchor="middle" x="112" y="788">C</text>
+            <text text-anchor="middle" x="120" y="788">o</text>
+            <text text-anchor="middle" x="128" y="788">c</text>
+            <text text-anchor="middle" x="136" y="788">k</text>
+            <text text-anchor="middle" x="144" y="788">p</text>
+            <text text-anchor="middle" x="152" y="788">i</text>
+            <text text-anchor="middle" x="160" y="788">t</text>
+            <text text-anchor="middle" x="184" y="788">P</text>
+            <text text-anchor="middle" x="192" y="788">i</text>
+            <text text-anchor="middle" x="208" y="788">/</text>
+            <text text-anchor="middle" x="224" y="788">H</text>
+            <text text-anchor="middle" x="232" y="788">u</text>
+            <text text-anchor="middle" x="240" y="788">b</text>
+            <text text-anchor="middle" x="280" y="788">U</text>
+            <text text-anchor="middle" x="288" y="788">S</text>
+            <text text-anchor="middle" x="296" y="788">B</text>
+            <text text-anchor="middle" x="312" y="788">2</text>
+            <text text-anchor="middle" x="320" y="788">,</text>
+            <text text-anchor="middle" x="344" y="788">U</text>
+            <text text-anchor="middle" x="352" y="788">S</text>
+            <text text-anchor="middle" x="360" y="788">B</text>
+            <text text-anchor="middle" x="376" y="788">3</text>
+            <text text-anchor="middle" x="384" y="788">,</text>
+            <text text-anchor="middle" x="424" y="788">e</text>
+            <text text-anchor="middle" x="432" y="788">t</text>
+            <text text-anchor="middle" x="440" y="788">h</text>
+            <text text-anchor="middle" x="448" y="788">0</text>
+            <text text-anchor="middle" x="472" y="788">A</text>
+            <text text-anchor="middle" x="480" y="788">I</text>
+            <text text-anchor="middle" x="488" y="788">S</text>
+            <text text-anchor="middle" x="504" y="788">R</text>
+            <text text-anchor="middle" x="512" y="788">F</text>
+            <text text-anchor="middle" x="544" y="788">R</text>
+            <text text-anchor="middle" x="552" y="788">T</text>
+            <text text-anchor="middle" x="560" y="788">L</text>
+            <text text-anchor="middle" x="568" y="788">-</text>
+            <text text-anchor="middle" x="576" y="788">S</text>
+            <text text-anchor="middle" x="584" y="788">D</text>
+            <text text-anchor="middle" x="592" y="788">R</text>
+            <text text-anchor="middle" x="120" y="804">O</text>
+            <text text-anchor="middle" x="128" y="804">n</text>
+            <text text-anchor="middle" x="136" y="804">/</text>
+            <text text-anchor="middle" x="144" y="804">O</text>
+            <text text-anchor="middle" x="152" y="804">f</text>
+            <text text-anchor="middle" x="160" y="804">f</text>
+            <text text-anchor="middle" x="184" y="804">V</text>
+            <text text-anchor="middle" x="192" y="804">o</text>
+            <text text-anchor="middle" x="200" y="804">l</text>
+            <text text-anchor="middle" x="208" y="804">t</text>
+            <text text-anchor="middle" x="216" y="804">a</text>
+            <text text-anchor="middle" x="224" y="804">g</text>
+            <text text-anchor="middle" x="232" y="804">e</text>
+            <text text-anchor="middle" x="280" y="804">H</text>
+            <text text-anchor="middle" x="288" y="804">D</text>
+            <text text-anchor="middle" x="296" y="804">M</text>
+            <text text-anchor="middle" x="304" y="804">I</text>
+            <text text-anchor="middle" x="312" y="804">-</text>
+            <text text-anchor="middle" x="320" y="804">1</text>
+            <text text-anchor="middle" x="344" y="804">A</text>
+            <text text-anchor="middle" x="352" y="804">u</text>
+            <text text-anchor="middle" x="360" y="804">d</text>
+            <text text-anchor="middle" x="368" y="804">i</text>
+            <text text-anchor="middle" x="376" y="804">o</text>
+            <text text-anchor="middle" x="464" y="804">A</text>
+            <text text-anchor="middle" x="472" y="804">n</text>
+            <text text-anchor="middle" x="480" y="804">t</text>
+            <text text-anchor="middle" x="488" y="804">e</text>
+            <text text-anchor="middle" x="496" y="804">n</text>
+            <text text-anchor="middle" x="504" y="804">n</text>
+            <text text-anchor="middle" x="512" y="804">a</text>
+            <text text-anchor="middle" x="544" y="804">R</text>
+            <text text-anchor="middle" x="552" y="804">F</text>
+            <text text-anchor="middle" x="568" y="804">A</text>
+            <text text-anchor="middle" x="576" y="804">n</text>
+            <text text-anchor="middle" x="584" y="804">t</text>
+            <text text-anchor="middle" x="592" y="804">e</text>
+            <text text-anchor="middle" x="600" y="804">n</text>
+            <text text-anchor="middle" x="608" y="804">n</text>
+            <text text-anchor="middle" x="616" y="804">a</text>
+            <text text-anchor="middle" x="192" y="852">O</text>
+            <text text-anchor="middle" x="200" y="852">p</text>
+            <text text-anchor="middle" x="208" y="852">t</text>
+            <text text-anchor="middle" x="216" y="852">i</text>
+            <text text-anchor="middle" x="224" y="852">o</text>
+            <text text-anchor="middle" x="232" y="852">n</text>
+            <text text-anchor="middle" x="240" y="852">a</text>
+            <text text-anchor="middle" x="248" y="852">l</text>
+            <text text-anchor="middle" x="256" y="852">:</text>
+            <text text-anchor="middle" x="272" y="852">A</text>
+            <text text-anchor="middle" x="280" y="852">i</text>
+            <text text-anchor="middle" x="288" y="852">r</text>
+            <text text-anchor="middle" x="304" y="852">M</text>
+            <text text-anchor="middle" x="312" y="852">o</text>
+            <text text-anchor="middle" x="320" y="852">u</text>
+            <text text-anchor="middle" x="328" y="852">s</text>
+            <text text-anchor="middle" x="336" y="852">e</text>
+            <text text-anchor="middle" x="352" y="852">o</text>
+            <text text-anchor="middle" x="360" y="852">r</text>
+            <text text-anchor="middle" x="192" y="868">U</text>
+            <text text-anchor="middle" x="200" y="868">S</text>
+            <text text-anchor="middle" x="208" y="868">B</text>
+            <text text-anchor="middle" x="224" y="868">k</text>
+            <text text-anchor="middle" x="232" y="868">e</text>
+            <text text-anchor="middle" x="240" y="868">y</text>
+            <text text-anchor="middle" x="248" y="868">b</text>
+            <text text-anchor="middle" x="256" y="868">o</text>
+            <text text-anchor="middle" x="264" y="868">a</text>
+            <text text-anchor="middle" x="272" y="868">r</text>
+            <text text-anchor="middle" x="280" y="868">d</text>
+            <text text-anchor="middle" x="296" y="868">/</text>
+            <text text-anchor="middle" x="312" y="868">m</text>
+            <text text-anchor="middle" x="320" y="868">o</text>
+            <text text-anchor="middle" x="328" y="868">u</text>
+            <text text-anchor="middle" x="336" y="868">s</text>
+            <text text-anchor="middle" x="344" y="868">e</text>
+            <text text-anchor="middle" x="360" y="868">f</text>
+            <text text-anchor="middle" x="368" y="868">o</text>
+            <text text-anchor="middle" x="376" y="868">r</text>
+            <text text-anchor="middle" x="392" y="868">m</text>
+            <text text-anchor="middle" x="400" y="868">a</text>
+            <text text-anchor="middle" x="408" y="868">i</text>
+            <text text-anchor="middle" x="416" y="868">n</text>
+            <text text-anchor="middle" x="424" y="868">t</text>
+            <text text-anchor="middle" x="432" y="868">e</text>
+            <text text-anchor="middle" x="440" y="868">n</text>
+            <text text-anchor="middle" x="448" y="868">a</text>
+            <text text-anchor="middle" x="456" y="868">n</text>
+            <text text-anchor="middle" x="464" y="868">c</text>
+            <text text-anchor="middle" x="472" y="868">e</text>
+            <text text-anchor="middle" x="488" y="868">t</text>
+            <text text-anchor="middle" x="496" y="868">a</text>
+            <text text-anchor="middle" x="504" y="868">s</text>
+            <text text-anchor="middle" x="512" y="868">k</text>
+            <text text-anchor="middle" x="520" y="868">s</text>
+        </g>
+    </g>
+</svg>
