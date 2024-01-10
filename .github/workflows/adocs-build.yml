@@ -18,3 +18,4 @@ jobs:
             echo "Publishing AsciiDocs"
             mkdir -p output
             asciidoctor -b html5 -d book -a icons=font -a toc=left -D /documents/output docs/*.adoc
+            echo "Done with AsciiDocs"
