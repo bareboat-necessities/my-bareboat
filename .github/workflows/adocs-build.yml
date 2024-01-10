@@ -14,6 +14,7 @@ jobs:
         with:
           image: asciidoctor/docker-asciidoctor:1.17.1
           options: -v ${{ github.workspace }}:/documents/
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           run: |
             echo "Publishing AsciiDocs"
             mkdir -p output
