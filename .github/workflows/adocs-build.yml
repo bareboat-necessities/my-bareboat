@@ -1,0 +1,18 @@
+name: Publish Docs
+
+on: [push]
+
+jobs:
+  build:
+    name: Publish AsciiDocs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - name: Run the build process with Docker
+        uses: addnab/docker-run-action@v3
+        with:
+          image: asciidoctor/docker-asciidoctor:1.17.1
+          options: -v ${{ github.workspace }}:/var/www
+          run: |
+            echo "Publishing AsciiDocs"
