@@ -2757,7 +2757,7 @@ Please send us your HowTo, and we can add it here for everyone to find. Thanks
 - Remove serial console mentioned in /boot/cmdline.txt (argument with serial0 and baud rate)
 - Reboot
 - sudo i2cdetect -y 1 (should show you addresses)
-- Create pypilot connection to signalK (see https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html#_imu )
+- Do not create pypilot connection to signalK as it creates a data loop (see https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html#_imu )
 - Set up barometer feed from SignalK ( https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html#_barometer_temperature_humidity )
 - IMU data heading, etc. should come from pypilot NMEA
 - check it with telnet localhost 20220
@@ -2769,8 +2769,8 @@ Brief explanation:
 - At this point you should have data readable from GPS (via /dev/serial0) and IMU / barometer (via i2c)
 - Now you set up routing of this data into dashboards, chartplotters
 - IMU is read by pypilot, which feeds it via 20220 tcp port using NMEA 0183 format
-- pypilot also needs to have connection via SignalK web socket to port 3000 of signalK
-- That connection needs to be authorized made READ/WRITE in signalK using their token exchange procedure
+- Do not create authorized READ/WRITE pypilot connection via SignalK web socket to port 3000 of signalK in signalK
+using their token exchange procedure. (Causes a data loop)
 - GPS is read by signalK by creating NMEA connection to /dev/serial0 port (set correct baud rate), or add it as a device
  for GPSd into /etc/default/gpsd
 - Barometric/temp data is read by SignalK using signalK BME280 plugin. Make sure setting polling interval below 30 seconds (because OpenCPN expires non-navigational data every 30 seconds)
