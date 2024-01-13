@@ -52,6 +52,10 @@ https://github.com/bareboat-necessities/lysmarine_gen/issues
 
 https://bareboat-necessities.wixsite.com/my-bareboat
 
+https://github.com/bareboat-necessities/bbn-m5stack-tough
+
+https://github.com/bareboat-necessities/bbn-nmea200-m5atom
+
 {zwsp} +
 
 PDF version:
@@ -161,6 +165,8 @@ cd /home/user/add-ons
 
 === Prepare SD Card
 
+NOTE: Starting with Bookworm version BBN OS has two images to choose from: LITE and FULL.
+
 Write the downloaded image to SD card. Minimum 32Gb SD card recommended.
 You can use Raspberry Pi Imager for that:
 
@@ -177,8 +183,9 @@ set it in /boot/config.txt file, by mounting /boot partition of your SD card
 editor).
 
 Quality of SD card is essential for performance of your system. BBN OS comes
-with disk benchmarking tool. Good SD card would show about 45 MB/sec (or higher) read i/o speed in it.
-SSD drives would show much better results: 178 MB/sec read and 147 MB/sec write i/o speed or higher.
+with disk benchmarking tool. Good SD card would show about 45 MB/sec (or higher on pi4) read i/o speed,
+90 MB/sec or higher on pi5. SSD drives would show much better
+results: 178 MB/sec read and 147 MB/sec write i/o speed or higher.
 
 NOTE: There were some cases of people just formatting SD card as fat32 file system and copying image file on it as-is,
 in form of .xz file or in some cases going extra length unpacking it into .img file and copying.
