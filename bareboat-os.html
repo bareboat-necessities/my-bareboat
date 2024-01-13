@@ -446,7 +446,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">mgrouch</span><br>
 <span id="email" class="email"><a href="mailto:mgrouch@users.noreply.github.com">mgrouch@users.noreply.github.com</a></span><br>
-<span id="revnumber">version 2024-01-10,</span>
+<span id="revnumber">version 2024-01-13,</span>
 <span id="revdate">Bareboat Necessities OS Documentation</span>
 </div>
 <div id="toc" class="toc2">
@@ -858,6 +858,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><a href="https://bareboat-necessities.wixsite.com/my-bareboat" class="bare">https://bareboat-necessities.wixsite.com/my-bareboat</a></p>
 </div>
 <div class="paragraph">
+<p><a href="https://github.com/bareboat-necessities/bbn-m5stack-tough" class="bare">https://github.com/bareboat-necessities/bbn-m5stack-tough</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/bareboat-necessities/bbn-nmea200-m5atom" class="bare">https://github.com/bareboat-necessities/bbn-nmea200-m5atom</a></p>
+</div>
+<div class="paragraph">
 <p>&#8203;<br></p>
 </div>
 <div class="paragraph">
@@ -1046,6 +1052,18 @@ Your preferred download image of BBN OS would be arm64 Bullseye.</p>
 </div>
 <div class="sect2">
 <h3 id="_prepare_sd_card">1.3. Prepare SD Card</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Starting with Bookworm version BBN OS has two images to choose from: LITE and FULL.
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>Write the downloaded image to SD card. Minimum 32Gb SD card recommended.
 You can use Raspberry Pi Imager for that:</p>
@@ -1077,8 +1095,9 @@ editor).</p>
 </div>
 <div class="paragraph">
 <p>Quality of SD card is essential for performance of your system. BBN OS comes
-with disk benchmarking tool. Good SD card would show about 45 MB/sec (or higher) read i/o speed in it.
-SSD drives would show much better results: 178 MB/sec read and 147 MB/sec write i/o speed or higher.</p>
+with disk benchmarking tool. Good SD card would show about 45 MB/sec (or higher on pi4) read i/o speed,
+90 MB/sec or higher on pi5. SSD drives would show much better
+results: 178 MB/sec read and 147 MB/sec write i/o speed or higher.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -6294,7 +6313,7 @@ open source you will learn how things work</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2024-01-10<br>
+Version 2024-01-13<br>
 </div>
 </div>
 </body>
