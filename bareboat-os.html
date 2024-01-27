@@ -6152,6 +6152,15 @@ KMS driver takes video parameters from /boot/cmdline.txt. Like this:
 <pre class="highlight"><code>disable_fw_kms_setup=0</code></pre>
 </div>
 </div>
+<div class="paragraph">
+<p>For XServer resolution add into your XWindow start up script (such as startx.sh)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code># Example
+xrandr --output HDMI-1 --mode 640x480 --rate 60</code></pre>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_rotate_screen">4.43. Rotate Screen</h3>
