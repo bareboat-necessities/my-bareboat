@@ -3350,6 +3350,13 @@ HDMI-A-1  - name of your screen
 
 60        - refresh frequency in Hz
 
+/boot/config.txt needs setting:
+
+[source]
+----
+disable_fw_kms_setup=0
+----
+
 === Rotate Screen
 
 There are reports that putting
