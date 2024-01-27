@@ -446,7 +446,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">mgrouch</span><br>
 <span id="email" class="email"><a href="mailto:mgrouch@users.noreply.github.com">mgrouch@users.noreply.github.com</a></span><br>
-<span id="revnumber">version 2024-01-17,</span>
+<span id="revnumber">version 2024-01-27,</span>
 <span id="revdate">Bareboat Necessities OS Documentation</span>
 </div>
 <div id="toc" class="toc2">
@@ -6124,11 +6124,25 @@ disable_overscan, overscan_*</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Bullseye based versions with KMS driver ignore screen resolution settings in /boot/config.txt. Use
-xrandr (or arandr) to set your monitor resolution, rate, etc.
+Versions with KMS driver such as bookworm (instead of fkms in older ones as buster) ignore screen resolution settings in /boot/config.txt.
+KMS driver takes video parameters from /boot/cmdline.txt. Like this:
 </td>
 </tr>
 </table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>vc4.force_hotplug=1 video=HDMI-A-1:1280x720@60</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>HDMI-A-1  - name of your screen</p>
+</div>
+<div class="paragraph">
+<p>1280x720  - its resolution</p>
+</div>
+<div class="paragraph">
+<p>60        - refresh frequency in Hz</p>
 </div>
 </div>
 <div class="sect2">
@@ -6318,7 +6332,7 @@ open source you will learn how things work</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2024-01-17<br>
+Version 2024-01-27<br>
 </div>
 </div>
 </body>
