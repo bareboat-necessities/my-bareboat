@@ -3330,9 +3330,19 @@ your monitor in /boot/config.txt (read about hdmi_cvt options)
 disable_overscan, overscan_*
 
 
-NOTE: Bullseye based versions with KMS driver ignore screen resolution settings in /boot/config.txt. Use
-xrandr (or arandr) to set your monitor resolution, rate, etc.
+NOTE: Versions with KMS driver such as bookworm (instead of fkms in older ones as buster) ignore screen resolution settings in /boot/config.txt.
+KMS driver takes video parameters from /boot/cmdline.txt. Like this:
 
+[source]
+----
+vc4.force_hotplug=1 video=HDMI-A-1:1280x720@60
+----
+
+HDMI-A-1  - name of your screen
+
+1280x720  - its resolution
+
+60        - refresh frequency in Hz
 
 === Rotate Screen
 
