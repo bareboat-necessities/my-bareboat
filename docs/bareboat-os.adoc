@@ -3357,6 +3357,14 @@ HDMI-A-1  - name of your screen
 disable_fw_kms_setup=0
 ----
 
+For XServer resolution add into your XWindow start up script (such as startx.sh)
+
+[source]
+----
+# Example
+xrandr --output HDMI-1 --mode 640x480 --rate 60
+----
+
 === Rotate Screen
 
 There are reports that putting
