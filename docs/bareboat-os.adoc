@@ -524,6 +524,12 @@ Serial console must be disabled too. Check /boot/cmdline.txt
 You will need to remove /dev/ttyAMA0 from /home/pypilot/.pypilot/blacklist_serial_ports
 to let pypilot probe that port. (otherwise, pypilot port-probing breaks bluetooth even if bluetooth is enabled)
 
+[source, shell]
+----
+sudo nano /home/pypilot/.pypilot/blacklist_serial_ports
+----
+
+
 PyPilot HAT is optional. It provides a remote IR control and a small LCD.
 If you have pypilot hardware hat attached, then you will need to enable the following settings in /boot/config.txt
 
