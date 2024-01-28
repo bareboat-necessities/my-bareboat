@@ -3357,7 +3357,7 @@ HDMI-A-1  - name of your screen
 disable_fw_kms_setup=0
 ----
 
-For XServer resolution add into your XWindow start up script (such as startx.sh)
+For XServer resolution add into your GUI start-up script (such as openbox autostart, etc)
 
 [source]
 ----
