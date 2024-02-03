@@ -2345,6 +2345,12 @@ NKE devices are designed and optimized for professional sports.
 
 https://github.com/KristianJerpetjon/NkeToplineCpp
 
+=== RayMarine Micronet TackTick
+
+RayMarine protocol for wireless intruments.
+
+https://github.com/Rodemfr/MicronetToNMEA
+
 === SAE J1939
 
 J1939 is a CAN-BUS protocol for monitoring automotive engines, but it's also being used on boats.
