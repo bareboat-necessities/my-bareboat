@@ -2529,6 +2529,10 @@ SensESP allows connecting many sensors:
 - Blood oxygen, oximeter
 - and more
 
+==== BBN Esp32 Projects
+
+- MFD (multi-functional display) based on waterproof M5Stack Tough: https://github.com/bareboat-necessities/bbn-m5stack-tough
+- BBN NMEA 2000 sensors and gateways solutions: https://github.com/bareboat-necessities/bbn-nmea200-m5atom
 
 ==== PlatformIO IDE
 
