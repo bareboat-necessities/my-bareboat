@@ -2532,7 +2532,8 @@ SensESP allows connecting many sensors:
 ==== BBN Esp32 Projects
 
 - MFD (multi-functional display) based on waterproof M5Stack Tough: https://github.com/bareboat-necessities/bbn-m5stack-tough
-- BBN NMEA 2000 sensors and gateways solutions: https://github.com/bareboat-necessities/bbn-nmea200-m5atom
+- Environmental NMEA 2000 sensors by BBN Projects: https://github.com/bareboat-necessities/bbn-nmea200-m5atom/tree/main/bbn-nmea2000-env-m5atom
+- DIY N2K to USB gateway in Actisense format on M5Atom by BBN Projects: https://github.com/bareboat-necessities/bbn-nmea200-m5atom/tree/main/bbn-nmea2000-usb-gw-m5atom
 
 ==== PlatformIO IDE
 
