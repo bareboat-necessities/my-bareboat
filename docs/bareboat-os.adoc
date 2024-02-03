@@ -2336,6 +2336,15 @@ NMEA OneNet is Ethernet based with RJ-45 or X-Coded M12 8-pin (to pass smaller o
 PoE (Power over Ethernet) allows powering devices with same data cables. It is a nice way
 for reducing the number of cables in your system.
 
+=== Topline (NKE)
+
+Compared to NMEA0183, Topline can transmit significantly more data due to the compact binary
+data transmission and the high data rate of 38,400 baud.
+
+NKE devices are designed and optimized for professional sports.
+
+https://github.com/KristianJerpetjon/NkeToplineCpp
+
 === SAE J1939
 
 J1939 is a CAN-BUS protocol for monitoring automotive engines, but it's also being used on boats.
