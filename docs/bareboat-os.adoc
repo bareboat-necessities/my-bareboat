@@ -2062,9 +2062,7 @@ Several of these products could be interesting for boating applications:
 
 - PiGear Nano https://www.uugear.com/product/pigear-nano/
 
-- Pi5 EDATEC ED-IPC3020 https://www.edatec.cn/en/elpc/ipc3020.html
-
-- Pi5 EDATEC HMI3010-101C https://www.tomshardware.com/news/raspberry-pi-5-industrial-pc
+- SeeedStudio reTerminal DM https://www.seeedstudio.com/reTerminal-DM-p-5616.html
 
 NOTE: Check internal SSD drive size (2242, 2260 usually are ok, 2280 is usually too long) and compatibility
 with your CM4 board before purchasing. If m.2 slot on your board is NVME you need NVME SSD (SATA will not work).
@@ -2082,6 +2080,11 @@ line into /boot/config.txt on the image. For that (and other) reasons, BBN OS ha
 for Waveshare board support. The image is based on the base BBN OS image with additional tweaks to support the Waveshare
 board.
 
+=== Industrial Pi5 Solutions
+
+- Pi5 EDATEC ED-IPC3020 https://www.edatec.cn/en/elpc/ipc3020.html
+
+- Pi5 EDATEC HMI3010-101C https://www.tomshardware.com/news/raspberry-pi-5-industrial-pc
 
 ==== Home Assistant Yellow
 
