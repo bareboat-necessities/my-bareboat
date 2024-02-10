@@ -2257,6 +2257,8 @@ https://github.com/Thomas-GeDaD/Seatalk1-Raspi-reader
 
 https://github.com/yOyOeK1/seatalk4
 
+https://github.com/AK-Homberger/Seatalk-Autopilot-Remote-Control
+
 === B&G Fastnet
 
 https://github.com/trlafleur/Fastnet
