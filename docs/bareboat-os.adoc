@@ -3265,8 +3265,11 @@ AirMail is a radio mail program for sending and receiving messages via Pactor ov
 either via the ham radio system or participating marine and commercial services.
 It can communicate with PACTOR modem and other HF radio devices.
 
-To install AirMail on Raspberry Pi follow this guide:
+To install AirMail on Raspberry Pi with Bullseye follow this guide:
 https://bareboat-necessities.github.io/my-bareboat/airmail-install.html
+
+To install AirMail on Raspberry Pi with Bookworm follow this guide:
+https://bareboat-necessities.github.io/my-bareboat/airmail-install-bookworm.html
 
 [#sasplanet]
 === Install SAS.Planet on Raspberry Pi
