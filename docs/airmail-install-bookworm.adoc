@@ -75,6 +75,7 @@ sudo apt update && sudo apt-get -y install box86-rpi4arm64:armhf
 
 ----
 
+NOTE: for raspberry pi5 you need switch kernel page size to 4k. See: https://github.com/ptitSeb/box86/issues/912#issuecomment-1879902474
 
 == Step 2. Wine86
 
