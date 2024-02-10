@@ -549,7 +549,8 @@ sudo nano /home/pypilot/.pypilot/blacklist_serial_ports
 ----
 
 
-PyPilot HAT is optional. It provides a remote IR control and a small LCD.
+PyPilot HAT is optional. It provides a remote IR control and a small LCD. Due to GPIO changes this hat is not
+supported on pi5.
 If you have pypilot hardware hat attached, then you will need to enable the following settings in /boot/config.txt
 
 [source]
@@ -2247,7 +2248,7 @@ There is a dedicated Autohelm autopilot plugin in SignalK.
 - Buy a dedicated Seatalk1 to NMEA converter.
 
 - For read/only Seatalk1 connection you can use this solution:
-https://github.com/SignalK/signalk-server/blob/master/Seatalk(GPIO).md
+https://github.com/SignalK/signalk-server/blob/master/docs/src/setup/seatalk/seatalk.md
 
 SeaTalk1 had been reverse engineered and a converter into NMEA is available at:
 https://github.com/MatsA/seatalk1-to-NMEA0183
