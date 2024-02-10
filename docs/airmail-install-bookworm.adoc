@@ -177,3 +177,9 @@ wine Airmail3.exe
 
 Go into Tools->Options->Spellcheck and uncheck all boxes.
 (This reportedly fixes some typing re-draw issues).
+
+If you have two 'Radio' menu entries in applications menu.
+
+----
+rm ~/.local/share/desktop-directories/wine-Programs-Radio.directory
+----
