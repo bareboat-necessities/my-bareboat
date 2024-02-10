@@ -378,6 +378,21 @@ Plugin your GPS USB mouse and OS should recognize it. Check:
 ls -l /dev/ttyLYS*
 ----
 
+If your gps shows as /dev/ttyLYS_gps_0, then edit /etc/default/gpsd file
+
+[source, shell]
+----
+sudo nano /etc/default/gpsd
+----
+
+and set
+[source, shell]
+----
+DEVICES="/dev/ttyLYS_gps_0"
+----
+
+In many other cases you do not need to do anything.
+
 === Set up AIS
 
 Plugin your dAISy AIS receiver into USB and OS should recognize it. Check:
