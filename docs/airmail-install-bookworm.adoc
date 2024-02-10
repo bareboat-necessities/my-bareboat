@@ -97,10 +97,10 @@ sudo apt-get -y install libasound2:armhf libc6:armhf libglib2.0-0:armhf \
 
 cd ~/Downloads
 
-wget https://dl.winehq.org/wine-builds/debian/dists/bookworm/main/binary-i386/wine-stable-i386_9.0.0.0~bookworm-1_i386.deb
-wget https://dl.winehq.org/wine-builds/debian/dists/bookworm/main/binary-i386/wine-stable_9.0.0.0~bookworm-1_i386.deb
-dpkg-deb -xv wine-stable-i386_9.0.0.0~bookworm-1_i386.deb wine-installer
-dpkg-deb -xv wine-stable_9.0.0.0~bookworm-1_i386.deb wine-installer
+wget https://dl.winehq.org/wine-builds/debian/dists/bookworm/main/binary-i386/wine-stable-i386_6.0.4~bookworm-1_i386.deb
+wget https://dl.winehq.org/wine-builds/debian/dists/bookworm/main/binary-i386/wine-stable_6.0.4~bookworm-1_i386.deb
+dpkg-deb -xv wine-stable-i386_6.0.4~bookworm-1_i386.deb wine-installer
+dpkg-deb -xv wine-stable_6.0.4~bookworm-1_i386.deb wine-installer
 
 rm -rf ~/wine
 mv ~/Downloads/wine-installer/opt/wine* ~/wine
