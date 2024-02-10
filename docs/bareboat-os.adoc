@@ -3282,8 +3282,11 @@ http://svocelot.com/Cruise_Info/Equipment/mbTiles.htm
 And some prepared charts:
 http://svocelot.com/Cruise_Info/Equipment/KAP_Downloads.htm
 
-To install SAS.Planet on Raspberry Pi follow this guide:
+To install SAS.Planet on Raspberry Pi with Bullseye follow this guide:
 https://bareboat-necessities.github.io/my-bareboat/sasplanet-install.html
+
+To install SAS.Planet on Raspberry Pi with Bookworm follow this guide:
+https://bareboat-necessities.github.io/my-bareboat/sasplanet-install-bookworm.html
 
 === Install QGIS GIS
 
