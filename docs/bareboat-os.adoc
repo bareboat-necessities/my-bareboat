@@ -2096,17 +2096,17 @@ line into /boot/config.txt on the image. For that (and other) reasons, BBN OS ha
 for Waveshare board support. The image is based on the base BBN OS image with additional tweaks to support the Waveshare
 board.
 
-=== Industrial Pi5 Solutions
-
-- Pi5 EDATEC ED-IPC3020 https://www.edatec.cn/en/elpc/ipc3020.html
-
-- Pi5 EDATEC HMI3010-101C https://www.tomshardware.com/news/raspberry-pi-5-industrial-pc
-
 ==== Home Assistant Yellow
 
 Home Assistant Yellow includes also ZigBee interface for IoT.
 
 https://www.crowdsupply.com/nabu-casa/home-assistant-yellow
+
+=== Industrial Pi5 Solutions
+
+- Pi5 EDATEC ED-IPC3020 https://www.edatec.cn/en/elpc/ipc3020.html
+
+- Pi5 EDATEC HMI3010-101C https://www.tomshardware.com/news/raspberry-pi-5-industrial-pc
 
 
 === IMU, compass, accelerometer, gyroscope
