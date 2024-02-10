@@ -2255,6 +2255,7 @@ https://github.com/MatsA/seatalk1-to-NMEA0183
 
 https://github.com/Thomas-GeDaD/Seatalk1-Raspi-reader
 
+https://github.com/yOyOeK1/seatalk4
 
 === B&G Fastnet
 
