@@ -83,6 +83,7 @@ in /boot/config.txt:
 kernel=kernel8.img
 ----
 
+and reboot
 
 == Step 2. Wine86
 
