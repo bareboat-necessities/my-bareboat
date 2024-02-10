@@ -1420,6 +1420,25 @@ and remove all partitions from your SSD drive.
 <pre class="highlight"><code class="language-shell" data-lang="shell">ls -l /dev/ttyLYS*</code></pre>
 </div>
 </div>
+<div class="paragraph">
+<p>If your gps shows as /dev/ttyLYS_gps_0, then edit /etc/default/gpsd file</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">sudo nano /etc/default/gpsd</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and set</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">DEVICES="/dev/ttyLYS_gps_0"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In many other cases you do not need to do anything.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_set_up_ais">1.11. Set up AIS</h3>
