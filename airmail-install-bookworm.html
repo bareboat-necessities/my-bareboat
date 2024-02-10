@@ -5,9 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<meta name="description" content="Bareboat Necessities, Wave Height from IMU accelerometer">
+<meta name="description" content="Install AirMail with wine on arm64 Bookworm Raspberry Pi BBN OS, PACTOR modem support, Openplotter">
+<meta name="keywords" content="openplotter, AirMail, PACTOR modem, arm64, rpi4, BBN OS">
 <meta name="author" content="mgrouch">
-<title>Estimating wave height from IMU accelerometer on a moving boat (Early Draft)</title>
+<title>Install AirMail</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -439,55 +440,25 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="book">
+<body class="book toc2 toc-left">
 <div id="header">
-<h1>Estimating wave height from IMU accelerometer on a moving boat (Early Draft)</h1>
+<h1>Install AirMail</h1>
 <div class="details">
 <span id="author" class="author">mgrouch</span><br>
 <span id="email" class="email"><a href="mailto:mgrouch@users.noreply.github.com">mgrouch@users.noreply.github.com</a></span><br>
 <span id="revnumber">version 2024-02-10,</span>
-<span id="revdate">Wave Height from IMU accelerometer</span>
+<span id="revdate">Install AirMail</span>
 </div>
-<div id="toc" class="toc">
+<div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_abstract">1. Abstract</a></li>
-<li><a href="#_trochoidal_waves">2. Trochoidal Waves</a>
-<ul class="sectlevel2">
-<li><a href="#_doppler_effect">2.1. Doppler effect</a></li>
-</ul>
-</li>
-<li><a href="#_trigonometry_of_a_boat_movement">3. Trigonometry of a boat movement</a>
-<ul class="sectlevel2">
-<li><a href="#_terminology">3.1. Terminology</a></li>
-<li><a href="#_calculating_true_wind_and_speed_through_water_based_on_difference_in_heading_and_course_over_ground">3.2. Calculating true wind and speed through water based on difference in heading and course over ground</a></li>
-<li><a href="#_heading_true_from_magnetic">3.3. Heading True from Magnetic</a></li>
-<li><a href="#_leeway">3.4. Leeway</a></li>
-</ul>
-</li>
-<li><a href="#_imu">4. IMU</a>
-<ul class="sectlevel2">
-<li><a href="#_getting_vertical_acceleration_from_imu">4.1. Getting vertical acceleration from IMU</a></li>
-<li><a href="#_ahrs_attitude_and_heading_reference_system_fusion_algorithms">4.2. AHRS (attitude and heading reference system) fusion algorithms</a></li>
-</ul>
-</li>
-<li><a href="#_kalman_filter_to_double_integrate_vertical_acceleration_into_displacement_without_integration_drift">5. Kalman filter to double integrate vertical acceleration into displacement without integration drift</a>
-<ul class="sectlevel2">
-<li><a href="#_fft_to_calculate_observed_frequency_of_waves">5.1. FFT to calculate observed frequency of waves</a></li>
-<li><a href="#_butterworth_low_pass_filter">5.2. Butterworth Low Pass filter</a></li>
-</ul>
-</li>
-<li><a href="#_measuring_wave_height_from_a_moving_boat">6. Measuring wave height from a moving boat</a>
-<ul class="sectlevel2">
-<li><a href="#_measurable_input_parameters">6.1. Measurable input parameters</a></li>
-<li><a href="#_assumptions">6.2. Assumptions</a></li>
-<li><a href="#_algorithm_steps">6.3. Algorithm steps</a></li>
-<li><a href="#_input_validation">6.4. Input validation</a></li>
-<li><a href="#_result_validation">6.5. Result validation</a></li>
-</ul>
-</li>
-<li><a href="#_further_ideas">7. Further ideas</a></li>
-<li><a href="#_references">8. References</a></li>
+<li><a href="#_install_airmail_on_raspberry_pi_bookworm_arm64">1. Install AirMail on Raspberry Pi Bookworm arm64</a></li>
+<li><a href="#_step_1_box86">2. Step 1. Box86</a></li>
+<li><a href="#_step_2_wine86">3. Step 2. Wine86</a></li>
+<li><a href="#_step_3_wine86_config">4. Step 3. Wine86 config</a></li>
+<li><a href="#_step_4_download_airmail">5. Step 4. Download AirMail</a></li>
+<li><a href="#_step_5_install_airmail">6. Step 5. Install AirMail</a></li>
+<li><a href="#_step_6_run_airmail">7. Step 6. Run AirMail</a></li>
 </ul>
 </div>
 </div>
@@ -497,780 +468,152 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>&#8203;<br></p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="images/bareboat-necessities-logo.svg" alt="Bareboat Necessities Logo">
 </div>
 </div>
+<div class="sect1">
+<h2 id="_install_airmail_on_raspberry_pi_bookworm_arm64">1. Install AirMail on Raspberry Pi Bookworm arm64</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>&#8203;<br></p>
+<p>AirMail is 32-bit Windows application. So we need to install box86 to emulate 32-bit Intel processor,
+and we would need to install wine86 to emulate Windows. box86 being 32-bit would need armhf (32-bit)
+runtime libraries.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_abstract">1. Abstract</h2>
+<h2 id="_step_1_box86">2. Step 1. Box86</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Usual methods for measuring elevation built-in into modern smartwatches and smart devices are based on fusion of data
-(using Kalman filters, etc) from IMU (accelerometer) and barometer sensors. These methods are designed to measure steps up and down stairs,
-hiking activities, and so on. However, using pressure as a useful source of elevation data is not suitable to measure
-the wave height from a boat. The surface of the wave itself (at least in trochoidal wave model) is the surface of
-equal pressure. Real waves are more complicated but nevertheless measuring air pressure on their surface
-to estimate amplitude of the wave would lead to measuring mostly noise.</p>
-</div>
-<div class="paragraph">
-<p>Calculating elevation (displacement) using double integration of the acceleration leads
-to huge result drift due to not knowing initial displacement, initial vertical velocity
-and due to signal noise and accelerometer bias.</p>
-</div>
-<div class="paragraph">
-<p>This article describes two different methods to estimate wave height, frequency, period
-from a moving boat using IMU (accelerometer) and other common boat sensors such as anemometer (wind), GPS, and compass.
-One method is based on Kalman method which calculates second integral of acceleration with a drift correction
-based on the fact that in wave average displacement equals to zero. Another method doesn&#8217;t use
-integration at all. Instead, it measures max/min acceleration and assumes wave shape to be trochoidal.
-Based on max/min acceleration and observed wave frequency (later adjusted using Doppler effect formulas)
-the method recreates parameters of the trochoid wave allowing it to estimate the wave height.</p>
-</div>
-<div class="paragraph">
-<p>Initial velocity and position for Kalman filter are taken as estimates from trochoidal model to
-allow Kalman filter to converge faster.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_trochoidal_waves">2. Trochoidal Waves</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Gravitational &#160; \$g\$ &#160; (m/s^2): &#160;&#160;&#160;
-\$g = 9.81\$</p>
-</div>
-<div class="paragraph">
-<p>Rotation center of trochoidal wave particle in Z axis (always negative) (m): &#160;&#160;&#160;
-\$b\$</p>
-</div>
-<div class="paragraph">
-<p>Wavelength (m): &#160;&#160;&#160;
-\$L\$</p>
-</div>
-<div class="paragraph">
-<p>Wave equation:</p>
-</div>
-<div class="paragraph">
-<p>\$X(t) = H sin(k c t)\$</p>
-</div>
-<div class="paragraph">
-<p>\$Z(t) = - H cos(k c t)\$</p>
-</div>
-<div class="paragraph">
-<p>Wavenumber (1/m): &#160;&#160;&#160;
-\$k = (2 pi) / L\$</p>
-</div>
-<div class="paragraph">
-<p>Wave amplitude (m):  &#160;&#160;&#160;
-\$H = e ^(k b) / k = L / (2 pi) e ^ ((2 pi b) / L)  \$ &#160;&#160;&#160; &#8658; &#160;&#160;&#160;
-\$b = ln(H k) / k = L / (2 pi) ln ((2 pi H) / L)  \$</p>
-</div>
-<div class="paragraph">
-<p>max(H) amplitude (m):   &#160;&#160;&#160;  \$H_max = L / (2 pi)\$ &#160;&#160;&#160; when &#160; b = 0</p>
-</div>
-<div class="paragraph">
-<p>Depth (m): &#160;&#160;&#160;
-\$d\$</p>
-</div>
-<div class="paragraph">
-<p>Wave speed (m/s): &#160;&#160;&#160;
-\$c = sqrt(g / k tanh(k d))\$ &#160;,&#160;&#160;&#160;&#160;&#160;
-for deep water waves: \$c = sqrt(g / k) = sqrt((g L) / (2 pi))\$,  &#160;&#160; \$L = (g T ^ 2) / (2 pi)\$</p>
-</div>
-<div class="paragraph">
-<p>Wave period (s):   &#160;&#160;&#160;
-\$T = L / c\$</p>
-</div>
-<div class="paragraph">
-<p>Wave frequency (Hz=1/s):   &#160;&#160;&#160;
-\$f = 1 / T = c / L\$</p>
-</div>
-<div class="paragraph">
-<p>Vertical motion is harmonic.</p>
-</div>
-<div class="paragraph">
-<p>Vertical displacement:
-\$Z(t) = - H cos(k c t) = - L / (2 pi) (a(t))/g\$</p>
-</div>
-<div class="paragraph">
-<p>Vertical velocity:
-\$u(t) = Z^'(t) = k c H sin(k c t) = c e ^ ((2 pi b) / L) sin(k c t)\$</p>
-</div>
-<div class="paragraph">
-<p>\$u_max = c e ^ ((2 pi b) / L)\$</p>
-</div>
-<div class="paragraph">
-<p>\$u_max(b=0) = c\$</p>
-</div>
-<div class="paragraph">
-<p>Vertical acceleration:
-\$a(t) = u^'(t) = k^2 c^2 H cos(k c t) = g e ^ ((2 pi b) / L) cos(k c t)\$</p>
-</div>
-<div class="paragraph">
-<p>\$a_max = -a_min = k^2 c^2 H =  ((2 pi) / L) ^ 2 ((g L) / (2 pi)) L / (2 pi) e^((2 pi b)/L) = g e^((2 pi b)/L)  \$</p>
-</div>
-<div class="paragraph">
-<p>\$b = L / (2 pi) ln(a_max / g)\$</p>
-</div>
-<div class="paragraph">
-<p>Slope \$s(t)\$:</p>
-</div>
-<div class="paragraph">
-<p>\$x_b(t) = X(t) - t Delta v\$</p>
-</div>
-<div class="paragraph">
-<p>\$s(t) = d/ (dx_b) ((Z(t)) / (x_b(t))) =  (d/dt(Z)) / (d/dt(x_b)) = (d/dt(- H cos(kct))) / (d/dt(H sin(kct) - t Delta v)) = (cHk sin(kct)) / (cHk cos(kct) - Delta v)\$</p>
-</div>
-<div class="sect2">
-<h3 id="_doppler_effect">2.1. Doppler effect</h3>
-<div class="paragraph">
-<p>\$f\$ &#160; is emitted frequency (Hz=1/s),</p>
-</div>
-<div class="paragraph">
-<p>\$f_o\$ &#160; is observed frequency (Hz=1/s):</p>
-</div>
-<div class="paragraph">
-<p>\$c\$ &#160; is the propagation speed of waves in the medium</p>
-</div>
-<div class="paragraph">
-<p>\$Delta v\$ &#160; is the opposite of the velocity of the receiver
-relative to the source: it is positive when the source and the receiver are moving towards each other.</p>
-</div>
-<div class="paragraph">
-<p>\$f_o = (c +- Delta v) / c f\$</p>
-</div>
-<div class="paragraph">
-<p>\$L\$ &#160; is source wavelength (m) for trochoidal wave.</p>
-</div>
-<div class="paragraph">
-<p>For trochoidal wave:</p>
-</div>
-<div class="paragraph">
-<p>\$f = c / L\$ &#160; &#8658; &#160; \$f_o = (c +- Delta v) / L \$,</p>
-</div>
-<div class="paragraph">
-<p>\$c = sqrt((g L) / (2 pi))\$ &#160; &#8658; &#160; \$f_0 = (sqrt((g L) / (2 pi)) +- Delta v) / L\$</p>
-</div>
-<div class="paragraph">
-<p>\$L = (sign(Delta v) sqrt(8 pi f_o g  Delta v + g ^ 2) + 4 pi f_o  Delta v + g) / (4 pi f_o ^ 2)\$</p>
-</div>
-<div class="paragraph">
-<p>Apparent (observed) vertical acceleration:</p>
-</div>
-<div class="paragraph">
-<p>\$a_(observed)(Delta v, t) = d^2/dt^2 (- H cos(k (c + Delta v) t)) = H k^2 (c^2 + 2 c Delta v + (Delta v)^2) cos(k (c + Delta v) t)\$</p>
-</div>
-<div class="paragraph">
-<p>\$a_(observed_max) = H k^2 (c^2 + 2 c Delta v + (Delta v)^2)\$ &#8658;</p>
-</div>
-<div class="paragraph">
-<p>\$H = H(L, Delta v) = a_(observed_max) / (k^2 (c^2 + 2 c Delta v + (Delta v)^2)) \$</p>
-</div>
-<div class="paragraph">
-<p>\$a_max = a_(observed_max) c^2 / (c^2 + 2 c Delta v + (Delta v)^2)\$</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_trigonometry_of_a_boat_movement">3. Trigonometry of a boat movement</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_terminology">3.1. Terminology</h3>
-<div class="paragraph">
-<p><em>AWS</em> &#160; is Apparent Wind Speed (relative to the boat heading)</p>
-</div>
-<div class="paragraph">
-<p><em>AWA</em> &#160; is Apparent Wind Angle (relative to the bow heading, 0 to 180, starboard plus, port minus)</p>
-</div>
-<div class="paragraph">
-<p><em>AWD</em> &#160; is Apparent Wind Direction (relative to true north)</p>
-</div>
-<div class="paragraph">
-<p><em>AGWS</em> &#160; is Apparent Ground Wind Speed (relative to the boat course over the ground)</p>
-</div>
-<div class="paragraph">
-<p><em>AGWA</em> &#160; is Apparent Ground Wind Angle (relative to the boat course over the ground, 0 to 180, starboard plus, port minus)</p>
-</div>
-<div class="paragraph">
-<p><em>AGWD</em> &#160; is Apparent Ground Wind Direction (relative to true north)</p>
-</div>
-<div class="paragraph">
-<p><em>SPD</em> &#160; is Knotmeter speed (relative to the water)</p>
-</div>
-<div class="paragraph">
-<p><em>HDT</em> &#160; is Heading true (relative to true north)</p>
-</div>
-<div class="paragraph">
-<p><em>HDM</em> &#160; is  Heading magnetic (relative to magnetic north)</p>
-</div>
-<div class="paragraph">
-<p><em>DFT</em> &#160; is  Current Drift (speed of current, relative to fixed earth)</p>
-</div>
-<div class="paragraph">
-<p><em>SET</em> &#160; is  Current Set (direction current flows toward relative to fixed earth true north)</p>
-</div>
-<div class="paragraph">
-<p><em>SOG</em> &#160; is  Speed Over Ground (relative to the fixed earth)</p>
-</div>
-<div class="paragraph">
-<p><em>COGT</em> &#160; is Course Over Ground true (relative to the fixed earth true north)</p>
-</div>
-<div class="paragraph">
-<p><em>COGM</em> &#160; is Course Over Ground magnetic (relative to the fixed earth magnetic north)</p>
-</div>
-<div class="paragraph">
-<p><em>GWS</em> &#160; is Ground Wind Speed (relative to the fixed earth)</p>
-</div>
-<div class="paragraph">
-<p><em>GWD</em> &#160; is Ground Wind Direction (relative to true north)</p>
-</div>
-<div class="paragraph">
-<p><em>TWA</em> &#160; is True Wind Angle (relative to the heading, 0 = upwind, 180deg = downwind, (+ starboard, - port))</p>
-</div>
-<div class="paragraph">
-<p><em>TWS</em> &#160; is True Wind Speed (relative to the water)</p>
-</div>
-<div class="paragraph">
-<p><em>TWD</em> &#160; is True Wind Direction (relative to true north)</p>
-</div>
-<div class="paragraph">
-<p><em>POS</em> &#160; is position LAT, LON (latitude, longitude)</p>
-</div>
-<div class="paragraph">
-<p><em>TB(POS1, POS2)</em> &#160; is Bearing true (true north angle to maintain in course to reach from POS1 to POS2)</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_calculating_true_wind_and_speed_through_water_based_on_difference_in_heading_and_course_over_ground">3.2. Calculating true wind and speed through water based on difference in heading and course over ground</h3>
-<div class="paragraph">
-<p>Having both true heading and true course over the ground allows calculating true wind vector parameters and
-speed through the water (SPD):</p>
-</div>
-<div class="paragraph">
-<p>\$SPD = ((dist(POS2, POS1)) / (t_\text{end} - t_\text{start}) - DFT * cos(COGT - SET)) * cos(COGT - avg(HDT))\$</p>
-</div>
-<div class="paragraph">
-<p>\$TWS = sqrt((avg(AWS)) ^ 2 + SPD ^ 2 - 2 * avg(AWS) * SPD * cos(avg(AWA)))\$</p>
-</div>
-<div class="paragraph">
-<p>\$TWA = +- arccos((avg(AWS) * cos(avg(AWA)) - SPD) / (TWS))\$</p>
-</div>
-<div class="paragraph">
-<p>For Doppler effect formulas:</p>
-</div>
-<div class="paragraph">
-<p>\$Delta v = SPD * cos(TWA)\$</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_heading_true_from_magnetic">3.3. Heading True from Magnetic</h3>
-<div class="paragraph">
-<p>IMU helps measuring magnetic heading HDM. To calculate true heading, it is required to have
-Earth magnetic model and using location and time it gives you magnetic variation.</p>
-</div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-python" data-lang="python">import wmm2020
+<pre class="highlight"><code class="language-shell" data-lang="shell">sudo apt-get -y install build-essential mono-runtime git cmake cabextract \
+  gcc-arm-linux-gnueabihf libc6-dev-armhf-cross zenity
 
-yeardec = datetime.date.today().year
-alt_km = 0
-declination = wmm2020.wmm(glat, glon, alt_km, yeardec).decl</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_leeway">3.4. Leeway</h3>
-<div class="paragraph">
-<p>Although leeway calculation is not required for the algorithm (it gets taken into account with using
-heading to course over ground difference), for completeness, here is the popular empirical formula:</p>
-</div>
-<div class="paragraph">
-<p>Leeway (deg) is angle to adjust heading to maintain constant COG (assuming no current)</p>
-</div>
-<div class="paragraph">
-<p>\$\l\eeway = heel  K / (SPD ^ 2)\$</p>
-</div>
-<div class="paragraph">
-<p>\$heel\$ &#160;&#160; is boat heel and needs to be in (degrees) for the formula above</p>
-</div>
-<div class="paragraph">
-<p>\$SPD\$  &#160;is speed through water  and needs to be in (kt)</p>
-</div>
-<div class="paragraph">
-<p>\$K\$ &#160;&#160;&#160;&#160;&#160; is boat and boat load specific constant (kt^2), about 10.0</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_imu">4. IMU</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_getting_vertical_acceleration_from_imu">4.1. Getting vertical acceleration from IMU</h3>
-<div class="paragraph">
-<p>Most IMU libraries provide a way to get the attitude quaternion \$q\$.
-Using this quaternion to get acceleration in Earth XYZ from IMU frame xyz: \$\text{accel} = (a_x, a_y, a_z)\$ vector,
-the quaternion \$q\$ is used to rotate vector \$\text{accel}\$</p>
-</div>
-<div class="paragraph">
-<p>\$\text{accel}_\text{earthXYZ} = q * \text{accel} * q'\$</p>
-</div>
-<div class="paragraph">
-<p>where \$q'\$ is inverted quaternion \$q\$.</p>
-</div>
-<div class="paragraph">
-<p>The same quaternion can be used to get Euler angles of pitch, roll and yaw.
-Yaw would correspond to the magnetic heading.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-To estimate max acceleration it&#8217;s not needed to extract vertical part of acceleration.
-Just magnitude of acceleration \$a=sqrt(a_x^2 + a_y^2 + a_z^2)\$ should be sufficient.
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_ahrs_attitude_and_heading_reference_system_fusion_algorithms">4.2. AHRS (attitude and heading reference system) fusion algorithms</h3>
-<div class="paragraph">
-<p>If quaternion from IMU is not available, then it can be calculated using AHRS fusion algorithms:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Madgwick algorithm</p>
-</li>
-<li>
-<p>Mahony algorithm</p>
-</li>
-<li>
-<p>RTQF quaternion fusion for lower power processors</p>
-</li>
-<li>
-<p>Extended Kalman Filter (EKF)</p>
-</li>
-</ul>
+sudo dpkg --add-architecture armhf
+sudo apt-get -y install gcc-arm-linux-gnueabihf
+
+sudo apt update
+
+sudo apt-get -y install libegl-mesa0:armhf libgdm1:armhf libgl1-mesa-dri:armhf \
+  libglapi-mesa:armhf libgles2-mesa:armhf libglu1-mesa:armhf libglx-mesa0:armhf \
+  mesa-va-drivers:armhf mesa-vdpau-drivers:armhf mesa-vulkan-drivers:armhf \
+  libsdl1.2debian:armhf libsdl2-2.0-0:armhf libudev1:armhf libllvm11:armhf \
+  linux-libc-dev:armhf libncurses6:armhf libc6:armhf  libx11-6:armhf libgdk-pixbuf2.0-0:armhf \
+  libgtk2.0-0:armhf libstdc++6:armhf libsdl2-2.0-0:armhf mesa-va-drivers:armhf \
+  libsdl1.2-dev:armhf libsdl-mixer1.2:armhf libpng16-16:armhf libcal3d12v5:armhf \
+  libsdl2-net-2.0-0:armhf libopenal1:armhf libsdl2-image-2.0-0:armhf \
+  libvorbis-dev:armhf libcurl4:armhf libjpeg62:armhf  libudev1:armhf \
+  libgl1-mesa-dev:armhf  libx11-dev:armhf libsmpeg0:armhf libavcodec58:armhf \
+  libavformat58:armhf libswscale5:armhf libsdl2-image-2.0-0:armhf \
+  libsdl2-mixer-2.0-0:armhf gcc-arm-linux-gnueabihf
+
+sudo wget https://ryanfortner.github.io/box86-debs/box86.list \
+  -O /etc/apt/sources.list.d/box86.list
+wget -qO- https://ryanfortner.github.io/box86-debs/KEY.gpg | gpg --dearmor \
+  | sudo tee /usr/share/keyrings/box86-debs-archive-keyring.gpg
+sudo apt update &amp;&amp; sudo apt-get -y install box86:armhf</code></pre>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_kalman_filter_to_double_integrate_vertical_acceleration_into_displacement_without_integration_drift">5. Kalman filter to double integrate vertical acceleration into displacement without integration drift</h2>
+<h2 id="_step_2_wine86">3. Step 2. Wine86</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Ref:</p>
-</div>
-<div class="paragraph">
-<p>Sharkh S. M., Hendijanizadeh2 M., Moshrefi-Torbati3 M., Abusara M. A.:
-A Novel Kalman Filter Based Technique for
-Calculating the Time History of Vertical
-Displacement of a Boat from Measured
-Acceleration,
-Marine Engineering Frontiers (MEF) Volume 2, 2014</p>
-</div>
-<div class="paragraph">
-<p>The method uses assumption that average vertical displacement is zero. So it takes third integral of acceleration
-as input measurement with zero value. Vertical acceleration on each step is the value used in transition offset.</p>
-</div>
-<div class="paragraph">
-<p>So only input observation value is 0 (third integral of acceleration).
-Acceleration used in transition offset needs to exclude Earth gravitational g and accelerometer bias.
-So avg(acceleration) is subtracted from it.</p>
-</div>
-<div class="paragraph">
-<p>Accelerometer noise will make the filter to converge slower.
-Accelerometer bias will skew the displacement on one side.
-Giving too low covariances will flatten the result too much. Too high covariances will make it jump too much.</p>
-</div>
-<div class="paragraph">
-<p>Low pass filter is needed to get rid of high frequency noise before running this filter to get better results.</p>
-</div>
-<div class="paragraph">
-<p>Kalman method parameters.</p>
-</div>
-<div class="paragraph">
-<p>Transition matrix:</p>
-</div>
-<div class="paragraph">
-<p>\$ F = [[1, dt, 1/2 dt ^ 2 ], [0,  1,       dt], [0,  0,        1]]  \$</p>
-</div>
-<div class="paragraph">
-<p>Transition offset:</p>
-</div>
-<div class="paragraph">
-<p>\$ B = ( (1/6 dt^3), (1/2 dt^2), (dt) ) \$</p>
-</div>
-<div class="paragraph">
-<p>Observation matrix:</p>
-</div>
-<div class="paragraph">
-<p>\$ H = (1, 0, 0) \$</p>
-</div>
-<div class="paragraph">
-<p>Transition covariance:</p>
-</div>
-<div class="paragraph">
-<p>\$ Q = [[ \text{PosIntegral_Trans_Variance}, 0, 0 ], [0, \text{Pos_Trans_Variance}, 0 ], [0, 0, \text{Vel_Trans_Variance} ]] \$</p>
-</div>
-<div class="paragraph">
-<p>Observation covariance:</p>
-</div>
-<div class="paragraph">
-<p>\$ R = [[ \text{PosIntegral_Variance} ]] \$</p>
-</div>
-<div class="paragraph">
-<p>Initial state mean (height integral, height, velocity):</p>
-</div>
-<div class="paragraph">
-<p>\$ X0 = ((0), (\text{height_from_trochoid_model}), (\text{velocity_from_trochoid_model})) \$</p>
-</div>
-<div class="paragraph">
-<p>Initial state covariance:</p>
-</div>
-<div class="paragraph">
-<p>\$ P0 = [[ \text{PosIntegral_Variance}, 0, 0], [0, 1, 0], [0, 0, 1]] \$</p>
-</div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-python" data-lang="python">from pykalman import KalmanFilter
-import numpy as np
+<pre class="highlight"><code class="language-shell" data-lang="shell"># Wine
+sudo apt-get -y install libasound2:armhf libc6:armhf libglib2.0-0:armhf \
+ libgphoto2-6:armhf libgphoto2-port12:armhf libgstreamer-plugins-base1.0-0:armhf \
+ libgstreamer1.0-0:armhf libldap-common:armhf libopenal1:armhf libpcap0.8:armhf \
+ libpulse0:armhf libsane1:armhf libudev1:armhf libunwind8:armhf libusb-1.0-0:armhf \
+ libvkd3d1:armhf libx11-6:armhf libxext6:armhf ocl-icd-libopencl1:armhf \
+ libasound2-plugins:armhf libncurses6:armhf libtinfo5:armhf libasound2:armhf \
+ libc6:armhf libglib2.0-0:armhf libgphoto2-6:armhf libgphoto2-port12:armhf \
+ libgstreamer-plugins-base1.0-0:armhf libgstreamer1.0-0:armhf libopenal1:armhf \
+ libpcap0.8:armhf libpulse0:armhf libsane1:armhf libudev1:armhf libunwind8:armhf \
+ libusb-1.0-0:armhf libvkd3d1:armhf libx11-6:armhf libxext6:armhf ocl-icd-libopencl1:armhf \
+ libasound2-plugins:armhf libncurses6:armhf libmpeg2-4:armhf libmpeg2encpp-2.1-0:armhf \
+ libtinfo6:armhf libmpg123-0:armhf libtinfo5:armhf libxslt1.1:armhf
 
-kf = KalmanFilter(transition_matrices=F,
-                  observation_matrices=H,
-                  transition_covariance=Q,
-                  observation_covariance=R,
-                  initial_state_mean=X0,
-                  initial_state_covariance=P0)
+cd ~/Downloads
 
-for t in range(n_timesteps):
-    if t == 0:
-        filtered_state_means[t] = X0
-        filtered_state_covariances[t] = P0
-    else:
-        observation = 0
-        transition_offset = B * (accZ_val[t] - acc_avg)
-        filtered_state_means[t], filtered_state_covariances[t] = (
-            kf.filter_update(
-                filtered_state_mean = filtered_state_means[t-1],
-                filtered_state_covariance = filtered_state_covariances[t-1],
-                transition_offset = transition_offset,
-                observation = observation
-            )
-        )</code></pre>
+wget https://dl.winehq.org/wine-builds/debian/dists/bookworm/main/binary-i386/wine-stable-i386_9.0.0.0~bookworm-1_i386.deb
+wget https://dl.winehq.org/wine-builds/debian/dists/bookworm/main/binary-i386/wine-stable_9.0.0.0~bookworm-1_i386.deb
+dpkg-deb -xv wine-stable-i386_9.0.0.0~bookworm-1_i386.deb wine-installer
+dpkg-deb -xv wine-stable_9.0.0.0~bookworm-1_i386.deb wine-installer
+
+rm -rf ~/wine
+mv ~/Downloads/wine-installer/opt/wine* ~/wine
+rm -rf wine-installer
+cd ~
+
+sudo ln -s ~/wine/bin/wine /usr/local/bin/wine
+sudo ln -s ~/wine/bin/wineboot /usr/local/bin/wineboot
+sudo ln -s ~/wine/bin/winecfg /usr/local/bin/winecfg
+sudo ln -s ~/wine/bin/wineserver /usr/local/bin/wineserver
+sudo chmod +x /usr/local/bin/wine /usr/local/bin/wineboot /usr/local/bin/winecfg /usr/local/bin/wineserver
+
+# Wine tricks are optional
+wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+sudo mv winetricks /usr/local/bin/
+sudo chmod +x /usr/local/bin/winetricks
+
+sudo apt-get -y install winbind</code></pre>
 </div>
 </div>
-<div class="paragraph">
-<p>The wave height needs to be evaluated based on the results on the end side of the sampling interval.
-The results in the beginning of the sample interval will have extra spikes due to Kalman
-filter taking time to converge (without knowing initial velocity and position and adjusting
-covariances).</p>
 </div>
-<div class="sect2">
-<h3 id="_fft_to_calculate_observed_frequency_of_waves">5.1. FFT to calculate observed frequency of waves</h3>
-<div class="paragraph">
-<p>Fast (discrete) Fourier Transform (FFT) is used to find main frequency (the one which carries most energy) of the waves.</p>
 </div>
+<div class="sect1">
+<h2 id="_step_3_wine86_config">4. Step 3. Wine86 config</h2>
+<div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-python" data-lang="python">import numpy as np
-from scipy import fft
+<pre class="highlight"><code class="language-shell" data-lang="shell"># wait for it to complete. It takes a while and opens and closes some windows
+wineboot --init
 
-SAMPLE_RATE = 1.0 / dt
-N_SAMP = n_timesteps
-
-w = fft.rfft(accZ_val)
-freqs = fft.rfftfreq(N_SAMP, 1 / SAMPLE_RATE)
-
-# Find the peak in the coefficients
-idx = np.argmax(np.abs(w))
-freq = freqs[idx]
-freq_in_hertz = abs(freq)
-period = 1 / freq_in_hertz</code></pre>
+# Optional step. Where you can choose windows version, font sizes, etc in GUI window
+winecfg</code></pre>
 </div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_butterworth_low_pass_filter">5.2. Butterworth Low Pass filter</h3>
 <div class="paragraph">
-<p>Butterworth Low pass filter is used to filter out high frequencies noise in input
-to Kalman filter</p>
+<p>You can increase your font size if it is too small under 'Graphics' menu.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_step_4_download_airmail">5. Step 4. Download AirMail</h2>
+<div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-python" data-lang="python">import numpy as np
-from scipy import signal
-
-sos = signal.butter(2, freq_in_hertz * 8, 'low', fs=SAMPLE_RATE, output='sos')
-low_pass_filtered = signal.sosfilt(sos, accZ_val)</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_measuring_wave_height_from_a_moving_boat">6. Measuring wave height from a moving boat</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_measurable_input_parameters">6.1. Measurable input parameters</h3>
-<div class="paragraph">
-<p>Open sea waves have periods 20 sec or even longer. So sample duration time
-should be in minutes to capture several waves. Playing with reference data without noise
-shows described Kalman algorithm needs about 10 wavelength to converge accurately.
-So with longer way samples needs to be longer. 5-15 mins.</p>
-</div>
-<div class="paragraph">
-<p>Acceleration positive &#8658; position negative. They are in counter phase. This could allow setting initial position for Kalman filter better.</p>
-</div>
-<div class="paragraph">
-<p>Pitch negative &#8658; speed vector is pointing down. This could also allow setting initial velocity for Kalman filter better.</p>
-</div>
-<div class="paragraph">
-<p>So for initial position and speed in Kalman filter:</p>
-</div>
-<div class="paragraph">
-<p>\$pos_\text{init} = - a_\text{init} / (k^2 c^2) = - a_\text{init} / (g k) = - L a_\text{init} / (2 pi g) \$</p>
-</div>
-<div class="paragraph">
-<p>\$tan(\p\i\tch_\text{init}) = const_1 * s_\text{init}(Delta v = 0)\$ &#160;&#160; tangent of pitch is proportional to wave slope</p>
-</div>
-<div class="paragraph">
-<p>\$vel_\text{init} =  kcH cos(kct) * s_\text{init}(Delta v = 0) = (kcH) / (const_1) sin(\p\itch_\text{init}) = const_2 * c * sin(\p\itch_\text{init}) \$,</p>
-</div>
-<div class="paragraph">
-<p>\$const_2\$ to be found empirically (it&#8217;s vessel specific too).</p>
-</div>
-<div class="paragraph">
-<p>Or</p>
-</div>
-<div class="paragraph">
-<p>\$vel_\text{init} = c e^((2 pi b)/L) sin (arccos (a_\text{init} / g e^(-(2 pi b)/ L))) * sign(\p\itch_\text{init}) \$</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>t_start, t_end - time interval of measurements (about 5 mins)</p>
-</li>
-<li>
-<p>POS(t) as LAT(t), LON(t)</p>
-</li>
-<li>
-<p>AWA(t) AWS(t)</p>
-</li>
-<li>
-<p>COG(t) SOG(t)</p>
-</li>
-<li>
-<p>HDM(t) + mag_variation &#8594; HDT(t)</p>
-</li>
-<li>
-<p>DFT(t) SET(t) - (possibly from current/tide stations harmonics data)</p>
-</li>
-<li>
-<p>heel(t), pitch(t)</p>
-</li>
-<li>
-<p>SPD(t) - possibly (might be missing) &#8658; leeway(heel(t), SPD(t))</p>
-</li>
-<li>
-<p>accel(t, x, y, z), vertical_accel(t) via pitch,roll,yaw</p>
-</li>
-<li>
-<p>ROT(t) - rate of turn</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_assumptions">6.2. Assumptions</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>No tacks, jibes during sample</p>
-</li>
-<li>
-<p>Heading and course over ground are mostly steady</p>
-</li>
-<li>
-<p>Wind is not changing drastically</p>
-</li>
-<li>
-<p>Depth is deep, i.e. depth &gt; 1/2 wavelength</p>
-</li>
-<li>
-<p>Water current is not changing much (or zero i.e. negligible relative to boat speed)</p>
-</li>
-<li>
-<p>Trochoidal wave model</p>
-</li>
-<li>
-<p>Wave length is longer than boat length</p>
-</li>
-<li>
-<p>Approx formula for b, H (in trochoidal wave model)</p>
-</li>
-<li>
-<p>Accelerometer installed near vessel&#8217;s center of mass (center of buoyancy)</p>
-</li>
-<li>
-<p>Vessel&#8217;s geometry and RAO (Response amplitude operator) is not taken into account</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_algorithm_steps">6.3. Algorithm steps</h3>
-<div class="paragraph">
-<p>Calculation steps:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>FFT to get observed wave frequency from acceleration (f_observed)</p>
-</li>
-<li>
-<p>Speed toward wave fronts (delta_v for Doppler frequency) from wind and speed data</p>
-<div class="ulist">
-<ul>
-<li>
-<p>COGT as true bearing from POS1 to POS2</p>
-</li>
-<li>
-<p>Convert HDM to HDT using position and local mag declination, Use avg(HDT) vs COG and coordinates to calculate SPD</p>
-</li>
-<li>
-<p>SPD = (DIST(POS1, POS2)/(t_end - t_start) - (DFT * cos(COGT - SET))) * cos(COGT - avg(HDT))</p>
-</li>
-<li>
-<p>avg(leeway(heel(t), SPD))</p>
-</li>
-<li>
-<p>use avg(AWA), AVG(AWS) and SPD to calculate TWS/TWA</p>
-</li>
-<li>
-<p>TWS = sqrt(AVG(AWS) ^ 2 + SPD ^ 2 - 2 * AVG(AWS) * SPD * cos(avg(AWA)))</p>
-</li>
-<li>
-<p>TWA = +- arccos( ( AVG(AWS) * cos(avg(AWA)) - SPD ) / TWS)</p>
-</li>
-<li>
-<p>calculate delta_v as SPD * cos(TWA)</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Calculate L_source (source wave length) for trochoidal wave model from f_observed and delta_v using Doppler formulas</p>
-</li>
-<li>
-<p>Low pass filter for accel data</p>
-</li>
-<li>
-<p>min/max accel after low pass</p>
-</li>
-<li>
-<p>Calculate b value for trochoidal wave model from known L_source and min/max accel after low pass</p>
-</li>
-<li>
-<p>Calculate wave height from b and L_source</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_input_validation">6.4. Input validation</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Validate heading and COG for steadiness</p>
-</li>
-<li>
-<p>Validate that magnetic variation is known for the position</p>
-</li>
-<li>
-<p>Check validity of accel (against g)</p>
-</li>
-<li>
-<p>Validate input data against assumptions</p>
-</li>
-<li>
-<p>Discard the sample if it is not good and start collecting a new one.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_result_validation">6.5. Result validation</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Validate wave amplitude max &#160; \$H &lt; H_max = L / (2 pi)\$</p>
-</li>
-<li>
-<p>Validate accel (Ratio to \$g\$ can&#8217;t be unreasonably high)</p>
-</li>
-<li>
-<p>Discard the sample if the result is not good and start collecting a new one.</p>
-</li>
-<li>
-<p>Validate height calculated by Kalman filter against height calculated from max acceleration
-and wavelength with trochoidal model.</p>
-</li>
-</ul>
+<pre class="highlight"><code class="language-shell" data-lang="shell">cd ~
+wget http://siriuscyber.net/sailmail/amsm35054b.exe</code></pre>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_further_ideas">7. Further ideas</h2>
+<h2 id="_step_5_install_airmail">6. Step 5. Install AirMail</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Trochoidal model gives a good reference point. It&#8217;s easy to go from acceleration to vertical displacement
-in trochoidal model knowing the wavelength. So (I think) it could be a good idea to use trochoidal model estimations
-as input to Kalman filter fusion (instead of zero third integral assumption), as another way to prevent
-displacement integral of acceleration from drift.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">cd ~
+wine amsm35054b.exe</code></pre>
 </div>
-<div class="paragraph">
-<p>Vertical velocity and heel are correlated. It would be interesting to study their interdependencies.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_references">8. References</h2>
+<h2 id="_step_6_run_airmail">7. Step 6. Run AirMail</h2>
 <div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Sharkh S. M., Hendijanizadeh2 M., Moshrefi-Torbati3 M., Abusara M. A.: A Novel Kalman Filter Based Technique for Calculating the Time History of Vertical Displacement of a Boat from Measured Acceleration, <a href="https://www.researchgate.net/profile/Mehdi-Hendijanizadeh/publication/264713649_A_Novel_Kalman_Filter_Based_Technique_for_Calculating_the_Time_History_of_Vertical_Displacement_of_a_Boat_from_Measured_Acceleration/links/53ec88db0cf24f241f1584c5/A-Novel-Kalman-Filter-Based-Technique-for-Calculating-the-Time-History-of-Vertical-Displacement-of-a-Boat-from-Measured-Acceleration.pdf">Marine Engineering Frontiers (MEF) Volume 2, 2014</a></p>
-</li>
-<li>
-<p><a href="https://en.wikipedia.org/wiki/Trochoidal_wave">Trochoidal Wave Wikipedia</a></p>
-</li>
-<li>
-<p><a href="https://en.wikipedia.org/wiki/Wind_wave">Wind Wave Wikipedia</a></p>
-</li>
-<li>
-<p><a href="https://github.com/seandepagnier/RTIMULib2">RTIMULib2 IMU library</a></p>
-</li>
-<li>
-<p><a href="https://github.com/pypilot/pypilot">PyPilot Free Autopilot</a></p>
-</li>
-<li>
-<p><a href="https://github.com/space-physics/wmm2020">World Magnetic Model on GitHub</a></p>
-</li>
-</ol>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell"># To run AirMail
+cd ~/.wine/drive_c/Program\ Files/Airmail
+wine Airmail3.exe</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Go into Tools&#8594;Options&#8594;Spellcheck and uncheck all boxes.
+(This reportedly fixes some typing re-draw issues).</p>
 </div>
 </div>
 </div>
@@ -1280,29 +623,5 @@ displacement integral of acceleration from drift.</p>
 Version 2024-02-10<br>
 </div>
 </div>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  messageStyle: "none",
-  tex2jax: {
-    inlineMath: [["\\(", "\\)"]],
-    displayMath: [["\\[", "\\]"]],
-    ignoreClass: "nostem|nolatexmath"
-  },
-  asciimath2jax: {
-    delimiters: [["\\$", "\\$"]],
-    ignoreClass: "nostem|noasciimath"
-  },
-  TeX: { equationNumbers: { autoNumber: "none" } }
-})
-MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
-  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
-    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
-      data.math.root.display = "block"
-    }
-    return data
-  })
-})
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
 </body>
 </html>
