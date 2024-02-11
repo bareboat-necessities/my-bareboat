@@ -3244,10 +3244,6 @@ reboot
 * Epoxy potting for electronics
 * Dielectric grease for electrical connectors
 
-=== Sailing Performance Dashboard
-
-See Capolavoro Sailing PD at: https://www.capolavoro.nl/
-
 === Screen Recording
 
 https://github.com/vkohaupt/vokoscreenNG
