@@ -128,13 +128,11 @@ Download SD card image (~2.8Gb file):
 
 https://github.com/bareboat-necessities/lysmarine_gen#download
 
-Alternative place to download if the previous link doesn't work for you:
-
-https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2023-08-17
-
-Past major LTS release:
+Past major LTS releases:
 
 https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2022-08-03
+
+https://github.com/bareboat-necessities/lysmarine_gen/releases/tag/v2023-08-17
 
 
 ==== 32-bit vs 64-bit images
