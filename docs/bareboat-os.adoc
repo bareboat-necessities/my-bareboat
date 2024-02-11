@@ -3047,10 +3047,6 @@ sudo python3 -m serial.tools.list_ports -v -s
 sudo usb-devices
 ----
 
-=== Additional software via pi-apps
-
-See: https://github.com/Botspot/pi-apps
-
 
 === Good IDEs for programmers
 
@@ -3096,12 +3092,6 @@ For baro/temp sensors (which are part of Waveshare 10 dof) I had to activate
 BMP280/BME280 plugin in SignalK. I put 'outside' into SignalK path.
 And set polling period to 20 seconds. After that I restarted SignalK and got the values
 in SignalK data feed.
-
-=== Sound via HDMI
-
-To make sure that sound works via HDMI (when you enable so in other programs)
-edit the /boot/config.txt and set hdmi_drive=2 in it.
-
 
 === OpenCPN upgrade
 
@@ -3244,11 +3234,6 @@ sudo raspi-config
 
 Without it VNC would show message that it couldn't show desktop.
 
-=== USB over IP
-
-https://developer.ridgerun.com/wiki/index.php?title=How_to_setup_and_use_USB/IP
-
-https://derushadigital.com/other%20projects/2019/02/19/RPi-USBIP-ZWave.html
 
 === Remote Desktop with NoMachine
 
@@ -3328,10 +3313,6 @@ reboot
 * Epoxy potting for electronics
 * Dielectric grease for electrical connectors
 
-=== How To Enable Hardware Acceleration In Chromium On Raspberry Pi OS (RPi 4)
-
-https://www.linuxuprising.com/2021/04/how-to-enable-hardware-acceleration-in.html
-
 === Sailing Performance Dashboard
 
 See Capolavoro Sailing PD at: https://www.capolavoro.nl/
@@ -3351,16 +3332,6 @@ Also, the link provides a method to estimate true wind from course over ground a
 based on apparent wind measurements.
 
 https://bareboat-necessities.github.io/my-bareboat/bareboat-math.html
-
-
-=== Finances and Accounting
-
-http://homebank.free.fr/en/
-
-[source, shell]
-----
-sudo apt-get -y install homebank
-----
 
 === Setting up monitor
 
