@@ -1038,10 +1038,8 @@ https://48north.com/boats-and-gear/gear-reviews/supercharge-your-boats-informati
 
 ==== VNC
 
-BBN OS image comes with RealVNC server pre-installed and ready to be used on the local network.
-
-IMPORTANT: You need to change the authentication method or the default unix user password before connecting the
-system to the Internet.
+BBN OS image comes with RealVNC server pre-installed and ready to be used on the local network. The default
+host name to lookup in VNC client for connecting to your pi with BBN OS is 'lysmarine'.
 
 OS image also provides VNC client app.
 
