@@ -1858,7 +1858,16 @@ sudo systemctl start influxdb
 
 . Initialize database and connect to it (for example) from SignalK barograph plugin.
 
-Chronograf and Kapasitor also come pre-installed.
+Chronograf and Kapacitor also come pre-installed. To enable:
+
+[source, shell]
+----
+sudo systemctl enable kapacitor
+sudo systemctl start kapacitor
+
+sudo systemctl enable chronograf
+sudo systemctl start chronograf
+----
 
 === Power consumption
 
