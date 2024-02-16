@@ -446,7 +446,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">mgrouch</span><br>
 <span id="email" class="email"><a href="mailto:mgrouch@users.noreply.github.com">mgrouch@users.noreply.github.com</a></span><br>
-<span id="revnumber">version 2024-02-13,</span>
+<span id="revnumber">version 2024-02-16,</span>
 <span id="revdate">Bareboat Necessities OS Documentation</span>
 </div>
 <div id="toc" class="toc2">
@@ -3678,7 +3678,16 @@ sudo systemctl start influxdb</code></pre>
 </ol>
 </div>
 <div class="paragraph">
-<p>Chronograf and Kapasitor also come pre-installed.</p>
+<p>Chronograf and Kapacitor also come pre-installed. To enable:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">sudo systemctl enable kapacitor
+sudo systemctl start kapacitor
+
+sudo systemctl enable chronograf
+sudo systemctl start chronograf</code></pre>
+</div>
 </div>
 </div>
 </div>
@@ -6288,7 +6297,7 @@ open source you will learn how things work</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2024-02-13<br>
+Version 2024-02-16<br>
 </div>
 </div>
 </body>
