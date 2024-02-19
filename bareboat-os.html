@@ -505,6 +505,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_pypilot_motor_controller_wiring_to_pi_gpio">1.16.1. PyPilot Motor Controller Wiring to Pi GPIO</a></li>
 <li><a href="#_pypilot_motor_controller_loading_firmware_into_mcu">1.16.2. PyPilot Motor Controller Loading Firmware into MCU</a></li>
 <li><a href="#_typical_components_of_pypilot_motor_controller">1.16.3. Typical Components of PyPilot Motor Controller</a></li>
+<li><a href="#_imu_calibration_using_pypilot">1.16.4. IMU Calibration using PyPilot</a></li>
 </ul>
 </li>
 <li><a href="#_ui_for_controlling_autopilots">1.17. UI for controlling autopilots</a></li>
@@ -1799,6 +1800,20 @@ tested firmware for a tested controller model/make.
 <p>mpu9255 IMU</p>
 </li>
 </ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_imu_calibration_using_pypilot">1.16.4. IMU Calibration using PyPilot</h4>
+<div class="paragraph">
+<p>3-axis IMU accelerometer and
+3-axis magnetometer need to be calibrated initially to account for range and bias of readings on each axis.</p>
+</div>
+<div class="paragraph">
+<p>PyPilot comes with a calibration utility. During calibration you need to rotate IMU along all axises to
+allow calibration process to assess ranges of readings and skew bias on each of them. Calibration process completes when its able to optimally
+fit all these readings on a sphere.
+(two spheres: one for accelerometer,
+and one for magnetometer)</p>
 </div>
 </div>
 </div>
