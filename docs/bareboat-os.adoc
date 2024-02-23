@@ -1263,7 +1263,7 @@ They do require additional hardware, set up and dedication.
 
 PyPilot based autopilots:
 
-* https://pypilot.org/store/
+* https://pypilot.org/
 * https://pcnautic.nl/nl/autopilot
 
 These features would be particularly interesting for offshore sailors:
