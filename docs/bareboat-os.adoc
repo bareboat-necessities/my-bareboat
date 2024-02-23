@@ -621,6 +621,17 @@ For compass IMU connected to Pi (that's not really a part of motor controller)
 * icm20948 IMU
 * mpu9255 IMU
 
+==== IMU Calibration using PyPilot
+
+3-axis IMU accelerometer and 
+3-axis magnetometer need to be calibrated initially to account for range and bias of readings on each axis. 
+
+PyPilot comes with a calibration utility. During calibration you need to rotate IMU along all axes to 
+allow calibration process to assess ranges of readings and skew bias on each of them. Calibration process completes when it's able to optimally
+fit all these readings on a sphere. 
+(two spheres: one for accelerometer,
+and one for magnetometer)
+
 === UI for controlling autopilots
 
 There are three options:
