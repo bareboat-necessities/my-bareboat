@@ -496,7 +496,8 @@ Polars are important for Weather Routing and Dashboard Tactics plugins.
 SignalK manages its own updates. Login into SignalK Marine Data Server web UI application
 and perform updates via its app store.
 
-For SignalK support visit: https://discord.com/invite/cpGqA5sZ
+For SignalK support visit: 
+https://discord.gg/uuZrwz4dCS
 
 === PyPilot
 
