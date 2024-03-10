@@ -620,7 +620,7 @@ https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/pypilo
 For compass IMU connected to Pi (that's not really a part of motor controller)
 
 * icm20948 IMU
-* mpu9255 IMU
+* mpu9255 IMU6
 
 ==== IMU Calibration using PyPilot
 
@@ -1622,6 +1622,21 @@ You need to be connected to Internet, and give 15 mins or so after the below com
 cd /home/user/add-ons
 ./homeassistant-install.sh
 ----
+
+HomeAssistant in BBN OS includes NMEA TCP integration. You might need to enable it by
+going into 'Settings/Devices and Services' in HomeAssistant Web UI, and clicking 'Add Integration'.
+Search for 'Boat' or '0183' and add 'Smart Boat 0183 TCP' integration with parameters
+
+[source]
+----
+host: 127.0.0.1
+port: 10110
+----
+
+(TCP device name can be just unique name you pick)
+
+More details here: https://github.com/SmartBoatInnovations/ha-smart0183tcp
+
 
 It will also install EspHome. Url to access: http://localhost:6052
 
