@@ -446,7 +446,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">mgrouch</span><br>
 <span id="email" class="email"><a href="mailto:mgrouch@users.noreply.github.com">mgrouch@users.noreply.github.com</a></span><br>
-<span id="revnumber">version 2024-03-09,</span>
+<span id="revnumber">version 2024-03-10,</span>
 <span id="revdate">Bareboat Necessities OS Documentation</span>
 </div>
 <div id="toc" class="toc2">
@@ -1798,7 +1798,7 @@ tested firmware for a tested controller model/make.
 <p>icm20948 IMU</p>
 </li>
 <li>
-<p>mpu9255 IMU</p>
+<p>mpu9255 IMU6</p>
 </li>
 </ul>
 </div>
@@ -3335,6 +3335,23 @@ You need to be connected to Internet, and give 15 mins or so after the below com
 <pre class="highlight"><code class="language-shell" data-lang="shell">cd /home/user/add-ons
 ./homeassistant-install.sh</code></pre>
 </div>
+</div>
+<div class="paragraph">
+<p>HomeAssistant in BBN OS includes NMEA TCP integration. You might need to enable it by
+going into 'Settings/Devices and Services' in HomeAssistant Web UI, and clicking 'Add Integration'.
+Search for 'Boat' or '0183' and add 'Smart Boat 0183 TCP' integration with parameters</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>host: 127.0.0.1
+port: 10110</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(TCP device name can be just unique name you pick)</p>
+</div>
+<div class="paragraph">
+<p>More details here: <a href="https://github.com/SmartBoatInnovations/ha-smart0183tcp" class="bare">https://github.com/SmartBoatInnovations/ha-smart0183tcp</a></p>
 </div>
 <div class="paragraph">
 <p>It will also install EspHome. Url to access: <a href="http://localhost:6052" class="bare">http://localhost:6052</a></p>
@@ -6317,7 +6334,7 @@ open source you will learn how things work</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2024-03-09<br>
+Version 2024-03-10<br>
 </div>
 </div>
 </body>
