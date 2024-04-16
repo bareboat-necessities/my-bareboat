@@ -74,6 +74,8 @@ BBN Boat Monitoring is a low-power solution to send alarms on various conditions
 In the center is esp32 with Ethernet module connected wired to a boat router.
 Alarms are sent via WhatsApp messenger.
 
+Modular design of software and hardware so users can pick and choose needed modules.
+
 == Connectivity
 
 . MDNS discovery of other services gpsd, SignalK, pypilot, etc
@@ -95,6 +97,47 @@ Alarms are sent via WhatsApp messenger.
 . Internet connection speed reporting
 
 == Hardware
+
+esp32 on m5atom-lite or m5atom-lite-S3. With ethernet atomPoW (with w5500 chip).
+
+Sensors (pick and choose)
+
+* Accelerometer
+
+* IMU
+
+* Env sensors (temperature, barometer, humidity)
+
+* Gas Sensors (CO, heavy gases, hydrogen, smoke detector)
+
+* GPS
+
+* NMEA 0183 interface
+
+* NMEA 2000 interface
+
+* Lightning sensor
+
+* Voltage sensor
+
+* Current (amp) meter for bilge pump usage
+
+* Temperature (1w) sensors
+
+* Motion detection sensors
+
+* Water salinity sensor
+
+* Proximity sensors
+
+* Snow / ice sensor
+
+* Water level sensor
+
+* Dighy LoRa locator
+
+* RTC clock
+
 
 == Alarms (planned)
 
