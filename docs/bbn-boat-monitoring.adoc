@@ -142,7 +142,7 @@ Sensors (pick and choose):
 
 * *NMEA 2000 interface*
 +
-[small]#M5Stack IsolatedCANBus Unit (CA-IS3050G)#
+[small]#M5Stack Isolated CANBus Unit (CA-IS3050G)#
 
 * *Lightning sensor*
 +
@@ -186,7 +186,7 @@ Sensors (pick and choose):
 
 * *Dinghy LoRa locator*
 +
-[small]#LoRa receiver for esp32#
+[small]#LoRa receiver for esp32 (international band?)#
 
 * *RTC clock*
 +
