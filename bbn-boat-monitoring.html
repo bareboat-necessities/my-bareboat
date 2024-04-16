@@ -509,7 +509,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_what_is_bbn_boat_monitoring">1. What is BBN Boat Monitoring</h2>
 <div class="sectionbody">
-
+<div class="paragraph">
+<p>BBN Boat Monitoring is a low-power solution to send alarms on various conditions from an unattended boat.</p>
+</div>
+<div class="paragraph">
+<p>In the center is esp32 with Ethernet module connected wired to a boat router.
+Alarms are sent via WhatsApp messenger.</p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -578,7 +584,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Hatch open</p>
 </li>
 <li>
-<p>High heel or pitch</p>
+<p>High heel or pitch (from IMU)</p>
 </li>
 <li>
 <p>High wind alarm</p>
@@ -590,7 +596,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Forgot nav lights 'on'</p>
 </li>
 <li>
-<p>Motion detected</p>
+<p>Motion detected (Intrusion)</p>
 </li>
 <li>
 <p>High humidity</p>
@@ -635,10 +641,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Heartbeat (ImAlive) WhatsApp message</p>
 </li>
 <li>
-<p>Voltage alarm</p>
+<p>Low battery voltage</p>
 </li>
 <li>
-<p>Bilge pump alarm</p>
+<p>Battery overcharging</p>
+</li>
+<li>
+<p>High battery temperature</p>
+</li>
+<li>
+<p>Bilge pump high utilization</p>
 </li>
 </ol>
 </div>
