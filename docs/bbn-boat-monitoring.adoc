@@ -102,6 +102,8 @@ Modular design of software and hardware so users can pick and choose needed modu
 
 . Speakers / Buzzer for audible alarms?
 
+. Status lights for visual alarms?
+
 == Hardware
 
 esp32 on m5atom-lite or m5atom-lite-S3 from M5Stack. With M5Stack Ethernet AtomPoW (with w5500 chip).
