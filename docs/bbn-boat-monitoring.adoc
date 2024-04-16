@@ -78,7 +78,7 @@ Modular design of software and hardware so users can pick and choose needed modu
 
 == Connectivity
 
-. MDNS discovery of other services gpsd, SignalK, pypilot, etc
+. MDNS discovery of other services gpsd, SignalK, pypilot, Victron MQTT, etc
 
 . DHCP client
 
@@ -90,9 +90,13 @@ Modular design of software and hardware so users can pick and choose needed modu
 
 . Ethernet to router
 
+. NMEA 0183, NMEA 2000
+
+. i2c, 1-wire, UART, LoRa, Ethernet, other GPIO (analog and digital)
+
 . WhatsApp message
 
-. Command line WhatsApp messenger for Linux
+. Command-line WhatsApp messenger for Linux
 
 . Internet connection speed reporting
 
@@ -243,7 +247,7 @@ Sensors (pick and choose):
 
 . Hard impact on hull (via accelerometer)
 
-. Heartbeat (ImAlive) WhatsApp message
+. Heartbeat (ImAlive) message
 
 . Low battery voltage
 
@@ -255,5 +259,6 @@ Sensors (pick and choose):
 
 . Bilge pump high utilization
 
+. Location reporting
 
 
