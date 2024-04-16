@@ -1,0 +1,149 @@
+= Bareboat Necessities (BBN) Boat Monitoring
+mgrouch <mgrouch@users.noreply.github.com>
+{docdate}, Bareboat Necessities Boat Monitoring
+:imagesdir: images
+:keywords: openplotter, opencpn, signalK, nmea, marine
+:description: BBN Boat Monitor is a free open source software for esp32. \
+With BBN Boat Monitor you can receive various alarms from your boat when it's left unattended.
+:doctype: book
+:organization: Bareboat Necessities
+:title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+ifdef::backend-pdf[]
+:source-highlighter: rouge
+:toc-placement!: manual
+:pdf-page-size: Letter
+:plantumlconfig: plantuml.cfg
+endif::[]
+ifndef::backend-pdf[]
+:toc-placement: left
+endif::[]
+:experimental:
+:reproducible:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 3
+:encoding: utf-8
+:lang: en
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:env-github:
+
+{zwsp} +
+
+ifndef::backend-pdf[]
+
+image::bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+
+{zwsp} +
+
+endif::[]
+
+https://bareboat-necessities.github.io
+
+https://github.com/bareboat-necessities/lysmarine_gen
+
+https://github.com/bareboat-necessities/lysmarine_gen/issues
+
+https://bareboat-necessities.wixsite.com/my-bareboat
+
+https://github.com/bareboat-necessities/bbn-m5stack-tough
+
+https://github.com/bareboat-necessities/bbn-nmea200-m5atom
+
+{zwsp} +
+
+PDF version:
+
+https://bareboat-necessities.github.io/my-bareboat/bbn-boat-monitoring.pdf
+
+
+{zwsp} +
+
+toc::[]
+
+== What is BBN Boat Monitoring
+
+== Connectivity
+
+. MDNS discovery of other services gpsd, SignalK, pypilot, etc
+
+. DHCP client
+
+. NTP client
+
+. Web server for configuration
+
+. Uptime reporting (sleeping periods to save power)
+
+. Ethernet to router
+
+. WhatsApp message
+
+. Command line WhatsApp messenger for Linux
+
+. Internet connection speed reporting
+
+== Hardware
+
+== Alarms (planned)
+
+. Heavy gases in bilge
+
+. High salinity of water in bilge
+
+. Hydrogen gas alarm
+
+. Fire alarm. Smoke detector
+
+. Carbon monoxide alarm
+
+. Hatch open
+
+. High heel or pitch
+
+. High wind alarm
+
+. Lightning storm detected
+
+. Forgot nav lights 'on'
+
+. Motion detected
+
+. High humidity
+
+. Possible fog conditions
+
+. Snow or ice conditions
+
+. Barometer keeps falling alarm
+
+. Temp alarm (ex: fridge warm)
+
+. Dingy too far
+
+. GPX fix lost
+
+. High current at anchor (by speed through water)
+
+. Low water under keel alarm
+
+. Accelerometer alarm for high waves
+
+. Anchor alarm (plus command line utility to activate and deactivate)
+
+. Grounding alarm from accelerometer
+
+. Hard impact on hull (via accelerometer)
+
+. Heartbeat (ImAlive) WhatsApp message
+
+. Voltage alarm
+
+. Bilge pump alarm
+
