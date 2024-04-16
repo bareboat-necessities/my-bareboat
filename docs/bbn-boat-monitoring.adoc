@@ -265,4 +265,10 @@ Sensors (pick and choose):
 
 . Location reporting
 
+== Compare to commercial solutions
+
+Example:
+
+https://www.trektransponder.com.au/
+
 
