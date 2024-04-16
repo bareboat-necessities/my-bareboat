@@ -162,8 +162,14 @@ Sensors (pick and choose):
 * *Proximity sensors (hatch open/closed sensor)*
 +
 [small]#M5Stack Hall Effect Unit (A3144E Hall Sensor)#
++
+[small]#or#
++
+[small]#Magnetic Reed door switch sensor#
 
 * *Snow / ice sensor*
++
+[small]#Rain and Snow Sensor Transmitter Weather Induction Detection Heating Anti-icing IP65#
 
 * *Water level sensor*
 
