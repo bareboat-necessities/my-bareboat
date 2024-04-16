@@ -100,6 +100,8 @@ Modular design of software and hardware so users can pick and choose needed modu
 
 . Internet connection speed reporting
 
+. Speakers / Buzzer for audible alarms?
+
 == Hardware
 
 esp32 on m5atom-lite or m5atom-lite-S3 from M5Stack. With M5Stack Ethernet AtomPoW (with w5500 chip).
