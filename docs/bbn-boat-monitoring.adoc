@@ -124,13 +124,13 @@ Sensors (pick and choose):
 
 * *Gas Sensors (CO, heavy gases, hydrogen, smoke detector)*
 +
-[small]#Carbon monoxide sensor for esp32#
+[small]#Carbon monoxide sensor for esp32 (MQ-7 gas sensor?)#
 +
-[small]#Smoke detector sensor for esp32#
+[small]#Smoke detector sensor for esp32 (MQ-2 gas sensor?)#
 +
-[small]#Heavy gases sensor for esp32 (MQ4 Methane Gas Sensor?)#
+[small]#Heavy gases sensor for esp32 (MQ-2/MQ-4/MQ-5/MQ-6 gas sensors?)#
 +
-[small]#Hydrogen H2 gas detector sensor for esp32#
+[small]#Hydrogen H2 gas detector sensor for esp32 (MQ-8 gas sensor?)#
 
 * *GPS*
 +
