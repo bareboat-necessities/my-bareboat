@@ -165,6 +165,8 @@ Sensors (pick and choose):
 [small]#M5Stack PIR Motion Sensor (AS312)#
 
 * *Water salinity sensor*
++
+[small]#Water conductivity sensor#
 
 * *Proximity sensors (hatch open/closed sensor)*
 +
@@ -179,8 +181,12 @@ Sensors (pick and choose):
 [small]#Rain and Snow Sensor Transmitter Weather Induction Detection Heating Anti-icing IP65#
 
 * *Water level sensor*
++
+[small]#Water leak detector sensor#
 
 * *Dinghy LoRa locator*
++
+[small]#LoRa receiver for esp32#
 
 * *RTC clock*
 +
