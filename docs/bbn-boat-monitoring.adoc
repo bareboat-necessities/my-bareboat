@@ -100,64 +100,68 @@ Modular design of software and hardware so users can pick and choose needed modu
 
 esp32 on m5atom-lite or m5atom-lite-S3 from M5Stack. With M5Stack Ethernet AtomPoW (with w5500 chip).
 
-Sensors (pick and choose)
+Sensors (pick and choose):
 
-* Accelerometer
+* *Accelerometer*
 +
-M5Stack 3-Axis Digital Accelerometer Unit (ADXL345)
+[small]#M5Stack 3-Axis Digital Accelerometer Unit (ADXL345)#
 
-* IMU
+* *IMU*
 +
-M5Stack 6-DoF IMU Pro Mini Unit (BMI270, BMM150, BMP280)
+[small]#M5Stack 6-DoF IMU Pro Mini Unit (BMI270, BMM150, BMP280)#
 +
-or M5Stack 6-Axis IMU Unit(MPU6886)
+[small]#or M5Stack 6-Axis IMU Unit(MPU6886)#
 
-* Env sensors (temperature, barometer, humidity)
+* *Env sensors (temperature, barometer, humidity)*
 +
-M5Stack ENV IV Unit with Temperature Humidity Air Pressure Sensor (SHT40+BMP280)
+[small]#M5Stack ENV IV Unit with Temperature Humidity Air Pressure Sensor (SHT40+BMP280)#
 +
-or M5Stack ENV III Unit with Temperature Humidity Air Pressure Sensor (SHT30+QMP6988)
+[small]#or M5Stack ENV III Unit with Temperature Humidity Air Pressure Sensor (SHT30+QMP6988)#
 
-* Gas Sensors (CO, heavy gases, hydrogen, smoke detector)
+* *Gas Sensors (CO, heavy gases, hydrogen, smoke detector)*
 
-* GPS
+* *GPS*
 +
-M5Stack Mini GPS/BDS Unit (AT6558)
+[small]#M5Stack Mini GPS/BDS Unit (AT6558)#
 
-* NMEA 0183 interface
+* *NMEA 0183 interface*
 +
-M5Stack Isolated RS485 Unit
+[small]#M5Stack Isolated RS485 Unit#
 
-* NMEA 2000 interface
+* *NMEA 2000 interface*
 +
-M5Stack IsolatedCANBus Unit (CA-IS3050G)
+[small]#M5Stack IsolatedCANBus Unit (CA-IS3050G)#
 
-* Lightning sensor
+* *Lightning sensor*
 +
-Sparkfun LIGHTNING DETECTOR - AS3935
+[small]#Sparkfun LIGHTNING DETECTOR - AS3935#
 
 
-* Voltage sensor
+* *Voltage sensor*
 +
-M5Stack Voltmeter Unit (ADS1115)
+[small]#M5Stack Voltmeter Unit (ADS1115)#
 
-* Current (amp) meter for bilge pump usage
+* *Current (amp) meter for bilge pump usage*
 
-* Temperature (1w) sensors
+* *Temperature (1w) sensors*
++
+[small]#Dallas 1-wire temperature sensors#
 
-* Motion detection sensors
+* *Motion detection sensors*
 
-* Water salinity sensor
+* *Water salinity sensor*
 
-* Proximity sensors
+* *Proximity sensors*
 
-* Snow / ice sensor
+* *Snow / ice sensor*
 
-* Water level sensor
+* *Water level sensor*
 
-* Dighy LoRa locator
+* *Dinghy LoRa locator*
 
-* RTC clock
+* *RTC clock*
++
+[small]#M5Stack Real Time Clock (RTC) Unit (HYM8563)#
 
 
 == Alarms (planned)
