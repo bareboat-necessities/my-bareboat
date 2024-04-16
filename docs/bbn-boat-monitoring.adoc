@@ -123,6 +123,14 @@ Sensors (pick and choose):
 [small]#M5Stack ENV III Unit with Temperature Humidity Air Pressure Sensor (SHT30+QMP6988)#
 
 * *Gas Sensors (CO, heavy gases, hydrogen, smoke detector)*
++
+[small]#Carbon monoxide sensor for esp32#
++
+[small]#Smoke detector sensor for esp32#
++
+[small]#Heavy gases sensor for esp32 (MQ4 Methane Gas Sensor?)#
++
+[small]#Hydrogen H2 gas detector sensor for esp32#
 
 * *GPS*
 +
@@ -139,7 +147,6 @@ Sensors (pick and choose):
 * *Lightning sensor*
 +
 [small]#Sparkfun LIGHTNING DETECTOR - AS3935#
-
 
 * *Voltage sensor*
 +
