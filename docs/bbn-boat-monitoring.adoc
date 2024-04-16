@@ -69,6 +69,11 @@ toc::[]
 
 == What is BBN Boat Monitoring
 
+BBN Boat Monitoring is a low-power solution to send alarms on various conditions from an unattended boat.
+
+In the center is esp32 with Ethernet module connected wired to a boat router.
+Alarms are sent via WhatsApp messenger.
+
 == Connectivity
 
 . MDNS discovery of other services gpsd, SignalK, pypilot, etc
@@ -105,7 +110,7 @@ toc::[]
 
 . Hatch open
 
-. High heel or pitch
+. High heel or pitch (from IMU)
 
 . High wind alarm
 
@@ -113,7 +118,7 @@ toc::[]
 
 . Forgot nav lights 'on'
 
-. Motion detected
+. Motion detected (Intrusion)
 
 . High humidity
 
@@ -143,7 +148,13 @@ toc::[]
 
 . Heartbeat (ImAlive) WhatsApp message
 
-. Voltage alarm
+. Low battery voltage
 
-. Bilge pump alarm
+. Battery overcharging
+
+. High battery temperature
+
+. Bilge pump high utilization
+
+
 
