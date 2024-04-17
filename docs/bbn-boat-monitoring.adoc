@@ -232,6 +232,21 @@ Sensors (pick and choose):
 +
 [small]#M5Stack RS485 to TTL Converter Unit#
 
+* *LEDs for status lights*
++
+[small]#M5Stack RGB LED Unit (SK6812)#
+
+* *Speaker / Buzzer*
++
+[small]#M5Stack ATOM Echo Smart Speaker Development Kit#
++
+[small]#or#
++
+[small]#M5Stack Passive Buzzer Unit#
+
+* *Battery*
++
+[small]#ATOM TailBat - Battery Accessory for ATOM#
 
 == Alarms (planned)
 
