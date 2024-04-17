@@ -446,7 +446,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">mgrouch</span><br>
 <span id="email" class="email"><a href="mailto:mgrouch@users.noreply.github.com">mgrouch@users.noreply.github.com</a></span><br>
-<span id="revnumber">version 2024-04-16,</span>
+<span id="revnumber">version 2024-04-17,</span>
 <span id="revdate">Bareboat Necessities Boat Monitoring</span>
 </div>
 <div id="toc" class="toc2">
@@ -454,7 +454,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel1">
 <li><a href="#_what_is_bbn_boat_monitoring">1. What is BBN Boat Monitoring</a></li>
 <li><a href="#_connectivity">2. Connectivity</a></li>
-<li><a href="#_hardware">3. Hardware</a></li>
+<li><a href="#_hardware">3. Hardware</a>
+<ul class="sectlevel2">
+<li><a href="#_m5stack_grove_port_color_conventions">3.1. M5Stack Grove Port Color Conventions</a></li>
+<li><a href="#_m5stack_accessories">3.2. M5Stack Accessories</a></li>
+</ul>
+</li>
 <li><a href="#_alarms_planned">4. Alarms (planned)</a></li>
 <li><a href="#_compare_to_commercial_solutions">5. Compare to commercial solutions</a></li>
 </ul>
@@ -691,6 +696,12 @@ Alarms are sent via WhatsApp messenger.</p>
 <div class="paragraph">
 <p><span class="small">Magnetic Reed door switch sensor</span></p>
 </div>
+<div class="paragraph">
+<p><span class="small">or</span></p>
+</div>
+<div class="paragraph">
+<p><span class="small">M5Stack Limit Switch Unit</span></p>
+</div>
 </li>
 <li>
 <p><strong>Snow / ice sensor</strong></p>
@@ -716,7 +727,60 @@ Alarms are sent via WhatsApp messenger.</p>
 <p><span class="small">M5Stack Real Time Clock (RTC) Unit (HYM8563)</span></p>
 </div>
 </li>
+<li>
+<p><strong>Light Sensor</strong></p>
+<div class="paragraph">
+<p><span class="small">M5Stack Dlight Unit - Ambient Light Sensor (BH1750FVI-TR)</span></p>
+</div>
+</li>
 </ul>
+</div>
+<div class="sect2">
+<h3 id="_m5stack_grove_port_color_conventions">3.1. M5Stack Grove Port Color Conventions</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Red ports are I2C</p>
+</li>
+<li>
+<p>Black ports are I/O</p>
+</li>
+<li>
+<p>Blue ports are UART</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_m5stack_accessories">3.2. M5Stack Accessories</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>M5Stack ATOM Mate DIY Expansion Kit</strong></p>
+<div class="paragraph">
+<p><span class="small">M5Stack ATOM Mate - DIY Expansion Kit - for M5ATOM</span></p>
+</div>
+</li>
+<li>
+<p><strong>M5Stack ATOM Tail485</strong></p>
+<div class="paragraph">
+<p><span class="small">M5Stack ATOM Tail485 - RS485 Converter for ATOM</span></p>
+</div>
+</li>
+<li>
+<p><strong>M5Stack 1 to 3 HUB Expansion Unit for i2c</strong></p>
+<div class="paragraph">
+<p><span class="small">M5Stack 1 to 3 HUB Expansion Unit</span></p>
+</div>
+</li>
+<li>
+<p><strong>RS485 to TTL Converter Unit</strong></p>
+<div class="paragraph">
+<p><span class="small">M5Stack RS485 to TTL Converter Unit</span></p>
+</div>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
@@ -836,7 +900,7 @@ Alarms are sent via WhatsApp messenger.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2024-04-16<br>
+Version 2024-04-17<br>
 </div>
 </div>
 </body>
