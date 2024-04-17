@@ -76,6 +76,10 @@ Alarms are sent via WhatsApp messenger.
 
 Modular design of software and hardware so users can pick and choose needed modules.
 
+M5Atom Lite (or Lite-S3) is preferred hardware platform.
+It provides only one Grove type of connector. So separate devices need to be designed.
+One for i2c sensors, another for NMEA 0183, and another for NMEA 2000 inputs.
+
 == Connectivity
 
 . MDNS discovery of other services gpsd, SignalK, pypilot, Victron MQTT, etc
