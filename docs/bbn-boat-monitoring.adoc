@@ -332,6 +332,8 @@ Sensors (pick and choose):
 
 . Location reporting
 
+. Alarms from Victron MQTT
+
 == Compare to commercial solutions
 
 Example:
