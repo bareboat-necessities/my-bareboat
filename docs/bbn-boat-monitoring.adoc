@@ -183,6 +183,10 @@ Sensors (pick and choose):
 [small]#or#
 +
 [small]#Magnetic Reed door switch sensor#
++
+[small]#or#
++
+[small]#M5Stack Limit Switch Unit#
 
 * *Snow / ice sensor*
 +
@@ -199,6 +203,34 @@ Sensors (pick and choose):
 * *RTC clock*
 +
 [small]#M5Stack Real Time Clock (RTC) Unit (HYM8563)#
+
+* *Light Sensor*
++
+[small]#M5Stack Dlight Unit - Ambient Light Sensor (BH1750FVI-TR)#
+
+=== M5Stack Grove Port Color Conventions
+
+- Red ports are I2C
+- Black ports are I/O
+- Blue ports are UART
+
+=== M5Stack Accessories
+
+* *M5Stack ATOM Mate DIY Expansion Kit*
++
+[small]#M5Stack ATOM Mate - DIY Expansion Kit - for M5ATOM#
+
+* *M5Stack ATOM Tail485*
++
+[small]#M5Stack ATOM Tail485 - RS485 Converter for ATOM#
+
+* *M5Stack 1 to 3 HUB Expansion Unit for i2c*
++
+[small]#M5Stack 1 to 3 HUB Expansion Unit#
+
+* *RS485 to TTL Converter Unit*
++
+[small]#M5Stack RS485 to TTL Converter Unit#
 
 
 == Alarms (planned)
