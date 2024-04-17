@@ -244,9 +244,21 @@ Sensors (pick and choose):
 +
 [small]#M5Stack Passive Buzzer Unit#
 
+* *Screw Terminal Block*
++
+[small]#M5Stack VH3.96 - 4Pin Transfer Module Unit#
+
+* *Grove-T Connector*
++
+[small]#M5Stack Grove-T Connector (5pcs)#
+
+* *Button*
++
+[small]#M5Stack Mini Dual Button Unit#
+
 * *Battery*
 +
-[small]#ATOM TailBat - Battery Accessory for ATOM#
+[small]#M5Stack ATOM TailBat - Battery Accessory for ATOM#
 
 == Alarms (planned)
 
