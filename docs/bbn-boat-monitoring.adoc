@@ -260,6 +260,14 @@ Sensors (pick and choose):
 +
 [small]#M5Stack ATOM TailBat - Battery Accessory for ATOM#
 
+* *PoE Injector*
++
+[small]#wt-gpoe-48v10w (or some other industrial with better wattage)#
+
+* *PoE Splitter*
++
+[small]#M5Stack PoE Splitter#
+
 == Alarms (planned)
 
 . Heavy gases in bilge
