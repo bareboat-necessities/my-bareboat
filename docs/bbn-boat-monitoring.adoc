@@ -275,6 +275,14 @@ Sensors (pick and choose):
 +
 [small]#M5Stack PoE Splitter#
 
+=== Low Power Consumption Router
+
+LinoVision IOT R41 Mini Industrial 4G LTE Router with
+Low Power Consumption and GPS/RS232/RS485
+
+https://linovision.com/products/iot-r41
+
+
 == Alarms (planned)
 
 . Heavy gases in bilge
