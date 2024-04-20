@@ -357,6 +357,7 @@ Use IMU to detect different events
 
 - Boat groundings
 - An object hitting hull
+- Collision
 - Walrus climbs your boat
 - Someone boards your boat from dinghy
 - Wave height calculation
@@ -366,13 +367,16 @@ Use IMU to detect different events
 
 - Orca approach
 - Detect whale songs, dolphins, etc
+- Detect pistol shrimp
 - Detect underwater sound of prop (approaching or moving away power vessels)
 - Marine hydrophone listening
 
 === Using Cameras
 
 - Plankton classification
+- LIDAR
 - Augmented reality marine applications
+- Waves recording in 3D
 
 == Compare to commercial solutions
 
