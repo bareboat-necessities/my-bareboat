@@ -349,6 +349,31 @@ https://linovision.com/products/iot-r41
 
 . Alarms from Victron MQTT
 
+== Machine Learning Ideas
+
+=== Using IMU
+
+Use IMU to detect different events
+
+- Boat groundings
+- An object hitting hull
+- Walrus climbs your boat
+- Someone boards your boat from dinghy
+- Wave height calculation
+- Line caught in the prop
+
+=== Using Microphone
+
+- Orca approach
+- Detect whale songs, dolphins, etc
+- Detect underwater sound of prop (approaching or moving away power vessels)
+- Marine hydrophone listening
+
+=== Using Cameras
+
+- Plankton classification
+- Augmented reality marine applications
+
 == Compare to commercial solutions
 
 Example:
