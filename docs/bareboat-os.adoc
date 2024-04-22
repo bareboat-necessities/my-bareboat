@@ -540,7 +540,7 @@ On bookworm version you also need to disable the hciuart service, which initiali
 sudo systemctl disable hciuart
 ----
 
-Serial console must be disabled too. Check /boot/cmdline.txt
+Serial console must be disabled too. Check /boot/cmdline.txt (/boot/firmware/cmdline.txt on Bookworm)
 
 You will need to remove /dev/ttyAMA0 from /home/pypilot/.pypilot/blacklist_serial_ports
 to let pypilot probe that port. (otherwise, pypilot port-probing breaks bluetooth even if bluetooth is enabled)
@@ -2853,7 +2853,7 @@ Please send us your HowTo, and we can add it here for everyone to find. Thanks
 
 - Install the BerryGPS-IMU V3 hat
 - Follow steps to enable i2c and disable serial port https://ozzmaker.com/berrygps-setup-guide-raspberry-pi/
-- Remove serial console mentioned in /boot/cmdline.txt (argument with serial0 and baud rate)
+- Remove serial console mentioned in /boot/cmdline.txt (/boot/firmware/cmdline.txt on Bookworm) (argument with serial0 and baud rate)
 - Reboot
 - sudo i2cdetect -y 1 (should show you addresses)
 - Do not create pypilot connection to signalK as it creates a data loop (see https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html#_imu )
@@ -3329,7 +3329,7 @@ disable_overscan, overscan_*
 
 
 NOTE: Versions with KMS driver such as bookworm (instead of fkms in older ones as buster) ignore screen resolution settings in /boot/config.txt.
-KMS driver takes video parameters from /boot/cmdline.txt. Like this:
+KMS driver takes video parameters from /boot/firmware/cmdline.txt. Like this:
 
 [source]
 ----
