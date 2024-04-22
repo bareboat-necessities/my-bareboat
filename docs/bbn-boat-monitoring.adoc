@@ -163,6 +163,10 @@ Sensors (pick and choose):
 +
 [small]#Sparkfun LIGHTNING DETECTOR - AS3935#
 
+* *Open Fire Flame sensor*
++
+[small]#grove flame YG1006  sensor#
+
 * *Voltage sensor*
 +
 [small]#M5Stack Voltmeter Unit (ADS1115)#
