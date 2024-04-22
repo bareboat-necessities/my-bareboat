@@ -393,7 +393,7 @@ w = fft.rfft(accZ_val)
 freqs = fft.rfftfreq(N_SAMP, 1 / SAMPLE_RATE)
 
 # Find the peak in the coefficients
-idx = np.argmax(np.abs(w))
+idx = np.argmax(np.divide(np.divide(np.abs(w), freqs), freqs))
 freq = freqs[idx]
 freq_in_hertz = abs(freq)
 period = 1 / freq_in_hertz
