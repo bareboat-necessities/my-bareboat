@@ -1678,7 +1678,7 @@ Your motor controller will use that on-board UART.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Serial console must be disabled too. Check /boot/cmdline.txt</p>
+<p>Serial console must be disabled too. Check /boot/cmdline.txt (/boot/firmware/cmdline.txt on Bookworm)</p>
 </div>
 <div class="paragraph">
 <p>You will need to remove /dev/ttyAMA0 from /home/pypilot/.pypilot/blacklist_serial_ports
@@ -5402,7 +5402,7 @@ LoRa antennas are small and usually attached to its devices.</p>
 <p>Follow steps to enable i2c and disable serial port <a href="https://ozzmaker.com/berrygps-setup-guide-raspberry-pi/" class="bare">https://ozzmaker.com/berrygps-setup-guide-raspberry-pi/</a></p>
 </li>
 <li>
-<p>Remove serial console mentioned in /boot/cmdline.txt (argument with serial0 and baud rate)</p>
+<p>Remove serial console mentioned in /boot/cmdline.txt (/boot/firmware/cmdline.txt on Bookworm) (argument with serial0 and baud rate)</p>
 </li>
 <li>
 <p>Reboot</p>
@@ -6110,7 +6110,7 @@ disable_overscan, overscan_*</p>
 </td>
 <td class="content">
 Versions with KMS driver such as bookworm (instead of fkms in older ones as buster) ignore screen resolution settings in /boot/config.txt.
-KMS driver takes video parameters from /boot/cmdline.txt. Like this:
+KMS driver takes video parameters from /boot/firmware/cmdline.txt. Like this:
 </td>
 </tr>
 </table>
