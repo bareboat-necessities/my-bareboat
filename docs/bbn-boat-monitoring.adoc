@@ -165,7 +165,7 @@ Sensors (pick and choose):
 
 * *Open Fire Flame sensor*
 +
-[small]#grove flame YG1006  sensor#
+[small]#Grove Flame YG1006  sensor#
 
 * *Voltage sensor*
 +
