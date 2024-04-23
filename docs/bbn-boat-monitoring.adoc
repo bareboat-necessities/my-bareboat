@@ -384,8 +384,13 @@ Use IMU to detect different events
 
 == Compare to commercial solutions
 
-Example:
+Examples:
 
+Trek Transponder Boat alarm and boat monitor systems
 https://www.trektransponder.com.au/
 
+Glomex ZigBoat
+https://www.zigboat.com/
 
+Maretron MBB300C vessel monitoring and control black box
+https://dev.maretron.com/products/mbb300c.php
