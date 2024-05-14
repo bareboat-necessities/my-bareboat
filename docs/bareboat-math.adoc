@@ -432,6 +432,22 @@ July 3-5, 2013. Caen, France
 https://www.sciencedirect.com/science/article/pii/S1474667016329421[The New Algorithm of Sinusoidal Signal Frequency Estimation]
 
 
+== On measuring wave direction
+
+Measuring wave direction can be achieved by using multiple acceleromoters mounted in different locations on a ship.
+
+Ref:
+
+Ocean Engineering
+Volume 249, 1 April 2022, 110760
+
+Johann A. Dirdala, Roger Skjetneb, Jan Roháčc, Thor I. Fossen
+
+Online wave direction and wave number estimation from surface vessel motions using distributed
+inertial measurement arrays and phase-time-path-differences
+
+https://www.sciencedirect.com/science/article/pii/S0029801822002098
+
 
 == Measuring wave height from a moving boat
 
@@ -549,6 +565,9 @@ July 3-5, 2013. Caen, France: https://www.sciencedirect.com/science/article/pii/
 . https://github.com/seandepagnier/RTIMULib2[RTIMULib2 IMU library]
 . https://github.com/pypilot/pypilot[PyPilot Free Autopilot]
 . https://github.com/space-physics/wmm2020[World Magnetic Model on GitHub]
+. https://www.sciencedirect.com/science/article/pii/S0029801822002098[Online wave direction and wave number estimation from surface vessel motions using distributed inertial measurement arrays and phase-time-path-differences]
+
+
 
 
 endif::[]
