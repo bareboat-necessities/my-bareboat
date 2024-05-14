@@ -445,7 +445,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">mgrouch</span><br>
 <span id="email" class="email"><a href="mailto:mgrouch@users.noreply.github.com">mgrouch@users.noreply.github.com</a></span><br>
-<span id="revnumber">version 2024-04-24,</span>
+<span id="revnumber">version 2024-05-14,</span>
 <span id="revdate">Wave Height from IMU accelerometer</span>
 </div>
 <div id="toc" class="toc">
@@ -475,6 +475,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_fft_to_calculate_observed_frequency_of_waves">5.1. FFT to calculate observed frequency of waves</a></li>
 <li><a href="#_butterworth_low_pass_filter">5.2. Butterworth Low Pass filter</a></li>
+<li><a href="#_aranovskiy_on_line_frequency_estimator">5.3. Aranovskiy on-line frequency estimator</a></li>
 </ul>
 </li>
 <li><a href="#_measuring_wave_height_from_a_moving_boat">6. Measuring wave height from a moving boat</a>
@@ -1018,6 +1019,30 @@ low_pass_filtered = signal.sosfilt(sos, accZ_val)</code></pre>
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_aranovskiy_on_line_frequency_estimator">5.3. Aranovskiy on-line frequency estimator</h3>
+<div class="paragraph">
+<p>Instead of FFT method for finding main wave frequency we could use Aranovskiy frequency estimator which is
+a simple on-line filter.</p>
+</div>
+<div class="paragraph">
+<p>Ref:</p>
+</div>
+<div class="paragraph">
+<p>Alexey A. Bobtsov, Nikolay A. Nikolaev, Olga V. Slita, Alexander S. Borgul, Stanislav V. Aranovskiy</p>
+</div>
+<div class="paragraph">
+<p>The New Algorithm of Sinusoidal Signal Frequency Estimation.</p>
+</div>
+<div class="paragraph">
+<p>11th IFAC International Workshop on
+Adaptation and Learning in Control and Signal Processing
+July 3-5, 2013. Caen, France</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.sciencedirect.com/science/article/pii/S1474667016329421">The New Algorithm of Sinusoidal Signal Frequency Estimation</a></p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1259,6 +1284,11 @@ displacement integral of acceleration from drift.</p>
 <p><a href="https://en.wikipedia.org/wiki/Trochoidal_wave">Trochoidal Wave Wikipedia</a></p>
 </li>
 <li>
+<p>Alexey A. Bobtsov, Nikolay A. Nikolaev, Olga V. Slita, Alexander S. Borgul, Stanislav V. Aranovskiy: The New Algorithm of Sinusoidal Signal Frequency Estimation. 11th IFAC International Workshop on
+Adaptation and Learning in Control and Signal Processing
+July 3-5, 2013. Caen, France: <a href="https://www.sciencedirect.com/science/article/pii/S1474667016329421">The New Algorithm of Sinusoidal Signal Frequency Estimation</a></p>
+</li>
+<li>
 <p><a href="https://en.wikipedia.org/wiki/Wind_wave">Wind Wave Wikipedia</a></p>
 </li>
 <li>
@@ -1280,7 +1310,7 @@ displacement integral of acceleration from drift.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2024-04-24<br>
+Version 2024-05-14<br>
 </div>
 </div>
 <script type="text/x-mathjax-config">
