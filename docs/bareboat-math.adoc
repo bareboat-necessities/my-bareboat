@@ -414,6 +414,25 @@ sos = signal.butter(2, freq_in_hertz * 8, 'low', fs=SAMPLE_RATE, output='sos')
 low_pass_filtered = signal.sosfilt(sos, accZ_val)
 ----
 
+=== Aranovskiy on-line frequency estimator
+
+Instead of FFT method for finding main wave frequency we could use Aranovskiy frequency estimator which is
+a simple on-line filter.
+
+Ref:
+
+Alexey A. Bobtsov, Nikolay A. Nikolaev, Olga V. Slita, Alexander S. Borgul, Stanislav V. Aranovskiy
+
+The New Algorithm of Sinusoidal Signal Frequency Estimation.
+
+11th IFAC International Workshop on
+Adaptation and Learning in Control and Signal Processing
+July 3-5, 2013. Caen, France
+
+https://www.sciencedirect.com/science/article/pii/S1474667016329421[The New Algorithm of Sinusoidal Signal Frequency Estimation]
+
+
+
 == Measuring wave height from a moving boat
 
 
@@ -522,6 +541,9 @@ Vertical velocity and heel are correlated. It would be interesting to study thei
 
 . Sharkh S. M., Hendijanizadeh2 M., Moshrefi-Torbati3 M., Abusara M. A.: A Novel Kalman Filter Based Technique for Calculating the Time History of Vertical Displacement of a Boat from Measured Acceleration, https://www.researchgate.net/profile/Mehdi-Hendijanizadeh/publication/264713649_A_Novel_Kalman_Filter_Based_Technique_for_Calculating_the_Time_History_of_Vertical_Displacement_of_a_Boat_from_Measured_Acceleration/links/53ec88db0cf24f241f1584c5/A-Novel-Kalman-Filter-Based-Technique-for-Calculating-the-Time-History-of-Vertical-Displacement-of-a-Boat-from-Measured-Acceleration.pdf[Marine Engineering Frontiers (MEF) Volume 2, 2014]
 . https://en.wikipedia.org/wiki/Trochoidal_wave[Trochoidal Wave Wikipedia]
+. Alexey A. Bobtsov, Nikolay A. Nikolaev, Olga V. Slita, Alexander S. Borgul, Stanislav V. Aranovskiy: The New Algorithm of Sinusoidal Signal Frequency Estimation. 11th IFAC International Workshop on
+Adaptation and Learning in Control and Signal Processing
+July 3-5, 2013. Caen, France: https://www.sciencedirect.com/science/article/pii/S1474667016329421[The New Algorithm of Sinusoidal Signal Frequency Estimation]
 . https://en.wikipedia.org/wiki/Wind_wave[Wind Wave Wikipedia]
 . https://wikiwaves.org/[Wiki Waves]
 . https://github.com/seandepagnier/RTIMULib2[RTIMULib2 IMU library]
