@@ -297,6 +297,8 @@ https://linovision.com/products/iot-r41
 
 . Fire alarm. Smoke detector
 
+. Open flames detected
+
 . Carbon monoxide alarm
 
 . Hatch open
@@ -349,6 +351,8 @@ https://linovision.com/products/iot-r41
 
 . Bilge pump high utilization
 
+. High water in bilge
+
 . Location reporting
 
 . Alarms from Victron MQTT
@@ -394,3 +398,6 @@ https://www.zigboat.com/
 
 Maretron MBB300C vessel monitoring and control black box
 https://dev.maretron.com/products/mbb300c.php
+
+Siren Marine
+https://sirenmarine.com/
