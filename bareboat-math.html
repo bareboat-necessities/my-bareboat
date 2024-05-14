@@ -478,17 +478,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_aranovskiy_on_line_frequency_estimator">5.3. Aranovskiy on-line frequency estimator</a></li>
 </ul>
 </li>
-<li><a href="#_measuring_wave_height_from_a_moving_boat">6. Measuring wave height from a moving boat</a>
+<li><a href="#_on_measuring_wave_direction">6. On measuring wave direction</a></li>
+<li><a href="#_measuring_wave_height_from_a_moving_boat">7. Measuring wave height from a moving boat</a>
 <ul class="sectlevel2">
-<li><a href="#_measurable_input_parameters">6.1. Measurable input parameters</a></li>
-<li><a href="#_assumptions">6.2. Assumptions</a></li>
-<li><a href="#_algorithm_steps">6.3. Algorithm steps</a></li>
-<li><a href="#_input_validation">6.4. Input validation</a></li>
-<li><a href="#_result_validation">6.5. Result validation</a></li>
+<li><a href="#_measurable_input_parameters">7.1. Measurable input parameters</a></li>
+<li><a href="#_assumptions">7.2. Assumptions</a></li>
+<li><a href="#_algorithm_steps">7.3. Algorithm steps</a></li>
+<li><a href="#_input_validation">7.4. Input validation</a></li>
+<li><a href="#_result_validation">7.5. Result validation</a></li>
 </ul>
 </li>
-<li><a href="#_further_ideas">7. Further ideas</a></li>
-<li><a href="#_references">8. References</a></li>
+<li><a href="#_further_ideas">8. Further ideas</a></li>
+<li><a href="#_references">9. References</a></li>
 </ul>
 </div>
 </div>
@@ -1046,10 +1047,35 @@ July 3-5, 2013. Caen, France</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_measuring_wave_height_from_a_moving_boat">6. Measuring wave height from a moving boat</h2>
+<h2 id="_on_measuring_wave_direction">6. On measuring wave direction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Measuring wave direction can be achieved by using multiple acceleromoters mounted in different locations on a ship.</p>
+</div>
+<div class="paragraph">
+<p>Ref:</p>
+</div>
+<div class="paragraph">
+<p>Ocean Engineering
+Volume 249, 1 April 2022, 110760</p>
+</div>
+<div class="paragraph">
+<p>Johann A. Dirdala, Roger Skjetneb, Jan Roháčc, Thor I. Fossen</p>
+</div>
+<div class="paragraph">
+<p>Online wave direction and wave number estimation from surface vessel motions using distributed
+inertial measurement arrays and phase-time-path-differences</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0029801822002098" class="bare">https://www.sciencedirect.com/science/article/pii/S0029801822002098</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_measuring_wave_height_from_a_moving_boat">7. Measuring wave height from a moving boat</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_measurable_input_parameters">6.1. Measurable input parameters</h3>
+<h3 id="_measurable_input_parameters">7.1. Measurable input parameters</h3>
 <div class="paragraph">
 <p>Open sea waves have periods 20 sec or even longer. So sample duration time
 should be in minutes to capture several waves. Playing with reference data without noise
@@ -1119,7 +1145,7 @@ So with longer way samples needs to be longer. 5-15 mins.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_assumptions">6.2. Assumptions</h3>
+<h3 id="_assumptions">7.2. Assumptions</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1156,7 +1182,7 @@ So with longer way samples needs to be longer. 5-15 mins.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_algorithm_steps">6.3. Algorithm steps</h3>
+<h3 id="_algorithm_steps">7.3. Algorithm steps</h3>
 <div class="paragraph">
 <p>Calculation steps:</p>
 </div>
@@ -1215,7 +1241,7 @@ So with longer way samples needs to be longer. 5-15 mins.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_input_validation">6.4. Input validation</h3>
+<h3 id="_input_validation">7.4. Input validation</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1237,7 +1263,7 @@ So with longer way samples needs to be longer. 5-15 mins.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_result_validation">6.5. Result validation</h3>
+<h3 id="_result_validation">7.5. Result validation</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1259,7 +1285,7 @@ and wavelength with trochoidal model.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_further_ideas">7. Further ideas</h2>
+<h2 id="_further_ideas">8. Further ideas</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Trochoidal model gives a good reference point. It&#8217;s easy to go from acceleration to vertical displacement
@@ -1273,7 +1299,7 @@ displacement integral of acceleration from drift.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_references">8. References</h2>
+<h2 id="_references">9. References</h2>
 <div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
@@ -1302,6 +1328,9 @@ July 3-5, 2013. Caen, France: <a href="https://www.sciencedirect.com/science/art
 </li>
 <li>
 <p><a href="https://github.com/space-physics/wmm2020">World Magnetic Model on GitHub</a></p>
+</li>
+<li>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0029801822002098">Online wave direction and wave number estimation from surface vessel motions using distributed inertial measurement arrays and phase-time-path-differences</a></p>
 </li>
 </ol>
 </div>
