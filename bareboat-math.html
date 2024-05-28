@@ -445,7 +445,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">mgrouch</span><br>
 <span id="email" class="email"><a href="mailto:mgrouch@users.noreply.github.com">mgrouch@users.noreply.github.com</a></span><br>
-<span id="revnumber">version 2024-05-14,</span>
+<span id="revnumber">version 2024-05-28,</span>
 <span id="revdate">Wave Height from IMU accelerometer</span>
 </div>
 <div id="toc" class="toc">
@@ -1043,6 +1043,63 @@ July 3-5, 2013. Caen, France</p>
 <div class="paragraph">
 <p><a href="https://www.sciencedirect.com/science/article/pii/S1474667016329421">The New Algorithm of Sinusoidal Signal Frequency Estimation</a></p>
 </div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">from math import sin, sqrt
+import matplotlib.pyplot as plt
+import numpy as np
+
+# initialize algorithm constants
+
+omega_up = 0.0  # upper frequency
+a = 1.0
+b = 1.0
+k = 1.0
+theta_0 = - omega_up * omega_up / 4.0
+x1_0 = 0.0
+sigma_0 = theta_0
+
+delta_t = 0.001  # time step
+count = 30000  # iterations
+
+
+def func_y(t):
+    return 2.0 * sin(2.0 * t)
+
+
+# initialize variables
+t = 0.0
+x1 = x1_0
+theta = theta_0
+sigma = sigma_0
+
+chart_x = np.zeros(count)
+chart_y = np.zeros(count)
+
+
+# loop
+for n in range(0, count):
+    # step
+    y = func_y(t)
+    x1_dot = - a * x1 + b * y
+    sigma_dot = - k * x1 * x1 * theta - k * a * x1 * x1_dot - k * b * x1_dot * y
+    theta = sigma + k * b * x1 * y
+    omega = sqrt(abs(theta))
+
+    print(omega)
+    chart_x[n] = t
+    chart_y[n] = omega
+
+    x1 = x1 + x1_dot * delta_t
+    sigma = sigma + sigma_dot * delta_t
+    t = t + delta_t
+
+
+plt.plot(chart_x, chart_y)
+plt.grid()
+plt.show()</code></pre>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1339,7 +1396,7 @@ July 3-5, 2013. Caen, France: <a href="https://www.sciencedirect.com/science/art
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2024-05-14<br>
+Version 2024-05-28<br>
 </div>
 </div>
 <script type="text/x-mathjax-config">
