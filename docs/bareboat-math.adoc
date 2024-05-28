@@ -431,6 +431,63 @@ July 3-5, 2013. Caen, France
 
 https://www.sciencedirect.com/science/article/pii/S1474667016329421[The New Algorithm of Sinusoidal Signal Frequency Estimation]
 
+[source, python]
+----
+from math import sin, sqrt
+import matplotlib.pyplot as plt
+import numpy as np
+
+# initialize algorithm constants
+
+omega_up = 0.0  # upper frequency
+a = 1.0
+b = 1.0
+k = 1.0
+theta_0 = - omega_up * omega_up / 4.0
+x1_0 = 0.0
+sigma_0 = theta_0
+
+delta_t = 0.001  # time step
+count = 30000  # iterations
+
+
+def func_y(t):
+    return 2.0 * sin(2.0 * t)
+
+
+# initialize variables
+t = 0.0
+x1 = x1_0
+theta = theta_0
+sigma = sigma_0
+
+chart_x = np.zeros(count)
+chart_y = np.zeros(count)
+
+
+# loop
+for n in range(0, count):
+    # step
+    y = func_y(t)
+    x1_dot = - a * x1 + b * y
+    sigma_dot = - k * x1 * x1 * theta - k * a * x1 * x1_dot - k * b * x1_dot * y
+    theta = sigma + k * b * x1 * y
+    omega = sqrt(abs(theta))
+
+    print(omega)
+    chart_x[n] = t
+    chart_y[n] = omega
+
+    x1 = x1 + x1_dot * delta_t
+    sigma = sigma + sigma_dot * delta_t
+    t = t + delta_t
+
+
+plt.plot(chart_x, chart_y)
+plt.grid()
+plt.show()
+
+----
 
 == On measuring wave direction
 
