@@ -491,7 +491,7 @@ plt.show()
 
 == On measuring wave direction
 
-Measuring wave direction can be achieved by using multiple acceleromoters mounted in different locations on a ship.
+Measuring wave direction can be achieved by using multiple accelerometers mounted in different locations on a ship.
 
 Ref:
 
