@@ -446,7 +446,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">mgrouch</span><br>
 <span id="email" class="email"><a href="mailto:mgrouch@users.noreply.github.com">mgrouch@users.noreply.github.com</a></span><br>
-<span id="revnumber">version 2024-05-28,</span>
+<span id="revnumber">version 2024-06-01,</span>
 <span id="revdate">Bareboat Necessities OS Documentation</span>
 </div>
 <div id="toc" class="toc2">
@@ -3762,7 +3762,7 @@ sudo apt upgrade</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>SignalK server and modules can be upgraded using command line:
+<p>SignalK modules can be upgraded using command line:
 Example for signalk-hwt901b-imu:</p>
 </div>
 <div class="listingblock">
@@ -3772,6 +3772,9 @@ sudo su signalk -c "rm ../.signalk/pnpm-lock.yaml; pnpm config set auto-install-
 
 sudo su signalk -c "pnpm install signalk-hwt901b-imu --unsafe-perm --save-peer"</code></pre>
 </div>
+</div>
+<div class="paragraph">
+<p>SignalK upgrade via web UI is not really supported by BBN OS for stability reasons.</p>
 </div>
 <div class="paragraph">
 <p>OpenCPN charts can be updated using OpenCPN chart downloader plugin.</p>
@@ -3860,6 +3863,8 @@ their products will suit you. Some examples:</p>
 </div>
 <div class="paragraph">
 <p>Pick HDMI screen over DSI as they do not take extra GPIO pins which you might have other plans for.
+Also DSI monitors often require custom (often closed source) drivers from their vendors and as a result
+you are more likely to run into issues setting them up.
 Most touchscreens nowadays will be capacitive multitouch due to better durability and clearness.</p>
 </div>
 <div class="sect3">
@@ -6334,7 +6339,7 @@ open source you will learn how things work</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2024-05-28<br>
+Version 2024-06-01<br>
 </div>
 </div>
 </body>
