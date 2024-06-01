@@ -1998,6 +1998,8 @@ More ideas from TouchThink: https://www.touchtecs.com/marine-monitor/ip65-sunlig
 
 
 Pick HDMI screen over DSI as they do not take extra GPIO pins which you might have other plans for.
+Also DSI monitors often require custom (often closed source) drivers from their vendors and as a result
+you are more likely to run into issues setting them up.
 Most touchscreens nowadays will be capacitive multitouch due to better durability and clearness.
 
 ==== Connecting monitors
