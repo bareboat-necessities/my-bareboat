@@ -1927,7 +1927,7 @@ sudo apt update
 sudo apt upgrade
 ----
 
-SignalK server and modules can be upgraded using command line:
+SignalK modules can be upgraded using command line:
 Example for signalk-hwt901b-imu:
 
 [source, shell]
@@ -1938,6 +1938,7 @@ sudo su signalk -c "rm ../.signalk/pnpm-lock.yaml; pnpm config set auto-install-
 sudo su signalk -c "pnpm install signalk-hwt901b-imu --unsafe-perm --save-peer"
 ----
 
+SignalK upgrade via web UI is not really supported by BBN OS for stability reasons.
 
 
 OpenCPN charts can be updated using OpenCPN chart downloader plugin.
