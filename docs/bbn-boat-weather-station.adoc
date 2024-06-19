@@ -90,8 +90,8 @@ Platform esp32 (m5stack). Software EspHome generated firmwares.
 === Derived Data
 
 * Dew point, frost point
-* Sunrise/sunset time, sun position
-* Moon phase, moon position
+* Sunrise/sunset time, sun position, daylight time, solar noon, twilight start/end
+* Moonrise, moon set, phase, moon position, next full moon, distance
 * Waves height, period
 * Max acceleration
 * Heel amplitude
