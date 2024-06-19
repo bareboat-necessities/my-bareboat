@@ -115,6 +115,8 @@ of the ATOM board.
 
 esp32 on m5atom-lite or m5atom-lite-S3 from M5Stack. With M5Stack Ethernet AtomPoW (with w5500 chip).
 
+Software platform - EspHome: https://esphome.io/
+
 Sensors (pick and choose):
 
 * *Accelerometer*
