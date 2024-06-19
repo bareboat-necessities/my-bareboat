@@ -97,6 +97,7 @@ Platform esp32 (m5stack). Software EspHome generated firmwares.
 * Heel amplitude
 * Pitch amplitude
 * Wind sustained / wind gusts
+* Wind apparent/true/ground (directions and speed)
 * Magnetic declination for the location
 * UV index
 * Fog conditions existence
