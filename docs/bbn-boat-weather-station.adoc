@@ -1,0 +1,110 @@
+= Bareboat Necessities (BBN) Boat Weather Station
+mgrouch <mgrouch@users.noreply.github.com>
+{docdate}, Bareboat Necessities Boat Weather Station
+:imagesdir: images
+:keywords: openplotter, opencpn, signalK, nmea, marine
+:description: BBN Boat Weather Station is a free open source software for esp32.
+:doctype: book
+:organization: Bareboat Necessities
+:title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+ifdef::backend-pdf[]
+:source-highlighter: rouge
+:toc-placement!: manual
+:pdf-page-size: Letter
+:plantumlconfig: plantuml.cfg
+endif::[]
+ifndef::backend-pdf[]
+:toc-placement: left
+endif::[]
+:experimental:
+:reproducible:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 3
+:encoding: utf-8
+:lang: en
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:env-github:
+
+{zwsp} +
+
+ifndef::backend-pdf[]
+
+image::bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+
+{zwsp} +
+
+endif::[]
+
+https://bareboat-necessities.github.io
+
+https://github.com/bareboat-necessities/lysmarine_gen
+
+https://github.com/bareboat-necessities/lysmarine_gen/issues
+
+https://bareboat-necessities.wixsite.com/my-bareboat
+
+https://bareboat-necessities.wixsite.com/my-bareboat/bbn-boat-monitoring.html
+
+https://github.com/bareboat-necessities/bbn-m5stack-tough
+
+https://github.com/bareboat-necessities/bbn-nmea200-m5atom
+
+{zwsp} +
+
+PDF version:
+
+https://bareboat-necessities.github.io/my-bareboat/bbn-boat-weather-station.pdf
+
+
+{zwsp} +
+
+toc::[]
+
+== BBN Boat Weather Station
+
+Platform esp32 (m5stack). Software EspHome generated firmwares.
+
+=== Sensors
+
+* Time
+* Temperature/pressure/humidity
+* IMU
+* Illumination
+* Wind speed / direction
+* External GPS
+* Rain sensor
+* Snow/ice sensor
+* Air quality sensor
+* Lightning detector
+* Water temperature
+* Water salinity
+
+=== Derived Data
+
+* Dew point, frost point
+* Sunrise/sunset time, sun position
+* Moon phase, moon position
+* Waves height, period
+* Max acceleration
+* Wind sustained / wind gusts
+* Magnetic declination for the location
+* UV index
+* Fog conditions existence
+* Barometer trend
+* Beaufort wind scale
+* Douglas sea scale
+* Tide stage (from moon and sun)
+* Zambretti algorithm predictions
+* Windchill
+* Tides and currents for the location?
+* HF propagation conditions from ionosphere data. Ex: https://solar.w5mmw.net/
+
+
