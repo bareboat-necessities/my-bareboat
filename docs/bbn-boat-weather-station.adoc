@@ -103,6 +103,8 @@ Platform esp32 (m5stack). Software EspHome generated firmwares.
 * UV index
 * Fog conditions existence
 * Barometer trend
+* Air density
+* Precipitations
 * Beaufort wind scale
 * Douglas sea scale
 * Tide stage (from moon and sun)
