@@ -104,7 +104,7 @@ Platform esp32 (m5stack). Software EspHome generated firmwares.
 * Fog conditions existence
 * Barometer trend
 * Air density
-* Vapor pressure, vapor concentration, water vapor content, relative humidity, enthalpy
+* Vapor pressure, vapor concentration, water vapor content, relative/absolute humidity, enthalpy
 * Other air psychrometry parameters: https://www.psychrometric-calculator.com
 * Precipitations
 * Beaufort wind scale
