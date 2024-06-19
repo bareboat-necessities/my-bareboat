@@ -94,6 +94,8 @@ Platform esp32 (m5stack). Software EspHome generated firmwares.
 * Moon phase, moon position
 * Waves height, period
 * Max acceleration
+* Heel amplitude
+* Pitch amplitude
 * Wind sustained / wind gusts
 * Magnetic declination for the location
 * UV index
