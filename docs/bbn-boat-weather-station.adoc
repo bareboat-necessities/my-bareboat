@@ -114,5 +114,7 @@ Platform esp32 (m5stack). Software EspHome generated firmwares.
 * Windchill
 * Tides and currents for the location?
 * HF propagation conditions from ionosphere data. Ex: https://solar.w5mmw.net/
+* Windrose from climatology data
+
 
 
