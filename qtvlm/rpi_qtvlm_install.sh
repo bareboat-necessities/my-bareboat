@@ -13,13 +13,13 @@ fi
 cd /home/user
 echo "Downloading..."
 
-curl -q -O - "https://www.meltemus.com/index.php/en/download?task=download.send&id=${FID}&catid=9&m=0" \
+curl -L "https://www.meltemus.com/index.php/en/download?task=download.send&id=${FID}&catid=9&m=0" \
  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0' \
  -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8' \
  -H 'Accept-Language: en-US,en;q=0.5' -H 'Accept-Encoding: gzip, deflate, br, zstd' \
  -H 'DNT: 1' -H 'Sec-GPC: 1' -H 'Connection: keep-alive' \
  -H 'Upgrade-Insecure-Requests: 1' -H 'Sec-Fetch-Dest: document' -H 'Sec-Fetch-Mode: navigate' \
- -H 'Sec-Fetch-Site: same-origin' -H 'Sec-Fetch-User: ?1' -H 'Priority: u=1' > qtVlm-rpi.tar.gz
+ -H 'Sec-Fetch-Site: same-origin' -H 'Sec-Fetch-User: ?1' -H 'Priority: u=1' -o qtVlm-rpi.tar.gz
 
 gzip -cd < qtVlm-rpi.tar.gz | tar xvf -
 mkdir /home/user/.qtVlm 
