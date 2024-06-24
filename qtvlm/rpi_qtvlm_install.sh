@@ -6,8 +6,6 @@ FID=804
 if [ "armhf" != "$myArch" ] ; then
     FID=556
     sudo apt-get -y install libsystemd0
-else
-    sudo apt-get -y install libsystemd0:armhf
 fi
 
 # See: https://www.meltemus.com
