@@ -13,10 +13,8 @@ fi
 cd /home/user
 echo "Downloading..."
 
-curl -L "https://www.meltemus.com/index.php/en/download?task=download.send&id=${FID}&catid=9&m=0" \
- -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0' \
- -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8' \
- -H 'Connection: keep-alive' -o qtVlm-rpi.tar.gz
+wget -q -O - "https://www.meltemus.com/index.php/en/download?task=download.send&id=${FID}&catid=9&m=0" \
+ > qtVlm-rpi.tar.gz
 
 gzip -cd < qtVlm-rpi.tar.gz | tar xvf -
 mkdir /home/user/.qtVlm 
