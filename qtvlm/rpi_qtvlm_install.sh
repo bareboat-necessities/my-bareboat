@@ -2,18 +2,13 @@
 
 myArch=$(dpkg --print-architecture)
 
-FID=804
-if [ "armhf" != "$myArch" ] ; then
-    FID=556
-    sudo apt-get -y install libsystemd0
-fi
-
 # See: https://www.meltemus.com
 
 cd /home/user
 echo "Downloading..."
 
-wget -O - "https://www.meltemus.com/index.php/en/download?task=download.send&id=${FID}&catid=9&m=0" > qtVlm-rpi.tar.gz
+AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+wget --user-agent="$AGENT" -O qtVlm-rpi.tar.gz "https://www.meltemus.com/index.php/en/download?task=download.send&id=804&catid=9&m=0"
 
 gzip -cd < qtVlm-rpi.tar.gz | tar xvf -
 mkdir /home/user/.qtVlm 
