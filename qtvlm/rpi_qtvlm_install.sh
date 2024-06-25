@@ -13,8 +13,7 @@ fi
 cd /home/user
 echo "Downloading..."
 
-wget -q -O - "https://www.meltemus.com/index.php/en/download?task=download.send&id=${FID}&catid=9&m=0" \
- > qtVlm-rpi.tar.gz
+wget -q -O - "https://www.meltemus.com/index.php/en/download?task=download.send&id=${FID}&catid=9&m=0" > qtVlm-rpi.tar.gz
 
 gzip -cd < qtVlm-rpi.tar.gz | tar xvf -
 mkdir /home/user/.qtVlm 
