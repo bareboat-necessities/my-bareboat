@@ -79,7 +79,7 @@ sudo apt update && sudo apt-get -y install box86-rpi4arm64:armhf
 
 NOTE: for raspberry pi5 you need to switch kernel page size to 4k. See: https://github.com/ptitSeb/box86/issues/912#issuecomment-1879902474
 
-in /boot/config.txt:
+in /boot/firmware/config.txt:
 ----
 # To switch kernel page size to 4k
 kernel=kernel8.img
