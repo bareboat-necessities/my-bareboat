@@ -46,6 +46,8 @@ runtime libraries.
 
 [source, shell]
 ----
+sudo apt update
+
 sudo apt-get -y install build-essential mono-runtime git cmake cabextract \
   gcc-arm-linux-gnueabihf libc6-dev-armhf-cross zenity
 
