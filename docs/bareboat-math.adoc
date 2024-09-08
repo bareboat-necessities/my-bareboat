@@ -609,6 +609,11 @@ displacement integral of acceleration from drift.
 
 Vertical velocity and heel are correlated. It would be interesting to study their interdependencies.
 
+== Implementation
+
+As of September 9th, 2024 author provides complete implementation on GitHub
+
+https://github.com/bareboat-necessities/bbn-wave-period-esp32
 
 == References
 
