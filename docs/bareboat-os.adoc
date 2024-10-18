@@ -1710,6 +1710,9 @@ http://localhost:8000/app?host=venus.local&port=9001
 
 Change the host and port in that URL to your Victron Venus OS device name and port.
 
+Edit /usr/local/share/applications/victron.desktop file
+to replace venus.local with host name or IP address of your Victron Venus (CerboGX) host.
+
 
 === Marine Species Identification
 
