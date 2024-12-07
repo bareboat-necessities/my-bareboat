@@ -1718,10 +1718,6 @@ to replace venus.local with host name or IP address of your Victron Venus (Cerbo
 
 When Internet is available you can use Menu link in App Menus->Utilities->Marine Life
 
-=== Knots
-
-There is an application to display basic knots. App Menus->Utilities->Knots
-
 === ColReg Regulations
 
 English version of ColReg is available under: App Menus->Utilities->ColReg
