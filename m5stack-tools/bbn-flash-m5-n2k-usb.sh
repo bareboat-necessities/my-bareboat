@@ -31,7 +31,7 @@ fi
 
 mkdir /tmp/bbn-flash-m5-n2k-usb && cd /tmp/bbn-flash-m5-n2k-usb
 
-wget https://github.com/bareboat-necessities/bbn-nmea200-m5atom/releases/download/main/bbn-nmea200-m5atom_bin-2024-12-07.zip
+wget https://github.com/bareboat-necessities/bbn-nmea200-m5atom/releases/download/v1.0.5/bbn-nmea200-m5atom_bin-2024-12-07.zip
 unzip bbn-nmea200-m5atom_bin-2024-12-07.zip
 /srv/esphome/bin/esptool.py \
  --chip esp32 --port "$parameterP" --baud 1500000 \
