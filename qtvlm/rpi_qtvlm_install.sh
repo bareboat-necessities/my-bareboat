@@ -7,8 +7,8 @@ myArch=$(dpkg --print-architecture)
 cd /home/user
 echo "Downloading..."
 
-AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
-wget --user-agent="$AGENT" -O qtVlm-rpi.tar.gz "https://www.meltemus.com/index.php/en/download?task=download.send&id=804&catid=9&m=0"
+AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0"
+wget --user-agent="$AGENT" -O qtVlm-rpi.tar.gz "https://www.meltemus.com/index.php/en/download?task=download.send&id=844&catid=9&m=0"
 
 gzip -cd < qtVlm-rpi.tar.gz | tar xvf -
 mkdir /home/user/.qtVlm 
