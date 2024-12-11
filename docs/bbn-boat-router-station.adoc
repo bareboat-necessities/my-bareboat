@@ -84,5 +84,5 @@ Packed into Pelican type of case.
 * Volt/Amp Meter for power usage
 * USB charging station
 
-No raspberry pi inside, no big touch screen.
+No raspberry pi inside, no big touch screen, no battery
 
