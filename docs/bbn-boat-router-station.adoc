@@ -1,0 +1,72 @@
+= Bareboat Necessities (BBN) Boat Router
+mgrouch <mgrouch@users.noreply.github.com>
+{docdate}, Bareboat Necessities Boat Router
+:imagesdir: images
+:keywords: openplotter, opencpn, signalK, nmea, marine
+:description: BBN Boat Router is a free open source software/hardware. \
+Packed with NMEA2000/NMEA0183/AIS/GPS, sensors (IMU, lightning), LTE modem \
+Ethernet, USB
+:doctype: book
+:organization: Bareboat Necessities
+:title-logo-image: image:bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+ifdef::backend-pdf[]
+:source-highlighter: rouge
+:toc-placement!: manual
+:pdf-page-size: Letter
+:plantumlconfig: plantuml.cfg
+endif::[]
+ifndef::backend-pdf[]
+:toc-placement: left
+endif::[]
+:experimental:
+:reproducible:
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 3
+:encoding: utf-8
+:lang: en
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:env-github:
+
+{zwsp} +
+
+ifndef::backend-pdf[]
+
+image::bareboat-necessities-logo.svg[Bareboat Necessities Logo]
+
+{zwsp} +
+
+endif::[]
+
+https://bareboat-necessities.github.io
+
+https://github.com/bareboat-necessities/lysmarine_gen
+
+https://github.com/bareboat-necessities/lysmarine_gen/issues
+
+https://bareboat-necessities.wixsite.com/my-bareboat
+
+https://github.com/bareboat-necessities/bbn-m5stack-tough
+
+https://github.com/bareboat-necessities/bbn-nmea200-m5atom
+
+{zwsp} +
+
+PDF version:
+
+https://bareboat-necessities.github.io/my-bareboat/bbn-boat-router-station.pdf
+
+
+{zwsp} +
+
+toc::[]
+
+== What is BBN Boat Router Station
+
