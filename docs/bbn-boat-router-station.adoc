@@ -70,3 +70,19 @@ toc::[]
 
 == What is BBN Boat Router Station
 
+Packed into Pelican type of case.
+
+* LTE Router with GPS on the modem
+* M5Stack Tough
+* M5Stack CoreMP135
+* USB Hub
+* IMU m5stack atomS3 (or atomS3R?)
+* Lightning Sensor
+* AIS receiver (dAISy AIS)
+* Ethernet Hub
+* Voltage Sensor
+* Volt/Amp Meter for power usage
+* USB charging station
+
+No raspberry pi inside, no big touch screen.
+
