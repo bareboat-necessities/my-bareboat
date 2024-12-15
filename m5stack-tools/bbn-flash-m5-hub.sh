@@ -31,8 +31,8 @@ fi
 
 mkdir /tmp/bbn_esp32_sensors_hub && cd /tmp/bbn_esp32_sensors_hub
 
-wget https://github.com/bareboat-necessities/bbn_esp32_sensors_hub/releases/download/v0.0.9/bbn_esp32_sensors_hub_bin-2024-12-13.zip
-unzip bbn_esp32_sensors_hub_bin-2024-12-13.zip
+wget https://github.com/bareboat-necessities/bbn_esp32_sensors_hub/releases/download/v0.1.0/bbn_esp32_sensors_hub_bin-2024-12-15.zip
+unzip bbn_esp32_sensors_hub_bin-2024-12-15.zip
 /srv/esphome/bin/esptool.py --chip esp32s3 \
  --port "$parameterP" --baud 921600 \
  --before default_reset --after hard_reset write_flash \
