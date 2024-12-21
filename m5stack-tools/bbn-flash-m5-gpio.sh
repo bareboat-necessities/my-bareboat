@@ -31,8 +31,8 @@ fi
 
 mkdir /tmp/bbn_esp32_gpio_sensors_hub && cd /tmp/bbn_esp32_gpio_sensors_hub
 
-wget https://github.com/bareboat-necessities/bbn_esp32_gpio_sensors_hub/releases/download/v0.0.5/bbn_esp32_gpio_sensors_hub_bin-2024-12-20.zip
-unzip bbn_esp32_gpio_sensors_hub_bin-2024-12-20.zip
+wget https://github.com/bareboat-necessities/bbn_esp32_gpio_sensors_hub/releases/download/v0.0.5/bbn_esp32_gpio_sensors_hub_bin-2024-12-21.zip
+unzip bbn_esp32_gpio_sensors_hub_bin-2024-12-21.zip
 /srv/esphome/bin/esptool.py --chip esp32s3 \
  --port "$parameterP" --baud 921600 \
  --before default_reset --after hard_reset write_flash \
