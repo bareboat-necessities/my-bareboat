@@ -620,7 +620,7 @@ https://raw.githubusercontent.com/bareboat-necessities/my-bareboat/master/pypilo
 For compass IMU connected to Pi (that's not really a part of motor controller)
 
 * icm20948 IMU
-* mpu9255 IMU6
+
 
 ==== IMU Calibration using PyPilot
 
@@ -632,9 +632,9 @@ allow calibration process to assess ranges of readings and skew bias on each of 
 fit all these readings on a sphere. 
 (two spheres: one for accelerometer, and one for magnetometer)
 
-IMU magnetometer is EXTREMELY sensitive. Even putting your hand next to it can change heading by 5-10 degrees.
-Make sure you very carefully pick a place on the boat for it, way away from currents and magnetic metal objects.
-Pack it in a relatively big plastic enclosure.
+IMU magnetometer is EXTREMELY sensitive.
+Make sure you very carefully pick a place on the boat for it, way away from currents and magnetic
+metal objects. Pack it in a relatively big plastic enclosure.
 
 === UI for controlling autopilots
 
