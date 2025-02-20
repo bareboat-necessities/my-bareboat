@@ -31,7 +31,7 @@ fi
 
 mkdir /tmp/bbn-flash-m5-s3-n2k-usb && cd /tmp/bbn-flash-m5-s3-n2k-usb
 
-wget https://github.com/bareboat-necessities/bbn-m5-s3-n2k-usb/releases/download/v1.0.1/bbn-m5-s3-n2k-usb_bin-2025-02-20.zip
+wget https://github.com/bareboat-necessities/bbn-m5-s3-n2k-usb/releases/download/v1.0.2/bbn-m5-s3-n2k-usb_bin-2025-02-20.zip
 unzip bbn-m5-s3-n2k-usb_bin-2025-02-20.zip
 
 /srv/esphome/bin/esptool.py --chip esp32s3 \
