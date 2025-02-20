@@ -31,8 +31,8 @@ fi
 
 mkdir /tmp/bbn-flash-m5-s3-n2k-i2c && cd /tmp/bbn-flash-m5-s3-n2k-i2c
 
-wget https://github.com/bareboat-necessities/bbn-m5-s3-n2k-i2c/releases/download/v1.0.0/bbn-m5-s3-n2k-i2c_bin-2025-02-15.zip
-unzip bbn-m5-s3-n2k-i2c_bin-2025-02-15.zip
+wget https://github.com/bareboat-necessities/bbn-m5-s3-n2k-i2c/releases/download/v1.0.1/bbn-m5-s3-n2k-i2c_bin-2025-02-20.zip
+unzip bbn-m5-s3-n2k-i2c_bin-2025-02-20.zip
 
 /srv/esphome/bin/esptool.py --chip esp32s3 \
  --port "$parameterP" --baud 921600 \
