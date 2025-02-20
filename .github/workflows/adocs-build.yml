@@ -28,7 +28,7 @@ jobs:
             mkdir -p output
             asciidoctor -b html5 -d book -a icons=font -a toc=left -D /documents/output docs/*.adoc
             asciidoctor-pdf -D /documents/output docs/*.adoc
-            cd output ; cp -R ../docs/images images; cp -R ../docs/cockpit-ui cockpit-ui
+            cd output ; cp -R ../docs/images images; cp -R ../docs/cockpit-ui cockpit-ui; cp -R ../docs/cards cards
             ls -ltr .
             echo "Done with AsciiDocs"
       - name: Deploy to GH Pages

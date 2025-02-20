@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page with Image Slider</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product-card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .product-card p {
+            font-size: 1em;
+            color: #555;
+        }
+        .slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .dots {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #bbb;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .dot.active {
+            background-color: #333;
+        }
+        /* Ensure images in single-image cards are responsive */
+        .product-card img:not(.slide img) {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="product-container">
+    <!-- First Card: Image Slider for Images 1, 2, 6, 7 -->
+    <div class="product-card">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-m5stack-tough/refs/heads/main/images/BBN_esp32_marine_display.jpg" alt="BBN ESP32 Marine Display">
+                </div>
+                <div class="slide">
+                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-m5stack-tough/refs/heads/main/images/BBN_m5tough.jpg" alt="BBN M5 Tough">
+                </div>
+                <div class="slide">
+                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-m5stack-tough/refs/heads/main/screenshots/wind.png" alt="Wind Display">
+                </div>
+                <div class="slide">
+                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-m5stack-tough/refs/heads/main/screenshots/victron.png" alt="Victron Integration">
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active" onclick="showSlide(0, this.parentElement)"></span>
+            <span class="dot" onclick="showSlide(1, this.parentElement)"></span>
+            <span class="dot" onclick="showSlide(2, this.parentElement)"></span>
+            <span class="dot" onclick="showSlide(3, this.parentElement)"></span>
+        </div>
+        <h2>Marine Displays and Integration</h2>
+        <p>A collection of rugged marine displays and integration solutions for navigation and monitoring.</p>
+    </div>
+
+    <!-- Second Card: Image Slider for Images 4, 5 -->
+    <div class="product-card">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-m5-s3-n2k-usb/refs/heads/main/images/M5_AtomS3_lite-NMEA2000-to-USB.jpg" alt="M5 AtomS3 Lite NMEA2000 to USB">
+                </div>
+                <div class="slide">
+                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-m5-s3-n2k-usb/refs/heads/main/images/BBN_NMEA2000_to_USB.jpg" alt="BBN NMEA2000 to USB">
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active" onclick="showSlide(0, this.parentElement)"></span>
+            <span class="dot" onclick="showSlide(1, this.parentElement)"></span>
+        </div>
+        <h2>NMEA2000 to USB Converters</h2>
+        <p>Compact and reliable converters for connecting NMEA2000 networks to USB devices.</p>
+    </div>
+
+    <!-- Third Card: Single Image (Image 3) -->
+    <div class="product-card">
+        <img src="https://raw.githubusercontent.com/bareboat-necessities/lysmarine_gen/refs/heads/coremp135_bookworm/img/bbn-on-coremp135.png" alt="BBN on CoreMP135">
+        <h2>BBN on CoreMP135</h2>
+        <p>Marine navigation software running on the CoreMP135 platform.</p>
+    </div>
+
+    <!-- Fourth Card: Single Image (Image 8) -->
+    <div class="product-card">
+        <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-wave-period-esp32/refs/heads/main/images/BBN-heave-sensor-enclosure.jpg" alt="BBN Heave Sensor Enclosure">
+        <h2>BBN Heave Sensor Enclosure</h2>
+        <p>A robust enclosure for heave sensors in marine applications.</p>
+    </div>
+</div>
+
+<script>
+        // JavaScript for the image slider
+        function showSlide(index, dotsContainer) {
+            const slider = dotsContainer.previousElementSibling;
+            const slides = slider.querySelector('.slides');
+            const dots = dotsContainer.querySelectorAll('.dot');
+
+            // Update slide position
+            slides.style.transform = `translateX(${-index * 100}%)`;
+
+            // Update dot states
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        // Initialize the first slider
+        showSlide(0, document.querySelector('.product-card .dots'));
+</script>
+
+</body>
+</html>
