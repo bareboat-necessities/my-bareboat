@@ -36,7 +36,7 @@ unzip bbn_alarms_A_bin_firmware-2025-03-17.zip
 /srv/esphome/bin/esptool.py --chip esp32s3 \
  --port "$parameterP" --baud 921600 \
  --before default_reset --after hard_reset write_flash \
- 0x0 bbn_alarms_A.merged.bin
+ 0x0 bbn_alarms_A.ino.merged.bin
 
 cd "$m_dir"
 rm -rf /tmp/bbn_alarms_A/
