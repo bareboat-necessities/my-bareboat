@@ -31,8 +31,8 @@ fi
 
 mkdir /tmp/bbn_alarm_A && cd /tmp/bbn_alarm_A
 
-wget https://github.com/bareboat-necessities/bbn_alarm_A/releases/download/vTest/bbn_alarm_A_bin_firmware-2025-03-17.zip
-unzip bbn_alarm_A_bin_firmware-2025-03-17.zip
+wget https://github.com/bareboat-necessities/bbn_alarm_A/releases/download/vTest/bbn_alarms_A_bin_firmware-2025-03-17.zip
+unzip bbn_alarms_A_bin_firmware-2025-03-17.zip
 /srv/esphome/bin/esptool.py --chip esp32s3 \
  --port "$parameterP" --baud 921600 \
  --before default_reset --after hard_reset write_flash \
