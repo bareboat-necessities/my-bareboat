@@ -25,18 +25,18 @@ fi
 
 m_dir=$(pwd)
 
-if [ -d /tmp/bbn_alarm_A ]; then
-  rm -rf /tmp/bbn_alarm_A/
+if [ -d /tmp/bbn_alarms_A ]; then
+  rm -rf /tmp/bbn_alarms_A/
 fi
 
-mkdir /tmp/bbn_alarm_A && cd /tmp/bbn_alarm_A
+mkdir /tmp/bbn_alarms_A && cd /tmp/bbn_alarms_A
 
 wget https://github.com/bareboat-necessities/bbn_alarms_A/releases/download/vTest/bbn_alarms_A_bin_firmware-2025-03-17.zip
 unzip bbn_alarms_A_bin_firmware-2025-03-17.zip
 /srv/esphome/bin/esptool.py --chip esp32s3 \
  --port "$parameterP" --baud 921600 \
  --before default_reset --after hard_reset write_flash \
- 0x0 bbn_alarm_A.merged.bin
+ 0x0 bbn_alarms_A.merged.bin
 
 cd "$m_dir"
-rm -rf /tmp/bbn_alarm_A/
+rm -rf /tmp/bbn_alarms_A/
