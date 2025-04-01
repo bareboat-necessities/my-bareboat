@@ -31,7 +31,7 @@ fi
 
 mkdir /tmp/bbn_sensors_hub_A && cd /tmp/bbn_sensors_hub_A
 
-wget https://github.com/bareboat-necessities/bbn_sensors_hub_A/releases/download/v1.0.9/bbn_sensors_hub_A_bin-2025-04-01.zip
+wget https://github.com/bareboat-necessities/bbn_sensors_hub_A/releases/download/v1.1.0/bbn_sensors_hub_A_bin-2025-04-01.zip
 unzip bbn_sensors_hub_A_bin-2025-04-01.zip
 /srv/esphome/bin/esptool.py --chip esp32s3 \
  --port "$parameterP" --baud 921600 \
