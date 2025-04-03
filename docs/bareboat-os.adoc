@@ -124,7 +124,7 @@ Green is Pi (the central element).
 [#download]
 === Download Image
 
-Download SD card image (~2.8Gb file):
+Download SD card image (~3Gb file FULL version and ~1.5G LITE version):
 
 https://github.com/bareboat-necessities/lysmarine_gen#download
 
