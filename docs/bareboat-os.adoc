@@ -2267,7 +2267,8 @@ LTE Routers.
 
 === SD Cards
 
-In SD card you will be looking at speed (i/o reads, i/o writes), durability, size.
+In SD card you will be looking at speed (i/o reads, i/o writes), durability, size. Pick
+SD card with built-in PLP (Power Loss Protection). They are usually marked as 'Industrial' or 'High Endurance'.
 >32Gb is recommended.
 
 === SeaTalk1
