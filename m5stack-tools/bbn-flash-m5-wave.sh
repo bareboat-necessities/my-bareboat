@@ -31,7 +31,7 @@ fi
 
 mkdir /tmp/bbn-flash-m5-wave && cd /tmp/bbn-flash-m5-wave
 
-wget https://github.com/bareboat-necessities/bbn-wave-period-esp32/releases/download/v2.0.8/bbn_wave_freq_m5atomS3_bin-2025-05-14.zip
+wget https://github.com/bareboat-necessities/bbn-wave-period-esp32/releases/download/v2.0.9/bbn_wave_freq_m5atomS3_bin-2025-05-14.zip
 unzip bbn_wave_freq_m5atomS3_bin-2025-05-14.zip
 /srv/esphome/bin/esptool.py --chip esp32s3 \
  --port "$parameterP" --baud 921600 \
