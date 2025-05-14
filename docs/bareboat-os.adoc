@@ -1992,6 +1992,8 @@ SL100W   10"   https://www.sihovision.com/full-ip65-high-brightness-touch-monito
 
 More ideas from TouchThink: https://www.touchtecs.com/marine-monitor/ip65-sunlight-readable-marine-display-15-inch.html
 
+Another option:  Lilliput TK1019/T - 10.1" High Brightness Industrial PCAP Panel Mountable Touch Monitor: https://lilliputdirect.com/TK1019-T
+
 
 Pick HDMI screen over DSI as they do not take extra GPIO pins which you might have other plans for.
 Also DSI monitors often require custom (often closed source) drivers from their vendors and as a result
