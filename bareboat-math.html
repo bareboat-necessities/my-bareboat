@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<meta name="description" content="Bareboat Necessities, Wave Height from IMU accelerometer">
+<meta name="description" content="Bareboat Necessities, Marine IMU wave-state estimation from low-cost IMU data">
 <meta name="author" content="mgrouch">
-<title>Estimating wave height from IMU accelerometer on a moving boat (Early Draft)</title>
+<title>Marine IMU Wave-State Estimation with OU-Driven Quaternion MEKF</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -441,56 +441,71 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book">
 <div id="header">
-<h1>Estimating wave height from IMU accelerometer on a moving boat (Early Draft)</h1>
+<h1>Marine IMU Wave-State Estimation with OU-Driven Quaternion MEKF</h1>
 <div class="details">
 <span id="author" class="author">mgrouch</span><br>
 <span id="email" class="email"><a href="mailto:mgrouch@users.noreply.github.com">mgrouch@users.noreply.github.com</a></span><br>
-<span id="revnumber">version 2025-07-15,</span>
-<span id="revdate">Wave Height from IMU accelerometer</span>
+<span id="revnumber">version 2026-07-01,</span>
+<span id="revdate">Marine IMU Wave-State Estimation</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_abstract">1. Abstract</a></li>
-<li><a href="#_trochoidal_waves">2. Trochoidal Waves</a>
+<li><a href="#_source_and_status">2. Source and Status</a></li>
+<li><a href="#_motivation">3. Motivation</a></li>
+<li><a href="#_estimator_overview">4. Estimator Overview</a></li>
+<li><a href="#_frames_and_signals">5. Frames and Signals</a></li>
+<li><a href="#_state_vector">6. State Vector</a></li>
+<li><a href="#_measurement_model">7. Measurement Model</a>
 <ul class="sectlevel2">
-<li><a href="#_doppler_effect">2.1. Doppler effect</a></li>
+<li><a href="#_accelerometer">7.1. Accelerometer</a></li>
+<li><a href="#_magnetometer">7.2. Magnetometer</a></li>
+<li><a href="#_integral_pseudo_measurement">7.3. Integral Pseudo-Measurement</a></li>
+<li><a href="#_imu_lever_arm">7.4. IMU Lever Arm</a></li>
 </ul>
 </li>
-<li><a href="#_trigonometry_of_a_boat_movement">3. Trigonometry of a boat movement</a>
+<li><a href="#_continuous_time_process_model">8. Continuous-Time Process Model</a>
 <ul class="sectlevel2">
-<li><a href="#_terminology">3.1. Terminology</a></li>
-<li><a href="#_calculating_true_wind_and_speed_through_water_based_on_difference_in_heading_and_course_over_ground">3.2. Calculating true wind and speed through water based on difference in heading and course over ground</a></li>
-<li><a href="#_heading_true_from_magnetic">3.3. Heading True from Magnetic</a></li>
-<li><a href="#_leeway">3.4. Leeway</a></li>
+<li><a href="#_quaternion_propagation">8.1. Quaternion Propagation</a></li>
+<li><a href="#_ou_driven_kinematic_chain">8.2. OU-Driven Kinematic Chain</a></li>
+<li><a href="#_unified_error_state_form">8.3. Unified Error-State Form</a></li>
 </ul>
 </li>
-<li><a href="#_imu">4. IMU</a>
+<li><a href="#_discrete_time_prediction">9. Discrete-Time Prediction</a>
 <ul class="sectlevel2">
-<li><a href="#_getting_vertical_acceleration_from_imu">4.1. Getting vertical acceleration from IMU</a></li>
-<li><a href="#_ahrs_attitude_and_heading_reference_system_fusion_algorithms">4.2. AHRS (attitude and heading reference system) fusion algorithms</a></li>
+<li><a href="#_ou_axis_transition">9.1. OU Axis Transition</a></li>
 </ul>
 </li>
-<li><a href="#_kalman_filter_to_double_integrate_vertical_acceleration_into_displacement_without_integration_drift">5. Kalman filter to double integrate vertical acceleration into displacement without integration drift</a>
+<li><a href="#_rank_3_measurement_updates">10. Rank-3 Measurement Updates</a></li>
+<li><a href="#_initialization_and_reference_alignment">11. Initialization and Reference Alignment</a></li>
+<li><a href="#_frequency_tracking">12. Frequency Tracking</a></li>
+<li><a href="#_variance_informed_online_adaptation">13. Variance-Informed Online Adaptation</a>
 <ul class="sectlevel2">
-<li><a href="#_fft_to_calculate_observed_frequency_of_waves">5.1. FFT to calculate observed frequency of waves</a></li>
-<li><a href="#_butterworth_low_pass_filter">5.2. Butterworth Low Pass filter</a></li>
-<li><a href="#_aranovskiy_on_line_frequency_estimator">5.3. Aranovskiy on-line frequency estimator</a></li>
+<li><a href="#_why_r_s_scales_as_sigma_a_tau3">13.1. Why \$R_S\$ Scales as \$sigma_a tau^3\$</a></li>
+<li><a href="#_anisotropy">13.2. Anisotropy</a></li>
 </ul>
 </li>
-<li><a href="#_on_measuring_wave_direction">6. On measuring wave direction</a></li>
-<li><a href="#_measuring_wave_height_from_a_moving_boat">7. Measuring wave height from a moving boat</a>
+<li><a href="#_horizontal_wave_direction">14. Horizontal Wave Direction</a></li>
+<li><a href="#_validation_summary">15. Validation Summary</a>
 <ul class="sectlevel2">
-<li><a href="#_measurable_input_parameters">7.1. Measurable input parameters</a></li>
-<li><a href="#_assumptions">7.2. Assumptions</a></li>
-<li><a href="#_algorithm_steps">7.3. Algorithm steps</a></li>
-<li><a href="#_input_validation">7.4. Input validation</a></li>
-<li><a href="#_result_validation">7.5. Result validation</a></li>
+<li><a href="#_wave_scenarios">15.1. Wave Scenarios</a></li>
+<li><a href="#_simulation_results">15.2. Simulation Results</a></li>
 </ul>
 </li>
-<li><a href="#_further_ideas">8. Further ideas</a></li>
-<li><a href="#_implementation">9. Implementation</a></li>
-<li><a href="#_references">10. References</a></li>
+<li><a href="#_embedded_hardware_platform">16. Embedded Hardware Platform</a></li>
+<li><a href="#_practical_implementation_notes">17. Practical Implementation Notes</a>
+<ul class="sectlevel2">
+<li><a href="#_prefer_a_unified_filter_over_a_pipeline">17.1. Prefer a Unified Filter Over a Pipeline</a></li>
+<li><a href="#_do_not_treat_the_pseudo_measurement_as_a_sensor">17.2. Do Not Treat the Pseudo-Measurement as a Sensor</a></li>
+<li><a href="#_use_calibrated_axes">17.3. Use Calibrated Axes</a></li>
+<li><a href="#_correct_lever_arm_when_needed">17.4. Correct Lever Arm When Needed</a></li>
+<li><a href="#_delay_magnetometer_trust">17.5. Delay Magnetometer Trust</a></li>
+<li><a href="#_barometer_is_not_the_primary_wave_sensor">17.6. Barometer Is Not the Primary Wave Sensor</a></li>
+</ul>
+</li>
+<li><a href="#_relationship_to_the_old_draft">18. Relationship to the Old Draft</a></li>
+<li><a href="#_references">19. References</a></li>
 </ul>
 </div>
 </div>
@@ -508,907 +523,1173 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>&#8203;<br></p>
 </div>
+<!-- toc disabled -->
 </div>
 </div>
 <div class="sect1">
 <h2 id="_abstract">1. Abstract</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Usual methods for measuring elevation built-in into modern smartwatches and smart devices are based on fusion of data
-(using Kalman filters, etc) from IMU (accelerometer) and barometer sensors. These methods are designed to measure steps up and down stairs,
-hiking activities, and so on. However, using pressure as a useful source of elevation data is not suitable to measure
-the wave height from a boat. The surface of the wave itself (at least in trochoidal wave model) is the surface of
-equal pressure. Real waves are more complicated but nevertheless measuring air pressure on their surface
-to estimate amplitude of the wave would lead to measuring mostly noise.</p>
+<p>This document replaces the earlier trochoidal-wave and raw double-integration draft with the more mature estimator now developed in the Ocean IMU project.
+The current method is an OU-driven quaternion multiplicative extended Kalman filter, or Q-MEKF, for marine inertial sensing and wave-state estimation.
+It estimates attitude, heave, 3D displacement, dominant wave frequency, and horizontal wave direction from a calibrated IMU, with optional magnetometer yaw correction and vessel-specific corrections such as IMU lever arm and steady wind heel.</p>
 </div>
 <div class="paragraph">
-<p>Calculating elevation (displacement) using double integration of the acceleration leads
-to huge result drift due to not knowing initial displacement, initial vertical velocity
-and due to signal noise and accelerometer bias.</p>
+<p>The central change is conceptual.
+The old draft tried to infer wave height from simplified trochoidal formulas and then use those formulas to help a vertical Kalman integration scheme.
+The current method instead models the unknown world-frame wave acceleration as a stationary Ornstein-Uhlenbeck, or OU, process and lets the Kalman filter jointly estimate attitude and wave kinematics.
+Drift is controlled by a soft pseudo-measurement on the integral of displacement, with an adaptive covariance that scales with the sea state.</p>
 </div>
 <div class="paragraph">
-<p>This article describes two different methods to estimate wave height, frequency, period
-from a moving boat using IMU (accelerometer) and other common boat sensors such as anemometer (wind), GPS, and compass.
-One method is based on Kalman method which calculates second integral of acceleration with a drift correction
-based on the fact that in wave average displacement equals to zero. Another method doesn&#8217;t use
-integration at all. Instead, it measures max/min acceleration and assumes wave shape to be trochoidal.
-Based on max/min acceleration and observed wave frequency (later adjusted using Doppler effect formulas)
-the method recreates parameters of the trochoid wave allowing it to estimate the wave height.</p>
-</div>
-<div class="paragraph">
-<p>Initial velocity and position for Kalman filter are taken as estimates from trochoidal model to
-allow Kalman filter to converge faster.</p>
+<p>This formulation is intended for embedded, low-cost marine IMU deployments.
+It avoids reliance on barometric pressure for wave elevation, avoids uncontrolled double integration of acceleration, and uses a real-time adaptation loop so that the same filter can remain stable across calm chop, long swell, and larger sea states.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_trochoidal_waves">2. Trochoidal Waves</h2>
+<h2 id="_source_and_status">2. Source and Status</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Gravitational &#160; \$g\$ &#160; (m/s^2): &#160;&#160;&#160;
-\$g = 9.81\$</p>
-</div>
-<div class="paragraph">
-<p>Rotation center of trochoidal wave particle in Z axis (always negative) (m): &#160;&#160;&#160;
-\$b\$</p>
-</div>
-<div class="paragraph">
-<p>Wavelength (m): &#160;&#160;&#160;
-\$L\$</p>
-</div>
-<div class="paragraph">
-<p>Wave equation:</p>
-</div>
-<div class="paragraph">
-<p>\$X(t) = H sin(k c t)\$</p>
-</div>
-<div class="paragraph">
-<p>\$Z(t) = - H cos(k c t)\$</p>
-</div>
-<div class="paragraph">
-<p>Wavenumber (1/m): &#160;&#160;&#160;
-\$k = (2 pi) / L\$</p>
-</div>
-<div class="paragraph">
-<p>Wave amplitude (m):  &#160;&#160;&#160;
-\$H = e ^(k b) / k = L / (2 pi) e ^ ((2 pi b) / L)  \$ &#160;&#160;&#160; &#8658; &#160;&#160;&#160;
-\$b = ln(H k) / k = L / (2 pi) ln ((2 pi H) / L)  \$</p>
-</div>
-<div class="paragraph">
-<p>max(H) amplitude (m):   &#160;&#160;&#160;  \$H_max = L / (2 pi)\$ &#160;&#160;&#160; when &#160; b = 0</p>
-</div>
-<div class="paragraph">
-<p>Depth (m): &#160;&#160;&#160;
-\$d\$</p>
-</div>
-<div class="paragraph">
-<p>Wave speed (m/s): &#160;&#160;&#160;
-\$c = sqrt(g / k tanh(k d))\$ &#160;,&#160;&#160;&#160;&#160;&#160;
-for deep water waves: \$c = sqrt(g / k) = sqrt((g L) / (2 pi))\$,  &#160;&#160; \$L = (g T ^ 2) / (2 pi)\$</p>
-</div>
-<div class="paragraph">
-<p>Wave period (s):   &#160;&#160;&#160;
-\$T = L / c\$</p>
-</div>
-<div class="paragraph">
-<p>Wave frequency (Hz=1/s):   &#160;&#160;&#160;
-\$f = 1 / T = c / L\$</p>
-</div>
-<div class="paragraph">
-<p>Vertical motion is harmonic.</p>
-</div>
-<div class="paragraph">
-<p>Vertical displacement:
-\$Z(t) = - H cos(k c t) = - L / (2 pi) (a(t))/g\$</p>
-</div>
-<div class="paragraph">
-<p>Vertical velocity:
-\$u(t) = Z^'(t) = k c H sin(k c t) = c e ^ ((2 pi b) / L) sin(k c t)\$</p>
-</div>
-<div class="paragraph">
-<p>\$u_max = c e ^ ((2 pi b) / L)\$</p>
-</div>
-<div class="paragraph">
-<p>\$u_max(b=0) = c\$</p>
-</div>
-<div class="paragraph">
-<p>Vertical acceleration:
-\$a(t) = u^'(t) = k^2 c^2 H cos(k c t) = g e ^ ((2 pi b) / L) cos(k c t)\$</p>
-</div>
-<div class="paragraph">
-<p>\$a_max = -a_min = k^2 c^2 H =  ((2 pi) / L) ^ 2 ((g L) / (2 pi)) L / (2 pi) e^((2 pi b)/L) = g e^((2 pi b)/L)  \$</p>
-</div>
-<div class="paragraph">
-<p>\$b = L / (2 pi) ln(a_max / g)\$</p>
-</div>
-<div class="paragraph">
-<p>Slope \$s(t)\$:</p>
-</div>
-<div class="paragraph">
-<p>\$x_b(t) = X(t) - t Delta v\$</p>
-</div>
-<div class="paragraph">
-<p>\$s(t) = d/ (dx_b) ((Z(t)) / (x_b(t))) =  (d/dt(Z)) / (d/dt(x_b)) = (d/dt(- H cos(kct))) / (d/dt(H sin(kct) - t Delta v)) = (cHk sin(kct)) / (cHk cos(kct) - Delta v)\$</p>
-</div>
-<div class="sect2">
-<h3 id="_doppler_effect">2.1. Doppler effect</h3>
-<div class="paragraph">
-<p>\$f\$ &#160; is emitted frequency (Hz=1/s),</p>
-</div>
-<div class="paragraph">
-<p>\$f_o\$ &#160; is observed frequency (Hz=1/s):</p>
-</div>
-<div class="paragraph">
-<p>\$c\$ &#160; is the propagation speed of waves in the medium</p>
-</div>
-<div class="paragraph">
-<p>\$Delta v\$ &#160; is the opposite of the velocity of the receiver
-relative to the source: it is positive when the source and the receiver are moving towards each other.</p>
-</div>
-<div class="paragraph">
-<p>\$f_o = (c +- Delta v) / c f\$</p>
-</div>
-<div class="paragraph">
-<p>\$L\$ &#160; is source wavelength (m) for trochoidal wave.</p>
-</div>
-<div class="paragraph">
-<p>For trochoidal wave:</p>
-</div>
-<div class="paragraph">
-<p>\$f = c / L\$ &#160; &#8658; &#160; \$f_o = (c +- Delta v) / L \$,</p>
-</div>
-<div class="paragraph">
-<p>\$c = sqrt((g L) / (2 pi))\$ &#160; &#8658; &#160; \$f_0 = (sqrt((g L) / (2 pi)) +- Delta v) / L\$</p>
-</div>
-<div class="paragraph">
-<p>\$L = (sign(Delta v) sqrt(8 pi f_o g  Delta v + g ^ 2) + 4 pi f_o  Delta v + g) / (4 pi f_o ^ 2)\$</p>
-</div>
-<div class="paragraph">
-<p>Apparent (observed) vertical acceleration:</p>
-</div>
-<div class="paragraph">
-<p>\$a_(observed)(Delta v, t) = d^2/dt^2 (- H cos(k (c + Delta v) t)) = H k^2 (c^2 + 2 c Delta v + (Delta v)^2) cos(k (c + Delta v) t)\$</p>
-</div>
-<div class="paragraph">
-<p>\$a_(observed_max) = H k^2 (c^2 + 2 c Delta v + (Delta v)^2)\$ &#8658;</p>
-</div>
-<div class="paragraph">
-<p>\$H = H(L, Delta v) = a_(observed_max) / (k^2 (c^2 + 2 c Delta v + (Delta v)^2)) \$</p>
-</div>
-<div class="paragraph">
-<p>\$a_max = a_(observed_max) c^2 / (c^2 + 2 c Delta v + (Delta v)^2)\$</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_trigonometry_of_a_boat_movement">3. Trigonometry of a boat movement</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_terminology">3.1. Terminology</h3>
-<div class="paragraph">
-<p><em>AWS</em> &#160; is Apparent Wind Speed (relative to the boat heading)</p>
-</div>
-<div class="paragraph">
-<p><em>AWA</em> &#160; is Apparent Wind Angle (relative to the bow heading, 0 to 180, starboard plus, port minus)</p>
-</div>
-<div class="paragraph">
-<p><em>AWD</em> &#160; is Apparent Wind Direction (relative to true north)</p>
-</div>
-<div class="paragraph">
-<p><em>AGWS</em> &#160; is Apparent Ground Wind Speed (relative to the boat course over the ground)</p>
-</div>
-<div class="paragraph">
-<p><em>AGWA</em> &#160; is Apparent Ground Wind Angle (relative to the boat course over the ground, 0 to 180, starboard plus, port minus)</p>
-</div>
-<div class="paragraph">
-<p><em>AGWD</em> &#160; is Apparent Ground Wind Direction (relative to true north)</p>
-</div>
-<div class="paragraph">
-<p><em>SPD</em> &#160; is Knotmeter speed (relative to the water)</p>
-</div>
-<div class="paragraph">
-<p><em>HDT</em> &#160; is Heading true (relative to true north)</p>
-</div>
-<div class="paragraph">
-<p><em>HDM</em> &#160; is  Heading magnetic (relative to magnetic north)</p>
-</div>
-<div class="paragraph">
-<p><em>DFT</em> &#160; is  Current Drift (speed of current, relative to fixed earth)</p>
-</div>
-<div class="paragraph">
-<p><em>SET</em> &#160; is  Current Set (direction current flows toward relative to fixed earth true north)</p>
-</div>
-<div class="paragraph">
-<p><em>SOG</em> &#160; is  Speed Over Ground (relative to the fixed earth)</p>
-</div>
-<div class="paragraph">
-<p><em>COGT</em> &#160; is Course Over Ground true (relative to the fixed earth true north)</p>
-</div>
-<div class="paragraph">
-<p><em>COGM</em> &#160; is Course Over Ground magnetic (relative to the fixed earth magnetic north)</p>
-</div>
-<div class="paragraph">
-<p><em>GWS</em> &#160; is Ground Wind Speed (relative to the fixed earth)</p>
-</div>
-<div class="paragraph">
-<p><em>GWD</em> &#160; is Ground Wind Direction (relative to true north)</p>
-</div>
-<div class="paragraph">
-<p><em>TWA</em> &#160; is True Wind Angle (relative to the heading, 0 = upwind, 180deg = downwind, (+ starboard, - port))</p>
-</div>
-<div class="paragraph">
-<p><em>TWS</em> &#160; is True Wind Speed (relative to the water)</p>
-</div>
-<div class="paragraph">
-<p><em>TWD</em> &#160; is True Wind Direction (relative to true north)</p>
-</div>
-<div class="paragraph">
-<p><em>POS</em> &#160; is position LAT, LON (latitude, longitude)</p>
-</div>
-<div class="paragraph">
-<p><em>TB(POS1, POS2)</em> &#160; is Bearing true (true north angle to maintain in course to reach from POS1 to POS2)</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_calculating_true_wind_and_speed_through_water_based_on_difference_in_heading_and_course_over_ground">3.2. Calculating true wind and speed through water based on difference in heading and course over ground</h3>
-<div class="paragraph">
-<p>Having both true heading and true course over the ground allows calculating true wind vector parameters and
-speed through the water (SPD):</p>
-</div>
-<div class="paragraph">
-<p>\$SPD = ((dist(POS2, POS1)) / (t_\text{end} - t_\text{start}) - DFT * cos(COGT - SET)) * cos(COGT - avg(HDT))\$</p>
-</div>
-<div class="paragraph">
-<p>\$TWS = sqrt((avg(AWS)) ^ 2 + SPD ^ 2 - 2 * avg(AWS) * SPD * cos(avg(AWA)))\$</p>
-</div>
-<div class="paragraph">
-<p>\$TWA = +- arccos((avg(AWS) * cos(avg(AWA)) - SPD) / (TWS))\$</p>
-</div>
-<div class="paragraph">
-<p>For Doppler effect formulas:</p>
-</div>
-<div class="paragraph">
-<p>\$Delta v = SPD * cos(TWA)\$</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_heading_true_from_magnetic">3.3. Heading True from Magnetic</h3>
-<div class="paragraph">
-<p>IMU helps measuring magnetic heading HDM. To calculate true heading, it is required to have
-Earth magnetic model and using location and time it gives you magnetic variation.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-python" data-lang="python">import wmm2020
-
-yeardec = datetime.date.today().year
-alt_km = 0
-declination = wmm2020.wmm(glat, glon, alt_km, yeardec).decl</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_leeway">3.4. Leeway</h3>
-<div class="paragraph">
-<p>Although leeway calculation is not required for the algorithm (it gets taken into account with using
-heading to course over ground difference), for completeness, here is the popular empirical formula:</p>
-</div>
-<div class="paragraph">
-<p>Leeway (deg) is angle to adjust heading to maintain constant COG (assuming no current)</p>
-</div>
-<div class="paragraph">
-<p>\$\l\eeway = heel  K / (SPD ^ 2)\$</p>
-</div>
-<div class="paragraph">
-<p>\$heel\$ &#160;&#160; is boat heel and needs to be in (degrees) for the formula above</p>
-</div>
-<div class="paragraph">
-<p>\$SPD\$  &#160;is speed through water  and needs to be in (kt)</p>
-</div>
-<div class="paragraph">
-<p>\$K\$ &#160;&#160;&#160;&#160;&#160; is boat and boat load specific constant (kt^2), about 10.0</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_imu">4. IMU</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_getting_vertical_acceleration_from_imu">4.1. Getting vertical acceleration from IMU</h3>
-<div class="paragraph">
-<p>Most IMU libraries provide a way to get the attitude quaternion \$q\$.
-Using this quaternion to get acceleration in Earth XYZ from IMU frame xyz: \$\text{accel} = (a_x, a_y, a_z)\$ vector,
-the quaternion \$q\$ is used to rotate vector \$\text{accel}\$</p>
-</div>
-<div class="paragraph">
-<p>\$\text{accel}_\text{earthXYZ} = q * \text{accel} * q'\$</p>
-</div>
-<div class="paragraph">
-<p>where \$q'\$ is inverted quaternion \$q\$.</p>
-</div>
-<div class="paragraph">
-<p>The same quaternion can be used to get Euler angles of pitch, roll and yaw.
-Yaw would correspond to the magnetic heading.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-To estimate max acceleration it&#8217;s not needed to extract vertical part of acceleration.
-Just magnitude of acceleration \$a=sqrt(a_x^2 + a_y^2 + a_z^2)\$ should be sufficient.
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_ahrs_attitude_and_heading_reference_system_fusion_algorithms">4.2. AHRS (attitude and heading reference system) fusion algorithms</h3>
-<div class="paragraph">
-<p>If quaternion from IMU is not available, then it can be calculated using AHRS fusion algorithms:</p>
+<p>This document is a practical AsciiDoc distillation of the more detailed Ocean IMU mathematical draft:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Madgwick algorithm</p>
+<p><a href="https://github.com/bareboat-necessities/ocean-imu"><code>bareboat-necessities/ocean-imu</code></a></p>
 </li>
 <li>
-<p>Mahony algorithm</p>
+<p><code>doc/kalman_ou_iii/kalman_ou-w3d.tex</code></p>
 </li>
 <li>
-<p>RTQF quaternion fusion for lower power processors</p>
-</li>
-<li>
-<p>Extended Kalman Filter (EKF)</p>
+<p><code>doc/kalman_ou_iii/w3d-*.tex-part</code></p>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>It is not meant to duplicate every proof, coefficient table, or plotting fixture from Ocean IMU.
+Instead, it records the model, state layout, update equations, tuning law, and validation results at a level appropriate for the Bareboat Necessities documentation.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_kalman_filter_to_double_integrate_vertical_acceleration_into_displacement_without_integration_drift">5. Kalman filter to double integrate vertical acceleration into displacement without integration drift</h2>
+<h2 id="_motivation">3. Motivation</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Ref:</p>
+<p>A boat, buoy, or floating sensor experiences wave-induced translational motion, vessel attitude motion, sensor bias, vibration, magnetic disturbance, and measurement noise at the same time.
+Estimating wave height by simply rotating the accelerometer into a vertical axis and double-integrating it is not stable in practice:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>accelerometer bias integrates into velocity drift and then displacement drift;</p>
+</li>
+<li>
+<p>attitude error leaks gravity into the estimated acceleration;</p>
+</li>
+<li>
+<p>the initial vertical velocity and displacement are generally unknown;</p>
+</li>
+<li>
+<p>low-frequency drift is easily mistaken for long-period swell;</p>
+</li>
+<li>
+<p>a barometer does not directly solve the problem on a moving wave surface.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>Sharkh S. M., Hendijanizadeh2 M., Moshrefi-Torbati3 M., Abusara M. A.:
-A Novel Kalman Filter Based Technique for
-Calculating the Time History of Vertical
-Displacement of a Boat from Measured
-Acceleration,
-Marine Engineering Frontiers (MEF) Volume 2, 2014</p>
-</div>
-<div class="paragraph">
-<p>The method uses assumption that average vertical displacement is zero. So it takes third integral of acceleration
-as input measurement with zero value. Vertical acceleration on each step is the value used in transition offset.</p>
-</div>
-<div class="paragraph">
-<p>So only input observation value is 0 (third integral of acceleration).
-Acceleration used in transition offset needs to exclude Earth gravitational g and accelerometer bias.
-So avg(acceleration) is subtracted from it.</p>
-</div>
-<div class="paragraph">
-<p>Accelerometer noise will make the filter to converge slower.
-Accelerometer bias will skew the displacement on one side.
-Giving too low covariances will flatten the result too much. Too high covariances will make it jump too much.</p>
-</div>
-<div class="paragraph">
-<p>Low pass filter is needed to get rid of high frequency noise before running this filter to get better results.</p>
-</div>
-<div class="paragraph">
-<p>Kalman method parameters.</p>
-</div>
-<div class="paragraph">
-<p>Transition matrix:</p>
-</div>
-<div class="paragraph">
-<p>\$ F = [[1, dt, 1/2 dt ^ 2 ], [0,  1,       dt], [0,  0,        1]]  \$</p>
-</div>
-<div class="paragraph">
-<p>Transition offset:</p>
-</div>
-<div class="paragraph">
-<p>\$ B = ( (1/6 dt^3), (1/2 dt^2), (dt) ) \$</p>
-</div>
-<div class="paragraph">
-<p>Observation matrix:</p>
-</div>
-<div class="paragraph">
-<p>\$ H = (1, 0, 0) \$</p>
-</div>
-<div class="paragraph">
-<p>Transition covariance:</p>
-</div>
-<div class="paragraph">
-<p>\$ Q = [[ \text{PosIntegral_Trans_Variance}, 0, 0 ], [0, \text{Pos_Trans_Variance}, 0 ], [0, 0, \text{Vel_Trans_Variance} ]] \$</p>
-</div>
-<div class="paragraph">
-<p>Observation covariance:</p>
-</div>
-<div class="paragraph">
-<p>\$ R = [[ \text{PosIntegral_Variance} ]] \$</p>
-</div>
-<div class="paragraph">
-<p>Initial state mean (height integral, height, velocity):</p>
-</div>
-<div class="paragraph">
-<p>\$ X0 = ((0), (\text{height_from_trochoid_model}), (\text{velocity_from_trochoid_model})) \$</p>
-</div>
-<div class="paragraph">
-<p>Initial state covariance:</p>
-</div>
-<div class="paragraph">
-<p>\$ P0 = [[ \text{PosIntegral_Variance}, 0, 0], [0, 1, 0], [0, 0, 1]] \$</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-python" data-lang="python">from pykalman import KalmanFilter
-import numpy as np
-
-kf = KalmanFilter(transition_matrices=F,
-                  observation_matrices=H,
-                  transition_covariance=Q,
-                  observation_covariance=R,
-                  initial_state_mean=X0,
-                  initial_state_covariance=P0)
-
-for t in range(n_timesteps):
-    if t == 0:
-        filtered_state_means[t] = X0
-        filtered_state_covariances[t] = P0
-    else:
-        observation = 0
-        transition_offset = B * (accZ_val[t] - acc_avg)
-        filtered_state_means[t], filtered_state_covariances[t] = (
-            kf.filter_update(
-                filtered_state_mean = filtered_state_means[t-1],
-                filtered_state_covariance = filtered_state_covariances[t-1],
-                transition_offset = transition_offset,
-                observation = observation
-            )
-        )</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The wave height needs to be evaluated based on the results on the end side of the sampling interval.
-The results in the beginning of the sample interval will have extra spikes due to Kalman
-filter taking time to converge (without knowing initial velocity and position and adjusting
-covariances).</p>
-</div>
-<div class="sect2">
-<h3 id="_fft_to_calculate_observed_frequency_of_waves">5.1. FFT to calculate observed frequency of waves</h3>
-<div class="paragraph">
-<p>Fast (discrete) Fourier Transform (FFT) is used to find main frequency (the one which carries most energy) of the waves.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-python" data-lang="python">import numpy as np
-from scipy import fft
-
-SAMPLE_RATE = 1.0 / dt
-N_SAMP = n_timesteps
-
-w = fft.rfft(accZ_val)
-freqs = fft.rfftfreq(N_SAMP, 1 / SAMPLE_RATE)
-
-# Find the peak in the coefficients
-idx = np.argmax(np.divide(np.divide(np.abs(w), freqs), freqs))
-freq = freqs[idx]
-freq_in_hertz = abs(freq)
-period = 1 / freq_in_hertz</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_butterworth_low_pass_filter">5.2. Butterworth Low Pass filter</h3>
-<div class="paragraph">
-<p>Butterworth Low pass filter is used to filter out high frequencies noise in input
-to Kalman filter</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-python" data-lang="python">import numpy as np
-from scipy import signal
-
-sos = signal.butter(2, freq_in_hertz * 8, 'low', fs=SAMPLE_RATE, output='sos')
-low_pass_filtered = signal.sosfilt(sos, accZ_val)</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_aranovskiy_on_line_frequency_estimator">5.3. Aranovskiy on-line frequency estimator</h3>
-<div class="paragraph">
-<p>Instead of FFT method for finding main wave frequency we could use Aranovskiy frequency estimator which is
-a simple on-line filter.</p>
-</div>
-<div class="paragraph">
-<p>Ref:</p>
-</div>
-<div class="paragraph">
-<p>Alexey A. Bobtsov, Nikolay A. Nikolaev, Olga V. Slita, Alexander S. Borgul, Stanislav V. Aranovskiy</p>
-</div>
-<div class="paragraph">
-<p>The New Algorithm of Sinusoidal Signal Frequency Estimation.</p>
-</div>
-<div class="paragraph">
-<p>11th IFAC International Workshop on
-Adaptation and Learning in Control and Signal Processing
-July 3-5, 2013. Caen, France</p>
-</div>
-<div class="paragraph">
-<p><a href="https://www.sciencedirect.com/science/article/pii/S1474667016329421">The New Algorithm of Sinusoidal Signal Frequency Estimation</a></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-python" data-lang="python">from math import sin, sqrt
-import matplotlib.pyplot as plt
-import numpy as np
-
-# initialize algorithm constants
-
-omega_up = 0.0  # upper frequency
-a = 1.0
-b = 1.0
-k = 1.0
-theta_0 = - omega_up * omega_up / 4.0
-x1_0 = 0.0
-sigma_0 = theta_0
-
-delta_t = 0.001  # time step
-count = 30000  # iterations
-
-
-def func_y(t):
-    return 2.0 * sin(2.0 * t)
-
-
-# initialize variables
-t = 0.0
-x1 = x1_0
-theta = theta_0
-sigma = sigma_0
-
-chart_x = np.zeros(count)
-chart_y = np.zeros(count)
-
-
-# loop
-for n in range(0, count):
-    # step
-    y = func_y(t)
-    x1_dot = - a * x1 + b * y
-    sigma_dot = - k * x1 * x1 * theta - k * a * x1 * x1_dot - k * b * x1_dot * y
-    theta = sigma + k * b * x1 * y
-    omega = sqrt(abs(theta))
-
-    print(omega)
-    chart_x[n] = t
-    chart_y[n] = omega
-
-    x1 = x1 + x1_dot * delta_t
-    sigma = sigma + sigma_dot * delta_t
-    t = t + delta_t
-
-
-plt.plot(chart_x, chart_y)
-plt.grid()
-plt.show()</code></pre>
-</div>
-</div>
+<p>The mature estimator treats the problem as a coupled inertial-navigation and stochastic wave-kinematics problem.
+The wave acceleration is not assumed to be a perfect sinusoid or trochoid.
+Instead, it is treated as colored, finite-variance excitation with a correlation time tied to the dominant wave period.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_on_measuring_wave_direction">6. On measuring wave direction</h2>
+<h2 id="_estimator_overview">4. Estimator Overview</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Measuring wave direction can be achieved by using multiple accelerometers mounted in different locations on a ship.</p>
+<p>The estimator combines four pieces:</p>
 </div>
-<div class="paragraph">
-<p>Ref:</p>
-</div>
-<div class="paragraph">
-<p>Ocean Engineering
-Volume 249, 1 April 2022, 110760</p>
-</div>
-<div class="paragraph">
-<p>Johann A. Dirdala, Roger Skjetneb, Jan Roháčc, Thor I. Fossen</p>
-</div>
-<div class="paragraph">
-<p>Online wave direction and wave number estimation from surface vessel motions using distributed
-inertial measurement arrays and phase-time-path-differences</p>
-</div>
-<div class="paragraph">
-<p><a href="https://www.sciencedirect.com/science/article/pii/S0029801822002098" class="bare">https://www.sciencedirect.com/science/article/pii/S0029801822002098</a></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_measuring_wave_height_from_a_moving_boat">7. Measuring wave height from a moving boat</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_measurable_input_parameters">7.1. Measurable input parameters</h3>
-<div class="paragraph">
-<p>Open sea waves have periods 20 sec or even longer. So sample duration time
-should be in minutes to capture several waves. Playing with reference data without noise
-shows described Kalman algorithm needs about 10 wavelength to converge accurately.
-So with longer way samples needs to be longer. 5-15 mins.</p>
-</div>
-<div class="paragraph">
-<p>Acceleration positive &#8658; position negative. They are in counter phase. This could allow setting initial position for Kalman filter better.</p>
-</div>
-<div class="paragraph">
-<p>Pitch negative &#8658; speed vector is pointing down. This could also allow setting initial velocity for Kalman filter better.</p>
-</div>
-<div class="paragraph">
-<p>So for initial position and speed in Kalman filter:</p>
-</div>
-<div class="paragraph">
-<p>\$pos_\text{init} = - a_\text{init} / (k^2 c^2) = - a_\text{init} / (g k) = - L a_\text{init} / (2 pi g) \$</p>
-</div>
-<div class="paragraph">
-<p>\$tan(\p\i\tch_\text{init}) = const_1 * s_\text{init}(Delta v = 0)\$ &#160;&#160; tangent of pitch is proportional to wave slope</p>
-</div>
-<div class="paragraph">
-<p>\$vel_\text{init} =  kcH cos(kct) * s_\text{init}(Delta v = 0) = (kcH) / (const_1) sin(\p\itch_\text{init}) = const_2 * c * sin(\p\itch_\text{init}) \$,</p>
-</div>
-<div class="paragraph">
-<p>\$const_2\$ to be found empirically (it&#8217;s vessel specific too).</p>
-</div>
-<div class="paragraph">
-<p>Or</p>
-</div>
-<div class="paragraph">
-<p>\$vel_\text{init} = c e^((2 pi b)/L) sin (arccos (a_\text{init} / g e^(-(2 pi b)/ L))) * sign(\p\itch_\text{init}) \$</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>t_start, t_end - time interval of measurements (about 5 mins)</p>
-</li>
-<li>
-<p>POS(t) as LAT(t), LON(t)</p>
-</li>
-<li>
-<p>AWA(t) AWS(t)</p>
-</li>
-<li>
-<p>COG(t) SOG(t)</p>
-</li>
-<li>
-<p>HDM(t) + mag_variation &#8594; HDT(t)</p>
-</li>
-<li>
-<p>DFT(t) SET(t) - (possibly from current/tide stations harmonics data)</p>
-</li>
-<li>
-<p>heel(t), pitch(t)</p>
-</li>
-<li>
-<p>SPD(t) - possibly (might be missing) &#8658; leeway(heel(t), SPD(t))</p>
-</li>
-<li>
-<p>accel(t, x, y, z), vertical_accel(t) via pitch,roll,yaw</p>
-</li>
-<li>
-<p>ROT(t) - rate of turn</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_assumptions">7.2. Assumptions</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>No tacks, jibes during sample</p>
-</li>
-<li>
-<p>Heading and course over ground are mostly steady</p>
-</li>
-<li>
-<p>Wind is not changing drastically</p>
-</li>
-<li>
-<p>Depth is deep, i.e. depth &gt; 1/2 wavelength</p>
-</li>
-<li>
-<p>Water current is not changing much (or zero i.e. negligible relative to boat speed)</p>
-</li>
-<li>
-<p>Trochoidal wave model</p>
-</li>
-<li>
-<p>Wave length is longer than boat length</p>
-</li>
-<li>
-<p>Approx formula for b, H (in trochoidal wave model)</p>
-</li>
-<li>
-<p>Accelerometer installed near vessel&#8217;s center of mass (center of buoyancy)</p>
-</li>
-<li>
-<p>Vessel&#8217;s geometry and RAO (Response amplitude operator) is not taken into account</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_algorithm_steps">7.3. Algorithm steps</h3>
-<div class="paragraph">
-<p>Calculation steps:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>FFT to get observed wave frequency from acceleration (f_observed)</p>
-</li>
-<li>
-<p>Speed toward wave fronts (delta_v for Doppler frequency) from wind and speed data</p>
-<div class="ulist">
-<ul>
-<li>
-<p>COGT as true bearing from POS1 to POS2</p>
-</li>
-<li>
-<p>Convert HDM to HDT using position and local mag declination, Use avg(HDT) vs COG and coordinates to calculate SPD</p>
-</li>
-<li>
-<p>SPD = (DIST(POS1, POS2)/(t_end - t_start) - (DFT * cos(COGT - SET))) * cos(COGT - avg(HDT))</p>
-</li>
-<li>
-<p>avg(leeway(heel(t), SPD))</p>
-</li>
-<li>
-<p>use avg(AWA), AVG(AWS) and SPD to calculate TWS/TWA</p>
-</li>
-<li>
-<p>TWS = sqrt(AVG(AWS) ^ 2 + SPD ^ 2 - 2 * AVG(AWS) * SPD * cos(avg(AWA)))</p>
-</li>
-<li>
-<p>TWA = +- arccos( ( AVG(AWS) * cos(avg(AWA)) - SPD ) / TWS)</p>
-</li>
-<li>
-<p>calculate delta_v as SPD * cos(TWA)</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Calculate L_source (source wave length) for trochoidal wave model from f_observed and delta_v using Doppler formulas</p>
-</li>
-<li>
-<p>Low pass filter for accel data</p>
-</li>
-<li>
-<p>min/max accel after low pass</p>
-</li>
-<li>
-<p>Calculate b value for trochoidal wave model from known L_source and min/max accel after low pass</p>
-</li>
-<li>
-<p>Calculate wave height from b and L_source</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_input_validation">7.4. Input validation</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Validate heading and COG for steadiness</p>
-</li>
-<li>
-<p>Validate that magnetic variation is known for the position</p>
-</li>
-<li>
-<p>Check validity of accel (against g)</p>
-</li>
-<li>
-<p>Validate input data against assumptions</p>
-</li>
-<li>
-<p>Discard the sample if it is not good and start collecting a new one.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_result_validation">7.5. Result validation</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Validate wave amplitude max &#160; \$H &lt; H_max = L / (2 pi)\$</p>
-</li>
-<li>
-<p>Validate accel (Ratio to \$g\$ can&#8217;t be unreasonably high)</p>
-</li>
-<li>
-<p>Discard the sample if the result is not good and start collecting a new one.</p>
-</li>
-<li>
-<p>Validate height calculated by Kalman filter against height calculated from max acceleration
-and wavelength with trochoidal model.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_further_ideas">8. Further ideas</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Trochoidal model gives a good reference point. It&#8217;s easy to go from acceleration to vertical displacement
-in trochoidal model knowing the wavelength. So (I think) it could be a good idea to use trochoidal model estimations
-as input to Kalman filter fusion (instead of zero third integral assumption), as another way to prevent
-displacement integral of acceleration from drift.</p>
-</div>
-<div class="paragraph">
-<p>Vertical velocity and heel are correlated. It would be interesting to study their interdependencies.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_implementation">9. Implementation</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>As of September 9th, 2024 author provides complete implementation on GitHub</p>
-</div>
-<div class="paragraph">
-<p><a href="https://github.com/bareboat-necessities/bbn-wave-period-esp32" class="bare">https://github.com/bareboat-necessities/bbn-wave-period-esp32</a></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_references">10. References</h2>
-<div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Sharkh S. M., Hendijanizadeh2 M., Moshrefi-Torbati3 M., Abusara M. A.: A Novel Kalman Filter Based Technique for Calculating the Time History of Vertical Displacement of a Boat from Measured Acceleration, <a href="https://www.researchgate.net/profile/Mehdi-Hendijanizadeh/publication/264713649_A_Novel_Kalman_Filter_Based_Technique_for_Calculating_the_Time_History_of_Vertical_Displacement_of_a_Boat_from_Measured_Acceleration/links/53ec88db0cf24f241f1584c5/A-Novel-Kalman-Filter-Based-Technique-for-Calculating-the-Time-History-of-Vertical-Displacement-of-a-Boat-from-Measured-Acceleration.pdf">Marine Engineering Frontiers (MEF) Volume 2, 2014</a></p>
+<p>a quaternion left-multiplicative EKF for attitude and gyro bias;</p>
 </li>
 <li>
-<p><a href="https://en.wikipedia.org/wiki/Trochoidal_wave">Trochoidal Wave Wikipedia</a></p>
+<p>a 3D linear kinematic chain for acceleration, velocity, displacement, and the integral of displacement;</p>
 </li>
 <li>
-<p>Alexey A. Bobtsov, Nikolay A. Nikolaev, Olga V. Slita, Alexander S. Borgul, Stanislav V. Aranovskiy: The New Algorithm of Sinusoidal Signal Frequency Estimation. 11th IFAC International Workshop on
-Adaptation and Learning in Control and Signal Processing
-July 3-5, 2013. Caen, France: <a href="https://www.sciencedirect.com/science/article/pii/S1474667016329421">The New Algorithm of Sinusoidal Signal Frequency Estimation</a></p>
+<p>an OU process prior for latent world-frame acceleration;</p>
 </li>
 <li>
-<p><a href="https://en.wikipedia.org/wiki/Wind_wave">Wind Wave Wikipedia</a></p>
-</li>
-<li>
-<p><a href="https://wikiwaves.org/">Wiki Waves</a></p>
-</li>
-<li>
-<p><a href="https://github.com/seandepagnier/RTIMULib2">RTIMULib2 IMU library</a></p>
-</li>
-<li>
-<p><a href="https://github.com/pypilot/pypilot">PyPilot Free Autopilot</a></p>
-</li>
-<li>
-<p><a href="https://github.com/space-physics/wmm2020">World Magnetic Model on GitHub</a></p>
-</li>
-<li>
-<p><a href="https://www.sciencedirect.com/science/article/pii/S0029801822002098">Online wave direction and wave number estimation from surface vessel motions using distributed inertial measurement arrays and phase-time-path-differences</a></p>
+<p>an online sea-state tuner that adapts the OU time constant, acceleration variance, and drift-control pseudo-measurement.</p>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p>At each IMU step:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the gyroscope propagates the nominal quaternion;</p>
+</li>
+<li>
+<p>the accelerometer contributes a rank-3 EKF measurement of body-frame specific force;</p>
+</li>
+<li>
+<p>the magnetometer, when enabled and stable, contributes a rank-3 yaw/field update;</p>
+</li>
+<li>
+<p>the pseudo-measurement <code>S = 0</code> softly constrains long-term displacement drift;</p>
+</li>
+<li>
+<p>the frequency tracker and tuner update the sea-state parameters.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_frames_and_signals">5. Frames and Signals</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The working world frame is NED: north, east, down.
+The body frame is the calibrated IMU or vessel body frame used by the implementation.</p>
+</div>
+<div class="paragraph">
+<p>The estimator assumes calibrated triads:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>gyroscope body rate \$omega_m\$;</p>
+</li>
+<li>
+<p>accelerometer specific force \$f_b\$;</p>
+</li>
+<li>
+<p>magnetometer field \$m_b\$, when available.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The gravity vector in NED is</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$g_w = [0, 0, g]^T,    g = 9.80665 m/s^2.\$
+</div>
+</div>
+<div class="paragraph">
+<p>The rotation \$R_wb\$ maps world-frame vectors into the body frame.
+The nominal attitude is stored as a unit quaternion representing world-to-body orientation.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_state_vector">6. State Vector</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The extended error-state vector is</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$x = [delta theta, b_g, v, p, S, a_w, b_a]^T.\$
+</div>
+</div>
+<div class="paragraph">
+<p>The state components are:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Symbol</th>
+<th class="tableblock halign-left valign-top">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\$delta theta\$</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Small attitude-error vector used by the left-multiplicative EKF correction.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\$b_g\$</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gyroscope bias, modeled as a random walk.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\$v\$</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">World-frame velocity.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\$p\$</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">World-frame displacement or position relative to the local wave-tracking origin.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\$S\$</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integral of displacement, \$S(t) = int_0^t p(lambda) d lambda\$.  This auxiliary state is used for drift suppression.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\$a_w\$</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Latent world-frame wave acceleration, modeled as an OU process.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\$b_a\$</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Accelerometer bias, modeled as a random walk with optional temperature-dependent drift in the measurement model.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>With all components enabled, the filter has</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$N_X = 3 + 3 + 3 + 3 + 3 + 3 + 3 = 21\$
+</div>
+</div>
+<div class="paragraph">
+<p>states.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_measurement_model">7. Measurement Model</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_accelerometer">7.1. Accelerometer</h3>
+<div class="paragraph">
+<p>The accelerometer measures body-frame specific force:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$f_b = R_wb (a_w - g_w) + b_a(T) + n_a.\$
+</div>
+</div>
+<div class="paragraph">
+<p>Here</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$b_a(T) = b_a0 + k_a (T - T_ref)\$
+</div>
+</div>
+<div class="paragraph">
+<p>allows a temperature-dependent accelerometer bias correction, and \$n_a\$ is accelerometer measurement noise.</p>
+</div>
+<div class="paragraph">
+<p>For the left-multiplicative convention, the linearized accelerometer Jacobians are</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$d f_b / d theta = -skew(f_cog,b),\$
+<br>
+\$d f_b / d a_w = R_wb,\$
+<br>
+\$d f_b / d b_a = I_3.\$
+</div>
+</div>
+<div class="paragraph">
+<p>The important point is that the accelerometer update does not merely tilt-correct the attitude.
+Because \$d f_b / d a_w = R_wb\$, it also corrects the latent world-frame acceleration state.
+That is what ties attitude, gravity alignment, and wave acceleration into one estimator.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_magnetometer">7.2. Magnetometer</h3>
+<div class="paragraph">
+<p>When magnetometer updates are enabled, the predicted magnetic field is</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$m_b = R_wb B_w + n_m.\$
+</div>
+</div>
+<div class="paragraph">
+<p>The world magnetic reference \$B_w\$ is obtained from calibration and local magnetic inclination/declination.
+The attitude Jacobian is</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$d m_b / d theta = -skew(m_b).\$
+</div>
+</div>
+<div class="paragraph">
+<p>In practice, magnetometer yaw correction should be delayed until the tilt estimate is stable and a reliable local magnetic reference has been accumulated.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_integral_pseudo_measurement">7.3. Integral Pseudo-Measurement</h3>
+<div class="paragraph">
+<p>To suppress long-term double-integration drift, the filter applies a zero-valued pseudo-measurement to the integral state:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$z_S = 0 = S + n_S,\$
+<br>
+\$R_S = diag(sigma_Sx^2, sigma_Sy^2, sigma_Sz^2),\$
+<br>
+\$d z_S / d S = I_3.\$
+</div>
+</div>
+<div class="paragraph">
+<p>This is not a physical sensor.
+It is a soft regularizer.
+Repeated application makes the triple integral behave like a leaky integral: low-frequency drift is attenuated while wave-band motion is still allowed.</p>
+</div>
+<div class="paragraph">
+<p>The choice of \$R_S\$ is critical:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>small \$R_S\$ means strong drift control but risks over-regularizing long swell;</p>
+</li>
+<li>
+<p>large \$R_S\$ means weak drift control and more low-frequency wandering;</p>
+</li>
+<li>
+<p>adaptive \$R_S\$ lets the filter scale this tradeoff with the sea state.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_imu_lever_arm">7.4. IMU Lever Arm</h3>
+<div class="paragraph">
+<p>If the IMU is not mounted at the vessel center of gravity, angular motion adds apparent acceleration.
+For a body-frame lever arm \$r_b\$, body angular velocity \$omega_b\$, and angular acceleration \$alpha_b\$, the accelerometer model becomes</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$f_b = f_cog,b + alpha_b xx r_b + omega_b xx (omega_b xx r_b) + b_a(T) + n_a.\$
+</div>
+</div>
+<div class="paragraph">
+<p>The lever-arm term is treated as a known kinematic correction.
+Setting \$r_b = 0\$ recovers the center-of-gravity model.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_continuous_time_process_model">8. Continuous-Time Process Model</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_quaternion_propagation">8.1. Quaternion Propagation</h3>
+<div class="paragraph">
+<p>The nominal quaternion is propagated from the bias-corrected gyroscope:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$d q / d t = -1/2 Omega(omega_m - b_g) q.\$
+</div>
+</div>
+<div class="paragraph">
+<p>Unit norm is enforced in implementation.
+The gyro bias follows a random walk:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$d b_g / d t = w_bg.\$
+</div>
+</div>
+<div class="paragraph">
+<p>The small left-multiplicative attitude error evolves approximately as</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$d(delta theta)/dt = -skew(omega_m - b_g) delta theta + delta b_g - n_g.\$
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ou_driven_kinematic_chain">8.2. OU-Driven Kinematic Chain</h3>
+<div class="paragraph">
+<p>For each world axis, the linear chain is</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$d v / d t = a_w,\$
+<br>
+\$d p / d t = v,\$
+<br>
+\$d S / d t = p.\$
+</div>
+</div>
+<div class="paragraph">
+<p>The latent acceleration is modeled by an OU process:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$d a_w / d t = -(1/tau) a_w + sqrt(2/tau) L_a w_a,\$
+<br>
+\$L_a L_a^T = Sigma_aw.\$
+</div>
+</div>
+<div class="paragraph">
+<p>Here \$tau\$ is the acceleration correlation time and \$Sigma_aw\$ is the stationary acceleration covariance.
+The OU model is not claiming that the ocean surface is literally an OU process.
+It is a compact Gauss-Markov prior for colored wave excitation with bounded variance and a finite correlation time.
+That prior is useful because it is Markov, embedded-friendly, and admits analytic discretization.</p>
+</div>
+<div class="paragraph">
+<p>The accelerometer bias is modeled as</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$d b_a / d t = w_ba.\$
+</div>
+</div>
+<div class="paragraph">
+<p>Its temperature correction belongs in the measurement model, not in the process model.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_unified_error_state_form">8.3. Unified Error-State Form</h3>
+<div class="paragraph">
+<p>The continuous-time linearized error dynamics can be written as</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$d x_err / d t = F x_err + L w,\$
+<br>
+\$P_dot = F P + P F^T + Q_c.\$
+</div>
+</div>
+<div class="paragraph">
+<p>With measurements, the continuous Kalman-Bucy information term is</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$P_dot = F P + P F^T + Q_c - P H^T R^(-1) H P.\$
+</div>
+</div>
+<div class="paragraph">
+<p>The implementation uses the corresponding discrete prediction and Joseph-form correction.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_discrete_time_prediction">9. Discrete-Time Prediction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For sample interval \$h\$, a linear time-invariant SDE is discretized as</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$x_(k+1|k) = Phi(h) x_k,\$
+<br>
+\$P_(k+1|k) = Phi(h) P_k Phi(h)^T + Q_d(h),\$
+<br>
+\$Phi(h) = exp(F h),\$
+<br>
+\$Q_d(h) = int_0^h exp(F t) L Q_c L^T exp(F^T t) d t.\$
+</div>
+</div>
+<div class="paragraph">
+<p>The Ocean IMU implementation computes the important OU-driven blocks analytically.
+This avoids numerical instability and avoids repeatedly using a general-purpose matrix exponential on small embedded targets.</p>
+</div>
+<div class="sect2">
+<h3 id="_ou_axis_transition">9.1. OU Axis Transition</h3>
+<div class="paragraph">
+<p>For one axis with state \$[v, p, S, a\$^T], define</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$x = h / tau,\$
+<br>
+\$alpha = e^(-x).\$
+</div>
+</div>
+<div class="paragraph">
+<p>The per-axis transition has the form</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$Phi_axis = [
+  1,       0, 0, phi_va;
+  h,       1, 0, phi_pa;
+  1/2 h^2, h, 1, phi_Sa;
+  0,       0, 0, alpha
+].\$
+</div>
+</div>
+<div class="paragraph">
+<p>The coupling terms are</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$phi_va = tau (1 - alpha),\$
+<br>
+\$phi_pa = tau^2 (x + alpha - 1),\$
+<br>
+\$phi_Sa = tau^3 (1/2 x^2 - x - alpha + 1).\$
+</div>
+</div>
+<div class="paragraph">
+<p>The full 3D OU-chain transition is the block diagonal stacking of three such axis transitions.
+The covariance \$Q_d\$ is computed from an exact coefficient matrix for normal \$x\$ and from a Maclaurin branch for small \$x\$, followed by symmetrization and positive-semidefinite cleanup.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rank_3_measurement_updates">10. Rank-3 Measurement Updates</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The accelerometer, magnetometer, and pseudo-measurement channels are all rank-3 updates.
+For a measurement</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$z = h(x) + nu,\$
+</div>
+</div>
+<div class="paragraph">
+<p>the EKF update is</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$r = z - h(x^-),\$
+<br>
+\$S_innov = H P^- H^T + R,\$
+<br>
+\$K = P^- H^T S_innov^(-1),\$
+<br>
+\$x^+ = x^- + K r.\$
+</div>
+</div>
+<div class="paragraph">
+<p>The covariance update should use the Joseph form:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$P^+ = (I - K H) P^- (I - K H)^T + K R K^T.\$
+</div>
+</div>
+<div class="paragraph">
+<p>After each correction, the attitude-error subvector is injected back into the nominal quaternion:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$q &lt;- exp(1/2 delta theta) ox q,\$
+<br>
+\$delta theta &lt;- 0.\$
+</div>
+</div>
+<div class="paragraph">
+<p>The rank-3 structure is important for embedded use.
+The expensive inversion is only a 3 by 3 solve for each triad update.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_initialization_and_reference_alignment">11. Initialization and Reference Alignment</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Startup should be staged.
+The filter should not immediately trust yaw, acceleration bias, displacement, or drift-control states.</p>
+</div>
+<div class="paragraph">
+<p>A practical sequence is:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Estimate gravity direction from accelerometer data and initialize roll/pitch.</p>
+</li>
+<li>
+<p>Leave yaw arbitrary until a stable magnetic reference is available.</p>
+</li>
+<li>
+<p>Run an early attitude-only or reduced-state phase while the frequency tracker gathers statistics.</p>
+</li>
+<li>
+<p>Enable the full linear wave block after the tuner has usable estimates of frequency and acceleration variance.</p>
+</li>
+<li>
+<p>Delay magnetometer yaw correction until tilt is stable and magnetic samples have been accumulated in the tilt frame.</p>
+</li>
+<li>
+<p>Enter live operation with online adaptation enabled.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>This avoids seeding displacement, bias, and pseudo-measurement states with startup transients.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_frequency_tracking">12. Frequency Tracking</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Adaptive tuning requires an online estimate of the dominant wave frequency.
+The signal is derived from vertical inertial acceleration, typically as an up-positive scalar:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$a_up = -a_z,inert.\$
+</div>
+</div>
+<div class="paragraph">
+<p>Three embedded-friendly trackers are supported in Ocean IMU:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Tracker</th>
+<th class="tableblock halign-left valign-top">Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">KalmANF adaptive notch</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Models the signal with a second-order notch and updates the notch parameter with a scalar Kalman step.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aranovskiy observer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Uses a nonlinear sinusoidal frequency observer with a filtered input and adaptive auxiliary state.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PLL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Uses a band-passed signal, I/Q demodulation, and a bounded PI phase-locked loop.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The raw frequency is clamped and smoothed to produce \$f_tune\$, which drives the sea-state tuner and the horizontal wave-direction estimator.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_variance_informed_online_adaptation">13. Variance-Informed Online Adaptation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The tuner adapts three quantities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>OU correlation time \$tau\$;</p>
+</li>
+<li>
+<p>stationary acceleration scale \$sigma_a\$;</p>
+</li>
+<li>
+<p>integral pseudo-measurement level \$R_S\$.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The variance estimate is tied to a fixed number of wave periods so that the adaptation horizon scales naturally between chop and swell:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$T_eff = 1 / f_tune,\$
+<br>
+\$tau_var = clip(K_periods T_eff, tau_var,min, tau_var,max),\$
+<br>
+\$alpha_var = 1 - e^(-Delta t / tau_var).\$
+</div>
+</div>
+<div class="paragraph">
+<p>After subtracting a configured acceleration noise floor,</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$sigma_wave^2 = max(0, sigma_tot^2 - sigma_nf^2),\$
+</div>
+</div>
+<div class="paragraph">
+<p>the target parameters are</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$tau_star = c_tau / (2 f_tune),\$
+<br>
+\$sigma_a,star = c_sigma sqrt(max(sigma_wave^2, epsilon)),\$
+<br>
+\$R_S,star = c_R sigma_a,star tau_star^3.\$
+</div>
+</div>
+<div class="paragraph">
+<p>The applied values are exponentially smoothed.
+\$tau\$ and \$sigma_a\$ use a fixed adaptation time constant.
+\$R_S\$ is smoothed with a time constant proportional to the current wave time scale, so it responds faster in short-period seas and slower in long-period swell.</p>
+</div>
+<div class="sect2">
+<h3 id="_why_r_s_scales_as_sigma_a_tau3">13.1. Why \$R_S\$ Scales as \$sigma_a tau^3\$</h3>
+<div class="paragraph">
+<p>The pseudo-measurement is not arbitrary.
+The triple-integral state \$S\$ is the result of integrating acceleration three times:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$d v / d t = a,\$
+<br>
+\$d p / d t = v,\$
+<br>
+\$d S / d t = p.\$
+</div>
+</div>
+<div class="paragraph">
+<p>In the frequency domain, the transfer from acceleration to \$S\$ has magnitude squared proportional to \$1 / omega^6\$.
+For a broad class of wave spectra, after separating spectrum scale from spectrum shape, the natural spread of \$S\$ follows</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$sigma_S ~= c_spec sigma_a tau^3.\$
+</div>
+</div>
+<div class="paragraph">
+<p>Therefore a practical sea-state-invariant pseudo-measurement law is</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$R_S = k_i sigma_a tau^3.\$
+</div>
+</div>
+<div class="paragraph">
+<p>This makes a calm sea and a steep sea produce comparable normalized pseudo-measurement innovations.
+The filter does not become overly stiff in large waves or overly loose in calm conditions purely because the acceleration level changed.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_anisotropy">13.2. Anisotropy</h3>
+<div class="paragraph">
+<p>The implementation may use different horizontal and vertical settings:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$Sigma_aw^(1/2) = diag(S_sigma sigma_a, S_sigma sigma_a, sigma_a),\$
+<br>
+\$R_S = diag(rho_xy R_S, rho_xy R_S, R_S).\$
+</div>
+</div>
+<div class="paragraph">
+<p>This allows stronger or weaker horizontal regularization without changing the vertical heave behavior.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_horizontal_wave_direction">14. Horizontal Wave Direction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The filter estimates a slowly varying horizontal acceleration amplitude vector \$A_k\$.
+Let</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$z_k = [a_x(k), a_y(k)]^T.\$
+</div>
+</div>
+<div class="paragraph">
+<p>For a dominant narrow-band wave with phase \$phi_k\$, the simplified observation model is</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$z_k ~= cos(phi_k) A_k + eta_k.\$
+</div>
+</div>
+<div class="paragraph">
+<p>This is the online Kalman-filter form of a cosine-projection least-squares fit:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$A_LS = (sum_k cos(phi_k) z_k) / (sum_k cos(phi_k)^2).\$
+</div>
+</div>
+<div class="paragraph">
+<p>The 2D direction filter uses</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$A_(k+1) = A_k + w_k,\$
+<br>
+\$H_k = cos(phi_k) I_2,\$
+<br>
+\$z_k = H_k A_k + eta_k.\$
+</div>
+</div>
+<div class="paragraph">
+<p>When \$abs(cos(phi_k))\$ is too small, the update is skipped because the observation carries little information near horizontal zero crossings.</p>
+</div>
+<div class="paragraph">
+<p>The wave line angle is</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$d_hat = A_k / ||A_k||,\$
+<br>
+\$theta = wrap_[0,180)(atan2(d_y, d_x) 180 / pi).\$
+</div>
+</div>
+<div class="paragraph">
+<p>This gives direction modulo \$180 deg\$.
+A separate vertical-horizontal phase discriminator can choose the travel sense along that line, producing a directed azimuth when the sign estimate is stable.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_validation_summary">15. Validation Summary</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ocean IMU validates the filter on synthetic directional sea states with controlled ground truth.
+The simulations use 20 minute runs at 200 Hz, with IMU and magnetometer error models representative of low-cost MEMS hardware.</p>
+</div>
+<div class="sect2">
+<h3 id="_wave_scenarios">15.1. Wave Scenarios</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 28.5714%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 28.5715%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Scenario</th>
+<th class="tableblock halign-left valign-top">Model</th>
+<th class="tableblock halign-left valign-top">\$H_s\$ m</th>
+<th class="tableblock halign-left valign-top">\$T_p\$ s</th>
+<th class="tableblock halign-left valign-top">Directional spread</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">W1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JONSWAP, PM-Stokes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">+30 deg / cos-spread</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">W2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JONSWAP, PM-Stokes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5.7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-30 deg / cos-spread</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">W3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JONSWAP, PM-Stokes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.00</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">+30 deg / cos-spread</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">W4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JONSWAP, PM-Stokes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8.50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11.4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-30 deg / cos-spread</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_simulation_results">15.2. Simulation Results</h3>
+<div class="paragraph">
+<p>The table below summarizes the last 60 seconds RMS window from the Ocean IMU validation run.
+<code>R/P/Y</code> are roll, pitch, and yaw RMS errors in degrees.
+<code>T/A/U</code> means Toward, Away, and Uncertain percentage of samples for the sign discriminator.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1112%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Case</th>
+<th class="tableblock halign-left valign-top">\$H_s\$</th>
+<th class="tableblock halign-left valign-top">Z RMS m</th>
+<th class="tableblock halign-left valign-top">Z % \$H_s\$</th>
+<th class="tableblock halign-left valign-top">R deg</th>
+<th class="tableblock halign-left valign-top">P deg</th>
+<th class="tableblock halign-left valign-top">Y deg</th>
+<th class="tableblock halign-left valign-top">mean theta deg</th>
+<th class="tableblock halign-left valign-top">T/A/U %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JONSWAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.026</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.42</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">99.5/0.0/0.5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JONSWAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.085</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5.7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.45</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.65</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.34</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-32.7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">100.0/0.0/0.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JONSWAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.00</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.297</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7.4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.60</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.36</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.59</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">31.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">99.3/0.7/0.0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JONSWAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8.50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.453</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.37</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.54</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.06</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-30.8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">99.0/0.6/0.4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PM+Stokes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.020</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7.6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.37</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.94</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">37.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">99.7/0.0/0.3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PM+Stokes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.063</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.18</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.17</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-34.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">99.7/0.0/0.3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PM+Stokes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.00</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.262</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6.6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.19</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.39</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">26.4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">100.0/0.0/0.0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PM+Stokes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8.50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.537</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.00</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.56</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.21</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-19.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">99.8/0.0/0.2</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The simulation results show drift-suppressed vertical displacement while retaining realistic wave-band motion.
+The model also keeps roll, pitch, yaw, and wave-direction estimates bounded under sensor noise, residual bias, and multicomponent directional seas.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_embedded_hardware_platform">16. Embedded Hardware Platform</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The implementation has also been exercised on real embedded hardware using the M5Stack AtomS3R ESP32-S3 module.
+The purpose of this validation is to confirm real-time behavior and implementation feasibility:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>fixed-rate IMU sampling;</p>
+</li>
+<li>
+<p>bounded memory use;</p>
+</li>
+<li>
+<p>calibrated sensor triads;</p>
+</li>
+<li>
+<p>quaternion propagation from gyroscope data;</p>
+</li>
+<li>
+<p>rank-3 accelerometer updates at IMU rate;</p>
+</li>
+<li>
+<p>delayed magnetometer yaw correction when available;</p>
+</li>
+<li>
+<p>adaptive frequency and sea-state tuning from the vertical acceleration-like signal.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Quantitative wave-kinematics accuracy is evaluated in simulation, where exact displacement, velocity, acceleration, and attitude ground truth are available.
+Real hardware validates the embedded execution path and sensor-processing pipeline.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_practical_implementation_notes">17. Practical Implementation Notes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_prefer_a_unified_filter_over_a_pipeline">17.1. Prefer a Unified Filter Over a Pipeline</h3>
+<div class="paragraph">
+<p>The mature method does not first estimate attitude, then separately integrate acceleration, then separately estimate wave spectra.
+It keeps attitude, acceleration, velocity, displacement, and drift control in one covariance model.
+This is important because tilt error and acceleration error are coupled by gravity.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_do_not_treat_the_pseudo_measurement_as_a_sensor">17.2. Do Not Treat the Pseudo-Measurement as a Sensor</h3>
+<div class="paragraph">
+<p>The \$S = 0\$ pseudo-measurement is an artificial stabilizer.
+Its covariance is a tuning parameter.
+It should be adapted from frequency and acceleration variance, not chosen as a fixed physical sensor noise.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_calibrated_axes">17.3. Use Calibrated Axes</h3>
+<div class="paragraph">
+<p>All equations assume that accelerometer, gyro, and magnetometer readings have already been calibrated and mapped into the expected body-frame convention.
+Hard-iron, soft-iron, scale, axis alignment, and gyro/accelerometer bias calibration should be handled before the estimator input stage.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_correct_lever_arm_when_needed">17.4. Correct Lever Arm When Needed</h3>
+<div class="paragraph">
+<p>An IMU mounted away from the vessel center of gravity will see angular-acceleration and centripetal terms.
+For small boats and low-cost modules this can be a large source of error.
+Use the lever-arm correction when the installation geometry is known.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_delay_magnetometer_trust">17.5. Delay Magnetometer Trust</h3>
+<div class="paragraph">
+<p>Magnetometer data are useful for yaw, but they are easily corrupted by local magnetic disturbances.
+The estimator should initialize tilt first, accumulate a stable magnetic reference, and only then enable regular yaw updates.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_barometer_is_not_the_primary_wave_sensor">17.6. Barometer Is Not the Primary Wave Sensor</h3>
+<div class="paragraph">
+<p>A barometer can be useful for weather and slow altitude trends, but it should not be treated as a direct wave-elevation sensor on a floating platform.
+The wave surface is not a static height field measured by air pressure in the way hiking or stair-climbing algorithms assume.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_relationship_to_the_old_draft">18. Relationship to the Old Draft</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The old document contained useful early notes about why double integration drifts and why pressure is not a reliable wave-height source on the wave surface.
+Those points remain valid.
+However, the trochoidal reconstruction and Doppler-based approach is no longer the preferred core algorithm.</p>
+</div>
+<div class="paragraph">
+<p>The current preferred algorithm is:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>calibrated IMU and optional magnetometer input;</p>
+</li>
+<li>
+<p>quaternion MEKF for attitude and gyro bias;</p>
+</li>
+<li>
+<p>OU-driven 3D kinematic chain for wave acceleration, velocity, displacement, and integral displacement;</p>
+</li>
+<li>
+<p>adaptive pseudo-measurement drift control;</p>
+</li>
+<li>
+<p>online frequency tracking and wave-direction estimation;</p>
+</li>
+<li>
+<p>simulation validation against directional JONSWAP and PM-Stokes sea states;</p>
+</li>
+<li>
+<p>embedded execution on ESP32-S3-class hardware.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">19. References</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Bareboat Necessities Ocean IMU project: <a href="https://github.com/bareboat-necessities/ocean-imu" class="bare">https://github.com/bareboat-necessities/ocean-imu</a></p>
+</li>
+<li>
+<p>M. S. Grushinskiy, <em>OU-Driven Quaternion MEKF for Marine INS and Wave-State Estimation</em>, draft in <code>ocean-imu/doc/kalman_ou_iii</code>.</p>
+</li>
+<li>
+<p>R. E. Kalman, <em>A New Approach to Linear Filtering and Prediction Problems</em>, 1960.</p>
+</li>
+<li>
+<p>G. E. Uhlenbeck and L. S. Ornstein, <em>On the Theory of the Brownian Motion</em>, 1930.</p>
+</li>
+<li>
+<p>F. L. Markley, <em>Attitude Error Representations for Kalman Filtering</em>, 2003.</p>
+</li>
+<li>
+<p>J. Sola, <em>Quaternion Kinematics for the Error-State Kalman Filter</em>, 2017.</p>
+</li>
+<li>
+<p>S. M. Sharkh et al., <em>A Novel Kalman Filter Based Technique for Calculating the Time History of Vertical Displacement of a Boat from Measured Acceleration</em>, 2014.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2025-07-15<br>
+Version 2026-07-01<br>
 </div>
 </div>
 <script type="text/x-mathjax-config">
